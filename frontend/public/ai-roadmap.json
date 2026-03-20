@@ -1,0 +1,311 @@
+{
+  "name": "Shanker Agencies Private Limited",
+  "short_name": "SAPL",
+  "description": "India's premier refractory engineering partner since 1980. Premium refractories for steel, cement, aluminum & petrochemical industries.",
+  "url": "https://shankeragencies.com",
+  "version": "2.0.0",
+  "last_updated": "2026-02-13",
+  
+  "ai_discoverability": {
+    "llm_txt_url": "https://shankeragencies.com/llm.txt",
+    "sitemap_url": "https://shankeragencies.com/sitemap.xml",
+    "robots_txt_url": "https://shankeragencies.com/robots.txt",
+    "knowledge_graph_enabled": true,
+    "structured_data_enabled": true
+  },
+  
+  "content_structure": {
+    "pages": [
+      {
+        "path": "/",
+        "title": "Home",
+        "type": "landing",
+        "content_type": "company_overview",
+        "update_frequency": "weekly"
+      },
+      {
+        "path": "/about",
+        "title": "About Us",
+        "type": "informational",
+        "content_type": "company_profile",
+        "update_frequency": "monthly"
+      },
+      {
+        "path": "/products",
+        "title": "Products",
+        "type": "catalog",
+        "content_type": "product_listing",
+        "update_frequency": "weekly"
+      },
+      {
+        "path": "/industries",
+        "title": "Industries",
+        "type": "informational",
+        "content_type": "industry_solutions",
+        "update_frequency": "monthly"
+      },
+      {
+        "path": "/blog",
+        "title": "Blog",
+        "type": "content_hub",
+        "content_type": "articles",
+        "update_frequency": "daily"
+      },
+      {
+        "path": "/case-studies",
+        "title": "Case Studies",
+        "type": "social_proof",
+        "content_type": "success_stories",
+        "update_frequency": "monthly"
+      },
+      {
+        "path": "/knowledge-base",
+        "title": "Knowledge Base",
+        "type": "educational",
+        "content_type": "technical_resources",
+        "update_frequency": "weekly"
+      },
+      {
+        "path": "/contact",
+        "title": "Contact",
+        "type": "conversion",
+        "content_type": "contact_form",
+        "update_frequency": "rarely"
+      }
+    ],
+    
+    "content_types": {
+      "blog_posts": {
+        "url_pattern": "/blog/{slug}",
+        "schema_type": "BlogPosting",
+        "available": true,
+        "count": 0,
+        "categories": ["technical", "industry_insights", "case_studies", "product_updates"]
+      },
+      "products": {
+        "url_pattern": "/products/{slug}",
+        "schema_type": "Product",
+        "available": true,
+        "count": 0
+      },
+      "case_studies": {
+        "url_pattern": "/case-studies/{slug}",
+        "schema_type": "Article",
+        "available": true,
+        "count": 0
+      },
+      "industry_pages": {
+        "url_pattern": "/industries/{slug}",
+        "schema_type": "WebPage",
+        "available": true,
+        "count": 6
+      }
+    }
+  },
+  
+  "multilingual": {
+    "enabled": true,
+    "default_language": "en",
+    "available_languages": [
+      {
+        "code": "en",
+        "name": "English",
+        "enabled": true,
+        "content_coverage": "complete"
+      },
+      {
+        "code": "hi",
+        "name": "Hindi",
+        "enabled": true,
+        "content_coverage": "partial"
+      },
+      {
+        "code": "es",
+        "name": "Spanish",
+        "enabled": false,
+        "content_coverage": "none"
+      },
+      {
+        "code": "ar",
+        "name": "Arabic",
+        "enabled": false,
+        "content_coverage": "none"
+      }
+    ]
+  },
+  
+  "entities": {
+    "company": {
+      "name": "Shanker Agencies Private Limited",
+      "founding_date": "1980",
+      "location": "India",
+      "industry": "Refractory Engineering",
+      "employee_count": "11-50",
+      "specialties": [
+        "Refractory Materials",
+        "Steel Industry Solutions",
+        "Cement Industry Solutions",
+        "Technical Consultation",
+        "Installation Supervision"
+      ]
+    },
+    
+    "products": [
+      {
+        "name": "High Alumina Bricks",
+        "category": "Shaped Refractories",
+        "keywords": ["HA-70", "HA-80", "refractory bricks", "alumina bricks"]
+      },
+      {
+        "name": "Castables",
+        "category": "Unshaped Refractories",
+        "keywords": ["LCC", "ULCC", "low cement castable", "refractory castable"]
+      },
+      {
+        "name": "Ceramic Fiber",
+        "category": "Insulation",
+        "keywords": ["ceramic fiber blanket", "insulation", "refractory insulation"]
+      },
+      {
+        "name": "Flow Control Systems",
+        "category": "Steel Making",
+        "keywords": ["slide gate", "nozzle", "SEN", "continuous casting"]
+      }
+    ],
+    
+    "services": [
+      "Refractory Engineering Consultation",
+      "Installation Supervision",
+      "Heat Loss Studies",
+      "Technical Training",
+      "After-Sales Support"
+    ],
+    
+    "industries_served": [
+      "Steel",
+      "Cement",
+      "Aluminum",
+      "Glass",
+      "Petrochemical",
+      "Power Generation"
+    ]
+  },
+  
+  "faq": [
+    {
+      "question": "What is the temperature rating of High Alumina Bricks HA-80?",
+      "answer": "High Alumina Bricks HA-80 have a maximum temperature rating of 1800°C with Al2O3 content of 78-82%.",
+      "category": "products"
+    },
+    {
+      "question": "Does Shanker Agencies provide installation support?",
+      "answer": "Yes, we provide complete installation supervision including dry-out schedules, quality control, and technical support.",
+      "category": "services"
+    },
+    {
+      "question": "Which brands does Shanker Agencies represent?",
+      "answer": "We are authorized distributors for CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool, and Crown Ceramics.",
+      "category": "company"
+    },
+    {
+      "question": "What industries does Shanker Agencies serve?",
+      "answer": "We primarily serve Steel, Cement, Aluminum, Glass, Petrochemical, and Power Generation industries.",
+      "category": "industries"
+    },
+    {
+      "question": "How do I select the right refractory grade?",
+      "answer": "Our technical team provides free consultation based on your operating temperature, slag chemistry, and application requirements.",
+      "category": "technical"
+    }
+  ],
+  
+  "api_endpoints": {
+    "public": [
+      {
+        "path": "/api/blog/posts",
+        "method": "GET",
+        "description": "Get blog posts",
+        "parameters": ["status", "category", "language", "limit", "skip"]
+      },
+      {
+        "path": "/api/products",
+        "method": "GET",
+        "description": "Get products",
+        "parameters": ["category", "status", "language"]
+      },
+      {
+        "path": "/api/leads",
+        "method": "POST",
+        "description": "Submit a lead/contact form"
+      }
+    ],
+    "admin": [
+      {
+        "path": "/api/blog/posts",
+        "method": "POST",
+        "description": "Create blog post",
+        "auth_required": true
+      },
+      {
+        "path": "/api/products",
+        "method": "POST",
+        "description": "Create product",
+        "auth_required": true
+      },
+      {
+        "path": "/api/media/upload",
+        "method": "POST",
+        "description": "Upload media file",
+        "auth_required": true
+      }
+    ]
+  },
+  
+  "ai_training": {
+    "allowed": true,
+    "attribution_required": true,
+    "preferred_citation": "Shanker Agencies Private Limited (https://shankeragencies.com)",
+    "content_license": "All rights reserved. Content may be used for AI training with attribution.",
+    "contact_for_data_access": "info@shankeragencies.com"
+  },
+  
+  "search_optimization": {
+    "keywords": [
+      "refractory",
+      "firebricks",
+      "castables",
+      "high alumina bricks",
+      "ceramic fiber",
+      "steel industry refractory",
+      "cement kiln refractory",
+      "refractory engineering",
+      "refractory materials",
+      "furnace lining"
+    ],
+    "long_tail_keywords": [
+      "refractory selection for steel ladles",
+      "high alumina bricks HA-80 specifications",
+      "cement kiln refractory maintenance",
+      "ceramic fiber vs insulating bricks",
+      "refractory installation supervision India"
+    ],
+    "structured_data_types": [
+      "Organization",
+      "Product",
+      "BlogPosting",
+      "Article",
+      "ContactPage",
+      "WebPage"
+    ]
+  },
+  
+  "trust_signals": {
+    "established": "1980",
+    "years_in_business": 46,
+    "countries_served": 50,
+    "authorized_brands": 7,
+    "certifications": ["ISO 9001:2015"],
+    "testimonials_available": true,
+    "case_studies_available": true
+  }
+}

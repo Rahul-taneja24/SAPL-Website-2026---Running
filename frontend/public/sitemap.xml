@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 
+    SAPL Website Sitemap
+    Shanker Agencies Private Limited
+    Last Updated: 2026-02-13
+  -->
+
+  <!-- ============================================
+       HOMEPAGE - HIGHEST PRIORITY
+       ============================================ -->
+  <url>
+    <loc>https://shankeragencies.com/</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://shankeragencies.com/images/hero-molten-steel.jpg</image:loc>
+      <image:title>Shanker Agencies - Refractory Engineering Solutions</image:title>
+      <image:caption>40+ years of refractory excellence serving steel, cement, and glass industries worldwide</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://shankeragencies.com/images/logo.png</image:loc>
+      <image:title>Shanker Agencies Logo</image:title>
+    </image:image>
+    <!-- Multi-language support -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/?lang=hi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shankeragencies.com/" />
+  </url>
+
+  <!-- ============================================
+       MAIN PAGES
+       ============================================ -->
+
+  <url>
+    <loc>https://shankeragencies.com/about</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/about" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/about?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/products</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://shankeragencies.com/images/products-refractory-bricks.jpg</image:loc>
+      <image:title>Refractory Products Catalog</image:title>
+      <image:caption>Complete range of shaped and unshaped refractories</image:caption>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/products" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/products?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/industries</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industries" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industries?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/solutions</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/solutions" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/solutions?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/industry-solutions</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industry-solutions" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industry-solutions?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/brands</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/brands" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/brands?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/knowledge-base</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/knowledge-base" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/knowledge-base?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/blog</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/blog" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/blog?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/contact</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/contact" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/contact?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/company-profile</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/company-profile" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/company-profile?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/case-studies</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/case-studies" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/case-studies?lang=hi" />
+  </url>
+
+  <!-- ============================================
+       PRODUCT CATEGORY PAGES
+       ============================================ -->
+
+  <url>
+    <loc>https://shankeragencies.com/products/shaped-refractories</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shankeragencies.com/images/shaped-refractories.jpg</image:loc>
+      <image:title>Shaped Refractories - Firebricks and High Alumina Bricks</image:title>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/products/shaped-refractories" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/products/shaped-refractories?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/products/unshaped-refractories</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/products/unshaped-refractories" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/products/unshaped-refractories?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/products/ceramic-fiber</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/products/ceramic-fiber" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/products/ceramic-fiber?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/products/flow-control</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/products/flow-control" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/products/flow-control?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/products/acid-proof</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/products/acid-proof" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/products/acid-proof?lang=hi" />
+  </url>
+
+  <!-- ============================================
+       INDUSTRY PAGES
+       ============================================ -->
+
+  <url>
+    <loc>https://shankeragencies.com/industries/steel</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://shankeragencies.com/images/industry-steel.jpg</image:loc>
+      <image:title>Refractory Solutions for Steel Industry</image:title>
+    </image:image>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industries/steel" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industries/steel?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/industries/cement</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industries/cement" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industries/cement?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/industries/aluminum</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industries/aluminum" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industries/aluminum?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/industries/glass</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industries/glass" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industries/glass?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/industries/petrochemical</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industries/petrochemical" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industries/petrochemical?lang=hi" />
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/industries/power</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shankeragencies.com/industries/power" />
+    <xhtml:link rel="alternate" hreflang="hi" href="https://shankeragencies.com/industries/power?lang=hi" />
+  </url>
+
+  <!-- ============================================
+       LEGAL PAGES
+       ============================================ -->
+
+  <url>
+    <loc>https://shankeragencies.com/privacy-policy</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/terms-of-service</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ============================================
+       AI DISCOVERABILITY FILES
+       ============================================ -->
+
+  <url>
+    <loc>https://shankeragencies.com/llm.txt</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://shankeragencies.com/ai-roadmap.json</loc>
+    <lastmod>2026-02-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

@@ -1,0 +1,159 @@
+{
+  "identity": {
+    "persona": "E1",
+    "mission": "Create a top 1% industrial design that breaks B2B conventions. Fusion of 'Industrial Precision' and 'Raw Material Aesthetics'.",
+    "principles": [
+      "Fusion over Imitation: Mix industrial rawness with Swiss precision.",
+      "Emotion First: Convey 'Heat', 'Strength', and 'Reliability'.",
+      "Content is King: Technical specs must be legible but beautiful.",
+      "Zoom In: Use macro textures of firebricks and steel.",
+      "Negative Space: Don't clutter; let the products breathe."
+    ],
+    "anti_patterns": [
+      "No generic 'Corporate Blue' as primary.",
+      "No 'Inter' for headings.",
+      "No symmetrical 3-column grids everywhere.",
+      "No flat, soulless gradients."
+    ]
+  },
+  "theme_strategy": {
+    "mode": "light_base_with_dark_accents",
+    "logic": "Light mode for catalog/readability (trust). Dark mode for Hero/Footer (impact/heat).",
+    "textures": "Use subtle grain/noise on dark backgrounds to simulate 'soot' or 'industrial dust' texture."
+  },
+  "colors": {
+    "primary": {
+      "name": "Furnace Orange",
+      "hex": "#FF4500",
+      "usage": "CTAs, Highlights, 'Hot' interactions."
+    },
+    "secondary": {
+      "name": "Steel Slate",
+      "hex": "#334155",
+      "usage": "Headings, Borders, Structural elements."
+    },
+    "background": {
+      "light": "#FFFFFF",
+      "dark": "#0F172A",
+      "subtle": "#F8FAFC"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#64748B",
+      "inverse": "#F8FAFC"
+    },
+    "accents": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444"
+    }
+  },
+  "typography": {
+    "headings": {
+      "family": "Oswald, sans-serif",
+      "weights": ["500", "700"],
+      "usage": "All section titles, hero text. Uppercase for top-level headers."
+    },
+    "body": {
+      "family": "Inter, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Paragraphs, technical specs, tables."
+    },
+    "mono": {
+      "family": "JetBrains Mono, monospace",
+      "usage": "Product codes, chemical formulas (Al2O3)."
+    }
+  },
+  "layout": {
+    "spacing": {
+      "base": "4px",
+      "container_padding": "p-6 md:p-12 lg:p-24",
+      "section_gap": "gap-12 md:gap-24"
+    },
+    "grid_system": {
+      "marketing": "Bento Grid (Asymmetrical). Use col-span-2 for major items, col-span-1 for minor.",
+      "catalog": "Dense Data Grid. Compact rows, clear borders."
+    },
+    "container": "max-w-7xl mx-auto"
+  },
+  "components": {
+    "shadcn_overrides": {
+      "button": "Sharp edges (rounded-sm). Hover: Lift + Shadow. Primary: Orange bg, White text.",
+      "card": "Flat, 1px border (slate-200). No shadow by default. Hover: shadow-lg + border-orange-500.",
+      "table": "Compact. Header: uppercase, tracking-wide, slate-100 bg. Rows: hover:bg-slate-50.",
+      "input": "Square edges. Focus: ring-orange-500."
+    },
+    "custom_components": {
+      "HeroSection": "Full-width, dark bg, video/image overlay. Text: Huge Oswald font.",
+      "BrandGrid": "Grayscale logos that colorize on hover.",
+      "StatCard": "Big number (Oswald), small label (Inter). Minimalist."
+    }
+  },
+  "images": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Molten steel production",
+      "usage": "Home Hero Background"
+    },
+    "industries": [
+      {
+        "name": "Steel",
+        "url": "https://images.unsplash.com/photo-1727504172743-08f14448fab8?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Steel worker"
+      },
+      {
+        "name": "Cement",
+        "url": "https://images.unsplash.com/photo-1767386968381-72ee1e1f315e?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Cement silo"
+      },
+      {
+        "name": "Logistics",
+        "url": "https://images.unsplash.com/photo-1703977883249-d959f2b0c1ae?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Shipping port"
+      }
+    ],
+    "products": [
+      {
+        "category": "Firebricks",
+        "url": "https://images.unsplash.com/photo-1469289759076-d1484757abc3?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Firebricks stack"
+      },
+      {
+        "category": "Furnace Lining",
+        "url": "https://images.unsplash.com/photo-1587123404438-96c76f3f86d8?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Refractory lining"
+      }
+    ],
+    "team": {
+      "url": "https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "alt": "Corporate team meeting"
+    }
+  },
+  "page_specifics": {
+    "home": {
+      "sections": ["Hero", "Stats", "Industries (Bento)", "Featured Products", "Brands", "Trust/Certifications"],
+      "hero_text": "Forging the Future with 40+ Years of Refractory Excellence."
+    },
+    "products": {
+      "layout": "Sidebar Filter (Left) + Product Grid (Right).",
+      "features": "Search bar, Brand filter, Grade filter (AL70, AL80).",
+      "card_style": "Image top, Title bold, Specs list (Temp, Density) below."
+    },
+    "brands": {
+      "layout": "Grid of cards. Each card features Brand Logo + Description + Key Products.",
+      "brands_list": ["Crown Ceramics", "Divine Cerawool", "CUMI Super Refractories", "Tata Refractories", "Calderys", "Mahakoshal", "IFGL India"]
+    },
+    "contact": {
+      "features": "WhatsApp floating button (Green), Quote Request Form (Detailed), Map."
+    }
+  },
+  "universal_guidelines": [
+    "Do not use 'Inter' for Headings. Use 'Oswald'.",
+    "Do not use gradients for text.",
+    "Use 'sonner' for toasts.",
+    "All interactive elements must have 'data-testid'.",
+    "Use 'lucide-react' for icons.",
+    "Ensure mobile responsiveness (stack grids to 1 col).",
+    "Add 'noise' texture to dark backgrounds for industrial feel."
+  ]
+}
