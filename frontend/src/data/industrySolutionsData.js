@@ -10,7 +10,7 @@ export const industrySolutions = [
     description: "From blast furnace to continuous casting, we provide engineered refractory solutions for every step of steel production. Our products ensure maximum campaign life, reduced downtime, and optimized performance.",
     stats: [
       { value: "200+", label: "Steel Plants Served" },
-      { value: "40+", label: "Years Experience" },
+      { value: "45+", label: "Years Experience" },
       { value: "99.5%", label: "On-Time Delivery" },
       { value: "15%", label: "Average Cost Savings" }
     ],

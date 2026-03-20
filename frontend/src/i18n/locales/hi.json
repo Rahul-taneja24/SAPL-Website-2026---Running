@@ -3,7 +3,7 @@
     "siteName": "Shanker Agencies",
     "siteTagline": "Refractory Engineering Solutions",
     "since": "Since 1980",
-    "yearsExperience": "40+ Years of Excellence",
+    "yearsExperience": "45+ Years of Excellence",
     "loading": "Loading...",
     "readMore": "Read More",
     "learnMore": "Learn More",
@@ -58,7 +58,7 @@
   },
   
   "hero": {
-    "title": "Forging the Future with 40+ Years of Refractory Excellence",
+    "title": "Forging the Future with 45+ Years of Refractory Excellence",
     "subtitle": "India's premier refractory engineering partner. Premium refractories for steel, cement, aluminum & petrochemical industries.",
     "ctaPrimary": "Explore Products",
     "ctaSecondary": "Contact Our Experts",
@@ -166,7 +166,7 @@
     "stats": {
       "title": "By the Numbers",
       "items": [
-        { "value": "40+", "label": "Years Experience" },
+        { "value": "45+", "label": "Years Experience" },
         { "value": "50+", "label": "Countries Served" },
         { "value": "7", "label": "Partner Brands" },
         { "value": "6", "label": "Industries" }
@@ -264,7 +264,7 @@
   
   "seo": {
     "home": {
-      "title": "Shanker Agencies - Refractory Engineering Solutions | 40+ Years Excellence",
+      "title": "Shanker Agencies - Refractory Engineering Solutions | 45+ Years Excellence",
       "description": "India's premier refractory engineering partner since 1980. Premium refractories for steel, cement, aluminum & petrochemical industries. Serving 50+ countries."
     },
     "products": {
@@ -273,7 +273,7 @@
     },
     "industries": {
       "title": "Industry Solutions | Steel, Cement, Aluminum, Glass",
-      "description": "Specialized refractory solutions for steel plants, cement kilns, aluminum smelters, glass furnaces & petrochemical industries. 40+ years of expertise."
+      "description": "Specialized refractory solutions for steel plants, cement kilns, aluminum smelters, glass furnaces & petrochemical industries. 45+ years of expertise."
     },
     "contact": {
       "title": "Contact Us | Refractory Engineering Solutions",
@@ -281,7 +281,7 @@
     },
     "blog": {
       "title": "Blog | Technical Articles & Industry Insights",
-      "description": "Expert articles on refractory selection, installation, maintenance, and industry trends. Learn from 40+ years of experience."
+      "description": "Expert articles on refractory selection, installation, maintenance, and industry trends. Learn from 45+ years of experience."
     }
   },
   

@@ -3,7 +3,7 @@ export const INDUSTRIES_LIST = [
   { id: "steel", name: "Iron & Steel", image: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80", clients: "200+", temp: "1800°C" },
   { id: "cement", name: "Cement", image: "https://images.unsplash.com/photo-1667328931918-b6362ed95c1e?w=1200&q=80", clients: "100+", temp: "1450°C" },
   { id: "aluminum", name: "Aluminum", image: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1200&q=80", clients: "50+", temp: "1200°C" },
-  { id: "petrochemical", name: "Petrochemical", image: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1200&q=80", clients: "40+", temp: "1100°C" },
+  { id: "petrochemical", name: "Petrochemical", image: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1200&q=80", clients: "45+", temp: "1100°C" },
   { id: "glass", name: "Glass", image: "https://images.unsplash.com/photo-1767725185080-5e8bffbfaee9?w=1200&q=80", clients: "30+", temp: "1600°C" },
   { id: "power", name: "Power Generation", image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80", clients: "60+", temp: "1400°C" }
 ];
