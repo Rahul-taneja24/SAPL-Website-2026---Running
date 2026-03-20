@@ -1,3 +1,4 @@
+'use client';
 import React, { useState } from 'react';
 import { ArrowUp, ArrowDown, Edit2, Trash2, Eye } from 'lucide-react';
 

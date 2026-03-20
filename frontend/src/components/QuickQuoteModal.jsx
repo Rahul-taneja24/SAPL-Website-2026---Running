@@ -1,8 +1,9 @@
+'use client';
 import { useState } from "react";
 import { X, Send, CheckCircle, Loader2, ChevronRight, Clock, Shield, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
 
-const API_URL = process.env.REACT_APP_BACKEND_URL;
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const industries = ["Steel", "Cement", "Aluminum", "Petrochemical", "Glass", "Power", "Foundry", "Other"];
 const productCategories = [

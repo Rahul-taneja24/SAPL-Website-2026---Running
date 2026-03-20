@@ -1,8 +1,9 @@
+'use client';
 import { useState, useEffect, useRef } from "react";
-import { Link, useParams } from "react-router-dom";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import { ArrowRight, ChevronRight, Factory, ThermometerSun, Users, Layers, Shield, Flame, Target, Zap, CheckCircle } from "lucide-react";
 import { INDUSTRIES_LIST, getIndustryData, getEquipmentAreas, getRecommendedProducts, getServices } from "../data/industriesData";
-import SEOHead from "../components/SEOHead";
 
 const Industries = () => {
   const { industrySlug } = useParams();
@@ -57,19 +58,7 @@ const Industries = () => {
 
   return (
     <div>
-      <SEOHead
-        title={selectedIndustry
-          ? `${selectedIndustry.name} Refractory Solutions | Shanker Agencies`
-          : "Refractory Solutions by Industry | Steel, Cement, Aluminum, Petrochemical | Shanker Agencies"
-        }
-        description={selectedIndustry
-          ? `Premium refractory products and engineering solutions for ${selectedIndustry.name} industry. Serving ${selectedIndustry.clients} clients with products rated up to ${selectedIndustry.temp}.`
-          : "Industry-specific refractory solutions for Steel Plants, Cement Kilns, Aluminum Smelters, Petrochemical, Glass, and Power Generation. Expert engineering support from India."
-        }
-        keywords="steel plant refractories, cement kiln lining, aluminum smelter refractories, petrochemical refractories, glass furnace refractories, power plant boiler lining"
-        canonical={selectedIndustry ? `/industries/${selectedIndustry.id}` : "/industries"}
-        structuredData={industriesStructuredData}
-      />
+      
 
       {/* Hero Section */}
       <section

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+'use client';
+import Link from "next/link";
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook, Youtube, Globe, Download } from "lucide-react";
 
 const LOGO_URL = "/images/sapl-logo.png";
@@ -10,7 +11,8 @@ const internationalRegions = [
 
 const certifications = ["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018"];
 
-const Footer = ({ region }) => {
+const Footer = () => {
+  const { region } = useApp();
   const currentYear = new Date().getFullYear();
 
   return (

@@ -1,5 +1,7 @@
+'use client';
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import { ArrowRight, ChevronRight, Factory, ThermometerSun, FileText } from "lucide-react";
 import apiService from "../services/api";
 import { BlogListSkeleton } from "../components/LoadingSkeleton";

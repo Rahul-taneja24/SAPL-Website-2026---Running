@@ -1,7 +1,8 @@
+'use client';
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import { Calendar, Clock, ArrowRight, Tag, BookOpen, Search, TrendingUp, Flame, Layers, Wrench } from "lucide-react";
-import SEOHead from "../components/SEOHead";
 
 // ─── DATA ──────────────────────────────────────────────────────────────────────
 
@@ -151,13 +152,7 @@ function Blog() {
 
   return (
     <div className="bg-white">
-      <SEOHead
-        title={pageTitle}
-        description={pageDescription}
-        keywords="refractory blog India, castable installation guide, high alumina brick selection, steel ladle lining guide, ceramic fiber vs IFB, refractory maintenance tips"
-        canonical={articleSlug ? `/blog/${articleSlug}` : "/blog"}
-        structuredData={blogStructuredData}
-      />
+      
 
       {/* ── HERO ────────────────────────────────────────── */}
       <section

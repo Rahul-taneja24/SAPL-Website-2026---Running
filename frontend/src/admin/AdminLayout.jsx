@@ -1,5 +1,7 @@
+'use client';
 import React, { useState, useEffect } from 'react';
-import { Outlet, useLocation, useNavigate, Link } from 'react-router-dom';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import {
     LayoutDashboard,
     FileText,
@@ -20,8 +22,8 @@ import {
 
 const AdminLayout = () => {
     const [sidebarOpen, setSidebarOpen] = useState(true);
-    const location = useLocation();
-    const navigate = useNavigate();
+    
+    const router = useRouter();
     const [user, setUser] = useState({ name: 'Admin User', email: 'admin@shankeragencies.com', role: 'admin' });
     const [notifications, setNotifications] = useState([]);
 
@@ -30,7 +32,7 @@ const AdminLayout = () => {
         if (window.innerWidth < 768) {
             setSidebarOpen(false);
         }
-    }, [location.pathname]);
+    }, [pathname]);
 
     const navItems = [
         { path: '/admin', icon: LayoutDashboard, label: 'Dashboard' },
@@ -46,7 +48,7 @@ const AdminLayout = () => {
     const handleLogout = () => {
         // Add logout logic here
         console.log("Logging out...");
-        navigate('/');
+        router.push('/');
     };
 
     return (
@@ -83,7 +85,7 @@ const AdminLayout = () => {
                     {/* Nav Items */}
                     <nav className="flex-1 overflow-y-auto py-4 px-3 space-y-1">
                         {navItems.map((item) => {
-                            const isActive = location.pathname === item.path || (item.path !== '/admin' && location.pathname.startsWith(item.path));
+                            const isActive = pathname === item.path || (item.path !== '/admin' && pathname.startsWith(item.path));
                             return (
                                 <Link
                                     key={item.path}
@@ -136,7 +138,7 @@ const AdminLayout = () => {
                         </button>
                         <div className="hidden sm:block text-gray-400">/</div>
                         <h1 className="text-lg font-semibold text-gray-800 capitalize">
-                            {location.pathname === '/admin' ? 'Dashboard' : location.pathname.split('/')[2] || 'Dashboard'}
+                            {pathname === '/admin' ? 'Dashboard' : pathname.split('/')[2] || 'Dashboard'}
                         </h1>
                     </div>
 
@@ -163,7 +165,7 @@ const AdminLayout = () => {
 
                 {/* Page Content */}
                 <main className="flex-1 overflow-auto p-4 sm:p-6 lg:p-8">
-                    <Outlet />
+                    {children}
                 </main>
             </div>
         </div>

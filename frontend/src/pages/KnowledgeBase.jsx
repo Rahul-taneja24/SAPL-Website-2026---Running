@@ -1,7 +1,7 @@
+'use client';
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { Search, ChevronRight, BookOpen, Layers, Thermometer, FlaskConical, Download, Phone, CheckCircle, ArrowRight, Flame, Zap, Info, MessageCircle } from "lucide-react";
-import SEOHead from "../components/SEOHead";
 
 // ─── DATA ──────────────────────────────────────────────────────────────────────
 
@@ -92,13 +92,7 @@ const KnowledgeBase = () => {
 
   return (
     <div className="bg-white">
-      <SEOHead
-        title="Refractory Technical Reference | Firebrick Grades AL40–AL90 | Castable Guide | Shanker Agencies"
-        description="Complete refractory technical reference. Compare AL40–AL90 firebrick grades, LCC/ULCC castable types, ceramic fiber insulation, and get application-specific selection guidance for steel, cement, aluminum plants."
-        keywords="firebrick grades AL70 AL80, low cement castable specifications, ceramic fiber blanket guide, refractory selection guide, steel ladle lining, cement kiln refractory"
-        canonical="/knowledge"
-        structuredData={knowledgeStructuredData}
-      />
+      
 
       {/* ── HERO ─────────────────────────────────────────── */}
       <section

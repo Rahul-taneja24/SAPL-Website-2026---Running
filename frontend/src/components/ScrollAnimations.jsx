@@ -1,9 +1,10 @@
+'use client';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { usePathname } from 'next/navigation';
 
 // ScrollRevealManager - IntersectionObserver for reveal animations
 export function ScrollRevealManager() {
-    const location = useLocation();
+    const pathname = usePathname();
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -25,7 +26,7 @@ export function ScrollRevealManager() {
             clearTimeout(timer);
             observer.disconnect();
         };
-    }, [location.pathname]);
+    }, [pathname]);
 
     return null;
 }

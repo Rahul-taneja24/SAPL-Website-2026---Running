@@ -1,5 +1,7 @@
+'use client';
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import {
     ChevronRight, Home, Search, ArrowRight, Thermometer, MessageCircle,
     Phone, Download, CheckCircle, X, Filter, Flame, Shield, Layers,

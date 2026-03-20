@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 
 // Simple rich text area - you can add a proper editor library later

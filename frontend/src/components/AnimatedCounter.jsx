@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useState, useRef } from 'react';
 
 const AnimatedCounter = ({ end, duration = 2000, suffix = '', prefix = '' }) => {

@@ -1,3 +1,4 @@
+'use client';
 // AdminDashboard.jsx — stub placeholder
 // Replace this file with your original src/pages/admin/AdminDashboard.jsx
 export default function AdminDashboard({ token, onLogout }) {

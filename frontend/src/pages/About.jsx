@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+'use client';
+import Link from "next/link";
 import { Award, Users, Target, Globe, CheckCircle, ArrowRight, Handshake, TrendingUp, MapPin, Phone, Mail, Building, Shield, Zap, Factory, Settings, Layers, Trophy, Globe2, Microscope, Rocket } from "lucide-react";
 import AnimatedCounter from "../components/AnimatedCounter";
-import SEOHead from "../components/SEOHead";
 
 
 
@@ -93,13 +93,7 @@ const About = () => {
 
   return (
     <div className="bg-white overflow-hidden">
-      <SEOHead
-        title="About Shanker Agencies | 40+ Years Refractory Excellence | SAPL Delhi"
-        description="Shanker Agencies Private Limited — India's trusted refractory engineering partner since 1980. ISO certified. Strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL. 500+ clients, 50+ countries."
-        keywords="about shanker agencies, SAPL Delhi refractory, refractory company India history, ISO certified refractory supplier, CUMI strategic supply partner"
-        canonical="/about"
-        structuredData={aboutStructuredData}
-      />
+      
 
       {/* ── HERO ───────────────────────────────────────── */}
       <section

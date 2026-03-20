@@ -1,7 +1,8 @@
+'use client';
+import { useApp } from '@/context/AppContext';
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle, Globe, Award, Users, Loader2, ChevronDown, Zap, Shield } from "lucide-react";
 import { toast } from "sonner";
-import SEOHead from "../components/SEOHead";
 
 
 
@@ -70,7 +71,8 @@ function FAQItem({ faq, isOpen, onToggle }) {
 
 // ─── MAIN COMPONENT ────────────────────────────────────────────────────────────
 
-const Contact = ({ region }) => {
+const Contact = () => {
+  const { region } = useApp();
   const [formType, setFormType] = useState("simple");
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -201,15 +203,7 @@ const Contact = ({ region }) => {
 
   return (
     <div className="bg-white">
-      <SEOHead
-        title="Contact Shanker Agencies | Refractory Quotes & Technical Support | Delhi"
-        description="Contact Shanker Agencies for refractory products, technical consultation, and competitive quotes. Call +91 9810205154. 4-hour response. No MOQ. Serving 50+ countries from Delhi."
-        keywords="contact shanker agencies, refractory supplier contact Delhi, refractory quote India, technical support refractories, CUMI partner contact, refractory supplier Shahdara"
-        canonical="/contact"
-        structuredData={contactStructuredData}
-        includeLocalBusiness={true}
-        breadcrumbs={[{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact' }]}
-      />
+      
 
       {/* ── HERO ─────────────────────────────────────────── */}
       <section

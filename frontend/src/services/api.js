@@ -1,5 +1,5 @@
 // API Service Layer for CMS Integration
-const API_BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8001';
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8001';
 
 class APIService {
     async request(endpoint, options = {}) {

@@ -1,14 +1,10 @@
-import { Link } from 'react-router-dom';
-import SEOHead from '../components/SEOHead';
+'use client';
+import Link from 'next/link';
 
 const PrivacyPolicy = () => {
   return (
     <div>
-      <SEOHead
-        title="Privacy Policy | Shanker Agencies - Refractory Solutions"
-        description="Privacy Policy for Shanker Agencies Private Limited. Learn how we collect, use, and protect your personal information."
-        canonical="/privacy"
-      />
+      
 
       {/* Hero Section */}
       <section className="py-16 px-4 gradient-dark industrial-texture">

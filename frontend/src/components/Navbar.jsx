@@ -1,5 +1,8 @@
+'use client';
 import { useState, useEffect, useRef } from "react";
-import { Link, useLocation } from "react-router-dom";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useApp } from '@/context/AppContext';
 import { Menu, X, ChevronDown, Globe, Phone, Mail, Zap, Languages, ArrowRight, Flame, Layers, Wrench, Package } from "lucide-react";
 
 
@@ -74,7 +77,11 @@ const languages = [
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
 
-const Navbar = ({ region, onRegionChange, onQuoteClick }) => {
+const Navbar = () => {
+  const pathname = usePathname();
+  const { region, handleRegionChange, setShowQuoteModal } = useApp();
+  const onRegionChange = handleRegionChange;
+  const onQuoteClick = () => setShowQuoteModal(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMega, setActiveMega] = useState(null);
   const [mobileExpanded, setMobileExpanded] = useState(null);
@@ -82,7 +89,7 @@ const Navbar = ({ region, onRegionChange, onQuoteClick }) => {
   const [currentLang, setCurrentLang] = useState("en");
   const [scrolled, setScrolled] = useState(false);
   const megaRef = useRef(null);
-  const location = useLocation();
+  
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -94,7 +101,7 @@ const Navbar = ({ region, onRegionChange, onQuoteClick }) => {
   useEffect(() => {
     setActiveMega(null);
     setMobileMenuOpen(false);
-  }, [location.pathname]);
+  }, [pathname]);
 
   // Close on outside click
   useEffect(() => {
@@ -118,7 +125,7 @@ const Navbar = ({ region, onRegionChange, onQuoteClick }) => {
   };
 
   const isActive = (path) =>
-    path === "/" ? location.pathname === "/" : location.pathname.startsWith(path);
+    path === "/" ? pathname === "/" : pathname.startsWith(path);
 
   return (
     <header ref={megaRef} className={`sticky top-0 z-50 transition-all duration-300 ${scrolled ? "navbar-scrolled" : ""}`}>

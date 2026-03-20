@@ -1,7 +1,8 @@
+'use client';
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import { ArrowRight, ExternalLink, ChevronRight, ChevronLeft, Package, Factory, Award, Globe, Shield, CheckCircle, Phone, MessageCircle, Flame, Layers, Thermometer, Zap, Home } from "lucide-react";
-import SEOHead from "../components/SEOHead";
 
 // ─── DATA ──────────────────────────────────────────────────────────────────────
 
@@ -401,13 +402,7 @@ function Brands() {
 
   return (
     <div className="bg-white">
-      <SEOHead
-        title={brand ? `${brand.name} Refractories | Strategic Supply Partner | Shanker Agencies` : "Strategic Supply Partner | CUMI, Calderys, TRL Krosaki, IFGL | Shanker Agencies"}
-        description={brand ? brand.desc : "Shanker Agencies is the strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool, and Crown Ceramics refractory products in India. Genuine products with full technical support."}
-        keywords="CUMI refractories partner Delhi, Calderys supplier India, TRL Krosaki supplier, IFGL flow control, Divine Cerawool ceramic fiber, refractory strategic supply partner India"
-        canonical={brand ? `/brands/${brand.id}` : "/brands"}
-        structuredData={brandsStructuredData}
-      />
+      
 
       {/* ── HERO ── */}
       <section

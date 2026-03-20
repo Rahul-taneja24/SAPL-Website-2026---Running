@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 
 const PHONE = "919810205154";

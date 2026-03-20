@@ -1,3 +1,4 @@
+'use client';
 // AdminLogin.jsx — stub placeholder
 // Replace this file with your original src/pages/admin/AdminLogin.jsx
 export default function AdminLogin({ onLogin }) {

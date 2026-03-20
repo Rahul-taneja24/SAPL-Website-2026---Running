@@ -65,7 +65,7 @@ export const HERO_GRADIENT = "linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%
 
 // Company Statistics (Corrected - established 1980)
 export const COMPANY_STATS = [
-  { value: "40+", label: "Years of Excellence", subtext: "Since 1980" },
+  { value: "45+", label: "Years of Excellence", subtext: "Since 1980" },
   { value: "500+", label: "Industrial Clients", subtext: "Worldwide" },
   { value: "50+", label: "Countries Served", subtext: "Global Reach" },
   { value: "24/7", label: "Technical Support", subtext: "Always Available" }

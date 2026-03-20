@@ -1,6 +1,7 @@
-import { useParams, Link } from "react-router-dom";
+'use client';
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import { ChevronRight, Home, CheckCircle, ArrowRight, Phone, MessageCircle, Factory, Flame, Shield, Clock, Award, Zap, Target, Globe, Download } from "lucide-react";
-import SEOHead from "../components/SEOHead";
 import { getIndustrySolution, getAllIndustrySolutions } from "../data/industrySolutionsData";
 
 // ─── STAT CARD ─────────────────────────────────────────────────────────────────
@@ -141,13 +142,7 @@ function IndustrySolutions() {
 
     return (
       <div className="bg-white">
-        <SEOHead
-          title="Industry Solutions | Steel, Cement, Aluminum, Glass Refractories | Shanker Agencies"
-          description="Specialized refractory solutions for Steel, Cement, Aluminum, Glass, Petrochemical, and Power industries. 40+ years of engineering expertise across 200+ plants."
-          keywords="steel plant refractories, cement kiln lining, aluminum furnace refractory, glass melting tank, petrochemical furnace insulation, power plant refractories India"
-          canonical="/solutions"
-          structuredData={overviewStructuredData}
-        />
+        
 
         {/* Hero */}
         <section
@@ -311,10 +306,7 @@ function IndustrySolutions() {
 
   return (
     <div className="bg-white">
-      <SEOHead
-        title={`${industry.name} | Refractory Solutions | Shanker Agencies`}
-        description={`${industry.description} Expert refractory solutions for ${industry.name.replace(" Solutions", "").toLowerCase()} applications since 1980.`}
-        keywords={`${industry.name.toLowerCase()}, refractory solutions, ${industry.applications.map((a) => a.name.toLowerCase()).join(", ")}, industrial refractories India`}
+       a.name.toLowerCase()).join(", ")}, industrial refractories India`}
         canonical={`/solutions/${industry.slug}`}
         structuredData={industryStructuredData}
       />

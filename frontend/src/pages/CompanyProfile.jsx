@@ -1,3 +1,4 @@
+'use client';
 import { useState } from "react";
 import SEOHead from "../components/SEOHead";
 import { Download, Phone, Mail, MapPin, Award, Shield, Globe, Building2, CheckCircle, Factory, Flame, Users, Target, Loader2, MessageCircle } from "lucide-react";

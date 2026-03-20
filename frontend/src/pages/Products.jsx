@@ -1,11 +1,13 @@
+'use client';
+import { useApp } from '@/context/AppContext';
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import Link from "next/link";
+import { useParams } from "next/navigation";
 import {
   ChevronRight, Home, Search, ArrowRight, Thermometer, MessageCircle,
   Phone, Download, CheckCircle, X, Filter, Flame, Shield, Layers,
   Zap, Star, Package, Info, Award, Wrench, BookOpen, BarChart3
 } from "lucide-react";
-import SEOHead from "../components/SEOHead";
 
 /* ─── CURATED IMAGE MAP ─────────────────────────────────────────────────── */
 const IMG = {
@@ -966,11 +968,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
   const meta = CAT_META[categorySlug] || CAT_META["shaped-refractories"];
   return (
     <div className="bg-white">
-      <SEOHead
-        title={`${product.name} | ${category.name} | Shanker Agencies`}
-        description={product.shortDesc}
-        canonical={`/products/${categorySlug}/${product.id}`}
-      />
+      
 
       {/* Hero */}
       <section className="relative py-16 px-4"
@@ -1271,11 +1269,7 @@ function CategoryPage({ category, categorySlug }) {
   const Icon = meta.icon;
   return (
     <div className="bg-white">
-      <SEOHead
-        title={`${category.name} | Technical Specifications | Shanker Agencies`}
-        description={category.desc}
-        canonical={`/products/${categorySlug}`}
-      />
+      
 
       {/* ── Category Hero — full bleed with real background image ── */}
       <section className="relative overflow-hidden"
@@ -1412,11 +1406,7 @@ function OverviewPage() {
 
   return (
     <div className="bg-white">
-      <SEOHead
-        title="Refractory Products Catalog | Complete Specifications | Shanker Agencies"
-        description="Browse India's most complete refractory catalog — shaped bricks, castables, flow control, ceramic fiber, acid proofing. CUMI, Calderys, TRL Krosaki, IFGL. Technical grade tables."
-        canonical="/products"
-      />
+      
 
       {/* Hero */}
       <section className="relative overflow-hidden"
@@ -1646,7 +1636,8 @@ function OverviewPage() {
 }
 
 /* ─── ROUTER ──────────────────────────────────────────────────────────── */
-function Products({ region }) {
+function Products() {
+  const { region } = useApp();
   const { categorySlug, productId } = useParams();
   const category = categorySlug ? DATA[categorySlug] : null;
 

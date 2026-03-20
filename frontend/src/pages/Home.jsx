@@ -1,5 +1,7 @@
+'use client';
+import { useApp } from '@/context/AppContext';
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import {
   ArrowRight, Factory, Award, Globe, ChevronRight,
   Zap, Shield, Package, CheckCircle,
@@ -7,7 +9,6 @@ import {
   ChevronDown, Star, Search
 } from "lucide-react";
 import AnimatedCounter from "../components/AnimatedCounter";
-import SEOHead from "../components/SEOHead";
 import { HeroParticles } from "../components/ScrollAnimations";
 import { IMAGES, PRODUCT_CATEGORIES } from "../data/imagesData";
 
@@ -56,7 +57,9 @@ const testimonials = [
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
 
-const Home = ({ region, onQuoteClick }) => {
+const Home = () => {
+  const { region, setShowQuoteModal } = useApp();
+  const onQuoteClick = () => setShowQuoteModal(true);
   const [searchQuery, setSearchQuery] = useState("");
   const [activeTestimonial, setActive] = useState(0);
 

@@ -1,14 +1,10 @@
-import { Link } from 'react-router-dom';
-import SEOHead from '../components/SEOHead';
+'use client';
+import Link from 'next/link';
 
 const TermsOfService = () => {
   return (
     <div>
-      <SEOHead
-        title="Terms of Service | Shanker Agencies - Refractory Solutions"
-        description="Terms and Conditions for using Shanker Agencies website and services. Read our terms of service for refractory product purchases."
-        canonical="/terms"
-      />
+      
 
       {/* Hero Section */}
       <section className="py-16 px-4 gradient-dark industrial-texture">
