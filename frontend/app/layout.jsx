@@ -5,8 +5,7 @@ import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { ScrollRevealManager, ScrollProgressBar } from '@/components/ScrollAnimations';
-import '../src/App.css';
-import '../src/index.css';
+import './globals.css';
 
 export const metadata = {
   metadataBase: new URL('https://www.shankeragencies.com'),
