@@ -162,7 +162,7 @@ function IndustrySolutions() {
               <span className="text-shimmer">YOUR INDUSTRY</span>
             </h1>
             <p className="text-gray-300 max-w-2xl text-lg leading-relaxed mb-8">
-              Specialized refractory solutions tailored to the unique thermal, chemical, and mechanical demands of each industry. 40+ years of expertise, 600+ plants served.
+              Specialized refractory solutions tailored to the unique thermal, chemical, and mechanical demands of each industry. 45+ years of expertise, 600+ plants served.
             </p>
 
             {/* Industry quick links */}
@@ -221,7 +221,7 @@ function IndustrySolutions() {
                   Generic refractory selection is one of the most common causes of premature lining failure. Each industry imposes unique challenges — a steel ladle sees molten metal at 1650°C with aggressive slag attack; a cement kiln deals with alkali cycling at 1450°C; a glass furnace requires near-zero porosity to prevent glass contamination.
                 </p>
                 <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                  Our engineers have spent 40+ years understanding these nuances. When you consult us, you're not just getting a product catalogue — you're getting application-specific expertise that helps you avoid costly mistakes.
+                  Our engineers have spent 45+ years understanding these nuances. When you consult us, you're not just getting a product catalogue — you're getting application-specific expertise that helps you avoid costly mistakes.
                 </p>
                 <Link
                   href="/contact"
@@ -235,7 +235,7 @@ function IndustrySolutions() {
                   { icon: Flame, label: "Temperature Range", value: "Up to 1850°C", color: "#F97316" },
                   { icon: Factory, label: "Industries Covered", value: "6 Major Sectors", color: "#3B82F6" },
                   { icon: CheckCircle, label: "Plants Served", value: "600+ Globally", color: "#10B981" },
-                  { icon: Clock, label: "Years of Experience", value: "40+ Years", color: "#8B5CF6" },
+                  { icon: Clock, label: "Years of Experience", value: "45+ Years", color: "#8B5CF6" },
                 ].map(({ icon: Icon, label, value, color }) => (
                   <div key={label} className="bg-white border border-gray-200 rounded-2xl p-5 text-center shadow-sm">
                     <div className="w-10 h-10 rounded-xl flex items-center justify-center mx-auto mb-3" style={{ backgroundColor: color + "18" }}>

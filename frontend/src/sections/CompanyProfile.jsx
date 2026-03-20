@@ -143,14 +143,14 @@ function CompanyProfile() {
               <div className="p-6 text-white">
                 <p className="font-oswald text-base sm:text-xl font-bold mb-1">YOUR TRUSTED</p>
                 <p className="font-oswald text-2xl sm:text-4xl font-bold text-shimmer">REFRACTORY PARTNER</p>
-                <p className="text-xs sm:text-sm mt-2 opacity-85">40+ Years · 500+ Clients · 50+ Countries</p>
+                <p className="text-xs sm:text-sm mt-2 opacity-85">45+ Years · 500+ Clients · 50+ Countries</p>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6">
             {[
-              { icon: Award, value: "40+", label: "Years", from: "#1E3A5F", to: "#3B82F6" },
+              { icon: Award, value: "45+", label: "Years", from: "#1E3A5F", to: "#3B82F6" },
               { icon: Building2, value: "500+", label: "Clients", from: "#F97316", to: "#FB923C" },
               { icon: Globe, value: "50+", label: "Countries", from: "#16a34a", to: "#22c55e" },
               { icon: Users, value: "7+", label: "Partners", from: "#7c3aed", to: "#a78bfa" },
@@ -166,10 +166,10 @@ function CompanyProfile() {
           <div className="mb-5">
             <h2 className="font-oswald text-lg font-bold text-[#1E3A5F] border-l-4 border-[#F97316] pl-3 mb-3">ABOUT US</h2>
             <p className="text-gray-700 text-sm leading-relaxed mb-2">
-              <strong className="text-[#1E3A5F]">Shanker Agencies Private Limited (SAPL)</strong> is India's premier refractory engineering partner, established in New Delhi in 1980. For over four decades we have delivered world-class refractory products and technical services to steel, cement, aluminum, glass, petrochemical, and power industries across India and 50+ countries.
+              <strong className="text-[#1E3A5F]">Shanker Agencies Private Limited (SAPL)</strong> is India's premier refractory engineering partner, established in New Delhi in 1980. For over 45 years we have delivered world-class refractory products and technical services to steel, cement, aluminum, glass, petrochemical, and power industries across India and 50+ countries.
             </p>
             <p className="text-gray-700 text-sm leading-relaxed">
-              As strategic supply partners for <strong>CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool, and Crown Ceramics</strong>, we combine the strength of India's leading refractory brands with 40 years of on-site application engineering expertise.
+              As strategic supply partners for <strong>CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool, and Crown Ceramics</strong>, we combine the strength of India's leading refractory brands with 45 years of on-site application engineering expertise.
             </p>
           </div>
 
@@ -315,7 +315,7 @@ function CompanyProfile() {
             <div className="glass-card p-5 bg-gray-50 rounded-xl">
               <h3 className="font-oswald text-base font-bold text-[#1E3A5F] mb-4 flex items-center gap-2"><Award size={16} className="text-[#F97316]" /> WHY CHOOSE SAPL?</h3>
               <ul className="space-y-2">
-                {["40+ years of refractory industry experience", "Complete product range under one roof", "Strategic partners for 7+ global brands", "Original manufacturer test certificates (MTC)", "On-site application engineering support", "Competitive pricing with quality assurance", "4-hour quote response for standard products", "Export to 50+ countries with full documentation"].map(item => (
+                {["45+ years of refractory industry experience", "Complete product range under one roof", "Strategic partners for 7+ global brands", "Original manufacturer test certificates (MTC)", "On-site application engineering support", "Competitive pricing with quality assurance", "4-hour quote response for standard products", "Export to 50+ countries with full documentation"].map(item => (
                   <li key={item} className="flex items-start gap-2"><CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={13} /><span className="text-xs text-gray-700">{item}</span></li>
                 ))}
               </ul>

@@ -136,7 +136,7 @@ const Industries = () => {
                 <div>
                   <div className="flex items-center gap-3 mb-4">
                     <Factory className="text-[#F97316]" size={32} />
-                    <span className="text-sm text-muted-foreground uppercase tracking-wider">40+ Years of Experience</span>
+                    <span className="text-sm text-muted-foreground uppercase tracking-wider">45+ Years of Experience</span>
                   </div>
                   <h2 className="font-oswald text-4xl font-bold mb-3">{selectedIndustry.name} Industry Solutions</h2>
                   <p className="text-muted-foreground max-w-2xl">{industryData?.description}</p>

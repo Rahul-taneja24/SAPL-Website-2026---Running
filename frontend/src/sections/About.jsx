@@ -122,14 +122,14 @@ const About = () => {
               Since 1980 · Shahdara, New Delhi
             </span>
             <h1 id="about-hero-heading" className="font-oswald text-5xl md:text-7xl font-bold text-white leading-none mb-6">
-              40+ YEARS OF
+              45+ YEARS OF
               <br />
               <span className="text-shimmer">REFRACTORY</span>
               <br />
               EXCELLENCE
             </h1>
             <p className="text-gray-300 text-lg max-w-2xl leading-relaxed">
-              What began as a small trading company in Delhi has grown into one of India's most trusted refractory engineering partners — built one client relationship at a time, over four decades.
+              What began as a small trading company in Delhi has grown into one of India's most trusted refractory engineering partners — built one client relationship at a time, over 45 years.
             </p>
           </div>
         </div>
@@ -143,7 +143,7 @@ const About = () => {
       >
         <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
-            { value: "40", suffix: "+", label: "Years of Excellence", sub: "Since 1980", icon: Award },
+            { value: "45", suffix: "+", label: "Years of Excellence", sub: "Since 1980", icon: Award },
             { value: "500", suffix: "+", label: "Industrial Clients", sub: "Worldwide", icon: Users },
             { value: "50", suffix: "+", label: "Countries Served", sub: "Global Reach", icon: Globe },
             { value: "7", suffix: "+", label: "Partner Brands", sub: "Strategic Supply Partner", icon: Building },
@@ -166,7 +166,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-[#3B82F6] text-xs font-semibold tracking-widest uppercase mb-4">
-                Our Story
+                45+ Years of Trust
               </span>
               <h2 id="story-heading" className="font-oswald text-4xl md:text-5xl font-bold mb-8 text-[#1E3A5F] leading-tight">
                 FROM HUMBLE
@@ -314,7 +314,7 @@ const About = () => {
               Our Journey
             </span>
             <h2 id="timeline-heading" className="font-oswald text-3xl md:text-4xl font-bold text-white">
-              44 YEARS OF MILESTONES
+              45 YEARS OF MILESTONES
             </h2>
           </div>
 
@@ -449,7 +449,7 @@ const About = () => {
             REFRACTORY REQUIREMENTS
           </h2>
           <p className="text-white/85 mb-10 text-lg max-w-xl mx-auto">
-            40+ years of expertise, 7+ premium brands, and an engineering-first approach. Let's discuss your application.
+            45+ years of expertise, 7+ premium brands, and an engineering-first approach. Let's discuss your application.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link

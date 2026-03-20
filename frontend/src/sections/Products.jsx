@@ -125,7 +125,7 @@ const DATA = {
           "Follow controlled dry-out schedule: 20°C/hr to 110°C, hold 12 hrs, then 30°C/hr to operating temp",
           "Apply expansion allowances: 6–8 mm per metre for silica-bonded grades, 8–10 mm for Al₂O₃ >70%",
         ],
-        whyChoose: "With 40+ years of experience specifying refractories across India's steel and cement sectors, Shanker Agencies stocks all six HA grades ready-to-ship from Delhi. We supply CUMI, Calderys, TRL Krosaki and IFGL variants — matching the exact grade to your furnace design and budget.",
+        whyChoose: "With 45+ years of experience specifying refractories across India's steel and cement sectors, Shanker Agencies stocks all six HA grades ready-to-ship from Delhi. We supply CUMI, Calderys, TRL Krosaki and IFGL variants — matching the exact grade to your furnace design and budget.",
       },
       {
         id: "fireclay-bricks",

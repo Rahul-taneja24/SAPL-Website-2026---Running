@@ -413,7 +413,7 @@ const KnowledgeBase = () => {
             <div>
               <div className="mb-8">
                 <h2 className="font-oswald text-3xl font-bold text-[#1E3A5F] mb-2">Equipment Application Guides</h2>
-                <p className="text-gray-500 text-sm max-w-2xl">Quick-reference guides for the most common refractory applications. Each guide covers recommended materials, operating temperatures, and engineering tips from our 40+ years of experience.</p>
+                <p className="text-gray-500 text-sm max-w-2xl">Quick-reference guides for the most common refractory applications. Each guide covers recommended materials, operating temperatures, and engineering tips from our 45+ years of experience.</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-5 stagger-children">
