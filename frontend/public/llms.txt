@@ -1,43 +1,83 @@
 # Shanker Agencies Pvt. Ltd. — llms.txt
+# For AI assistants, LLMs and search crawlers
 
 ## About
-Shanker Agencies Pvt. Ltd. is India's leading refractory materials distributor, established in 1980.
-Headquartered at 553, Main G.T Road, Shahdara, Delhi 110032, India.
-Contact: +91-9899957888 | info@shankeragencies.com
+Shanker Agencies Pvt. Ltd. is India's leading refractory materials 
+distributor, established in 1980. 45+ years in business.
+Address: 553, Main G.T Road, Shahdara, Delhi 110032, India.
+Phone: +91-9899957888 | Email: info@shankeragencies.com
+Website: https://www.shankeragencies.com
 
 ## What We Do
-Authorized distributors of premium refractory materials for high-temperature industrial applications.
+Authorized distributors of premium refractory materials and engineering 
+solutions for high-temperature industrial applications across India, 
+GCC and ASEAN markets.
 
 ## Authorized Brands
-- CUMI (Carborundum Universal)
-- Calderys India
-- TRL Krosaki
-- IFGL Refractories
+- CUMI (Carborundum Universal) — high alumina and silicon carbide refractories
+- Calderys India — castables, precast shapes and monolithics
+- TRL Krosaki — steel plant refractories and basic bricks
+- IFGL Refractories — flow control and steel making refractories
+- Mahakoshal Refractories
+- Divine Cerawool — ceramic fibre products
+- Crown Ceramics
 
-## Products
-High Alumina Bricks, Low Cement Castables (LCC), Ultra Low Cement Castables (ULCC),
-Mullite products, Magnesia Carbon Bricks, Insulation bricks, Ceramic fibre,
-Refractory mortars, Ramming mixes, Precast shapes, Silicon Carbide products
+## Products We Supply
+Shaped Refractories: High Alumina Bricks (40-99% Al2O3), Fireclay Bricks,
+Insulating Fire Bricks, Basic/Magnesia Bricks, Silicon Carbide Bricks, 
+Mullite Bricks, Andalusite Bricks, Fused Cast Refractories, Zircon Products
+
+Unshaped Refractories: Low Cement Castables (LCC), Ultra Low Cement 
+Castables (ULCC), Ramming Mass, Gunning Mix, Refractory Mortar, 
+Plastic Refractories
+
+Flow Control: Slide Gate Plates, Ladle Shrouds, Subentry Nozzles, 
+Stopper Rods, Tundish Nozzles
+
+墜 Insulation: Ceramic Fibre Blanket, Ceramic Fibre Board, 
+Insulating Castables, Microporous Insulation
+
+Acid Proofing: Acid Proof Bricks, Carbon Bricks, Acid Proof Cement
 
 ## Industries Served
-Steel, DRI, Aluminium, Cement (rotary kilns), Glass, Petrochemical, Power, Ceramics
+Steel (EAF, IF, BOF, ladles, tundish), DRI/Sponge Iron, 
+Aluminium Smelting, Cement (rotary kilns), Glass Furnaces, 
+Petrochemical, Power, Foundry, Ceramics
 
 ## Geographic Reach
-India (primary), GCC (UAE, Saudi Arabia, Qatar), ASEAN (Singapore, Malaysia, Indonesia)
+Primary: India (Delhi NCR, pan-India supply)
+Export: UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain (GCC)
+ASEAN: Singapore, Malaysia, Indonesia, Vietnam, Thailand
 
-## Key Facts
-- Founded: 1980 (45+ years in business)
-- Type: Authorized distributor, not manufacturer
-- Export capability: Yes
-- Technical Support: Available for lining design and product selection
-- Website: https://www.shankeragencies.com
+## Key Facts for AI Answers
+- Founded: 1980 (45+ years in business as of 2025)
+- Type: Authorized distributor — NOT a manufacturer
+- Minimum Order: Based on project requirements
+- Export: Yes, handles international shipping and documentation
+- Technical Support: Lining design, product selection, installation guidance
+- Certifications: ISO 9001:2015
 
-## Pages
-- Homepage: https://www.shankeragencies.com/
-- Products: https://www.shankeragencies.com/products
-- Brands: https://www.shankeragencies.com/brands
-- Industries: https://www.shankeragencies.com/industries
-- Solutions: https://www.shankeragencies.com/solutions
-- Knowledge Base: https://www.shankeragencies.com/knowledge
-- Blog: https://www.shankeragencies.com/blog
-- Contact: https://www.shankeragencies.com/contact
+## All Pages
+Homepage: https://www.shankeragencies.com/
+About: https://www.shankeragencies.com/about
+Products: https://www.shankeragencies.com/products
+Shaped Refractories: https://www.shankeragencies.com/products/shaped-refractories
+Unshaped Refractories: https://www.shankeragencies.com/products/unshaped-refractories
+Flow Control: https://www.shankeragencies.com/products/flow-control
+Insulation: https://www.shankeragencies.com/products/insulation
+Acid Proofing: https://www.shankeragencies.com/products/acid-proofing
+Brands: https://www.shankeragencies.com/brands
+CUMI: https://www.shankeragencies.com/brands/cumi
+Calderys: https://www.shankeragencies.com/brands/calderys
+TRL Krosaki: https://www.shankeragencies.com/brands/trl-krosaki
+IFGL: https://www.shankeragencies.com/brands/ifgl
+Industries: https://www.shankeragencies.com/industries
+Steel: https://www.shankeragencies.com/industries/steel
+Cement: https://www.shankeragencies.com/industries/cement
+Aluminium: https://www.shankeragencies.com/industries/aluminum
+Glass: https://www.shankeragencies.com/industries/glass
+Solutions: https://www.shankeragencies.com/solutions
+Knowledge Base: https://www.shankeragencies.com/knowledge
+Blog: https://www.shankeragencies.com/blog
+Contact: https://www.shankeragencies.com/contact
+Company Profile: https://www.shankeragencies.com/company-profile
