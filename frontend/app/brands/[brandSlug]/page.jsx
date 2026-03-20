@@ -1,4 +1,4 @@
-import Brands from '@/pages/Brands';
+import Brands from '@/sections/Brands';
 export async function generateMetadata({ params }) {
   const brand = params.brandSlug.toUpperCase();
   return {

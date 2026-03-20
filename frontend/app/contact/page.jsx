@@ -1,4 +1,4 @@
-import Contact from '@/pages/Contact';
+import Contact from '@/sections/Contact';
 export const metadata = {
   title: 'Contact Us | Get a Quote',
   description: 'Contact Shanker Agencies for refractory product enquiries, quotes and technical support. Call +91-9899957888 or email info@shankeragencies.com.',

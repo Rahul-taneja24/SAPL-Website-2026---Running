@@ -1,7 +1,7 @@
 'use client';
 import { useApp } from '@/context/AppContext';
-import AdminDashboard from '@/pages/admin/Admindashboard';
-import AdminLogin from '@/pages/admin/Adminlog';
+import AdminDashboard from '@/sections/admin/Admindashboard';
+import AdminLogin from '@/sections/admin/Adminlog';
 export default function AdminPage() {
   const { adminToken, handleAdminLogin, handleAdminLogout } = useApp();
   return adminToken

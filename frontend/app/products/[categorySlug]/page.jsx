@@ -1,4 +1,4 @@
-import Products from '@/pages/Products';
+import Products from '@/sections/Products';
 export async function generateMetadata({ params }) {
   const title = params.categorySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   return {

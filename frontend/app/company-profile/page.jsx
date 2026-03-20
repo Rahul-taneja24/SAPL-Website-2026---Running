@@ -1,4 +1,4 @@
-import CompanyProfile from '@/pages/CompanyProfile';
+import CompanyProfile from '@/sections/CompanyProfile';
 export const metadata = {
   title: 'Company Profile | Shanker Agencies Pvt. Ltd.',
   description: 'View the complete company profile of Shanker Agencies Pvt. Ltd. — 45 years of refractory excellence.',

@@ -1,4 +1,4 @@
-import Blog from '@/pages/Blog';
+import Blog from '@/sections/Blog';
 export async function generateMetadata({ params }) {
   const title = params.articleSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   return {

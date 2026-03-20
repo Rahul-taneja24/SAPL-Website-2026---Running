@@ -5,6 +5,8 @@ import { Download, Phone, Mail, MapPin, Award, Shield, Globe, Building2, CheckCi
 
 
 
+const LOGO_URL = "/images/sapl-logo.png";
+
 const IMAGES = {
   hero: "https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=1200&q=80",
   steel: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80",

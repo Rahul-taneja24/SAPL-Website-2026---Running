@@ -1,4 +1,4 @@
-import IndustrySolutions from '@/pages/IndustrySolutions';
+import IndustrySolutions from '@/sections/IndustrySolutions';
 export async function generateMetadata({ params }) {
   const industry = params.industrySlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   return {

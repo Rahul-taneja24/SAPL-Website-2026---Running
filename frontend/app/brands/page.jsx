@@ -1,4 +1,4 @@
-import Brands from '@/pages/Brands';
+import Brands from '@/sections/Brands';
 export const metadata = {
   title: 'Our Brands | CUMI, Calderys, TRL Krosaki, IFGL',
   description: "Shanker Agencies is an authorized distributor for India's leading refractory brands including CUMI, Calderys, TRL Krosaki and IFGL.",

@@ -1,4 +1,4 @@
-import Blog from '@/pages/Blog';
+import Blog from '@/sections/Blog';
 export const metadata = {
   title: 'Blog | Refractory Industry Insights & News',
   description: "Latest news, technical insights and industry updates from Shanker Agencies — India's leading refractory engineering partner.",
