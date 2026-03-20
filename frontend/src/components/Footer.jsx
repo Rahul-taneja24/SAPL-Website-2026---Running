@@ -1,5 +1,7 @@
 'use client';
 import Link from "next/link";
+import { useApp } from '@/context/AppContext';
+
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook, Youtube, Globe, Download } from "lucide-react";
 
 const LOGO_URL = "/images/sapl-logo.png";
@@ -24,7 +26,7 @@ const Footer = () => {
 
           {/* Col 1 — Company Info */}
           <div>
-            <Link to="/" aria-label="Shanker Agencies Home" className="flex items-center gap-3 mb-5">
+            <Link href="/" aria-label="Shanker Agencies Home" className="flex items-center gap-3 mb-5">
               <img src={LOGO_URL} alt="SAPL" className="h-12" loading="lazy" />
               <div>
                 <p className="font-oswald text-sm font-bold text-white leading-tight">SHANKER AGENCIES</p>
@@ -64,7 +66,7 @@ const Footer = () => {
                 { name: "Acid Proofing", path: "/products/acid-proofing" },
               ].map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path} className="text-gray-400 hover:text-[#F97316] transition-colors text-sm">
+                  <Link href={link.path} className="text-gray-400 hover:text-[#F97316] transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -80,7 +82,7 @@ const Footer = () => {
                 { name: "Contact Us", path: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
-                  <Link to={link.path} className="text-gray-400 hover:text-[#F97316] transition-colors text-sm">
+                  <Link href={link.path} className="text-gray-400 hover:text-[#F97316] transition-colors text-sm">
                     {link.name}
                   </Link>
                 </li>
@@ -99,7 +101,8 @@ const Footer = () => {
 
             {/* Download Company Profile */}
             <Link
-              to="/company-profile"
+              href="/company-profile"
+
               className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-5 py-3 rounded-xl font-bold text-sm transition-colors inline-flex"
             >
               <Download size={16} aria-hidden="true" />
@@ -176,8 +179,8 @@ const Footer = () => {
             © {currentYear} Shanker Agencies Pvt. Ltd. All rights reserved. <span className="hidden md:inline">│</span><span className="md:hidden"><br /></span> CIN: U51909DL1980PTC010XXX
           </p>
           <nav className="flex gap-5 text-xs text-gray-500" aria-label="Legal links">
-            <Link to="/privacy" className="hover:text-[#F97316] transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-[#F97316] transition-colors">Terms of Service</Link>
+            <Link href="/privacy" className="hover:text-[#F97316] transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-[#F97316] transition-colors">Terms of Service</Link>
             <a href="/sitemap.xml" className="hover:text-[#F97316] transition-colors">Sitemap</a>
           </nav>
         </div>

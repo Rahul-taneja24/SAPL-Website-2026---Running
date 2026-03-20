@@ -262,7 +262,7 @@ function BrandDetail({ brand, onBack }) {
               {/* Actions */}
               <div className="space-y-2">
                 <Link
-                  to="/contact"
+                  href="/contact"
                   className="flex items-center justify-center gap-2 w-full py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-xl text-sm font-bold transition-colors"
                   aria-label={`Get quote for ${brand.name} products`}
                 >
@@ -354,13 +354,13 @@ function BrandDetail({ brand, onBack }) {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               <Link
-                to="/contact"
+                href="/contact"
                 className="flex items-center gap-2 px-7 py-3 bg-white text-[#1E3A5F] rounded-full font-bold text-sm hover:bg-gray-100 transition-colors"
               >
                 Request Quote
               </Link>
               <Link
-                to="/products"
+                href="/products"
                 className="flex items-center gap-2 px-7 py-3 bg-white/15 border border-white/30 text-white rounded-full font-bold text-sm hover:bg-white/25 transition-colors"
               >
                 Browse Products <ArrowRight size={14} aria-hidden="true" />
@@ -508,7 +508,7 @@ function Brands() {
                 <h3 className="font-oswald text-2xl font-bold text-white mb-2">Can't Decide Which Brand?</h3>
                 <p className="text-white/75 text-sm mb-6 max-w-md mx-auto">Tell us your application, temperature range, and industry — our engineers will recommend the best brand and grade for your specific needs.</p>
                 <Link
-                  to="/contact"
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-3.5 rounded-full font-bold text-sm transition-colors"
                 >
                   Get Brand Recommendation <ArrowRight size={14} aria-hidden="true" />

@@ -69,7 +69,7 @@ function ApplicationCard({ application, idx }) {
 function IndustryOverviewCard({ industry, idx }) {
   return (
     <Link
-      to={`/solutions/${industry.slug}`}
+      href={`/solutions/${industry.slug}`}
       className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-xl hover:border-[#F97316]/30 transition-all"
       data-testid={`industry-card-${industry.slug}`}
       aria-label={`View ${industry.name} refractory solutions`}
@@ -170,7 +170,7 @@ function IndustrySolutions() {
               {allIndustries.map((ind) => (
                 <Link
                   key={ind.id}
-                  to={`/solutions/${ind.slug}`}
+                  href={`/solutions/${ind.slug}`}
                   className="px-4 py-2 bg-white/10 border border-white/20 rounded-full text-white text-xs font-semibold hover:bg-[#F97316] hover:border-[#F97316] transition-all"
                 >
                   {ind.name.replace(" Solutions", "")}
@@ -183,7 +183,7 @@ function IndustrySolutions() {
         {/* Breadcrumb */}
         <nav className="bg-gray-50 border-b border-gray-200 px-4 py-3" aria-label="Breadcrumb">
           <div className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-gray-500">
-            <Link to="/" className="hover:text-[#3B82F6] flex items-center gap-1">
+            <Link href="/" className="hover:text-[#3B82F6] flex items-center gap-1">
               <Home size={13} aria-hidden="true" /> Home
             </Link>
             <ChevronRight size={13} aria-hidden="true" />
@@ -224,7 +224,7 @@ function IndustrySolutions() {
                   Our engineers have spent 40+ years understanding these nuances. When you consult us, you're not just getting a product catalogue — you're getting application-specific expertise that helps you avoid costly mistakes.
                 </p>
                 <Link
-                  to="/contact"
+                  href="/contact"
                   className="inline-flex items-center gap-2 px-7 py-3.5 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-full font-bold text-sm transition-colors"
                 >
                   Get Industry Consultation <ArrowRight size={14} aria-hidden="true" />
@@ -265,14 +265,14 @@ function IndustrySolutions() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                to="/contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-4 rounded-full font-bold text-sm transition-colors"
               >
                 <MessageCircle size={16} aria-hidden="true" />
                 Talk to an Expert
               </Link>
               <Link
-                to="/knowledge"
+                href="/knowledge"
                 className="inline-flex items-center gap-2 bg-white/15 border border-white/25 text-white hover:bg-white/25 px-8 py-4 rounded-full font-bold text-sm transition-colors"
               >
                 Technical Reference Guide <ChevronRight size={14} aria-hidden="true" />
@@ -334,13 +334,13 @@ function IndustrySolutions() {
             <p className="text-gray-200 text-lg mb-7 leading-relaxed">{industry.tagline}</p>
             <div className="flex flex-wrap gap-3">
               <Link
-                to="/contact"
+                href="/contact"
                 className="flex items-center gap-2 px-6 py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-full font-bold text-sm transition-colors"
               >
                 <Phone size={15} aria-hidden="true" /> Get Quote
               </Link>
               <Link
-                to="/products"
+                href="/products"
                 className="flex items-center gap-2 px-6 py-3 bg-white/10 border border-white/25 text-white hover:bg-white/20 rounded-full font-bold text-sm transition-colors"
               >
                 View Products <ArrowRight size={15} aria-hidden="true" />
@@ -363,11 +363,11 @@ function IndustrySolutions() {
       {/* ── Breadcrumb ── */}
       <nav className="bg-gray-50 border-b border-gray-200 px-4 py-3" aria-label="Breadcrumb">
         <div className="max-w-7xl mx-auto flex items-center gap-2 text-sm text-gray-500 flex-wrap">
-          <Link to="/" className="hover:text-[#3B82F6] flex items-center gap-1">
+          <Link href="/" className="hover:text-[#3B82F6] flex items-center gap-1">
             <Home size={13} aria-hidden="true" /> Home
           </Link>
           <ChevronRight size={13} aria-hidden="true" />
-          <Link to="/solutions" className="hover:text-[#3B82F6]">Industry Solutions</Link>
+          <Link href="/solutions" className="hover:text-[#3B82F6]">Industry Solutions</Link>
           <ChevronRight size={13} aria-hidden="true" />
           <span className="text-[#F97316] font-semibold">{industry.name.replace(" Solutions", "")}</span>
         </div>
@@ -457,7 +457,7 @@ function IndustrySolutions() {
                 ))}
               </div>
               <Link
-                to="/products"
+                href="/products"
                 className="inline-flex items-center gap-2 text-[#F97316] font-bold text-sm hover:gap-3 transition-all"
               >
                 View Full Product Range <ArrowRight size={15} aria-hidden="true" />
@@ -480,7 +480,7 @@ function IndustrySolutions() {
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                to="/contact"
+                href="/contact"
                 className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-4 rounded-full font-bold text-sm transition-colors"
               >
                 <MessageCircle size={16} aria-hidden="true" />
@@ -521,7 +521,7 @@ function IndustrySolutions() {
               .map((ind) => (
                 <Link
                   key={ind.id}
-                  to={`/solutions/${ind.slug}`}
+                  href={`/solutions/${ind.slug}`}
                   className="group bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md hover:border-[#F97316]/30 transition-all"
                   aria-label={`View ${ind.name} solutions`}
                 >

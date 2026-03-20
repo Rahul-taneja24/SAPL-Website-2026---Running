@@ -246,7 +246,7 @@ function Blog() {
               {featured && (
                 <div className="mb-10" data-testid="featured-post">
                   <Link
-                    to={`/blog/${featured.slug}`}
+                    href={`/blog/${featured.slug}`}
                     className="group grid md:grid-cols-5 gap-0 bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-shadow"
                   >
                     <div className="md:col-span-3 h-72 md:h-auto overflow-hidden">
@@ -292,7 +292,7 @@ function Blog() {
                 {rest.map((post) => (
                   <article key={post.id} data-testid={`blog-post-${post.id}`}>
                     <Link
-                      to={`/blog/${post.slug}`}
+                      href={`/blog/${post.slug}`}
                       className="group bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:border-[#F97316]/30 transition-all block h-full"
                     >
                       <div className="h-48 overflow-hidden">

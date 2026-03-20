@@ -147,7 +147,7 @@ const Solutions = () => {
                     <p className="font-oswald text-2xl font-bold gradient-text">{plant.temp}</p>
                     <p className="text-xs text-muted-foreground">Max Temp</p>
                   </div>
-                  <Link to="/contact" className="gradient-primary text-white px-6 py-3 rounded-full font-medium hover-lift flex items-center gap-2">
+                  <Link href="/contact" className="gradient-primary text-white px-6 py-3 rounded-full font-medium hover-lift flex items-center gap-2">
                     Get Quote <ArrowRight size={18} />
                   </Link>
                 </div>
@@ -176,7 +176,7 @@ const Solutions = () => {
                     </span>
                   ))}
                 </div>
-                <Link to="/products" className="inline-flex items-center gap-1 text-[#3B82F6] text-sm font-medium mt-4 hover:underline">
+                <Link href="/products" className="inline-flex items-center gap-1 text-[#3B82F6] text-sm font-medium mt-4 hover:underline">
                   View All Products <ChevronRight size={14} />
                 </Link>
               </div>
@@ -189,7 +189,7 @@ const Solutions = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="font-oswald text-3xl font-bold text-white mb-4">CAN'T FIND YOUR PLANT TYPE?</h2>
           <p className="text-white/90 mb-6">We serve all high-temperature industries. Contact us for custom solutions.</p>
-          <Link to="/contact" className="inline-flex items-center gap-2 bg-white text-[#1E40AF] px-8 py-4 rounded-full font-semibold hover-lift">
+          <Link href="/contact" className="inline-flex items-center gap-2 bg-white text-[#1E40AF] px-8 py-4 rounded-full font-semibold hover-lift">
             Contact Our Engineers <ArrowRight size={20} />
           </Link>
         </div>

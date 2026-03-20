@@ -7,7 +7,7 @@ import {
     Phone, Download, CheckCircle, X, Filter, Flame, Shield, Layers,
     Zap, Star, Package, Info, Award, Wrench, BookOpen, BarChart3
 } from "lucide-react";
-import SEOHead from "../components/SEOHead";
+
 
 /* ─── CURATED IMAGE MAP ─────────────────────────────────────────────────── */
 const IMG = {
@@ -877,7 +877,7 @@ function Gallery({ images, name }) {
 function ProductCard({ product, categorySlug }) {
     const meta = CAT_META[categorySlug] || CAT_META["shaped-refractories"];
     return (
-        <Link to={`/products/${categorySlug}/${product.id}`}
+        <Link href={`/products/${categorySlug}/${product.id}`}
             className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
             <div className="relative h-48 overflow-hidden bg-gray-100">
                 <img src={product.images?.[0]} alt={product.name}
@@ -921,11 +921,6 @@ function ProductDetailPage({ product, category, categorySlug }) {
     const meta = CAT_META[categorySlug] || CAT_META["shaped-refractories"];
     return (
         <div className="bg-white">
-            <SEOHead
-                title={`${product.name} | ${category.name} | Shanker Agencies`}
-                description={product.shortDesc}
-                canonical={`/products/${categorySlug}/${product.id}`}
-            />
 
             {/* Hero */}
             <section className="relative py-16 px-4"
@@ -935,11 +930,11 @@ function ProductDetailPage({ product, category, categorySlug }) {
                 }}>
                 <div className="max-w-7xl mx-auto">
                     <nav className="flex flex-wrap items-center gap-1.5 text-xs text-white/50 mb-6">
-                        <Link to="/" className="hover:text-white flex items-center gap-1"><Home size={11} /> Home</Link>
+                        <Link href="/" className="hover:text-white flex items-center gap-1"><Home size={11} /> Home</Link>
                         <ChevronRight size={9} />
-                        <Link to="/products" className="hover:text-white">Products</Link>
+                        <Link href="/products" className="hover:text-white">Products</Link>
                         <ChevronRight size={9} />
-                        <Link to={`/products/${categorySlug}`} className="hover:text-white">{category.name}</Link>
+                        <Link href={`/products/${categorySlug}`} className="hover:text-white">{category.name}</Link>
                         <ChevronRight size={9} />
                         <span className="text-[#F97316] font-semibold">{product.name}</span>
                     </nav>
@@ -1146,7 +1141,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
                             </div>
 
                             <div className="space-y-3 pt-4 border-t border-gray-200">
-                                <Link to="/contact"
+                                <Link href="/contact"
                                     className="w-full flex items-center justify-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-4 py-3.5 rounded-xl font-bold text-sm transition-colors shadow-lg shadow-orange-200">
                                     <MessageCircle size={16} /> Request Quote
                                 </Link>
@@ -1181,7 +1176,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
                     </h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {category.products.filter(p => p.id !== product.id).slice(0, 4).map(rel => (
-                            <Link key={rel.id} to={`/products/${categorySlug}/${rel.id}`}
+                            <Link key={rel.id} href={`/products/${categorySlug}/${rel.id}`}
                                 className="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all">
                                 <div className="h-28 overflow-hidden bg-gray-100">
                                     <img src={rel.images?.[0]} alt={rel.name}
@@ -1205,7 +1200,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
                         Our engineers can recommend the exact grade for your application. Sample kits available for trials. No minimum order on standard grades.
                     </p>
                     <div className="flex flex-wrap justify-center gap-3">
-                        <Link to="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-4 rounded-full font-bold transition-colors">
+                        <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-4 rounded-full font-bold transition-colors">
                             <MessageCircle size={17} /> Get a Quote
                         </Link>
                         <a href="tel:+919810205154" className="inline-flex items-center gap-2 bg-white/10 border border-white/30 hover:bg-white/20 text-white px-7 py-4 rounded-full font-bold transition-colors">
@@ -1224,11 +1219,6 @@ function CategoryPage({ category, categorySlug }) {
     const Icon = meta.icon;
     return (
         <div className="bg-white">
-            <SEOHead
-                title={`${category.name} | Technical Specifications | Shanker Agencies`}
-                description={category.desc}
-                canonical={`/products/${categorySlug}`}
-            />
             <section className="relative py-20 px-4"
                 style={{
                     backgroundImage: `linear-gradient(135deg,rgba(10,20,60,0.95)0%,rgba(30,58,138,0.88)100%),url('${category.image}')`,
@@ -1236,9 +1226,9 @@ function CategoryPage({ category, categorySlug }) {
                 }}>
                 <div className="max-w-7xl mx-auto">
                     <nav className="flex items-center gap-1.5 text-xs text-white/50 mb-6">
-                        <Link to="/" className="hover:text-white flex items-center gap-1"><Home size={11} /> Home</Link>
+                        <Link href="/" className="hover:text-white flex items-center gap-1"><Home size={11} /> Home</Link>
                         <ChevronRight size={9} />
-                        <Link to="/products" className="hover:text-white">Products</Link>
+                        <Link href="/products" className="hover:text-white">Products</Link>
                         <ChevronRight size={9} />
                         <span className="text-[#F97316] font-semibold">{category.name}</span>
                     </nav>
@@ -1291,7 +1281,7 @@ function CategoryPage({ category, categorySlug }) {
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="font-oswald text-2xl font-bold text-white mb-3">NEED A RECOMMENDATION?</h2>
                     <p className="text-blue-200 text-sm mb-6">Our engineers specify the right grade for your operating conditions</p>
-                    <Link to="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-4 rounded-full font-bold transition-colors">
+                    <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-4 rounded-full font-bold transition-colors">
                         <Phone size={17} /> Talk to an Engineer
                     </Link>
                 </div>
@@ -1325,11 +1315,6 @@ function OverviewPage() {
 
     return (
         <div className="bg-white">
-            <SEOHead
-                title="Refractory Products Catalog | Complete Specifications | Shanker Agencies"
-                description="Browse India's most complete refractory catalog — shaped bricks, castables, flow control, ceramic fiber, acid proofing. CUMI, Calderys, TRL Krosaki, IFGL. Technical grade tables."
-                canonical="/products"
-            />
 
             {/* Hero */}
             <section className="relative min-h-[58vh] flex items-center px-4 py-20"
@@ -1399,7 +1384,7 @@ function OverviewPage() {
                             {filtered.map((cat, idx) => {
                                 const Icon = cat.icon;
                                 return (
-                                    <Link key={cat.slug} to={`/products/${cat.slug}`}
+                                    <Link key={cat.slug} href={`/products/${cat.slug}`}
                                         className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col sm:flex-row">
                                         <div className="relative sm:w-52 flex-shrink-0 h-48 sm:h-auto overflow-hidden bg-gray-100">
                                             <img src={cat.image} alt={cat.name}
@@ -1472,7 +1457,7 @@ function OverviewPage() {
                     </div>
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
                         {[{ name: "Steel Plants", slug: "steel", img: IMG.steel }, { name: "Cement Plants", slug: "cement", img: IMG.cement }, { name: "Aluminum", slug: "aluminum", img: IMG.aluminum }, { name: "Glass", slug: "glass", img: IMG.glass }, { name: "Petrochemical", slug: "petrochemical", img: IMG.petro }, { name: "Power", slug: "power", img: IMG.power }].map(ind => (
-                            <Link key={ind.slug} to={`/solutions/${ind.slug}`}
+                            <Link key={ind.slug} href={`/solutions/${ind.slug}`}
                                 className="group relative rounded-xl overflow-hidden h-24 sm:h-28 shadow-sm hover:shadow-lg transition-all">
                                 <img src={ind.img} alt={ind.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 to-black/10" />
@@ -1506,10 +1491,10 @@ function OverviewPage() {
                     <h2 className="font-oswald text-4xl font-bold text-[#1E3A5F] mb-4">CAN'T FIND WHAT YOU NEED?</h2>
                     <p className="text-gray-600 mb-8">We carry 200+ grades not all listed here. Call us — our engineers will match the right refractory to your process in minutes.</p>
                     <div className="flex flex-wrap justify-center gap-3">
-                        <Link to="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-4 rounded-full font-bold transition-colors shadow-lg shadow-orange-200">
+                        <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-4 rounded-full font-bold transition-colors shadow-lg shadow-orange-200">
                             <MessageCircle size={17} /> Talk to an Engineer
                         </Link>
-                        <Link to="/company-profile" className="inline-flex items-center gap-2 bg-[#1E3A5F] hover:bg-[#1E40AF] text-white px-7 py-4 rounded-full font-bold transition-colors">
+                        <Link href="/company-profile" className="inline-flex items-center gap-2 bg-[#1E3A5F] hover:bg-[#1E40AF] text-white px-7 py-4 rounded-full font-bold transition-colors">
                             <Download size={17} /> Download Full Catalog
                         </Link>
                     </div>
@@ -1531,7 +1516,7 @@ function Products({ region }) {
             <div className="bg-white min-h-screen flex items-center justify-center px-4">
                 <div className="text-center">
                     <h1 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-4">Product Not Found</h1>
-                    <Link to={`/products/${categorySlug}`} className="text-[#3B82F6] hover:underline">Browse {category.name} →</Link>
+                    <Link href={`/products/${categorySlug}`} className="text-[#3B82F6] hover:underline">Browse {category.name} →</Link>
                 </div>
             </div>
         );

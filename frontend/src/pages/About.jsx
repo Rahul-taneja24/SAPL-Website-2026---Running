@@ -453,14 +453,14 @@ const About = () => {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
-              to="/contact"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-white text-[#F97316] px-10 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-xl"
               data-testid="about-cta-button"
             >
               Get in Touch <ArrowRight size={20} aria-hidden="true" />
             </Link>
             <Link
-              to="/products"
+              href="/products"
               className="inline-flex items-center gap-2 bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold hover:bg-white/10 transition-colors"
             >
               View Product Range

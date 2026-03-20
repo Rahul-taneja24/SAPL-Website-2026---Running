@@ -1,4 +1,6 @@
 'use client';
+import '@/i18n/config';
+
 import { createContext, useContext, useState, useEffect } from 'react';
 import QuickQuoteModal from '@/components/QuickQuoteModal';
 

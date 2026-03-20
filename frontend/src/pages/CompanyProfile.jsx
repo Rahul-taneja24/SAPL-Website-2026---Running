@@ -1,6 +1,6 @@
 'use client';
 import { useState } from "react";
-import SEOHead from "../components/SEOHead";
+
 import { Download, Phone, Mail, MapPin, Award, Shield, Globe, Building2, CheckCircle, Factory, Flame, Users, Target, Loader2, MessageCircle } from "lucide-react";
 
 
@@ -85,11 +85,6 @@ function CompanyProfile() {
 
   return (
     <div className="bg-white">
-      <SEOHead
-        title="Company Profile | Shanker Agencies Pvt. Ltd."
-        description="Download the official company profile of Shanker Agencies Pvt. Ltd. — India's premier refractory engineering partner since 1980."
-        canonical="/company-profile"
-      />
 
       {/* Toolbar */}
       <div className="print:hidden sticky top-0 z-50 gradient-dark py-4 px-4">

@@ -264,7 +264,7 @@ const KnowledgeBase = () => {
                       ))}
                     </div>
                   </div>
-                  <Link to="/contact" className="flex-shrink-0 flex items-center gap-2 px-5 py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-xl text-sm font-bold transition-colors whitespace-nowrap">
+                  <Link href="/contact" className="flex-shrink-0 flex items-center gap-2 px-5 py-3 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-xl text-sm font-bold transition-colors whitespace-nowrap">
                     Get Quote for {selectedGrade.grade} <ArrowRight size={14} aria-hidden="true" />
                   </Link>
                 </div>
@@ -446,13 +446,13 @@ const KnowledgeBase = () => {
 
                     <div className="flex gap-3">
                       <Link
-                        to="/contact"
+                        href="/contact"
                         className="flex-1 flex items-center justify-center gap-1.5 py-2.5 bg-[#F97316] hover:bg-[#EA580C] text-white rounded-xl text-xs font-bold transition-colors"
                       >
                         Get Expert Advice <ArrowRight size={12} aria-hidden="true" />
                       </Link>
                       <Link
-                        to={app.link}
+                        href={app.link}
                         className="flex-1 flex items-center justify-center gap-1.5 py-2.5 border border-gray-200 text-gray-600 hover:border-[#3B82F6] hover:text-[#3B82F6] rounded-xl text-xs font-semibold transition-colors"
                       >
                         Industry Page <ChevronRight size={12} aria-hidden="true" />
@@ -510,7 +510,7 @@ const KnowledgeBase = () => {
             Our engineers have 40+ years of hands-on refractory experience. If your application isn't covered here, we can provide a custom selection — free of charge.
           </p>
           <Link
-            to="/contact"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-10 py-4 rounded-full font-bold transition-colors shadow-xl"
             data-testid="knowledge-cta-button"
           >

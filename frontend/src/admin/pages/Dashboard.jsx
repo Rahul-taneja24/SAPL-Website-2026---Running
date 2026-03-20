@@ -131,7 +131,7 @@ function Dashboard({ apiUrl }) {
         <div className="content-section">
           <div className="section-header">
             <h2 className="section-title">Recent Leads</h2>
-            <Link to="/leads" className="btn btn-sm btn-secondary">
+            <Link href="/leads" className="btn btn-sm btn-secondary">
               View All <ArrowRight size={16} />
             </Link>
           </div>
@@ -173,7 +173,7 @@ function Dashboard({ apiUrl }) {
         <div className="content-section">
           <div className="section-header">
             <h2 className="section-title">Recent Blog Posts</h2>
-            <Link to="/blog" className="btn btn-sm btn-secondary">
+            <Link href="/blog" className="btn btn-sm btn-secondary">
               View All <ArrowRight size={16} />
             </Link>
           </div>
@@ -218,13 +218,13 @@ function Dashboard({ apiUrl }) {
           <h2 className="section-title">Quick Actions</h2>
         </div>
         <div style={{ padding: '24px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-          <Link to="/blog/new" className="btn btn-primary">
+          <Link href="/blog/new" className="btn btn-primary">
             <FileText size={18} /> New Blog Post
           </Link>
-          <Link to="/products/new" className="btn btn-primary">
+          <Link href="/products/new" className="btn btn-primary">
             <Package size={18} /> Add Product
           </Link>
-          <Link to="/media" className="btn btn-secondary">
+          <Link href="/media" className="btn btn-secondary">
             <Calendar size={18} /> Upload Media
           </Link>
         </div>

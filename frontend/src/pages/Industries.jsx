@@ -150,7 +150,7 @@ const Industries = () => {
                     <p className="font-oswald text-2xl font-bold text-[#F97316]">{selectedIndustry.temp}</p>
                     <p className="text-xs text-muted-foreground">Max Temp</p>
                   </div>
-                  <Link to="/contact" className="gradient-primary text-white px-6 py-3 rounded-full font-medium hover-lift flex items-center gap-2" data-testid="industry-get-quote">
+                  <Link href="/contact" className="gradient-primary text-white px-6 py-3 rounded-full font-medium hover-lift flex items-center gap-2" data-testid="industry-get-quote">
                     Get Quote <ArrowRight size={18} />
                   </Link>
                 </div>
@@ -219,7 +219,7 @@ const Industries = () => {
                             <Zap size={16} /> Quick Actions
                           </h5>
                           <div className="space-y-2">
-                            <Link to="/products" className="flex items-center gap-2 text-sm text-[#3B82F6] hover:text-[#F97316] transition-colors">
+                            <Link href="/products" className="flex items-center gap-2 text-sm text-[#3B82F6] hover:text-[#F97316] transition-colors">
                               <ArrowRight size={14} /> View Related Products
                             </Link>
                             <a href="https://wa.me/919899957888?text=Hi, I need the technical datasheet for solutions in this industry. Please share the PDF."
@@ -251,7 +251,7 @@ const Industries = () => {
                     </div>
                     <h4 className="font-oswald text-lg font-semibold mb-2">{product.name}</h4>
                     <p className="text-sm text-muted-foreground mb-4">{product.use}</p>
-                    <Link to="/contact" className="w-full gradient-primary text-white py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2">
+                    <Link href="/contact" className="w-full gradient-primary text-white py-2 rounded-lg text-sm font-medium flex items-center justify-center gap-2">
                       Enquire <ChevronRight size={14} />
                     </Link>
                   </div>
@@ -285,10 +285,10 @@ const Industries = () => {
           </h2>
           <p className="text-white/90 mb-6">Our technical experts can help you select the optimal refractory solution.</p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="bg-white text-[#1E40AF] px-8 py-4 rounded-full font-semibold hover-lift flex items-center gap-2" data-testid="industries-cta-button">
+            <Link href="/contact" className="bg-white text-[#1E40AF] px-8 py-4 rounded-full font-semibold hover-lift flex items-center gap-2" data-testid="industries-cta-button">
               Consult Our Experts <ArrowRight size={20} />
             </Link>
-            <Link to="/products" className="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
+            <Link href="/products" className="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
               Browse All Products
             </Link>
           </div>

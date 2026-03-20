@@ -124,7 +124,7 @@ const PrivacyPolicy = () => {
           </div>
 
           <div className="text-center mt-8">
-            <Link to="/contact" className="gradient-primary text-white px-8 py-3 rounded-full font-medium hover-lift inline-block">
+            <Link href="/contact" className="gradient-primary text-white px-8 py-3 rounded-full font-medium hover-lift inline-block">
               Contact Us
             </Link>
           </div>

@@ -97,13 +97,6 @@ const Home = () => {
 
   return (
     <div className="overflow-hidden bg-white">
-      <SEOHead
-        title="Shanker Agencies | Premier Refractory Engineering Partner"
-        description="India's premier refractory engineering partner since 1980. Supplying premium refractories for steel, cement & glass industries."
-        keywords="refractory supplier India, firebricks manufacturer, castables supplier, CUMI refractories partner, Calderys supplier"
-        canonical="/"
-        structuredData={homeStructuredData}
-      />
 
       {/* ══════════════════════════════════════════════
           HERO
@@ -209,7 +202,7 @@ const Home = () => {
                       Get Instant Quote
                     </button>
                     <Link
-                      to="/solutions"
+                      href="/solutions"
                       className="bg-white/10 backdrop-blur-sm border border-white/25 text-white px-8 py-3.5 rounded-full font-semibold text-base flex items-center gap-2 hover:bg-white/20 transition-all"
                       data-testid="hero-find-solution"
                     >
@@ -343,7 +336,7 @@ const Home = () => {
               { label: "Glass", slug: "glass" },
               { label: "Power", slug: "power" },
             ].map(({ label, slug }) => (
-              <Link key={slug} to={`/solutions/${slug}`} className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-600 hover:border-[#F97316] hover:text-[#F97316] hover:shadow-sm transition-all">
+              <Link key={slug} href={`/solutions/${slug}`} className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm text-gray-600 hover:border-[#F97316] hover:text-[#F97316] hover:shadow-sm transition-all">
                 {label}
               </Link>
             ))}
@@ -378,7 +371,7 @@ const Home = () => {
             {PRODUCT_CATEGORIES.map((category) => (
               <Link
                 key={category.id}
-                to={category.path}
+                href={category.path}
                 className="group flex flex-col bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:-translate-y-1"
               >
                 <div className="relative h-52 overflow-hidden bg-gray-100">
@@ -429,7 +422,7 @@ const Home = () => {
             {industries.map((industry, idx) => (
               <Link
                 key={idx}
-                to={`/solutions/${industry.slug}`}
+                href={`/solutions/${industry.slug}`}
                 className="group relative h-80 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow"
                 data-testid={`industry-${industry.slug}`}
               >
@@ -492,7 +485,7 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link to="/products" className="inline-flex items-center gap-2 bg-[#1E3A5F] hover:bg-[#1E40AF] text-white px-10 py-4 rounded-full font-semibold transition-colors shadow-lg">
+            <Link href="/products" className="inline-flex items-center gap-2 bg-[#1E3A5F] hover:bg-[#1E40AF] text-white px-10 py-4 rounded-full font-semibold transition-colors shadow-lg">
               View Full Product Catalog <ArrowRight size={20} aria-hidden="true" />
             </Link>
           </div>
@@ -530,7 +523,7 @@ const Home = () => {
             ))}
           </div>
           <div className="text-center mt-10">
-            <Link to="/brands" className="text-[#3B82F6] hover:text-[#1E40AF] font-medium text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
+            <Link href="/brands" className="text-[#3B82F6] hover:text-[#1E40AF] font-medium text-sm inline-flex items-center gap-1.5 hover:gap-2.5 transition-all">
               View All Brand Partners &amp; Capabilities <ChevronRight size={16} aria-hidden="true" />
             </Link>
           </div>

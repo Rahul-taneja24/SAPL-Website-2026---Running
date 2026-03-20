@@ -231,7 +231,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link
-              to="/"
+              href="/"
               className="flex items-center gap-3 flex-shrink-0"
               data-testid="logo-link"
               aria-label="Shanker Agencies Home"
@@ -261,7 +261,7 @@ const Navbar = () => {
                   onMouseLeave={() => link.mega && setActiveMega(null)}
                 >
                   <Link
-                    to={link.path}
+                    href={link.path}
                     className={`flex items-center gap-1 px-3.5 py-5 text-[13px] font-semibold transition-colors whitespace-nowrap border-b-2 ${
                       isActive(link.path)
                         ? "text-[#1E40AF] border-[#F97316]"
@@ -296,7 +296,7 @@ const Navbar = () => {
                               {col.links.map((sub) => (
                                 <Link
                                   key={sub.name}
-                                  to={sub.path}
+                                  href={sub.path}
                                   className="group flex flex-col px-3 py-2 rounded-lg hover:bg-blue-50 transition-colors"
                                 >
                                   <span className="text-sm font-semibold text-[#1E3A5F] group-hover:text-[#1E40AF]">
@@ -314,7 +314,7 @@ const Navbar = () => {
                       {link.cta && (
                         <div className="border-t border-gray-100 pt-4">
                           <Link
-                            to={link.cta.path}
+                            href={link.cta.path}
                             className="flex items-center gap-2 text-sm font-semibold text-[#F97316] hover:gap-3 transition-all"
                           >
                             <ArrowRight size={15} />
@@ -373,7 +373,7 @@ const Navbar = () => {
                 <div key={link.name}>
                   <div className="flex items-center justify-between">
                     <Link
-                      to={link.path}
+                      href={link.path}
                       onClick={() => !link.mega && setMobileMenuOpen(false)}
                       className={`flex-1 px-4 py-3 rounded-xl text-sm font-semibold transition-colors ${
                         isActive(link.path)
@@ -402,7 +402,7 @@ const Navbar = () => {
                       {link.cols.flatMap((col) => col.links).map((sub) => (
                         <Link
                           key={sub.name}
-                          to={sub.path}
+                          href={sub.path}
                           onClick={() => setMobileMenuOpen(false)}
                           className="block px-4 py-2.5 text-sm text-gray-600 hover:text-[#1E40AF] rounded-lg hover:bg-blue-50 transition-colors"
                         >
@@ -426,7 +426,7 @@ const Navbar = () => {
                 WhatsApp
               </a>
               <Link
-                to="/contact"
+                href="/contact"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex-1 flex items-center justify-center gap-2 py-3 bg-[#1E3A5F] hover:bg-[#1E40AF] text-white rounded-xl text-sm font-semibold transition-colors"
               >

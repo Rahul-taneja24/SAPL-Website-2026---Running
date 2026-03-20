@@ -20,7 +20,8 @@ import {
     ChevronDown
 } from 'lucide-react';
 
-const AdminLayout = () => {
+const AdminLayout = ({ children }) => {
+    const pathname = usePathname();
     const [sidebarOpen, setSidebarOpen] = useState(true);
     
     const router = useRouter();
@@ -89,7 +90,7 @@ const AdminLayout = () => {
                             return (
                                 <Link
                                     key={item.path}
-                                    to={item.path}
+                                    href={item.path}
                                     className={`flex items-center gap-3 px-3 py-2.5 rounded-lg transition-colors group relative ${isActive
                                             ? 'bg-blue-50 text-blue-700 font-medium'
                                             : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
