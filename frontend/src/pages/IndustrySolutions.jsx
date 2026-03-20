@@ -306,10 +306,6 @@ function IndustrySolutions() {
 
   return (
     <div className="bg-white">
-       a.name.toLowerCase()).join(", ")}, industrial refractories India`}
-        canonical={`/solutions/${industry.slug}`}
-        structuredData={industryStructuredData}
-      />
 
       {/* ── Hero ── */}
       <section className="relative h-[65vh] min-h-[520px]" aria-labelledby="industry-heading">
