@@ -507,7 +507,7 @@ const KnowledgeBase = () => {
             CAN'T FIND WHAT YOU NEED?
           </h2>
           <p className="text-white/75 mb-8 text-sm max-w-xl mx-auto">
-            Our engineers have 40+ years of hands-on refractory experience. If your application isn't covered here, we can provide a custom selection — free of charge.
+            Our engineers have 45+ years of hands-on refractory experience. If your application isn't covered here, we can provide a custom selection — free of charge.
           </p>
           <Link
             href="/contact"
