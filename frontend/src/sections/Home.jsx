@@ -215,7 +215,7 @@ const Home = () => {
                 {/* RIGHT — stat cards, desktop only */}
                 <div className="hero-reveal hero-d5 hidden lg:grid grid-cols-2 gap-3">
                   {[
-                    { value: "40", suffix: "+", label: "Years of Excellence", sub: "Since 1980", icon: Award, orange: true },
+                    { value: "45", suffix: "+", label: "Years of Excellence", sub: "Since 1980", icon: Award, orange: true },
                     { value: "500", suffix: "+", label: "Industrial Clients", sub: "Worldwide", icon: Globe, orange: false },
                     { value: "50", suffix: "+", label: "Countries Served", sub: "Global Reach", icon: Globe, orange: false },
                     { value: "7", suffix: "+", label: "Brand Partners", sub: "Premium Brands", icon: Package, orange: false },
@@ -257,7 +257,7 @@ const Home = () => {
       >
         <div className="grid grid-cols-2 gap-4 max-w-sm mx-auto">
           {[
-            { value: "40", suffix: "+", label: "Years Excellence" },
+            { value: "45", suffix: "+", label: "Years Excellence" },
             { value: "500", suffix: "+", label: "Industrial Clients" },
             { value: "50", suffix: "+", label: "Countries Served" },
             { value: "7", suffix: "+", label: "Brand Partners" }
