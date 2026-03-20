@@ -20,7 +20,9 @@ node_modules/
 /coverage
 
 # Next.js
-/.next/
+.next/
+frontend/.next/
+frontend/out/
 /out/
 next-env.d.ts
 *.tsbuildinfo
