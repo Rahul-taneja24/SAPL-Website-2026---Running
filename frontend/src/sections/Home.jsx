@@ -43,10 +43,10 @@ const brands = [
 ];
 
 const whyUs = [
-  { icon: Shield, title: "Engineering Partner", desc: "End-to-end support from material selection and lining design through to installation supervision.", highlight: "Full lifecycle" },
-  { icon: Globe, title: "50+ Countries Served", desc: "Efficient international logistics, export documentation expertise, and dedicated account management.", highlight: "Global reach" },
-  { icon: Package, title: "7+ Premium Brand Partners", desc: "Strategic supply partner for India's and the world's leading refractory manufacturers.", highlight: "Single source" },
-  { icon: TrendingUp, title: "Total Cost Optimized", desc: "Expert product selection that maximizes performance, extends campaign life, and reduces your TCO.", highlight: "Cost optimized" },
+  { icon: Shield, title: "Engineering & Manufacturing", desc: "We don't just supply — we engineer solutions. From furnace lining design and material selection to manufacturing custom refractory shapes and installation supervision.", highlight: "Full lifecycle" },
+  { icon: Globe, title: "Exporting to 50+ Countries", desc: "Serving steel plants, cement factories & foundries across GCC, ASEAN, Africa, UK & Europe. Export documentation, international logistics, and dedicated account management.", highlight: "Global reach" },
+  { icon: Package, title: "Authorized & Premium Brands", desc: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Strategic supply partner for TRL Krosaki, IFGL, Calderys & more.", highlight: "Single source" },
+  { icon: TrendingUp, title: "Total Cost Optimized", desc: "Our engineers recommend the right refractory — not the most expensive. We optimize for campaign life, energy efficiency & reduced downtime, cutting your TCO by 15-30%.", highlight: "Cost optimized" },
 ];
 
 const testimonials = [
@@ -76,15 +76,18 @@ const Home = () => {
   const homeStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Shanker Agencies - Refractory Engineering Solutions",
-    "url": "https://shankeragencies.com",
+    "name": "Shanker Agencies - Refractory Engineering Partner & Manufacturer Since 1980",
+    "url": "https://www.shankeragencies.com",
+    "description": "India's premier refractory engineering partner & manufacturer. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Engineering, manufacturing & supplying refractories to 50+ countries.",
     "mainEntity": {
       "@type": "Organization",
       "name": "Shanker Agencies Private Limited",
+      "alternateName": "SAPL",
       "foundingDate": "1980",
       "areaServed": "Global",
       "telephone": "+919810205154",
       "email": "info@shankeragencies.com",
+      "knowsAbout": ["Refractory Engineering", "Refractory Manufacturing", "Furnace Lining Design", "Refractory Installation", "Thermal Analysis", "High Alumina Bricks", "Castable Refractories", "Ceramic Fiber Insulation", "Flow Control Refractories", "Acid Proof Linings"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "553, Main G.T Road, Shahdara",
@@ -171,14 +174,14 @@ const Home = () => {
                     className="hero-reveal hero-d1 font-oswald font-bold text-white leading-tight mb-4"
                     style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", letterSpacing: "0.02em" }}
                   >
-                    YOUR <span className="text-shimmer">REFRACTORY</span> ENGINEERING PARTNER
+                    INDIA'S PREMIER <span className="text-shimmer">REFRACTORY</span> ENGINEERING PARTNER &amp; MANUFACTURER
                   </h1>
 
                   {/* Subheadline */}
                   <p className="hero-reveal hero-d2 text-gray-200 text-lg mb-6 leading-relaxed max-w-lg">
                     {region === "india"
-                      ? "India's premier strategic supply partner for CUMI, Calderys, TRL Krosaki & IFGL. End-to-end refractory solutions for steel, cement, aluminum & petrochemical plants."
-                      : "Your global refractory partner. Premium solutions from India's leading brands — delivered to GCC, ASEAN, UK & Europe with full technical support."}
+                      ? "India's premier refractory engineering partner & manufacturer. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. End-to-end engineering solutions — from furnace lining design to installation supervision for steel, cement, aluminum & petrochemical plants."
+                      : "Your trusted refractory engineering partner from India. We engineer, manufacture & supply premium refractories — delivered to GCC, ASEAN, Africa, UK & Europe with full technical support and installation guidance."}
                   </p>
 
                   {/* Trust pills — Sleek, horizontal, smaller font */}
@@ -354,10 +357,10 @@ const Home = () => {
               Comprehensive Portfolio
             </span>
             <h2 className="font-oswald text-3xl md:text-4xl lg:text-5xl font-bold text-[#1E3A5F] mb-4 uppercase tracking-tight">
-              India's Premier Refractory Partner Since 1980
+              Refractory Engineering &amp; Manufacturing Since 1980
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed mb-10">
-              Explore our exhaustive range of shaped and unshaped refractories for complex thermal environments. Shanker Agencies Private Limited has been supplying the industry's top brands—like CUMI, Calderys, IFGL, and TRL Krosaki—across India and worldwide since 1980. Our specialized catalog effectively serves the stringent requirements of extreme temperature manufacturing, covering blast furnaces, ladles, rotary kilns, and chemical plants. We focus precisely on thermal shock resistance, abrasion protection, and corrosion defense to extend your campaign life and reduce plant downtime.
+              As India's premier refractory engineering partner, we engineer, manufacture, and supply the full spectrum of refractory solutions. From high alumina bricks and castables to ceramic fiber insulation and flow control systems — our 45+ years of expertise covers blast furnaces, steel ladles, rotary kilns, induction furnaces, and chemical plants. We are authorized dealers of CUMI, Crown Ceramics &amp; Divine Cerawool, and strategic supply partners of TRL Krosaki, IFGL &amp; Calderys. Our refractory engineers focus on thermal shock resistance, slag corrosion protection, and energy efficiency to extend your campaign life by 25-40% and reduce plant downtime.
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="h-px w-12 bg-gray-200" />
