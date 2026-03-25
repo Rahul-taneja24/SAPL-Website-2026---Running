@@ -1,10 +1,283 @@
-import Blog from '@/sections/Blog';
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import {
+  Calendar, Clock, Tag, ArrowRight, ChevronRight,
+  Phone, MessageCircle, BookOpen, ArrowLeft
+} from 'lucide-react';
+import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+
+// ─── Static params for SSG ────────────────────────────────────────────────────
+export async function generateStaticParams() {
+  return BLOG_POSTS_DATA.map((post) => ({ articleSlug: post.slug }));
+}
+
+// ─── Per-page metadata ────────────────────────────────────────────────────────
 export async function generateMetadata({ params }) {
-  const title = params.articleSlug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const { articleSlug } = await params;
+  const post = BLOG_POSTS_DATA.find((p) => p.slug === articleSlug);
+  if (!post) return { title: 'Article Not Found' };
   return {
-    title,
-    description: `Read about ${title.toLowerCase()} on the Shanker Agencies blog.`,
-    alternates: { canonical: `/blog/${params.articleSlug}` },
+    title: post.metaTitle,
+    description: post.metaDescription,
+    keywords: post.tags,
+    alternates: { canonical: `/blog/${post.slug}` },
+    openGraph: {
+      title: post.metaTitle,
+      description: post.metaDescription,
+      url: `https://www.shankeragencies.com/blog/${post.slug}`,
+      siteName: 'Shanker Agencies',
+      locale: 'en_IN',
+      type: 'article',
+      publishedTime: post.publishDate,
+      authors: ['Shanker Agencies Technical Team'],
+      tags: post.tags,
+      images: [{ url: post.coverImage || '/og-image.jpg', width: 1200, height: 630, alt: post.title }],
+    },
+    twitter: { card: 'summary_large_image', title: post.metaTitle, description: post.metaDescription },
   };
 }
-export default function BlogArticlePage() { return <Blog />; }
+
+function getRelatedPosts(post, limit = 3) {
+  return BLOG_POSTS_DATA.filter(
+    (p) => p.slug !== post.slug && (p.category === post.category || p.tags.some((t) => post.tags.includes(t)))
+  ).slice(0, limit);
+}
+
+export default async function BlogArticlePage({ params }) {
+  const { articleSlug } = await params;
+  const post = BLOG_POSTS_DATA.find((p) => p.slug === articleSlug);
+  if (!post) notFound();
+
+  const relatedPosts = getRelatedPosts(post);
+  const fallbackPosts = BLOG_POSTS_DATA.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const sidebarPosts = relatedPosts.length > 0 ? relatedPosts : fallbackPosts;
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: post.title,
+    description: post.metaDescription,
+    datePublished: post.publishDate,
+    dateModified: post.publishDate,
+    author: { '@type': 'Organization', name: 'Shanker Agencies Pvt. Ltd.', url: 'https://www.shankeragencies.com' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Shanker Agencies Pvt. Ltd.',
+      logo: { '@type': 'ImageObject', url: 'https://www.shankeragencies.com/logo.png' },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.shankeragencies.com/blog/${post.slug}` },
+    keywords: post.tags.join(', '),
+    articleSection: post.category,
+    about: { '@type': 'Thing', name: 'Refractory Engineering' },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.shankeragencies.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.shankeragencies.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://www.shankeragencies.com/blog/${post.slug}` },
+    ],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+      {/* HERO */}
+      <section
+        className="relative py-16 md:py-24 overflow-hidden"
+        style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)' }}
+      >
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(249,115,22,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(249,115,22,0.8) 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+          }}
+        />
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* Breadcrumb */}
+          <nav className="flex items-center gap-1.5 text-sm text-white/50 mb-8 flex-wrap">
+            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
+            <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
+            <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
+            <span className="text-white/80 line-clamp-1">{post.title}</span>
+          </nav>
+
+          {/* Meta row */}
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <span className="inline-flex items-center gap-1.5 bg-[#F97316]/20 text-[#F97316] text-xs font-bold px-3 py-1.5 rounded-full border border-[#F97316]/30 uppercase tracking-wide">
+              <BookOpen className="w-3.5 h-3.5" />
+              {post.category}
+            </span>
+            <span className="flex items-center gap-1.5 text-white/50 text-sm">
+              <Calendar className="w-4 h-4" />
+              {new Date(post.publishDate).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' })}
+            </span>
+            <span className="flex items-center gap-1.5 text-white/50 text-sm">
+              <Clock className="w-4 h-4" />
+              {post.readTime}
+            </span>
+          </div>
+
+          <h1 className="font-oswald text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+            {post.title}
+          </h1>
+          <p className="text-lg text-white/75 leading-relaxed mb-8 max-w-3xl">{post.excerpt}</p>
+
+          <div className="flex flex-wrap gap-2">
+            {post.tags.map((tag) => (
+              <span key={tag} className="inline-flex items-center gap-1 bg-white/10 text-white/70 text-xs px-3 py-1 rounded-full border border-white/15">
+                <Tag className="w-3 h-3" />{tag}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTENT */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+          <div className="grid lg:grid-cols-3 gap-10 lg:gap-14">
+
+            {/* ARTICLE */}
+            <article className="lg:col-span-2">
+              {post.coverImage && (
+                <div className="rounded-2xl overflow-hidden mb-10 shadow-lg">
+                  <img src={post.coverImage} alt={post.title} className="w-full h-64 md:h-80 object-cover" loading="eager" />
+                </div>
+              )}
+
+              <div
+                className="prose prose-lg max-w-none
+                  prose-headings:font-oswald prose-headings:text-[#1E3A5F] prose-headings:font-bold
+                  prose-h2:text-2xl prose-h2:md:text-3xl prose-h2:mt-10 prose-h2:mb-4 prose-h2:border-l-4 prose-h2:border-[#F97316] prose-h2:pl-4
+                  prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+                  prose-h4:text-lg prose-h4:mt-6 prose-h4:mb-2
+                  prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-4
+                  prose-strong:text-[#1E3A5F] prose-strong:font-semibold
+                  prose-ul:space-y-1 prose-li:text-gray-700
+                  prose-table:text-sm prose-table:w-full prose-table:border-collapse
+                  prose-th:bg-[#1E3A5F] prose-th:text-white prose-th:p-3 prose-th:text-left prose-th:font-semibold
+                  prose-td:p-3 prose-td:border prose-td:border-gray-200 prose-td:text-gray-700
+                  prose-tr:even:prose-td:bg-gray-50
+                  prose-a:text-[#3B82F6] prose-a:no-underline hover:prose-a:underline
+                  prose-blockquote:border-l-4 prose-blockquote:border-[#F97316] prose-blockquote:bg-orange-50 prose-blockquote:rounded-r-xl prose-blockquote:py-3 prose-blockquote:px-6 prose-blockquote:not-italic
+                  prose-code:bg-gray-100 prose-code:text-[#1E3A5F] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
+
+              {/* CTA Box */}
+              <div className="mt-12 rounded-2xl overflow-hidden border border-[#F97316]/20 shadow-sm">
+                <div className="bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF] p-6 text-white">
+                  <h3 className="font-oswald text-xl font-bold mb-1">Need Expert Refractory Advice?</h3>
+                  <p className="text-white/80 text-sm">45+ years of expertise · Authorized CUMI, Crown Ceramics &amp; Divine Cerawool dealer</p>
+                </div>
+                <div className="bg-white p-6">
+                  <p className="text-gray-600 text-sm mb-5 leading-relaxed">
+                    Have questions about the topics in this article? Our refractory engineers review your specific application and recommend the right solution — no obligation.
+                  </p>
+                  <div className="flex flex-wrap gap-3">
+                    <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors">
+                      <Phone className="w-4 h-4" /> Speak to an Engineer
+                    </Link>
+                    <a href="https://wa.me/919810205154" target="_blank" rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors">
+                      <MessageCircle className="w-4 h-4" /> WhatsApp Us
+                    </a>
+                    <Link href="/products" className="inline-flex items-center gap-2 border-2 border-gray-200 hover:border-[#3B82F6] text-gray-600 hover:text-[#3B82F6] font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors">
+                      Browse Products <ArrowRight className="w-4 h-4" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tags footer */}
+              <div className="mt-10 pt-8 border-t border-gray-100 flex flex-wrap items-center gap-3">
+                <span className="text-sm font-semibold text-gray-500">Filed under:</span>
+                {post.tags.map((tag) => (
+                  <span key={tag} className="inline-flex items-center gap-1 bg-gray-100 text-gray-600 text-xs px-3 py-1.5 rounded-full">
+                    <Tag className="w-3 h-3" />{tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-8">
+                <Link href="/blog" className="inline-flex items-center gap-2 text-[#3B82F6] hover:text-[#1E40AF] font-medium text-sm transition-colors">
+                  <ArrowLeft className="w-4 h-4" /> Back to all articles
+                </Link>
+              </div>
+            </article>
+
+            {/* SIDEBAR */}
+            <aside className="lg:col-span-1 space-y-8">
+              {/* About box */}
+              <div className="bg-[#1E3A5F] rounded-2xl p-6 text-white sticky top-24">
+                <h3 className="font-oswald text-lg font-bold mb-3">About Shanker Agencies</h3>
+                <p className="text-white/75 text-sm leading-relaxed mb-5">
+                  India&apos;s premier refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics &amp; Divine Cerawool. Exporting to 50+ countries.
+                </p>
+                <div className="space-y-2.5">
+                  <Link href="/contact" className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-semibold px-4 py-2.5 rounded-xl text-sm transition-colors w-full justify-center">
+                    <Phone className="w-4 h-4" /> Get a Quote
+                  </Link>
+                  <Link href="/products" className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white font-semibold px-4 py-2.5 rounded-xl text-sm transition-colors w-full justify-center">
+                    Browse Products
+                  </Link>
+                </div>
+              </div>
+
+              {/* Related articles */}
+              <div>
+                <h3 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-5 border-l-4 border-[#F97316] pl-4">Related Articles</h3>
+                <div className="space-y-4">
+                  {sidebarPosts.map((related) => (
+                    <Link key={related.slug} href={`/blog/${related.slug}`}
+                      className="group flex gap-3 p-3 rounded-xl border border-gray-100 hover:border-[#F97316]/30 hover:shadow-sm bg-white transition-all">
+                      <div className="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-gradient-to-br from-[#1E3A5F] to-[#3B82F6] flex items-center justify-center">
+                        {related.coverImage
+                          ? <img src={related.coverImage} alt={related.title} className="w-full h-full object-cover" loading="lazy" />
+                          : <BookOpen className="w-6 h-6 text-white/70" />}
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <p className="text-[#1E3A5F] font-semibold text-sm leading-snug group-hover:text-[#F97316] transition-colors line-clamp-2">{related.title}</p>
+                        <p className="text-gray-400 text-xs mt-1">{related.readTime}</p>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+                <Link href="/blog" className="inline-flex items-center gap-1.5 text-[#3B82F6] text-sm font-medium mt-5 hover:gap-2.5 transition-all">
+                  View all articles <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Quick product links */}
+              <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+                <h3 className="font-oswald text-base font-bold text-[#1E3A5F] mb-4">Explore Products</h3>
+                <div className="space-y-2">
+                  {[
+                    { label: 'High Alumina Bricks', href: '/products/shaped-refractories/high-alumina-bricks' },
+                    { label: 'LCC / ULCC Castables', href: '/products/unshaped-refractories/low-cement-castable' },
+                    { label: 'Ceramic Fiber Blankets', href: '/products/insulation/ceramic-fibre-blanket' },
+                    { label: 'Ramming Mass', href: '/products/unshaped-refractories/ramming-mass' },
+                    { label: 'Slide Gate Plates', href: '/products/flow-control/slide-gate-plates' },
+                    { label: 'Acid Proof Bricks', href: '/products/acid-proofing/acid-proof-bricks' },
+                    { label: 'MgO-C Bricks', href: '/products' },
+                  ].map(({ label, href }) => (
+                    <Link key={href} href={href} className="flex items-center gap-2 text-gray-600 hover:text-[#F97316] text-sm py-1.5 transition-colors">
+                      <ChevronRight className="w-3.5 h-3.5 text-[#F97316] flex-shrink-0" />{label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
