@@ -511,8 +511,6 @@ export const LOCATIONS_DATA = [
       whyUs: "SAPL offers German buyers quality refractories at a significant cost advantage. Our CUMI products are manufactured to international standards and have been tested in demanding applications worldwide. We provide full technical documentation in English, EN-compliant test certificates, and reliable CIF Hamburg/Bremerhaven pricing."
     }
   },
-];
-
   // ─── INDIA — More Industrial Hubs ───────────────────────────────────────────
   {
     slug: "faridabad",
@@ -851,6 +849,7 @@ export const LOCATIONS_DATA = [
       whyUs: "SAPL offers Turkish buyers competitive CIF Istanbul/Mersin pricing with 12-14 day transit from India. Our CUMI and Calderys products are manufactured to international standards, and we provide full technical documentation in English for Turkish import compliance. Our pricing offers 15-20% advantage over equivalent European-origin refractories."
     }
   },
+];
 
 /**
  * Get a location by its URL slug
