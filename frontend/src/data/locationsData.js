@@ -849,6 +849,283 @@ export const LOCATIONS_DATA = [
       whyUs: "SAPL offers Turkish buyers competitive CIF Istanbul/Mersin pricing with 12-14 day transit from India. Our CUMI and Calderys products are manufactured to international standards, and we provide full technical documentation in English for Turkish import compliance. Our pricing offers 15-20% advantage over equivalent European-origin refractories."
     }
   },
+
+  // ── INDIA — Additional Industrial Cities ──────────────────────────────────
+  {
+    slug: "vadodara",
+    city: "Vadodara",
+    state: "Gujarat",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["petrochemical", "fertilizer", "glass", "power"],
+    majorPlants: ["IOCL Vadodara Refinery", "GSFC Fertilizers", "Gujarat Narmada Valley Fertilizers", "Alembic Pharmaceuticals"],
+    description: "Vadodara is Gujarat's petrochemical and fertilizer hub. With IOCL's major refinery, GSFC's ammonia-urea complex, and a dense concentration of chemical plants, demand for acid-proof linings, castable refractories, and insulation is substantial.",
+    metaTitle: "Refractory Supplier in Vadodara | Acid Proof Bricks & Castables | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Vadodara. Acid proof bricks, LCC castables & insulation for petrochemical, fertilizer & glass plants. CUMI authorized dealer. Fast supply across Gujarat.",
+    h1: "Refractory Materials Supplier in Vadodara, Gujarat",
+    content: {
+      intro: "Vadodara (Baroda) is Gujarat's industrial powerhouse — home to IOCL's major refinery, a dense concentration of chemical and fertilizer plants, and significant glass manufacturing. Shanker Agencies supplies the full range of refractory and acid-proof materials to Vadodara's process industries from our Gujarat supply network, with documentation for all grades supplied.",
+      industries: "The Vadodara industrial zone is dominated by petrochemicals (IOCL, Reliance complex), fertilizers (GSFC, GNFC), and chemical manufacturers requiring acid-resistant linings. Alembic's pharmaceutical manufacturing and Vadodara's glass sector (including optical glass) have specific refractory requirements for reactors, kilns, and annealing lines.",
+      products: "For Vadodara's petrochemical sector: Crown Ceramics acid proof bricks and tiles, acid-resistant cements, and FRP-compatible jointing materials. For fertilizer and chemical plants: corrosion-resistant castable linings, ceramic fiber module furnace linings for heaters, and microporous insulation. For glass manufacturing: fused cast AZS blocks, silica bricks, and checker bricks.",
+      whyUs: "Shanker Agencies serves the Vadodara industrial belt through our western India supply channel. Authorized for Crown Ceramics acid-proof products, Divine Cerawool ceramic fiber, and CUMI refractory grades — our technical team has experience with both fertilizer plant liner installations and petrochemical fired heater refractory systems."
+    }
+  },
+  {
+    slug: "panipat",
+    city: "Panipat",
+    state: "Haryana",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["petrochemical", "textile", "power"],
+    majorPlants: ["HPCL Panipat Refinery", "IOC Panipat Refinery & Petrochemical Complex", "NTPC Panipat"],
+    description: "Panipat hosts one of India's largest oil refineries (IOCL Panipat — 15 MMTPA) and a major petrochemical complex. The refinery and downstream units create a large continuous demand for heater refractories, insulation, and acid-resistant linings.",
+    metaTitle: "Refractory Supplier in Panipat | IOCL Refinery Refractories | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Panipat, Haryana. Serving IOCL refinery, petrochemical complex & power plants. Ceramic fiber, castable refractories & insulation. Same-day dispatch from Delhi.",
+    h1: "Refractory Materials Supplier in Panipat, Haryana",
+    content: {
+      intro: "Panipat is home to the IOCL Panipat Refinery — one of India's largest at 15 MMTPA — and the attached petrochemical complex producing PTA, polypropylene, and naphtha cracker products. The continuous operation of fired heaters, reactors, and process furnaces in this complex creates a steady demand for high-performance refractory materials. Shanker Agencies, headquartered in Delhi (~100 km from Panipat), provides same-day emergency dispatch for urgent refractory requirements.",
+      industries: "IOCL Panipat Refinery's fired heaters, process vessels, and catalyst regenerators are the primary refractory consumers. The attached petrochemical complex (polypropylene, naphtha) adds further demand. Panipat's large textile weaving and recycled fiber industry requires industrial furnace refractories. The region's power infrastructure also includes thermal generation.",
+      products: "For refinery fired heaters: ceramic fiber modules (Divine Cerawool 1260°C and 1430°C grades), LCC castable for burner blocks and transition zones, and castable anchor systems. For process vessel linings: acid-resistant castables and specialty brick linings. For petrochemical reactors: dense castable and plastic refractory for hot-spot repair applications.",
+      whyUs: "Our Delhi proximity (NH 44, ~1.5 hours) makes Shanker Agencies the fastest local supplier for Panipat's industrial complex. We maintain stock of ceramic fiber modules and blankets specifically sized for refinery fired heater applications, and our technical team has experience with API 560-compliant fired heater refractory specifications."
+    }
+  },
+  {
+    slug: "kanpur",
+    city: "Kanpur",
+    state: "Uttar Pradesh",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["steel", "leather", "glass", "foundry", "power"],
+    majorPlants: ["Lohia Machines", "JK Tyre & Industries", "Swadeshi Cotton Mills", "Kanpur Electric Supply Co."],
+    description: "Kanpur is Uttar Pradesh's largest industrial city and a key secondary steel and foundry market. The city's tanneries and leather chemicals sector requires acid-proof linings, while its foundries and glass units need refractory bricks and castables.",
+    metaTitle: "Refractory Supplier in Kanpur | High Alumina Bricks & Acid Proof | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Kanpur, UP. High alumina bricks, acid proof bricks & LCC castables for steel, foundry & leather chemical industries. Authorized CUMI & Crown Ceramics dealer.",
+    h1: "Refractory Materials Distributor in Kanpur, Uttar Pradesh",
+    content: {
+      intro: "Kanpur is one of Uttar Pradesh's most industrialized cities — its foundry and small steel sector, large leather and chemical industry, and glass manufacturing create significant refractory demand. Shanker Agencies serves Kanpur's industrial buyers from our Delhi base with reliable supply and technical support, making us the preferred refractory partner for Kanpur's diverse industrial sector.",
+      industries: "Kanpur's induction foundries and secondary steel re-rolling units require ramming mass, high alumina bricks, and castables. The leather and chemicals sector (one of India's largest leather manufacturing hubs) requires acid proof bricks and corrosion-resistant linings for tannery effluent systems. JK Tyre's manufacturing complex uses process furnaces requiring refractory maintenance.",
+      products: "For Kanpur's foundry sector: silica and alumina ramming mass, high alumina bricks (HA-45 to HA-70), and conventional castables for induction furnace and cupola maintenance. For the leather chemicals and acid industry: Crown Ceramics acid proof bricks, tiles, and acid-resistant cement. For glass and ceramics: fireclay bricks, insulating fire bricks, and ceramic fiber blankets.",
+      whyUs: "With our Delhi headquarters and strong UP distribution network, Shanker Agencies offers Kanpur buyers competitive pricing, technical expertise, and reliable supply. Our authorized dealerships for CUMI and Crown Ceramics ensure authentic products and after-sales support for foundry and industrial applications in the Kanpur-Unnao industrial corridor."
+    }
+  },
+  {
+    slug: "coimbatore",
+    city: "Coimbatore",
+    state: "Tamil Nadu",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["foundry", "textile", "engineering", "auto-components"],
+    majorPlants: ["LMW (Lakshmi Machine Works)", "Elgi Equipments", "Pricol", "numerous foundries and auto-component manufacturers"],
+    description: "Coimbatore is Tamil Nadu's industrial capital and one of India's largest foundry hubs, with 3,000+ foundries producing grey iron, SG iron, and steel castings. Demand for induction furnace ramming mass, high alumina bricks, and castables is substantial and growing.",
+    metaTitle: "Refractory Supplier in Coimbatore | Ramming Mass & High Alumina Bricks | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Coimbatore. Silica & alumina ramming mass, high alumina bricks & castables for 3,000+ foundries. CUMI authorized dealer. Technical support for IF lining.",
+    h1: "Refractory Materials Distributor in Coimbatore — India's Foundry Capital",
+    content: {
+      intro: "Coimbatore is India's premier foundry hub — with over 3,000 active foundries producing grey iron, SG iron, steel, and non-ferrous castings for the auto, pump, and engineering industries. This concentration creates one of India's highest per-capita demands for induction furnace refractories. Shanker Agencies serves Coimbatore's foundry sector with CUMI-grade silica and alumina ramming mass, high alumina bricks, and complete lining solutions.",
+      industries: "Coimbatore's foundry sector serves the auto-component industry (LMW, Elgi, Pricol, hundreds of Tier 2 suppliers), the pump manufacturing industry (Coimbatore produces 40% of India's pumps), and textile machinery manufacturing. Grey iron foundries dominate and use silica ramming mass; SG iron operations often require higher-grade alumina ramming mass. Large foundries use 2–5 tonne induction furnaces while SME units run 250 kg–1 tonne furnaces.",
+      products: "Primary products for Coimbatore: CUMI silica ramming mass (SiO₂ > 96%) for grey iron and SG iron induction furnaces; alumina ramming mass for tool steel and stainless applications; high alumina bricks (HA-45, HA-60) for cupola linings; LCC castables for ladle linings; pouring basins and sprue cups. We also supply ceramic fiber blankets for ladle covers and heat treatment furnace linings.",
+      whyUs: "Shanker Agencies supplies authorized CUMI ramming mass — the gold standard in Indian foundries — with consistent chemistry and grain size distribution. Our technical team provides sintering schedule consultations and lining life optimization. We deliver to Coimbatore via reliable courier and freight partners with 48-72 hour delivery from Delhi."
+    }
+  },
+  {
+    slug: "indore",
+    city: "Indore",
+    state: "Madhya Pradesh",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["steel", "pharma", "glass", "textile", "foundry"],
+    majorPlants: ["Malwa Steel", "Pithampur AUDI, SEZ automotive zone", "Dewas industrial area", "Khandwa industrial belt"],
+    description: "Indore is Madhya Pradesh's commercial capital and rapidly growing industrial hub. The Pithampur automotive and industrial zone, Dewas pharma and chemical belt, and expanding steel sector create growing refractory demand.",
+    metaTitle: "Refractory Supplier in Indore | Madhya Pradesh | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Indore, MP. High alumina bricks, castables & ceramic fiber for steel, pharma & glass industries. CUMI authorized dealer. Technical support & competitive pricing.",
+    h1: "Refractory Materials Supplier in Indore, Madhya Pradesh",
+    content: {
+      intro: "Indore is Madhya Pradesh's industrial capital, anchored by the Pithampur Special Economic Zone (home to automotive manufacturers), the Dewas pharmaceutical and chemical cluster, and a growing secondary steel sector. Shanker Agencies serves Indore's industrial buyers from our central India supply network, providing competitive pricing and technical support for all refractory applications.",
+      industries: "The Pithampur automotive zone includes component manufacturers, die-casters, and heat treatment facilities requiring furnace refractories. Dewas and Indore's pharmaceutical sector uses fired reactors and dryers with ceramic fiber and castable linings. The regional steel and foundry sector — including induction furnaces in Indore and surrounding areas — requires ramming mass and high alumina bricks.",
+      products: "For Indore's automotive heat treatment and casting sector: ceramic fiber modules and blankets (Divine Cerawool) for batch annealing furnaces; LCC castables for casting ladles; high alumina bricks for die-casting furnace linings. For pharma and chemical sector: Crown Ceramics acid proof bricks and tiles. For steel and foundry: CUMI silica ramming mass and high alumina bricks.",
+      whyUs: "Shanker Agencies' national supply network reaches Indore within 48-72 hours by road freight from Delhi. Our technical team supports specification, and our authorized dealerships ensure authentic CUMI, Crown Ceramics, and Divine Cerawool products for Indore's manufacturing sector."
+    }
+  },
+  {
+    slug: "haldia",
+    city: "Haldia",
+    state: "West Bengal",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["petrochemical", "fertilizer", "steel", "power"],
+    majorPlants: ["IOCL Haldia Refinery", "HPCL Haldia Petrochemicals", "Mitsubishi Chemical India", "CESC Budge Budge Power"],
+    description: "Haldia is West Bengal's major port and industrial city, home to IOCL's Haldia refinery, Haldia Petrochemicals, and a large fertilizer complex. The continuous-process nature of these plants drives high demand for ceramic fiber, castable refractories, and insulation.",
+    metaTitle: "Refractory Supplier in Haldia | Petrochemical Refractories | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Haldia, West Bengal. Ceramic fiber, LCC castables & insulation for IOCL refinery, petrochemical & fertilizer plants. Supply from Kolkata & Delhi warehouses.",
+    h1: "Refractory Materials Supplier in Haldia, West Bengal",
+    content: {
+      intro: "Haldia Petrochemical Complex and IOCL Haldia Refinery anchor West Bengal's industrial output. The refinery alone (7.5 MMTPA) has over 40 major fired heaters with continuous ceramic fiber and castable refractory maintenance requirements. Haldia Petrochemicals' crackers and Tata Chemicals' soda ash plant add further demand. Shanker Agencies serves Haldia from our Kolkata supply network with regular stock movements.",
+      industries: "IOCL Haldia Refinery's fired heaters, reformers, and process furnaces are major consumers of ceramic fiber modules (Grade 1260), LCC castable for transition zones, and specialty castable for burner blocks. Haldia Petrochemicals' ethylene cracker furnace linings require precision castable installation. The fertilizer sector (FACT, Tata Chemicals) uses stainless steel reactors with ceramic fiber backup insulation.",
+      products: "For refinery and petrochemical applications: Divine Cerawool ceramic fiber modules (1260°C, 1430°C) for fired heater linings; LCC castable (60–75% Al₂O₃) for burner tiles and transition zones; microporous insulation panels for thin-wall applications. For fertilizer plants: acid-resistant castable for vessels handling acidic media; ceramic fiber blankets for heat conserving applications.",
+      whyUs: "Shanker Agencies' Kolkata distribution capability enables regular supply to Haldia for planned maintenance shutdowns. We are familiar with the specific refractory grades required by IOCL Haldia's heater designs and can coordinate emergency supply within 24 hours from Kolkata stock."
+    }
+  },
+  {
+    slug: "nashik",
+    city: "Nashik",
+    state: "Maharashtra",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["auto", "glass", "engineering", "foundry"],
+    majorPlants: ["Bosch India", "ABB Ltd.", "Mahindra & Mahindra", "Garware Wall Ropes", "Hindustan Aeronautics Limited (HAL)"],
+    description: "Nashik is Maharashtra's second largest industrial hub after Pune, with major auto-component manufacturing, precision engineering, and HAL's aircraft manufacturing. It is also home to significant glass manufacturing and India's most important grape and wine industry requiring specialized stainless steel and food-grade acid-resistant linings.",
+    metaTitle: "Refractory Supplier in Nashik | Foundry & Auto Industry | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Nashik. High alumina bricks, ramming mass & ceramic fiber for auto, foundry, glass & engineering industries. Authorized CUMI dealer. Maharashtra supply.",
+    h1: "Refractory Materials Distributor in Nashik, Maharashtra",
+    content: {
+      intro: "Nashik is a rapidly growing industrial city in Maharashtra with strong auto-component manufacturing, precision engineering (HAL's aircraft division), and glass production. The Ambad and Satpur industrial areas house hundreds of foundries and heat-treatment facilities creating consistent refractory demand. Shanker Agencies supplies Nashik from our western India supply network.",
+      industries: "Nashik's automotive sector (Bosch, Mahindra, Lear Corporation) drives demand for heat treatment furnace refractories and foundry consumables. HAL's aircraft manufacturing uses specialized alloy casting furnaces. Nashik's glass production (including container and float glass) requires shaped refractories. The foundry cluster in Ambad serves auto-component casting for the Pune-Nashik-Mumbai automotive corridor.",
+      products: "For auto and foundry applications: CUMI high alumina bricks, silica ramming mass for induction furnaces, LCC castable for melting ladles and holding furnaces. For glass manufacturing: fireclay and high-alumina bricks for annealing lehrs and glass melting tank backup linings; ceramic fiber blankets and boards for crown insulation. For heat treatment: ceramic fiber modules for batch annealing.",
+      whyUs: "With authorized CUMI dealership and strong Maharashtra logistics network, Shanker Agencies delivers to Nashik within 24–36 hours. Our technical team supports foundry lining optimization and can specify the correct ramming mass grade for Nashik's foundry applications — from grey iron to aerospace alloy casting."
+    }
+  },
+  {
+    slug: "bhubaneswar",
+    city: "Bhubaneswar",
+    state: "Odisha",
+    country: "India",
+    countryCode: "IN",
+    region: "India",
+    isInternational: false,
+    industries: ["steel", "aluminium", "mining", "power"],
+    majorPlants: ["NALCO (Angul)", "HINDALCO Hirakud", "IMFA (Indian Metals & Ferro Alloys)", "MCL (Mahanadi Coalfields)"],
+    description: "Odisha is India's largest steel and aluminium producing state. Bhubaneswar serves as the commercial hub connecting Rourkela Steel Plant, NALCO's aluminium complex in Angul, HINDALCO's Hirakud operations, and multiple ferro-alloy plants requiring specialized refractories.",
+    metaTitle: "Refractory Supplier in Bhubaneswar, Odisha | Steel & Aluminium | Shanker Agencies",
+    metaDescription: "Refractory materials distributor in Bhubaneswar, Odisha. High alumina bricks, castables & silicon carbide bricks for steel, aluminium & ferro-alloy industries. Supply across Odisha.",
+    h1: "Refractory Materials Supplier in Bhubaneswar — Serving Odisha's Steel & Aluminium Belt",
+    content: {
+      intro: "Odisha is home to some of India's largest steel and aluminium producers — NALCO, HINDALCO Hirakud, IMFA ferro-alloys, and the expanding steel corridor from Rourkela to Angul. Bhubaneswar serves as the commercial center for procurement across Odisha's industrial corridor. Shanker Agencies supplies the full range of refractories to Odisha's primary metals sector.",
+      industries: "NALCO's aluminium smelter at Angul is one of India's largest, using carbon cathode and sidewall systems, rotary kilns for calcination, and anode baking furnaces — each with specific refractory requirements. HINDALCO Hirakud uses aluminium melting and holding furnaces. IMFA and other ferro-alloy producers use submerged arc furnaces with magnesia carbon and high-alumina linings. The coal sector (MCL) uses industrial dryers and conveyors with acid-resistant linings.",
+      products: "For aluminium industry: silicon carbide bricks and castables for aluminium melting furnace sidewalls; calcium silicate boards for holding furnace insulation; ceramic fiber blankets for tapping launders and metal transfer. For ferro-alloys: magnesia carbon bricks, high alumina bricks, LCC castables. For power plants: ceramic fiber modules, calcium aluminate castables.",
+      whyUs: "Shanker Agencies has supplied to the Odisha metals sector for decades. Our technical team understands the specific grades required for NALCO-type smelter applications and can specify CUMI and TRL Krosaki grades for ferro-alloy furnaces. We supply to Bhubaneswar-based procurement teams with regular consignments via road and rail."
+    }
+  },
+
+  // ── INTERNATIONAL — Export Markets ────────────────────────────────────────
+  {
+    slug: "manama",
+    city: "Manama",
+    state: "Capital Governorate",
+    country: "Bahrain",
+    countryCode: "BH",
+    region: "GCC",
+    isInternational: true,
+    industries: ["aluminium", "steel", "petrochemical"],
+    majorPlants: ["ALBA (Aluminium Bahrain)", "BAPCO (Bahrain Petroleum Company)", "Gulf Petrochemical Industries"],
+    description: "Bahrain hosts ALBA — one of the world's largest aluminium smelters with a capacity of 1.5 million tonnes/year. This makes Bahrain one of the highest per-capita consumers of refractory materials in the GCC, with demand for silicon carbide, calcium silicate, and carbon cathode refractories.",
+    metaTitle: "Refractory Supplier to Bahrain | ALBA Aluminium Refractories | Shanker Agencies",
+    metaDescription: "Refractory materials exporter to Bahrain. Silicon carbide bricks, ceramic fiber & aluminium furnace refractories for ALBA smelter & BAPCO refinery. CIF Khalifa Bin Salman Port. Indian origin.",
+    h1: "Refractory Materials Exporter to Bahrain — Serving ALBA & BAPCO",
+    content: {
+      intro: "Bahrain's ALBA is one of the world's largest single-site aluminium smelters (1.5 MMTPA), and represents one of the GCC's most significant refractory consumers. BAPCO's Sitra refinery (currently being expanded to 380,000 bpd under the Bapco Modernization Programme) and Gulf Petrochemical Industries add petrochemical refractory demand. Shanker Agencies exports to Bahrain via CIF Khalifa Bin Salman Port.",
+      industries: "ALBA's 6 potlines use carbon cathode and sidewall refractories; the casting and alloying operations use silicon carbide and alumina-based furnace linings. The calcining kilns use high-alumina bricks. BAPCO's refinery expansion demands ceramic fiber modules, LCC castable for heaters, and acid-resistant brick linings. Gulf Petro's fertilizer operations use corrosion-resistant linings.",
+      products: "For aluminium smelter applications: silicon carbide bricks and ramming pastes, calcium silicate boards, ceramic fiber for tapping launder insulation, and alumina castables for rodding shop furnaces. For BAPCO refinery: ceramic fiber modules, LCC and ultra-low cement castables, anchor systems. We supply with MSDS, material test reports, and third-party inspection on request.",
+      whyUs: "SAPL exports to GCC with complete documentation: commercial invoice, packing list, country of origin certificate, and material test reports conforming to ASTM/ISO standards. Our CIF Khalifa Bin Salman Port pricing is competitive with European alternatives, typically 15-25% lower cost for equivalent quality."
+    }
+  },
+  {
+    slug: "colombo",
+    city: "Colombo",
+    state: "",
+    country: "Sri Lanka",
+    countryCode: "LK",
+    region: "South Asia",
+    isInternational: true,
+    industries: ["glass", "ceramic", "petrochemical", "power"],
+    majorPlants: ["CPC (Ceylon Petroleum Corporation)", "Peliyagoda industrial zone", "Ekala industrial zone"],
+    description: "Sri Lanka has a growing industrial sector with CPC's Sapugaskanda refinery, significant ceramic tile and glass manufacturing, and industrial boilers across tea processing, textile, and food industries. India's proximity makes SAPL a cost-effective refractory supplier.",
+    metaTitle: "Refractory Supplier to Sri Lanka | Refractory Materials Exporter | Shanker Agencies",
+    metaDescription: "Refractory materials exporter to Sri Lanka. High alumina bricks, castables & insulation for ceramics, glass, petrochemical & industrial applications. CIF Colombo Port. Fast dispatch from India.",
+    h1: "Refractory Materials Exporter to Sri Lanka",
+    content: {
+      intro: "Sri Lanka's industrial refractory demand spans CPC's Sapugaskanda refinery, the substantial ceramic tile industry (Lanka Ceramics, Rocell, Noritake), glass manufacturing, tea processing boilers, and textile dyeing furnaces. India's proximity (Colombo is just 300 km from Chennai by sea) makes SAPL's refractory exports highly competitive on delivery time and freight cost.",
+      industries: "CPC Sapugaskanda requires fired heater and process unit refractories. Sri Lanka's ceramic tile industry — a significant contributor to exports — uses periodic kilns with high-alumina and mullite linings and ceramic fiber backup. Tea industry boilers (hundreds across the estate sector) use fireclay bricks and castable linings. Textile dyeing uses steam boilers with standard refractory grade materials.",
+      products: "High alumina bricks (HA-45 to HA-70) for ceramic kiln linings and backup; fireclay bricks for boiler and general furnace applications; ceramic fiber blankets and modules for energy-efficient annealing furnaces; LCC castables for boiler repairs; acid-resistant materials for chemical and dye plants. We export to Colombo Port with full Ceylon Chamber documentation.",
+      whyUs: "India-origin refractories reach Colombo Port in 3-5 days by sea, versus 15-25 days from European or Chinese sources. We offer competitive CIF Colombo pricing with proper export documentation, certificates of origin, and material test reports. Our Indian standards (IS 1528, IS 6 series) align well with Sri Lanka's British-derived industrial standards."
+    }
+  },
+  {
+    slug: "dhaka",
+    city: "Dhaka",
+    state: "Dhaka Division",
+    country: "Bangladesh",
+    countryCode: "BD",
+    region: "South Asia",
+    isInternational: true,
+    industries: ["steel", "glass", "ceramic", "textile", "power"],
+    majorPlants: ["BSRM Steel", "AKS Steel", "PHP Glass", "PRAN Group industrial", "BGMEA textile mills"],
+    description: "Bangladesh has one of South Asia's fastest growing steel sectors — with over 300 induction furnaces and electric arc furnaces supplying the construction boom. The glass, ceramics, and textile power sectors add to substantial refractory demand. India-Bangladesh proximity enables fast, cost-effective supply.",
+    metaTitle: "Refractory Supplier to Bangladesh | Steel & Glass Refractories | Shanker Agencies",
+    metaDescription: "Refractory materials exporter to Bangladesh. High alumina bricks, ramming mass & castables for steel, glass & ceramic industries. CIF Chittagong Port. Trusted Indian exporter since 1980.",
+    h1: "Refractory Materials Exporter to Bangladesh",
+    content: {
+      intro: "Bangladesh's rapid industrialization has created one of South Asia's fastest growing refractory markets. With 300+ induction furnaces in the steel re-rolling sector (BSRM, AKS, PHP Glassfibre, Abul Khair), substantial glass and ceramic manufacturing, and over 5,000 industrial boilers in the textile and food sectors, annual refractory consumption is growing at 12-15% annually. Shanker Agencies exports to Chittagong and Dhaka via land border (Petrapole-Benapole) and sea routes.",
+      industries: "Bangladesh's primary steel sector (induction furnaces and EAFs) is the largest refractory consumer — silica and alumina ramming mass, high alumina bricks, LCC castables for ladles and tundishes. PHP Glass manufactures float glass requiring specialty refractories. The textile sector's power boilers use fireclay and insulating bricks. The growing ceramics sector uses periodic and tunnel kilns.",
+      products: "For Bangladesh's steel sector: CUMI silica and alumina ramming mass, high alumina bricks (HA-45 to HA-70), LCC and conventional castables. For glass manufacturing: fused cast AZS blocks, silica bricks, checker bricks. For industrial boilers: fireclay bricks, insulating fire bricks, ceramic fiber blankets. We handle export documentation for Bangladesh customs including form-E and country of origin.",
+      whyUs: "Land border exports via Petrapole-Benapole give India a 48-72 hour lead time advantage over Chinese suppliers at 5-15% better landed cost. Shanker Agencies has established export procedures for Bangladesh and maintains Bangladeshi Taka invoicing capability through authorized banking channels. Material test reports in BNBC-compatible formats are available."
+    }
+  },
+  {
+    slug: "manila",
+    city: "Manila",
+    state: "National Capital Region",
+    country: "Philippines",
+    countryCode: "PH",
+    region: "Southeast Asia",
+    isInternational: true,
+    industries: ["steel", "glass", "cement", "petrochemical"],
+    majorPlants: ["Pag-asa Steel Works", "Global Ferronickel Holdings", "Pilipinas Shell Refinery", "Republic Cement"],
+    description: "The Philippines has a growing steel and cement sector, a significant nickel smelting industry (Global Ferronickel, Nickel Asia), and Pilipinas Shell's Tabangao refinery. Shanker Agencies exports to Manila Port serving these industries.",
+    metaTitle: "Refractory Supplier to Philippines | Steel & Nickel Smelting | Shanker Agencies",
+    metaDescription: "Refractory materials exporter to Philippines. High alumina bricks, castables & specialty refractories for steel, nickel smelting & cement industries. CIF Manila Port. Indian quality.",
+    h1: "Refractory Materials Exporter to the Philippines",
+    content: {
+      intro: "The Philippines' industrial refractory demand is concentrated in the growing steel mini-mill sector (EAF and induction), the large nickel and ferro-nickel smelting industry (Global Ferronickel, Nickel Asia — Philippines is one of the world's top nickel producers), Pilipinas Shell's refinery operations, and a large cement industry. Shanker Agencies exports to Manila and Cebu ports.",
+      industries: "Global Ferronickel and Nickel Asia's rotary kilns and electric furnaces for laterite nickel processing require basic refractories and high-temperature castables. Pag-asa Steel and other EAF operators need MgO-C bricks, LCC castables, and flow control refractories. Republic Cement and Holcim Philippines' kilns need magnesia spinel bricks. Shell Tabangao refinery requires heater refractories.",
+      products: "For nickel smelting: magnesia-based bricks and castables for rotary kiln burning zones; LCC and ULCC castables for electric furnace tapping spouts. For steel EAF: MgO-C bricks (via TRL Krosaki), LCC castables, slide gate plates (IFGL). For cement: magnesia spinel bricks. CIF Manila documentation: commercial invoice, bill of lading, COO (India), MSDS, test reports.",
+      whyUs: "Indian-origin refractories offer 10-20% price advantage over Japanese and European sources for equivalent quality. SAPL's range covers nickel, steel, and cement requirements in a single supply source, reducing procurement overhead. We supply to Philippine importers with Letter of Credit or Telegraphic Transfer payment terms."
+    }
+  },
+  {
+    slug: "accra",
+    city: "Accra",
+    state: "Greater Accra",
+    country: "Ghana",
+    countryCode: "GH",
+    region: "Africa",
+    isInternational: true,
+    industries: ["aluminium", "gold", "cement", "power"],
+    majorPlants: ["VALCO (Volta Aluminium Company)", "AngloGold Ashanti", "Goldfields Ghana", "GHACEM Cement"],
+    description: "Ghana is West Africa's most industrialized economy with VALCO's aluminium smelter (using abundant Volta River hydropower), a large gold mining industry with smelting operations, and one of the region's most active cement sectors. Shanker Agencies exports to Tema Port (Greater Accra).",
+    metaTitle: "Refractory Supplier to Ghana | Aluminium & Gold Smelting | Shanker Agencies",
+    metaDescription: "Refractory materials exporter to Ghana. Castables, high alumina bricks & insulation for VALCO aluminium, gold smelting & cement industries. CIF Tema Port. Indian quality.",
+    h1: "Refractory Materials Exporter to Ghana, West Africa",
+    content: {
+      intro: "Ghana's industrial refractory demand is anchored by VALCO's aluminium smelter (the only primary aluminium producer in West Africa), the large gold and gold processing sector (AngloGold Ashanti, Goldfields, Kinross), and GHACEM's large cement operations. Tema Port (near Accra) is West Africa's premier deep-water port, facilitating container imports from India efficiently.",
+      industries: "VALCO's aluminium smelter uses carbon cathode and side wall refractories, rodding shop furnaces, and anode baking ovens. Gold roasters and smelting furnaces (AGF at various mining sites) require acid-resistant castables and high alumina brick linings. GHACEM's cement kilns at Tema require magnesia spinel bricks, high alumina transition zone bricks, and castable anchor systems.",
+      products: "For aluminium smelter: silicon carbide sidewall bricks, calcium silicate boards, ceramic fiber for launder insulation. For gold processing: acid-resistant castables, Crown Ceramics acid proof bricks for cyanide leaching vessels. For cement: magnesia spinel bricks, LCC castable for cyclone preheater. CIF Tema Port pricing with West African Clearing documentation.",
+      whyUs: "India-West Africa sea transit (18-21 days) positions Indian-origin refractories competitively versus European sources (20-25 days) at significantly better pricing. We offer USD invoicing with standard international documentary collection terms. Our technical team can provide remote installation guidance and material specification for Ghana-based procurement engineers."
+    }
+  },
 ];
 
 /**

@@ -10,20 +10,22 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://www.shankeragencies.com'),
   title: {
-    default: "Shanker Agencies | India's Leading Refractory Engineering Partner Since 1980",
+    default: "Shanker Agencies | Refractory Materials Distributor",
     template: '%s | Shanker Agencies',
   },
   description:
-    'India\'s leading refractory engineering partner & manufacturer since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supplying high alumina bricks, castables, ceramic fiber, ramming mass, slide gate plates & acid proof bricks to steel, cement, aluminum & petrochemical industries across 50+ countries.',
+    "India's trusted refractory distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL for steel, cement & aluminium industries.",
   keywords: [
+    'refractory materials distributor', 'refractory distributor India', 'refractory supplier India',
     'refractory engineering partner India', 'refractory manufacturer India', 'refractory supplier Delhi',
-    'CUMI authorized dealer', 'Crown Ceramics dealer', 'Divine Cerawool dealer',
+    'CUMI authorized dealer', 'Crown Ceramics dealer', 'Divine Cerawool dealer', 'Calderys India',
+    'TRL Krosaki dealer', 'IFGL distributor',
     'high alumina bricks supplier', 'castable refractory manufacturer', 'ramming mass supplier India',
     'ceramic fiber blanket supplier', 'slide gate plate supplier', 'acid proof bricks India',
     'refractory lining contractor', 'furnace lining material', 'refractory installation services',
     'steel plant refractories', 'cement kiln refractory', 'induction furnace lining',
     'refractory exporter India', 'refractory supplier GCC', 'refractory supplier Middle East',
-    'thermocouple sheath supplier', 'refractory anchor supplier', 'insulation material supplier',
+    'refractory anchor supplier', 'insulation material supplier',
     'magnesia carbon bricks', 'silicon carbide bricks', 'fire bricks manufacturer',
   ],
   openGraph: {
@@ -59,18 +61,25 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Organization Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Organization',
+              '@type': ['Organization', 'LocalBusiness'],
               name: 'Shanker Agencies Pvt. Ltd.',
-              alternateName: 'SAPL',
+              alternateName: ['SAPL', 'Shanker Agencies'],
               url: 'https://www.shankeragencies.com',
-              logo: 'https://www.shankeragencies.com/logo.png',
+              logo: {
+                '@type': 'ImageObject',
+                url: 'https://www.shankeragencies.com/logo.png',
+                width: 200,
+                height: 60,
+              },
               foundingDate: '1980',
-              description: 'India\'s premier refractory engineering partner & manufacturer since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Engineering, manufacturing & supplying refractory solutions to steel, cement, aluminum & petrochemical industries across 50+ countries.',
+              description: "India's trusted refractory materials distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL. Supplying high alumina bricks, castables, ceramic fiber, ramming mass & flow control refractories to steel, cement, aluminium & petrochemical industries.",
+              priceRange: '₹₹',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '553, Main G.T Road, Shahdara',
@@ -79,13 +88,26 @@ export default function RootLayout({ children }) {
                 postalCode: '110032',
                 addressCountry: 'IN',
               },
+              geo: {
+                '@type': 'GeoCoordinates',
+                latitude: '28.6693',
+                longitude: '77.2986',
+              },
+              openingHoursSpecification: [
+                {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                  opens: '09:00',
+                  closes: '18:00',
+                },
+              ],
               contactPoint: [
                 {
                   '@type': 'ContactPoint',
                   telephone: '+91-9810205154',
                   contactType: 'sales',
                   email: 'info@shankeragencies.com',
-                  areaServed: ['IN', 'AE', 'SA', 'QA', 'OM', 'KW', 'BH', 'SG', 'MY', 'ID', 'VN', 'TH', 'GB', 'DE', 'FR', 'NG', 'KE', 'ZA', 'EG'],
+                  areaServed: ['IN', 'AE', 'SA', 'QA', 'OM', 'KW', 'BH', 'SG', 'MY', 'ID', 'VN', 'TH', 'GB', 'DE', 'FR', 'NG', 'KE', 'ZA', 'EG', 'TR'],
                   availableLanguage: ['English', 'Hindi'],
                 },
                 {
@@ -96,18 +118,47 @@ export default function RootLayout({ children }) {
                   areaServed: ['IN', 'AE', 'SA', 'SG', 'MY'],
                 },
               ],
-              sameAs: ['https://linkedin.com/company/shankeragencies'],
+              sameAs: [
+                'https://linkedin.com/company/shankeragencies',
+                'https://www.shankeragencies.com',
+              ],
+              knowsAbout: [
+                'Refractory Materials', 'High Alumina Bricks', 'Low Cement Castables',
+                'Ceramic Fiber Insulation', 'Ramming Mass', 'Slide Gate Plates',
+                'Acid Proof Bricks', 'Steel Plant Refractories', 'Cement Kiln Refractories',
+                'Induction Furnace Lining', 'Furnace Engineering',
+              ],
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
                 name: 'Refractory Products & Engineering Services',
                 itemListElement: [
                   { '@type': 'OfferCatalog', name: 'Shaped Refractories', description: 'High alumina bricks, fireclay bricks, magnesia bricks, silicon carbide bricks' },
-                  { '@type': 'OfferCatalog', name: 'Unshaped Refractories', description: 'Castables, ramming mass, gunning mass, refractory mortar' },
+                  { '@type': 'OfferCatalog', name: 'Unshaped Refractories', description: 'LCC castables, ramming mass, gunning mass, refractory mortar' },
                   { '@type': 'OfferCatalog', name: 'Flow Control Refractories', description: 'Slide gate plates, ladle shrouds, subentry nozzles, tundish nozzles' },
                   { '@type': 'OfferCatalog', name: 'Insulation Products', description: 'Ceramic fiber blankets, modules, boards, calcium silicate, microporous insulation' },
                   { '@type': 'OfferCatalog', name: 'Acid Proofing', description: 'Acid proof bricks, tiles, carbon bricks, acid proof cement' },
-                  { '@type': 'OfferCatalog', name: 'Refractory Engineering Services', description: 'Furnace lining design, installation supervision, refractory audit, thermal analysis' },
                 ],
+              },
+            }),
+          }}
+        />
+        {/* WebSite Schema — enables Google Sitelinks Search */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: 'Shanker Agencies',
+              url: 'https://www.shankeragencies.com',
+              description: "India's trusted refractory materials distributor since 1980.",
+              potentialAction: {
+                '@type': 'SearchAction',
+                target: {
+                  '@type': 'EntryPoint',
+                  urlTemplate: 'https://www.shankeragencies.com/blog?q={search_term_string}',
+                },
+                'query-input': 'required name=search_term_string',
               },
             }),
           }}

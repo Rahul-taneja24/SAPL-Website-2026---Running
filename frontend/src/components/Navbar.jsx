@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useApp } from '@/context/AppContext';
-import { Menu, X, ChevronDown, Globe, Phone, Mail, Zap, Languages, ArrowRight, Flame, Layers, Wrench, Package } from "lucide-react";
+import { Menu, X, ChevronDown, Globe, Phone, Mail, Zap, Languages, ArrowRight, Flame, Layers, Wrench, Package, FileText } from "lucide-react";
 
 
 // ─── NAV DATA ─────────────────────────────────────────────────────────────────
@@ -65,6 +65,7 @@ const navLinks = [
   },
   { name: "Brands", path: "/brands", icon: Package },
   { name: "Knowledge", path: "/knowledge", icon: Wrench },
+  { name: "Downloads", path: "/downloads", icon: FileText },
   { name: "Contact", path: "/contact" },
 ];
 

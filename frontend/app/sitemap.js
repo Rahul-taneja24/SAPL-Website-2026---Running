@@ -20,6 +20,7 @@ export default async function sitemap() {
     { url: `${BASE}/contact`,                   priority: 0.9, changeFrequency: 'monthly' },
     { url: `${BASE}/company-profile`,           priority: 0.6, changeFrequency: 'monthly' },
     { url: `${BASE}/refractory-supplier-in`,    priority: 0.8, changeFrequency: 'monthly' },
+    { url: `${BASE}/downloads`,                 priority: 0.7, changeFrequency: 'monthly' },
     { url: `${BASE}/privacy`,                   priority: 0.3, changeFrequency: 'yearly' },
     { url: `${BASE}/terms`,                     priority: 0.3, changeFrequency: 'yearly' },
   ];

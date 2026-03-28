@@ -76,9 +76,9 @@ const Home = () => {
   const homeStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Shanker Agencies - Refractory Engineering Partner & Manufacturer Since 1980",
+    "name": "Shanker Agencies | Refractory Materials Distributor Since 1980",
     "url": "https://www.shankeragencies.com",
-    "description": "India's premier refractory engineering partner & manufacturer. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Engineering, manufacturing & supplying refractories to 50+ countries.",
+    "description": "India's trusted refractory materials distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL. Supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical industries.",
     "mainEntity": {
       "@type": "Organization",
       "name": "Shanker Agencies Private Limited",
@@ -87,7 +87,7 @@ const Home = () => {
       "areaServed": "Global",
       "telephone": "+919810205154",
       "email": "info@shankeragencies.com",
-      "knowsAbout": ["Refractory Engineering", "Refractory Manufacturing", "Furnace Lining Design", "Refractory Installation", "Thermal Analysis", "High Alumina Bricks", "Castable Refractories", "Ceramic Fiber Insulation", "Flow Control Refractories", "Acid Proof Linings"],
+      "knowsAbout": ["Refractory Materials Distributor", "Refractory Engineering", "High Alumina Bricks", "Castable Refractories", "Ceramic Fiber Insulation", "Flow Control Refractories", "Acid Proof Linings", "Ramming Mass", "Furnace Lining Design"],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "553, Main G.T Road, Shahdara",
@@ -96,6 +96,53 @@ const Home = () => {
         "addressCountry": "IN"
       }
     }
+  };
+
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What refractory materials does Shanker Agencies distribute?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shanker Agencies distributes the full range of refractory materials: high alumina bricks (AL45–AL90), fireclay bricks, magnesia spinel and MgO-C bricks, low cement castables (LCC), ultra-low cement castables (ULCC), silica and alumina ramming mass, ceramic fiber blankets and modules, slide gate plates, ladle shrouds, subentry nozzles, acid proof bricks, and calcium silicate insulation boards. We are authorized dealers of CUMI, Crown Ceramics, and Divine Cerawool."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which brands is Shanker Agencies authorized to distribute?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shanker Agencies is an authorized dealer of CUMI (Super Refractories), Crown Ceramics (acid proof products), and Divine Cerawool (ceramic fiber insulation). We also supply products from Calderys, TRL Krosaki, and IFGL Refractories as trusted supply partners."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Shanker Agencies supply refractories for export?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Shanker Agencies exports refractory materials to 50+ countries including the UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain, Singapore, Malaysia, Bangladesh, Sri Lanka, Ghana, Kenya, South Africa, UK, and Germany. We provide complete export documentation including COO, material test reports, and MSDS."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get a technical datasheet for a refractory product?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Technical datasheets for all refractory products are available on request via WhatsApp (+91-9899957888) or email (info@shankeragencies.com). Our technical team responds within 2 business hours. Visit our Downloads page for a full list of available datasheets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries does Shanker Agencies supply refractory materials to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shanker Agencies supplies refractory materials to steel plants (EAF, BOF, induction furnaces, continuous casting), cement kilns, aluminium smelters, glass melting furnaces, petrochemical refineries, fertilizer plants, power stations, and ceramic & foundry industries."
+        }
+      }
+    ]
   };
 
   return (
@@ -180,8 +227,8 @@ const Home = () => {
                   {/* Subheadline */}
                   <p className="hero-reveal hero-d2 text-gray-200 text-lg mb-6 leading-relaxed max-w-lg">
                     {region === "india"
-                      ? "India's premier refractory engineering partner & manufacturer. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. End-to-end engineering solutions — from furnace lining design to installation supervision for steel, cement, aluminum & petrochemical plants."
-                      : "Your trusted refractory engineering partner from India. We engineer, manufacture & supply premium refractories — delivered to GCC, ASEAN, Africa, UK & Europe with full technical support and installation guidance."}
+                      ? "India's trusted refractory materials distributor since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool — supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical plants."
+                      : "Your trusted refractory materials distributor from India. We supply & engineer premium refractories — delivering to GCC, ASEAN, Africa, UK & Europe with full technical documentation and installation guidance."}
                   </p>
 
                   {/* Trust pills — Sleek, horizontal, smaller font */}
