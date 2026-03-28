@@ -1,6 +1,7 @@
 // app/sitemap.js — Comprehensive sitemap for Shanker Agencies
 import { LOCATIONS_DATA } from '@/data/locationsData';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { PRODUCT_SEO } from '@/data/productsSeoData';
 
 const BASE = 'https://www.shankeragencies.com';
 const TODAY = new Date().toISOString();
@@ -28,41 +29,11 @@ export default async function sitemap() {
     'insulation', 'acid-proofing', 'special-grades',
   ].map((slug) => ({ url: `${BASE}/products/${slug}`, priority: 0.8, changeFrequency: 'weekly' }));
 
-  const productPages = [
-    ['shaped-refractories', 'high-alumina-bricks'],
-    ['shaped-refractories', 'fireclay-bricks'],
-    ['shaped-refractories', 'insulating-fire-bricks'],
-    ['shaped-refractories', 'basic-magnesia-bricks'],
-    ['shaped-refractories', 'silicon-carbide-bricks'],
-    ['shaped-refractories', 'mullite-bricks'],
-    ['shaped-refractories', 'andalusite-bricks'],
-    ['shaped-refractories', 'magnesia-spinel-bricks'],
-    ['shaped-refractories', 'magnesia-carbon-bricks'],
-    ['unshaped-refractories', 'low-cement-castable'],
-    ['unshaped-refractories', 'ultra-low-cement-castable'],
-    ['unshaped-refractories', 'conventional-castable'],
-    ['unshaped-refractories', 'ramming-mass'],
-    ['unshaped-refractories', 'gunning-mix'],
-    ['unshaped-refractories', 'refractory-mortar'],
-    ['unshaped-refractories', 'plastic-refractory'],
-    ['flow-control', 'slide-gate-plates'],
-    ['flow-control', 'ladle-shrouds'],
-    ['flow-control', 'subentry-nozzles'],
-    ['flow-control', 'stopper-rods'],
-    ['flow-control', 'tundish-nozzles'],
-    ['flow-control', 'well-blocks'],
-    ['insulation', 'ceramic-fibre-blanket'],
-    ['insulation', 'ceramic-fibre-module'],
-    ['insulation', 'ceramic-fibre-board'],
-    ['insulation', 'calcium-silicate-board'],
-    ['insulation', 'microporous-insulation'],
-    ['acid-proofing', 'acid-proof-bricks'],
-    ['acid-proofing', 'acid-resistant-tiles'],
-    ['acid-proofing', 'carbon-bricks'],
-    ['acid-proofing', 'acid-proof-cement'],
-    ['special-grades', 'fused-cast-refractories'],
-    ['special-grades', 'zircon-products'],
-  ].map(([cat, id]) => ({ url: `${BASE}/products/${cat}/${id}`, priority: 0.7, changeFrequency: 'monthly' }));
+  const productPages = PRODUCT_SEO.map(({ categorySlug, productId }) => ({
+    url: `${BASE}/products/${categorySlug}/${productId}`,
+    priority: 0.7,
+    changeFrequency: 'monthly',
+  }));
 
   const industryPages = [
     'steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic',

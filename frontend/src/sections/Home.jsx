@@ -174,7 +174,7 @@ const Home = () => {
                     className="hero-reveal hero-d1 font-oswald font-bold text-white leading-tight mb-4"
                     style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", letterSpacing: "0.02em" }}
                   >
-                    INDIA'S PREMIER <span className="text-shimmer">REFRACTORY</span> ENGINEERING PARTNER &amp; MANUFACTURER
+                    YOUR <span className="text-shimmer">REFRACTORY</span> ENGINEERING PARTNER
                   </h1>
 
                   {/* Subheadline */}
