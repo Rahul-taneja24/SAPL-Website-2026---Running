@@ -1,7 +1,106 @@
 import Brands from '@/sections/Brands';
+
 export const metadata = {
-  title: 'Our Brands | CUMI, Calderys, TRL Krosaki, IFGL',
-  description: "Shanker Agencies is an authorized distributor for India's leading refractory brands including CUMI, Calderys, TRL Krosaki and IFGL.",
+  title: 'Authorized Refractory Brands | CUMI, Divine Cerawool, Crown Ceramics | Shanker Agencies',
+  description: "Shanker Agencies is an authorized dealer of CUMI, Crown Ceramics & Divine Cerawool — and trusted supply partner for Calderys, TRL Krosaki & IFGL. Genuine products, factory-direct pricing, technical support.",
   alternates: { canonical: '/brands' },
+  openGraph: {
+    title: 'Authorized Refractory Brands | Shanker Agencies',
+    description: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for Calderys, TRL Krosaki & IFGL. India's trusted refractory materials distributor since 1980.",
+    url: 'https://www.shankeragencies.com/brands',
+  },
 };
-export default function BrandsPage() { return <Brands />; }
+
+const brandsSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Refractory Brands Distributed by Shanker Agencies",
+  "description": "Shanker Agencies distributes and supplies refractory products from India's leading manufacturers.",
+  "url": "https://www.shankeragencies.com/brands",
+  "numberOfItems": 7,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Brand",
+        "name": "CUMI Super Refractories",
+        "alternateName": "CUMI",
+        "description": "India's leading refractory manufacturer — high alumina bricks, castables, ramming mass, insulating fire bricks, ceramic fiber.",
+        "url": "https://www.shankeragencies.com/brands/cumi"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Brand",
+        "name": "Divine Cerawool",
+        "description": "Ceramic fiber blankets, modules, boards and calcium silicate insulation products for high-temperature furnace applications.",
+        "url": "https://www.shankeragencies.com/brands/divine-cerawool"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Brand",
+        "name": "Crown Ceramics",
+        "description": "Acid proof bricks, acid resistant tiles and acid-resistant jointing materials for chemical plants and industrial flooring.",
+        "url": "https://www.shankeragencies.com/brands/crown-ceramics"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Brand",
+        "name": "Calderys",
+        "description": "Monolithic refractories, castables, gunning mixes and specialty refractory solutions for steel, cement and glass industries.",
+        "url": "https://www.shankeragencies.com/brands/calderys"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Brand",
+        "name": "TRL Krosaki",
+        "description": "MgO-C bricks, magnesia bricks, silicon carbide products and advanced refractories for iron and steelmaking.",
+        "url": "https://www.shankeragencies.com/brands/trl-krosaki"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Brand",
+        "name": "IFGL Refractories",
+        "description": "Slide gate plates, ladle shrouds, subentry nozzles and flow control refractories for continuous casting.",
+        "url": "https://www.shankeragencies.com/brands/ifgl"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Brand",
+        "name": "Mahakoshal Refractories",
+        "description": "Refractory bricks and castable products for steel plant and industrial furnace applications.",
+        "url": "https://www.shankeragencies.com/brands/mahakoshal"
+      }
+    }
+  ]
+};
+
+export default function BrandsPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(brandsSchema) }}
+      />
+      <Brands />
+    </>
+  );
+}
