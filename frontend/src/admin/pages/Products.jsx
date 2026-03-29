@@ -1145,11 +1145,11 @@ function ProductDetailPage({ product, category, categorySlug }) {
                                     className="w-full flex items-center justify-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-4 py-3.5 rounded-xl font-bold text-sm transition-colors shadow-lg shadow-orange-200">
                                     <MessageCircle size={16} /> Request Quote
                                 </Link>
-                                <a href="tel:+919810205154"
+                                <a href="tel:+919899957888"
                                     className="w-full flex items-center justify-center gap-2 bg-[#1E3A5F] hover:bg-[#1E40AF] text-white px-4 py-3.5 rounded-xl font-bold text-sm transition-colors">
-                                    <Phone size={16} /> +91 98102 05154
+                                    <Phone size={16} /> +91 98999 57888
                                 </a>
-                                <a href="https://wa.me/919810205154?text=Hi, I need a quote for " target="_blank" rel="noreferrer"
+                                <a href="https://wa.me/919899957888?text=Hi, I need a quote for " target="_blank" rel="noreferrer"
                                     className="w-full flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-3.5 rounded-xl font-bold text-sm transition-colors">
                                     <MessageCircle size={16} /> WhatsApp Quote
                                 </a>
@@ -1203,8 +1203,8 @@ function ProductDetailPage({ product, category, categorySlug }) {
                         <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-4 rounded-full font-bold transition-colors">
                             <MessageCircle size={17} /> Get a Quote
                         </Link>
-                        <a href="tel:+919810205154" className="inline-flex items-center gap-2 bg-white/10 border border-white/30 hover:bg-white/20 text-white px-7 py-4 rounded-full font-bold transition-colors">
-                            <Phone size={17} /> Call +91 98102 05154
+                        <a href="tel:+919899957888" className="inline-flex items-center gap-2 bg-white/10 border border-white/30 hover:bg-white/20 text-white px-7 py-4 rounded-full font-bold transition-colors">
+                            <Phone size={17} /> Call +91 98999 57888
                         </a>
                     </div>
                 </div>

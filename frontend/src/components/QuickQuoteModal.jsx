@@ -67,7 +67,7 @@ const QuickQuoteModal = ({ onClose }) => {
       }
     } catch (error) {
       console.error("Quote submission error:", error);
-      toast.error("Something went wrong. Please try again or call +91 98102 05154.");
+      toast.error("Something went wrong. Please try again or call +91 98999 57888.");
     } finally {
       setLoading(false);
     }
@@ -130,11 +130,11 @@ const QuickQuoteModal = ({ onClose }) => {
             </p>
             <p className="text-gray-400 text-xs mb-6">
               Typically within 4 hours — or call us now at{" "}
-              <a href="tel:+919810205154" className="text-[#F97316] font-semibold hover:underline">+91 98102 05154</a>
+              <a href="tel:+919899957888" className="text-[#F97316] font-semibold hover:underline">+91 98999 57888</a>
             </p>
             <div className="flex gap-3">
               <a
-                href="https://wa.me/919810205154"
+                href="https://wa.me/919899957888"
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold text-sm transition-colors"
@@ -180,7 +180,7 @@ const QuickQuoteModal = ({ onClose }) => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    placeholder="+91 98102 05154"
+                    placeholder="+91 98999 57888"
                     className="form-input"
                     aria-required="true"
                   />
@@ -313,7 +313,7 @@ const QuickQuoteModal = ({ onClose }) => {
 
             <p className="text-center text-xs text-gray-400">
               Prefer to call?{" "}
-              <a href="tel:+919810205154" className="text-[#F97316] font-semibold hover:underline">+91 98102 05154</a>
+              <a href="tel:+919899957888" className="text-[#F97316] font-semibold hover:underline">+91 98999 57888</a>
               {" "}· Mon–Sat, 9 AM–6 PM IST
             </p>
           </form>

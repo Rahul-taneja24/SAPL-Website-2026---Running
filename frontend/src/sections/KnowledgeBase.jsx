@@ -486,7 +486,7 @@ const KnowledgeBase = () => {
               <MessageCircle size={16} aria-hidden="true" /> Request Product Catalog (WhatsApp)
             </a>
             <a
-              href="tel:+919810205154"
+              href="tel:+919899957888"
               className="inline-flex items-center gap-2 px-7 py-3.5 bg-white border-2 border-[#1E3A5F] text-[#1E3A5F] hover:bg-gray-50 rounded-full font-bold text-sm transition-colors"
             >
               <Phone size={16} aria-hidden="true" /> Talk to a Technician

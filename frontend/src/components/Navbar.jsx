@@ -419,7 +419,7 @@ const Navbar = () => {
             {/* Mobile bottom actions */}
             <div className="mt-4 pt-4 border-t border-gray-100 flex gap-3">
               <a
-                href="https://wa.me/919810205154"
+                href="https://wa.me/919899957888"
                 target="_blank"
                 rel="noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 py-3 bg-green-500 hover:bg-green-600 text-white rounded-xl text-sm font-semibold transition-colors"

@@ -19,7 +19,7 @@ const productCategories = [
 const faqs = [
   {
     q: "What is your typical response time for quote requests?",
-    a: "We respond to all quote requests within 4 business hours. For urgent requirements, call us directly at +91 98102 05154 — we're available Mon–Sat, 9AM–6PM IST.",
+    a: "We respond to all quote requests within 4 business hours. For urgent requirements, call us directly at +91 98999 57888 — we're available Mon–Sat, 9AM–6PM IST.",
   },
   {
     q: "Do you supply internationally?",
@@ -172,7 +172,7 @@ const Contact = () => {
         name: "Shanker Agencies Private Limited",
         alternateName: "SAPL",
         description: "India's premier refractory engineering partner since 1980. Strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL refractories.",
-        telephone: "+91-9810205154",
+        telephone: "+91-9899957888",
         email: "info@shankeragencies.com",
         url: "https://shankeragencies.com",
         foundingDate: "1980",
@@ -232,13 +232,13 @@ const Contact = () => {
           {/* Quick contact pills */}
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="tel:+919810205154"
+              href="tel:+919899957888"
               className="flex items-center gap-2 px-5 py-3 bg-white/10 border border-white/20 rounded-xl text-white hover:bg-white/20 transition-colors text-sm font-medium"
             >
-              <Phone size={16} aria-hidden="true" /> +91 98102 05154
+              <Phone size={16} aria-hidden="true" /> +91 98999 57888
             </a>
             <a
-              href="https://wa.me/919810205154"
+              href="https://wa.me/919899957888"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-5 py-3 bg-green-500 hover:bg-green-600 rounded-xl text-white transition-colors text-sm font-semibold"
@@ -317,7 +317,7 @@ const Contact = () => {
                         <strong className="text-[#1E3A5F]">{formData.email}</strong>
                       </p>
                       <p className="text-gray-400 text-xs mb-8">
-                        For urgent requirements, call <a href="tel:+919810205154" className="text-[#F97316] font-semibold hover:underline">+91 98102 05154</a>
+                        For urgent requirements, call <a href="tel:+919899957888" className="text-[#F97316] font-semibold hover:underline">+91 98999 57888</a>
                       </p>
                       <button
                         onClick={resetForm}
@@ -468,7 +468,7 @@ const Contact = () => {
                       <p className="font-bold text-sm mb-1 uppercase tracking-wider text-blue-200">Call Us</p>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
                         <a href="tel:+919899957888" className="text-white hover:text-[#F97316] text-sm transition-colors">+91 98999 57888</a>
-                        <a href="tel:+919810205154" className="text-white hover:text-[#F97316] text-sm transition-colors">+91 98102 05154</a>
+                        <a href="tel:+919899957888" className="text-white hover:text-[#F97316] text-sm transition-colors">+91 98999 57888</a>
                         <a href="tel:+919811909394" className="text-white hover:text-[#F97316] text-sm transition-colors">+91 98119 09394</a>
                         <a href="tel:+918800203083" className="text-white hover:text-[#F97316] text-sm transition-colors">+91 88002 03083</a>
                       </div>
@@ -619,14 +619,14 @@ const Contact = () => {
           <p className="text-white/85 mb-8 text-sm">Our technical team is ready to discuss your specific requirements</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+919810205154"
+              href="tel:+919899957888"
               className="inline-flex items-center gap-2 bg-white text-[#F97316] px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-xl"
             >
               <Phone size={20} aria-hidden="true" />
-              Call +91 98102 05154
+              Call +91 98999 57888
             </a>
             <a
-              href="https://wa.me/919810205154"
+              href="https://wa.me/919899957888"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold transition-colors shadow-xl"

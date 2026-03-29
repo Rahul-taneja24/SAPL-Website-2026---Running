@@ -342,7 +342,7 @@ function IndustrySolutions() {
                 View Products <ArrowRight size={15} aria-hidden="true" />
               </Link>
               <a
-                href="https://wa.me/919810205154"
+                href="https://wa.me/919899957888"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-full font-bold text-sm transition-colors"
@@ -483,7 +483,7 @@ function IndustrySolutions() {
                 Request Free Consultation
               </Link>
               <a
-                href="https://wa.me/919810205154"
+                href="https://wa.me/919899957888"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-sm transition-colors"

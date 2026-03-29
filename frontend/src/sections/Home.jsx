@@ -85,7 +85,7 @@ const Home = () => {
       "alternateName": "SAPL",
       "foundingDate": "1980",
       "areaServed": "Global",
-      "telephone": "+919810205154",
+      "telephone": "+919899957888",
       "email": "info@shankeragencies.com",
       "knowsAbout": ["Refractory Materials Distributor", "Refractory Engineering", "High Alumina Bricks", "Castable Refractories", "Ceramic Fiber Insulation", "Flow Control Refractories", "Acid Proof Linings", "Ramming Mass", "Furnace Lining Design"],
       "address": {
@@ -694,11 +694,11 @@ const Home = () => {
               Request a Quote
             </button>
             <a
-              href="tel:+919810205154"
+              href="tel:+919899957888"
               className="bg-transparent border-2 border-white text-white px-10 py-4 rounded-full font-bold text-base flex items-center gap-2 hover:bg-white/10 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
             >
               <Phone size={20} aria-hidden="true" />
-              Call +91 98102 05154
+              Call +91 98999 57888
             </a>
           </div>
           <div className="flex flex-wrap justify-center gap-6 mt-10 text-white/70 text-sm">

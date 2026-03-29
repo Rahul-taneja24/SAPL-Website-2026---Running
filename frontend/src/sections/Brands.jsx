@@ -270,7 +270,7 @@ function BrandDetail({ brand, onBack }) {
                   Get {brand.name} Quote
                 </Link>
                 <a
-                  href="https://wa.me/919810205154"
+                  href="https://wa.me/919899957888"
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center justify-center gap-2 w-full py-3 bg-green-600 hover:bg-green-700 text-white rounded-xl text-sm font-bold transition-colors"

@@ -86,7 +86,7 @@ const About = () => {
         postalCode: "110032",
         addressCountry: "IN",
       },
-      telephone: "+919810205154",
+      telephone: "+919899957888",
       email: "info@shankeragencies.com",
       sameAs: ["https://linkedin.com/company/shankeragencies"],
     },
@@ -423,7 +423,7 @@ const About = () => {
               </div>
               <div>
                 <p className="font-semibold text-[#1E3A5F]">Call Us</p>
-                <a href="tel:+919810205154" className="text-[#3B82F6] text-sm hover:underline">+91 98102 05154</a>
+                <a href="tel:+919899957888" className="text-[#3B82F6] text-sm hover:underline">+91 98999 57888</a>
                 {" · "}
                 <a href="tel:+919811909394" className="text-[#3B82F6] text-sm hover:underline">+91 98119 09394</a>
               </div>

@@ -117,7 +117,7 @@ const PrivacyPolicy = () => {
                 <p className="text-muted-foreground">553, Main G.T Road, Shahdara</p>
                 <p className="text-muted-foreground">Delhi 110032, India</p>
                 <p className="text-muted-foreground">Email: info@shankeragencies.com</p>
-                <p className="text-muted-foreground">Phone: +91 9810205154</p>
+                <p className="text-muted-foreground">Phone: +91 9899957888</p>
               </div>
             </div>
 
