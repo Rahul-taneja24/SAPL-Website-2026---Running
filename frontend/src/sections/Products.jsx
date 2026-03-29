@@ -10,49 +10,50 @@ import {
 } from "lucide-react";
 
 /* ─── CURATED IMAGE MAP ─────────────────────────────────────────────────── */
+/* CUMI = official product images from cumi-murugappa.com (authorized dealer) */
 const IMG = {
   /* ── category heroes — wide dramatic industrial shots ── */
-  shapedHero: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=90",   // red-hot bricks in kiln
-  unshapedHero: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1600&q=90",   // castable concrete pour
-  flowHero: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1600&q=90",   // molten steel continuous casting
-  insulHero: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1600&q=90",   // ceramic fiber insulation rolls
-  acidHero: "https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=1600&q=90",  // chemical plant tile floor
+  shapedHero: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=90",
+  unshapedHero: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1600&q=90",
+  flowHero: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1600&q=90",
+  insulHero: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1600&q=90",
+  acidHero: "https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=1600&q=90",
 
   /* ── shaped refractory product images ── */
-  highAlumina1: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=90",   // stacked refractory bricks glowing
-  highAlumina2: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=900&q=90",   // industrial furnace interior
-  highAlumina3: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90",   // steel ladle with molten metal
-  fireclay1: "https://images.unsplash.com/photo-1565363887715-c5de3b0faa0f?w=900&q=90",   // brick wall close-up texture
-  fireclay2: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=90",   // brickwork in kiln
-  ifb1: "https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=900&q=90",   // insulating lightweight bricks
-  ifb2: "https://images.unsplash.com/photo-1565363887715-c5de3b0faa0f?w=900&q=90",   // dense brick texture
-  basicBricks1: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=900&q=90",   // steel plant with BOF
-  basicBricks2: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90",   // ladle refractory
-  sic1: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=90",   // high-temp industrial kiln
+  highAlumina1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
+  highAlumina2: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=900&q=90",
+  highAlumina3: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90",
+  fireclay1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete-2.jpg",
+  fireclay2: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=90",
+  ifb1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg",
+  ifb2: "https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=900&q=90",
+  basicBricks1: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=900&q=90",
+  basicBricks2: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90",
+  sic1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Zircon-and-Zirconia-Mullite-1.jpg",
 
   /* ── unshaped refractory product images ── */
-  lcc1: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=90",   // castable being poured
-  lcc2: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=90",   // cured castable lining
-  ulcc1: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=900&q=90",   // steel ladle interior
-  ramming1: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90",   // induction furnace
-  gunning1: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=900&q=90",   // furnace interior repair
+  lcc1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
+  lcc2: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=90",
+  ulcc1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg",
+  ramming1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiplascast-1-1.jpg",
+  gunning1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg",
 
   /* ── flow control product images ── */
-  slideGate1: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=900&q=90",   // molten steel pour
-  slideGate2: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=900&q=90",   // continuous casting
-  shroud1: "https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=900&q=90",   // steel plant ladle
-  porous1: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90",   // ladle with gas stirring
+  slideGate1: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=900&q=90",
+  slideGate2: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=900&q=90",
+  shroud1: "https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=900&q=90",
+  porous1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumira-1.jpg",
 
   /* ── insulation product images ── */
-  ceramicFiber1: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=900&q=90", // ceramic fiber blanket close-up
-  ceramicFiber2: "https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=900&q=90", // insulation modules
-  calciumSil1: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=900&q=90", // insulation board
+  ceramicFiber1: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=900&q=90",
+  ceramicFiber2: "https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=900&q=90",
+  calciumSil1: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg",
 
   /* ── acid proofing product images ── */
-  acidBrick1: "https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=900&q=90",  // chemical plant flooring
-  acidBrick2: "https://images.unsplash.com/photo-1565363887715-c5de3b0faa0f?w=900&q=90",  // vitrified tile surface
-  acidTile1: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=90",     // acid resistant tile floor
-  acidTile2: "https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=900&q=90",  // chemical plant installation
+  acidBrick1: "https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=900&q=90",
+  acidBrick2: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg",
+  acidTile1: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=90",
+  acidTile2: "https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=900&q=90",
 
   /* ── industry reference images ── */
   steel: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=700&q=85",
