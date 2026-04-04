@@ -233,12 +233,19 @@ const Navbar = () => {
                 alt="SAPL Logo"
                 className="h-9 sm:h-10 w-auto flex-shrink-0"
               />
-              <div className="flex flex-col justify-center leading-tight">
-                <span className="font-oswald text-xs sm:text-sm font-bold tracking-wide">
-                  <span className="text-[#1E3A5F] hidden sm:inline">SHANKER AGENCIES PRIVATE LIMITED</span>
-                  <span className="text-[#1E3A5F] sm:hidden">SHANKER AGENCIES</span>
+              <div className="flex flex-col justify-center leading-none">
+                {/* Desktop: single line */}
+                <span className="hidden sm:block font-oswald text-sm font-bold tracking-wide text-[#1E3A5F]">
+                  SHANKER AGENCIES PRIVATE LIMITED
                 </span>
-                <span className="text-[8px] sm:text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase">
+                {/* Mobile: two lines, PRIVATE LIMITED matches width of first line */}
+                <span className="sm:hidden font-oswald text-xs font-bold tracking-wide text-[#1E3A5F] leading-tight">
+                  SHANKER AGENCIES
+                </span>
+                <span className="sm:hidden font-oswald text-[9px] font-bold text-[#1E3A5F] tracking-[0.28em] uppercase leading-tight">
+                  PRIVATE LIMITED
+                </span>
+                <span className="text-[8px] sm:text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase mt-0.5">
                   Refractory Engineering Solutions
                 </span>
               </div>
