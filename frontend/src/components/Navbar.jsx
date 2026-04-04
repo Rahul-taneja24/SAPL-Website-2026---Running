@@ -235,7 +235,8 @@ const Navbar = () => {
               />
               <div className="flex flex-col justify-center leading-tight">
                 <span className="font-oswald text-xs sm:text-sm font-bold tracking-wide">
-                  <span className="text-[#1E3A5F]">SHANKER AGENCIES PRIVATE LIMITED</span>
+                  <span className="text-[#1E3A5F] hidden sm:inline">SHANKER AGENCIES PRIVATE LIMITED</span>
+                  <span className="text-[#1E3A5F] sm:hidden">SHANKER AGENCIES</span>
                 </span>
                 <span className="text-[8px] sm:text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase">
                   Refractory Engineering Solutions
@@ -354,8 +355,8 @@ const Navbar = () => {
                 <a href="tel:+919899957888" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
                   <Phone size={16} /> +91 98999 57888
                 </a>
-                <a href="tel:+919899957888" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
-                  <Phone size={16} /> +91 98999 57888
+                <a href="tel:+919811909394" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
+                  <Phone size={16} /> +91 98119 09394
                 </a>
               </div>
             </div>
