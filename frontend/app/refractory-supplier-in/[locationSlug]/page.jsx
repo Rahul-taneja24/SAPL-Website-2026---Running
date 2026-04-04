@@ -188,7 +188,7 @@ export default async function LocationPage({ params }) {
     logo: 'https://www.shankeragencies.com/logo.png',
     image: 'https://www.shankeragencies.com/og-image.jpg',
     description: location.metaDescription,
-    telephone: '+91-9810205154',
+    telephone: '+91-9899957888',
     email: 'info@shankeragencies.com',
     foundingDate: '1980',
     address: {
@@ -289,7 +289,7 @@ export default async function LocationPage({ params }) {
               <Phone className="w-4 h-4" /> Get a Quote
             </Link>
             <a
-              href="https://wa.me/919810205154"
+              href="https://wa.me/919899957888"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-xl border border-white/20 transition-colors"
@@ -577,16 +577,16 @@ export default async function LocationPage({ params }) {
               <Phone className="w-5 h-5" /> Contact Us for a Quote
             </Link>
             <a
-              href="https://wa.me/919810205154"
+              href="https://wa.me/919899957888"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
-              <MessageCircle className="w-5 h-5" /> WhatsApp: +91-9810205154
+              <MessageCircle className="w-5 h-5" /> WhatsApp: +91-9899957888
             </a>
           </div>
           <p className="text-white/60 text-sm mt-6">
-            Call us: <a href="tel:+919810205154" className="text-white/80 hover:text-white underline">+91-9810205154</a> |
+            Call us: <a href="tel:+919899957888" className="text-white/80 hover:text-white underline">+91-9899957888</a> |
             Email: <a href="mailto:info@shankeragencies.com" className="text-white/80 hover:text-white underline">info@shankeragencies.com</a>
           </p>
         </div>

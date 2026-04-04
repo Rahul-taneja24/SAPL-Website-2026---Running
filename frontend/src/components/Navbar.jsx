@@ -147,15 +147,6 @@ const Navbar = () => {
                 <Phone size={11} />
                 <span className="font-medium">+91 98999 57888</span>
               </a>
-              <span className="text-white/30 hidden sm:inline">|</span>
-              <a
-                href="tel:+919810205154"
-                className="hidden sm:flex items-center gap-1.5 hover:text-blue-200 transition-colors"
-                aria-label="Call secondary number"
-              >
-                <Phone size={11} />
-                <span className="font-medium">+91 98102 05154</span>
-              </a>
             </div>
             <a
               href="mailto:info@shankeragencies.com"
@@ -363,8 +354,8 @@ const Navbar = () => {
                 <a href="tel:+919899957888" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
                   <Phone size={16} /> +91 98999 57888
                 </a>
-                <a href="tel:+919810205154" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
-                  <Phone size={16} /> +91 98102 05154
+                <a href="tel:+919899957888" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
+                  <Phone size={16} /> +91 98999 57888
                 </a>
               </div>
             </div>

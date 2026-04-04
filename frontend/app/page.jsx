@@ -1,16 +1,17 @@
 import Home from '@/sections/Home';
 
 export const metadata = {
-  title: "Shanker Agencies | Refractory Materials Distributor",
-  description: "India's trusted refractory distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL for steel, cement & aluminium industries.",
+  title: "Shanker Agencies | Refractory Engineering Partner",
+  description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki & IFGL. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
   alternates: { canonical: '/' },
   openGraph: {
-    title: "Shanker Agencies | Refractory Materials Distributor",
-    description: "India's trusted refractory distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL for steel, cement & aluminium industries.",
+    title: "Shanker Agencies | Refractory Engineering Partner",
+    description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki & IFGL. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Engineering Partner' }],
   },
 };
 

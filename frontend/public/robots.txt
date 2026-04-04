@@ -1,0 +1,18 @@
+# Shanker Agencies Website Robots Configuration
+# Allow all search engines to crawl the website
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /_next
+Disallow: /api
+Disallow: /.next
+
+# Sitemaps
+Sitemap: https://www.shankeragencies.com/sitemap.xml
+
+# Crawl delay for common search engines (in seconds)
+Crawl-delay: 0
+
+# Request rate
+Request-rate: 10/1s

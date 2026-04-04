@@ -10,11 +10,11 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://www.shankeragencies.com'),
   title: {
-    default: "Shanker Agencies | Refractory Materials Distributor",
+    default: "Shanker Agencies | Refractory Engineering Partner",
     template: '%s | Shanker Agencies',
   },
   description:
-    "India's trusted refractory distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL for steel, cement & aluminium industries.",
+    "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki & IFGL. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
   keywords: [
     'refractory materials distributor', 'refractory distributor India', 'refractory supplier India',
     'refractory engineering partner India', 'refractory manufacturer India', 'refractory supplier Delhi',
@@ -33,6 +33,8 @@ export const metadata = {
     locale: 'en_IN',
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
+    title: 'Shanker Agencies | Refractory Engineering Partner',
+    description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki & IFGL. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies' }],
   },
   twitter: {
@@ -40,6 +42,19 @@ export const metadata = {
     images: ['/og-image.jpg'],
   },
   alternates: { canonical: 'https://www.shankeragencies.com' },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
@@ -104,7 +119,7 @@ export default function RootLayout({ children }) {
               contactPoint: [
                 {
                   '@type': 'ContactPoint',
-                  telephone: '+91-9810205154',
+                  telephone: '+91-9899957888',
                   contactType: 'sales',
                   email: 'info@shankeragencies.com',
                   areaServed: ['IN', 'AE', 'SA', 'QA', 'OM', 'KW', 'BH', 'SG', 'MY', 'ID', 'VN', 'TH', 'GB', 'DE', 'FR', 'NG', 'KE', 'ZA', 'EG', 'TR'],

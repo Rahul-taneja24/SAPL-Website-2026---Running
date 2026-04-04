@@ -185,7 +185,7 @@ export default async function BlogArticlePage({ params }) {
                     <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors">
                       <Phone className="w-4 h-4" /> Speak to an Engineer
                     </Link>
-                    <a href="https://wa.me/919810205154" target="_blank" rel="noopener noreferrer"
+                    <a href="https://wa.me/919899957888" target="_blank" rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors">
                       <MessageCircle className="w-4 h-4" /> WhatsApp Us
                     </a>

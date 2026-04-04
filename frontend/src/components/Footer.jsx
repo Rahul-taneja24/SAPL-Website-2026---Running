@@ -144,7 +144,7 @@ const Footer = () => {
                 <Phone size={14} className="text-[#3B82F6] flex-shrink-0" aria-hidden="true" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
                   <a href="tel:+919899957888" className="hover:text-[#F97316] transition-colors block">+91 98999 57888</a>
-                  <a href="tel:+919810205154" className="hover:text-[#F97316] transition-colors block">+91 98102 05154</a>
+                  <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors block">+91 98119 09394</a>
                   <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors block">+91 98119 09394</a>
                   <a href="tel:+918800203083" className="hover:text-[#F97316] transition-colors block">+91 88002 03083</a>
                 </div>
