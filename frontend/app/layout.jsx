@@ -86,6 +86,8 @@ export default function RootLayout({ children }) {
               name: 'Shanker Agencies Pvt. Ltd.',
               alternateName: ['SAPL', 'Shanker Agencies'],
               url: 'https://www.shankeragencies.com',
+              telephone: '+91-9899957888',
+              image: 'https://www.shankeragencies.com/og-image.jpg',
               logo: {
                 '@type': 'ImageObject',
                 url: 'https://www.shankeragencies.com/logo.png',
@@ -93,7 +95,7 @@ export default function RootLayout({ children }) {
                 height: 60,
               },
               foundingDate: '1980',
-              description: "India's trusted refractory materials distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL. Supplying high alumina bricks, castables, ceramic fiber, ramming mass & flow control refractories to steel, cement, aluminium & petrochemical industries.",
+              description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supplying high alumina bricks, castables, ceramic fiber, ramming mass & flow control refractories to steel, cement, aluminium & petrochemical industries.",
               priceRange: '₹₹',
               address: {
                 '@type': 'PostalAddress',
