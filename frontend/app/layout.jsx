@@ -35,11 +35,11 @@ export const metadata = {
     siteName: 'Shanker Agencies',
     title: 'Shanker Agencies | Refractory Engineering Partner',
     description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki & IFGL. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies' }],
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Engineering Partner' }],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/og-image.jpg'],
+    images: ['/opengraph-image'],
   },
   alternates: { canonical: 'https://www.shankeragencies.com' },
   robots: {
