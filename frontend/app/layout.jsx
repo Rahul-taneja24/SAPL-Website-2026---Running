@@ -134,8 +134,16 @@ export default function RootLayout({ children }) {
                 },
               ],
               sameAs: [
-                'https://linkedin.com/company/shankeragencies',
-                'https://www.shankeragencies.com',
+                'https://www.linkedin.com/company/shankeragencies',
+                'https://www.facebook.com/shankeragencies',
+                'https://twitter.com/shankeragencies',
+                'https://www.instagram.com/shankeragencies',
+                'https://www.youtube.com/@shankeragencies',
+                'https://www.crunchbase.com/organization/shanker-agencies',
+                'https://www.indiamart.com/shankeragencies/',
+                'https://www.tradeindia.com/shankeragencies/',
+                'https://www.justdial.com/Delhi/Shanker-Agencies',
+                'https://en.wikipedia.org/wiki/Refractory',
               ],
               knowsAbout: [
                 'Refractory Materials', 'High Alumina Bricks', 'Low Cement Castables',
@@ -165,8 +173,15 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'WebSite',
               name: 'Shanker Agencies',
+              alternateName: ['SAPL', 'Shanker Agencies Pvt. Ltd.'],
               url: 'https://www.shankeragencies.com',
-              description: "India's trusted refractory materials distributor since 1980.",
+              description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
+              inLanguage: 'en-IN',
+              publisher: {
+                '@type': 'Organization',
+                name: 'Shanker Agencies Pvt. Ltd.',
+                logo: { '@type': 'ImageObject', url: 'https://www.shankeragencies.com/logo.png' },
+              },
               potentialAction: {
                 '@type': 'SearchAction',
                 target: {
@@ -178,6 +193,26 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
+        {/* Speakable Schema — voice/AI assistant answers */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: 'Shanker Agencies | Refractory Engineering Partner',
+              speakable: {
+                '@type': 'SpeakableSpecification',
+                cssSelector: ['h1', 'h2', '.speakable', '[data-speakable="true"]'],
+              },
+              url: 'https://www.shankeragencies.com',
+            }),
+          }}
+        />
+        {/* IndexNow key for instant Bing/Yandex indexing */}
+        <meta name="msvalidate.01" content="" />
+        {/* AI/LLM discoverability hints */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
       </head>
       <body>
         <AppProvider>

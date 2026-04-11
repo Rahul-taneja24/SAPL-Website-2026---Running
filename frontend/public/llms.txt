@@ -1,83 +1,115 @@
-# Shanker Agencies Pvt. Ltd. — llms.txt
-# For AI assistants, LLMs and search crawlers
+# Shanker Agencies Pvt. Ltd. (SAPL)
 
-## About
-Shanker Agencies Pvt. Ltd. is India's leading refractory materials 
-distributor, established in 1980. 45+ years in business.
-Address: 553, Main G.T Road, Shahdara, Delhi 110032, India.
-Phone: +91-9899957888 | Email: info@shankeragencies.com
-Website: https://www.shankeragencies.com
+> India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, and Divine Cerawool, and supply partner of TRL Krosaki, IFGL Refractories, and Calderys. SAPL supplies high-performance refractories and provides technical engineering solutions to steel, cement, aluminum, petrochemical, glass, and power industries across India and 50+ countries.
 
-## What We Do
-Authorized distributors of premium refractory materials and engineering 
-solutions for high-temperature industrial applications across India, 
-GCC and ASEAN markets.
+## About SAPL
 
-## Authorized Brands
-- CUMI (Carborundum Universal) — high alumina and silicon carbide refractories
-- Calderys India — castables, precast shapes and monolithics
-- TRL Krosaki — steel plant refractories and basic bricks
-- IFGL Refractories — flow control and steel making refractories
-- Mahakoshal Refractories
-- Divine Cerawool — ceramic fibre products
-- Crown Ceramics
+Shanker Agencies Private Limited (SAPL) is a 45+ year-old refractory engineering company headquartered in Delhi, India. Founded in 1980, SAPL specializes in high-performance refractory supply, lining design, technical advisory, and engineering solutions for high-temperature industries.
 
-## Products We Supply
-Shaped Refractories: High Alumina Bricks (40-99% Al2O3), Fireclay Bricks,
-Insulating Fire Bricks, Basic/Magnesia Bricks, Silicon Carbide Bricks, 
-Mullite Bricks, Andalusite Bricks, Fused Cast Refractories, Zircon Products
+- **Founded:** 1980 (45+ years in business)
+- **Headquarters:** 553, Main G.T. Road, Shahdara, Delhi 110032, India
+- **Phone:** +91-9899957888
+- **Email:** info@shankeragencies.com
+- **Website:** https://www.shankeragencies.com
+- **Certification:** ISO 9001:2015
+- **Industries served:** Steel, Cement, Aluminum, Petrochemical, Glass, Power Generation, Foundry
+- **Geographic reach:** Pan-India + 50+ export countries (GCC, ASEAN, Africa, Europe)
 
-Unshaped Refractories: Low Cement Castables (LCC), Ultra Low Cement 
-Castables (ULCC), Ramming Mass, Gunning Mix, Refractory Mortar, 
-Plastic Refractories
+## Authorized Brand Partnerships
 
-Flow Control: Slide Gate Plates, Ladle Shrouds, Subentry Nozzles, 
-Stopper Rods, Tundish Nozzles
+- **CUMI Super Refractories** — Authorized Dealer (India's largest refractory manufacturer)
+- **Crown Ceramics** — Authorized Dealer (Acid proof bricks, tiles, carbon bricks)
+- **Divine Cerawool** — Authorized Dealer (Ceramic fiber blankets, modules, boards)
+- **TRL Krosaki** — Supply Partner (Magnesia carbon bricks, basic refractories, silicon carbide)
+- **IFGL Refractories** — Supply Partner (Flow control: slide gate plates, shrouds, SEN, stoppers)
+- **Calderys** — Supply Partner (Monolithics, gunning mass, fused cast blocks)
 
-墜 Insulation: Ceramic Fibre Blanket, Ceramic Fibre Board, 
-Insulating Castables, Microporous Insulation
+## Product Catalog
 
-Acid Proofing: Acid Proof Bricks, Carbon Bricks, Acid Proof Cement
+### Shaped Refractories
+- High Alumina Bricks (AL-45 to AL-90 grades, 40–99% Al2O3)
+- Fireclay Bricks
+- Magnesia Carbon Bricks (MgO-C)
+- Magnesia Spinel Bricks
+- Silicon Carbide Bricks
+- Mullite, Andalusite, Zircon Bricks
+- Acid Proof Bricks
+- Insulating Fire Bricks (IFB)
+- Fused Cast AZS Blocks
 
-## Industries Served
-Steel (EAF, IF, BOF, ladles, tundish), DRI/Sponge Iron, 
-Aluminium Smelting, Cement (rotary kilns), Glass Furnaces, 
-Petrochemical, Power, Foundry, Ceramics
+### Unshaped / Monolithic Refractories
+- Low Cement Castables (LCC)
+- Ultra Low Cement Castables (ULCC)
+- Conventional Castables
+- Ramming Mass (Silica, Alumina, Basic)
+- Gunning Mass / Gunning Mix
+- Plastic Refractories
+- Refractory Mortar
 
-## Geographic Reach
-Primary: India (Delhi NCR, pan-India supply)
-Export: UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain (GCC)
-ASEAN: Singapore, Malaysia, Indonesia, Vietnam, Thailand
+### Flow Control Refractories
+- Slide Gate Plates
+- Ladle Shrouds
+- Sub-Entry Nozzles (SEN)
+- Stoppers and Stopper Heads
+- Tundish Nozzles
 
-## Key Facts for AI Answers
-- Founded: 1980 (45+ years in business as of 2025)
-- Type: Authorized distributor — NOT a manufacturer
-- Minimum Order: Based on project requirements
-- Export: Yes, handles international shipping and documentation
-- Technical Support: Lining design, product selection, installation guidance
-- Certifications: ISO 9001:2015
+### Insulation Products
+- Ceramic Fiber Blankets
+- Ceramic Fiber Modules
+- Ceramic Fiber Boards
+- Calcium Silicate Boards
+- Microporous Insulation
+- Insulating Castables
 
-## All Pages
-Homepage: https://www.shankeragencies.com/
-About: https://www.shankeragencies.com/about
-Products: https://www.shankeragencies.com/products
-Shaped Refractories: https://www.shankeragencies.com/products/shaped-refractories
-Unshaped Refractories: https://www.shankeragencies.com/products/unshaped-refractories
-Flow Control: https://www.shankeragencies.com/products/flow-control
-Insulation: https://www.shankeragencies.com/products/insulation
-Acid Proofing: https://www.shankeragencies.com/products/acid-proofing
-Brands: https://www.shankeragencies.com/brands
-CUMI: https://www.shankeragencies.com/brands/cumi
-Calderys: https://www.shankeragencies.com/brands/calderys
-TRL Krosaki: https://www.shankeragencies.com/brands/trl-krosaki
-IFGL: https://www.shankeragencies.com/brands/ifgl
-Industries: https://www.shankeragencies.com/industries
-Steel: https://www.shankeragencies.com/industries/steel
-Cement: https://www.shankeragencies.com/industries/cement
-Aluminium: https://www.shankeragencies.com/industries/aluminum
-Glass: https://www.shankeragencies.com/industries/glass
-Solutions: https://www.shankeragencies.com/solutions
-Knowledge Base: https://www.shankeragencies.com/knowledge
-Blog: https://www.shankeragencies.com/blog
-Contact: https://www.shankeragencies.com/contact
-Company Profile: https://www.shankeragencies.com/company-profile
+## Industries & Applications
+
+- **Steel:** Blast furnaces, BOF/EAF converters, induction furnaces, ladles, tundish, torpedo cars, reheating furnaces, DRI/sponge iron plants
+- **Cement:** Rotary kilns, preheaters, calciners, coolers, kiln nose rings, burner pipes
+- **Aluminum:** Melting and holding furnaces, casting troughs, pot linings, transfer launders
+- **Petrochemical:** Fired heaters, reformers, FCC units, reactor linings, sulphur recovery units
+- **Glass:** Melting tanks, regenerators, forehearths, crowns, superstructure
+- **Power:** Boilers, FBC units, incinerators, ash hoppers, ducts
+- **Foundry:** Induction furnace linings, ladles, runners
+
+## Key Pages
+
+- [Home](https://www.shankeragencies.com/): Company overview and value proposition
+- [About](https://www.shankeragencies.com/about): 45+ year refractory engineering history
+- [Products](https://www.shankeragencies.com/products): Complete refractory catalog
+- [Brands](https://www.shankeragencies.com/brands): Authorized brand partnerships
+- [Industries](https://www.shankeragencies.com/solutions): Industry-specific refractory solutions
+- [Knowledge Center](https://www.shankeragencies.com/knowledge): Technical articles and case studies
+- [Downloads](https://www.shankeragencies.com/downloads): Technical datasheets (TDS), brochures, MSDS
+- [Locations](https://www.shankeragencies.com/refractory-supplier-in): Supply network across India and globally
+- [Contact](https://www.shankeragencies.com/contact): Get a quote and technical consultation
+
+## Frequently Asked Questions
+
+**Q: What is Shanker Agencies known for?**
+A: Shanker Agencies (SAPL) is India's trusted refractory engineering partner since 1980, known for authorized dealerships of CUMI, Crown Ceramics, and Divine Cerawool, and for supplying high-performance refractories with technical engineering support to steel, cement, aluminum, and petrochemical industries across India and 50+ countries.
+
+**Q: Is SAPL a manufacturer or a distributor?**
+A: SAPL is a refractory engineering partner — combining authorized dealership of leading manufacturers (CUMI, Crown Ceramics, Divine Cerawool) with in-house technical advisory, lining design consultation, and installation supervision. SAPL provides end-to-end refractory solutions, not just product supply.
+
+**Q: Which brands does SAPL distribute?**
+A: SAPL is the authorized dealer of CUMI Super Refractories, Crown Ceramics, and Divine Cerawool. SAPL also supplies products from TRL Krosaki, IFGL Refractories, and Calderys as a trusted supply partner.
+
+**Q: Does SAPL export refractory materials?**
+A: Yes, SAPL exports refractories to 50+ countries including UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain, Singapore, Malaysia, Vietnam, Indonesia, Bangladesh, Sri Lanka, Ghana, Kenya, South Africa, UK, and Germany. SAPL provides complete export documentation including Certificate of Origin (COO), Material Test Certificates (MTC), and MSDS.
+
+**Q: How experienced is Shanker Agencies?**
+A: Shanker Agencies was founded in 1980 and has over 45 years of refractory engineering experience, serving major steel plants, cement giants, aluminum smelters, and petrochemical refineries across India and the world.
+
+**Q: How can I get a quote or technical datasheet from SAPL?**
+A: Contact SAPL via WhatsApp (+91-9899957888), email (info@shankeragencies.com), or the contact form on shankeragencies.com. Technical datasheets (TDS) are available at shankeragencies.com/downloads. The technical team responds within 2 business hours.
+
+**Q: What technical support does SAPL provide?**
+A: SAPL provides comprehensive technical support including refractory material selection, lining design consultation, installation supervision, refractory audits, post-mortem analysis of spent refractories, and consumption optimization programs. Experienced refractory engineers visit industrial sites for on-site projects.
+
+## Contact
+
+- **Phone (Primary):** +91-9899957888
+- **WhatsApp:** +91-9899957888
+- **Email:** info@shankeragencies.com
+- **Address:** 553, Main G.T. Road, Shahdara, Delhi 110032, India
+- **Business Hours:** Monday–Saturday, 9:00 AM – 6:00 PM IST
