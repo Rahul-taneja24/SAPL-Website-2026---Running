@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
   if (!location) return {};
 
   return {
-    title: location.metaTitle,
+    title: { absolute: location.metaTitle },
     description: location.metaDescription,
     alternates: {
       canonical: `/refractory-supplier-in/${location.slug}`,
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
       siteName: 'Shanker Agencies',
       locale: 'en_IN',
       type: 'website',
-      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: `Refractory Supplier in ${location.city}` }],
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: `Refractory Supplier in ${location.city} | Shanker Agencies` }],
     },
   };
 }

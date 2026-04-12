@@ -14,7 +14,7 @@ export const LOCATIONS_DATA = [
     industries: ["steel", "aluminum", "power", "glass", "petrochemical", "cement"],
     majorPlants: ["NTPC Badarpur", "Indraprastha Power Station", "Pragati Power Corporation", "Delhi Glass Works", "Hindalco Industries NCR", "Hero MotoCorp Dharuhera", "Maruti Suzuki Manesar", "Indian Oil Mathura Refinery"],
     description: "SAPL headquarters in Delhi, serving the National Capital Region with comprehensive refractory solutions for steel, aluminum, power, glass, cement, and petrochemical industries since 1980.",
-    metaTitle: "Refractory Supplier in Delhi NCR | Steel, Aluminium, Power, Glass - Shanker Agencies",
+    metaTitle: "Refractory Supplier in Delhi NCR | Shanker Agencies",
     metaDescription: "Leading refractory supplier in Delhi NCR since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. High alumina bricks, castables, ceramic fiber & more for steel, aluminium, power, glass & petrochemical industries. Same-day dispatch.",
     h1: "Trusted Refractory Supplier in Delhi NCR Since 1980",
     content: {
