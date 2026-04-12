@@ -29,11 +29,11 @@ export async function generateMetadata({ params }) {
       locale: 'en_IN',
       type: 'article',
       publishedTime: post.publishDate,
-      authors: ['Shanker Agencies Technical Team'],
+      authors: ['Rahul Taneja, Shanker Agencies'],
       tags: post.tags,
-      images: [{ url: post.coverImage || '/og-image.jpg', width: 1200, height: 630, alt: post.title }],
+      images: [{ url: post.coverImage || '/opengraph-image', width: 1200, height: 630, alt: post.title }],
     },
-    twitter: { card: 'summary_large_image', title: post.metaTitle, description: post.metaDescription },
+    twitter: { card: 'summary_large_image', title: post.metaTitle, description: post.metaDescription, creator: '@shankeragencies' },
   };
 }
 
@@ -52,6 +52,10 @@ export default async function BlogArticlePage({ params }) {
   const fallbackPosts = BLOG_POSTS_DATA.filter((p) => p.slug !== post.slug).slice(0, 3);
   const sidebarPosts = relatedPosts.length > 0 ? relatedPosts : fallbackPosts;
 
+  // Detect HowTo posts by category or slug pattern
+  const isHowTo = post.category === 'Installation Guide' || post.category === 'How-To Guide' ||
+    post.slug.startsWith('how-to-') || post.slug.includes('installation') || post.slug.includes('guide');
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'TechArticle',
@@ -59,17 +63,87 @@ export default async function BlogArticlePage({ params }) {
     description: post.metaDescription,
     datePublished: post.publishDate,
     dateModified: post.publishDate,
-    author: { '@type': 'Organization', name: 'Shanker Agencies Pvt. Ltd.', url: 'https://www.shankeragencies.com' },
+    image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
+    author: {
+      '@type': 'Person',
+      name: 'Rahul Taneja',
+      jobTitle: 'Refractory Engineering Expert',
+      description: 'Director at Shanker Agencies Pvt. Ltd. with 45+ years of refractory engineering expertise. Specializing in furnace lining design, refractory material selection, and industrial thermal engineering.',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Shanker Agencies Pvt. Ltd.',
+        url: 'https://www.shankeragencies.com',
+      },
+      url: 'https://www.shankeragencies.com/about',
+      sameAs: ['https://www.linkedin.com/company/shankeragencies'],
+    },
     publisher: {
       '@type': 'Organization',
       name: 'Shanker Agencies Pvt. Ltd.',
-      logo: { '@type': 'ImageObject', url: 'https://www.shankeragencies.com/logo.png' },
+      logo: { '@type': 'ImageObject', url: 'https://www.shankeragencies.com/images/sapl-logo.png' },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.shankeragencies.com/blog/${post.slug}` },
     keywords: post.tags.join(', '),
     articleSection: post.category,
     about: { '@type': 'Thing', name: 'Refractory Engineering' },
+    isAccessibleForFree: true,
+    inLanguage: 'en-IN',
   };
+
+  // HowTo schema for step-by-step installation/guide posts
+  const howToSchema = isHowTo ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: post.title,
+    description: post.metaDescription,
+    image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
+    author: {
+      '@type': 'Person',
+      name: 'Rahul Taneja',
+      worksFor: { '@type': 'Organization', name: 'Shanker Agencies Pvt. Ltd.' },
+    },
+    tool: [
+      { '@type': 'HowToTool', name: 'Refractory mortar' },
+      { '@type': 'HowToTool', name: 'Refractory bricks or castable' },
+      { '@type': 'HowToTool', name: 'Temperature monitoring equipment' },
+    ],
+    supply: [
+      { '@type': 'HowToSupply', name: 'Refractory material (brick/castable/ramming mass)' },
+      { '@type': 'HowToSupply', name: 'Matching refractory mortar or binder' },
+    ],
+    step: [
+      {
+        '@type': 'HowToStep',
+        name: 'Prepare the surface',
+        text: 'Clean the furnace shell and remove all traces of old lining, dust and oil. Inspect for hot spots and structural damage.',
+        position: 1,
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Select the correct material grade',
+        text: 'Match the refractory grade to your operating temperature, slag chemistry, and campaign life requirements. Consult the SAPL technical team if uncertain.',
+        position: 2,
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Install the refractory lining',
+        text: 'Follow the installation method specific to your product type: brick-and-mortar, casting, or ramming. Maintain correct joint thickness and expansion allowances.',
+        position: 3,
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Follow dry-out and heat-up schedule',
+        text: 'Use a controlled heat-up schedule to drive out moisture and achieve the correct sintering. Do not rush — premature heating causes spalling and cracking.',
+        position: 4,
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Commission and monitor',
+        text: 'Monitor shell temperatures and lining performance during the first few heats. Record data for future campaign life optimization.',
+        position: 5,
+      },
+    ],
+  } : null;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -85,6 +159,7 @@ export default async function BlogArticlePage({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
 
       {/* HERO */}
       <section
@@ -128,6 +203,17 @@ export default async function BlogArticlePage({ params }) {
             {post.title}
           </h1>
           <p className="text-lg text-white/75 leading-relaxed mb-8 max-w-3xl">{post.excerpt}</p>
+
+          {/* Author byline */}
+          <div className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-white/8 border border-white/15 w-fit">
+            <div className="w-9 h-9 rounded-full bg-[#F97316] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+              RT
+            </div>
+            <div>
+              <p className="text-white font-semibold text-sm leading-none">Rahul Taneja</p>
+              <p className="text-white/55 text-xs mt-0.5">Refractory Engineering Expert · Director, SAPL</p>
+            </div>
+          </div>
 
           <div className="flex flex-wrap gap-2">
             {post.tags.map((tag) => (

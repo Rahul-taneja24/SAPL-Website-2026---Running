@@ -92,9 +92,45 @@ const About = () => {
     },
   };
 
+  const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Rahul Taneja",
+    jobTitle: "Director & Refractory Engineering Expert",
+    description: "Director at Shanker Agencies Pvt. Ltd. with 25+ years of refractory engineering expertise. Specializes in furnace lining design, refractory material selection for steel ladles, cement kilns, and induction furnaces. Serves clients across India, GCC, and ASEAN markets.",
+    worksFor: {
+      "@type": "Organization",
+      name: "Shanker Agencies Pvt. Ltd.",
+      url: "https://www.shankeragencies.com",
+    },
+    url: "https://www.shankeragencies.com/about",
+    sameAs: [
+      "https://www.linkedin.com/company/shankeragencies",
+      "https://www.shankeragencies.com",
+    ],
+    knowsAbout: [
+      "Refractory Engineering",
+      "Furnace Lining Design",
+      "High Alumina Bricks",
+      "Castable Refractories",
+      "Steel Plant Refractories",
+      "Cement Kiln Refractories",
+      "Induction Furnace Lining",
+      "Ceramic Fiber Insulation",
+      "Refractory Material Selection",
+    ],
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Delhi",
+      addressRegion: "Delhi",
+      addressCountry: "IN",
+    },
+  };
+
   return (
     <div className="bg-white overflow-hidden">
-      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutStructuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }} />
 
       {/* ── HERO ───────────────────────────────────────── */}
       <section
@@ -394,6 +430,90 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LEADERSHIP ─────────────────────────────────── */}
+      <section className="py-24 px-4 bg-white reveal reveal-up" data-testid="leadership-team" aria-labelledby="team-heading">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-14">
+            <span className="inline-block px-4 py-1.5 rounded-full bg-orange-50 text-[#F97316] text-xs font-semibold tracking-widest uppercase mb-3">
+              Our People
+            </span>
+            <h2 id="team-heading" className="font-oswald text-3xl md:text-4xl font-bold text-[#1E3A5F]">
+              LEADERSHIP TEAM
+            </h2>
+            <p className="text-gray-500 max-w-xl mx-auto mt-4 text-sm">
+              Four decades of refractory engineering expertise, built and led by practitioners who have spent their careers in steel plants, cement kilns and foundries across India.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {/* Rahul Taneja */}
+            <article className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="bg-gradient-to-br from-[#1E3A5F] to-[#3B82F6] p-8 flex items-center justify-center">
+                <div className="w-20 h-20 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center">
+                  <span className="font-oswald text-3xl font-bold text-white">RT</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-oswald text-xl font-bold text-[#1E3A5F]">Rahul Taneja</h3>
+                <p className="text-[#F97316] text-xs font-semibold uppercase tracking-wide mb-3">Director &amp; Refractory Engineering Expert</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  With over 25 years of hands-on refractory experience, Rahul leads SAPL's technical and commercial operations. He has personally advised on refractory specifications for steel ladles, cement kilns, and induction furnaces at 300+ industrial plants across India and the GCC.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {['Steel Ladle Engineering', 'Furnace Lining Design', 'Export Markets'].map(s => (
+                    <span key={s} className="text-[10px] px-2.5 py-1 bg-blue-50 text-[#1E3A5F] rounded-full font-semibold border border-blue-100">{s}</span>
+                  ))}
+                </div>
+              </div>
+            </article>
+
+            {/* SAPL Technical Team */}
+            <article className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+              <div className="bg-gradient-to-br from-[#F97316] to-[#EA580C] p-8 flex items-center justify-center">
+                <div className="w-20 h-20 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center">
+                  <span className="font-oswald text-3xl font-bold text-white">ST</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="font-oswald text-xl font-bold text-[#1E3A5F]">SAPL Technical Team</h3>
+                <p className="text-[#F97316] text-xs font-semibold uppercase tracking-wide mb-3">Refractory Engineers &amp; Application Specialists</p>
+                <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                  Our team of certified refractory engineers handles lining design, material selection, installation supervision, and post-campaign analysis. Collectively, they bring 100+ years of combined field experience across India's steel, cement, and aluminium industries.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {['ISO 9001 Trained', 'On-Site Support', 'Pan-India Coverage'].map(s => (
+                    <span key={s} className="text-[10px] px-2.5 py-1 bg-orange-50 text-[#F97316] rounded-full font-semibold border border-orange-100">{s}</span>
+                  ))}
+                </div>
+              </div>
+            </article>
+
+            {/* Company Promise */}
+            <article className="bg-gradient-to-br from-[#1E3A5F] to-[#1E40AF] rounded-2xl shadow-sm overflow-hidden sm:col-span-2 lg:col-span-1">
+              <div className="p-8 h-full flex flex-col justify-between">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center mb-5">
+                    <Award size={24} className="text-[#F97316]" />
+                  </div>
+                  <h3 className="font-oswald text-xl font-bold text-white mb-3">Our Engineering Promise</h3>
+                  <p className="text-white/75 text-sm leading-relaxed">
+                    Every refractory recommendation we make is backed by an engineer who has seen the application in person — not just a product brochure. We stake our 45-year reputation on every specification.
+                  </p>
+                </div>
+                <div className="mt-8 space-y-2">
+                  {['Site visits before specification', 'Post-installation performance tracking', 'Failure analysis at no charge', '48-hour emergency response'].map(p => (
+                    <div key={p} className="flex items-center gap-2.5 text-white/80 text-xs">
+                      <CheckCircle size={13} className="text-[#F97316] flex-shrink-0" />
+                      {p}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
