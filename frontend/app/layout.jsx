@@ -16,8 +16,8 @@ export const metadata = {
   description:
     "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki & IFGL. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
   keywords: [
-    'refractory materials distributor', 'refractory distributor India', 'refractory supplier India',
-    'refractory engineering partner India', 'refractory manufacturer India', 'refractory supplier Delhi',
+    'refractory engineering partner India', 'refractory supplier India', 'refractory distributor India',
+    'refractory materials supplier', 'refractory manufacturer India', 'refractory supplier Delhi',
     'CUMI authorized dealer', 'Crown Ceramics dealer', 'Divine Cerawool dealer', 'Calderys India',
     'TRL Krosaki dealer', 'IFGL distributor',
     'high alumina bricks supplier', 'castable refractory manufacturer', 'ramming mass supplier India',
@@ -39,9 +39,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'Shanker Agencies | Refractory Engineering Partner',
+    description: "India's leading refractory engineering partner since 1980.",
     images: ['/opengraph-image'],
   },
-  alternates: { canonical: 'https://www.shankeragencies.com' },
   robots: {
     index: true,
     follow: true,
@@ -53,6 +54,12 @@ export const metadata = {
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://www.shankeragencies.com',
+    types: {
+      'text/plain': 'https://www.shankeragencies.com/llms.txt',
     },
   },
   icons: {
@@ -76,6 +83,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* IndexNow key for instant Bing/Yandex indexing */}
+        <meta name="indexnow-key" content="68c9e978104b40548276dada2151c101" />
+        {/* AI/LLM discoverability hints */}
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
         {/* Organization Schema */}
         <script
           type="application/ld+json"
@@ -87,10 +98,11 @@ export default function RootLayout({ children }) {
               alternateName: ['SAPL', 'Shanker Agencies'],
               url: 'https://www.shankeragencies.com',
               telephone: '+91-9899957888',
-              image: 'https://www.shankeragencies.com/og-image.jpg',
+              email: 'info@shankeragencies.com',
+              image: 'https://www.shankeragencies.com/opengraph-image',
               logo: {
                 '@type': 'ImageObject',
-                url: 'https://www.shankeragencies.com/logo.png',
+                url: 'https://www.shankeragencies.com/images/sapl-logo.png',
                 width: 200,
                 height: 60,
               },
@@ -136,6 +148,7 @@ export default function RootLayout({ children }) {
                 },
               ],
               sameAs: [
+                'https://www.shankeragencies.com',
                 'https://www.linkedin.com/company/shankeragencies',
                 'https://www.facebook.com/shankeragencies',
                 'https://twitter.com/shankeragencies',
@@ -143,9 +156,9 @@ export default function RootLayout({ children }) {
                 'https://www.youtube.com/@shankeragencies',
                 'https://www.crunchbase.com/organization/shanker-agencies',
                 'https://www.indiamart.com/shankeragencies/',
-                'https://www.tradeindia.com/shankeragencies/',
-                'https://www.justdial.com/Delhi/Shanker-Agencies',
-                'https://en.wikipedia.org/wiki/Refractory',
+                'https://www.tradeindia.com/shanker-agencies-pvt-ltd-2386358/',
+                'https://www.exportersindia.com/shanker-agencies-private-limited/',
+                'https://www.justdial.com/Delhi/Shanker-Agencies-Pvt-Ltd-Shahdara/011PK010076_BZDET',
               ],
               knowsAbout: [
                 'Refractory Materials', 'High Alumina Bricks', 'Low Cement Castables',
@@ -182,7 +195,7 @@ export default function RootLayout({ children }) {
               publisher: {
                 '@type': 'Organization',
                 name: 'Shanker Agencies Pvt. Ltd.',
-                logo: { '@type': 'ImageObject', url: 'https://www.shankeragencies.com/logo.png' },
+                logo: { '@type': 'ImageObject', url: 'https://www.shankeragencies.com/images/sapl-logo.png' },
               },
               potentialAction: {
                 '@type': 'SearchAction',
@@ -195,7 +208,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        {/* Speakable Schema — voice/AI assistant answers */}
+        {/* Speakable Schema — voice/AI assistant direct answers */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -211,10 +224,6 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        {/* IndexNow key for instant Bing/Yandex indexing */}
-        <meta name="msvalidate.01" content="" />
-        {/* AI/LLM discoverability hints */}
-        <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
       </head>
       <body>
         <AppProvider>
