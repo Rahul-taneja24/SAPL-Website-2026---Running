@@ -44,6 +44,7 @@ export async function generateMetadata({ params }) {
 
 export default async function ProductDetailPage({ params }) {
   const { categorySlug, productId } = await params;
+  const seo = getProductSeo(categorySlug, productId);
 
   // Find matching product for structured data — match by subcategory slug or id pattern
   const product = PRODUCTS_DATA.find(
