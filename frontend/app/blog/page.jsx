@@ -104,6 +104,18 @@ export default function BlogPage() {
   const featuredPost = BLOG_POSTS_DATA.find((p) => p.featured);
   const otherPosts = BLOG_POSTS_DATA.filter((p) => !p.featured);
 
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': 'https://www.shankeragencies.com/blog/#webpage',
+    name: 'Refractory Engineering Blog | Shanker Agencies',
+    url: 'https://www.shankeragencies.com/blog',
+    isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
+    about: { '@id': 'https://www.shankeragencies.com/#organization' },
+    inLanguage: 'en-IN',
+    description: 'Technical guides and industry insights on refractory engineering from Shanker Agencies — 45+ years of expertise.',
+  };
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -131,6 +143,7 @@ export default function BlogPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListSchema) }} />
 
