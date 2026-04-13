@@ -71,43 +71,28 @@ const About = () => {
   const aboutStructuredData = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
-    mainEntity: {
-      "@type": "Organization",
-      name: "Shanker Agencies Private Limited",
-      alternateName: "SAPL",
-      foundingDate: "1980",
-      foundingLocation: "Delhi, India",
-      description:
-        "India's premier refractory engineering partner since 1980. Strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL refractories. Serving 500+ clients across 50+ countries.",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "553, Main G.T Road, Shahdara",
-        addressLocality: "Delhi",
-        postalCode: "110032",
-        addressCountry: "IN",
-      },
-      telephone: "+919899957888",
-      email: "info@shankeragencies.com",
-      sameAs: ["https://linkedin.com/company/shankeragencies"],
-    },
+    "@id": "https://www.shankeragencies.com/about/#webpage",
+    url: "https://www.shankeragencies.com/about",
+    name: "About Shanker Agencies | 45 Years of Refractory Excellence",
+    isPartOf: { "@id": "https://www.shankeragencies.com/#website" },
+    about: { "@id": "https://www.shankeragencies.com/#organization" },
+    mainEntity: { "@id": "https://www.shankeragencies.com/#organization" },
   };
 
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://www.shankeragencies.com/about#rahul-taneja",
     name: "Rahul Taneja",
     jobTitle: "Director & Refractory Engineering Expert",
     description: "Director at Shanker Agencies Pvt. Ltd. with 25+ years of refractory engineering expertise. Specializes in furnace lining design, refractory material selection for steel ladles, cement kilns, and induction furnaces. Serves clients across India, GCC, and ASEAN markets.",
     worksFor: {
       "@type": "Organization",
+      "@id": "https://www.shankeragencies.com/#organization",
       name: "Shanker Agencies Pvt. Ltd.",
       url: "https://www.shankeragencies.com",
     },
     url: "https://www.shankeragencies.com/about",
-    sameAs: [
-      "https://www.linkedin.com/company/shankeragencies",
-      "https://www.shankeragencies.com",
-    ],
     knowsAbout: [
       "Refractory Engineering",
       "Furnace Lining Design",
@@ -118,13 +103,9 @@ const About = () => {
       "Induction Furnace Lining",
       "Ceramic Fiber Insulation",
       "Refractory Material Selection",
+      "Campaign Life Optimization",
+      "Thermal Analysis",
     ],
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "Delhi",
-      addressRegion: "Delhi",
-      addressCountry: "IN",
-    },
   };
 
   return (

@@ -4,10 +4,10 @@
   "description": "India's premier refractory engineering partner since 1980. Premium refractories for steel, cement, aluminum & petrochemical industries.",
   "url": "https://shankeragencies.com",
   "version": "2.0.0",
-  "last_updated": "2026-02-13",
+  "last_updated": "2026-04-13",
   
   "ai_discoverability": {
-    "llm_txt_url": "https://shankeragencies.com/llm.txt",
+    "llm_txt_url": "https://www.shankeragencies.com/llms.txt",
     "sitemap_url": "https://shankeragencies.com/sitemap.xml",
     "robots_txt_url": "https://shankeragencies.com/robots.txt",
     "knowledge_graph_enabled": true,
@@ -77,16 +77,16 @@
     "content_types": {
       "blog_posts": {
         "url_pattern": "/blog/{slug}",
-        "schema_type": "BlogPosting",
+        "schema_type": "TechArticle",
         "available": true,
-        "count": 0,
-        "categories": ["technical", "industry_insights", "case_studies", "product_updates"]
+        "count": 23,
+        "categories": ["technical", "industry_insights", "buyer_guides", "product_guides"]
       },
       "products": {
-        "url_pattern": "/products/{slug}",
+        "url_pattern": "/products/{category}/{slug}",
         "schema_type": "Product",
         "available": true,
-        "count": 0
+        "count": 17
       },
       "case_studies": {
         "url_pattern": "/case-studies/{slug}",
@@ -304,7 +304,7 @@
     "years_in_business": 46,
     "countries_served": 50,
     "authorized_brands": 7,
-    "certifications": ["ISO 9001:2015"],
+    "certifications": ["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018"],
     "testimonials_available": true,
     "case_studies_available": true
   }

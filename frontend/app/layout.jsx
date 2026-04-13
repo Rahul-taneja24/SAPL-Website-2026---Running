@@ -94,6 +94,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': ['Organization', 'LocalBusiness'],
+              '@id': 'https://www.shankeragencies.com/#organization',
               name: 'Shanker Agencies Pvt. Ltd.',
               alternateName: ['SAPL', 'Shanker Agencies'],
               url: 'https://www.shankeragencies.com',
@@ -147,8 +148,17 @@ export default function RootLayout({ children }) {
                   areaServed: ['IN', 'AE', 'SA', 'SG', 'MY'],
                 },
               ],
+              areaServed: [
+                { '@type': 'Country', name: 'India' },
+                { '@type': 'Country', name: 'United Arab Emirates' },
+                { '@type': 'Country', name: 'Saudi Arabia' },
+                { '@type': 'Country', name: 'Qatar' },
+                { '@type': 'Country', name: 'Singapore' },
+                { '@type': 'Country', name: 'Malaysia' },
+                { '@type': 'Country', name: 'United Kingdom' },
+              ],
+              numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 11, maxValue: 50 },
               sameAs: [
-                'https://www.shankeragencies.com',
                 'https://www.linkedin.com/company/shankeragencies',
                 'https://www.facebook.com/shankeragencies',
                 'https://twitter.com/shankeragencies',
@@ -187,6 +197,7 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
+              '@id': 'https://www.shankeragencies.com/#website',
               name: 'Shanker Agencies',
               alternateName: ['SAPL', 'Shanker Agencies Pvt. Ltd.'],
               url: 'https://www.shankeragencies.com',
@@ -215,12 +226,16 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebPage',
+              '@id': 'https://www.shankeragencies.com/#webpage',
               name: 'Shanker Agencies | Refractory Engineering Partner',
+              url: 'https://www.shankeragencies.com',
+              isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
+              about: { '@id': 'https://www.shankeragencies.com/#organization' },
+              inLanguage: 'en-IN',
               speakable: {
                 '@type': 'SpeakableSpecification',
-                cssSelector: ['h1', 'h2', '.speakable', '[data-speakable="true"]'],
+                cssSelector: ['h1', '.speakable', '[data-speakable="true"]'],
               },
-              url: 'https://www.shankeragencies.com',
             }),
           }}
         />

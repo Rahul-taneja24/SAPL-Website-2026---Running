@@ -52,10 +52,6 @@ export default async function BlogArticlePage({ params }) {
   const fallbackPosts = BLOG_POSTS_DATA.filter((p) => p.slug !== post.slug).slice(0, 3);
   const sidebarPosts = relatedPosts.length > 0 ? relatedPosts : fallbackPosts;
 
-  // Detect HowTo posts by category or slug pattern
-  const isHowTo = post.category === 'Installation Guide' || post.category === 'How-To Guide' ||
-    post.slug.startsWith('how-to-') || post.slug.includes('installation') || post.slug.includes('guide');
-
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'TechArticle',
@@ -66,16 +62,17 @@ export default async function BlogArticlePage({ params }) {
     image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
     author: {
       '@type': 'Person',
+      '@id': 'https://www.shankeragencies.com/about#rahul-taneja',
       name: 'Rahul Taneja',
       jobTitle: 'Refractory Engineering Expert',
-      description: 'Director at Shanker Agencies Pvt. Ltd. with 45+ years of refractory engineering expertise. Specializing in furnace lining design, refractory material selection, and industrial thermal engineering.',
+      description: 'Director at Shanker Agencies Pvt. Ltd. with 25+ years of refractory engineering expertise. Specializing in furnace lining design, refractory material selection, and industrial thermal engineering.',
       worksFor: {
         '@type': 'Organization',
+        '@id': 'https://www.shankeragencies.com/#organization',
         name: 'Shanker Agencies Pvt. Ltd.',
         url: 'https://www.shankeragencies.com',
       },
       url: 'https://www.shankeragencies.com/about',
-      sameAs: ['https://www.linkedin.com/company/shankeragencies'],
     },
     publisher: {
       '@type': 'Organization',
@@ -83,67 +80,26 @@ export default async function BlogArticlePage({ params }) {
       logo: { '@type': 'ImageObject', url: 'https://www.shankeragencies.com/images/sapl-logo.png' },
     },
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.shankeragencies.com/blog/${post.slug}` },
+    isPartOf: {
+      '@type': 'Blog',
+      '@id': 'https://www.shankeragencies.com/blog',
+      name: 'SAPL Refractory Engineering Knowledge Base',
+      url: 'https://www.shankeragencies.com/blog',
+    },
     keywords: post.tags.join(', '),
     articleSection: post.category,
-    about: { '@type': 'Thing', name: 'Refractory Engineering' },
+    about: {
+      '@type': 'Thing',
+      name: 'Refractory Engineering',
+      sameAs: 'https://en.wikipedia.org/wiki/Refractory',
+    },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['article h2', 'article h3', 'blockquote'],
+    },
     isAccessibleForFree: true,
     inLanguage: 'en-IN',
   };
-
-  // HowTo schema for step-by-step installation/guide posts
-  const howToSchema = isHowTo ? {
-    '@context': 'https://schema.org',
-    '@type': 'HowTo',
-    name: post.title,
-    description: post.metaDescription,
-    image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
-    author: {
-      '@type': 'Person',
-      name: 'Rahul Taneja',
-      worksFor: { '@type': 'Organization', name: 'Shanker Agencies Pvt. Ltd.' },
-    },
-    tool: [
-      { '@type': 'HowToTool', name: 'Refractory mortar' },
-      { '@type': 'HowToTool', name: 'Refractory bricks or castable' },
-      { '@type': 'HowToTool', name: 'Temperature monitoring equipment' },
-    ],
-    supply: [
-      { '@type': 'HowToSupply', name: 'Refractory material (brick/castable/ramming mass)' },
-      { '@type': 'HowToSupply', name: 'Matching refractory mortar or binder' },
-    ],
-    step: [
-      {
-        '@type': 'HowToStep',
-        name: 'Prepare the surface',
-        text: 'Clean the furnace shell and remove all traces of old lining, dust and oil. Inspect for hot spots and structural damage.',
-        position: 1,
-      },
-      {
-        '@type': 'HowToStep',
-        name: 'Select the correct material grade',
-        text: 'Match the refractory grade to your operating temperature, slag chemistry, and campaign life requirements. Consult the SAPL technical team if uncertain.',
-        position: 2,
-      },
-      {
-        '@type': 'HowToStep',
-        name: 'Install the refractory lining',
-        text: 'Follow the installation method specific to your product type: brick-and-mortar, casting, or ramming. Maintain correct joint thickness and expansion allowances.',
-        position: 3,
-      },
-      {
-        '@type': 'HowToStep',
-        name: 'Follow dry-out and heat-up schedule',
-        text: 'Use a controlled heat-up schedule to drive out moisture and achieve the correct sintering. Do not rush — premature heating causes spalling and cracking.',
-        position: 4,
-      },
-      {
-        '@type': 'HowToStep',
-        name: 'Commission and monitor',
-        text: 'Monitor shell temperatures and lining performance during the first few heats. Record data for future campaign life optimization.',
-        position: 5,
-      },
-    ],
-  } : null;
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -159,7 +115,6 @@ export default async function BlogArticlePage({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
 
       {/* HERO */}
       <section
