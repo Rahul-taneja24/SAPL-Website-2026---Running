@@ -219,26 +219,7 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-        {/* Speakable Schema — voice/AI assistant direct answers */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'WebPage',
-              '@id': 'https://www.shankeragencies.com/#webpage',
-              name: 'Shanker Agencies | Refractory Engineering Partner',
-              url: 'https://www.shankeragencies.com',
-              isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
-              about: { '@id': 'https://www.shankeragencies.com/#organization' },
-              inLanguage: 'en-IN',
-              speakable: {
-                '@type': 'SpeakableSpecification',
-                cssSelector: ['h1', '.speakable', '[data-speakable="true"]'],
-              },
-            }),
-          }}
-        />
+        {/* WebPage schema is added per-page to avoid incorrect homepage URL on all routes */}
       </head>
       <body>
         <AppProvider>

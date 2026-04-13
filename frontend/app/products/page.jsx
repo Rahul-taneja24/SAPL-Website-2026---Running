@@ -6,6 +6,18 @@ export const metadata = {
   alternates: { canonical: '/products' },
 };
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': 'https://www.shankeragencies.com/products/#webpage',
+  name: 'Refractory Products | Shanker Agencies',
+  url: 'https://www.shankeragencies.com/products',
+  isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
+  about: { '@id': 'https://www.shankeragencies.com/#organization' },
+  inLanguage: 'en-IN',
+  description: 'Complete refractory product catalog — high alumina bricks, castables, ceramic fiber, flow control, acid proof bricks. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool.',
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -18,6 +30,10 @@ const breadcrumbSchema = {
 export default function ProductsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

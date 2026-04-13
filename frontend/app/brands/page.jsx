@@ -11,6 +11,18 @@ export const metadata = {
   },
 };
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': 'https://www.shankeragencies.com/brands/#webpage',
+  name: 'Authorized Refractory Brands | Shanker Agencies',
+  url: 'https://www.shankeragencies.com/brands',
+  isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
+  about: { '@id': 'https://www.shankeragencies.com/#organization' },
+  inLanguage: 'en-IN',
+  description: 'Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for TRL Krosaki, IFGL Refractories & Calderys.',
+};
+
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -105,6 +117,10 @@ const brandsSchema = {
 export default function BrandsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

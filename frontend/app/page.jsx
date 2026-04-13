@@ -15,6 +15,21 @@ export const metadata = {
   },
 };
 
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://www.shankeragencies.com/#webpage',
+  name: 'Shanker Agencies | Refractory Engineering Partner',
+  url: 'https://www.shankeragencies.com',
+  isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
+  about: { '@id': 'https://www.shankeragencies.com/#organization' },
+  inLanguage: 'en-IN',
+  speakable: {
+    '@type': 'SpeakableSpecification',
+    cssSelector: ['h1', '.speakable', '[data-speakable="true"]'],
+  },
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -65,6 +80,10 @@ const faqSchema = {
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
