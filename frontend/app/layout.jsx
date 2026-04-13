@@ -164,7 +164,7 @@ export default function RootLayout({ children }) {
                 'https://twitter.com/shankeragencies',
                 'https://www.instagram.com/shankeragencies',
                 'https://www.youtube.com/@shankeragencies',
-                'https://www.crunchbase.com/organization/shanker-agencies',
+                'https://www.crunchbase.com/organization/shanker-agencies-pvt-ltd',
                 'https://www.indiamart.com/shankeragencies/',
                 'https://www.tradeindia.com/shanker-agencies-pvt-ltd-2386358/',
                 'https://www.exportersindia.com/shanker-agencies-private-limited/',

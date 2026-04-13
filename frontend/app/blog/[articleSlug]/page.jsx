@@ -73,6 +73,7 @@ export default async function BlogArticlePage({ params }) {
         url: 'https://www.shankeragencies.com',
       },
       url: 'https://www.shankeragencies.com/about',
+      sameAs: ['https://www.linkedin.com/in/rahultaneja24/'],
     },
     publisher: {
       '@type': 'Organization',

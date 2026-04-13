@@ -93,6 +93,10 @@ const About = () => {
       url: "https://www.shankeragencies.com",
     },
     url: "https://www.shankeragencies.com/about",
+    sameAs: [
+      "https://www.linkedin.com/in/rahultaneja24/",
+      "https://www.shankeragencies.com/about",
+    ],
     knowsAbout: [
       "Refractory Engineering",
       "Furnace Lining Design",
