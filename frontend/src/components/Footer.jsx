@@ -26,15 +26,28 @@ const Footer = () => {
 
           {/* Col 1 — Company Info */}
           <div className="text-left">
-            <Link href="/" aria-label="Shanker Agencies Home" className="inline-flex items-center gap-3 mb-5">
-              <img src={LOGO_URL} alt="SAPL" className="h-12" loading="lazy" />
-              <div>
-                <p className="font-oswald text-sm font-bold text-white leading-tight">SHANKER AGENCIES</p>
-                <p className="text-[9px] text-[#F97316] font-semibold tracking-[0.15em] uppercase">PRIVATE LIMITED</p>
-              </div>
+            <Link
+              href="/"
+              aria-label="Shanker Agencies Home"
+              className="inline-flex items-center gap-3 mb-5 group"
+            >
+              <img
+                src={LOGO_URL}
+                alt="SAPL"
+                className="h-11 w-auto flex-shrink-0 object-contain"
+                loading="lazy"
+              />
+              <span className="flex flex-col justify-center leading-none">
+                <span className="font-oswald text-base font-bold text-white tracking-wide">
+                  SHANKER AGENCIES
+                </span>
+                <span className="text-[10px] text-[#F97316] font-semibold tracking-[0.22em] uppercase mt-1">
+                  PRIVATE LIMITED
+                </span>
+              </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              India's premier refractory engineering partner since 1980. Strategic supply partner of leading global manufacturers.
+              India's premier refractory engineering partner since 1980. Strategic supply partner of leading global manufacturers including CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool & Crown Ceramics.
             </p>
 
             {/* Social icons */}
@@ -140,11 +153,11 @@ const Footer = () => {
                   <p>Delhi 110032, India</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 text-gray-400 text-sm">
-                <Phone size={14} className="text-[#3B82F6] flex-shrink-0" aria-hidden="true" />
+              <div className="flex items-start gap-3 text-gray-400 text-sm">
+                <Phone size={14} className="text-[#3B82F6] flex-shrink-0 mt-1" aria-hidden="true" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
                   <a href="tel:+919899957888" className="hover:text-[#F97316] transition-colors block">+91 98999 57888</a>
-                  <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors block">+91 98119 09394</a>
+                  <a href="tel:+919810205154" className="hover:text-[#F97316] transition-colors block">+91 98102 05154</a>
                   <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors block">+91 98119 09394</a>
                   <a href="tel:+918800203083" className="hover:text-[#F97316] transition-colors block">+91 88002 03083</a>
                 </div>

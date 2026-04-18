@@ -357,13 +357,13 @@ const Navbar = () => {
           <div className="lg:hidden bg-white border-t border-gray-100 py-3 px-4 max-h-[80vh] overflow-y-auto">
             {/* Phone prominent on mobile */}
             <div className="px-4 py-3 mb-2 bg-orange-50 rounded-xl space-y-2">
-              <p className="text-[10px] font-bold text-[#F97316] uppercase tracking-wider">Main Contact Numbers</p>
+              <p className="text-[10px] font-bold text-[#F97316] uppercase tracking-wider">Director's Direct Lines</p>
               <div className="flex flex-col gap-2">
                 <a href="tel:+919899957888" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
                   <Phone size={16} /> +91 98999 57888
                 </a>
-                <a href="tel:+919811909394" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
-                  <Phone size={16} /> +91 98119 09394
+                <a href="tel:+919810205154" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
+                  <Phone size={16} /> +91 98102 05154
                 </a>
               </div>
             </div>

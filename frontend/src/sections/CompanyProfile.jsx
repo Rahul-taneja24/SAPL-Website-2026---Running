@@ -1,7 +1,8 @@
 'use client';
 import { useState } from "react";
+import { toast } from "sonner";
 
-import { Download, Phone, Mail, MapPin, Award, Shield, Globe, Building2, CheckCircle, Factory, Flame, Users, Target, Loader2, MessageCircle } from "lucide-react";
+import { Download, Phone, Mail, MapPin, Award, Shield, Globe, Building2, CheckCircle, Factory, Flame, Users, Target, Loader2, MessageCircle, X } from "lucide-react";
 
 
 
@@ -41,8 +42,62 @@ async function loadPdfLibs() {
   return { jsPDF: window._jsPDF, html2canvas: window._html2canvas };
 }
 
+const WHATSAPP_URL =
+  "https://wa.me/919899957888?text=Hi,%20I%20just%20downloaded%20the%20Shanker%20Agencies%20Company%20Profile%20PDF%20and%20would%20like%20more%20information.";
+
 function CompanyProfile() {
   const [downloading, setDownloading] = useState(false);
+  const [showLeadModal, setShowLeadModal] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [leadForm, setLeadForm] = useState({ name: "", email: "", phone: "", company: "" });
+
+  const handleLeadChange = (e) => {
+    const { name, value } = e.target;
+    setLeadForm((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const captureLeadAndDownload = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+    try {
+      // 1. Capture lead via Web3Forms (same API key used in Contact form)
+      const payload = {
+        access_key: "d0154692-c512-4e1b-9b4c-31f715ca3bfd",
+        subject: `Company Profile Download: ${leadForm.company || leadForm.name}`,
+        from_name: leadForm.name,
+        name: leadForm.name,
+        email: leadForm.email,
+        phone: leadForm.phone,
+        company: leadForm.company || "Not provided",
+        inquiry_type: "Company Profile Download",
+        message: `${leadForm.name} downloaded the Company Profile PDF.`,
+      };
+      // Fire-and-forget — don't block download on slow form API
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      }).catch((err) => console.error("Lead capture error:", err));
+
+      // 2. Close modal and trigger download + open WhatsApp in parallel
+      setShowLeadModal(false);
+      toast.success("Thanks! Your PDF is downloading and our team is notified.");
+
+      // Open WhatsApp in a new tab (best-effort — browsers may block popups without user gesture)
+      window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
+
+      // Start the PDF download
+      await handleDownload();
+
+      // Reset form for next use
+      setLeadForm({ name: "", email: "", phone: "", company: "" });
+    } catch (err) {
+      console.error(err);
+      toast.error("Something went wrong. Please try the WhatsApp option or email us.");
+    } finally {
+      setSubmitting(false);
+    }
+  };
 
   const handleDownload = async () => {
     setDownloading(true);
@@ -106,16 +161,128 @@ function CompanyProfile() {
               <p className="text-blue-200 text-xs">Shanker Agencies Pvt. Ltd.</p>
             </div>
           </div>
-          <a
-            href="https://wa.me/919899957888?text=Hi, I would like to receive the Shanker Agencies Company Profile PDF."
-            target="_blank"
-            rel="noreferrer"
-            className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg shadow-orange-500/20"
-          >
-            <MessageCircle size={16} /> Request Profile (WhatsApp)
-          </a>
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              onClick={() => setShowLeadModal(true)}
+              disabled={downloading}
+              className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] disabled:opacity-70 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg shadow-orange-500/20"
+              aria-label="Download Company Profile PDF"
+            >
+              {downloading ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
+              {downloading ? "Preparing PDF..." : "Download PDF"}
+            </button>
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg"
+              aria-label="Chat on WhatsApp"
+            >
+              <MessageCircle size={16} /> WhatsApp
+            </a>
+          </div>
         </div>
       </div>
+
+      {/* ── LEAD CAPTURE MODAL ───────────────────────────── */}
+      {showLeadModal && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
+          onClick={() => !submitting && setShowLeadModal(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="lead-modal-title"
+        >
+          <div
+            className="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => !submitting && setShowLeadModal(false)}
+              className="absolute top-3 right-3 p-2 rounded-full hover:bg-gray-100 text-gray-400 hover:text-gray-600 transition-colors"
+              aria-label="Close dialog"
+              disabled={submitting}
+            >
+              <X size={18} />
+            </button>
+            <div className="gradient-dark px-6 py-5 text-white">
+              <h3 id="lead-modal-title" className="font-oswald text-xl font-bold">Download Company Profile</h3>
+              <p className="text-blue-200 text-xs mt-1">A 3-page PDF will download immediately after submitting.</p>
+            </div>
+            <form onSubmit={captureLeadAndDownload} className="p-6 space-y-4">
+              <div>
+                <label htmlFor="lead-name" className="block text-xs font-semibold text-[#1E3A5F] mb-1">Full Name *</label>
+                <input
+                  id="lead-name"
+                  type="text"
+                  name="name"
+                  value={leadForm.name}
+                  onChange={handleLeadChange}
+                  required
+                  placeholder="Your full name"
+                  className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F97316] focus:border-transparent"
+                />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label htmlFor="lead-email" className="block text-xs font-semibold text-[#1E3A5F] mb-1">Work Email *</label>
+                  <input
+                    id="lead-email"
+                    type="email"
+                    name="email"
+                    value={leadForm.email}
+                    onChange={handleLeadChange}
+                    required
+                    placeholder="you@company.com"
+                    className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F97316] focus:border-transparent"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="lead-phone" className="block text-xs font-semibold text-[#1E3A5F] mb-1">Phone *</label>
+                  <input
+                    id="lead-phone"
+                    type="tel"
+                    name="phone"
+                    value={leadForm.phone}
+                    onChange={handleLeadChange}
+                    required
+                    placeholder="+91 98765 43210"
+                    className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F97316] focus:border-transparent"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="lead-company" className="block text-xs font-semibold text-[#1E3A5F] mb-1">Company</label>
+                <input
+                  id="lead-company"
+                  type="text"
+                  name="company"
+                  value={leadForm.company}
+                  onChange={handleLeadChange}
+                  placeholder="Your company name"
+                  className="w-full px-4 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#F97316] focus:border-transparent"
+                />
+              </div>
+              <button
+                type="submit"
+                disabled={submitting}
+                className="w-full bg-[#F97316] hover:bg-[#EA580C] disabled:opacity-70 text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors shadow-lg shadow-orange-500/25"
+              >
+                {submitting ? (
+                  <><Loader2 size={16} className="animate-spin" /> Sending...</>
+                ) : (
+                  <><Download size={16} /> Download PDF & Open WhatsApp</>
+                )}
+              </button>
+              <p className="text-[11px] text-gray-400 text-center leading-relaxed">
+                By submitting, you agree to our <a href="/privacy" className="text-[#3B82F6] hover:underline">Privacy Policy</a>. We'll only contact you regarding refractory products.
+              </p>
+            </form>
+          </div>
+        </div>
+      )}
 
       {/* Document — A4: 210mm x 297mm */}
       <div id="company-profile-doc" className="mx-auto bg-white shadow-xl my-0 sm:my-8 print:my-0 print:shadow-none" style={{ width: '210mm', maxWidth: '100%' }}>
