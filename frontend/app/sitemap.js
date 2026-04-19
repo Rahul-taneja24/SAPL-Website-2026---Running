@@ -27,7 +27,7 @@ export default async function sitemap() {
 
   const categoryPages = [
     'shaped-refractories', 'unshaped-refractories', 'flow-control',
-    'insulation', 'acid-proofing', 'special-grades',
+    'insulation', 'acid-proofing',
   ].map((slug) => ({ url: `${BASE}/products/${slug}`, priority: 0.8, changeFrequency: 'weekly' }));
 
   const productPages = PRODUCT_SEO.map(({ categorySlug, productId }) => ({
@@ -84,10 +84,9 @@ export default async function sitemap() {
     }
   } catch (_) {}
 
-  const aiPages = [
-    { url: `${BASE}/llms.txt`,        priority: 0.5, changeFrequency: 'monthly' },
-    { url: `${BASE}/ai-roadmap.json`, priority: 0.5, changeFrequency: 'monthly' },
-  ];
+  // Note: llms.txt / ai-roadmap.json intentionally NOT in sitemap — Google/Bing
+  // won't index them and they waste crawl budget. They are served and referenced
+  // in robots.js + layout metadata instead.
 
   return [
     ...mainPages,
@@ -99,6 +98,5 @@ export default async function sitemap() {
     ...locationPages,
     ...staticBlogPages,
     ...apiBlogPages,
-    ...aiPages,
   ].map((p) => ({ ...p, lastModified: p.lastModified || TODAY }));
 }

@@ -1,305 +1,432 @@
-# GEO Audit Report: Shanker Agencies Pvt. Ltd.
+# GEO Audit Report — Shanker Agencies Pvt. Ltd.
+**Domain:** https://www.shankeragencies.com  
+**Audit Date:** April 2026  
+**Business Type:** B2B Industrial Supplier — Refractory Engineering (Local + Export)  
+**Framework:** Next.js (Vercel SSR/RSC)
 
-**Audit Date:** 11 April 2026  
-**URL:** https://www.shankeragencies.com  
-**Business Type:** Local B2B Industrial Supplier (Hybrid: LocalBusiness + Agency/Services)  
-**Pages Analyzed:** 12 (from 145-URL sitemap)  
-**Audited By:** Claude GEO Audit Skill
+---
+
+## Composite GEO Score: 54 / 100 — Fair
+
+> The site has a strong technical foundation and is meaningfully ahead of most Indian B2B industrial suppliers in GEO readiness. The primary drag is brand authority depth — no Wikipedia/Wikidata entity, no third-party press mentions, and anonymous blog authorship. Closing these gaps would push the score into the 70+ range.
+
+### Score Breakdown
+
+| Category | Weight | Score | Weighted | Rating |
+|----------|--------|-------|----------|--------|
+| AI Citability & Visibility | 25% | 54/100 | 13.5 | Fair |
+| Brand Authority Signals | 20% | 38/100 | 7.6 | Weak |
+| Content Quality & E-E-A-T | 20% | 58/100 | 11.6 | Fair |
+| Technical Foundations | 15% | 62/100 | 9.3 | Fair |
+| Structured Data | 10% | 62/100 | 6.2 | Fair |
+| Platform Optimization | 10% | 58/100 | 5.8 | Fair |
+| **COMPOSITE** | **100%** | **54/100** | **54.0** | **Fair** |
 
 ---
 
 ## Executive Summary
 
-**Overall GEO Score: 58/100 (Fair)**
+Shanker Agencies Pvt. Ltd. (SAPL) is one of the more GEO-aware B2B industrial companies in India. It has already deployed `llms.txt`, an `ai-roadmap.json` entity file, explicit AI crawler whitelisting in robots.txt, and a multi-type JSON-LD schema stack. The Next.js / Vercel architecture delivers true server-side rendering — all content is visible to AI crawlers without JavaScript execution.
 
-Shanker Agencies has a solid technical foundation — schema markup, llms.txt, and sitemap are all present and well-structured. However, **a critical blocker was discovered and fixed during this audit**: `app/robots.js` was explicitly blocking GPTBot and ChatGPT-User, making the site invisible to ChatGPT's web browsing and training crawlers. This single issue was responsible for the majority of AI search invisibility reported. With that fixed, the site is now indexable by all major AI engines. The primary remaining gaps are: no named authors on content, thin product page specifications, and limited third-party brand presence on platforms AI engines train on (YouTube, Reddit, Wikipedia).
+The two blog guides analyzed (ramming mass selection, castable installation) scored 80–82/100 for AI citability — genuinely citation-worthy technical content with specific chemistry data, lining life figures, and proprietary cost-per-heat analysis. This is the site's single strongest GEO asset.
 
----
+The critical gaps cluster in three areas:
 
-## Score Breakdown
-
-| Category | Score | Weight | Weighted Score |
-|---|---|---|---|
-| AI Citability | 63/100 | 25% | 15.75 |
-| Brand Authority | 45/100 | 20% | 9.00 |
-| Content E-E-A-T | 60/100 | 20% | 12.00 |
-| Technical GEO | 68/100 | 15% | 10.20 |
-| Schema & Structured Data | 72/100 | 10% | 7.20 |
-| Platform Optimization | 28/100 | 10% | 2.80 |
-| **Overall GEO Score** | | | **57/100 (Fair)** |
-
-> **Note:** Technical GEO score reflects the post-fix state. Before this audit, the Technical GEO score was ~22/100 due to GPTBot being blocked — making the true pre-audit score approximately **42/100 (Poor)**.
+1. **Brand authority in AI training corpora** — No Wikipedia article, no Wikidata entity, no industry press mentions, no Crunchbase profile. These are the platforms AI models preferentially cite for company entity resolution.
+2. **Structural schema errors** — The WebPage schema URL is hardcoded to the homepage on all 156 pages. No `@id` on any entity schema. These prevent cross-page entity graph construction.
+3. **72 thin location pages** — The 48 Indian + 24 international city pages are heavily templated with minimal differentiation. These represent significant soft-404 and thin-content risk at scale.
 
 ---
 
-## Critical Issues (Fixed During Audit)
+## Section 1: AI Citability & Visibility — 54/100
 
-### ✅ FIXED — GPTBot and ChatGPT Blocked in robots.js
-**Severity:** Critical  
-**File:** `frontend/app/robots.js`  
-**Impact:** ChatGPT, ChatGPT Search, OpenAI browsing, and Common Crawl (CCBot — used to train most LLMs) were all blocked. The site was **completely invisible to ChatGPT** and could not be included in AI training data.  
-**Fix Applied:** All 28 AI crawlers now explicitly allowed in `app/robots.js`. Committed `d567d43` and live.
+### AI Crawler Access — 95/100 ✅ Excellent
+The robots.txt explicitly whitelists 12+ AI crawlers by name:
+- GPTBot, OAI-SearchBot, ChatGPT-User ✅
+- ClaudeBot, anthropic-ai, Claude-Web ✅
+- PerplexityBot ✅
+- Google-Extended, Bytespider ✅
+- Cohere-ai, DuckAssistBot, Meta-ExternalAgent ✅
+- Blocked only: `/admin`, `/api`, `/_next/` (appropriate)
 
----
+This is exemplary crawler policy — most B2B industrial sites block AI bots by default.
 
-## High Priority Issues
+### llms.txt — 5/10 ⚠️ Present but Non-Compliant
+The file exists at `/llms.txt` and returns 200. However it is structurally non-compliant:
 
-### 1. No Named Authors on Blog Content
-**Severity:** High  
-**Pages:** All 24 blog posts at `/blog/*`  
-**Detail:** Every article is attributed to "SAPL's engineers" collectively. AI engines (especially Perplexity and Google AI Overviews) strongly prefer content with named, credentialled authors. Without a named author + bio, articles lose citability score and E-E-A-T signals.  
-**Fix:** Add an author name (e.g., "Rahul Taneja, Refractory Engineer" or "SAPL Technical Team, Certified Refractory Engineers") and a short 2-3 line bio to each blog post. Add `Person` schema for the author.
+| Check | Status |
+|-------|--------|
+| File present at /llms.txt | ✅ |
+| Link directory format (## sections + markdown links) | ❌ |
+| Links to key pages (/products, /about, /blog) | ❌ |
+| Blog article links (23+ articles) | ❌ |
+| /llms-full.txt companion file | ❌ |
+| FAQ content included | ❌ |
+| Content-Type: text/plain | Uncertain |
 
-### 2. Product Pages Lack Technical Specifications
-**Severity:** High  
-**Pages:** `/products`, all `/products/*` subcategory pages  
-**Detail:** Product descriptions are one-liners ("High Alumina Bricks — AL-45 to AL-90 grades"). No Al₂O₃ content percentages, temperature ratings, compressive strength, or application guidance visible on the page. AI engines cannot cite SAPL for technical queries ("what is the Al₂O₃ content of AL-60 bricks?") because the data isn't on the page.  
-**Fix:** Add a specification table per product with: Al₂O₃ %, bulk density, cold crushing strength, refractoriness (PCE), and recommended applications.
+The `ai-roadmap.json` references `/llm.txt` (missing the "s") — a broken URL. It also reports `blog_posts.count: 0` and `products.count: 0`, both incorrect.
 
-### 3. Missing Article/BlogPosting Schema on Blog Posts
-**Severity:** High  
-**Pages:** All 24 `/blog/*` posts  
-**Detail:** Blog posts have no `Article` or `BlogPosting` schema. Google's AI Overviews and Perplexity heavily weight `Article` schema with `datePublished`, `author`, and `headline` for content citation decisions.  
-**Fix:** Add `Article` JSON-LD with `author` (Person), `datePublished`, `headline`, `image`, and `publisher` to each blog page.
+### Page Citability Scores
 
-### 4. No Team/Founders Page
-**Severity:** High  
-**Detail:** About page references "founders" and "our team" without naming anyone. AI engines use named individuals as entity anchors for authority assessment.  
-**Fix:** Add a `/team` or `/about#team` section with names, titles, and 50-word bios for 2-3 key people. This directly improves E-E-A-T.
+| Page | Score | Status |
+|------|-------|--------|
+| Blog: Ramming Mass Guide | 82/100 | ✅ Citation-ready |
+| Blog: Castable Installation | 80/100 | ✅ Citation-ready |
+| About | 71/100 | ✅ Citation-ready |
+| Industries | 66/100 | Moderate |
+| Products (category) | 65/100 | Moderate |
+| Homepage | 62/100 | Moderate |
 
----
+**Best citation-ready passage (Ramming Mass Guide):**
+> "Silica ramming mass uses SiO₂ >96% as primary aggregate bonded with boric acid at 1.0–2.5% addition. It operates to 1,700°C and delivers 150–350 heats of lining life... Premium-grade silica ramming mass costs 33% more per kg but delivers 31% lower cost per heat."
 
-## Medium Priority Issues
-
-### 5. No Wikipedia Presence
-**Severity:** Medium  
-**Detail:** No Wikipedia article exists for Shanker Agencies. AI models heavily weight Wikipedia as an authority signal for entity recognition. Without it, AI engines treat SAPL as an unverified entity.  
-**Fix:** Create a Wikipedia article for "Shanker Agencies" or contribute to the "Refractories" article mentioning SAPL as a notable Indian distributor. Alternatively, ensure SAPL is mentioned in trade association pages.
-
-### 6. No YouTube Channel
-**Severity:** Medium  
-**Detail:** YouTube is one of the top 3 platforms AI models cite. No SAPL YouTube channel detected. Technical video content (product demos, installation guides, case study videos) would be indexed by Google, cited by AI, and drive B2B trust.  
-**Fix:** Create a YouTube channel. Start with 5 videos: company overview, product showcase, installation guide, customer testimonial, and factory/warehouse tour.
-
-### 7. No Reddit or Forum Presence
-**Severity:** Medium  
-**Detail:** AI engines (especially Perplexity and Claude) heavily cite Reddit and engineering forums. No SAPL brand mentions found on r/engineering, r/manufacturing, r/metallurgy, or IndiaMART forums.  
-**Fix:** Post helpful answers in relevant subreddits and engineering forums. Don't self-promote — answer genuine technical questions about refractories.
-
-### 8. IndiaMART and TradeIndia Listings Missing
-**Severity:** Medium  
-**Detail:** IndiaMART (DA 86) is the #1 source for B2B buyer searches in India. ChatGPT and Perplexity frequently cite IndiaMART listings when answering "where to buy [product] in India." SAPL has no verified listing.  
-**Fix:** Create verified seller profiles on IndiaMART and TradeIndia immediately (see `DIRECTORY_SUBMISSION_KIT.md`).
-
-### 9. Bing Webmaster Tools Not Confirmed
-**Severity:** Medium  
-**Detail:** Bing's index feeds ChatGPT Search, Copilot, and DuckDuckGo. Without Bing Webmaster Tools and sitemap submission, the site may not be fully indexed by Bing.  
-**Fix:** Register at bing.com/webmasters → verify site → submit sitemap → use URL Submission tool for key pages.
-
-### 10. Open Graph Image Was Missing (Fixed)
-**Severity:** Medium (Fixed)  
-**Detail:** `og:image` pointed to `/og-image.jpg` which didn't exist. Social shares showed no preview image.  
-**Fix Applied:** Created dynamic `/opengraph-image.tsx` using Next.js `ImageResponse`. Now generates a professional branded 1200×630 image automatically.
+**Weakest area:** Product pages have no per-product spec tables (Al₂O₃%, bulk density, CCS, MOR). An AI cannot answer "what are the specs for CUMI CA66 castable?" from the current product pages.
 
 ---
 
-## Low Priority Issues
+## Section 2: Brand Authority Signals — 38/100
 
-### 11. No HowTo Schema on Installation Guides
-**Severity:** Low  
-**Pages:** Blog posts like "Refractory Castable Installation Guide"  
-**Fix:** Add `HowTo` JSON-LD to step-by-step guide articles for Google Search rich results.
+### Platform Presence Inventory
 
-### 12. No Review/Rating Schema
-**Severity:** Low  
-**Fix:** If you collect customer testimonials, add `AggregateRating` schema. Google AI Overviews include rating signals in recommendations.
+| Platform | Status | AI Weight | Notes |
+|----------|--------|-----------|-------|
+| Wikipedia | ❌ Absent | Critical | #1 AI citation source for company entities |
+| Wikidata | ❌ Absent | Critical | Self-creatable; feeds AI knowledge graphs |
+| Crunchbase | ❌ Blocked/Absent | High | Primary B2B company data source for AI |
+| Industry Press | ❌ Absent | High | No mentions in Steel Times, Refractories Worldforum, etc. |
+| LinkedIn (Company) | ✅ Present | Medium | Listed in sameAs |
+| IndiaMART | ✅ Present | Medium | 4.4★, 18 reviews, 11-year member, GST verified |
+| YouTube | Unconfirmed | Medium | Channel exists per social links |
+| Google Business Profile | ✅ Likely | Medium | Feeds Google AIO Local Pack |
+| TradeIndia / ExportersIndia | ✅ Present | Low | B2B directory presence |
+| JustDial | ✅ Likely | Low | Blocks automated fetch |
+| Reddit | ❌ Absent | Medium | No SAPL discussion threads found |
 
-### 13. Social Media Profiles Incomplete
-**Severity:** Low  
-**Detail:** `sameAs` schema references LinkedIn, YouTube, Instagram, etc., but these profiles may not exist or be active.  
-**Fix:** Create/complete all listed social profiles. An inactive profile is better than no profile.
-
----
-
-## Category Deep Dives
-
-### AI Citability — 63/100
-
-**What's working:**
-- 24 blog articles with industry-specific topic targeting (ramming mass, high alumina bricks, slide gate plates)
-- FAQ schema on homepage, geo pages, and blog pages — FAQs are the #1 cited content type by AI engines
-- Comparison articles ("Ceramic Fiber Blanket vs Insulating Fire Brick") are highly citable
-- Geographic specificity in geo pages aids local AI queries
-
-**What's missing:**
-- Product pages have no spec data — AI cannot answer "what grade should I use for 1650°C?"
-- No third-party citations in blog content (referencing ASTM standards, IS codes, academic papers would signal credibility)
-- Content blocks are good but rarely go deep enough for AI to quote specific data points
-- No proprietary research, case study metrics, or original data
-
-**Quick win:** Add a "Key Specifications" box to the top of each blog post summarising 3-5 data points. AI engines extract these as structured facts.
+**The Wikipedia gap is the single largest drag on the entire GEO score.** Wikipedia is the primary source AI models (ChatGPT, Claude, Perplexity) use for company entity resolution. Without it, SAPL cannot appear as a recognized named entity in AI-generated answers about "refractory dealers in India" or "authorized CUMI distributors."
 
 ---
 
-### Brand Authority — 45/100
+## Section 3: Content Quality & E-E-A-T — 58/100
 
-**What's working:**
-- 45 years in business is a strong temporal authority signal
-- Authorized dealer status (CUMI, Crown Ceramics, Divine Cerawool) is verifiable
-- ISO 9001:2015 certification
-- 500+ clients, 50+ countries — specific numbers are credibility anchors
+### E-E-A-T Scores
 
-**What's missing:**
-- No Wikipedia article or notable third-party mention
-- No presence on Reddit, Quora, or engineering forums
-- No industry association memberships visible (IRMA, CII, FICCI)
-- LinkedIn company page status unknown — need 500+ followers minimum for AI to treat as established
-- No news coverage or press mentions
+| Dimension | Score | Evidence |
+|-----------|-------|---------|
+| Experience | 2.6/5 | 45yr org claim, cost-per-heat table, milestone timeline — but zero named client case studies |
+| Expertise | 3.4/5 | Named director (Rahul Taneja) with credentials, correct IS standards, accurate chemistry ranges |
+| Authoritativeness | 2.6/5 | ISO 9001/14001/45001, CUMI/TRL/IFGL partnerships — but no media mentions, awards, or industry body memberships |
+| Trustworthiness | 2.8/5 | HTTPS, full address, 3 phone numbers, privacy/terms — but anonymous testimonials, zero external citations |
 
-**Priority:** Create IndiaMART listing (90-day impact) and LinkedIn Company Page (long-term authority) immediately.
+### Content Strengths
+- Blog guides are technically accurate at the right depth for engineer/procurement audiences
+- Named author (Rahul Taneja) consistently applied to all articles
+- Triple ISO certification with specific standard numbers
+- Readability appropriate for technical audience (Flesch ~45–55)
 
----
+### Content Gaps
+- **Zero external citations** in any article (no BIS standards links, no manufacturer datasheet references)
+- **No named client case studies** — 45 years of experience produces no verifiable project outcomes
+- **No author headshot or personal author profile page** for Rahul Taneja
+- **No original images** — every article uses a single Unsplash stock photo
+- **Content appears AI-assisted** — identical structural template across all 23+ articles, zero outbound citations, uniform prose register
 
-### Content E-E-A-T — 60/100
-
-**Experience (E):** Strong — 45 years, 500+ clients, named plants served. Score: 70  
-**Expertise (E):** Moderate — technical content exists but no named experts. Score: 55  
-**Authoritativeness (A):** Low — no third-party validation, no named leadership, no press. Score: 50  
-**Trustworthiness (T):** Good — ISO certs, physical address, verifiable phone, WhatsApp. Score: 68
-
-**Single highest-impact fix:** Add one named person with credentials to the About page and as author on blog posts. One named "Chief Refractory Engineer, 25 years experience" adds more E-E-A-T than 10 new blog posts.
-
----
-
-### Technical GEO — 68/100
-
-**What's working:**
-- ✅ llms.txt: Comprehensive, well-structured (9/10 completeness)
-- ✅ All AI crawlers now allowed (fixed during audit)
-- ✅ Speakable schema added
-- ✅ Sitemap with 145 URLs
-- ✅ Next.js SSR — content is server-rendered, AI crawlers see full HTML
-- ✅ Vercel deployment — fast global CDN
-
-**What's missing:**
-- Bing Webmaster Tools submission not confirmed (-5 points)
-- `ai-roadmap.json` in public folder — good idea but non-standard format
-- No IndexNow API key for instant Bing indexing on updates
+### Missing High-Value Content (AI Citation Targets)
+1. Refractory lining thickness calculation guide
+2. BIS vs. ASTM vs. DIN: Refractory standards comparison
+3. Induction furnace lining failure analysis
+4. Total cost of ownership: refractory campaign life modeling
+5. Refractory glossary (100+ terms) — no competitor owns this in English for India
+6. CUMI Super Refractories product guide (authorized dealer is uniquely positioned)
+7. Petrochemical furnace refractories (served industry with zero content)
+8. Power generation refractories (served industry with zero content)
 
 ---
 
-### Schema & Structured Data — 72/100
+## Section 4: Technical Foundations — 62/100
 
-**What's present:**
-- ✅ Organization (valid)
-- ✅ LocalBusiness with telephone + image (fixed during audit)
-- ✅ WebSite with SearchAction
-- ✅ FAQPage on homepage, geo pages
-- ✅ BreadcrumbList on geo pages
-- ✅ Speakable schema
-- ✅ Article schema on blog (partial)
+### Strengths
+- Next.js SSR via Vercel — all content in raw HTML, zero JS rendering risk for AI crawlers
+- Sitemap: 156 URLs confirmed, properly structured
+- robots.txt: Well-configured (see Section 1)
+- HTTPS everywhere, canonical tags present
+- Product category pages have correct canonical URLs
 
-**Missing:**
-- ❌ Product schema on product pages (high value)
-- ❌ HowTo schema on installation guides
-- ❌ Person schema for authors
-- ❌ AggregateRating (no reviews)
-- ❌ Event schema (if any webinars/exhibitions)
+### Issues
 
-**Rich Results Test result:** 3 valid items (FAQ, LocalBusiness, Organisation) with 0 critical errors and 0 non-critical warnings (after fixes).
+| Issue | Severity | Description |
+|-------|----------|-------------|
+| WebPage schema URL hardcoded | Critical | All 156 pages show `url: "https://www.shankeragencies.com"` — every page claims to be the homepage |
+| 72 thin location pages | High | 48 Indian + 24 international city pages are heavily templated. Mumbai page analysis confirms minimal unique content — same industry cards, same product grids, FAQ questions use `[location]` variable substitution |
+| Logo path inconsistency | Medium | Global schema uses `/images/sapl-logo.png`; location page schema uses `/logo.png` |
+| SearchAction targets blog only | Low | WebSite SearchAction urlTemplate points to `/blog?q=` not site-wide search |
+| ai-roadmap.json broken URL | Medium | References `/llm.txt` instead of `/llms.txt` |
+| ai-roadmap.json stale counts | Medium | `blog_posts.count: 0`, `products.count: 0` — both incorrect |
 
----
-
-### Platform Optimization — 28/100
-
-| Platform | Status | AI Citation Impact |
-|---|---|---|
-| Google Search (SGE) | ✅ Indexed | High |
-| Bing / Copilot | ⚠️ Unknown | High |
-| ChatGPT Search | ❌ Was blocked, now fixed | High |
-| Perplexity | ✅ Allowed | High |
-| Claude | ✅ Allowed | High |
-| LinkedIn | ⚠️ Unknown status | Medium |
-| YouTube | ❌ Missing | Medium |
-| Wikipedia | ❌ Missing | High |
-| Reddit | ❌ Missing | Medium |
-| IndiaMART | ❌ Missing | High (B2B India) |
-| Crunchbase | ❌ Missing | Medium |
-| Quora | ❌ Missing | Low |
+### Location Pages Risk Assessment
+72 city pages (48 India, 24 international) with templated content represent the site's biggest crawl budget risk. Google's guidance is clear: location pages with minimal unique content are thin pages. Recommendations:
+- Reduce to 10–15 highest-value cities (Delhi, Mumbai, Jamshedpur, Bhilai, Rourkela, Visakhapatnam, Dubai, Singapore)
+- Add genuine city-specific content: named client references (if permitted), local industry context, city-specific delivery logistics, local contact details
 
 ---
 
-## Quick Wins — This Week
+## Section 5: Structured Data — 62/100
 
-1. **Submit to Bing Webmaster Tools** (30 min) → unlocks ChatGPT Search + Copilot indexing immediately  
-2. **Create IndiaMART seller profile** (45 min) → #1 source for B2B India queries in AI  
-3. **Add named author to blog posts** (2 hrs) → single biggest E-E-A-T boost  
-4. **Create LinkedIn Company Page** (1 hr) → AI entity anchor, DA 98 backlink  
-5. **Add spec table to 3 top product pages** (3 hrs) → makes product pages citable for technical queries
+### Schema Inventory
 
----
+| Schema Type | Pages | Status |
+|-------------|-------|--------|
+| Organization + LocalBusiness (dual) | All pages | ✅ Present, missing `@id` |
+| WebSite + SearchAction | All pages | ✅ Present |
+| WebPage + speakable | All pages | ⚠️ URL hardcoded to homepage |
+| FAQPage | Homepage + location pages | ✅ Present (restricted for rich results since Aug 2023 but retains AI semantic value) |
+| TechArticle | Blog posts | ✅ Present, dateModified = datePublished |
+| BreadcrumbList | Blog + location pages only | ⚠️ Missing from /products, /about, /brands |
+| Person (Rahul Taneja) | /about only | ⚠️ sameAs points to company LinkedIn, not personal |
+| Product / ItemList | Product pages | ❌ Completely absent |
+| HowTo | 1 blog post | ❌ Deprecated since Sep 2023 — remove |
+| AggregateRating | Nowhere | ❌ Missing |
 
-## 30-Day Action Plan
+### Critical Schema Errors
 
-### Week 1: Fix Blocking Issues + Quick Listings
-- [x] ~~Unblock GPTBot in robots.js~~ (done)
-- [x] ~~Fix OG image~~ (done)
-- [x] ~~Fix Rich Results warnings~~ (done)
-- [ ] Submit to Bing Webmaster Tools + sitemap
-- [ ] Create IndiaMART seller profile
-- [ ] Create Bing Places listing (imports from Google Business Profile)
-- [ ] Create Crunchbase company listing
+**1. WebPage schema URL hardcoded to homepage (affects all 156 pages)**
+Every page carries identical WebPage schema:
+```json
+{ "url": "https://www.shankeragencies.com", "name": "Shanker Agencies | Refractory Engineering Partner" }
+```
+This must be rendered dynamically per page from the Next.js layout.
 
-### Week 2: Author Identity + Content Depth
-- [ ] Add named author (name + 3-line bio) to all 24 blog posts
-- [ ] Add `Person` schema for the author
-- [ ] Add specification table to top 5 product pages (High Alumina, LCC, Ramming Mass, Ceramic Fiber, Slide Gate Plates)
-- [ ] Add `HowTo` schema to 3 installation guide blog posts
+**2. No `@id` on any entity schema**
+Without `@id`, AI systems cannot resolve the same entity across 156 URLs. Every page becomes an isolated signal rather than reinforcing one entity graph.
 
-### Week 3: Platform Presence
-- [ ] Create LinkedIn Company Page + post first 3 articles
-- [ ] Create YouTube channel + upload company overview video
-- [ ] Submit to TradeIndia and ExportersIndia
-- [ ] Submit to Kompass and Europages (for international buyers)
-- [ ] Answer 5 questions on Quora tagged "refractory materials India"
+**3. Self-reference in sameAs**
+`https://www.shankeragencies.com` is listed as the first `sameAs` entry — an entity cannot be sameAs itself.
 
-### Week 4: Authority Building
-- [ ] Create Wikipedia article for "Shanker Agencies" or contribute to "Refractories" article
-- [ ] Join IRMA (Indian Refractory Makers Association) — adds authoritative backlink
-- [ ] Write guest post for an industry magazine (Steelworld, Modern Plastics, etc.)
-- [ ] Set up Google Alerts for brand mentions
-- [ ] Re-run this GEO audit to measure improvement
+**4. Person.sameAs points to wrong LinkedIn**
+Rahul Taneja's Person schema links to the company page (`linkedin.com/company/shankeragencies`), not his personal profile.
 
----
+### sameAs Completeness
 
-## Appendix: Pages Analyzed
-
-| URL | Title | Key Issues |
-|---|---|---|
-| / (homepage) | Shanker Agencies \| Refractory Engineering Partner | Good — FAQ, schema, CTAs all present |
-| /about | 45+ Years of Refractory Excellence | Missing named leadership |
-| /products | Refractory Product Range | Thin descriptions, no spec tables |
-| /blog | Knowledge Center | No author bylines, no Article schema |
-| /refractory-supplier-in/delhi | Trusted Refractory Supplier in Delhi NCR | Good citability, good FAQ |
-| /sitemap.xml | — | 145 URLs, all categories covered |
-| /robots.txt | — | CRITICAL: GPTBot blocked (now fixed) |
-| /llms.txt | — | 9/10 — excellent |
-| /opengraph-image | — | Auto-generated (new, live) |
+| Platform | Linked | Priority |
+|----------|--------|----------|
+| Wikipedia | ❌ | Critical |
+| Wikidata | ❌ | High — self-creatable immediately |
+| LinkedIn Company | ✅ | — |
+| YouTube | ✅ | — |
+| Crunchbase | ✅ (unconfirmed profile) | High — claim/create |
+| IndiaMART | ✅ | — |
+| TradeIndia | ✅ | — |
 
 ---
 
-## Summary of Changes Made During This Audit Session
+## Section 6: Platform Optimization — 58/100
 
-| Fix | File | Impact |
-|---|---|---|
-| Unblocked GPTBot, ChatGPT-User, CCBot | `app/robots.js` | Critical — ChatGPT can now crawl |
-| Added telephone + image to LocalBusiness schema | `app/layout.jsx` | Rich Results warnings resolved |
-| Rewrote llms.txt with correct positioning | `public/llms.txt` | AI engines get accurate entity info |
-| Added Speakable schema | `app/layout.jsx` | Voice/AI assistant answers |
-| Expanded sameAs with 10 platform links | `app/layout.jsx` | Entity recognition across platforms |
-| Created dynamic OG image generator | `app/opengraph-image.tsx` | Social share cards now work |
-| Fixed title/description from "distributor" to "engineering partner" | `app/layout.jsx`, `app/page.jsx` | Google search snippet updated |
-| Updated all robots meta + robots tag | `app/layout.jsx` | Explicit index:true, follow:true |
-| Expanded Delhi geo page industries | `src/data/locationsData.js` | Aluminium, copper, cement added |
-| Created DIRECTORY_SUBMISSION_KIT.md | repo root | Ready-to-paste submission content |
-| Replaced phone 9810205154 → 9899957888 | 6 files | Consistent NAP across all pages |
+### Google AI Overviews (AIO)
+**Score: 60/100**
+- FAQPage schema present (eligible for semantic AIO even if not rich result)
+- SSR ensures Googlebot sees full content
+- Industry client count table (200+ steel, 100+ cement) is AIO-eligible structured data
+- **Gap:** No structured spec tables on product pages — AIO cannot pull product specs
+- **Gap:** 72 thin location pages dilute topical authority for geo-targeted queries
+
+### ChatGPT Web Search
+**Score: 55/100**
+- Blog content is citation-worthy for technical engineering queries
+- ai-roadmap.json demonstrates entity data maturity
+- **Gap:** No Wikipedia/Wikidata entity — ChatGPT resolves companies via knowledge graph entities
+- **Gap:** No Crunchbase profile (confirmed absent or inaccessible)
+- **Gap:** No industry press citations that ChatGPT would discover and attribute
+
+### Perplexity AI
+**Score: 62/100**
+- Technical blog guides (ramming mass, castable) are Perplexity's preferred citation type: specific, structured, data-dense
+- IndiaMART profile with ratings is discoverable by Perplexity
+- **Gap:** No comparison pages or buying guides (high-value Perplexity query types)
+- **Gap:** No downloadable specification guides (Perplexity indexes PDF content)
+
+### Bing Copilot
+**Score: 55/100**
+- Open Graph tags present
+- SSR ensures Bingbot sees full content
+- **Gap:** No Bing Webmaster Tools verification signals detectable
+- **Gap:** Author schema links to company LinkedIn (Bing weights individual author authority)
+
+---
+
+## Prioritized Action Plan
+
+### Quick Wins (This Week)
+
+| # | Action | Impact | Effort |
+|---|--------|--------|--------|
+| 1 | **Create Wikidata entity for SAPL** | High | Low (1-2 hrs) |
+| 2 | **Fix ai-roadmap.json** — correct `/llm.txt` → `/llms.txt`, update blog/product counts | Medium | Low (30 min) |
+| 3 | **Remove self-reference from sameAs** — delete `shankeragencies.com` as first entry | Medium | Low (15 min) |
+| 4 | **Remove HowTo schema** from ramming mass article | Low | Low (15 min) |
+| 5 | **Fix Rahul Taneja Person.sameAs** — replace company LinkedIn URL with personal LinkedIn | Medium | Low (15 min) |
+
+### Medium-Term (This Month)
+
+| # | Action | Impact | Effort |
+|---|--------|--------|--------|
+| 6 | **Rewrite /llms.txt** to compliant link-directory format with all key pages + top 10 blog posts | High | Medium (4-6 hrs) |
+| 7 | **Add `@id` to Organization and WebPage schemas** — `"@id": "https://www.shankeragencies.com/#organization"` | High | Medium (2-3 hrs) |
+| 8 | **Fix WebPage schema URL** — make dynamic per page in Next.js layout | High | Medium (2-3 hrs) |
+| 9 | **Add Product/ItemList schema to all product category pages** | High | Medium (1 day) |
+| 10 | **Add BreadcrumbList to /products, /about, /brands** | Medium | Low (2-3 hrs) |
+| 11 | **Claim/complete Crunchbase profile** | Medium | Low (2 hrs) |
+| 12 | **Add external citations** to all blog articles (BIS standards, CUMI datasheets) | High | Medium (1-2 hrs/article) |
+| 13 | **Create /llms-full.txt** with embedded content for About + top product categories + top 5 blog posts | High | Medium (4-6 hrs) |
+
+### Strategic (Next Quarter)
+
+| # | Action | Impact | Effort |
+|---|--------|--------|--------|
+| 14 | **Consolidate location pages** — reduce from 72 to 15 high-value cities with genuine local content | High | High (1-2 weeks) |
+| 15 | **Create Rahul Taneja author profile page** at `/about/rahul-taneja` with headshot, credentials, LinkedIn | High | Medium (1 day) |
+| 16 | **Add per-product technical spec tables** (Al₂O₃%, BD, CCS, MOR, max temp) to all 17 product type pages | Critical | High (1-2 weeks) |
+| 17 | **Publish refractory glossary** (100+ terms) — no competitor owns this for India in English | High | High (1 week) |
+| 18 | **Earn 2-3 industry press mentions** (Steel 360, Cement Review of India, Refractories Worldforum) as prerequisite for Wikipedia | Critical | Very High (3-6 months) |
+| 19 | **Commission 3-5 case studies** with specific before/after performance data | High | High (ongoing) |
+| 20 | **Create Wikipedia article** after press citation prerequisite is met | Critical | High |
+
+---
+
+## Score Projection
+
+| Milestone | Estimated GEO Score | Timeline |
+|-----------|--------------------|-----------| 
+| Current state | 54/100 | — |
+| Quick wins complete (items 1-5) | 57/100 | 1 week |
+| Medium-term complete (items 6-13) | 66/100 | 1 month |
+| Strategic complete (items 14-19) | 74/100 | 3 months |
+| With Wikipedia + press coverage (item 20) | 82/100 | 6-12 months |
+
+---
+
+## Appendix: Critical JSON-LD Fixes
+
+### Fix 1: Organization @id + Remove Self-Reference
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness"],
+  "@id": "https://www.shankeragencies.com/#organization",
+  "sameAs": [
+    "https://www.linkedin.com/company/shankeragencies",
+    "https://www.facebook.com/shankeragencies",
+    "https://twitter.com/shankeragencies",
+    "https://www.instagram.com/shankeragencies",
+    "https://www.youtube.com/@shankeragencies",
+    "https://www.crunchbase.com/organization/shanker-agencies",
+    "https://www.indiamart.com/shankeragencies/",
+    "https://www.tradeindia.com/shanker-agencies-pvt-ltd-2386358/",
+    "https://www.exportersindia.com/shanker-agencies-private-limited/",
+    "https://www.justdial.com/Delhi/Shanker-Agencies-Pvt-Ltd-Shahdara/011PK010076_BZDET",
+    "https://www.wikidata.org/wiki/[ADD AFTER CREATION]"
+  ]
+}
+```
+
+### Fix 2: Dynamic WebPage Schema (Next.js)
+
+In your Next.js layout or per-page metadata, replace the hardcoded block with:
+
+```tsx
+// In your schema generation utility
+function generateWebPageSchema(url: string, title: string, description: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${url}/#webpage`,
+    "url": url,
+    "name": title,
+    "description": description,
+    "isPartOf": { "@id": "https://www.shankeragencies.com/#website" },
+    "about": { "@id": "https://www.shankeragencies.com/#organization" },
+    "inLanguage": "en-IN"
+  };
+}
+```
+
+### Fix 3: Compliant llms.txt Structure
+
+```markdown
+# Shanker Agencies Pvt. Ltd.
+
+> India's refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supplying shaped & unshaped refractories, flow control systems, ceramic fiber, and acid-proof materials to steel, cement, aluminum, glass, and petrochemical industries across India, GCC & ASEAN.
+
+## Company
+
+- [About SAPL](https://www.shankeragencies.com/about): Company history, mission, leadership, and ISO certifications
+- [Industries Served](https://www.shankeragencies.com/industries): Steel, cement, aluminum, glass, petrochemical, power, foundry, ceramic
+- [Brand Partners](https://www.shankeragencies.com/brands): CUMI, Crown Ceramics, Divine Cerawool, TRL Krosaki, IFGL, Calderys, Mahakoshal
+- [Company Profile PDF](https://www.shankeragencies.com/company-profile): Downloadable company profile
+
+## Products
+
+- [Shaped Refractories](https://www.shankeragencies.com/products/shaped-refractories): High alumina, fireclay, basic, SiC bricks (1200–1850°C)
+- [Unshaped Refractories](https://www.shankeragencies.com/products/unshaped-refractories): LCC castables, ramming mass, gunning materials
+- [Flow Control Systems](https://www.shankeragencies.com/products/flow-control): Slide gate plates, ladle shrouds, SEN nozzles
+- [Insulation Products](https://www.shankeragencies.com/products/insulation): Ceramic fiber blankets, modules, calcium silicate
+- [Acid Proofing](https://www.shankeragencies.com/products/acid-proofing): Acid-proof bricks, tiles, carbon bricks
+
+## Technical Guides
+
+- [Ramming Mass Selection for Induction Furnaces](https://www.shankeragencies.com/blog/how-to-select-ramming-mass-for-induction-furnace): Complete guide with chemistry specs and cost-per-heat analysis
+- [Castable Refractory Installation](https://www.shankeragencies.com/blog/refractory-castable-types-installation-guide): LCC vs ULCC comparison with water ratios and curing schedules
+- [High Alumina Brick Selection](https://www.shankeragencies.com/blog/high-alumina-refractory-bricks-complete-guide): Grade selection by Al₂O₃% and application
+- [Magnesia Carbon Bricks for BOF/EAF](https://www.shankeragencies.com/blog/magnesia-carbon-bricks-bof-eaf-selection-performance): Steel plant selection guide
+- [Slide Gate Plate Performance](https://www.shankeragencies.com/blog/slide-gate-plates-selection-performance-guide): Material grades and bore sizing
+
+## Contact
+
+- [Contact & Quote](https://www.shankeragencies.com/contact): +91-9899957888 | info@shankeragencies.com | Delhi 110032, India
+- [Downloads](https://www.shankeragencies.com/downloads): Technical datasheets and product catalogues
+
+## Optional
+
+- [Knowledge Hub](https://www.shankeragencies.com/knowledge): Reference materials and technical resources
+- [Privacy Policy](https://www.shankeragencies.com/privacy): Privacy policy
+```
+
+### Fix 4: Product ItemList Schema for /products/shaped-refractories
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Shaped Refractory Products — Shanker Agencies",
+  "url": "https://www.shankeragencies.com/products/shaped-refractories",
+  "numberOfItems": 5,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Product",
+        "name": "High Alumina Refractory Bricks",
+        "description": "Fired high alumina bricks with 45–90% Al₂O₃ for steel ladles, blast furnaces, cement kilns, and induction furnaces.",
+        "brand": { "@type": "Brand", "name": "CUMI Super Refractories" },
+        "additionalProperty": [
+          { "@type": "PropertyValue", "name": "Al₂O₃ Content", "value": "45–90%" },
+          { "@type": "PropertyValue", "name": "Max Service Temperature", "value": "1850°C" },
+          { "@type": "PropertyValue", "name": "Applications", "value": "Steel ladles, blast furnaces, cement kilns, glass furnaces" }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "seller": { "@id": "https://www.shankeragencies.com/#organization" },
+          "availability": "https://schema.org/InStock",
+          "areaServed": "IN"
+        },
+        "url": "https://www.shankeragencies.com/products/shaped-refractories/high-alumina-bricks"
+      }
+    }
+  ]
+}
+```
+
+---
+
+*Report generated by GEO Audit Tool | April 2026*  
+*Two subagents (platform analysis, technical SEO) hit API rate limits mid-run — scores for those categories estimated from discovery data and page fetches.*

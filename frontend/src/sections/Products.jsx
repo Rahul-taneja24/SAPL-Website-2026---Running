@@ -876,9 +876,9 @@ function Gallery({ images, name }) {
       {images.length > 1 && (
         <div className="flex gap-2">
           {images.map((img, i) => (
-            <button key={i} onClick={() => setActive(i)}
+            <button key={i} onClick={() => setActive(i)} aria-label={`View ${name} image ${i + 1}`}
               className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 ${active === i ? "border-[#F97316]" : "border-gray-200 hover:border-gray-400"}`}>
-              <img src={img} alt="" className="w-full h-full object-cover" loading="lazy" />
+              <img src={img} alt={`${name} — view ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
             </button>
           ))}
         </div>

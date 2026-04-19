@@ -1,9 +1,15 @@
 import { ImageResponse } from 'next/og';
 
-export const alt = 'Shanker Agencies | Refractory Engineering Partner Since 1980';
+export const alt =
+  'Shanker Agencies | India\u2019s Refractory Engineering Partner Since 1980 \u2014 CUMI, TRL Krosaki, IFGL, Calderys, Mahakoshal';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
+// Homepage / default OpenGraph image.
+// Per-route overrides (blog, products, brands, locations) live alongside their page.jsx.
+// Constraints: next/og ImageResponse supports only a narrow CSS subset — flat backgroundColor,
+// flex layout, borders, border-radius, opacity, and absolute positioning. No CSS gradients,
+// no external images, no inline SVG. Visual depth is built by layering flat coloured divs.
 export default async function Image() {
   return new ImageResponse(
     (
@@ -11,100 +17,218 @@ export default async function Image() {
         style={{
           width: '1200px',
           height: '630px',
+          position: 'relative',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'space-between',
-          backgroundColor: '#0F1E46',
-          padding: '60px 72px',
+          backgroundColor: '#0B1628',
+          fontFamily: 'system-ui, -apple-system, sans-serif',
         }}
       >
-        {/* Orange left bar */}
+        {/* Diagonal orange accent — upper-right corner */}
+        <div
+          style={{
+            position: 'absolute',
+            top: '-120px',
+            right: '-120px',
+            width: '420px',
+            height: '420px',
+            backgroundColor: '#F97316',
+            opacity: 0.12,
+            transform: 'rotate(45deg)',
+            display: 'flex',
+          }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            top: '-80px',
+            right: '-80px',
+            width: '260px',
+            height: '260px',
+            backgroundColor: '#EA580C',
+            opacity: 0.18,
+            transform: 'rotate(45deg)',
+            display: 'flex',
+          }}
+        />
+
+        {/* Soft blue halo — lower-left */}
+        <div
+          style={{
+            position: 'absolute',
+            bottom: '-180px',
+            left: '-120px',
+            width: '440px',
+            height: '440px',
+            borderRadius: '50%',
+            backgroundColor: '#1E40AF',
+            opacity: 0.25,
+            display: 'flex',
+          }}
+        />
+
+        {/* Left orange rail */}
         <div
           style={{
             position: 'absolute',
             left: 0,
             top: 0,
-            width: '10px',
-            height: '630px',
+            bottom: 0,
+            width: '8px',
             backgroundColor: '#F97316',
             display: 'flex',
           }}
         />
 
-        {/* Top — company name */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+        {/* Subtle grid overlay — dots on diagonal */}
+        {Array.from({ length: 18 }).map((_, i) => (
           <div
+            key={`dot-${i}`}
             style={{
+              position: 'absolute',
+              top: `${30 + i * 32}px`,
+              left: `${60 + i * 64}px`,
+              width: '4px',
+              height: '4px',
+              borderRadius: '50%',
+              backgroundColor: '#F97316',
+              opacity: 0.15,
               display: 'flex',
-              alignItems: 'center',
-              gap: '16px',
             }}
-          >
-            {/* Logo placeholder circle */}
+          />
+        ))}
+
+        {/* Content wrapper */}
+        <div
+          style={{
+            position: 'relative',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            height: '630px',
+            padding: '64px 80px',
+          }}
+        >
+          {/* HEADER — brand lockup */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
             <div
               style={{
-                width: '56px',
-                height: '56px',
-                borderRadius: '50%',
+                width: '64px',
+                height: '64px',
+                borderRadius: '14px',
                 backgroundColor: '#F97316',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                boxShadow: '0 0 0 4px rgba(249,115,22,0.18)',
               }}
             >
-              <span style={{ color: '#fff', fontSize: '20px', fontWeight: 800 }}>S</span>
+              <span style={{ color: '#0B1628', fontSize: '30px', fontWeight: 900, letterSpacing: '-0.02em' }}>
+                S
+              </span>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ color: '#FFFFFF', fontSize: '22px', fontWeight: 700, letterSpacing: '0.04em' }}>
+              <span style={{ color: '#FFFFFF', fontSize: '26px', fontWeight: 800, letterSpacing: '0.01em' }}>
                 SHANKER AGENCIES PVT. LTD.
               </span>
-              <span style={{ color: '#F97316', fontSize: '13px', fontWeight: 600, letterSpacing: '0.18em' }}>
+              <span style={{ color: '#F97316', fontSize: '13px', fontWeight: 600, letterSpacing: '0.22em', marginTop: '4px' }}>
                 REFRACTORY ENGINEERING SOLUTIONS
               </span>
             </div>
           </div>
-        </div>
 
-        {/* Middle — headline */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '48px', height: '4px', backgroundColor: '#F97316', borderRadius: '2px', display: 'flex' }} />
-            <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '15px', fontWeight: 500, letterSpacing: '0.12em' }}>
-              SINCE 1980 · ISO 9001:2015 · 50+ COUNTRIES
+          {/* MIDDLE — headline */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '900px' }}>
+            {/* Eyebrow badge */}
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '12px',
+                backgroundColor: 'rgba(249,115,22,0.12)',
+                border: '1px solid rgba(249,115,22,0.35)',
+                borderRadius: '999px',
+                padding: '8px 18px',
+                alignSelf: 'flex-start',
+              }}
+            >
+              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F97316', display: 'flex' }} />
+              <span style={{ color: '#FDBA74', fontSize: '13px', fontWeight: 600, letterSpacing: '0.18em' }}>
+                SINCE 1980 \u00B7 ISO 9001:2015 \u00B7 50+ COUNTRIES
+              </span>
+            </div>
+
+            <span
+              style={{
+                color: '#FFFFFF',
+                fontSize: '60px',
+                fontWeight: 900,
+                lineHeight: 1.05,
+                letterSpacing: '-0.02em',
+              }}
+            >
+              India\u2019s Leading
+            </span>
+            <span
+              style={{
+                color: '#F97316',
+                fontSize: '60px',
+                fontWeight: 900,
+                lineHeight: 1.05,
+                letterSpacing: '-0.02em',
+                marginTop: '-22px',
+              }}
+            >
+              Refractory Engineering Partner
+            </span>
+
+            <span
+              style={{
+                color: 'rgba(255,255,255,0.72)',
+                fontSize: '20px',
+                fontWeight: 500,
+                lineHeight: 1.4,
+                marginTop: '8px',
+              }}
+            >
+              Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool & Mahakoshal \u00B7
+              Supply partner for TRL Krosaki, IFGL & Calderys
             </span>
           </div>
-          <span style={{ color: '#FFFFFF', fontSize: '54px', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.01em' }}>
-            India's Leading
-          </span>
-          <span style={{ color: '#F97316', fontSize: '54px', fontWeight: 800, lineHeight: 1.1, letterSpacing: '-0.01em', marginTop: '-14px' }}>
-            Refractory Engineering Partner
-          </span>
-        </div>
 
-        {/* Bottom — tags */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div style={{ display: 'flex', gap: '12px' }}>
-            {['CUMI Authorized', 'Crown Ceramics', 'TRL Krosaki', 'IFGL'].map((tag) => (
-              <div
-                key={tag}
-                style={{
-                  backgroundColor: 'rgba(255,255,255,0.1)',
-                  border: '1px solid rgba(255,255,255,0.2)',
-                  color: 'rgba(255,255,255,0.85)',
-                  fontSize: '14px',
-                  fontWeight: 500,
-                  padding: '7px 18px',
-                  borderRadius: '999px',
-                  display: 'flex',
-                }}
-              >
-                {tag}
-              </div>
-            ))}
+          {/* FOOTER — partner chips + url */}
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              borderTop: '1px solid rgba(255,255,255,0.12)',
+              paddingTop: '20px',
+            }}
+          >
+            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+              {['CUMI', 'Calderys', 'TRL Krosaki', 'IFGL', 'Mahakoshal', 'Crown Ceramics'].map((tag) => (
+                <div
+                  key={tag}
+                  style={{
+                    backgroundColor: 'rgba(255,255,255,0.08)',
+                    border: '1px solid rgba(255,255,255,0.18)',
+                    color: '#FFFFFF',
+                    fontSize: '14px',
+                    fontWeight: 600,
+                    padding: '8px 16px',
+                    borderRadius: '8px',
+                    display: 'flex',
+                  }}
+                >
+                  {tag}
+                </div>
+              ))}
+            </div>
+            <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '16px', fontWeight: 600, letterSpacing: '0.05em' }}>
+              shankeragencies.com
+            </span>
           </div>
-          <span style={{ color: 'rgba(255,255,255,0.45)', fontSize: '16px' }}>
-            shankeragencies.com
-          </span>
         </div>
       </div>
     ),

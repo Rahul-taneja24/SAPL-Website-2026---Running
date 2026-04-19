@@ -16,27 +16,37 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const brand = VALID_BRANDS.find((b) => b.slug === params.brandSlug);
+  const { brandSlug } = await params;
+  const brand = VALID_BRANDS.find((b) => b.slug === brandSlug);
   if (!brand) {
     return {
       title: 'Brand Not Found | Shanker Agencies',
       description: 'The requested brand page was not found.',
     };
   }
+  const title = `${brand.name} Refractory Products | Authorized Distributor India | Shanker Agencies`;
+  const description = `Shanker Agencies is an authorized distributor of ${brand.name} refractory products in India. ${brand.desc} Expert technical support since 1980.`;
   return {
-    title: `${brand.name} Refractory Products | Authorized Distributor India | Shanker Agencies`,
-    description: `Shanker Agencies is an authorized distributor of ${brand.name} refractory products in India. ${brand.desc} Expert technical support since 1980.`,
-    alternates: { canonical: `/brands/${params.brandSlug}` },
+    title,
+    description,
+    alternates: { canonical: `/brands/${brandSlug}` },
     openGraph: {
       title: `${brand.name} | Authorized Distributor | Shanker Agencies`,
       description: `${brand.name} refractory products from India's trusted distributor since 1980. ${brand.desc}`,
-      url: `https://www.shankeragencies.com/brands/${params.brandSlug}`,
+      url: `https://www.shankeragencies.com/brands/${brandSlug}`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
     },
   };
 }
 
-export default function BrandDetailPage({ params }) {
-  const brand = VALID_BRANDS.find((b) => b.slug === params.brandSlug);
+export default async function BrandDetailPage({ params }) {
+  const { brandSlug } = await params;
+  const brand = VALID_BRANDS.find((b) => b.slug === brandSlug);
   if (!brand) notFound();
   return <Brands />;
 }
