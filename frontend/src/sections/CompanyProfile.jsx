@@ -144,29 +144,23 @@ function CompanyProfile() {
     <div className="bg-white">
 
       {/* Toolbar */}
-      <div className="print:hidden sticky top-0 z-50 gradient-dark py-4 px-4">
+      <div className="print:hidden sticky top-0 z-50 gradient-dark py-3 sm:py-4 px-4 shadow-md">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-3">
           <div className="flex items-center gap-3">
-            <div className="flex flex-col">
-              <span className="font-oswald text-2xl font-bold tracking-wider leading-none">
-                <span className="text-[#F97316]">SHANKER</span>
-                <span className="text-[#1E3A5F]"> AGENCIES</span>
+            <img src={LOGO_URL} alt="Shanker Agencies logo" className="h-10 w-auto bg-white/95 rounded-lg p-1 shadow" />
+            <div className="flex flex-col leading-tight">
+              <span className="font-oswald text-white text-base sm:text-lg font-bold tracking-wide">
+                Company Profile
               </span>
-              <span className="text-[10px] text-gray-500 font-medium tracking-widest uppercase mt-0.5">
-                Refractory Engineers
-              </span>
-            </div>
-            <div>
-              <h1 className="font-oswald text-lg font-bold text-white leading-none">Company Profile</h1>
-              <p className="text-blue-200 text-xs">Shanker Agencies Pvt. Ltd.</p>
+              <span className="text-blue-200 text-[11px] sm:text-xs">Shanker Agencies Pvt. Ltd. &middot; Since 1980</span>
             </div>
           </div>
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <button
               type="button"
               onClick={() => setShowLeadModal(true)}
               disabled={downloading}
-              className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] disabled:opacity-70 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg shadow-orange-500/20"
+              className="flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] disabled:opacity-70 text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-lg shadow-orange-500/20"
               aria-label="Download Company Profile PDF"
             >
               {downloading ? <Loader2 size={16} className="animate-spin" /> : <Download size={16} />}
@@ -176,7 +170,7 @@ function CompanyProfile() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg"
+              className="flex items-center gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl font-bold text-xs sm:text-sm transition-all shadow-lg"
               aria-label="Chat on WhatsApp"
             >
               <MessageCircle size={16} /> WhatsApp
@@ -284,11 +278,11 @@ function CompanyProfile() {
         </div>
       )}
 
-      {/* Document — A4: 210mm x 297mm */}
+      {/* Document — A4 on desktop & print; auto-height on mobile so there's no empty whitespace */}
       <div id="company-profile-doc" className="mx-auto bg-white shadow-xl my-0 sm:my-8 print:my-0 print:shadow-none" style={{ width: '210mm', maxWidth: '100%' }}>
 
         {/* PAGE 1 */}
-        <section className="p-8 sm:p-10 print:p-10" style={{ minHeight: '297mm', boxSizing: 'border-box' }}>
+        <section className="p-6 sm:p-10 print:p-10 sm:!min-h-[297mm] print:!min-h-[297mm]" style={{ boxSizing: 'border-box' }}>
           <header className="flex items-start justify-between border-b-4 border-[#F97316] pb-5 mb-6">
             <div className="flex items-center gap-4">
               <img src={LOGO_URL} alt="SAPL" className="h-14 sm:h-16" />
@@ -333,10 +327,10 @@ function CompanyProfile() {
           <div className="mb-5">
             <h2 className="font-oswald text-lg font-bold text-[#1E3A5F] border-l-4 border-[#F97316] pl-3 mb-3">ABOUT US</h2>
             <p className="text-gray-700 text-sm leading-relaxed mb-2">
-              <strong className="text-[#1E3A5F]">Shanker Agencies Private Limited (SAPL)</strong> is India's premier refractory engineering partner, established in New Delhi in 1980. For over 45 years we have delivered world-class refractory products and technical services to steel, cement, aluminum, glass, petrochemical, and power industries across India and 50+ countries.
+              <strong className="text-[#1E3A5F]">Shanker Agencies Pvt. Ltd. (SAPL)</strong> was started in New Delhi in 1980 by Mohan Taneja. For over 45 years we have supplied refractory products and on-site engineering help to steel, cement, aluminium, glass, petrochemical and power plants across India, and have shipped into 50+ countries.
             </p>
             <p className="text-gray-700 text-sm leading-relaxed">
-              As strategic supply partners for <strong>CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool, and Crown Ceramics</strong>, we combine the strength of India's leading refractory brands with 45 years of on-site application engineering expertise.
+              We deal in <strong>CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool and Crown Ceramics</strong>. Every order ships with original manufacturer test certificates and is backed by our own plant-side support team.
             </p>
           </div>
 
@@ -345,9 +339,9 @@ function CompanyProfile() {
             <div className="grid sm:grid-cols-2 gap-2.5">
               {[
                 { bg: "bg-blue-50 border-blue-100", c: "text-[#3B82F6]", t: "Complete Refractory Solutions", d: "Shaped, Unshaped, Flow Control, Insulation & Acid Proofing" },
-                { bg: "bg-orange-50 border-orange-100", c: "text-[#F97316]", t: "Technical Engineering Support", d: "On-site application engineering, design & troubleshooting" },
-                { bg: "bg-green-50 border-green-100", c: "text-green-600", t: "Partner Brand Distribution", d: "Genuine products with manufacturer MTC documentation" },
-                { bg: "bg-purple-50 border-purple-100", c: "text-purple-600", t: "Global Logistics", d: "Pan-India delivery + export documentation for 50+ countries" },
+                { bg: "bg-orange-50 border-orange-100", c: "text-[#F97316]", t: "On-site Engineering Help", d: "Application support, lining design and troubleshooting at your plant" },
+                { bg: "bg-green-50 border-green-100", c: "text-green-600", t: "Genuine Branded Stock", d: "Original manufacturer test certificates with every dispatch" },
+                { bg: "bg-purple-50 border-purple-100", c: "text-purple-600", t: "Pan-India and Export", d: "Delivery across India plus full export paperwork for 50+ countries" },
               ].map(({ bg, c, t, d }) => (
                 <div key={t} className={`flex items-start gap-3 p-3 rounded-xl border ${bg}`}>
                   <CheckCircle className={`${c} flex-shrink-0 mt-0.5`} size={15} />
@@ -385,7 +379,7 @@ function CompanyProfile() {
         <div className="print:break-before-page border-t-4 border-dashed border-gray-200 print:border-0 mx-8" />
 
         {/* PAGE 2 */}
-        <section className="p-8 sm:p-10 print:p-10" style={{ minHeight: '297mm', boxSizing: 'border-box' }}>
+        <section className="p-6 sm:p-10 print:p-10 sm:!min-h-[297mm] print:!min-h-[297mm]" style={{ boxSizing: 'border-box' }}>
           <div className="flex items-center justify-between border-b-2 border-[#F97316] pb-3 mb-6">
             <div className="flex items-center gap-2"><img src={LOGO_URL} alt="SAPL" className="h-7" /><span className="font-oswald text-sm font-bold text-[#1E3A5F]">SHANKER AGENCIES PVT. LTD.</span></div>
             <span className="text-xs text-gray-400">Product Portfolio · Page 2</span>
@@ -395,7 +389,7 @@ function CompanyProfile() {
             <h2 className="font-oswald text-lg font-bold text-[#1E3A5F] border-l-4 border-[#F97316] pl-3 mb-4">PRODUCT PORTFOLIO</h2>
             <div className="grid sm:grid-cols-2 gap-3 mb-3">
               {[
-                { hc: "bg-[#F97316]", title: "Shaped Refractories", Icon: Flame, items: ["High Alumina Bricks — AL45 to AL90", "Fireclay & Semi-High Alumina Bricks", "Insulating Fire Bricks (IFB 23–32)", "Magnesia, MgO-C & Basic Bricks", "Silicon Carbide Bricks", "Custom Precast Shapes"] },
+                { hc: "bg-[#F97316]", title: "Shaped Refractories", Icon: Flame, items: ["High Alumina Bricks (AL45 to AL90)", "Fireclay & Semi-High Alumina Bricks", "Insulating Fire Bricks (IFB 23–32)", "Magnesia, MgO-C & Basic Bricks", "Silicon Carbide Bricks", "Custom Precast Shapes"] },
                 { hc: "bg-[#3B82F6]", title: "Unshaped / Monolithics", Icon: Factory, items: ["LCC & ULCC Castables (premium brands)", "Conventional Castables & Gunning Mixes", "Ramming Masses (Silica, Alumina, Magnesia)", "Self-Flow & Shotcrete Castables", "Mortars, Cements & Coatings", "Plastic Refractories"] },
               ].map(({ hc, title, Icon, items }) => (
                 <div key={title} className="border-2 border-gray-200 rounded-xl overflow-hidden">
@@ -430,7 +424,7 @@ function CompanyProfile() {
           </div>
 
           <div className="mb-6">
-            <h2 className="font-oswald text-lg font-bold text-[#1E3A5F] border-l-4 border-[#F97316] pl-3 mb-3">STRATEGIC BRAND PARTNERS</h2>
+            <h2 className="font-oswald text-lg font-bold text-[#1E3A5F] border-l-4 border-[#F97316] pl-3 mb-3">BRANDS WE WORK WITH</h2>
             <div className="flex flex-wrap gap-2">
               {["CUMI (Carborundum Universal)", "Calderys India", "TRL Krosaki (Tata Group)", "IFGL Refractories", "Mahakoshal Refractories", "Divine Cerawool", "Crown Ceramics"].map(b => (
                 <span key={b} className="px-3 py-1.5 gradient-dark text-white rounded-lg text-xs font-semibold">{b}</span>
@@ -439,7 +433,7 @@ function CompanyProfile() {
           </div>
 
           <div className="gradient-dark p-5 rounded-xl text-white">
-            <h3 className="font-oswald text-base font-bold mb-2 flex items-center gap-2"><Globe size={16} /> GLOBAL PRESENCE — 50+ COUNTRIES</h3>
+            <h3 className="font-oswald text-base font-bold mb-2 flex items-center gap-2"><Globe size={16} /> GLOBAL PRESENCE · 50+ COUNTRIES</h3>
             <div className="flex flex-wrap gap-1.5 mt-2">
               {["UAE", "Saudi Arabia", "Qatar", "Kuwait", "Bahrain", "Oman", "UK", "Germany", "France", "Singapore", "Malaysia", "Indonesia", "Vietnam", "Thailand"].map(c => (
                 <span key={c} className="px-2 py-0.5 glass rounded text-[10px] font-medium text-white">{c}</span>
@@ -457,7 +451,7 @@ function CompanyProfile() {
         <div className="print:break-before-page border-t-4 border-dashed border-gray-200 print:border-0 mx-8" />
 
         {/* PAGE 3 */}
-        <section className="p-8 sm:p-10 print:p-10" style={{ minHeight: '297mm', boxSizing: 'border-box' }}>
+        <section className="p-6 sm:p-10 print:p-10 sm:!min-h-[297mm] print:!min-h-[297mm]" style={{ boxSizing: 'border-box' }}>
           <div className="flex items-center justify-between border-b-2 border-[#F97316] pb-3 mb-6">
             <div className="flex items-center gap-2"><img src={LOGO_URL} alt="SAPL" className="h-7" /><span className="font-oswald text-sm font-bold text-[#1E3A5F]">SHANKER AGENCIES PVT. LTD.</span></div>
             <span className="text-xs text-gray-400">Contact & Partnership · Page 3</span>
@@ -466,7 +460,7 @@ function CompanyProfile() {
           <div className="gradient-orange p-6 rounded-xl text-white text-center mb-6">
             <Target className="mx-auto mb-2" size={28} />
             <h2 className="font-oswald text-2xl font-bold mb-1">LET'S BUILD TOGETHER</h2>
-            <p className="text-sm opacity-90">Reliable refractory supply + application engineering since 1980</p>
+            <p className="text-sm opacity-90">Trusted refractory supply and on-site engineering help since 1980.</p>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-5 mb-6">
@@ -482,7 +476,7 @@ function CompanyProfile() {
             <div className="glass-card p-5 bg-gray-50 rounded-xl">
               <h3 className="font-oswald text-base font-bold text-[#1E3A5F] mb-4 flex items-center gap-2"><Award size={16} className="text-[#F97316]" /> WHY CHOOSE SAPL?</h3>
               <ul className="space-y-2">
-                {["45+ years of refractory industry experience", "Complete product range under one roof", "Strategic partners for 7+ global brands", "Original manufacturer test certificates (MTC)", "On-site application engineering support", "Competitive pricing with quality assurance", "4-hour quote response for standard products", "Export to 50+ countries with full documentation"].map(item => (
+                {["45+ years of refractory industry experience", "Complete product range under one roof", "Authorised dealer and supply partner for 7 leading brands", "Original manufacturer test certificates (MTC)", "On-site application engineering support", "Competitive pricing with quality assurance", "4-hour quote response for standard products", "Export to 50+ countries with full documentation"].map(item => (
                   <li key={item} className="flex items-start gap-2"><CheckCircle className="text-green-500 flex-shrink-0 mt-0.5" size={13} /><span className="text-xs text-gray-700">{item}</span></li>
                 ))}
               </ul>

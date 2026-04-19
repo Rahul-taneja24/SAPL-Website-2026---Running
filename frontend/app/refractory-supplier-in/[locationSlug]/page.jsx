@@ -29,6 +29,10 @@ export async function generateMetadata({ params }) {
     description: location.metaDescription,
     alternates: {
       canonical: `/refractory-supplier-in/${location.slug}`,
+      languages: {
+        'en-IN': `https://www.shankeragencies.com/refractory-supplier-in/${location.slug}`,
+        'x-default': `https://www.shankeragencies.com/refractory-supplier-in/${location.slug}`,
+      },
     },
     openGraph: {
       title: location.metaTitle,
@@ -238,6 +242,43 @@ export default async function LocationPage({ params }) {
     ],
   };
 
+  // JSON-LD: WebPage with Speakable — helps Google Assistant / voice AI read our answers
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `https://www.shankeragencies.com/refractory-supplier-in/${slug}#webpage`,
+    url: `https://www.shankeragencies.com/refractory-supplier-in/${slug}`,
+    name: location.metaTitle,
+    description: location.metaDescription,
+    inLanguage: 'en-IN',
+    isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
+    about: { '@id': 'https://www.shankeragencies.com/#organization' },
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', 'h2', '[data-speakable]', '.prose p'],
+    },
+  };
+
+  // JSON-LD: Service — positions the listing as a genuine service, not just content
+  const cityServiceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `https://www.shankeragencies.com/refractory-supplier-in/${slug}#service`,
+    name: `Refractory supplier in ${city}`,
+    description: `Supply of refractory bricks, castables, ramming mass, ceramic fibre, acid-proof bricks and flow control products to industrial plants in ${city}${isInternational ? `, ${country}` : `, ${state}`}.`,
+    serviceType: 'Refractory Supply',
+    areaServed: {
+      '@type': 'City',
+      name: city,
+      containedInPlace: { '@type': 'Country', name: country },
+    },
+    provider: {
+      '@type': 'Organization',
+      '@id': 'https://www.shankeragencies.com/#organization',
+      name: 'Shanker Agencies Pvt. Ltd.',
+    },
+  };
+
   const industryLabel = (id) =>
     ({ steel: 'Iron & Steel', cement: 'Cement', aluminum: 'Aluminum', petrochemical: 'Petrochemical', power: 'Power Generation', glass: 'Glass' })[id] || id;
 
@@ -247,6 +288,8 @@ export default async function LocationPage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(cityServiceSchema) }} />
 
       {/* ------------------------------------------------------------------ */}
       {/* HERO */}
@@ -467,18 +510,18 @@ export default async function LocationPage({ params }) {
             {[
               {
                 icon: Award,
-                title: '45+ Years of Expertise',
-                desc: `Since 1980, SAPL has been India's premier refractory engineering partner. Our experience ensures ${city} customers receive the right product for every application.`,
+                title: '45+ Years in the Trade',
+                desc: `SAPL has been in the refractory business since 1980. The experience helps ${city} customers pick the right grade first time, which saves money and avoids unplanned downtime.`,
               },
               {
                 icon: ShieldCheck,
-                title: 'Authorized Dealer Status',
-                desc: 'Direct authorized dealerships of CUMI, Crown Ceramics & Divine Cerawool guarantee genuine products, factory warranties, and competitive pricing.',
+                title: 'Authorised Dealer',
+                desc: 'Authorised dealer for CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal, plus supply partner for TRL Krosaki, IFGL and Calderys. Every dispatch ships with the original manufacturer test certificate.',
               },
               {
                 icon: Factory,
-                title: 'Manufacturing Capability',
-                desc: 'Beyond trading, SAPL manufactures specialty refractory products and pre-cast shapes, enabling custom solutions for unique industrial requirements.',
+                title: 'Precast &amp; Custom Shapes',
+                desc: 'Beyond stock items, we have precast shapes and non-standard sizes made for unusual furnace geometries. Tell us the drawing, we indent it from the factory.',
               },
               {
                 icon: Truck,

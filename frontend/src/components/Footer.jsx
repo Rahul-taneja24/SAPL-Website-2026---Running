@@ -29,25 +29,27 @@ const Footer = () => {
             <Link
               href="/"
               aria-label="Shanker Agencies Home"
-              className="inline-flex items-center gap-3 mb-5 group"
+              className="inline-flex items-center gap-3.5 mb-5 group"
             >
-              <img
-                src={LOGO_URL}
-                alt="SAPL"
-                className="h-11 w-auto flex-shrink-0 object-contain"
-                loading="lazy"
-              />
-              <span className="flex flex-col justify-center leading-none">
-                <span className="font-oswald text-base font-bold text-white tracking-wide">
+              <span className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-white/95 ring-1 ring-white/20 shadow-lg shadow-black/20 p-1.5 flex-shrink-0 group-hover:scale-105 transition-transform">
+                <img
+                  src={LOGO_URL}
+                  alt="Shanker Agencies logo"
+                  className="w-full h-full object-contain"
+                  loading="lazy"
+                />
+              </span>
+              <span className="flex flex-col justify-center leading-tight">
+                <span className="font-oswald text-[17px] font-bold text-white tracking-wide">
                   SHANKER AGENCIES
                 </span>
-                <span className="text-[10px] text-[#F97316] font-semibold tracking-[0.22em] uppercase mt-1">
-                  PRIVATE LIMITED
+                <span className="text-[10px] text-[#F97316] font-semibold tracking-[0.18em] uppercase mt-1">
+                  Pvt. Ltd. &middot; Since 1980
                 </span>
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              India's premier refractory engineering partner since 1980. Strategic supply partner of leading global manufacturers including CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool & Crown Ceramics.
+              A family-run refractory business from Delhi, working with steel, cement, aluminium, glass, power and petrochemical plants across India since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys.
             </p>
 
             {/* Social icons */}
@@ -121,7 +123,7 @@ const Footer = () => {
               <Download size={16} aria-hidden="true" />
               Download Company Profile
             </Link>
-            <p className="text-gray-500 text-xs mt-2">PDF brochure – click to view & download</p>
+            <p className="text-gray-500 text-xs mt-2">PDF brochure. Click to view and download.</p>
           </div>
 
           {/* Col 3 — Global Presence */}

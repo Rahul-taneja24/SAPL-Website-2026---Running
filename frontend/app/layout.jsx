@@ -10,11 +10,11 @@ import './globals.css';
 export const metadata = {
   metadataBase: new URL('https://www.shankeragencies.com'),
   title: {
-    default: "Shanker Agencies | Refractory Engineering Partner",
+    default: "Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980",
     template: '%s | Shanker Agencies',
   },
   description:
-    "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki, IFGL, Mahakoshal, Calderys & Divine Cerawool. Supply of high-performance refractories for steel, cement, aluminum, power & petrochemical industries.",
+    "Family-run refractory business based in Delhi since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys. We ship high alumina bricks, castables, ramming mass, ceramic fibre and flow control products to steel, cement, aluminium, glass, power and petrochemical plants across India and to 50+ countries.",
   keywords: [
     'refractory engineering partner India', 'refractory supplier India', 'refractory distributor India',
     'refractory materials supplier', 'refractory manufacturer India', 'refractory supplier Delhi',
@@ -44,14 +44,14 @@ export const metadata = {
     locale: 'en_IN',
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
-    title: 'Shanker Agencies | Refractory Engineering Partner',
-    description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki & IFGL. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Engineering Partner' }],
+    title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
+    description: "Family-run refractory dealer in Delhi since 1980. Authorised for CUMI, Crown Ceramics, Divine Cerawool, Mahakoshal. Supply partner for TRL Krosaki, IFGL and Calderys. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Shanker Agencies | Refractory Engineering Partner',
-    description: "India's leading refractory engineering partner since 1980.",
+    title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
+    description: "Family-run refractory dealer in Delhi since 1980. CUMI, Crown, Mahakoshal, TRL Krosaki, IFGL and Calderys.",
     images: ['/opengraph-image'],
   },
   robots: {
@@ -69,6 +69,14 @@ export const metadata = {
   },
   alternates: {
     canonical: 'https://www.shankeragencies.com',
+    languages: {
+      'en-IN': 'https://www.shankeragencies.com',
+      'en-GB': 'https://www.shankeragencies.com',
+      'en-US': 'https://www.shankeragencies.com',
+      'en-AE': 'https://www.shankeragencies.com',
+      'en-SG': 'https://www.shankeragencies.com',
+      'x-default': 'https://www.shankeragencies.com',
+    },
     types: {
       'text/plain': 'https://www.shankeragencies.com/llms.txt',
     },
@@ -87,6 +95,13 @@ export const metadata = {
   manifest: '/site.webmanifest',
   verification: {
     google: 'UP4jk4O4_EhbCZmxhLCah3pTBbUuI9Utg1KkhDzIC0I',
+    other: {
+      // Replace with the code you get from Bing Webmaster Tools → Ownership → HTML Meta Tag
+      // Keeping placeholder so the meta tag renders — swap the value without a deploy.
+      'msvalidate.01': process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || 'REPLACE_WITH_BING_CODE',
+      // Yandex Webmaster — optional, for international coverage
+      'yandex-verification': process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || 'REPLACE_WITH_YANDEX_CODE',
+    },
   },
 };
 
@@ -149,8 +164,8 @@ export default function RootLayout({ children }) {
                 { '@type': 'Brand', name: 'Divine Cerawool' },
                 { '@type': 'Brand', name: 'Crown Ceramics' },
               ],
-              slogan: 'Engineering Refractory Solutions Since 1980',
-              description: "India's leading refractory engineering partner since 1980, headed by founder Mohan Taneja. Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool & Mahakoshal Refractories and supply partner for TRL Krosaki, IFGL & Calderys. Supplying high alumina bricks, castables, ceramic fiber, ramming mass & flow control refractories to steel, cement, aluminium, power & petrochemical industries.",
+              slogan: 'Refractory supply and plant-side engineering help since 1980',
+              description: "Family-run refractory business based in Delhi since 1980, founded by Mohan Taneja. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories, and supply partner for TRL Krosaki, IFGL and Calderys. We stock and deliver high alumina bricks, castables, ramming mass, ceramic fibre, acid-proof bricks and flow control products to steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ export markets.",
               priceRange: '₹₹',
               address: {
                 '@type': 'PostalAddress',
@@ -243,7 +258,7 @@ export default function RootLayout({ children }) {
               name: 'Shanker Agencies',
               alternateName: ['SAPL', 'Shanker Agencies Pvt. Ltd.'],
               url: 'https://www.shankeragencies.com',
-              description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool. Supply of high-performance refractories for steel, cement, aluminum & petrochemical industries.",
+              description: "Family-run refractory dealer in Delhi since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys. Serving steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ countries.",
               inLanguage: 'en-IN',
               publisher: {
                 '@type': 'Organization',

@@ -407,7 +407,7 @@ const Home = () => {
               Refractory Engineering &amp; Manufacturing Since 1980
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed mb-10">
-              As India's premier refractory engineering partner, we engineer, manufacture, and supply the full spectrum of refractory solutions. From high alumina bricks and castables to ceramic fiber insulation and flow control systems — our 45+ years of expertise covers blast furnaces, steel ladles, rotary kilns, induction furnaces, and chemical plants. We are authorized dealers of CUMI, Crown Ceramics &amp; Divine Cerawool, and strategic supply partners of TRL Krosaki, IFGL &amp; Calderys. Our refractory engineers focus on thermal shock resistance, slag corrosion protection, and energy efficiency to extend your campaign life by 25-40% and reduce plant downtime.
+              We supply the full range of refractories from a single desk: high alumina and fireclay bricks, low-cement and conventional castables, ramming mass, ceramic fibre insulation, slide gate plates and flow control. In 45+ years we have worked on blast furnaces, steel ladles, rotary kilns, induction furnaces and chemical plants across India. Authorised dealer for CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys. Our engineers focus on thermal shock, slag attack and energy loss so your lining lasts longer and your plant runs more days between relines.
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="h-px w-12 bg-gray-200" />

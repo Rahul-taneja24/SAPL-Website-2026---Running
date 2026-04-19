@@ -390,8 +390,8 @@ function Brands() {
   const brandsStructuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Strategic Refractory Brand Partners — Shanker Agencies",
-    description: "Shanker Agencies is the strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool, and Crown Ceramics refractories in India.",
+    name: "Partner Refractory Brands at Shanker Agencies",
+    description: "Shanker Agencies is an authorised dealer and supply partner for CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool and Crown Ceramics refractories in India.",
     itemListElement: brandsData.map((b, idx) => ({
       "@type": "ListItem",
       position: idx + 1,
@@ -415,14 +415,14 @@ function Brands() {
       >
         <div className="max-w-7xl mx-auto relative z-10">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold uppercase tracking-widest mb-6">
-            <Shield size={12} aria-hidden="true" /> Strategic Supply Partner
+            <Shield size={12} aria-hidden="true" /> Authorised Dealer &amp; Supply Partner
           </span>
           <h1 id="brands-heading" className="font-oswald text-5xl md:text-7xl font-bold text-white leading-none mb-4">
-            PREMIUM<br />
-            <span className="text-shimmer">PARTNER BRANDS</span>
+            PARTNER<br />
+            <span className="text-shimmer">REFRACTORY BRANDS</span>
           </h1>
           <p className="text-gray-300 max-w-2xl text-lg leading-relaxed mb-8">
-            We are strategic supply partners for India's and the world's leading refractory manufacturers. Every product carries original manufacturer documentation, test certificates, and our full technical backing.
+            We are an authorised dealer and supply partner for some of India&apos;s and the world&apos;s biggest refractory manufacturers. Every delivery ships with the original manufacturer&apos;s test certificate, so you always know exactly what you are getting, and our team is on call if anything needs support on the plant floor.
           </p>
 
           {/* Brand logo strip */}

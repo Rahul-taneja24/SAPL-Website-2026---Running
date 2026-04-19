@@ -8,15 +8,15 @@ import AnimatedCounter from "../components/AnimatedCounter";
 // ─── DATA ──────────────────────────────────────────────────────────────────────
 
 const milestones = [
-  { year: "1980", event: "Founded in Shahdara, Delhi by Mohan Taneja — who has headed Shanker Agencies since its inception. Began with local marketing, supplying general refractories to copper smelters, glass units, and small furnace operators in and around Delhi NCR.", icon: <Factory size={28} className="text-[#F97316]" /> },
-  { year: "1990", event: "Evolved with the market — transitioned focus from copper and glass to India's expanding steel re-rolling mills and forging units. First long-term national supply contracts signed.", icon: <Settings size={28} className="text-blue-400" /> },
-  { year: "2000", event: "Expanded product range from general refractories to premium grades — castables, mortars, insulating bricks. Entered the cement and power plant segments as India's infrastructure accelerated.", icon: <Layers size={28} className="text-orange-400" /> },
-  { year: "2005", event: "Achieved ISO 9001 certification — formalizing the quality systems that had been practiced since day one.", icon: <Trophy size={28} className="text-yellow-400" /> },
-  { year: "2010", event: "Became strategic supply partner for CUMI Super Refractories — the most significant brand partnership in SAPL's history. Shifted positioning from general refractories to branded, premium refractory products.", icon: <Handshake size={28} className="text-green-400" /> },
-  { year: "2015", event: "International expansion begins. First exports to the GCC region. Added Calderys and TRL Krosaki to the brand portfolio.", icon: <Globe2 size={28} className="text-blue-300" /> },
-  { year: "2018", event: "Rahul Taneja (second generation) joined SAPL as Director — bringing modern sales engineering, digital capabilities and a sharper focus on steel, cement, aluminium and power plant customers.", icon: <Handshake size={28} className="text-[#F97316]" /> },
-  { year: "2020", event: "Added IFGL flow control products, Divine Cerawool ceramic fiber, Crown Ceramics and Mahakoshal Refractories to the portfolio. Began serving ASEAN markets.", icon: <Microscope size={28} className="text-purple-400" /> },
-  { year: "2026", event: "Serving 500+ industrial clients across 50+ countries with 7+ strategic brand partnerships — CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool & Crown Ceramics. Full engineering support capability across steel, cement, aluminium, glass, petrochemical and power industries.", icon: <Rocket size={28} className="text-red-400" /> },
+  { year: "1980", event: "Mohan Taneja starts Shanker Agencies in Shahdara, Delhi. Early work is local: supplying general refractories to copper smelters, glass units and small furnace operators in and around Delhi NCR.", icon: <Factory size={28} className="text-[#F97316]" /> },
+  { year: "1990", event: "Focus shifts from copper and glass to India's steel re-rolling mills and forging units. First long-term national supply contracts are signed.", icon: <Settings size={28} className="text-blue-400" /> },
+  { year: "2000", event: "Product range expands from general refractories to branded castables, mortars and insulating bricks. SAPL starts serving the cement and power plant segments.", icon: <Layers size={28} className="text-orange-400" /> },
+  { year: "2005", event: "ISO 9001 certification completed. The quality systems we had been running for years were finally put on paper.", icon: <Trophy size={28} className="text-yellow-400" /> },
+  { year: "2010", event: "Appointed as supply partner for CUMI Super Refractories. This was a turning point: the business moved from trading general refractories to stocking and supporting branded, premium products.", icon: <Handshake size={28} className="text-green-400" /> },
+  { year: "2015", event: "First exports to the GCC region. Calderys and TRL Krosaki added to the brand portfolio.", icon: <Globe2 size={28} className="text-blue-300" /> },
+  { year: "2018", event: "Rahul Taneja (second generation) joined SAPL as Director, bringing sales engineering, digital systems and a sharper focus on steel, cement, aluminium and power plant customers.", icon: <Handshake size={28} className="text-[#F97316]" /> },
+  { year: "2020", event: "Added IFGL flow control products, Divine Cerawool ceramic fibre, Crown Ceramics and Mahakoshal Refractories to the line-up. Started serving ASEAN markets.", icon: <Microscope size={28} className="text-purple-400" /> },
+  { year: "2026", event: "Serving 500+ industrial clients across 50+ countries with seven brand partnerships: CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool and Crown Ceramics. On-site engineering help across steel, cement, aluminium, glass, petrochemical and power industries.", icon: <Rocket size={28} className="text-red-400" /> },
 ];
 
 const values = [
@@ -479,7 +479,7 @@ const About = () => {
                 <h3 className="font-oswald text-xl font-bold text-[#1E3A5F]">Mohan Taneja</h3>
                 <p className="text-[#F97316] text-xs font-semibold uppercase tracking-wide mb-3">Founder &amp; Managing Director</p>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Founder of Shanker Agencies and has headed the company since inception in 1980. Built the business from local marketing to local copper and glass units into one of India's most respected refractory engineering partners — personally earning the strategic supply partnerships with CUMI, Calderys and TRL Krosaki.
+                  Founded Shanker Agencies in 1980 and has headed the company since. Built the business from a single-room Delhi office supplying copper and glass units into a trusted refractory partner for Indian steel, cement, power and petrochemical plants. Personally earned the supply partnerships with CUMI, Calderys and TRL Krosaki.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {['45+ Years Experience', 'Founder', 'Brand Partnerships'].map(s => (
