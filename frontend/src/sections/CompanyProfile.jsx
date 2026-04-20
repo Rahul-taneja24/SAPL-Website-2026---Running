@@ -423,20 +423,47 @@ function CompanyProfile() {
             </div>
           </div>
 
+          <div className="mb-6 bg-gradient-to-br from-[#F97316]/5 to-[#3B82F6]/5 border border-[#F97316]/20 rounded-xl p-5">
+            <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
+              A family-run refractory business from Delhi, working with steel, cement, aluminium, glass, power and petrochemical plants across India since 1980. <strong className="text-[#1E3A5F]">Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys.</strong>
+            </p>
+          </div>
+
           <div className="mb-6">
             <h2 className="font-oswald text-lg font-bold text-[#1E3A5F] border-l-4 border-[#F97316] pl-3 mb-3">BRANDS WE WORK WITH</h2>
             <div className="flex flex-wrap gap-2">
-              {["CUMI (Carborundum Universal)", "Calderys India", "TRL Krosaki (Tata Group)", "IFGL Refractories", "Mahakoshal Refractories", "Divine Cerawool", "Crown Ceramics"].map(b => (
-                <span key={b} className="px-3 py-1.5 gradient-dark text-white rounded-lg text-xs font-semibold">{b}</span>
+              {[
+                { name: "CUMI (Carborundum Universal)", tag: "Authorised Dealer" },
+                { name: "Crown Ceramics", tag: "Authorised Dealer" },
+                { name: "Divine Cerawool", tag: "Authorised Dealer" },
+                { name: "Mahakoshal Refractories", tag: "Authorised Dealer" },
+                { name: "TRL Krosaki (Tata Group)", tag: "Supply Partner" },
+                { name: "IFGL Refractories", tag: "Supply Partner" },
+                { name: "Calderys India", tag: "Supply Partner" },
+              ].map(({ name, tag }) => (
+                <span
+                  key={name}
+                  className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border ${tag === 'Authorised Dealer' ? 'bg-[#F97316]/10 border-[#F97316]/30 text-[#1E3A5F]' : 'bg-[#3B82F6]/10 border-[#3B82F6]/30 text-[#1E3A5F]'}`}
+                >
+                  {name}
+                  <span className={`text-[9px] font-bold uppercase tracking-wide px-1.5 py-0.5 rounded ${tag === 'Authorised Dealer' ? 'bg-[#F97316] text-white' : 'bg-[#3B82F6] text-white'}`}>{tag}</span>
+                </span>
               ))}
             </div>
           </div>
 
-          <div className="gradient-dark p-5 rounded-xl text-white">
-            <h3 className="font-oswald text-base font-bold mb-2 flex items-center gap-2"><Globe size={16} /> GLOBAL PRESENCE · 50+ COUNTRIES</h3>
-            <div className="flex flex-wrap gap-1.5 mt-2">
+          <div className="bg-[#0B1628] p-5 rounded-xl">
+            <h3 className="font-oswald text-base font-bold mb-3 flex items-center gap-2 text-white">
+              <Globe size={16} className="text-[#F97316]" /> GLOBAL PRESENCE · 50+ COUNTRIES
+            </h3>
+            <div className="flex flex-wrap gap-1.5">
               {["UAE", "Saudi Arabia", "Qatar", "Kuwait", "Bahrain", "Oman", "UK", "Germany", "France", "Singapore", "Malaysia", "Indonesia", "Vietnam", "Thailand"].map(c => (
-                <span key={c} className="px-2 py-0.5 glass rounded text-[10px] font-medium text-white">{c}</span>
+                <span
+                  key={c}
+                  className="px-2.5 py-1 bg-white text-[#1E3A5F] rounded text-[11px] font-semibold border border-white/20"
+                >
+                  {c}
+                </span>
               ))}
             </div>
           </div>

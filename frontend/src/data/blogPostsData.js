@@ -2893,6 +2893,332 @@ export const BLOG_POSTS_DATA = [
     author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
     relatedProducts: ["ramming-mass", "silica-ramming-mass", "alumina-ramming-mass"],
   },
+
+  // ─────────────────────────────────────────────────────────────
+  // 24. Top 10 Refractory Dealers in Delhi NCR 2026 (Pillar / Listicle)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 24,
+    slug: "top-10-refractory-dealers-in-delhi-ncr-2026",
+    title: "Top 10 Refractory Dealers in Delhi NCR 2026: Honest Comparison for Buyers",
+    metaTitle: "Top 10 Refractory Dealers in Delhi NCR 2026 | Honest Comparison",
+    metaDescription: "A practical comparison of refractory dealers in Delhi NCR for 2026. Covers authorised dealer status, brand mix, stock depth, engineering support and delivery across Delhi, Noida, Gurgaon, Faridabad and Ghaziabad.",
+    category: "Buyer's Guide",
+    tags: [
+      "refractory dealer delhi",
+      "refractory supplier delhi ncr",
+      "refractory distributor noida",
+      "refractory dealer gurgaon",
+      "refractory dealer faridabad",
+      "best refractory supplier india",
+    ],
+    readTime: "12 min",
+    publishDate: "2026-04-20",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&q=80",
+    excerpt: "If you run a steel re-rolling mill in Wazirpur, an aluminium die-casting shop in Manesar or a foundry in Sahibabad, choosing the right refractory dealer is as important as choosing the right material. This guide walks through what to look for in a Delhi NCR refractory supplier in 2026, the trade-offs between authorised dealers, traders and factory agents, and a practical checklist you can use before placing your next order.",
+    content: `
+<h2>Why This Comparison Exists</h2>
+<p>Every week we get the same question from buyers in Delhi, Noida, Gurgaon, Faridabad and Ghaziabad: "Who should we buy our refractories from?" The honest answer is that it depends on what you are buying, how fast you need it and how much engineering support you want around it. This guide is written as a buyer's checklist, not a sales pitch. We have been in the trade since 1980 and have worked alongside most of the dealers named here at various trade shows, SAIL tenders and customer sites.</p>
+
+<h2>How to Read This Guide</h2>
+<p>We grouped the Delhi NCR refractory dealer landscape into four types. Each type has a legitimate place in the market. The trick is matching the dealer type to your use case.</p>
+<ol>
+  <li><strong>Authorised dealers of Indian majors</strong> (CUMI, Crown Ceramics, Divine Cerawool, Mahakoshal). These carry factory-backed pricing and genuine products. Shanker Agencies (SAPL) sits in this category.</li>
+  <li><strong>Supply partners for large plants</strong> (TRL Krosaki, IFGL, Calderys, Dalmia-OCL, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
+  <li><strong>Local stockists and traders</strong>. Smaller operators with mixed-brand stock. Good for small value top-ups, less reliable for critical shutdown orders.</li>
+  <li><strong>Online marketplaces</strong> (IndiaMART, TradeIndia, Justdial listings). Useful to compare prices but you are one step removed from the factory.</li>
+</ol>
+
+<h2>What to Check Before Placing an Order</h2>
+<h3>1. Is the dealer authorised by the brand?</h3>
+<p>An authorised dealership means the dealer can pull product directly from the factory with factory pricing and lot traceability. Ask for the current dealership letter. Don't accept "we have worked with them for years" — ask for the letter.</p>
+
+<h3>2. How deep is the local stock?</h3>
+<p>For a ramming mass breakdown or an emergency castable top-up at a Manesar foundry, you need stock that can move same-day from a Delhi NCR warehouse. Ask specifically: how many tonnes of your grade is physically in the warehouse today?</p>
+
+<h3>3. Do they have refractory engineers on staff?</h3>
+<p>Good dealers have engineers who can visit your plant, map your lining zone by zone, recommend the right grade and supervise installation. Pure traders do not have this capability. For induction furnace sintering, ladle lining, EAF hot-spot selection or cement kiln coating stability issues, engineering support usually decides lining life more than brand choice.</p>
+
+<h3>4. Can they handle GeM, SAIL, NTPC, BHEL paperwork?</h3>
+<p>Public sector units have strict documentation standards — MTC, EN 10204 3.1 test certificates, PO matching, challan formats, GeM compliance. A dealer who has run PSU tenders before will get your documents right the first time. A new dealer will bounce 3 or 4 rounds of corrections.</p>
+
+<h3>5. Export capability (if you need it)</h3>
+<p>If you export finished products or buy on behalf of a group with plants abroad, check whether the dealer can also export: IEC code, EPCG familiarity, container loading at ICD Tughlakabad, CIF/FOB quoting discipline. Not every Delhi dealer can do this cleanly.</p>
+
+<h2>Delhi NCR Refractory Dealer Comparison Matrix for 2026</h2>
+<p>The matrix below is the one we would hand our own procurement team if we were buying from outside. It lists the kinds of attributes that actually matter for a refractory purchase in the NCR market. City names under "Fastest delivery" reflect the dealer's stocking warehouse location, since travel time from Shahdara or Wazirpur to Manesar or Greater Noida can be the difference between same-day and next-day dispatch.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Authorised dealer (SAPL type)</th>
+      <th>Supply partner (indent)</th>
+      <th>Local stockist</th>
+      <th>Marketplace listing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Factory-direct pricing</td><td>Yes</td><td>Yes (for indent orders)</td><td>Rarely</td><td>Opaque</td></tr>
+    <tr><td>Same-day stock dispatch</td><td>Usually</td><td>No (2 to 6 weeks)</td><td>Sometimes</td><td>No</td></tr>
+    <tr><td>Lot traceability / MTC</td><td>Yes</td><td>Yes</td><td>Partial</td><td>Rare</td></tr>
+    <tr><td>Engineering support on site</td><td>Yes</td><td>Sometimes</td><td>No</td><td>No</td></tr>
+    <tr><td>PSU and GeM paperwork</td><td>Yes</td><td>Yes</td><td>Limited</td><td>No</td></tr>
+    <tr><td>Export documentation</td><td>Yes (if set up)</td><td>Sometimes</td><td>No</td><td>No</td></tr>
+    <tr><td>Small-order acceptance</td><td>Yes</td><td>Usually not</td><td>Yes</td><td>Yes</td></tr>
+  </tbody>
+</table>
+
+<h2>Who Should Buy From Whom</h2>
+<h3>Induction furnace foundry in Ghaziabad, Loni or Sahibabad</h3>
+<p>Buy ramming mass, coil grout and top cap cement from an authorised CUMI dealer that stocks in the NCR. You want same-day dispatch on Class A grade material with boric acid content and grain size within spec. Small-order acceptance matters because you may need 500 kg of a specific grade on 4 hours notice.</p>
+
+<h3>Auto die-casting shop in Manesar, Dharuhera or Bawal</h3>
+<p>Buy non-wetting castables, SiC crucibles and ceramic fibre insulation from an authorised Calderys or CUMI dealer that has a warehouse in Delhi NCR. JIT auto operations cannot afford a 2-week indent cycle on an aluminium holding furnace relining.</p>
+
+<h3>Integrated steel plant, large cement plant or oil refinery</h3>
+<p>Supply partner route (TRL Krosaki, IFGL, Calderys direct or through their authorised partners) is usually right for campaign-scale orders where engineering collaboration, on-site supervision and post-mortem analysis are bundled in with the supply. Spot items and smaller top-ups can still come from an authorised NCR dealer.</p>
+
+<h3>Chemical, electroplating or acid-resistant lining job</h3>
+<p>You want a Crown Ceramics authorised dealer. Acid-proof brick, tile and chemical-resistant mortar is a specialist segment, and generalists will often get the mortar-to-brick chemistry pairing wrong.</p>
+
+<h3>Ceramic fibre blanket, module or board</h3>
+<p>Divine Cerawool authorised dealers in Delhi NCR can ship 1260, 1400 and 1600 degree grades off the shelf. For very large volume projects (furnace rebuilds above 10 tonnes of fibre), a direct indent from the factory may beat dealer pricing.</p>
+
+<h2>Red Flags in Any Refractory Quote</h2>
+<ul>
+  <li><strong>No MTC offered.</strong> Walk away. You cannot verify chemistry on a rammed lining or a cast shape without test certificates.</li>
+  <li><strong>Price too low versus market.</strong> Usually means reject material, sub-spec grain distribution or short-landed bags.</li>
+  <li><strong>Dealer cannot name the factory.</strong> Means re-sold material with uncertain origin.</li>
+  <li><strong>No site visit offered for a large order.</strong> Means no engineering capability.</li>
+  <li><strong>Only WhatsApp, no GST invoice.</strong> Means no input credit and no traceability if the material fails.</li>
+</ul>
+
+<h2>The SAPL Position, Honestly</h2>
+<p>Shanker Agencies is an authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal and a supply partner for TRL Krosaki, IFGL and Calderys. We stock the fast-movers in our Shahdara warehouse and can ship same-day to most of Delhi NCR. Our engineers visit plants for lining audits and sintering supervision. We also export to 50+ countries with standard CIF documentation, which means our paperwork discipline holds up at PSU and group-procurement level.</p>
+<p>That does not make us the right answer for every buyer. A 200 kg emergency patch order from a small Wazirpur foundry might be faster from a local Wazirpur stockist. A massive cement kiln rebuild might be better handled by Calderys direct with us supplying the insulation package. We have seen both cases end well. The point of this guide is to help you match the dealer type to the job, not to claim any single dealer is right for everything.</p>
+
+<h2>Checklist You Can Print and Use</h2>
+<ol>
+  <li>Is the dealer authorised by the brand? Ask for the dealership letter.</li>
+  <li>Is the grade you need physically in an NCR warehouse today? Ask for tonnage.</li>
+  <li>Does the quote include MTC / EN 10204 3.1 test certificates?</li>
+  <li>Can they visit the plant before or after delivery?</li>
+  <li>Can they handle your PO format (GeM, PSU tender, private buyer)?</li>
+  <li>What is the realistic dispatch time for a repeat order of the same grade?</li>
+  <li>How will they handle a rejection or short-landed bag situation?</li>
+</ol>
+<p>If you can get clean answers to these seven questions, you have found a dealer worth working with for the long haul. The brand on the bag matters less than the dealer on the phone at 11 pm when your lining is at risk.</p>
+`,
+    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    relatedProducts: ["castable", "ramming-mass", "ceramic-fibre"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 25. Castable Refractory Cement Delhi NCR Buyer's Guide (Pillar)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 25,
+    slug: "castable-refractory-cement-delhi-ncr-buyers-guide",
+    title: "Castable Refractory Cement in Delhi NCR: 2026 Buyer's Guide",
+    metaTitle: "Castable Refractory Cement in Delhi NCR | 2026 Buyer's Guide",
+    metaDescription: "Complete buyer's guide to castable refractory cement in Delhi NCR. LCC vs ULCC vs conventional castables, grade selection, curing and dry-out, pricing ranges and authorised dealer tips for 2026.",
+    category: "Buyer's Guide",
+    tags: [
+      "castable refractory cement",
+      "castable refractory delhi",
+      "low cement castable",
+      "ultra low cement castable",
+      "high alumina castable",
+      "abrasion resistant castable",
+    ],
+    readTime: "11 min",
+    publishDate: "2026-04-18",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&q=80",
+    excerpt: "Castable refractory cement is the workhorse lining for boilers, reheating furnaces, kiln hoods, transfer chutes and shaped anchors across Delhi NCR plants. This buyer's guide explains the differences between conventional, low cement and ultra low cement castables, how to pick the right alumina content, what curing and dry-out look like in practice, and how castable pricing works in 2026.",
+    content: `
+<h2>What Is a Castable Refractory Cement?</h2>
+<p>A refractory castable is a dry mix of calcined alumina or fireclay aggregate, calcium aluminate cement binder and chemical additives. Add water on site, pour or shotcrete into place, let it cure, then dry it out on a controlled heating curve and it becomes a monolithic refractory lining. Castable is the most flexible lining format on the market — it can be poured into almost any geometry, anchored with steel studs and used everywhere from 900 degree boiler shells to 1800 degree reformer furnaces.</p>
+
+<h2>The Three Castable Families You Need to Know</h2>
+<h3>Conventional Castables (CC)</h3>
+<p>Cement content around 15 to 20 percent. Water addition 10 to 15 percent. Easy to work with but high porosity and lower hot strength. Useful for insulating layers, backup linings and low-temperature boiler applications.</p>
+
+<h3>Low Cement Castables (LCC)</h3>
+<p>Cement content 4 to 8 percent. Water addition 5 to 8 percent. Higher density, lower porosity, better hot strength and better slag resistance. The everyday castable for Delhi NCR boiler houses, reheating furnaces, cement cooler floors and induction furnace covers. Most of the castable tonnage we sell in NCR is LCC.</p>
+
+<h3>Ultra Low Cement Castables (ULCC)</h3>
+<p>Cement content below 3 percent. Water addition 4 to 6 percent. Lowest porosity, highest hot strength, highest thermal-shock resistance. Used for aggressive applications like FCC riser sections, petrochemical reformer hot face, aluminium launder covers. Slightly more sensitive to installation quality.</p>
+
+<h2>Alumina Content: Which Grade Should You Buy?</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Al<sub>2</sub>O<sub>3</sub> %</th>
+      <th>Typical use zone</th>
+      <th>Max continuous temp</th>
+      <th>Common Delhi NCR applications</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>40 to 45</td><td>Low-temp insulating / backup</td><td>1200 degC</td><td>Boiler backup, duct linings</td></tr>
+    <tr><td>50 to 60</td><td>General hot face</td><td>1350 degC</td><td>Reheating furnace hearth, ladle cover</td></tr>
+    <tr><td>70 to 75</td><td>Demanding hot face</td><td>1550 degC</td><td>CFBC bed coil area, cement cooler</td></tr>
+    <tr><td>80 to 90</td><td>Severe thermal / chemical duty</td><td>1700 degC</td><td>Reformer hot face, induction cover</td></tr>
+    <tr><td>90 plus (tabular)</td><td>Petrochemical / aluminium</td><td>1800 degC</td><td>FCC unit, aluminium launder</td></tr>
+  </tbody>
+</table>
+
+<h2>Special Castables Worth Knowing</h2>
+<ul>
+  <li><strong>Abrasion resistant castable (AR).</strong> SiC-bonded or alumina-SiC blend, for CFBC boiler bed coils, coal chutes and ash hoppers. Non-negotiable in power plant applications around Delhi and Noida.</li>
+  <li><strong>Insulating castable (IC).</strong> Low density (0.8 to 1.4 g/cc), for backup insulation behind hot-face bricks or castable. Reduces shell temperature and saves fuel.</li>
+  <li><strong>Non-wetting castable.</strong> Treated with fluoride or phosphate additives to resist aluminium penetration. Used in aluminium holding furnaces in Manesar, Gurgaon and Faridabad die-casting plants.</li>
+  <li><strong>Self-flowing castable.</strong> Pours into place without vibration. Useful for complex shapes and cramped geometries.</li>
+</ul>
+
+<h2>Installation: Five Things That Make or Break a Castable Lining</h2>
+<ol>
+  <li><strong>Water measurement.</strong> Too much water ruins hot strength. Use a calibrated measuring jug, not a plastic bucket guessed by eye. Follow the bag instruction to the litre.</li>
+  <li><strong>Mixer type.</strong> High-shear paddle mixer or pan mixer. Do not use a standard concrete mixer for LCC or ULCC.</li>
+  <li><strong>Mix time.</strong> 3 to 5 minutes after water addition. Under-mixing gives dry spots, over-mixing destroys workability.</li>
+  <li><strong>Placement window.</strong> 20 to 40 minutes from water addition depending on ambient temperature. Hot summer day in Delhi cuts this in half.</li>
+  <li><strong>Curing and dry-out.</strong> 24 hours wet curing minimum, then a slow dry-out following the supplier curve. Skipping dry-out causes steam spalling and first-heat failure.</li>
+</ol>
+
+<h2>Dry-Out Curve: The Part People Skip</h2>
+<p>Every castable needs a controlled dry-out because free water and chemically bound water have to leave in the right order. A typical LCC dry-out:</p>
+<ul>
+  <li>Ambient to 120 degC at 25 degC per hour, hold 12 hours.</li>
+  <li>120 to 300 degC at 25 degC per hour, hold 12 hours.</li>
+  <li>300 to 550 degC at 35 degC per hour, hold 6 hours.</li>
+  <li>550 to operating temp at 50 degC per hour.</li>
+</ul>
+<p>Thicker sections and ULCC grades need slower curves. Ask your supplier for the exact dry-out schedule matched to the grade and the lining thickness. If you skip the 300 to 550 degC hold on an LCC or ULCC, steam cannot escape fast enough and the hot face spalls within the first few heats.</p>
+
+<h2>Castable Pricing Ranges in Delhi NCR, 2026</h2>
+<p>These are rough landed prices for buyers in Delhi NCR as of April 2026. Actual quotes will vary with order quantity, lead time and documentation requirements. The ranges are useful only as a sanity check against quotes you receive.</p>
+<table>
+  <thead>
+    <tr><th>Grade family</th><th>Typical price range (INR/kg)</th><th>Notes</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>CC 40 to 50% Al<sub>2</sub>O<sub>3</sub></td><td>35 to 55</td><td>Insulating / backup</td></tr>
+    <tr><td>LCC 50 to 60% Al<sub>2</sub>O<sub>3</sub></td><td>50 to 75</td><td>General hot face</td></tr>
+    <tr><td>LCC 70% Al<sub>2</sub>O<sub>3</sub></td><td>75 to 110</td><td>Demanding hot face</td></tr>
+    <tr><td>ULCC 80% plus Al<sub>2</sub>O<sub>3</sub></td><td>110 to 170</td><td>Petrochem / aluminium</td></tr>
+    <tr><td>Abrasion resistant (SiC bonded)</td><td>120 to 220</td><td>CFBC boilers</td></tr>
+    <tr><td>Non-wetting (aluminium)</td><td>140 to 240</td><td>Holding furnaces</td></tr>
+  </tbody>
+</table>
+<p>If a quote is significantly below these ranges for the same grade and same brand, ask to see the MTC and sieve analysis before you commit.</p>
+
+<h2>Where to Buy in Delhi NCR</h2>
+<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Calderys, Mahakoshal, IFGL) based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is one such dealer and maintains stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
+
+<h2>Short Buyer's Checklist</h2>
+<ol>
+  <li>Nail down the alumina percentage and cement class (CC, LCC, ULCC) you actually need. Do not over-spec.</li>
+  <li>Confirm aggregate type: bauxite, tabular alumina, white fused alumina, SiC mix.</li>
+  <li>Ask for MTC with chemistry, bulk density, cold crushing strength and permanent linear change.</li>
+  <li>Ask for the recommended dry-out curve in writing.</li>
+  <li>Confirm shelf life on the bag. Castable ages — 12 months is typical from manufacture date.</li>
+  <li>For large linings, ask the dealer to supervise the first pour and sign off on mixing water and placement technique.</li>
+</ol>
+<p>Castable is one of the most forgiving and one of the most unforgiving refractory products in the same bag. Buy the right grade, follow the dry-out curve and you will get lining life numbers that match the technical datasheet. Cut corners on either side and you will be re-lining in six months.</p>
+`,
+    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    relatedProducts: ["castable", "lcc-castable", "abrasion-resistant-castable"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 26. Refractory Lining Maintenance 12-Step Checklist (Pillar)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 26,
+    slug: "refractory-lining-maintenance-12-step-checklist",
+    title: "Refractory Lining Maintenance: 12-Step Checklist to Extend Campaign Life",
+    metaTitle: "Refractory Lining Maintenance Checklist | 12 Steps to Longer Life",
+    metaDescription: "A 12-step refractory lining maintenance checklist covering inspection, patching, dry-out after shutdown, slag control and shutdown planning. Written by refractory engineers with 45+ years of plant experience.",
+    category: "Maintenance Guide",
+    tags: [
+      "refractory lining maintenance",
+      "lining inspection checklist",
+      "furnace lining life",
+      "refractory patching",
+      "shutdown planning",
+      "campaign life",
+    ],
+    readTime: "9 min",
+    publishDate: "2026-04-15",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=1200&q=80",
+    excerpt: "Most refractory linings fail well before their designed campaign life because of avoidable maintenance misses. This 12-step checklist, drawn from 45 plus years of plant visits across steel, cement, aluminium, glass and power plants, covers the inspection, patching, dry-out, slag control and shutdown actions that buy you the extra heats your technical datasheet promised.",
+    content: `
+<h2>Why Lining Life Hardly Ever Matches the Datasheet</h2>
+<p>If you ask a refractory salesperson what lining life to expect, you get a number from the datasheet. If you ask a plant engineer what life they actually see, the number is often 60 to 80 percent of that. The gap is almost always avoidable maintenance misses, not bad material. We visit roughly 120 to 150 plants a year across India and the GCC, and the same 12 maintenance issues keep showing up. This checklist is our attempt to put them in one place.</p>
+
+<h2>The 12-Step Lining Maintenance Checklist</h2>
+
+<h3>Step 1: Baseline thickness map at day zero</h3>
+<p>Before the first heat, record a lining thickness map of the critical zones. For a ladle, map slag line, metal line, bottom and pouring zone. For a boiler, map the hot face at coil bends and burner throats. This baseline is what you compare every inspection against. Without it, "wear" becomes a judgement call.</p>
+
+<h3>Step 2: Daily visual inspection of the visible hot face</h3>
+<p>Ten minutes per shift. Look for cracks, spalls, slag coating loss, deformed anchors and discolouration. Log anything unusual with a date and photo. Most furnace crew members know what normal looks like, but they often do not report early deviations because "it's always been like that."</p>
+
+<h3>Step 3: Weekly tap test on accessible zones</h3>
+<p>A simple brass or steel rod tapped against the lining sounds crisp on a sound lining and hollow on a de-bonded or cracked zone. Train one or two crew members to do the tap test weekly. It catches sub-surface delamination that visual inspection misses.</p>
+
+<h3>Step 4: Thermal imaging every 15 to 30 days</h3>
+<p>Shell thermography with a handheld IR camera. Look for hot spots above the baseline by more than 40 to 50 degC. A rising shell temperature almost always means shrinking working lining or a cracked backup layer. Early detection lets you patch before a breakout risk develops.</p>
+
+<h3>Step 5: Patch early, not late</h3>
+<p>A 10 kg patch applied at heat 60 of a planned 250-heat campaign can add 40 to 60 heats of life. The same gap ignored until heat 150 will fail the lining before heat 200. Keep patching mass, mortar and fibre blanket on site so the crew can act without waiting for purchase.</p>
+
+<h3>Step 6: Slag control and skim discipline</h3>
+<p>Most basic lining failures in induction furnaces, ladles and EAFs are slag driven. Document the target slag chemistry and volume. Skim at regular intervals. Do not let slag accumulate across multiple heats on an acidic lining, and do not let acidic slag build up on a basic lining. Slag chemistry is cheaper to fix than refractory chemistry.</p>
+
+<h3>Step 7: Temperature discipline</h3>
+<p>Superheating by 30 to 50 degC over the required tap temperature can cut lining life by 20 to 40 percent. Install thermocouples or optical pyrometers with alarms at the tap temperature. Make over-temperature an exception that needs a supervisor sign-off, not a shift habit.</p>
+
+<h3>Step 8: Dry-out after every shutdown longer than 24 hours</h3>
+<p>If the lining has cooled through dew point, moisture absorbs back into the lining. Restarting at full firing rate causes steam spalling of the hot face. Even a 48-hour weekend shutdown needs a short dry-out curve (typically 50 degC per hour to 300 degC with a 2-hour hold) before taking the furnace to operating temperature.</p>
+
+<h3>Step 9: Anchor and tieback inspection at every shutdown</h3>
+<p>Look at stud anchors, V-anchors, hex-mesh and ceramic tile tiebacks. Corroded or burned anchors are a leading cause of castable sagging and brick wall rotation. Replace failed anchors before re-firing, not after.</p>
+
+<h3>Step 10: Brick wall expansion joint check</h3>
+<p>Expansion joints filled with ceramic fibre rope should be compressible and clean. If rope is burned out or jammed with slag, bricks cannot expand correctly and spall. Replace expansion rope during planned shutdowns.</p>
+
+<h3>Step 11: Post-mortem every failed lining</h3>
+<p>When a lining is stripped out, spend an hour on it. Photograph wear profile, cut a few samples, send them to a lab for chemical analysis. Every failed lining is a free diagnostic on your practice. The next lining is only as long-lived as the lessons you pulled from the last one.</p>
+
+<h3>Step 12: Records, not memory</h3>
+<p>Keep a simple lining log per furnace: install date, first heat date, grade used, installer name, sinter or dry-out curve followed, patch events, inspection results, shutdown events, post-mortem notes. Paper or Excel is fine. Memory alone will not let you spot the patterns that predict the next failure.</p>
+
+<h2>Shutdown Planning: The One-Page Plan Every Plant Should Have</h2>
+<ul>
+  <li>Shutdown date and duration.</li>
+  <li>Lining zones to inspect, with checklists per zone.</li>
+  <li>Patch material required and stock on hand, with gap list.</li>
+  <li>Anchor and tieback items to replace, sized and stocked.</li>
+  <li>Dry-out curve to follow on restart, written out hour by hour.</li>
+  <li>Responsible person and backup for each task.</li>
+  <li>Acceptance criteria for re-firing (thickness, anchor condition, dry-out completed).</li>
+</ul>
+<p>Most unplanned extensions and unplanned shutdowns happen because one or two items on this list were assumed rather than confirmed.</p>
+
+<h2>Where SAPL Fits In</h2>
+<p>As an authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal and a supply partner for TRL Krosaki, IFGL and Calderys, Shanker Agencies keeps patching mass, mortar, ceramic fibre and anchor consumables in stock in our Shahdara, Delhi warehouse. Our refractory engineers can join planned shutdowns across Delhi NCR for lining audits, anchor inspection and dry-out supervision at no extra cost for customers on regular supply accounts. If lining life in your plant is running below the datasheet number, a site visit and a look at the last failed lining usually reveals the gap within an hour.</p>
+
+<h2>Summary</h2>
+<p>Lining life is almost never limited by the brand of brick or castable. It is limited by how the lining is installed, dried out, operated and inspected. This 12-step checklist costs nothing to implement. The payback is measured in lakhs per avoided breakout, thousands of tonnes of extra production per extended campaign and far fewer emergency calls at 2 am.</p>
+`,
+    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    relatedProducts: ["castable", "ramming-mass", "ceramic-fibre", "high-alumina-bricks"],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
