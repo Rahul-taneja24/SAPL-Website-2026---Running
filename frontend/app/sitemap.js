@@ -1,69 +1,79 @@
 // app/sitemap.js — Comprehensive sitemap for Shanker Agencies
+// Google ignores <priority> and <changefreq>, so we emit only <loc> and <lastmod>.
+// We also compute a realistic lastmod per URL where possible (blog post publishDate,
+// and a stable per-deploy timestamp for structural pages) rather than a single
+// build-time timestamp across every URL, which is a known credibility red flag.
 import { LOCATIONS_DATA } from '@/data/locationsData';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 import { PRODUCT_SEO } from '@/data/productsSeoData';
 
 const BASE = 'https://www.shankeragencies.com';
-const TODAY = new Date().toISOString();
+// Stable per-deploy timestamp for structural pages (refreshes on every build).
+const DEPLOY_TS = new Date().toISOString();
+
+// Structural pages — use the deploy timestamp. These genuinely change each deploy
+// as data or copy is refreshed.
+const STRUCTURAL_LASTMOD = DEPLOY_TS;
+
+// Evergreen legal pages — very infrequent updates. Pin a fixed date so crawlers
+// stop re-crawling every build.
+const LEGAL_LASTMOD = '2026-01-01T00:00:00.000Z';
 
 export default async function sitemap() {
-
   const mainPages = [
-    { url: `${BASE}/`,                          priority: 1.0, changeFrequency: 'weekly' },
-    { url: `${BASE}/about`,                     priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE}/products`,                  priority: 0.9, changeFrequency: 'weekly' },
-    { url: `${BASE}/brands`,                    priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE}/industries`,                priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE}/solutions`,                 priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE}/knowledge`,                 priority: 0.7, changeFrequency: 'weekly' },
-    { url: `${BASE}/blog`,                      priority: 0.9, changeFrequency: 'daily' },
-    { url: `${BASE}/contact`,                   priority: 0.9, changeFrequency: 'monthly' },
-    { url: `${BASE}/company-profile`,           priority: 0.6, changeFrequency: 'monthly' },
-    { url: `${BASE}/refractory-supplier-in`,    priority: 0.8, changeFrequency: 'monthly' },
-    { url: `${BASE}/downloads`,                 priority: 0.7, changeFrequency: 'monthly' },
-    { url: `${BASE}/privacy`,                   priority: 0.3, changeFrequency: 'yearly' },
-    { url: `${BASE}/terms`,                     priority: 0.3, changeFrequency: 'yearly' },
+    { url: `${BASE}/`,                          lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/about`,                     lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/products`,                  lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/brands`,                    lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/industries`,                lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/solutions`,                 lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/knowledge`,                 lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/blog`,                      lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/contact`,                   lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/company-profile`,           lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/refractory-supplier-in`,    lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/downloads`,                 lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/privacy`,                   lastModified: LEGAL_LASTMOD },
+    { url: `${BASE}/terms`,                     lastModified: LEGAL_LASTMOD },
   ];
 
   const categoryPages = [
     'shaped-refractories', 'unshaped-refractories', 'flow-control',
     'insulation', 'acid-proofing',
-  ].map((slug) => ({ url: `${BASE}/products/${slug}`, priority: 0.8, changeFrequency: 'weekly' }));
+  ].map((slug) => ({ url: `${BASE}/products/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
 
   const productPages = PRODUCT_SEO.map(({ categorySlug, productId }) => ({
     url: `${BASE}/products/${categorySlug}/${productId}`,
-    priority: 0.7,
-    changeFrequency: 'monthly',
+    lastModified: STRUCTURAL_LASTMOD,
   }));
 
   const industryPages = [
     'steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic',
-  ].map((slug) => ({ url: `${BASE}/industries/${slug}`, priority: 0.8, changeFrequency: 'monthly' }));
+  ].map((slug) => ({ url: `${BASE}/industries/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
 
   const solutionPages = [
     'steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic',
-  ].map((slug) => ({ url: `${BASE}/solutions/${slug}`, priority: 0.7, changeFrequency: 'monthly' }));
+  ].map((slug) => ({ url: `${BASE}/solutions/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
 
   const brandPages = [
     'cumi', 'calderys', 'trl-krosaki', 'ifgl', 'mahakoshal', 'divine-cerawool', 'crown-ceramics',
-  ].map((slug) => ({ url: `${BASE}/brands/${slug}`, priority: 0.7, changeFrequency: 'monthly' }));
+  ].map((slug) => ({ url: `${BASE}/brands/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
 
-  // ── Geo location pages — all from static data ──
+  // Geo location pages — all from static data
   const locationPages = LOCATIONS_DATA.map((loc) => ({
     url: `${BASE}/refractory-supplier-in/${loc.slug}`,
-    priority: loc.isInternational ? 0.7 : 0.8,
-    changeFrequency: 'monthly',
+    lastModified: STRUCTURAL_LASTMOD,
   }));
 
-  // ── Blog pages — static data first, then API fallback ──
+  // Blog pages — use each post's own publishDate so lastmod is unique per URL
   const staticBlogPages = BLOG_POSTS_DATA.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
-    priority: 0.8,
-    changeFrequency: 'monthly',
-    lastModified: post.publishDate || TODAY,
+    lastModified: post.publishDate
+      ? new Date(post.publishDate).toISOString()
+      : STRUCTURAL_LASTMOD,
   }));
 
-  // Try to also pull any additional posts from the API (CMS-authored)
+  // CMS-authored posts (optional — pulled from the backend if reachable)
   let apiBlogPages = [];
   try {
     const res = await fetch(
@@ -77,9 +87,9 @@ export default async function sitemap() {
         .filter((p) => !staticSlugs.has(p.slug))
         .map((p) => ({
           url: `${BASE}/blog/${p.slug}`,
-          priority: 0.7,
-          changeFrequency: 'monthly',
-          lastModified: p.updatedAt || TODAY,
+          lastModified: p.updatedAt
+            ? new Date(p.updatedAt).toISOString()
+            : STRUCTURAL_LASTMOD,
         }));
     }
   } catch (_) {}
@@ -98,5 +108,5 @@ export default async function sitemap() {
     ...locationPages,
     ...staticBlogPages,
     ...apiBlogPages,
-  ].map((p) => ({ ...p, lastModified: p.lastModified || TODAY }));
+  ];
 }

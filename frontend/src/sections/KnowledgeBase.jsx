@@ -113,8 +113,30 @@ const KnowledgeBase = () => {
             <br /><span className="text-shimmer">REFERENCE</span>
           </h1>
           <p className="text-gray-300 max-w-2xl text-lg leading-relaxed">
-            Grade comparison tables, castable selection criteria, insulation specs, and equipment-specific application guides — everything a procurement engineer or plant manager needs in one place.
+            Grade comparison tables, castable selection criteria, insulation specs and equipment-specific application guides. Everything a procurement engineer or plant manager needs in one place.
           </p>
+
+          {/* Author byline — E-E-A-T signal */}
+          <div className="mt-6 flex items-center gap-3 text-white/80 text-sm">
+            <div className="w-10 h-10 rounded-full bg-[#F97316] flex items-center justify-center font-oswald font-bold text-white">
+              RT
+            </div>
+            <div>
+              <p className="font-semibold text-white">
+                Curated by{' '}
+                <a
+                  href="/about#leadership"
+                  className="underline decoration-[#F97316]/60 underline-offset-2 hover:decoration-[#F97316]"
+                  rel="author"
+                >
+                  Rahul Taneja
+                </a>
+              </p>
+              <p className="text-xs text-white/60">
+                Director & Refractory Engineering Expert, Shanker Agencies Pvt. Ltd.
+              </p>
+            </div>
+          </div>
 
           {/* Stats */}
           <div className="flex flex-wrap gap-6 mt-10">

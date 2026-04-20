@@ -209,9 +209,12 @@ export default function RootLayout({ children }) {
               },
               geo: {
                 '@type': 'GeoCoordinates',
-                latitude: '28.6693',
-                longitude: '77.2986',
+                latitude: '28.66720',
+                longitude: '77.29810',
               },
+              hasMap: 'https://maps.google.com/?q=28.66720,77.29810',
+              additionalType: 'https://www.wikidata.org/wiki/Q11642428',
+              telephone: ['+91-9899957888', '+91-9810205154', '+91-9811909394'],
               openingHoursSpecification: [
                 {
                   '@type': 'OpeningHoursSpecification',

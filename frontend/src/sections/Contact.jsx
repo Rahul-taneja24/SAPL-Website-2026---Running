@@ -568,7 +568,8 @@ const Contact = () => {
                 </h4>
                 <dl className="space-y-2 text-sm">
                   {[
-                    ["Monday – Sunday", "9:00 AM – 6:00 PM"],
+                    ["Monday – Saturday", "9:00 AM – 6:00 PM"],
+                    ["Sunday", "Closed"],
                   ].map(([day, hours]) => (
                     <div key={day} className="flex justify-between">
                       <dt className="text-gray-600 font-medium">{day}</dt>
