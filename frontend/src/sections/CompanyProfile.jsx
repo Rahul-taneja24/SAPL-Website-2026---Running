@@ -425,7 +425,7 @@ function CompanyProfile() {
 
           <div className="mb-6 bg-gradient-to-br from-[#F97316]/5 to-[#3B82F6]/5 border border-[#F97316]/20 rounded-xl p-5">
             <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
-              A family-run refractory business from Delhi, working with steel, cement, aluminium, glass, power and petrochemical plants across India since 1980. <strong className="text-[#1E3A5F]">Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys.</strong>
+              India's premier refractory engineering partner since 1980, serving steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries. <strong className="text-[#1E3A5F]">Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; strategic supply partner for TRL Krosaki, IFGL and Calderys.</strong>
             </p>
           </div>
 

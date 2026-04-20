@@ -78,7 +78,7 @@ const Home = () => {
     "@type": "WebPage",
     "name": "Shanker Agencies | Refractory Materials Distributor Since 1980",
     "url": "https://www.shankeragencies.com",
-    "description": "India's trusted refractory materials distributor since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL. Supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical industries.",
+    "description": "India's premier refractory engineering partner since 1980. Authorized dealer of CUMI, Calderys, TRL Krosaki & IFGL. Supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical industries across India and 50+ countries.",
     "speakable": {
       "@type": "SpeakableSpecification",
       "cssSelector": ["[data-speakable=\"true\"]", "h1", "h2"],
@@ -232,8 +232,8 @@ const Home = () => {
                   {/* Subheadline */}
                   <p className="hero-reveal hero-d2 text-gray-200 text-lg mb-6 leading-relaxed max-w-lg">
                     {region === "india"
-                      ? "India's trusted refractory materials distributor since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool — supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical plants."
-                      : "Your trusted refractory materials distributor from India. We supply & engineer premium refractories — delivering to GCC, ASEAN, Africa, UK & Europe with full technical documentation and installation guidance."}
+                      ? "India's premier refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool — supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical plants."
+                      : "India's premier refractory engineering partner. We supply & engineer world-class refractories — delivering to GCC, ASEAN, Africa, UK & Europe with full technical documentation and installation guidance."}
                   </p>
 
                   {/* Trust pills — Sleek, horizontal, smaller font */}
@@ -353,55 +353,6 @@ const Home = () => {
       </div>
 
       {/* ══════════════════════════════════════════════
-          CITABLE ABOUT BLOCK — dense, self-contained fact paragraph
-          for AI search (Google AI Overviews, Perplexity, ChatGPT web).
-          Speakable-tagged so voice assistants can read it aloud.
-      ══════════════════════════════════════════════ */}
-      <section
-        className="py-16 px-4 bg-white border-b border-gray-100"
-        aria-labelledby="about-sapl-heading"
-        data-testid="about-sapl-citable"
-      >
-        <div className="max-w-4xl mx-auto">
-          <h2
-            id="about-sapl-heading"
-            className="font-oswald text-3xl md:text-4xl font-bold text-[#1E3A5F] mb-5 border-l-4 border-[#F97316] pl-4"
-            data-speakable="true"
-          >
-            About Shanker Agencies
-          </h2>
-          <p
-            className="text-gray-800 text-lg leading-relaxed"
-            data-speakable="true"
-          >
-            Shanker Agencies Pvt. Ltd. (SAPL) is a family-run refractory materials
-            business headquartered at 553 Main G.T. Road, Shahdara, Delhi 110032,
-            India, in continuous operation since 1980. Founded by Mohan Taneja and
-            now run with Rahul Taneja as Director and Refractory Engineering Expert,
-            SAPL is an authorised dealer of CUMI, Crown Ceramics, Divine Cerawool
-            and Mahakoshal, and a supply partner for TRL Krosaki, IFGL and Calderys.
-            The company supplies high alumina bricks, fireclay bricks, low and ultra
-            low cement castables, ramming mass, ceramic fibre insulation, slide gate
-            plates and acid-proof linings to steel, cement, aluminium, glass, power
-            and petrochemical plants across India and 50+ export markets in the GCC,
-            ASEAN, Africa and Europe. SAPL is certified to ISO 9001:2015,
-            ISO 14001:2015 and ISO 45001:2018.
-          </p>
-          <p className="text-gray-500 text-sm mt-4">
-            Last reviewed: April 2026 · Reviewed by{' '}
-            <a
-              href="/about#leadership"
-              rel="author"
-              className="underline decoration-[#F97316]/60 underline-offset-2 hover:decoration-[#F97316]"
-            >
-              Rahul Taneja, Director & Refractory Engineering Expert
-            </a>
-            .
-          </p>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
           PRODUCT FINDER
       ══════════════════════════════════════════════ */}
       <section className="py-16 px-4 bg-gray-50 border-b border-gray-100 reveal reveal-up" data-testid="product-finder">
@@ -461,7 +412,7 @@ const Home = () => {
               Refractory Engineering &amp; Manufacturing Since 1980
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed mb-10">
-              We supply the full range of refractories from a single desk: high alumina and fireclay bricks, low-cement and conventional castables, ramming mass, ceramic fibre insulation, slide gate plates and flow control. In 45+ years we have worked on blast furnaces, steel ladles, rotary kilns, induction furnaces and chemical plants across India. Authorised dealer for CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys. Our engineers focus on thermal shock, slag attack and energy loss so your lining lasts longer and your plant runs more days between relines.
+              As India's premier refractory engineering partner, we engineer, manufacture, and supply the full spectrum of refractory solutions. From high alumina bricks and castables to ceramic fiber insulation and flow control systems — our 45+ years of expertise covers blast furnaces, steel ladles, rotary kilns, induction furnaces, and chemical plants. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool &amp; Mahakoshal, and strategic supply partner of TRL Krosaki, IFGL &amp; Calderys. Our engineers focus on thermal shock resistance, slag corrosion protection, and energy efficiency to extend your campaign life by 25-40% and reduce plant downtime.
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="h-px w-12 bg-gray-200" />

@@ -14,7 +14,7 @@ export const metadata = {
     template: '%s | Shanker Agencies',
   },
   description:
-    "Family-run refractory business based in Delhi since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys. We ship high alumina bricks, castables, ramming mass, ceramic fibre and flow control products to steel, cement, aluminium, glass, power and petrochemical plants across India and to 50+ countries.",
+    "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; strategic supply partner for TRL Krosaki, IFGL and Calderys. Supplying high alumina bricks, castables, ramming mass, ceramic fibre and flow control products to steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ countries.",
   keywords: [
     // Core brand + India identity
     'refractory supplier India', 'refractory dealer India', 'refractory distributor India',
@@ -77,13 +77,13 @@ export const metadata = {
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
     title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
-    description: "Family-run refractory dealer in Delhi since 1980. Authorised for CUMI, Crown Ceramics, Divine Cerawool, Mahakoshal. Supply partner for TRL Krosaki, IFGL and Calderys. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
+    description: "India's premier refractory engineering partner since 1980. Authorised for CUMI, Crown Ceramics, Divine Cerawool, Mahakoshal. Strategic supply partner for TRL Krosaki, IFGL and Calderys. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
-    description: "Family-run refractory dealer in Delhi since 1980. CUMI, Crown, Mahakoshal, TRL Krosaki, IFGL and Calderys.",
+    description: "India's premier refractory engineering partner since 1980. CUMI, Crown, Mahakoshal, TRL Krosaki, IFGL and Calderys.",
     images: ['/opengraph-image'],
   },
   robots: {
@@ -196,8 +196,8 @@ export default function RootLayout({ children }) {
                 { '@type': 'Brand', name: 'Divine Cerawool' },
                 { '@type': 'Brand', name: 'Crown Ceramics' },
               ],
-              slogan: 'Refractory supply and plant-side engineering help since 1980',
-              description: "Family-run refractory business based in Delhi since 1980, founded by Mohan Taneja. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories, and supply partner for TRL Krosaki, IFGL and Calderys. We stock and deliver high alumina bricks, castables, ramming mass, ceramic fibre, acid-proof bricks and flow control products to steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ export markets.",
+              slogan: "India's premier refractory engineering partner since 1980",
+              description: "India's premier refractory engineering partner since 1980, founded by Mohan Taneja. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories, and strategic supply partner for TRL Krosaki, IFGL and Calderys. We supply high alumina bricks, castables, ramming mass, ceramic fibre, acid-proof bricks and flow control products to steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ export markets.",
               priceRange: '₹₹',
               address: {
                 '@type': 'PostalAddress',
@@ -209,10 +209,10 @@ export default function RootLayout({ children }) {
               },
               geo: {
                 '@type': 'GeoCoordinates',
-                latitude: '28.66720',
-                longitude: '77.29810',
+                latitude: '28.67608',
+                longitude: '77.29595',
               },
-              hasMap: 'https://maps.google.com/?q=28.66720,77.29810',
+              hasMap: 'https://share.google/Cz2EJCPRFsQtAvvOE',
               additionalType: 'https://www.wikidata.org/wiki/Q11642428',
               telephone: ['+91-9899957888', '+91-9810205154', '+91-9811909394'],
               openingHoursSpecification: [
@@ -251,16 +251,25 @@ export default function RootLayout({ children }) {
               ],
               numberOfEmployees: { '@type': 'QuantitativeValue', minValue: 11, maxValue: 50 },
               sameAs: [
+                // Google Business Profile (verified listing)
+                'https://share.google/Cz2EJCPRFsQtAvvOE',
+                // Bing Places (ypid from bingplaces.com URL)
+                'https://www.bing.com/maps?ss=ypid.YN4070x7110777838778892043',
+                // Apple Business Connect listing
+                'https://maps.apple/p/0~tnc_7sCut830',
+                // Social profiles
                 'https://www.linkedin.com/company/shankeragencies',
                 'https://www.facebook.com/shankeragencies',
                 'https://twitter.com/shankeragencies',
                 'https://www.instagram.com/shankeragencies',
                 'https://www.youtube.com/@shankeragencies',
+                // Business directories
                 'https://www.crunchbase.com/organization/shanker-agencies-pvt-ltd',
                 'https://www.indiamart.com/shankeragencies/',
                 'https://www.tradeindia.com/shanker-agencies-pvt-ltd-2386358/',
                 'https://www.exportersindia.com/shanker-agencies-private-limited/',
-                'https://www.justdial.com/Delhi/Shanker-Agencies-Pvt-Ltd-Shahdara/011PK010076_BZDET',
+                'https://www.justdial.com/Delhi/Shanker-Agencies-Pvt-Ltd-Near-East-Delhi-Medical-Hospital-Shahdara/011PK010076_BZDET',
+                'https://www.globallinker.com/seller/shanker-agencies-private-limited',
               ],
               knowsAbout: [
                 'Refractory Materials', 'High Alumina Bricks', 'Low Cement Castables',
@@ -293,7 +302,7 @@ export default function RootLayout({ children }) {
               name: 'Shanker Agencies',
               alternateName: ['SAPL', 'Shanker Agencies Pvt. Ltd.'],
               url: 'https://www.shankeragencies.com',
-              description: "Family-run refractory dealer in Delhi since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys. Serving steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ countries.",
+              description: "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; strategic supply partner for TRL Krosaki, IFGL and Calderys. Serving steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ countries.",
               inLanguage: 'en-IN',
               publisher: {
                 '@type': 'Organization',

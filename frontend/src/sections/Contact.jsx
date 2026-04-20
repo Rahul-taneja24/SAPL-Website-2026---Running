@@ -169,14 +169,16 @@ const Contact = () => {
       },
       {
         "@type": "LocalBusiness",
+        "@id": "https://www.shankeragencies.com/#organization",
         name: "Shanker Agencies Private Limited",
         alternateName: "SAPL",
         description: "India's premier refractory engineering partner since 1980. Strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL refractories.",
         telephone: "+91-9899957888",
         email: "info@shankeragencies.com",
-        url: "https://shankeragencies.com",
+        url: "https://www.shankeragencies.com",
         foundingDate: "1980",
-        geo: { "@type": "GeoCoordinates", latitude: 28.6672, longitude: 77.2981 },
+        geo: { "@type": "GeoCoordinates", latitude: 28.67608, longitude: 77.29595 },
+        hasMap: "https://share.google/Cz2EJCPRFsQtAvvOE",
         address: {
           "@type": "PostalAddress",
           streetAddress: "553, Main G.T Road, Shahdara",
@@ -185,10 +187,14 @@ const Contact = () => {
           addressCountry: "IN",
         },
         openingHoursSpecification: [
-          { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "18:00" },
-          { "@type": "OpeningHoursSpecification", dayOfWeek: "Saturday", opens: "09:00", closes: "14:00" },
+          { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "09:00", closes: "18:00" },
         ],
-        sameAs: ["https://linkedin.com/company/shankeragencies"],
+        sameAs: [
+          "https://share.google/Cz2EJCPRFsQtAvvOE",
+          "https://www.linkedin.com/company/shankeragencies",
+          "https://www.indiamart.com/shankeragencies/",
+          "https://www.tradeindia.com/shanker-agencies-pvt-ltd-2386358/",
+        ],
       },
       {
         "@type": "FAQPage",
@@ -515,19 +521,13 @@ const Contact = () => {
                 </div>
                 {/*
                   ── GOOGLE MAPS — Shanker Agencies, 553 Main G.T Road, Shahdara, Delhi 110032
-                  Coordinates: 28.6672°N, 77.2981°E (GT Road / Shahdara junction)
-                  
-                  TO UPGRADE TO YOUR VERIFIED GMB PIN (recommended after GBP setup):
-                  1. Log in to Google Business Profile → get your CID number
-                  2. Go to maps.google.com → search your business by name
-                  3. Click Share → Embed a map → copy the iframe src
-                  4. Replace ONLY the src attribute value below
-                  
-                  Current embed: precise GT Road, Shahdara coordinates
+                  Pin aligned to the verified Google Business Profile
+                  (share link: https://share.google/Cz2EJCPRFsQtAvvOE).
+                  Coordinates: 28.67608°N, 77.29595°E
                 */}
                 <div className="rounded-xl overflow-hidden border border-gray-100" style={{ height: 220 }}>
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1750.0134015024765!2d77.29177117215967!3d28.672803248839016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb26a2b7a489%3A0x8683100570b24016!2sShanker%20Agencies%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4f13.1"
+                    src="https://maps.google.com/maps?q=Shanker+Agencies+Pvt+Ltd+553+Main+GT+Road+Shahdara+Delhi+110032&t=m&z=17&ie=UTF8&iwloc=B&output=embed"
                     width="100%"
                     height="220"
                     style={{ border: 0 }}
@@ -540,7 +540,7 @@ const Contact = () => {
                 </div>
                 <div className="grid grid-cols-2 gap-2 mt-3">
                   <a
-                    href="https://maps.google.com/?q=Shanker+Agencies+553+Main+GT+Road+Shahdara+Delhi+110032"
+                    href="https://share.google/Cz2EJCPRFsQtAvvOE"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-center gap-2 py-2.5 border border-[#3B82F6] text-[#3B82F6] rounded-xl text-xs font-semibold hover:bg-blue-50 transition-colors"
@@ -549,7 +549,7 @@ const Contact = () => {
                     View on Maps
                   </a>
                   <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=28.6672,77.2981&destination_place_id=Shanker+Agencies+553+GT+Road+Shahdara+Delhi"
+                    href="https://www.google.com/maps/dir/?api=1&destination=28.67608,77.29595&destination_place_id=Shanker+Agencies+Pvt+Ltd+553+GT+Road+Shahdara+Delhi"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-center gap-2 py-2.5 bg-[#3B82F6] text-white rounded-xl text-xs font-semibold hover:bg-[#2563EB] transition-colors"

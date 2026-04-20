@@ -49,7 +49,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              A family-run refractory business from Delhi, working with steel, cement, aluminium, glass, power and petrochemical plants across India since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; supply partner for TRL Krosaki, IFGL and Calderys.
+              India's premier refractory engineering partner since 1980. Strategic supply partner of CUMI, Calderys, TRL Krosaki & IFGL — delivering world-class refractory solutions to steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries worldwide.
             </p>
 
             {/* Social icons */}
