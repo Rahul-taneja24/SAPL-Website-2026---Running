@@ -227,6 +227,37 @@ export default async function LocationPage({ params }) {
     })),
   };
 
+  // JSON-LD: WebPage (Article stacking for AI citation)
+  const webPageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `https://www.shankeragencies.com/refractory-supplier-in/${slug}`,
+    name: location.metaTitle,
+    description: location.metaDescription,
+    url: `https://www.shankeragencies.com/refractory-supplier-in/${slug}`,
+    dateModified: new Date().toISOString().split('T')[0],
+    inLanguage: 'en-IN',
+    isPartOf: { '@type': 'WebSite', '@id': 'https://www.shankeragencies.com/#website' },
+    about: { '@type': 'Organization', '@id': 'https://www.shankeragencies.com/#organization' },
+    publisher: { '@type': 'Organization', '@id': 'https://www.shankeragencies.com/#organization' },
+  };
+
+  // JSON-LD: ItemList (product offerings — completes triple schema stacking)
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: `Refractory Products Available in ${city}`,
+    description: `Complete range of refractory products supplied by Shanker Agencies in ${city}: high alumina bricks, castables, ramming mass, ceramic fiber, and more.`,
+    url: `https://www.shankeragencies.com/refractory-supplier-in/${slug}`,
+    numberOfItems: productCards.length,
+    itemListElement: productCards.slice(0, 8).map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: p.name,
+      description: p.desc,
+    })),
+  };
+
   // JSON-LD: BreadcrumbList
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -243,9 +274,11 @@ export default async function LocationPage({ params }) {
 
   return (
     <>
-      {/* Structured data */}
+      {/* Structured data — triple stacking: LocalBusiness + FAQPage + ItemList + WebPage + BreadcrumbList */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       {/* ------------------------------------------------------------------ */}

@@ -12,10 +12,9 @@ export const BLOG_POSTS_DATA = [
     id: 1,
     slug: "how-to-select-ramming-mass-for-induction-furnace",
     title: "How to Select Ramming Mass for Induction Furnace: Complete Guide",
-    metaTitle:
-      "How to Select Ramming Mass for Induction Furnace | Expert Guide 2026",
-    metaDescription:
-      "Learn how to choose the right ramming mass for your induction furnace. Compare silica, alumina & magnesia types. Sintering profiles, lining life tips & selection criteria from 45+ years of refractory expertise.",
+    metaTitle: "Ramming Mass for Induction Furnace: Selection Guide",
+    metaDescription: "Compare silica, alumina & magnesia ramming mass for induction furnaces. Sintering profiles, lining life optimization, and selection criteria.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: [
       "ramming mass",
@@ -29,6 +28,19 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-15",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    keyTakeaways: [
+      "Silica ramming mass suits grey iron and mild steel; alumina suits stainless and tool steel; magnesia suits manganese steel.",
+      "Evaluate cost per heat — not cost per kg — to find the truly economical choice for your furnace.",
+      "Boric acid content (1–2.5%) in silica mass controls sintering speed and working face strength.",
+      "Sintering schedule is as critical as material choice — rushing sintering destroys lining life.",
+      "Grain size distribution (coarse/medium/fine) determines packing density and erosion resistance after sintering.",
+    ],
+    faqs: [
+      { q: "What is the difference between silica, alumina, and magnesia ramming mass?", a: "Silica ramming mass (SiO₂ >96%) suits acidic melts like grey iron and mild steel, operating up to 1,700°C. Alumina mass (Al₂O₃ 80–95%) handles neutral slags for stainless and tool steel up to 1,750°C. Magnesia mass (MgO >85%) resists basic slags for manganese steel up to 1,800°C but has shorter campaign life." },
+      { q: "How do I select ramming mass for my induction furnace?", a: "Match the mass chemistry to your melt chemistry: use silica for iron and mild steel, alumina for stainless and special alloys, and magnesia for manganese or basic-slag alloys. Also consider operating temperature, furnace size, and expected campaign life. When in doubt, consult your refractory supplier with your heat chemistry data." },
+      { q: "Why does my induction furnace lining fail early?", a: "Early lining failure is usually caused by an incorrect sintering schedule, wrong mass grade for the melt chemistry, excessive boric acid content causing over-sintering, thermal shock from rapid heat-cool cycles, or insufficient lining thickness. Check sintering temperature curves and review mass grade against your operating metal chemistry." },
+      { q: "What is the typical lining life for induction furnace ramming mass?", a: "Silica mass typically gives 150–350 heats for grey iron and mild steel. Alumina mass gives 80–200 heats for stainless steel. Magnesia mass gives 40–100 heats for manganese steel. Actual life depends on furnace size, melt temperature, charge practice, and sintering quality." },
+    ],
     excerpt:
       "Selecting the right ramming mass is the single most impactful decision you make for induction furnace lining life. This guide compares silica, alumina, and magnesia ramming mass across key parameters and explains how sintering profile, grain distribution, and boric acid content affect campaign life.",
     content: `
@@ -167,10 +179,9 @@ export const BLOG_POSTS_DATA = [
     slug: "high-alumina-bricks-specification-guide-al45-to-al90",
     title:
       "High Alumina Bricks: Complete Specification Guide (AL45 to AL90)",
-    metaTitle:
-      "High Alumina Bricks Specification Guide AL45 to AL90 | SAPL 2026",
-    metaDescription:
-      "Comprehensive guide to high alumina brick grades from AL45 to AL90. Compare properties, applications, and specifications. Learn how to specify correctly for your application.",
+    metaTitle: "High Alumina Bricks: AL45–AL90 Specification & Grade Guide",
+    metaDescription: "Complete specification guide for high alumina bricks from AL45 to AL90. Compare properties, applications, and grades for correct material selection.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: [
       "high alumina bricks",
@@ -304,10 +315,9 @@ export const BLOG_POSTS_DATA = [
     slug: "refractory-castable-installation-guide-lcc-ulcc-conventional",
     title:
       "Refractory Castable Installation Guide: LCC vs ULCC vs Conventional",
-    metaTitle:
-      "Refractory Castable Installation Guide LCC ULCC Conventional | SAPL",
-    metaDescription:
-      "Step-by-step guide to installing refractory castables. Compare LCC, ULCC & conventional types. Curing schedules, water addition, mixing, and common installation mistakes to avoid.",
+    metaTitle: "Refractory Castable Installation Guide: LCC, ULCC & Types",
+    metaDescription: "Install refractory castables correctly: LCC, ULCC & conventional types. Water addition, curing schedules, and common installation mistakes to avoid.",
+    lastModified: "2026-04-20",
     category: "How-To",
     tags: [
       "refractory castable",
@@ -456,10 +466,9 @@ export const BLOG_POSTS_DATA = [
     id: 4,
     slug: "ceramic-fiber-blanket-vs-insulating-fire-brick",
     title: "Ceramic Fiber Blanket vs Insulating Fire Brick: Which to Choose?",
-    metaTitle:
-      "Ceramic Fiber Blanket vs Insulating Fire Brick Comparison | SAPL",
-    metaDescription:
-      "Detailed comparison of ceramic fiber blanket and insulating fire brick (IFB). Compare thermal performance, cost, installation, and applications. Decision matrix included.",
+    metaTitle: "Ceramic Fiber Blanket vs Insulating Fire Brick: Full Guide",
+    metaDescription: "Compare ceramic fiber blanket and insulating fire brick (IFB) on thermal performance, cost, and installation. Decision matrix included.",
+    lastModified: "2026-04-20",
     category: "Comparison",
     tags: [
       "ceramic fiber blanket",
@@ -577,10 +586,9 @@ export const BLOG_POSTS_DATA = [
     slug: "steel-ladle-refractory-lining-material-selection-campaign-life",
     title:
       "Steel Ladle Refractory Lining: Material Selection & Campaign Life Optimization",
-    metaTitle:
-      "Steel Ladle Refractory Lining Guide | Material Selection | SAPL",
-    metaDescription:
-      "Complete guide to steel ladle refractory lining design. Working lining, safety lining, bottom design, and flow control. Learn how to maximize campaign life and reduce total cost.",
+    metaTitle: "Steel Ladle Refractory Lining: Material Selection Guide",
+    metaDescription: "Design steel ladle refractory linings for maximum campaign life. Working lining, safety lining, bottom design, and flow control material selection guide.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: [
       "steel ladle",
@@ -704,10 +712,9 @@ export const BLOG_POSTS_DATA = [
     id: 6,
     slug: "cement-kiln-refractory-zones-material-selection-guide",
     title: "Cement Kiln Refractory Zones: Complete Material Selection Guide",
-    metaTitle:
-      "Cement Kiln Refractory Zones Material Selection Guide | SAPL 2026",
-    metaDescription:
-      "Zone-by-zone guide to cement rotary kiln refractory selection. Burning zone, transition zone, safety zone, and preheater. Material types, properties, and optimization tips.",
+    metaTitle: "Cement Kiln Refractory Zones: Complete Material Guide",
+    metaDescription: "Zone-by-zone refractory selection for cement rotary kilns. Burning zone, transition zone, preheater, and cooler materials with optimization tips.",
+    lastModified: "2026-04-20",
     category: "Industry Guide",
     tags: [
       "cement kiln",
@@ -826,10 +833,9 @@ export const BLOG_POSTS_DATA = [
     id: 7,
     slug: "acid-proof-brick-lining-chemical-plants-guide",
     title: "Acid Proof Brick Lining for Chemical Plants: Complete Guide",
-    metaTitle:
-      "Acid Proof Brick Lining for Chemical Plants | Installation Guide | SAPL",
-    metaDescription:
-      "Complete guide to acid proof brick lining for chemical industry. Selection, installation, jointing materials, acid resistance testing, and failure prevention.",
+    metaTitle: "Acid Proof Brick Lining for Chemical Plants: Full Guide",
+    metaDescription: "Acid proof brick lining for chemical plants: material selection, installation, jointing materials, acid resistance testing, and failure prevention.",
+    lastModified: "2026-04-20",
     category: "Industry Guide",
     tags: [
       "acid proof bricks",
@@ -961,10 +967,9 @@ export const BLOG_POSTS_DATA = [
     slug: "refractory-materials-glass-melting-furnace-azs-zircon-silica",
     title:
       "Refractory Materials for Glass Melting Furnace: AZS, Zircon & Silica",
-    metaTitle:
-      "Glass Melting Furnace Refractory Materials AZS Zircon Silica | SAPL",
-    metaDescription:
-      "Guide to refractory materials for glass furnaces. AZS for glass contact, silica for crown, zircon for feeders. Zone-by-zone selection for container, float, and fiber glass.",
+    metaTitle: "Glass Melting Furnace Refractories: AZS, Zircon & Silica",
+    metaDescription: "Refractory materials for glass melting furnaces: AZS for glass contact, silica for crown, zircon for feeders. Zone-by-zone selection guide.",
+    lastModified: "2026-04-20",
     category: "Industry Guide",
     tags: [
       "glass furnace",
@@ -1079,10 +1084,9 @@ export const BLOG_POSTS_DATA = [
     id: 9,
     slug: "slide-gate-plate-selection-guide-steel-ladles",
     title: "Slide Gate Plate Selection Guide for Steel Ladles",
-    metaTitle:
-      "Slide Gate Plate Selection Guide for Steel Ladles | SAPL 2026",
-    metaDescription:
-      "How to select slide gate plates for steel ladles. Compare alumina-carbon, MgO-C types. Bore diameter, life optimization, and common failure modes explained.",
+    metaTitle: "Slide Gate Plate Selection Guide for Steel Ladles",
+    metaDescription: "Select slide gate plates for steel ladles: compare alumina-carbon and MgO-C types. Bore diameter, life optimization, and common failure modes explained.",
+    lastModified: "2026-04-20",
     category: "Buyer's Guide",
     tags: [
       "slide gate",
@@ -1205,10 +1209,9 @@ export const BLOG_POSTS_DATA = [
     id: 10,
     slug: "how-to-reduce-refractory-consumption-steel-plants",
     title: "How to Reduce Refractory Consumption in Steel Plants",
-    metaTitle:
-      "Reduce Refractory Consumption in Steel Plants | TCO Guide | SAPL",
-    metaDescription:
-      "Proven strategies to reduce refractory consumption and total cost in steel plants. Lining design optimization, maintenance practices, and TCO approach explained by experts.",
+    metaTitle: "How to Reduce Refractory Consumption in Steel Plants",
+    metaDescription: "Proven strategies to reduce refractory consumption and total cost in steel plants. Lining design optimization, maintenance practices, and TCO analysis.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: [
       "refractory consumption",
@@ -1338,10 +1341,9 @@ export const BLOG_POSTS_DATA = [
     slug: "refractory-supplier-selection-10-things-to-check",
     title:
       "Refractory Supplier Selection: 10 Things to Check Before You Buy",
-    metaTitle:
-      "Refractory Supplier Selection Guide | 10 Things to Check | SAPL",
-    metaDescription:
-      "How to choose a reliable refractory supplier. 10 critical factors: quality certificates, testing, delivery, technical support, and more. Avoid costly mistakes with this checklist.",
+    metaTitle: "Refractory Supplier Selection: 10 Critical Factors",
+    metaDescription: "Choose a reliable refractory supplier with this 10-point checklist: quality certificates, testing, delivery, technical support, and pricing guidance.",
+    lastModified: "2026-04-20",
     category: "Buyer's Guide",
     tags: [
       "refractory supplier",
@@ -1483,10 +1485,9 @@ export const BLOG_POSTS_DATA = [
     slug: "magnesia-carbon-bricks-bof-eaf-selection-performance",
     title:
       "Magnesia Carbon Bricks for BOF & EAF: Selection & Performance Guide",
-    metaTitle:
-      "Magnesia Carbon Bricks for BOF EAF Selection Guide | SAPL 2026",
-    metaDescription:
-      "Complete guide to MgO-C bricks for BOF and EAF steelmaking. Carbon content selection, antioxidant types, slag resistance, and performance optimization strategies.",
+    metaTitle: "MgO-C Bricks for BOF & EAF: Selection & Performance Guide",
+    metaDescription: "MgO-C brick guide for BOF and EAF steelmaking. Carbon content, antioxidant selection, slag resistance, and performance optimization strategies.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: [
       "magnesia carbon bricks",
@@ -1615,10 +1616,9 @@ export const BLOG_POSTS_DATA = [
     slug: "importing-refractories-from-india-buyers-guide",
     title:
       "Importing Refractories from India: A Buyer's Guide for International Clients",
-    metaTitle:
-      "Import Refractories from India | International Buyer's Guide | SAPL",
-    metaDescription:
-      "Guide for international buyers importing refractory materials from India. Export process, documentation, quality assurance, shipping logistics, and how to find reliable Indian suppliers.",
+    metaTitle: "Importing Refractories from India: International Buyer Guide",
+    metaDescription: "Guide for international buyers importing refractories from India: export process, documentation, quality assurance, and supplier selection.",
+    lastModified: "2026-04-20",
     category: "Buyer's Guide",
     tags: [
       "refractory export",
@@ -1738,10 +1738,9 @@ export const BLOG_POSTS_DATA = [
     slug: "induction-furnace-lining-failure-causes-prevention",
     title:
       "Induction Furnace Lining Failure: Common Causes & How to Prevent Them",
-    metaTitle:
-      "Induction Furnace Lining Failure Causes & Prevention | SAPL 2026",
-    metaDescription:
-      "Why induction furnace linings fail prematurely and how to prevent it. Covers sintering problems, thermal shock, slag attack, metal penetration, and operational best practices.",
+    metaTitle: "Induction Furnace Lining Failure: Causes & Prevention",
+    metaDescription: "Why induction furnace linings fail and how to prevent it. Covers sintering, thermal shock, slag attack, metal penetration, and operational best practices.",
+    lastModified: "2026-04-20",
     category: "How-To",
     tags: [
       "induction furnace",
@@ -1918,10 +1917,9 @@ export const BLOG_POSTS_DATA = [
     slug: "refractory-anchors-fastening-systems-types-selection-installation",
     title:
       "Refractory Anchors & Fastening Systems: Types, Selection & Installation",
-    metaTitle:
-      "Refractory Anchors & Fastening Systems Guide | Types Selection | SAPL",
-    metaDescription:
-      "Complete guide to refractory anchoring systems. V anchors, Y anchors, ceramic anchors, bullhorn tips. Selection criteria, spacing, welding, and installation best practices.",
+    metaTitle: "Refractory Anchors & Fastening Systems: Selection Guide",
+    metaDescription: "Complete guide to refractory anchoring systems: V, Y & ceramic anchors. Selection criteria, spacing, welding methods, and installation best practices.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: [
       "refractory anchors",
@@ -2071,14 +2069,27 @@ export const BLOG_POSTS_DATA = [
     id: 16,
     slug: "al70-vs-al80-high-alumina-bricks",
     title: "AL70 vs AL80 High Alumina Bricks: Which Grade for Your Steel Ladle?",
-    metaTitle: "AL70 vs AL80 High Alumina Bricks for Steel Ladles | Comparison Guide",
-    metaDescription: "Compare AL70 (68–72% Al₂O₃) and AL80 (78–82% Al₂O₃) high alumina bricks for steel ladle linings. Refractoriness, CCS, AP%, campaign life, and cost-benefit analysis from SAPL's 45+ years of experience.",
+    metaTitle: "AL70 vs AL80 High Alumina Bricks: Steel Ladle Guide",
+    metaDescription: "Compare AL70 (68–72% Al₂O₃) and AL80 (78–82% Al₂O₃) bricks for steel ladle linings. CCS, AP%, campaign life, and cost-benefit analysis from SAPL.",
+    lastModified: "2026-04-20",
     category: "Comparison Guide",
     tags: ["high alumina bricks", "AL70", "AL80", "steel ladle", "working lining", "alumina content"],
     readTime: "6 min",
     publishDate: "2026-01-15",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    keyTakeaways: [
+      "AL70 (68–72% Al₂O₃, CCS 60–70 MPa) is the standard choice for general steel ladle working linings with carbon and low-alloy steel.",
+      "AL80 (78–82% Al₂O₃, CCS 70–85 MPa) is required for slag lines, safety linings, and ladles processing stainless or high-alloy steel.",
+      "Higher alumina content means better refractoriness and slag resistance, but also higher cost — use only where the application demands it.",
+      "AL70 gives 120–180 heats in typical ladle duty; AL80 gives 150–220 heats in demanding zones.",
+      "Never use AL70 as a safety lining — the safety lining must withstand a full working lining failure without metal penetration.",
+    ],
+    faqs: [
+      { q: "What is the difference between AL70 and AL80 high alumina bricks?", a: "AL70 contains 68–72% Al₂O₃ with CCS of 60–70 MPa and is used for general ladle working linings. AL80 contains 78–82% Al₂O₃ with CCS of 70–85 MPa and is used in slag lines, safety linings, and high-alloy steel applications. AL80 offers better slag resistance and refractoriness but at higher cost." },
+      { q: "Which grade of high alumina brick should I use for my steel ladle?", a: "Use AL70 for the barrel and bottom working lining when processing carbon and low-alloy steel. Use AL80 for slag line zones where slag attack is severe, for safety linings in all steel grades, and for any ladle processing stainless steel, high-alloy, or calcium-treated steel. Mixing zones optimizes cost without compromising performance." },
+      { q: "What is the campaign life of AL70 vs AL80 bricks in a steel ladle?", a: "AL70 bricks typically achieve 120–180 heats in ladle working linings for carbon steel, depending on slag chemistry, tapping temperature, and operational practice. AL80 bricks achieve 150–220 heats in equivalent conditions due to higher hot strength and slag resistance. The actual campaign life depends more on operational factors than grade alone." },
+    ],
     excerpt: "AL70 (68–72% Al₂O₃) offers an excellent balance of cost and performance for general ladle working linings, while AL80 (78–82% Al₂O₃) delivers superior hot strength for demanding slag lines and safety linings. A practical selection guide comparing key parameters.",
     content: `
 <h2>Understanding Alumina Content in Ladle Bricks</h2>
@@ -2174,14 +2185,36 @@ export const BLOG_POSTS_DATA = [
     id: 17,
     slug: "lcc-installation-best-practices",
     title: "Low Cement Castables: Best Practices for Installation & Heat-Up",
-    metaTitle: "LCC Installation Best Practices: Water Addition, Curing & Heat-Up Guide",
-    metaDescription: "Master LCC castable installation with expert guidance on optimal water addition (4–6%), mixing, vibration casting, curing, and controlled heat-up schedules. Prevent explosive spalling and maximize campaign life.",
+    metaTitle: "LCC Castable Installation: Water Addition, Curing & Heat-Up",
+    metaDescription: "Expert LCC castable installation: optimal water addition (4–6%), mixing, vibration casting, curing, and heat-up schedules to prevent explosive spalling.",
+    lastModified: "2026-04-20",
     category: "How-To Guide",
     tags: ["LCC castable", "low cement castable", "castable installation", "heat-up schedule", "curing refractory", "vibration casting"],
     readTime: "7 min",
     publishDate: "2026-01-10",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+    keyTakeaways: [
+      "Water addition for LCC must be 4–6% by weight — even 1% extra drastically reduces strength and increases spalling risk.",
+      "Mix LCC for a minimum of 3–5 minutes in a forced-action mixer after all water is added.",
+      "Cure for minimum 24 hours at ambient temperature before heat-up; longer curing improves strength.",
+      "Heat-up rate should not exceed 25–50°C/hour up to 300°C to safely drive off free and chemically bound water.",
+      "Never add water to a partially mixed or stiff batch — discard and restart to avoid weak zones in the lining.",
+    ],
+    howToSteps: [
+      { name: "Prepare the mould and formwork", text: "Clean the formwork and apply a release agent. Ensure correct dimensions for lining thickness. Pre-heat if ambient temperature is below 10°C." },
+      { name: "Measure water addition accurately", text: "Weigh water to 4.5–6% of the dry castable weight. Never estimate — use a calibrated scale. Follow the product datasheet exactly." },
+      { name: "Mix in a forced-action mixer", text: "Add dry castable to the mixer, then add 80% of the water and mix for 1 minute. Add remaining water and mix for a further 3–4 minutes until fully homogeneous." },
+      { name: "Place and vibrate", text: "Pour or pump LCC into formwork within 20–30 minutes of mixing. Use a poker vibrator at 150mm intervals for 10–15 seconds per position until air bubbles cease." },
+      { name: "Cure at ambient temperature", text: "Cover with wet hessian and polythene for minimum 24 hours (48 hours preferred). Do not allow the surface to dry out during curing." },
+      { name: "Follow controlled heat-up schedule", text: "Heat at ≤25°C/hour from ambient to 110°C and hold for 2 hours. Then ≤50°C/hour to 300°C and hold for 2 hours. Then ≤100°C/hour to operating temperature." },
+    ],
+    faqs: [
+      { q: "What is the correct water addition for LCC castable?", a: "The correct water addition for most LCC castables is 4.5–6% by weight of dry castable. Adding more than 6% causes segregation, reduced density, and increased risk of explosive spalling during heat-up. Always follow the product-specific datasheet — different LCC grades have different optimal water ranges." },
+      { q: "How long should LCC castable be cured before heat-up?", a: "LCC castable should be cured for a minimum of 24 hours at ambient temperature before starting heat-up. For thicker sections (>150mm) or cold weather, 48 hours is recommended. Longer curing allows cement hydration to complete, building strength and reducing spalling risk during the first heat-up." },
+      { q: "What causes explosive spalling in refractory castables?", a: "Explosive spalling occurs when trapped water converts to steam faster than it can escape. Common causes include excessive water addition, insufficient curing time, too-fast heat-up rate below 300°C, and poor castable mixing. Prevention: use correct water addition, cure fully, and follow a controlled heat-up schedule with holds at 110°C and 300°C." },
+      { q: "What is the maximum heat-up rate for LCC?", a: "For most LCC castables, the maximum heat-up rate is 25–50°C/hour up to 300°C where free and chemically bound water must escape. Above 300°C, 50–100°C/hour is typically acceptable. Holds of 2–4 hours at 110°C and 300°C are critical. Exceeding these rates risks explosive spalling that can destroy the lining." },
+    ],
     excerpt: "Proper installation is critical for LCC performance. This guide covers optimal water addition (4–6%), mixing requirements, vibration casting vs. self-flow, curing procedures, and controlled heat-up schedules to prevent explosive spalling.",
     content: `
 <h2>Why LCC Installation Practice Determines Performance</h2>
@@ -2273,8 +2306,9 @@ export const BLOG_POSTS_DATA = [
     id: 18,
     slug: "ceramic-fiber-vs-insulating-firebrick",
     title: "Ceramic Fiber vs Insulating Firebrick: Making the Right Choice",
-    metaTitle: "Ceramic Fiber vs Insulating Firebrick (IFB): Complete Comparison 2026",
-    metaDescription: "Compare ceramic fiber and insulating firebricks for furnace linings. Thermal conductivity, maximum service temperature, installation cost, and 5-year TCO analysis. Decision framework for plant engineers.",
+    metaTitle: "Ceramic Fiber vs Insulating Firebrick (IFB): Full Comparison",
+    metaDescription: "Compare ceramic fiber and insulating firebricks for furnace linings: thermal conductivity, max service temperature, installation cost, and 5-year TCO.",
+    lastModified: "2026-04-20",
     category: "Comparison Guide",
     tags: ["ceramic fiber", "insulating firebrick", "IFB", "furnace lining", "energy saving", "thermal insulation"],
     readTime: "6 min",
@@ -2374,8 +2408,9 @@ export const BLOG_POSTS_DATA = [
     id: 19,
     slug: "steel-ladle-refractory-selection-guide",
     title: "Steel Ladle Refractory Selection: Complete Guide to Working Lining Best Practices",
-    metaTitle: "Steel Ladle Refractory Lining Selection Guide | Working Lining Best Practices",
-    metaDescription: "Comprehensive guide to steel ladle refractory selection: working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specs, bottom design, purging plugs, and achieving 100+ heat campaigns.",
+    metaTitle: "Steel Ladle Refractory Selection: Working Lining Guide",
+    metaDescription: "Steel ladle refractory selection: working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining, bottom design, purging plugs, and 100+ heat campaigns.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: ["steel ladle lining", "working lining", "MgO-C bricks", "LCC castable", "purging plug", "campaign life", "ladle refractory"],
     readTime: "8 min",
@@ -2474,8 +2509,9 @@ export const BLOG_POSTS_DATA = [
     id: 20,
     slug: "cement-kiln-zone-refractory-selection",
     title: "Cement Kiln Refractory Zones: Material Selection Zone by Zone",
-    metaTitle: "Cement Kiln Refractory Selection Zone by Zone | Complete Guide",
-    metaDescription: "Zone-by-zone cement kiln refractory selection guide. Burning zone, transition zones, nose ring, cooler, inlet zone, and cyclone preheater material recommendations with thermal and chemical requirements.",
+    metaTitle: "Cement Kiln Refractory: Zone-by-Zone Selection Guide",
+    metaDescription: "Zone-by-zone cement kiln refractory guide. Burning zone, transition zones, nose ring, cooler, inlet zone, and cyclone preheater material recommendations.",
+    lastModified: "2026-04-20",
     category: "Industry Guide",
     tags: ["cement kiln", "rotary kiln refractory", "burning zone", "magnesia spinel", "kiln refractory", "cement plant"],
     readTime: "7 min",
@@ -2595,8 +2631,9 @@ export const BLOG_POSTS_DATA = [
     id: 21,
     slug: "slide-gate-flow-control-explained",
     title: "Flow Control Refractories: Slide Gate Systems Fully Explained",
-    metaTitle: "Slide Gate Plate Systems for Steel Ladles: Materials & Selection Guide",
-    metaDescription: "Everything you need to know about slide gate flow control systems for steel ladles: plate materials (Al₂O₃-C, Al₂O₃-ZrO₂-C, MgO-C), nozzle types, anti-clogging with argon, and longer sequence casting tips.",
+    metaTitle: "Slide Gate Flow Control for Steel Ladles: Complete Guide",
+    metaDescription: "Slide gate flow control for steel ladles: plate materials (Al₂O₃-C, ZrO₂-C, MgO-C), nozzle types, argon anti-clogging, and longer casting sequence tips.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: ["slide gate", "flow control", "ladle shroud", "slide gate plate", "continuous casting", "subentry nozzle"],
     readTime: "6 min",
@@ -2694,8 +2731,9 @@ export const BLOG_POSTS_DATA = [
     id: 22,
     slug: "gunning-vs-casting-when-to-use",
     title: "Gunning vs Casting Refractories: When to Use Which Method",
-    metaTitle: "Gunning vs Casting Refractories: Installation Method Comparison Guide",
-    metaDescription: "Compare gunning and casting refractory installation methods. Application techniques, rebound loss, material properties, cost implications, and a decision framework for plant engineers selecting the right method.",
+    metaTitle: "Gunning vs Casting Refractories: Installation Comparison",
+    metaDescription: "Compare gunning vs casting refractory installation: techniques, rebound loss, material properties, cost, and a decision framework for plant engineers.",
+    lastModified: "2026-04-20",
     category: "How-To Guide",
     tags: ["gunning refractory", "casting refractory", "hot repair", "refractory installation", "gunning mix", "refractory maintenance"],
     readTime: "5 min",
@@ -2795,14 +2833,27 @@ export const BLOG_POSTS_DATA = [
     id: 23,
     slug: "induction-furnace-ramming-mass-selection",
     title: "Induction Furnace Lining: Ramming Mass Selection & Installation Guide",
-    metaTitle: "Induction Furnace Ramming Mass Selection & Sintering Guide | SAPL",
-    metaDescription: "Complete guide to induction furnace lining with ramming mass. Compare silica, alumina, and magnesia types by melt chemistry. Sintering schedules, failure troubleshooting, and lining life optimization.",
+    metaTitle: "Induction Furnace Ramming Mass: Selection & Sintering Guide",
+    metaDescription: "Induction furnace lining with ramming mass: compare silica, alumina, and magnesia types by melt chemistry. Sintering and lining life optimization.",
+    lastModified: "2026-04-20",
     category: "Technical Guide",
     tags: ["induction furnace lining", "ramming mass", "silica ramming mass", "sintering schedule", "foundry refractory", "lining failure"],
     readTime: "7 min",
     publishDate: "2025-12-05",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+    keyTakeaways: [
+      "Match ramming mass chemistry to melt slag chemistry: silica for acidic (iron/mild steel), alumina for neutral, magnesia for basic (manganese steel).",
+      "Sintering is as critical as material selection — a wrong sintering schedule destroys an otherwise correct mass choice.",
+      "Lining life for silica mass in grey iron is 150–350 heats; alumina in stainless steel is 80–200 heats.",
+      "Always control lining thickness — minimum 75mm for small furnaces, 100–150mm for large — to ensure coil protection.",
+      "After lining failure, always inspect the coil for copper damage before relining to prevent repeat failure.",
+    ],
+    faqs: [
+      { q: "What ramming mass should I use for melting grey iron in an induction furnace?", a: "Silica (acidic) ramming mass with SiO₂ >96% and boric acid addition of 1–2.5% is the standard choice for grey iron melting in induction furnaces. It forms a strong cristobalite working face, operates safely up to 1,700°C, and delivers 150–350 heats depending on furnace size and operational practice." },
+      { q: "What is the correct sintering schedule for induction furnace ramming mass?", a: "Silica mass sintering: heat slowly to 600°C at 50°C/hour (driving off free moisture), hold for 1 hour, then heat to 900°C at 100°C/hour (boric acid bonding), hold 30 minutes, then to full operating temperature. Alumina mass requires similar initial stages but can be heated faster above 900°C. Never rush the sintering below 600°C." },
+      { q: "How thick should induction furnace ramming mass be?", a: "Lining thickness depends on furnace capacity. For furnaces up to 500kg, minimum 75mm is recommended. For 500kg–5 tonne furnaces, 100–125mm is standard. For larger furnaces above 5 tonnes, 125–150mm or more is typical. Thicker linings give better coil protection and longer campaign life but reduce effective furnace capacity." },
+    ],
     excerpt: "Silica, alumina, and magnesia ramming masses each serve different metallurgical requirements. This guide covers material selection based on melt type (iron, steel, copper), lining life expectations, sintering schedules and temperatures, and troubleshooting the most common failure modes.",
     content: `
 <h2>The Ramming Mass Decision: Getting It Right From the Start</h2>

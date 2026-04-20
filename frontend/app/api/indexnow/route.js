@@ -1,95 +1,103 @@
 /**
- * IndexNow submission endpoint
- * POST /api/indexnow  — submits a list of URLs to Bing/Yandex for instant indexing
+ * IndexNow submission endpoint — submits URLs to Bing/Yandex for instant indexing.
  *
- * Usage (from sitemap updates, CMS hooks, or manual trigger):
- *   fetch('/api/indexnow', {
- *     method: 'POST',
- *     headers: { 'Content-Type': 'application/json' },
- *     body: JSON.stringify({ urls: ['https://www.shankeragencies.com/blog/new-post'] })
- *   })
+ * GET  /api/indexnow          → submits all static site URLs (call from Vercel deploy hook)
+ * POST /api/indexnow          → submits specific URLs
+ *   Body: { urls: ['https://...'] }   (omit to submit all static URLs)
+ *
+ * Vercel deploy hook setup:
+ *   In Vercel project → Settings → Git → Deploy Hooks, create a hook that calls:
+ *   https://www.shankeragencies.com/api/indexnow (GET)
  */
+
+import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { PRODUCT_SEO } from '@/data/productsSeoData';
+import { LOCATIONS_DATA } from '@/data/locationsData';
 
 const INDEX_NOW_KEY = '68c9e978104b40548276dada2151c101';
 const HOST = 'www.shankeragencies.com';
-const KEY_LOCATION = `https://${HOST}/${INDEX_NOW_KEY}.txt`;
+const BASE = `https://${HOST}`;
+const KEY_LOCATION = `${BASE}/${INDEX_NOW_KEY}.txt`;
 
-// Submit all sitemap URLs — call this after any content deployment
-const ALL_SITE_URLS = [
-  'https://www.shankeragencies.com/',
-  'https://www.shankeragencies.com/about',
-  'https://www.shankeragencies.com/contact',
-  'https://www.shankeragencies.com/products',
-  'https://www.shankeragencies.com/blog',
-  'https://www.shankeragencies.com/refractory-supplier-in/delhi',
-  'https://www.shankeragencies.com/refractory-supplier-in/mumbai',
-  'https://www.shankeragencies.com/refractory-supplier-in/pune',
-  'https://www.shankeragencies.com/refractory-supplier-in/ahmedabad',
-  'https://www.shankeragencies.com/refractory-supplier-in/chennai',
-  'https://www.shankeragencies.com/refractory-supplier-in/hyderabad',
-  'https://www.shankeragencies.com/refractory-supplier-in/kolkata',
-  'https://www.shankeragencies.com/refractory-supplier-in/jamshedpur',
-  'https://www.shankeragencies.com/refractory-supplier-in/raipur',
-  'https://www.shankeragencies.com/refractory-supplier-in/surat',
-];
+function buildAllUrls() {
+  const static_pages = [
+    '/', '/about', '/contact', '/products', '/blog', '/brands',
+    '/industries', '/solutions', '/knowledge', '/downloads',
+    '/company-profile', '/refractory-supplier-in',
+  ];
 
-export async function POST(request) {
+  const categories = [
+    'shaped-refractories', 'unshaped-refractories', 'flow-control',
+    'insulation', 'acid-proofing',
+  ];
+
+  const industries = ['steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic'];
+
+  const blogUrls = BLOG_POSTS_DATA.map((p) => `/blog/${p.slug}`);
+  const productUrls = PRODUCT_SEO.map((p) => `/products/${p.categorySlug}/${p.productId}`);
+  const categoryUrls = categories.map((c) => `/products/${c}`);
+  const industryUrls = industries.map((i) => `/industries/${i}`);
+  const solutionUrls = industries.map((i) => `/solutions/${i}`);
+  const locationUrls = LOCATIONS_DATA.map((l) => `/refractory-supplier-in/${l.slug}`);
+
+  return [
+    ...static_pages,
+    ...categoryUrls,
+    ...productUrls,
+    ...industryUrls,
+    ...solutionUrls,
+    ...locationUrls,
+    ...blogUrls,
+  ].map((path) => `${BASE}${path}`);
+}
+
+async function submitToIndexNow(urls) {
+  const payload = {
+    host: HOST,
+    key: INDEX_NOW_KEY,
+    keyLocation: KEY_LOCATION,
+    urlList: urls.slice(0, 10000), // IndexNow max per request
+  };
+
+  const [bingRes, indexNowRes] = await Promise.allSettled([
+    fetch('https://www.bing.com/indexnow', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify(payload),
+    }),
+    fetch('https://api.indexnow.org/indexnow', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      body: JSON.stringify(payload),
+    }),
+  ]);
+
+  return {
+    urls_submitted: urls.length,
+    bing_status: bingRes.status === 'fulfilled' ? bingRes.value.status : 'error',
+    indexnow_status: indexNowRes.status === 'fulfilled' ? indexNowRes.value.status : 'error',
+  };
+}
+
+// GET — full-site submission (call from Vercel deploy hook or manually)
+export async function GET() {
   try {
-    const body = await request.json().catch(() => ({}));
-    const urls = body.urls || ALL_SITE_URLS;
-
-    // Submit to Bing IndexNow
-    const bingResponse = await fetch('https://www.bing.com/indexnow', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({
-        host: HOST,
-        key: INDEX_NOW_KEY,
-        keyLocation: KEY_LOCATION,
-        urlList: urls,
-      }),
-    });
-
-    // Also submit to IndexNow API (shared across Yandex, Seznam, etc.)
-    const indexNowResponse = await fetch('https://api.indexnow.org/indexnow', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({
-        host: HOST,
-        key: INDEX_NOW_KEY,
-        keyLocation: KEY_LOCATION,
-        urlList: urls,
-      }),
-    });
-
-    return Response.json({
-      success: true,
-      urls_submitted: urls.length,
-      bing_status: bingResponse.status,
-      indexnow_status: indexNowResponse.status,
-    });
+    const urls = buildAllUrls();
+    const result = await submitToIndexNow(urls);
+    return Response.json({ success: true, ...result });
   } catch (error) {
     return Response.json({ success: false, error: error.message }, { status: 500 });
   }
 }
 
-// GET — trigger full-site submission (call from Vercel deployment hook or manually)
-export async function GET() {
-  const response = await fetch('https://www.bing.com/indexnow', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify({
-      host: HOST,
-      key: INDEX_NOW_KEY,
-      keyLocation: KEY_LOCATION,
-      urlList: ALL_SITE_URLS,
-    }),
-  });
-
-  return Response.json({
-    success: true,
-    urls_submitted: ALL_SITE_URLS.length,
-    bing_status: response.status,
-    message: `Submitted ${ALL_SITE_URLS.length} URLs to IndexNow`,
-  });
+// POST — submit specific URLs (or all if body is empty)
+export async function POST(request) {
+  try {
+    const body = await request.json().catch(() => ({}));
+    const urls = body.urls?.length ? body.urls : buildAllUrls();
+    const result = await submitToIndexNow(urls);
+    return Response.json({ success: true, ...result });
+  } catch (error) {
+    return Response.json({ success: false, error: error.message }, { status: 500 });
+  }
 }

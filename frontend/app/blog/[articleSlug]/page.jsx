@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
   const post = BLOG_POSTS_DATA.find((p) => p.slug === articleSlug);
   if (!post) return { title: 'Article Not Found' };
   return {
-    title: post.metaTitle,
+    title: { absolute: post.metaTitle },
     description: post.metaDescription,
     keywords: post.tags,
     alternates: { canonical: `/blog/${post.slug}` },
@@ -29,6 +29,7 @@ export async function generateMetadata({ params }) {
       locale: 'en_IN',
       type: 'article',
       publishedTime: post.publishDate,
+      modifiedTime: post.lastModified || post.publishDate,
       authors: ['Rahul Taneja, Shanker Agencies'],
       tags: post.tags,
       images: [{ url: post.coverImage || '/opengraph-image', width: 1200, height: 630, alt: post.title }],
@@ -58,7 +59,7 @@ export default async function BlogArticlePage({ params }) {
     headline: post.title,
     description: post.metaDescription,
     datePublished: post.publishDate,
-    dateModified: post.publishDate,
+    dateModified: post.lastModified || post.publishDate,
     image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
     author: {
       '@type': 'Person',
@@ -102,6 +103,33 @@ export default async function BlogArticlePage({ params }) {
     inLanguage: 'en-IN',
   };
 
+  const faqSchema = post.faqs?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: post.faqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
+  const howToSchema = post.howToSteps?.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: post.title,
+        description: post.metaDescription,
+        step: post.howToSteps.map((step, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: step.name,
+          text: step.text,
+        })),
+      }
+    : null;
+
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -116,6 +144,8 @@ export default async function BlogArticlePage({ params }) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
+      {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
 
       {/* HERO */}
       <section
@@ -194,6 +224,20 @@ export default async function BlogArticlePage({ params }) {
                 </div>
               )}
 
+              {post.keyTakeaways?.length > 0 && (
+                <div className="mb-10 rounded-2xl bg-[#EFF6FF] border border-[#3B82F6]/20 p-6">
+                  <h2 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-4 mt-0">Key Takeaways</h2>
+                  <ul className="space-y-2 mb-0">
+                    {post.keyTakeaways.map((point, i) => (
+                      <li key={i} className="flex items-start gap-2 text-gray-700 text-sm leading-relaxed">
+                        <span className="w-5 h-5 rounded-full bg-[#3B82F6] text-white text-xs flex items-center justify-center flex-shrink-0 mt-0.5 font-bold">{i + 1}</span>
+                        {point}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
               <div
                 className="prose prose-lg max-w-none
                   prose-headings:font-oswald prose-headings:text-[#1E3A5F] prose-headings:font-bold
@@ -237,6 +281,26 @@ export default async function BlogArticlePage({ params }) {
                   </div>
                 </div>
               </div>
+
+              {/* FAQ section */}
+              {post.faqs?.length > 0 && (
+                <div className="mt-12">
+                  <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-6 border-l-4 border-[#F97316] pl-4">Frequently Asked Questions</h2>
+                  <div className="space-y-4">
+                    {post.faqs.map((faq, i) => (
+                      <details key={i} className="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden" {...(i === 0 ? { open: true } : {})}>
+                        <summary className="flex items-start gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                          <ChevronRight className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5 transition-transform group-open:rotate-90" />
+                          <h3 className="font-oswald text-base font-semibold text-[#1E3A5F]">{faq.q}</h3>
+                        </summary>
+                        <div className="px-5 pb-5">
+                          <p className="text-gray-600 text-sm leading-relaxed ml-8">{faq.a}</p>
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Tags footer */}
               <div className="mt-10 pt-8 border-t border-gray-100 flex flex-wrap items-center gap-3">
