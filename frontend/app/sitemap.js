@@ -6,6 +6,7 @@
 import { LOCATIONS_DATA } from '@/data/locationsData';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 import { PRODUCT_SEO } from '@/data/productsSeoData';
+import { CASE_STUDIES } from '@/data/caseStudiesData';
 
 const BASE = 'https://www.shankeragencies.com';
 // Stable per-deploy timestamp for structural pages (refreshes on every build).
@@ -29,6 +30,7 @@ export default async function sitemap() {
     { url: `${BASE}/solutions`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/knowledge`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/blog`,                      lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/case-studies`,              lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/contact`,                   lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/company-profile`,           lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/refractory-supplier-in`,    lastModified: STRUCTURAL_LASTMOD },
@@ -63,6 +65,16 @@ export default async function sitemap() {
   const locationPages = LOCATIONS_DATA.map((loc) => ({
     url: `${BASE}/refractory-supplier-in/${loc.slug}`,
     lastModified: STRUCTURAL_LASTMOD,
+  }));
+
+  // Case study pages — fixed per-study lastmod tied to study year so the
+  // sitemap stays stable between deploys (instead of a single deploy-time
+  // bump on every URL, which Google flags as low-credibility).
+  const caseStudyPages = CASE_STUDIES.map((cs) => ({
+    url: `${BASE}/case-studies/${cs.slug}`,
+    lastModified: cs.year
+      ? new Date(`${cs.year}-12-31T00:00:00.000Z`).toISOString()
+      : STRUCTURAL_LASTMOD,
   }));
 
   // Blog pages — use each post's own publishDate so lastmod is unique per URL
@@ -106,6 +118,7 @@ export default async function sitemap() {
     ...solutionPages,
     ...brandPages,
     ...locationPages,
+    ...caseStudyPages,
     ...staticBlogPages,
     ...apiBlogPages,
   ];
