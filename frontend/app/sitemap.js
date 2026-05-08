@@ -22,7 +22,10 @@ const LEGAL_LASTMOD = '2026-01-01T00:00:00.000Z';
 
 export default async function sitemap() {
   const mainPages = [
-    { url: `${BASE}/`,                          lastModified: STRUCTURAL_LASTMOD },
+    // Homepage canonical is `https://www.shankeragencies.com` (no trailing slash),
+    // so the sitemap entry must match exactly — mismatched URLs are a known
+    // credibility issue with both Google and AI crawlers.
+    { url: `${BASE}`,                           lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/about`,                     lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/products`,                  lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/brands`,                    lastModified: STRUCTURAL_LASTMOD },
@@ -30,7 +33,7 @@ export default async function sitemap() {
     { url: `${BASE}/solutions`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/knowledge`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/blog`,                      lastModified: STRUCTURAL_LASTMOD },
-    { url: `${BASE}/case-studies`,              lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/engineering-references`,    lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/contact`,                   lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/company-profile`,           lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/refractory-supplier-in`,    lastModified: STRUCTURAL_LASTMOD },
@@ -67,11 +70,11 @@ export default async function sitemap() {
     lastModified: STRUCTURAL_LASTMOD,
   }));
 
-  // Case study pages — fixed per-study lastmod tied to study year so the
-  // sitemap stays stable between deploys (instead of a single deploy-time
+  // Engineering Reference Scenarios — fixed per-page lastmod tied to year so
+  // the sitemap stays stable between deploys (instead of a single deploy-time
   // bump on every URL, which Google flags as low-credibility).
-  const caseStudyPages = CASE_STUDIES.map((cs) => ({
-    url: `${BASE}/case-studies/${cs.slug}`,
+  const engineeringReferencePages = CASE_STUDIES.map((cs) => ({
+    url: `${BASE}/engineering-references/${cs.slug}`,
     lastModified: cs.year
       ? new Date(`${cs.year}-12-31T00:00:00.000Z`).toISOString()
       : STRUCTURAL_LASTMOD,
@@ -118,7 +121,7 @@ export default async function sitemap() {
     ...solutionPages,
     ...brandPages,
     ...locationPages,
-    ...caseStudyPages,
+    ...engineeringReferencePages,
     ...staticBlogPages,
     ...apiBlogPages,
   ];

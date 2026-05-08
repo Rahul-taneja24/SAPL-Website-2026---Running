@@ -13,63 +13,25 @@ export const metadata = {
     default: "Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980",
     template: '%s | Shanker Agencies',
   },
+  // 158 chars — under Google's 160-char limit so AI snippets don't truncate
   description:
-    "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; strategic supply partner for TRL Krosaki, IFGL and Calderys. Supplying high alumina bricks, castables, ramming mass, ceramic fibre and flow control products to steel, cement, aluminium, glass, power and petrochemical plants across India and 50+ countries.",
+    "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown, Divine, Mahakoshal — supplying steel, cement, glass plants.",
+  // Trimmed from 109 terms (audit M5: read as keyword stuffing) to 12 high-intent
+  // commercial phrases. Google ignores this tag, but some AI crawlers use it as
+  // a quality signal — long lists are downgraded as low-quality content.
   keywords: [
-    // Core brand + India identity
-    'refractory supplier India', 'refractory dealer India', 'refractory distributor India',
-    'refractory materials supplier', 'Shanker Agencies', 'SAPL refractory',
-    // Delhi NCR city targeting (commercial intent)
-    'refractory supplier Delhi', 'refractory dealer Delhi NCR',
-    'refractory supplier Noida', 'refractory supplier Gurgaon', 'refractory supplier Faridabad',
-    'refractory supplier Ghaziabad', 'refractory dealer Delhi', 'refractory manufacturer Delhi',
-    'refractory stockist Delhi NCR', 'best refractory dealer Delhi NCR',
-    // Brand + dealer intent
-    'CUMI authorized dealer Delhi', 'CUMI refractory dealer India', 'CUMI super refractories dealer',
-    'Crown Ceramics authorized dealer', 'Divine Cerawool authorized dealer',
-    'Mahakoshal refractories dealer', 'Mahakoshal authorised distributor Delhi',
-    'TRL Krosaki dealer India', 'IFGL refractories dealer', 'Calderys dealer India',
-    // Product + city long tail
-    'high alumina bricks supplier Delhi', 'high alumina bricks 70 percent',
-    'castable refractory cement Delhi', 'low cement castable LCC supplier',
-    'ramming mass supplier Delhi', 'silica ramming mass Delhi',
-    'ceramic fiber blanket Delhi', 'ceramic fiber blanket Noida', 'ceramic fiber blanket Faridabad',
-    'ceramic fiber blanket Gurgaon', 'ceramic fiber blanket Ghaziabad',
-    'acid proof bricks Delhi', 'acid proof tiles Delhi',
-    'slide gate plate supplier', 'tundish nozzle supplier', 'ladle shroud India',
-    'magnesia carbon bricks supplier', 'silicon carbide bricks India',
-    'insulating fire brick IFB 23', 'insulating fire brick IFB 26', 'IFB 28 insulating brick',
-    'refractory mortar Delhi', 'refractory cement Delhi', 'refractory anchor supplier',
-    'fire bricks manufacturer Delhi', 'fire bricks IS 8 standard', 'fire bricks size chart',
-    'precast refractory shapes', 'kiln furniture supplier',
-    // Application intent
-    'steel plant refractories', 'cement kiln refractory', 'induction furnace lining',
-    'boiler refractory castable', 'CFBC boiler refractory', 'reheating furnace lining',
-    'refractory for glass furnace', 'refractory for aluminium smelter', 'refractory for copper smelter',
-    'refractory for petrochemical reformer', 'refractory for power plant boiler',
-    'ladle lining refractory', 'tundish refractory',
-    // Service intent
-    'refractory lining contractor', 'refractory relining service', 'refractory engineering consultant',
-    'refractory installation service Delhi', 'refractory audit service',
-    'refractory post-mortem analysis', 'refractory dry-out service',
-    'furnace lining design service', 'on-site refractory engineering',
-    // Export / international
-    'refractory exporter India', 'refractory supplier GCC', 'refractory supplier Middle East',
-    'refractory supplier UAE', 'refractory supplier Saudi Arabia', 'refractory supplier Qatar',
-    'refractory supplier Oman', 'refractory supplier Singapore', 'refractory supplier Malaysia',
-    // Competitive + comparison
-    'best refractory supplier India', 'top refractory dealers Delhi NCR',
-    'alternative to Refmon', 'alternative to Gupta Refractories', 'alternative to Lanexis',
-    'alternative to BM Enterprises refractories', 'alternative to Inter Dominion Calderys',
-    'alternative to Bharat Minerals refractories', 'CUMI vs Calderys', 'CUMI vs TRL Krosaki',
-    'Mahakoshal vs CUMI castables', 'fire bricks vs refractory bricks',
-    // Trust signals
-    'ISO 9001 refractory supplier', 'ISO 14001 refractory dealer',
-    'authorised refractory dealer India', 'since 1980 refractory supplier',
-    'family owned refractory business Delhi', 'branded refractory supplier India',
-    // GeM + PSU
-    'GeM refractory supplier', 'PSU refractory vendor', 'BHEL approved refractory supplier',
-    'NTPC refractory vendor', 'SAIL refractory supplier',
+    'refractory supplier India',
+    'refractory dealer Delhi NCR',
+    'CUMI authorized dealer Delhi',
+    'high alumina bricks supplier',
+    'castable refractory cement',
+    'ramming mass supplier Delhi',
+    'ceramic fiber blanket Delhi',
+    'steel plant refractories',
+    'cement kiln refractory',
+    'induction furnace lining',
+    'refractory exporter India',
+    'Shanker Agencies SAPL',
   ],
   openGraph: {
     type: 'website',
@@ -125,14 +87,19 @@ export const metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  // Verification tags only render when the matching env var is actually set.
+  // No more `REPLACE_WITH_BING_CODE` placeholder leaking into production HTML.
+  // Set NEXT_PUBLIC_BING_SITE_VERIFICATION + NEXT_PUBLIC_YANDEX_VERIFICATION in
+  // Vercel env to enable these once codes are obtained from each webmaster tool.
   verification: {
     google: 'UP4jk4O4_EhbCZmxhLCah3pTBbUuI9Utg1KkhDzIC0I',
     other: {
-      // Replace with the code you get from Bing Webmaster Tools → Ownership → HTML Meta Tag
-      // Keeping placeholder so the meta tag renders — swap the value without a deploy.
-      'msvalidate.01': process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION || 'REPLACE_WITH_BING_CODE',
-      // Yandex Webmaster — optional, for international coverage
-      'yandex-verification': process.env.NEXT_PUBLIC_YANDEX_VERIFICATION || 'REPLACE_WITH_YANDEX_CODE',
+      ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+        ? { 'msvalidate.01': process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION }
+        : {}),
+      ...(process.env.NEXT_PUBLIC_YANDEX_VERIFICATION
+        ? { 'yandex-verification': process.env.NEXT_PUBLIC_YANDEX_VERIFICATION }
+        : {}),
     },
   },
 };
@@ -143,6 +110,15 @@ export default function RootLayout({ children }) {
       <head>
         {/* IndexNow key for instant Bing/Yandex indexing */}
         <meta name="indexnow-key" content="68c9e978104b40548276dada2151c101" />
+        {/* Preload the logo for LCP — fetchpriority high so the browser
+            requests it before parsing the rest of the document. */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/sapl-logo.png"
+          fetchPriority="high"
+          type="image/png"
+        />
         {/* AI/LLM discoverability hints */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
         {/* Organization Schema */}

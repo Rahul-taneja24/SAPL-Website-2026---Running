@@ -1,12 +1,15 @@
-// /case-studies — listing page for all SAPL refractory case studies.
+// /engineering-references — listing page for SAPL's Engineering Reference Scenarios.
 //
-// SEO/GEO rationale:
-//   - Pages with measurable outcomes ("65→92 heats", "+43% campaign life",
-//     "iron pickup eliminated") are 5–7x more likely to be cited by AI
-//     search engines (Perplexity, Google AI Overviews) than generic
-//     capability copy.
-//   - CollectionPage + ItemList schema lets crawlers traverse all studies
-//     and understand the relationship to brand/product/industry entities.
+// IMPORTANT EDITORIAL FRAMING:
+//   These pages are NOT records of specific SAPL project deliveries. They are
+//   illustrative engineering scenarios for typical application classes —
+//   designed to help buyers/engineers understand the economic and technical
+//   logic of correct refractory specification. Every detail page carries an
+//   unmissable banner stating this. Schema type is TechArticle (technical
+//   reference content), not Article (which implies authored journalism).
+//
+//   When real signed-off case studies are obtained from past clients, these
+//   pages should be replaced with actual project records.
 
 import Link from 'next/link';
 import {
@@ -17,48 +20,47 @@ import {
 const BASE = 'https://www.shankeragencies.com';
 
 export const metadata = {
-  title: 'Refractory Case Studies | Real Plant Outcomes Since 1980',
+  title: 'Engineering Reference Scenarios | Refractory Application Notes by SAPL',
   description:
-    'Anonymised refractory engineering case studies from Shanker Agencies — measurable plant outcomes across steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Reviewed by Rahul Taneja, Director.',
-  alternates: { canonical: '/case-studies' },
+    'Illustrative engineering reference scenarios across steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specifications, expected outcome ranges, market-pricing economics — not records of specific SAPL projects.',
+  alternates: { canonical: '/engineering-references' },
   openGraph: {
-    title: 'Refractory Case Studies — Plant-Side Outcomes',
+    title: 'Refractory Engineering Reference Scenarios — Shanker Agencies',
     description:
-      'Real refractory engineering outcomes from Shanker Agencies — campaign life, energy savings, downtime reductions across 6 industrial applications.',
-    url: `${BASE}/case-studies`,
+      'Application notes covering 6 industrial refractory classes with expected outcome ranges and 2026 market economics.',
+    url: `${BASE}/engineering-references`,
     type: 'website',
   },
 };
 
-export default function CaseStudiesIndexPage() {
-  const studies = getCaseStudiesByYear();
+export default function EngineeringReferencesIndexPage() {
+  const scenarios = getCaseStudiesByYear();
 
-  // CollectionPage + ItemList — lets AI engines traverse every case study
-  // and infer the relationship to brand and product entities.
+  // CollectionPage + ItemList — but framed as a reference collection so AI
+  // engines understand this is reference material, not authored journalism.
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    '@id': `${BASE}/case-studies/#collection`,
-    name: 'Shanker Agencies — Refractory Case Studies',
-    url: `${BASE}/case-studies`,
+    '@id': `${BASE}/engineering-references/#collection`,
+    name: 'Shanker Agencies — Refractory Engineering Reference Scenarios',
+    url: `${BASE}/engineering-references`,
     description:
-      'Anonymised refractory case studies from Shanker Agencies covering steel, foundry, cement, power, aluminium and glass applications. Each study documents the problem, diagnosis, specification, installation and measurable result.',
+      'Illustrative engineering reference scenarios across 6 refractory application classes. Each scenario documents typical baseline conditions, common failure modes, recommended specification, and expected outcome ranges based on May 2026 Indian market data. These are NOT records of specific SAPL project deliveries.',
     isPartOf: { '@id': `${BASE}/#website` },
     about: { '@id': `${BASE}/#organization` },
-    author: { '@id': `${BASE}/about#rahul-taneja` },
     inLanguage: 'en-IN',
   };
 
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    '@id': `${BASE}/case-studies/#list`,
-    numberOfItems: studies.length,
-    itemListElement: studies.map((cs, i) => ({
+    '@id': `${BASE}/engineering-references/#list`,
+    numberOfItems: scenarios.length,
+    itemListElement: scenarios.map((s, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      url: `${BASE}/case-studies/${cs.slug}`,
-      name: cs.title,
+      url: `${BASE}/engineering-references/${s.slug}`,
+      name: s.title,
     })),
   };
 
@@ -70,8 +72,8 @@ export default function CaseStudiesIndexPage() {
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Case Studies',
-        item: `${BASE}/case-studies`,
+        name: 'Engineering References',
+        item: `${BASE}/engineering-references`,
       },
     ],
   };
@@ -101,22 +103,42 @@ export default function CaseStudiesIndexPage() {
       >
         <div className="max-w-7xl mx-auto relative z-10">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
-            <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" aria-hidden="true" />
-            Plant-side outcomes · 1980–2026
+            Application notes · 2026 market economics
           </span>
           <h1 className="font-oswald text-4xl md:text-6xl font-bold text-white leading-none mb-4">
-            REFRACTORY CASE STUDIES
+            ENGINEERING REFERENCE SCENARIOS
             <br />
-            <span className="text-shimmer">REAL OUTCOMES, NAMED METRICS</span>
+            <span className="text-shimmer">REFRACTORY ECONOMICS BY APPLICATION CLASS</span>
           </h1>
           <p className="text-gray-300 max-w-3xl text-lg leading-relaxed">
-            Anonymised engineering case studies from steel, foundry, cement, power, aluminium
-            and glass plants. Each study documents the problem, diagnosis, specification,
-            installation, and the measurable result —{' '}
+            Six refractory application classes covering steel, foundry, cement, power,
+            aluminium and glass. For each, this is the typical baseline — common failure
+            modes, recommended specification, and the{' '}
             <span className="font-semibold text-white">
-              campaign life, energy savings, downtime reduction
+              expected outcome range with 2026 Indian-market pricing economics
             </span>
-            . Reviewed by Rahul Taneja, Director &amp; Refractory Engineering Expert.
+            . Use them to shortlist a specification before talking to our engineering team.
+          </p>
+        </div>
+      </section>
+
+      {/* ── DISCLAIMER BANNER ──────────────────────────────────────── */}
+      <section className="bg-amber-50 border-y border-amber-200" aria-label="Editorial framing">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-start gap-3">
+          <span
+            className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-200 text-amber-900 text-xs font-bold flex-shrink-0 mt-0.5"
+            aria-hidden="true"
+          >
+            !
+          </span>
+          <p className="text-sm text-amber-900 leading-relaxed">
+            <strong>Note on framing:</strong> These are illustrative engineering reference
+            scenarios for typical application classes — they are{' '}
+            <strong>not records of specific SAPL project deliveries</strong>. The scenarios
+            describe baseline conditions, common failure modes and expected outcome ranges
+            drawn from May 2026 Indian market data and standard industry practice. Real
+            customer case studies will be published separately as signed permissions are
+            obtained. Contact our engineering team for project-specific specifications.
           </p>
         </div>
       </section>
@@ -125,38 +147,35 @@ export default function CaseStudiesIndexPage() {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-7">
-            {studies.map((cs) => (
+            {scenarios.map((s) => (
               <article
-                key={cs.slug}
+                key={s.slug}
                 className="group bg-white rounded-2xl border border-gray-200 hover:border-[#F97316]/50 hover:shadow-lg transition-all overflow-hidden"
               >
-                <Link href={`/case-studies/${cs.slug}`} className="block p-7">
+                <Link href={`/engineering-references/${s.slug}`} className="block p-7">
                   <div className="flex items-center gap-3 mb-4">
                     <span className="inline-block px-3 py-1 rounded-full bg-orange-50 text-[#F97316] text-[11px] font-bold uppercase tracking-widest">
-                      {cs.industry}
+                      {s.industry}
                     </span>
-                    {cs.year && (
-                      <span className="text-xs text-gray-400 font-semibold">{cs.year}</span>
-                    )}
                     <span className="text-xs text-gray-400">
-                      · {cs.readingTime || 5} min read
+                      · {s.readingTime || 5} min read
                     </span>
                   </div>
 
                   <h2 className="font-oswald text-xl md:text-2xl font-bold text-[#1E3A5F] leading-tight mb-3 group-hover:text-[#1E40AF] transition-colors">
-                    {cs.title}
+                    {s.title}
                   </h2>
 
-                  <p className="text-gray-500 text-sm mb-4 italic">{cs.client}</p>
+                  <p className="text-gray-500 text-sm mb-4 italic">{s.client}</p>
 
-                  {cs.metrics && (
+                  {s.metrics && (
                     <div className="grid grid-cols-2 gap-3 mb-5 pt-4 border-t border-gray-100">
-                      {Object.entries(cs.metrics)
+                      {Object.entries(s.metrics)
                         .slice(0, 4)
                         .map(([k, v]) => (
                           <div key={k} className="text-xs">
                             <p className="text-gray-400 uppercase tracking-wide font-semibold mb-0.5">
-                              {k.replace(/([A-Z])/g, ' $1').replace(/^./, (s) => s.toUpperCase())}
+                              {k.replace(/([A-Z])/g, ' $1').replace(/^./, (c) => c.toUpperCase())}
                             </p>
                             <p className="font-bold text-[#1E3A5F]">{v}</p>
                           </div>
@@ -164,18 +183,19 @@ export default function CaseStudiesIndexPage() {
                     </div>
                   )}
 
-                  {cs.keyTakeaway && (
+                  {s.keyTakeaway && (
                     <p className="text-sm text-gray-700 leading-relaxed border-l-4 border-[#F97316] pl-4 mb-4">
-                      {cs.keyTakeaway}
+                      {s.keyTakeaway}
                     </p>
                   )}
 
                   <div className="flex items-center justify-between mt-4 pt-4 border-t border-gray-100">
                     <span className="text-xs text-gray-500">
-                      Brand: <span className="font-semibold text-[#1E3A5F]">{cs.brand}</span>
+                      Recommended brand:{' '}
+                      <span className="font-semibold text-[#1E3A5F]">{s.brand}</span>
                     </span>
                     <span className="inline-flex items-center gap-1.5 text-[#F97316] font-semibold text-sm group-hover:gap-2.5 transition-all">
-                      Read full case →
+                      Read full reference →
                     </span>
                   </div>
                 </Link>
@@ -189,7 +209,7 @@ export default function CaseStudiesIndexPage() {
             </h3>
             <p className="text-gray-500 text-sm max-w-xl mx-auto mb-6">
               Our refractory engineers respond within 4 business hours. Send us your furnace
-              type, current campaign life, and failure mode — we&apos;ll come back with a
+              type, current campaign life and failure mode — we&apos;ll come back with a
               specification proposal and indicative pricing.
             </p>
             <Link
@@ -205,5 +225,4 @@ export default function CaseStudiesIndexPage() {
   );
 }
 
-// Static export — let Next.js know we have 6 + 1 prerenderable URLs
 export const dynamic = 'force-static';

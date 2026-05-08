@@ -259,6 +259,60 @@ export const PRODUCT_FAQS = {
     },
   ],
 
+  'refractory-mortars': [
+    {
+      q: 'What is a refractory mortar and what is it used for?',
+      a: 'A refractory mortar is a fine-grained bonding material used to lay refractory bricks and fill the joints between them. It is supplied as a wet ready-to-use paste or a dry powder mixed with water on site. Beyond brick laying, mortars are also used for surface finishing of cast linings, expansion joint filling, and small hot-face patch repairs. The mortar must be chemistry-matched to the brick — fireclay mortar with fireclay bricks, high alumina mortar with HA-70/80, basic mortar with magnesia bricks.',
+    },
+    {
+      q: 'What is the difference between fireclay mortar, high alumina mortar and basic mortar?',
+      a: 'Chemistry. Fireclay mortar is 30–42% Al₂O₃ with the rest silica and binder, rated to about 1400°C — used with fireclay bricks. High alumina mortar (HA-50 to HA-80) carries 50–82% Al₂O₃ to match the brick course it lays, rated up to 1750°C. Basic mortar is 85–92% MgO, used with magnesia and dolomite bricks in steel converters and cement kiln burning zones. Using the wrong chemistry creates a chemically incompatible joint that cracks, spalls or melts at temperature.',
+    },
+    {
+      q: 'What is the difference between air-setting, heat-setting and hydraulic-setting mortars?',
+      a: 'Air-setting mortars develop strength on drying at room temperature — convenient for repairs that cannot be heated. Heat-setting (ceramic-bonded) mortars are weak when laid but develop high refractoriness at 800–1000°C — used for the strongest hot-face joints. Hydraulic mortars contain calcium aluminate cement and set wet, like a fast-curing castable. We help match the setting type to your installation schedule and dry-out plan.',
+    },
+    {
+      q: 'How thick should a refractory brick joint be?',
+      a: 'Generally 1–3 mm for dense fireclay and high alumina brick courses, 1–2 mm for basic and MgO-C brick courses (where thinner is always better for slag resistance), and 3–6 mm for insulating fire bricks and acid-proof tiles. Thicker joints lower the overall lining strength and become the first failure point. Apply mortar to BOTH the bed and the brick face (buttered joint) for full contact.',
+    },
+    {
+      q: 'Do you supply acid-proof mortars for chemical plant applications?',
+      a: 'Yes. We stock furan resin mortar (best resistance to most strong acids except HF), phenolic resin mortar, and potassium silicate mortar for milder duty and high-temperature acid environments up to 1000°C. These are paired with Crown Ceramics acid-proof bricks and tiles to form the complete acid-resistant lining system, including grout and primer.',
+    },
+    {
+      q: 'Which brands of refractory mortar do you supply?',
+      a: 'We are an authorised dealer for Mahakoshal Refractories — covering their full mortar range from fireclay to HA-80, basic, and insulating grades. We also stock CUMI Super Refractories and Calderys mortars for matching their proprietary brick chemistries, plus Crown Ceramics acid-proof mortars. Same-day dispatch from Delhi for standard grades.',
+    },
+  ],
+
+  'conventional-castables': [
+    {
+      q: 'What is a conventional castable and how is it different from LCC or ULCC?',
+      a: 'A conventional castable is a fireclay or low-purity high alumina aggregate bonded with 15–25% calcium aluminate cement — the original castable formulation that has been used in industrial linings for over 50 years. It is roughly half the price of an equivalent low cement castable (LCC at 3–5% cement) and one-third the price of ULCC. The trade-off: lower hot strength, higher porosity, and lower slag resistance. Right product for backup linings and low-wear zones; wrong product for steel ladle hot face.',
+    },
+    {
+      q: 'When should I specify a conventional castable instead of LCC?',
+      a: 'Use conventional castable for backup safety linings behind a working LCC or brick lining, boiler walls and roofs (non-hot-face zones), industrial waste incinerator general body, cement preheater meal chutes, foundry trough backup, and any minor repair work where the new material does not need premium hot-strength. Total cost of ownership is lower because the cheaper material is replaced more often but each replacement is cheap.',
+    },
+    {
+      q: 'What grades of conventional castable do you supply?',
+      a: 'We supply Conventional 40 (38–42% Al₂O₃, rated to 1300°C) for boiler back walls, Conventional 50 (48–52% Al₂O₃, 1400°C) for general furnace linings, Conventional 60 (58–62% Al₂O₃, 1500°C) for higher duty backup, and Conventional 70 (68–72% Al₂O₃, 1550°C) for moderate hot-face zones in incinerators and small foundry furnaces. Insulating LD-1.5 (1.50 g/cc bulk density) for backup insulation behind dense linings.',
+    },
+    {
+      q: 'Why is the water demand higher for conventional castables than LCC?',
+      a: 'More cement means more water needed to wet the cement particles for hydration — typically 8–12% water by weight versus 4.5–5.5% for LCC. The trade-off is higher porosity in the cured castable (cement hydration leaves micro-pores). For non-critical applications this porosity is acceptable; for slag-line and impact zones it is not, which is why LCC dominates those zones.',
+    },
+    {
+      q: 'How fast can I install a conventional castable lining?',
+      a: 'Conventional castables tolerate faster installation than LCC. Cast in 200–250 mm layers, vibrate for 20–30 seconds per layer, demould after 12–18 hours, and dry out at 25°C/hour to 110°C with an 8-hour soak — versus the 24-hour cure and 12-hour soak typical for LCC. A mid-size boiler sidewall job that takes 5 days with LCC can be done in 3 days with conventional castable.',
+    },
+    {
+      q: 'Which brands of conventional castable do you supply?',
+      a: 'Mahakoshal Refractories conventional grades 40 to 70, Calderys India conventional and budget castables, CUMI Super Refractories range, and Crown Ceramics for acid-proof variants. Stocked at our Delhi warehouse with pan-India dispatch and full export documentation for GCC and ASEAN customers.',
+    },
+  ],
+
   // ─── FLOW CONTROL ──────────────────────────────────────────────────────
   'slide-gate-plates': [
     {

@@ -93,7 +93,7 @@ const Footer = () => {
               {[
                 { name: "Partner Brands", path: "/brands" },
                 { name: "Technical Resources", path: "/knowledge" },
-                { name: "Case Studies", path: "/case-studies" },
+                { name: "Engineering References", path: "/engineering-references" },
                 { name: "Blog & Insights", path: "/blog" },
                 { name: "Contact Us", path: "/contact" },
               ].map((link) => (

@@ -1,13 +1,17 @@
-// /case-studies/[slug] — Individual case study detail.
+// /engineering-references/[slug] — Individual Engineering Reference Scenario.
+//
+// EDITORIAL FRAMING — IMPORTANT:
+//   These pages are illustrative reference scenarios for typical application
+//   classes. They are NOT records of specific SAPL project deliveries. Schema
+//   type is `TechArticle` to make this explicit to AI engines.
 //
 // Schema strategy:
-//   1. Article — the case study itself (problem → result narrative)
-//   2. mentions — every brand, product and industry the case study touches.
-//      AI engines use `mentions` to crystallise the entity graph: this case
-//      study mentions LCC, steel ladles, Calderys, etc. Multi-hop reasoning
-//      ("which dealer has Calderys LCC case studies?") becomes possible.
-//   3. author + reviewedBy — both reference Rahul Taneja's Person @id, so
-//     E-E-A-T points at a single canonical identity site-wide.
+//   1. TechArticle — technical reference content (NOT Article, which implies
+//      authored journalism on a specific event).
+//   2. mentions — every brand, product and industry the scenario touches, so
+//      AI engines can build the multi-entity graph.
+//   3. publisher = SAPL Organization (no individual author byline — these are
+//      not signed-off project records).
 //   4. Speakable — voice assistants get the headline + key takeaway.
 
 import Link from 'next/link';
@@ -28,22 +32,20 @@ export async function generateMetadata({ params }) {
   const cs = getCaseStudy(slug);
   if (!cs) {
     return {
-      title: 'Case Study Not Found',
+      title: 'Engineering Reference Not Found',
       robots: { index: false, follow: false },
     };
   }
 
   return {
     title: cs.title,
-    description: `${cs.keyTakeaway || cs.problem.slice(0, 150)} — ${cs.brand} on a ${cs.industry.toLowerCase()} application, supplied by Shanker Agencies.`,
-    alternates: { canonical: `/case-studies/${slug}` },
+    description: `${cs.keyTakeaway || cs.problem.slice(0, 150)} — ${cs.industry} application reference scenario from Shanker Agencies. Illustrative — not a record of a specific SAPL project.`,
+    alternates: { canonical: `/engineering-references/${slug}` },
     openGraph: {
       title: cs.title,
       description: cs.keyTakeaway,
-      url: `${BASE}/case-studies/${slug}`,
+      url: `${BASE}/engineering-references/${slug}`,
       type: 'article',
-      publishedTime: cs.year ? `${cs.year}-01-01T00:00:00.000Z` : undefined,
-      authors: [`${BASE}/about#rahul-taneja`],
     },
     twitter: {
       card: 'summary_large_image',
@@ -53,59 +55,49 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function CaseStudyPage({ params }) {
+export default async function EngineeringReferencePage({ params }) {
   const { slug } = await params;
   const cs = getCaseStudy(slug);
   if (!cs) notFound();
 
-  const url = `${BASE}/case-studies/${slug}`;
-  const datePublished = cs.year
-    ? `${cs.year}-01-01T00:00:00.000Z`
-    : new Date().toISOString();
-  const dateModified = new Date('2026-04-01T00:00:00.000Z').toISOString();
+  const url = `${BASE}/engineering-references/${slug}`;
+  const dateModified = new Date('2026-05-08T00:00:00.000Z').toISOString();
 
-  // ─── Article + mentions schema ──────────────────────────────────────────
-  // Each product, brand and industry touched by this case study is wired
-  // up as a `mentions` reference, so AI engines (and Google) can build the
-  // multi-entity graph: this study mentions [LCC product] supplied by
-  // [Calderys brand] for a [steel industry] customer.
+  // ─── TechArticle schema ──────────────────────────────────────────────
+  // Using TechArticle (not Article) — this is reference material describing a
+  // typical application class, not authored journalism about a specific event
+  // or project. The publisher is the SAPL Organization; no Person author
+  // byline (these are not signed-off case studies).
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
-    '@id': `${url}#article`,
+    '@type': 'TechArticle',
+    '@id': `${url}#reference`,
     headline: cs.title,
     name: cs.title,
     url,
-    datePublished,
     dateModified,
     inLanguage: 'en-IN',
     isPartOf: { '@id': `${BASE}/#website` },
     publisher: { '@id': `${BASE}/#organization` },
-    author: { '@id': `${BASE}/about#rahul-taneja` },
-    reviewedBy: { '@id': `${BASE}/about#rahul-taneja` },
+    author: { '@id': `${BASE}/#organization` },
     description: cs.keyTakeaway || cs.problem.slice(0, 200),
-    articleSection: cs.industry,
+    articleSection: `${cs.industry} — Refractory Application Reference`,
+    proficiencyLevel: 'Expert',
     keywords: [
       cs.industry,
       cs.brand,
       ...(cs.products || []).map((p) => p.name),
-      'refractory case study',
-      'plant outcome',
-      'campaign life',
+      'refractory engineering reference',
+      'application scenario',
+      'expected outcome range',
     ].join(', '),
     mentions: [
-      // Industry mention
       {
         '@type': 'Thing',
         name: `${cs.industry} industry refractories`,
         url: `${BASE}/industries/${cs.industrySlug}`,
       },
-      // Brand mention — references the Brand sub-page
-      {
-        '@type': 'Brand',
-        name: cs.brand,
-      },
-      // Product mentions — each one as a Product reference
+      { '@type': 'Brand', name: cs.brand },
       ...(cs.products || []).map((p) => ({
         '@type': 'Product',
         name: p.name,
@@ -116,12 +108,11 @@ export default async function CaseStudyPage({ params }) {
       '@type': 'SpeakableSpecification',
       cssSelector: ['[data-speakable="true"]', 'h1', 'h2'],
     },
-    about: [
-      {
-        '@type': 'Organization',
-        '@id': `${BASE}/#organization`,
-      },
-    ],
+    about: [{ '@type': 'Organization', '@id': `${BASE}/#organization` }],
+    // Explicit disclosure inside the schema itself, so AI engines reading the
+    // structured data understand the framing.
+    disambiguatingDescription:
+      'Illustrative reference scenario for a typical application class. Not a record of a specific SAPL project delivery. Outcome ranges based on May 2026 Indian market data and standard industry practice.',
   };
 
   const breadcrumbSchema = {
@@ -132,15 +123,10 @@ export default async function CaseStudyPage({ params }) {
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Case Studies',
-        item: `${BASE}/case-studies`,
+        name: 'Engineering References',
+        item: `${BASE}/engineering-references`,
       },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: cs.title,
-        item: url,
-      },
+      { '@type': 'ListItem', position: 3, name: cs.title, item: url },
     ],
   };
 
@@ -154,6 +140,29 @@ export default async function CaseStudyPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+
+      {/* ── DISCLAIMER BANNER (above the fold) ──────────────────────── */}
+      <section
+        className="bg-amber-50 border-b border-amber-200"
+        aria-label="Editorial framing"
+      >
+        <div className="max-w-4xl mx-auto px-4 py-3 flex items-start gap-3">
+          <span
+            className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-amber-200 text-amber-900 text-xs font-bold flex-shrink-0 mt-0.5"
+            aria-hidden="true"
+          >
+            !
+          </span>
+          <p className="text-sm text-amber-900 leading-relaxed">
+            <strong>Engineering reference scenario — not a project record.</strong> This
+            page describes a typical application class and the expected outcome range
+            from correctly specified refractory. It is{' '}
+            <strong>not a record of a specific SAPL project delivery</strong>. Real
+            customer case studies will be published separately as signed permissions are
+            obtained. Contact our engineering team for project-specific specifications.
+          </p>
+        </div>
+      </section>
 
       {/* ── HERO ─────────────────────────────────────────────────────── */}
       <section
@@ -169,13 +178,13 @@ export default async function CaseStudyPage({ params }) {
               Home
             </Link>{' '}
             ›{' '}
-            <Link href="/case-studies" className="hover:text-white">
-              Case Studies
+            <Link href="/engineering-references" className="hover:text-white">
+              Engineering References
             </Link>{' '}
             › <span className="text-white/70">{cs.industry}</span>
           </nav>
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-xs font-medium tracking-widest uppercase mb-5">
-            {cs.industry} · {cs.year} · {cs.readingTime || 5} min read
+            {cs.industry} · Reference Scenario · {cs.readingTime || 5} min read
           </span>
           <h1
             className="font-oswald text-3xl md:text-5xl font-bold text-white leading-tight mb-5"
@@ -183,24 +192,29 @@ export default async function CaseStudyPage({ params }) {
           >
             {cs.title}
           </h1>
-          <p className="text-blue-100 text-lg leading-relaxed">
-            <span className="font-semibold text-white">Client:</span> {cs.client}
-          </p>
-          <p className="text-blue-100 text-lg leading-relaxed">
-            <span className="font-semibold text-white">Brand:</span> {cs.brand}
+          <p className="text-blue-100 text-lg leading-relaxed">{cs.client}</p>
+          <p className="text-blue-100 text-base leading-relaxed mt-2">
+            <span className="font-semibold text-white">Recommended brand class:</span>{' '}
+            {cs.brand}
           </p>
         </div>
       </section>
 
       {/* ── HEADLINE METRICS BAND ───────────────────────────────────── */}
       {cs.metrics && (
-        <section className="py-10 px-4 bg-[#F97316]" aria-label="Key outcome metrics">
+        <section
+          className="py-10 px-4 bg-[#F97316]"
+          aria-label="Expected outcome ranges"
+        >
           <div className="max-w-5xl mx-auto">
+            <p className="text-white/90 text-center text-xs font-bold uppercase tracking-widest mb-6">
+              Expected outcome ranges (illustrative — not project results)
+            </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
               {Object.entries(cs.metrics).map(([k, v]) => (
                 <div key={k} className="text-center">
                   <p className="text-white/80 text-[10px] font-bold uppercase tracking-widest mb-1">
-                    {k.replace(/([A-Z])/g, ' $1').replace(/^./, (s) => s.toUpperCase())}
+                    {k.replace(/([A-Z])/g, ' $1').replace(/^./, (c) => c.toUpperCase())}
                   </p>
                   <p
                     className="font-oswald text-2xl md:text-3xl font-bold text-white leading-tight"
@@ -221,7 +235,7 @@ export default async function CaseStudyPage({ params }) {
           {/* Problem */}
           <section className="mb-10">
             <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-4 border-l-4 border-[#F97316] pl-4">
-              The Problem
+              Typical Baseline
             </h2>
             <p className="text-gray-700 leading-relaxed">{cs.problem}</p>
           </section>
@@ -230,7 +244,7 @@ export default async function CaseStudyPage({ params }) {
           {cs.diagnosis?.length > 0 && (
             <section className="mb-10">
               <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-4 border-l-4 border-[#3B82F6] pl-4">
-                Diagnosis
+                Diagnostic Pattern
               </h2>
               <ul className="space-y-2 list-disc pl-5">
                 {cs.diagnosis.map((d, i) => (
@@ -246,7 +260,7 @@ export default async function CaseStudyPage({ params }) {
           {cs.specification?.length > 0 && (
             <section className="mb-10 bg-blue-50 border border-blue-100 rounded-2xl p-7">
               <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-4">
-                Specification (As Supplied)
+                Recommended Specification
               </h2>
               <ul className="space-y-2 list-disc pl-5">
                 {cs.specification.map((s, i) => (
@@ -262,7 +276,7 @@ export default async function CaseStudyPage({ params }) {
           {cs.installation?.length > 0 && (
             <section className="mb-10">
               <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-4 border-l-4 border-amber-500 pl-4">
-                Installation Notes
+                Installation Best-Practice
               </h2>
               <ol className="space-y-3 list-decimal pl-5">
                 {cs.installation.map((step, i) => (
@@ -274,12 +288,16 @@ export default async function CaseStudyPage({ params }) {
             </section>
           )}
 
-          {/* Result */}
+          {/* Result — reframed as Expected Outcome Range */}
           {cs.result?.length > 0 && (
             <section className="mb-10 bg-green-50 border border-green-100 rounded-2xl p-7">
-              <h2 className="font-oswald text-2xl font-bold text-green-900 mb-4">
-                Result
+              <h2 className="font-oswald text-2xl font-bold text-green-900 mb-2">
+                Expected Outcome Range
               </h2>
+              <p className="text-xs text-green-800 italic mb-4">
+                Illustrative — not project results. Actual outcomes vary with operating
+                conditions and installation quality.
+              </p>
               <ul className="space-y-2 list-disc pl-5">
                 {cs.result.map((r, i) => (
                   <li
@@ -310,7 +328,7 @@ export default async function CaseStudyPage({ params }) {
           {cs.products?.length > 0 && (
             <section className="mb-10">
               <h2 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-4">
-                Products Used in This Case
+                Products Referenced in This Scenario
               </h2>
               <div className="flex flex-wrap gap-3">
                 {cs.products.map((p) => (
@@ -326,27 +344,17 @@ export default async function CaseStudyPage({ params }) {
             </section>
           )}
 
-          {/* Author byline + reviewed-by */}
-          <footer className="mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
+          {/* Disclaimer footer */}
+          <footer className="mt-12 pt-6 border-t border-gray-200 text-xs text-gray-500 italic">
             <p>
-              Reviewed by{' '}
-              <Link
-                href="/about#leadership"
-                rel="author"
-                className="font-semibold text-[#1E3A5F] underline decoration-[#F97316]/40 underline-offset-2 hover:decoration-[#F97316]"
-              >
-                Rahul Taneja, Director &amp; Refractory Engineering Expert
-              </Link>{' '}
-              · Last reviewed: April 2026
-            </p>
-            <p className="mt-2 text-xs italic">
-              Client name anonymised on request. Financial figures (₹ and USD) shown are
-              typical industry ranges drawn from May 2026 market data and comparable plant
-              installations — your specific outcome will vary with operating conditions,
-              fuel mix, alloy grade, market pricing and installation quality. USD
-              equivalents calculated at ₹94.5 per USD (May 2026 rate). Contact our
-              engineering team for a project-specific specification and indicative
-              pricing.
+              This page is an illustrative engineering reference scenario for a typical
+              application class — not a record of a specific SAPL project delivery.
+              Financial figures (₹ and USD) are typical industry ranges drawn from May
+              2026 market data and standard industry practice. USD equivalents calculated
+              at ₹94.5 per USD (May 2026 rate). Your specific outcome will vary with
+              operating conditions, fuel mix, alloy grade, market pricing and installation
+              quality. Contact our engineering team for a project-specific specification
+              and indicative pricing.
             </p>
           </footer>
         </div>
@@ -365,8 +373,8 @@ export default async function CaseStudyPage({ params }) {
           </h2>
           <p className="text-blue-100 mb-8 text-base leading-relaxed">
             Send us your furnace type, current campaign life, and failure mode. Our
-            engineers will come back with a specification proposal and indicative
-            pricing within 4 business hours.
+            engineers will come back with a project-specific specification proposal and
+            indicative pricing within 4 business hours.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <Link
@@ -376,10 +384,10 @@ export default async function CaseStudyPage({ params }) {
               Talk to a Refractory Engineer →
             </Link>
             <Link
-              href="/case-studies"
+              href="/engineering-references"
               className="inline-flex items-center gap-2 bg-transparent border-2 border-white/40 hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold transition-colors"
             >
-              ← Back to All Case Studies
+              ← Back to All References
             </Link>
           </div>
         </div>

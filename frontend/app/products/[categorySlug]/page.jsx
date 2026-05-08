@@ -84,8 +84,12 @@ export default async function ProductCategoryPage({ params }) {
     'fireclay': ['fireclay-bricks', 'fireclay'],
     'ifb': ['insulating-fire-bricks', 'ifb'],
     'basic': ['magnesia-bricks', 'magnesia-carbon-bricks', 'basic'],
-    'ramming': ['ramming-mass', 'silica-ramming-mass'],
-    'ceramic-fiber': ['ceramic-fiber-blanket', 'ceramic-fiber-modules', 'ceramic-fiber'],
+    'ramming': ['ramming-mass', 'silica-ramming-mass', 'ramming-masses'],
+    'gunning': ['gunning-materials', 'gunning-mass'],
+    'ceramic-fiber': ['ceramic-fiber-blanket', 'ceramic-fiber-modules', 'ceramic-fiber', 'ceramic-fiber-products'],
+    'mortars': ['refractory-mortars', 'mortars'],
+    'fireclay-castables': ['conventional-castables', 'fireclay-castables', 'conventional-castable'],
+    'conventional': ['conventional-castables', 'conventional-castable'],
   };
 
   function findFamilyForProduct(productId) {

@@ -1,95 +1,167 @@
 /**
- * IndexNow submission endpoint
- * POST /api/indexnow  — submits a list of URLs to Bing/Yandex for instant indexing
+ * IndexNow submission endpoint — pings Bing + IndexNow on demand.
  *
- * Usage (from sitemap updates, CMS hooks, or manual trigger):
- *   fetch('/api/indexnow', {
- *     method: 'POST',
- *     headers: { 'Content-Type': 'application/json' },
- *     body: JSON.stringify({ urls: ['https://www.shankeragencies.com/blog/new-post'] })
- *   })
+ * Routes:
+ *   POST /api/indexnow
+ *     Body: { urls: string[] }   — submit a specific list of URLs
+ *     Body: {}                   — submit ALL site URLs (sitemap)
+ *   GET  /api/indexnow
+ *     No body                    — submit ALL site URLs (manual trigger)
+ *
+ * Why call this:
+ *   - Bing crawls slowly without IndexNow. ChatGPT, Copilot and Perplexity
+ *     all rely on Bing's index for citations of www.shankeragencies.com.
+ *   - With Bing Webmaster Tools verified (May 2026, via GSC import) the
+ *     IndexNow pings are honoured immediately.
+ *
+ * After every production deploy, call:
+ *   curl https://www.shankeragencies.com/api/indexnow
+ *
+ * Or wire as a Vercel deploy hook so it fires automatically.
  */
+
+import { LOCATIONS_DATA } from '@/data/locationsData';
+import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { PRODUCT_SEO } from '@/data/productsSeoData';
+import { CASE_STUDIES } from '@/data/caseStudiesData';
 
 const INDEX_NOW_KEY = '68c9e978104b40548276dada2151c101';
 const HOST = 'www.shankeragencies.com';
-const KEY_LOCATION = `https://${HOST}/${INDEX_NOW_KEY}.txt`;
+const BASE = `https://${HOST}`;
+const KEY_LOCATION = `${BASE}/${INDEX_NOW_KEY}.txt`;
 
-// Submit all sitemap URLs — call this after any content deployment
-const ALL_SITE_URLS = [
-  'https://www.shankeragencies.com/',
-  'https://www.shankeragencies.com/about',
-  'https://www.shankeragencies.com/contact',
-  'https://www.shankeragencies.com/products',
-  'https://www.shankeragencies.com/blog',
-  'https://www.shankeragencies.com/refractory-supplier-in/delhi',
-  'https://www.shankeragencies.com/refractory-supplier-in/mumbai',
-  'https://www.shankeragencies.com/refractory-supplier-in/pune',
-  'https://www.shankeragencies.com/refractory-supplier-in/ahmedabad',
-  'https://www.shankeragencies.com/refractory-supplier-in/chennai',
-  'https://www.shankeragencies.com/refractory-supplier-in/hyderabad',
-  'https://www.shankeragencies.com/refractory-supplier-in/kolkata',
-  'https://www.shankeragencies.com/refractory-supplier-in/jamshedpur',
-  'https://www.shankeragencies.com/refractory-supplier-in/raipur',
-  'https://www.shankeragencies.com/refractory-supplier-in/surat',
-];
+// Build the same URL list the sitemap generates — single source of truth.
+function buildAllUrls() {
+  const urls = new Set();
+
+  // Structural pages (no trailing slash to match canonical)
+  [
+    '',
+    '/about',
+    '/products',
+    '/brands',
+    '/industries',
+    '/solutions',
+    '/knowledge',
+    '/blog',
+    '/engineering-references',
+    '/contact',
+    '/company-profile',
+    '/refractory-supplier-in',
+    '/downloads',
+  ].forEach((p) => urls.add(`${BASE}${p}`));
+
+  // Product categories
+  [
+    'shaped-refractories',
+    'unshaped-refractories',
+    'flow-control',
+    'insulation',
+    'acid-proofing',
+  ].forEach((slug) => urls.add(`${BASE}/products/${slug}`));
+
+  // Product detail pages
+  PRODUCT_SEO.forEach(({ categorySlug, productId }) => {
+    urls.add(`${BASE}/products/${categorySlug}/${productId}`);
+  });
+
+  // Industries + Solutions
+  ['steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic']
+    .forEach((slug) => {
+      urls.add(`${BASE}/industries/${slug}`);
+      urls.add(`${BASE}/solutions/${slug}`);
+    });
+
+  // Brands
+  ['cumi', 'calderys', 'trl-krosaki', 'ifgl', 'mahakoshal', 'divine-cerawool', 'crown-ceramics']
+    .forEach((slug) => urls.add(`${BASE}/brands/${slug}`));
+
+  // Geo locations (50+)
+  LOCATIONS_DATA.forEach((loc) => {
+    urls.add(`${BASE}/refractory-supplier-in/${loc.slug}`);
+  });
+
+  // Blog posts
+  BLOG_POSTS_DATA.forEach((post) => {
+    urls.add(`${BASE}/blog/${post.slug}`);
+  });
+
+  // Engineering reference scenarios
+  CASE_STUDIES.forEach((cs) => {
+    urls.add(`${BASE}/engineering-references/${cs.slug}`);
+  });
+
+  return Array.from(urls);
+}
+
+async function submitToIndexNow(urls) {
+  const payload = {
+    host: HOST,
+    key: INDEX_NOW_KEY,
+    keyLocation: KEY_LOCATION,
+    urlList: urls,
+  };
+
+  // Submit to Bing IndexNow (primary — ChatGPT/Copilot/Perplexity build on
+  // Bing's index for the Microsoft AI stack)
+  const bingResponse = await fetch('https://www.bing.com/indexnow', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: JSON.stringify(payload),
+  });
+
+  // Submit to neutral IndexNow API (forwards to Yandex, Seznam, Naver)
+  const indexNowResponse = await fetch('https://api.indexnow.org/indexnow', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json; charset=utf-8' },
+    body: JSON.stringify(payload),
+  });
+
+  return {
+    bing_status: bingResponse.status,
+    indexnow_status: indexNowResponse.status,
+  };
+}
 
 export async function POST(request) {
   try {
     const body = await request.json().catch(() => ({}));
-    const urls = body.urls || ALL_SITE_URLS;
+    const urls = body.urls || buildAllUrls();
 
-    // Submit to Bing IndexNow
-    const bingResponse = await fetch('https://www.bing.com/indexnow', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({
-        host: HOST,
-        key: INDEX_NOW_KEY,
-        keyLocation: KEY_LOCATION,
-        urlList: urls,
-      }),
-    });
-
-    // Also submit to IndexNow API (shared across Yandex, Seznam, etc.)
-    const indexNowResponse = await fetch('https://api.indexnow.org/indexnow', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({
-        host: HOST,
-        key: INDEX_NOW_KEY,
-        keyLocation: KEY_LOCATION,
-        urlList: urls,
-      }),
-    });
+    const { bing_status, indexnow_status } = await submitToIndexNow(urls);
 
     return Response.json({
       success: true,
       urls_submitted: urls.length,
-      bing_status: bingResponse.status,
-      indexnow_status: indexNowResponse.status,
+      bing_status,
+      indexnow_status,
+      message: `Submitted ${urls.length} URLs to Bing + IndexNow`,
     });
   } catch (error) {
-    return Response.json({ success: false, error: error.message }, { status: 500 });
+    return Response.json(
+      { success: false, error: error.message },
+      { status: 500 }
+    );
   }
 }
 
-// GET — trigger full-site submission (call from Vercel deployment hook or manually)
+// GET — convenient manual trigger from a browser or curl.
 export async function GET() {
-  const response = await fetch('https://www.bing.com/indexnow', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json; charset=utf-8' },
-    body: JSON.stringify({
-      host: HOST,
-      key: INDEX_NOW_KEY,
-      keyLocation: KEY_LOCATION,
-      urlList: ALL_SITE_URLS,
-    }),
-  });
+  try {
+    const urls = buildAllUrls();
+    const { bing_status, indexnow_status } = await submitToIndexNow(urls);
 
-  return Response.json({
-    success: true,
-    urls_submitted: ALL_SITE_URLS.length,
-    bing_status: response.status,
-    message: `Submitted ${ALL_SITE_URLS.length} URLs to IndexNow`,
-  });
+    return Response.json({
+      success: true,
+      urls_submitted: urls.length,
+      bing_status,
+      indexnow_status,
+      message: `Submitted ${urls.length} URLs to Bing + IndexNow`,
+    });
+  } catch (error) {
+    return Response.json(
+      { success: false, error: error.message },
+      { status: 500 }
+    );
+  }
 }

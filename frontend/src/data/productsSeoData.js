@@ -123,6 +123,20 @@ export const PRODUCT_SEO = [
     metaTitle: "Acid Resistant Floor Tiles for Chemical Plants | Crown Ceramics | Shanker Agencies",
     metaDescription: "Acid resistant floor & wall tiles for chemical plant flooring, drainage channels & secondary containment. Crown Ceramics authorized supply. Complete installation system available from SAPL.",
   },
+  {
+    categorySlug: "unshaped-refractories",
+    productId: "refractory-mortars",
+    name: "Refractory Mortars (Fireclay, High Alumina, Basic, Acid-Proof)",
+    metaTitle: "Refractory Mortars: Fireclay, High Alumina, Basic & Acid-Proof | Mahakoshal | Shanker Agencies",
+    metaDescription: "Refractory mortars for brick jointing — fireclay, HA-50/70/80 high alumina, basic magnesia, insulating and acid-proof grades. Mahakoshal authorized dealer. Pan-India delivery from Delhi.",
+  },
+  {
+    categorySlug: "unshaped-refractories",
+    productId: "conventional-castables",
+    name: "Conventional Castables (Fireclay-Based, 15–25% Cement)",
+    metaTitle: "Conventional Castables (Fireclay-Based) | Mahakoshal & Calderys | Shanker Agencies",
+    metaDescription: "Cost-effective fireclay-based conventional castables (40–70% Al₂O₃, 15–25% cement) for backup linings, boilers, and general furnace applications. Mahakoshal & Calderys grades. India + GCC export.",
+  },
 ];
 
 export function getProductSeo(categorySlug, productId) {

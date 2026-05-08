@@ -49,6 +49,10 @@ export const PRODUCTS_DATA = [
   { id: 33, name: "Zircon Brick", brand: "Calderys", category: "shaped", subcategory: "zircon", type: "Zircon Brick", temp: "1650°C", al2o3: "-", density: "3.4-3.8 g/cc", use: "Glass contact zones, steel ladle slag lines", features: "Excellent slag resistance, Low thermal expansion", pdfUrl: null, image: null },
   { id: 34, name: "Alumina-Carbon Brick", brand: "TRL Krosaki", category: "shaped", subcategory: "alumina-carbon", type: "Alumina Carbon", temp: "1700°C", al2o3: "70-85%", density: "2.8-3.2 g/cc", use: "Steel ladle slag zones, torpedo cars", features: "Excellent slag resistance, Thermal shock resistant", pdfUrl: null, image: null },
   { id: 35, name: "MgO-C Brick", brand: "TRL Krosaki", category: "shaped", subcategory: "mgo-c", type: "Magnesia Carbon", temp: "1800°C", al2o3: "-", density: "2.8-3.1 g/cc", use: "Steel converters, EAF, ladle slag lines", features: "Superior slag resistance, Excellent thermal shock, High hot strength", pdfUrl: null, image: null },
+
+  // UNSHAPED — added per Mahakoshal product line
+  { id: 36, name: "Refractory Mortars", brand: "Mahakoshal", category: "unshaped", subcategory: "refractory-mortars", type: "Refractory Mortar", temp: "1750°C", al2o3: "30-95%", density: "1.85-2.70 g/cc", use: "Brick jointing, surface finishing, expansion joint fill", features: "Air-set / heat-set / hydraulic grades, Chemistry-matched to brick, Fine-grained", pdfUrl: null, image: null },
+  { id: 37, name: "Conventional Castables (Fireclay-Based)", brand: "Mahakoshal", category: "unshaped", subcategory: "conventional-castables", type: "Conventional Castable", temp: "1500°C", al2o3: "38-72%", density: "2.20-2.55 g/cc", use: "Backup linings, boiler walls, foundry trough, repair work", features: "Cost-effective, Fast install, Easy to repair", pdfUrl: null, image: null },
 ];
 
 export const BRANDS = [
