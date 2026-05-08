@@ -340,9 +340,13 @@ export default async function CaseStudyPage({ params }) {
               · Last reviewed: April 2026
             </p>
             <p className="mt-2 text-xs italic">
-              Client name anonymised on request. Project metrics quoted are typical ranges
-              from comparable installations and may vary with your specific operating
-              conditions. Contact our engineering team for a project-specific specification.
+              Client name anonymised on request. Financial figures (₹ and USD) shown are
+              typical industry ranges drawn from May 2026 market data and comparable plant
+              installations — your specific outcome will vary with operating conditions,
+              fuel mix, alloy grade, market pricing and installation quality. USD
+              equivalents calculated at ₹94.5 per USD (May 2026 rate). Contact our
+              engineering team for a project-specific specification and indicative
+              pricing.
             </p>
           </footer>
         </div>
