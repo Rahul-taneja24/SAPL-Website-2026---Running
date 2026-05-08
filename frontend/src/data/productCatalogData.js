@@ -13,39 +13,56 @@
 // duplicating constants.
 
 /* ─── CURATED IMAGE MAP ─────────────────────────────────────────────────── */
-/* CUMI = official product images from cumi-murugappa.com (authorized dealer) */
+/*
+ * Path B image curation (May 2026):
+ *  - Mahakoshal product photos: mahakoshalrefractories.com/wp-content/uploads/2025/...
+ *    (SAPL is authorised dealer — direct links to manufacturer's published assets)
+ *  - CUMI product photos: cumi-murugappa.com/refractories/wp-content/uploads/...
+ *    (SAPL is authorised dealer — official product photo library)
+ *  - IFGL product photos: ifglgroup.com/wp-content/uploads/...
+ *    (SAPL is supply partner — official 2025 product line photos)
+ *  - Unsplash retained ONLY where no authorised brand alternative exists, and
+ *    only for sector-relevant industrial shots (not generic factory pics).
+ */
 export const IMG = {
-  /* ── category heroes — wide dramatic industrial shots ── */
-  shapedHero: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=90',
-  unshapedHero: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1600&q=90',
-  flowHero: 'https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1600&q=90',
-  insulHero: 'https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1600&q=90',
+  /* ── category heroes — sector-relevant industrial shots ── */
+  shapedHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg',
+  unshapedHero: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
+  flowHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladel-Well-Block-new.png',
+  insulHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
   acidHero: 'https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=1600&q=90',
 
   /* ── shaped refractory product images ── */
   highAlumina1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg',
-  highAlumina2: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=900&q=90',
+  highAlumina2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/11/01_0004_Layer-1-1-e1762597034449.jpg',
   highAlumina3: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90',
   fireclay1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete-2.jpg',
-  fireclay2: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=90',
+  fireclay2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/Fireclay-High-Alumina-Mortar-1.png',
   ifb1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
-  ifb2: 'https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=900&q=90',
-  basicBricks1: 'https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=900&q=90',
-  basicBricks2: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90',
+  ifb2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/insulating-bricks.png',
+  basicBricks1: 'https://ifglgroup.com/wp-content/uploads/2025/08/magnesia-carbon-alumina-magnesia-carbon-refractory-bricks-1.webp',
+  basicBricks2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg',
   sic1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Zircon-and-Zirconia-Mullite-1.jpg',
 
   /* ── unshaped refractory product images ── */
   lcc1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
-  lcc2: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=900&q=90',
+  lcc2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
   ulcc1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg',
   ramming1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiplascast-1-1.jpg',
   gunning1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg',
+  gunning2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
+  // New products (Mahakoshal authorised dealer line)
+  mortars1: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/Fireclay-High-Alumina-Mortar-1.png',
+  mortars2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
+  conventional1: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
+  conventional2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete.jpg',
 
   /* ── flow control product images ── */
-  slideGate1: 'https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=900&q=90',
+  slideGate1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladel-Well-Block-new.png',
   slideGate2: 'https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=900&q=90',
   shroud1: 'https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=900&q=90',
   porous1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumira-1.jpg',
+  porous2: 'https://ifglgroup.com/wp-content/uploads/2025/03/Housing_Block_Plug_new-1-1.png',
 
   /* ── insulation product images ── */
   ceramicFiber1: 'https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=900&q=90',
@@ -60,7 +77,7 @@ export const IMG = {
 
   /* ── industry reference images ── */
   steel: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=700&q=85',
-  cement: 'https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=700&q=85',
+  cement: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg',
   aluminum: 'https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=700&q=85',
   glass: 'https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=700&q=85',
   petro: 'https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=700&q=85',
@@ -421,7 +438,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Pneumatically applied repair mixes — minimise downtime with in-situ hot repairs',
         fullDesc: 'Gunning materials are specially formulated to be applied by pneumatic gunning equipment, typically while the vessel is still hot. They are the fastest way to extend vessel campaign life by repairing eroded zones without a full re-lining shutdown, saving significant production time and cost.',
         tempMax: '1700°C',
-        images: [IMG.gunning1],
+        images: [IMG.gunning1, IMG.gunning2],
         grades: ['LC Gun Mix', 'HA Gun Mix', 'Mag Gun Mix', 'Silica Gun Mix'],
         applications: [
           'Ladle hot-face repair between campaigns',
@@ -461,7 +478,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'High alumina, fireclay, basic and acid-proof mortars for jointing, finishing and minor repair work',
         fullDesc: 'Refractory mortars are fine-grained bonding materials used to lay refractory bricks, fill expansion joints, and repair small areas of furnace lining. The right mortar matches the brick chemistry — fireclay mortars for fireclay bricks, high alumina mortars for high alumina linings, basic mortars for magnesia and dolomite zones — so the joint chemistry stays consistent with the surrounding refractory mass. Available in air-setting, heat-setting (ceramic-bonded) and hydraulic-setting variants depending on the application.',
         tempMax: '1750°C',
-        images: [IMG.lcc1, IMG.fireclay1],
+        images: [IMG.mortars1, IMG.mortars2],
         grades: ['Fireclay Mortar', '50% Al₂O₃ Mortar', '70% Al₂O₃ Mortar', '80% Al₂O₃ Mortar', 'Magnesia Mortar', 'Insulating Mortar', 'Acid-Proof Mortar (Furan / Potassium Silicate)'],
         applications: [
           'Brick jointing and bedding for refractory linings',
@@ -507,7 +524,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Cost-effective fireclay-based castables (15–25% cement) for general furnace linings and backup applications',
         fullDesc: 'Conventional castables are the workhorse monolithic refractories for general industrial applications — fireclay-based or low-purity high alumina aggregates bonded with 15–25% calcium aluminate cement. They cost roughly half what an equivalent LCC costs and install faster (no special vibration or extended cure required), making them the right specification for backup linings, low-wear zones, and repair work where premium hot-strength is not required. Indian foundries, boiler plants and cement preheater backup zones still consume large volumes of conventional castables every year.',
         tempMax: '1500°C',
-        images: [IMG.fireclay1, IMG.lcc2],
+        images: [IMG.conventional1, IMG.conventional2],
         grades: ['40% Al₂O₃ Conventional Castable', '50% Al₂O₃ Conventional Castable', '60% Al₂O₃ Conventional Castable', '70% Al₂O₃ Conventional Castable', 'Insulating Castable (LD-1.5)'],
         applications: [
           'Backup linings behind LCC / dense brick working linings',
@@ -674,7 +691,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Enable argon gas stirring for steel homogenisation and inclusion flotation',
         fullDesc: 'Porous plugs are installed in the ladle bottom and connected to an argon gas supply. Bubbling argon through the steel bath stirs the melt, homogenises temperature and chemistry, promotes inclusion flotation, and reduces total oxygen content — directly improving finished steel cleanliness and mechanical properties.',
         tempMax: '1650°C',
-        images: [IMG.porous1, IMG.slideGate1],
+        images: [IMG.porous1, IMG.porous2],
         applications: [
           'Ladle bottom stirring — all steel grades',
           'Secondary metallurgy (LF, VD, VOD)',

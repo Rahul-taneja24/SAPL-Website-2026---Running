@@ -54,7 +54,7 @@ const Footer = () => {
 
             {/* Social icons */}
             <div className="flex gap-3" aria-label="Social media links">
-              <a href="https://linkedin.com/company/shankeragencies" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#0077B5] transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/shanker-agencies-private-limited/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#0077B5] transition-colors" aria-label="LinkedIn">
                 <Linkedin size={16} aria-hidden="true" />
               </a>
               <a href="https://twitter.com/shankeragencies" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#1DA1F2] transition-colors" aria-label="Twitter / X">

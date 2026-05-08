@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import { Toaster } from 'sonner';
 import { AppProvider } from '@/context/AppContext';
 import Navbar from '@/components/Navbar';
@@ -6,6 +7,12 @@ import ScrollToTop from '@/components/ScrollToTop';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import { ScrollRevealManager, ScrollProgressBar } from '@/components/ScrollAnimations';
 import './globals.css';
+
+// Google Analytics 4 measurement ID. Doubles as the Google Tag.
+// Configured in Google Tag Manager (account 6037325274, container 82833404)
+// — but installed directly via gtag.js since SAPL doesn't need a full GTM
+// container for one site.
+const GA_MEASUREMENT_ID = 'G-TJJH0RD6ZC';
 
 export const metadata = {
   metadataBase: new URL('https://www.shankeragencies.com'),
@@ -233,8 +240,10 @@ export default function RootLayout({ children }) {
                 'https://www.bing.com/maps?ss=ypid.YN4070x7110777838778892043',
                 // Apple Business Connect listing
                 'https://maps.apple/p/0~tnc_7sCut830',
-                // Social profiles
-                'https://www.linkedin.com/company/shankeragencies',
+                // LinkedIn Company Page (verified, May 2026)
+                // — single highest-impact authority signal in the audit (H1)
+                'https://www.linkedin.com/company/shanker-agencies-private-limited/',
+                // Other social profiles
                 'https://www.facebook.com/shankeragencies',
                 'https://twitter.com/shankeragencies',
                 'https://www.instagram.com/shankeragencies',
@@ -299,6 +308,26 @@ export default function RootLayout({ children }) {
         {/* WebPage schema is added per-page to avoid incorrect homepage URL on all routes */}
       </head>
       <body>
+        {/* Google Tag (gtag.js) — load after page is interactive so it
+            doesn't block LCP. Captures organic traffic, AI-engine referrals
+            (ChatGPT, Perplexity, Bing Copilot user-agents) and form
+            conversion events. */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+              anonymize_ip: true,
+            });
+          `}
+        </Script>
+
         <AppProvider>
           <ScrollProgressBar />
           <ScrollRevealManager />
