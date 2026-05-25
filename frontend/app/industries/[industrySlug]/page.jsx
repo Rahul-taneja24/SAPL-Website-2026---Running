@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import Industries from '@/sections/Industries';
 
 const INDUSTRY_DATA = {
@@ -50,6 +51,9 @@ const INDUSTRY_DATA = {
     brands: ['CUMI', 'Divine Cerawool', 'Crown Ceramics'],
   },
 };
+
+// Only the eight known industries are valid — any other slug returns a real 404.
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return Object.keys(INDUSTRY_DATA).map((industrySlug) => ({ industrySlug }));
@@ -164,6 +168,7 @@ function buildIndustryJsonLd(slug, data) {
 export default async function IndustryDetailPage({ params }) {
   const { industrySlug } = await params;
   const data = INDUSTRY_DATA[industrySlug];
+  if (!data) notFound();
   const jsonLd = buildIndustryJsonLd(industrySlug, data);
   return (
     <>

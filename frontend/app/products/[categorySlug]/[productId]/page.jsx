@@ -1,8 +1,13 @@
+import { notFound } from 'next/navigation';
 import Products from '@/sections/Products';
 import { PRODUCT_CATALOG } from '@/data/productCatalogData';
 import { PRODUCT_SEO, getProductSeo } from '@/data/productsSeoData';
 import { PRODUCTS_DATA } from '@/data/productsData';
 import { getProductFaqs } from '@/data/productFaqsData';
+
+// Return a real 404 for any product URL not in generateStaticParams,
+// instead of rendering a thin 200 page (fixes Google Soft 404 / duplicate-canonical).
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return PRODUCT_SEO.map(({ categorySlug, productId }) => ({
@@ -59,6 +64,11 @@ export default async function ProductDetailPage({ params }) {
       p.subcategory === productId ||
       p.name.toLowerCase().replace(/[^a-z0-9]+/g, '-') === productId
   );
+
+  // No real data for this slug → genuine 404, never a thin 200 page.
+  if (!catalogEntry && !getProductSeo(categorySlug, productId) && !product) {
+    notFound();
+  }
 
   const faqs = getProductFaqs(productId);
   const productUrl = `https://www.shankeragencies.com/products/${categorySlug}/${productId}`;

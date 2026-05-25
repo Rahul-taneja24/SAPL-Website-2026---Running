@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import Products from '@/sections/Products';
 import SpecPropertyTable from '@/components/SpecPropertyTable';
 import { PRODUCTS_DATA } from '@/data/productsData';
@@ -25,6 +26,9 @@ const SLUG_TO_FAMILY_ID = {
   'acid-proofing': 'acid-proof',
 };
 
+// Only the five known categories are valid — any other slug returns a real 404.
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return Object.keys(CATEGORY_NAMES).map((categorySlug) => ({ categorySlug }));
 }
@@ -47,9 +51,8 @@ export async function generateMetadata({ params }) {
 
 export default async function ProductCategoryPage({ params }) {
   const { categorySlug } = await params;
-  const categoryTitle =
-    CATEGORY_NAMES[categorySlug] ||
-    categorySlug.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' ');
+  if (!CATEGORY_NAMES[categorySlug]) notFound();
+  const categoryTitle = CATEGORY_NAMES[categorySlug];
 
   // Products that have dedicated detail pages in this category
   const seoProducts = PRODUCT_SEO.filter((s) => s.categorySlug === categorySlug);
