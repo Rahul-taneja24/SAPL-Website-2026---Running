@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import IndustrySolutions from '@/sections/IndustrySolutions';
 
 const SOLUTION_DATA = {
@@ -42,6 +43,9 @@ const SOLUTION_DATA = {
     deliverables: ['kiln car refractory layout', 'low-thermal-mass lining design', 'energy audit for fuel savings'],
   },
 };
+
+// Only the eight known solution slugs are valid — any other slug returns a real 404.
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   return Object.keys(SOLUTION_DATA).map((industrySlug) => ({ industrySlug }));
@@ -145,6 +149,7 @@ function buildSolutionJsonLd(slug, data) {
 export default async function SolutionDetailPage({ params }) {
   const { industrySlug } = await params;
   const data = SOLUTION_DATA[industrySlug];
+  if (!data) notFound();
   const jsonLd = buildSolutionJsonLd(industrySlug, data);
   return (
     <>
