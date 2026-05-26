@@ -100,7 +100,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'High-creep-resistance mullite bricks for blast furnace stoves, glass regenerators and kiln furniture',
         fullDesc: 'Mullite bricks are built around the mullite phase (3Al₂O₃·2SiO₂), giving 60–75% Al₂O₃ with outstanding creep resistance, low thermal expansion and excellent volume stability at high temperature. They hold their shape under sustained load far better than ordinary high-alumina brick, making them the default for hot-blast stoves and glass furnace checkerwork. CUMI markets its mullite range under the CUMILITE brand.',
         tempMax: '1800°C',
-        images: [IMG.highAlumina1, IMG.highAlumina2],
+        images: [IMG.sic1, IMG.highAlumina1],
         grades: ['M-60', 'M-70', 'M-72 (CUMILITE)', 'Lightweight Mullite Insulating'],
         applications: [
           'Blast furnace hot-blast stove checkerwork',
@@ -175,7 +175,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Melt-cast alumina-zirconia-silica blocks for glass furnace contact zones with exceptional corrosion resistance',
         fullDesc: 'Fused cast AZS (Alumina-Zirconia-Silica) blocks are produced by melting the oxide blend above 1800°C and casting it into dense, near-zero-porosity blocks. The zirconia content (33–41% ZrO₂) gives outstanding resistance to molten glass corrosion, making AZS the standard for glass tank sidewalls, throat and paving. Void-free (VF) casting types minimise glass defects (stones, blisters) in high-quality glass.',
         tempMax: '1700°C',
-        images: [IMG.basicBricks1, IMG.glass],
+        images: [IMG.sic1, IMG.basicBricks1],
         grades: ['AZS-33# (ER1681)', 'AZS-36#', 'AZS-41#', 'VF / QX / WS cast types'],
         applications: [
           'Glass melting tank sidewalls',
@@ -213,7 +213,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Sintered zircon (ZrSiO₄) bricks for glass tank paving, throat and slide-gate inserts',
         fullDesc: 'Zircon bricks are made from sintered zircon (ZrSiO₄, ~62–66% ZrO₂), combining very low thermal expansion, high corrosion resistance to molten glass and excellent thermal shock resistance. They are widely used as bottom paving beneath AZS in glass tanks, in throat and spout areas, and as inserts in flow-control refractories where dimensional stability is essential.',
         tempMax: '1700°C',
-        images: [IMG.sic1, IMG.glass],
+        images: [IMG.sic1, IMG.highAlumina1],
         grades: ['ZS-65 (sintered zircon)', 'Zircon-Mullite', 'Fused-bonded Zircon'],
         applications: [
           'Glass tank bottom paving below AZS',
@@ -843,7 +843,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Isostatically pressed alumina-graphite stopper rods for precise tundish-to-mould flow control',
         fullDesc: 'The monoblock stopper (stopper rod) is an isostatically pressed alumina-graphite refractory rod that seats into the tundish nozzle to regulate steel flow into the continuous-casting mould. A ZrO₂-C nose insert resists erosion at the sealing point, and an internal argon line can purge the nose to prevent clogging. Precise stopper control governs mould level stability, vortex prevention and steel cleanliness. IFGL supplies a full range of alumina-graphite and oxygen-purging stoppers.',
         tempMax: '1600°C',
-        images: [IMG.slideGate1, IMG.shroud1],
+        images: [IMG.slideGate1, IMG.porous2],
         grades: ['Alumina-Graphite MBS', 'ZrO₂-C Nose Insert', 'MgO-C Nose Grade', 'Argon-Purging Stopper'],
         applications: [
           'Tundish-to-mould flow control in continuous casting',
@@ -880,7 +880,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Alumina-graphite tundish nozzles that seat the stopper and meter steel into the mould',
         fullDesc: 'The tundish nozzle (well nozzle) is the seat against which the monoblock stopper closes, metering steel from the tundish into the mould or submerged entry shroud. Made from isostatically pressed alumina-graphite with optional zirconia bore inserts for anti-clogging, it must hold a precise, erosion-resistant bore through long sequence casts. IFGL supplies standard and hot-change (TCM) tundish nozzle systems.',
         tempMax: '1600°C',
-        images: [IMG.shroud1, IMG.slideGate2],
+        images: [IMG.porous2, IMG.slideGate1],
         grades: ['Alumina-Graphite TN', 'Zirconia-Insert Bore', 'TCM Hot-Change TN', 'Upper / Inner Nozzle'],
         applications: [
           'Seats stopper to control tundish-to-mould flow',
@@ -917,7 +917,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'High-alumina/alumina-carbon ladle bottom blocks that house the slide-gate inner nozzle',
         fullDesc: 'The well block is the heavy refractory block set into the steel ladle bottom that seats the slide-gate inner nozzle and forms the teeming pocket. It must resist steel erosion, thermal shock and the mechanical load of the slide-gate mechanism through the full ladle campaign. IFGL supplies alumina-carbon, alumina-zirconia-carbon and magnesia-spinel-carbon well blocks (1QC/2QC/3QC and FL-series grades).',
         tempMax: '1650°C',
-        images: [IMG.slideGate2, IMG.porous1],
+        images: [IMG.slideGate1, IMG.porous2],
         grades: ['Alumina-C', 'Alumina-Zr-C', 'Mag-Sp-C', 'IFGL 1QC / 2QC / 3QC'],
         applications: [
           'Steel ladle bottom slide-gate seating block',
@@ -1246,7 +1246,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'High-carbon anti-corrosion bricks for chemical reactors, acid towers and blast furnace hearths',
         fullDesc: 'Carbon bricks are pitch- or resin-bonded blocks of amorphous carbon or graphite (>90% C) prized for near-universal chemical resistance — they withstand strong mineral acids (including HF and phosphoric acid) that destroy oxide ceramics, plus high thermal conductivity for blast furnace hearths. Because carbon oxidises in air above about 400–500°C, they are specified for reducing or chemical (non-oxidising) service. Impervious resin-impregnated grades give the lowest permeability.',
         tempMax: '1500°C',
-        images: [IMG.acidBrick1, IMG.acidBrick2],
+        images: [IMG.acidBrick2, IMG.basicBricks1],
         grades: ['Carbon Brick', 'Semi-Graphite', 'Graphite Brick', 'Impervious (resin-impregnated)'],
         applications: [
           'Blast furnace hearth & bottom',
@@ -1284,7 +1284,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Silicate and resin-based acid-resistant cements for bedding and jointing acid-proof linings',
         fullDesc: 'Acid proof cement is the bedding and jointing material that holds acid-proof brick and tile linings together and seals them against chemical attack. Sodium/potassium-silicate (water-glass) types with a silicofluoride hardener give >96% acid resistance and service to ~1000°C; furan, epoxy and phenolic resin mortars handle organic chemistry and combined acid-alkali exposure at lower temperatures. Correct cement selection is as important as the brick itself.',
         tempMax: '1000°C',
-        images: [IMG.acidBrick2, IMG.acidTile1],
+        images: [IMG.mortars2, IMG.mortars1],
         grades: ['Sodium-Silicate Type', 'Potassium-Silicate Type', 'Furan Resin Mortar', 'Epoxy / Phenolic Mortar'],
         applications: [
           'Bedding & jointing acid-proof bricks and tiles',

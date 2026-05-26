@@ -126,6 +126,23 @@ const brandsData = [
     products: ["Slide Gate Plates", "Ladle Shrouds", "Subentry Nozzles", "MgO-C Bricks", "Dolomite Bricks"],
     industries: ["Steel", "Foundry", "Cement"],
   },
+  {
+    id: "saint-gobain",
+    name: "Saint-Gobain",
+    fullName: "Saint-Gobain Performance Ceramics & Refractories",
+    tagline: "HeatKing · Global Performance Ceramics",
+    logo: null,
+    website: "https://www.ceramicsrefractories.saint-gobain.com",
+    color: "#0A4B8C",
+    accentColor: "#E2231A",
+    founded: "1665",
+    headquarters: "France (global operations)",
+    parent: "Saint-Gobain Group",
+    desc: "A global leader in performance ceramics and refractories, part of the 350-year-old Saint-Gobain Group. Its HeatKing range covers induction furnace linings and monolithic castables engineered for steel and foundry melting applications. Shanker Agencies works with Saint-Gobain as a supply partner — customers can contact us for HeatKing induction furnace lining material and monolithic castables.",
+    strengths: ["Global performance-ceramics leader", "HeatKing induction furnace linings", "Advanced monolithic castables", "Engineered melt-shop solutions"],
+    products: ["HeatKing Induction Furnace Lining", "HeatKing Monolithic Castables", "High-Performance Ceramics", "Refractory Solutions"],
+    industries: ["Steel", "Foundry", "Induction Melting"],
+  },
 ];
 
 // ─── SUBCOMPONENTS ─────────────────────────────────────────────────────────────
