@@ -81,6 +81,24 @@ const nextConfig = {
         destination: '/engineering-references',
         permanent: true,
       },
+      // Legacy product slugs → current pages. These old URLs were indexed by
+      // Google before the catalog was renamed; 301 sends visitors and crawlers
+      // straight to the live page (no duplicate content, no 404).
+      {
+        source: '/products/unshaped-refractories/ultra-low-cement-castable',
+        destination: '/products/unshaped-refractories/ultra-low-cement-castables',
+        permanent: true,
+      },
+      {
+        source: '/products/unshaped-refractories/refractory-mortar',
+        destination: '/products/unshaped-refractories/refractory-mortars',
+        permanent: true,
+      },
+      {
+        source: '/products/unshaped-refractories/gunning-mix',
+        destination: '/products/unshaped-refractories/gunning-materials',
+        permanent: true,
+      },
     ];
   },
 };
