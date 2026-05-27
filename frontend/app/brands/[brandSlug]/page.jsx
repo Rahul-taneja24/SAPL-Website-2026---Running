@@ -58,6 +58,15 @@ const VALID_BRANDS = [
     products: ['Fire Bricks', 'High Alumina Bricks', 'Castables', 'Ramming Mass'],
     parent: 'Mahakoshal Refractories',
   },
+  {
+    slug: 'saint-gobain',
+    name: 'Saint-Gobain Performance Ceramics & Refractories',
+    shortName: 'Saint-Gobain',
+    desc: 'HeatKing induction furnace linings, monolithic castables and high-performance ceramic refractory solutions for steel, foundry and high-temperature industries.',
+    products: ['HeatKing Induction Furnace Lining', 'HeatKing Monolithic Castables', 'High-Performance Ceramics', 'Refractory Solutions'],
+    parent: 'Saint-Gobain Group',
+    partnerOnly: true,
+  },
 ];
 
 export async function generateStaticParams() {
@@ -73,8 +82,9 @@ export async function generateMetadata({ params }) {
       description: 'The requested brand page was not found.',
     };
   }
-  const title = `${brand.name} Dealer in India | Shanker Agencies`;
-  const description = `Shanker Agencies is an authorised dealer and supply partner for ${brand.name} in India. ${brand.desc} Plant-side support and Pan-India delivery since 1980.`;
+  const relationship = brand.partnerOnly ? 'a supply partner' : 'an authorised dealer and supply partner';
+  const title = `${brand.name} ${brand.partnerOnly ? 'Supplier' : 'Dealer'} in India | Shanker Agencies`;
+  const description = `Shanker Agencies is ${relationship} for ${brand.name} in India. ${brand.desc} Plant-side support and Pan-India delivery since 1980.`;
   return {
     title,
     description,
@@ -147,10 +157,14 @@ function buildBrandJsonLd(brand) {
       mainEntity: [
         {
           '@type': 'Question',
-          name: `Is Shanker Agencies an authorised dealer for ${brand.name} in India?`,
+          name: brand.partnerOnly
+            ? `Can Shanker Agencies supply ${brand.name} products in India?`
+            : `Is Shanker Agencies an authorised dealer for ${brand.name} in India?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `Yes. Shanker Agencies Pvt. Ltd. is an authorised dealer and supply partner for ${brand.name} in India, stocking and delivering from our Delhi base since 1980. Every dispatch ships with the original manufacturer's test certificate.`,
+            text: brand.partnerOnly
+              ? `Yes. Shanker Agencies Pvt. Ltd. is a supply partner for ${brand.name} in India and can supply ${brand.shortName} products including ${brand.products[0]} on enquiry, with plant-side technical support. Contact us for ${brand.shortName} material requirements and quotations.`
+              : `Yes. Shanker Agencies Pvt. Ltd. is an authorised dealer and supply partner for ${brand.name} in India, stocking and delivering from our Delhi base since 1980. Every dispatch ships with the original manufacturer's test certificate.`,
           },
         },
         {

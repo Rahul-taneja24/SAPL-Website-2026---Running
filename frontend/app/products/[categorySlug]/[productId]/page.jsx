@@ -4,6 +4,7 @@ import { PRODUCT_CATALOG } from '@/data/productCatalogData';
 import { PRODUCT_SEO, getProductSeo } from '@/data/productsSeoData';
 import { PRODUCTS_DATA } from '@/data/productsData';
 import { getProductFaqs } from '@/data/productFaqsData';
+import { getProductDatasheet } from '@/data/productDatasheetData';
 
 // Return a real 404 for any product URL not in generateStaticParams,
 // instead of rendering a thin 200 page (fixes Google Soft 404 / duplicate-canonical).
@@ -71,6 +72,7 @@ export default async function ProductDetailPage({ params }) {
   }
 
   const faqs = getProductFaqs(productId);
+  const datasheet = getProductDatasheet(productId);
   const productUrl = `https://www.shankeragencies.com/products/${categorySlug}/${productId}`;
   const productName = catalogEntry?.name || seo?.name || product?.name;
   const productImage = catalogEntry?.images?.[0] || product?.image;
@@ -256,6 +258,88 @@ export default async function ProductDetailPage({ params }) {
         />
       )}
       <Products />
+      {datasheet && (
+        <section className="bg-white py-12 px-4 border-t border-gray-200" id="technical-datasheet">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-baseline justify-between flex-wrap gap-2 mb-1">
+              <h2 className="font-oswald text-2xl sm:text-3xl font-bold text-[#1E3A5F]">
+                Technical Data Sheet — {productName}
+              </h2>
+              <span className="text-xs text-gray-400">Shanker Agencies Pvt. Ltd. · Typical Values</span>
+            </div>
+            <p className="text-sm text-gray-500 mb-8">
+              Typical specification ranges with the applicable test standards. Compiled by Shanker Agencies for {productName.toLowerCase()} supplied across India, GCC &amp; ASEAN.
+            </p>
+
+            {datasheet.chemicalAnalysis?.length > 0 && (
+              <div className="mb-8">
+                <h3 className="font-oswald text-lg font-bold text-[#1E3A5F] mb-3">Typical Chemical Analysis</h3>
+                <div className="overflow-x-auto rounded-lg border border-gray-200">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-[#1E3A5F] text-white text-left">
+                        <th className="px-4 py-2.5 font-semibold">Property</th>
+                        <th className="px-4 py-2.5 font-semibold">Typical Value</th>
+                        <th className="px-4 py-2.5 font-semibold">Test Standard</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {datasheet.chemicalAnalysis.map((r, i) => (
+                        <tr key={i} className={i % 2 ? 'bg-gray-50' : 'bg-white'}>
+                          <td className="px-4 py-2.5 font-medium text-gray-700 border-b border-gray-100">{r.property}</td>
+                          <td className="px-4 py-2.5 text-[#1E3A5F] font-semibold border-b border-gray-100">{r.typical}</td>
+                          <td className="px-4 py-2.5 text-gray-500 border-b border-gray-100">{r.test}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {datasheet.physicalProperties?.length > 0 && (
+              <div className="mb-8">
+                <h3 className="font-oswald text-lg font-bold text-[#1E3A5F] mb-3">Typical Physical Properties</h3>
+                <div className="overflow-x-auto rounded-lg border border-gray-200">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="bg-[#1E3A5F] text-white text-left">
+                        <th className="px-4 py-2.5 font-semibold">Property</th>
+                        <th className="px-4 py-2.5 font-semibold">Typical Value</th>
+                        <th className="px-4 py-2.5 font-semibold">Test Standard</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {datasheet.physicalProperties.map((r, i) => (
+                        <tr key={i} className={i % 2 ? 'bg-gray-50' : 'bg-white'}>
+                          <td className="px-4 py-2.5 font-medium text-gray-700 border-b border-gray-100">{r.property}</td>
+                          <td className="px-4 py-2.5 text-[#1E3A5F] font-semibold border-b border-gray-100">{r.typical}</td>
+                          <td className="px-4 py-2.5 text-gray-500 border-b border-gray-100">{r.test}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {datasheet.packaging && (
+              <p className="text-sm text-gray-700 mb-6">
+                <span className="font-semibold text-[#1E3A5F]">Packaging &amp; Supply: </span>
+                {datasheet.packaging}
+              </p>
+            )}
+
+            <p className="text-xs text-gray-400 italic border-t border-gray-100 pt-4">
+              Disclaimer: Values are typical and compiled by Shanker Agencies Pvt. Ltd. from standard
+              industry data and published specifications of partner manufacturers (CUMI, Calderys, TRL
+              Krosaki, IFGL, Divine Cerawool, Crown Ceramics, Mahakoshal, Saint-Gobain). They are indicative
+              and not a guarantee — confirm the exact grade datasheet before specifying. For a certified
+              datasheet or quotation, contact info@shankeragencies.com or +91 98999 57888.
+            </p>
+          </div>
+        </section>
+      )}
     </>
   );
 }

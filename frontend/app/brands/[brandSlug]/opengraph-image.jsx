@@ -40,6 +40,11 @@ const BRAND_META = {
     tagline: 'Authorized Dealer',
     blurb: 'Refractory bricks and castables for steel and industrial furnace applications.',
   },
+  'saint-gobain': {
+    name: 'Saint-Gobain',
+    tagline: 'Supply Partner',
+    blurb: 'HeatKing induction furnace linings, monolithic castables and high-performance ceramic refractory solutions.',
+  },
 };
 
 // next/og constraint: flat divs only — no gradients, no external images, no SVG.
