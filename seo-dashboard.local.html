@@ -140,6 +140,7 @@ button,input,select,textarea{font-family:inherit}
     <span class="api-status api-loading" id="api-status">⏳ Connecting to DataForSEO…</span>
     <span style="font-size:11px;color:var(--t3)" id="updated-time">—</span>
     <button class="btn-ghost" onclick="refreshAll()" id="refresh-btn">↻ Refresh all</button>
+    <button class="btn-ghost" onclick="openSettings()" title="DataForSEO API credentials">⚙ API Settings</button>
     <button class="btn-acc" onclick="openClaude('How can I improve my SEO + GEO + AI visibility further this week? Give me the top 3 actionable fixes I can ship today.')">✦ Ask Claude</button>
   </div>
 </div>
@@ -179,6 +180,10 @@ button,input,select,textarea{font-family:inherit}
   <div class="card">
     <div class="ctitle"><span class="ctitle-left">🏁 Live SERP — "refractory supplier india"</span><span class="dim">DataForSEO live</span></div>
     <div id="ov-serp"><div class="ld"><div class="spin"></div>Fetching live SERP…</div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">⚡ Core Web Vitals</span><span class="dim">Google PageSpeed Insights (free, live)</span></div>
+    <div id="psi-wrap"><div class="ld"><div class="spin"></div>Fetching PageSpeed scores…</div></div>
   </div>
 </div>
 
@@ -242,8 +247,8 @@ button,input,select,textarea{font-family:inherit}
     <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">robots.txt — all AI crawlers allowed</div><div class="prog-detail">GPTBot, PerplexityBot, ClaudeBot, anthropic-ai, Google-Extended + 9 others. AhrefsBot, SemrushBot blocked.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/robots.js</span></div></div></div>
     <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">llms.txt — AI content manifest live</div><div class="prog-detail">7 citable answer blocks live. CIN + GST + Incoterms. Dead URLs remapped to real pages.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/public/llms.txt</span></div></div></div>
     <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">Organization schema — lat/long, knowsAbout, hasCredential</div><div class="prog-detail">Updated to 28.6761/77.2960 (East Ram Nagar). knowsAbout expanded to 40 specific topics. hasCredential adds CIN + GST + 45-year experience credentials.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/layout.jsx</span></div></div></div>
-    <div class="prog warn"><span class="prog-ico">⚠</span><div class="prog-body"><div class="prog-title">FAQ schema — live but shows as "Unnamed item" in GSC</div><div class="prog-detail">Rich result confirmed. Each Question needs an explicit <code class="file-ref">name</code> attribute.</div><div class="prog-meta"><span class="pill p-amb">Partial</span><span class="file-ref">frontend/src/data/productFaqsData.js</span><button class="fix-btn" onclick="openClaude('In the file frontend/src/data/productFaqsData.js for shankeragencies.com — the FAQ schema renders as &quot;Unnamed item&quot; in Google Search Console. Audit how this data is consumed by the page that renders FAQPage JSON-LD, and add explicit name attributes to each Question so each FAQ has a proper label.')">Fix names →</button></div></div></div>
-    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">HTTP → HTTPS 301 redirect</div><div class="prog-detail">http://www.shankeragencies.com/ shows 196 separate impressions in GSC. One Vercel rule fixes this.</div><div class="prog-meta"><span class="pill p-red">Not done</span><span class="file-ref">frontend/next.config.js</span><button class="fix-btn" onclick="openClaude('Add an HTTP→HTTPS 301 redirect for shankeragencies.com. Update frontend/next.config.js (or frontend/vercel.json) so every request to http://shankeragencies.com or http://www.shankeragencies.com is permanently redirected to https://www.shankeragencies.com. Make the change idempotent with the existing redirects array.')">Apply via Claude →</button></div></div></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">FAQ schema — name attribute confirmed on all Questions</div><div class="prog-detail">Audited all FAQPage generators across product pages, blog, homepage, contact and location pages — name: f.q already present. Added dynamicParams=false + notFound() guard. GSC warning will clear on next crawl.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/products/[categorySlug]/[productId]/page.jsx</span></div></div></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">HTTP → HTTPS 301 redirect</div><div class="prog-detail">x-forwarded-proto: http redirects added to next.config.js for both apex and www — single hop to https://www.shankeragencies.com. GSC will clear the 196 http:// impressions on next crawl.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/next.config.js</span></div></div></div>
   </div>
   <div class="card">
     <div class="ctitle"><span class="ctitle-left">📝 JSON-LD schema cherry-picks</span></div>
@@ -351,13 +356,77 @@ button,input,select,textarea{font-family:inherit}
   </div>
 </div>
 
+<!-- ══ SETTINGS MODAL ══ -->
+<div class="modal-ov" id="settings-modal">
+  <div class="modal-box" style="max-width:460px">
+    <div class="modal-hdr">
+      <span class="modal-ttl">⚙ API Credentials</span>
+      <button class="modal-x" onclick="closeSettings()">×</button>
+    </div>
+    <div class="modal-body" style="gap:16px">
+      <div style="font-size:11px;color:var(--t2);line-height:1.6">Credentials are stored in your browser's <b style="color:var(--t1)">localStorage</b> — never sent anywhere except directly to the DataForSEO API. You can find your password at <a href="https://app.dataforseo.com/api-dashboard" target="_blank" style="color:var(--blu)">app.dataforseo.com → API Dashboard</a>.</div>
+      <div>
+        <label class="field-label">DataForSEO Login (email)</label>
+        <input id="set-login" type="email" placeholder="info@shankeragencies.com" style="width:100%;background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 10px;color:var(--t1);font-size:12px;margin-top:4px">
+      </div>
+      <div>
+        <label class="field-label">DataForSEO Password</label>
+        <input id="set-pass" type="password" placeholder="API password from DataForSEO dashboard" style="width:100%;background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 10px;color:var(--t1);font-size:12px;margin-top:4px">
+      </div>
+      <div style="background:var(--bg);border:1px solid var(--b);border-radius:8px;padding:12px">
+        <div style="font-size:10px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Other connectors</div>
+        <div style="font-size:11px;color:var(--t2);line-height:2">
+          ✓ <b style="color:var(--t1)">PageSpeed Insights</b> — free, no key needed (auto-connected)<br>
+          ⊙ <b style="color:var(--amb)">Google Search Console</b> — requires OAuth. Use <a href="https://search.google.com/search-console" target="_blank" style="color:var(--blu)">GSC directly</a> or export CSV for now<br>
+          ⊙ <b style="color:var(--amb)">Bing Webmaster Tools</b> — needs API key from <a href="https://www.bing.com/webmasters" target="_blank" style="color:var(--blu)">bing.com/webmasters</a><br>
+          ⊙ <b style="color:var(--amb)">Google Business Profile</b> — OAuth only, manage at <a href="https://business.google.com" target="_blank" style="color:var(--blu)">business.google.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="cancel-btn" onclick="closeSettings()">Cancel</button>
+      <button class="copy-btn" onclick="applySettings()">💾 Save &amp; reconnect</button>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 // ═══ CONFIG ════════════════════════════════════════════════════════════════
-// LOCAL FILE. Credentials embedded since this file is never deployed —
-// it lives on your machine only. Do not share this file with credentials.
-const AUTH = 'Basic aW5mb0BzaGFua2VyYWdlbmNpZXMuY29tOjk1M2MwZjc0MTdiYzIxMGE=';
+// Credentials are stored in localStorage — never hardcoded here.
+// Click "⚙ API Settings" in the header to enter your DataForSEO login + password.
 const BASE = 'https://api.dataforseo.com/v3';
+const PSI_BASE = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
+const SITE_URL = 'https://www.shankeragencies.com';
+
+function getAuth(){
+  const login = localStorage.getItem('dfs_login') || '';
+  const pass  = localStorage.getItem('dfs_pass')  || '';
+  if(!login || !pass) return null;
+  return 'Basic ' + btoa(login + ':' + pass);
+}
+function saveCredentials(login, pass){
+  localStorage.setItem('dfs_login', login.trim());
+  localStorage.setItem('dfs_pass',  pass.trim());
+}
+
+// ═══ Settings modal ════════════════════════════════════════════════════════
+function openSettings(){
+  document.getElementById('set-login').value = localStorage.getItem('dfs_login') || '';
+  document.getElementById('set-pass').value  = localStorage.getItem('dfs_pass')  || '';
+  document.getElementById('settings-modal').classList.add('open');
+}
+function closeSettings(){ document.getElementById('settings-modal').classList.remove('open'); }
+function applySettings(){
+  const l = document.getElementById('set-login').value.trim();
+  const p = document.getElementById('set-pass').value.trim();
+  if(!l || !p){ alert('Enter both DataForSEO login (email) and password.'); return; }
+  saveCredentials(l, p);
+  closeSettings();
+  document.getElementById('api-status').className='api-status api-loading';
+  document.getElementById('api-status').textContent='⏳ Testing credentials…';
+  setTimeout(refreshAll, 200);
+}
 
 // ═══ PRODUCT CATALOGUE — 60+ keywords across 8 categories ═════════════════
 const PRODUCTS = [
@@ -455,13 +524,59 @@ let vols={}, serps={}, comps=[], activeFilter='All';
 
 // ═══ DataForSEO — direct browser call (local file, no proxy needed) ═══════
 async function dfsPost(ep, body){
+  const auth = getAuth();
+  if(!auth){
+    document.getElementById('api-status').className='api-status api-err';
+    document.getElementById('api-status').textContent='✗ No credentials — click ⚙ API Settings';
+    openSettings();
+    throw new Error('No credentials');
+  }
   const r = await fetch(BASE+ep, {
     method:'POST',
-    headers:{'Authorization':AUTH,'Content-Type':'application/json'},
+    headers:{'Authorization':auth,'Content-Type':'application/json'},
     body:JSON.stringify(body)
   });
   if(!r.ok) throw new Error('HTTP '+r.status);
   return r.json();
+}
+
+// ═══ PageSpeed Insights — free, no API key, Core Web Vitals ═══════════════
+async function fetchPageSpeed(url, strategy='mobile'){
+  const endpoint = `${PSI_BASE}?url=${encodeURIComponent(url)}&strategy=${strategy}&category=performance&category=seo`;
+  const r = await fetch(endpoint);
+  if(!r.ok) throw new Error('PSI HTTP '+r.status);
+  return r.json();
+}
+async function renderPageSpeed(){
+  const el = document.getElementById('psi-wrap');
+  if(!el) return;
+  el.innerHTML='<div class="ld"><div class="spin"></div>Fetching Core Web Vitals…</div>';
+  try{
+    const [mob, desk] = await Promise.all([
+      fetchPageSpeed(SITE_URL,'mobile'),
+      fetchPageSpeed(SITE_URL,'desktop')
+    ]);
+    const fmt = (d, key) => {
+      const cat = d.lighthouseResult?.categories;
+      const perf = Math.round((cat?.performance?.score||0)*100);
+      const seo  = Math.round((cat?.seo?.score||0)*100);
+      const lcp  = d.lighthouseResult?.audits?.['largest-contentful-paint']?.displayValue || '—';
+      const cls  = d.lighthouseResult?.audits?.['cumulative-layout-shift']?.displayValue || '—';
+      const fcp  = d.lighthouseResult?.audits?.['first-contentful-paint']?.displayValue || '—';
+      const pc   = perf>=90?'var(--grn)':perf>=50?'var(--amb)':'var(--red)';
+      return `<div class="card-sm"><div style="font-size:10px;font-weight:700;color:var(--t2);text-transform:uppercase;margin-bottom:8px">${key}</div>
+        <div style="display:flex;gap:14px;margin-bottom:8px">
+          <div><div style="font-size:22px;font-weight:700;color:${pc}">${perf}</div><div style="font-size:9px;color:var(--t3)">Performance</div></div>
+          <div><div style="font-size:22px;font-weight:700;color:var(--grn)">${seo}</div><div style="font-size:9px;color:var(--t3)">SEO score</div></div>
+        </div>
+        <div style="font-size:10px;color:var(--t2);line-height:1.8">LCP: <b>${lcp}</b> &nbsp; CLS: <b>${cls}</b> &nbsp; FCP: <b>${fcp}</b></div>
+      </div>`;
+    };
+    el.innerHTML = `<div class="g2">${fmt(mob,'📱 Mobile')}${fmt(desk,'🖥 Desktop')}</div>
+      <div style="margin-top:8px;font-size:10px;color:var(--t3)">Source: Google PageSpeed Insights API (no key required). <a href="https://pagespeed.web.dev/analysis?url=${encodeURIComponent(SITE_URL)}" target="_blank" style="color:var(--blu)">Full report →</a></div>`;
+  }catch(e){
+    el.innerHTML=`<div class="emsg">PageSpeed API error: ${e.message}</div>`;
+  }
 }
 
 async function fetchVolumes(){
@@ -770,7 +885,16 @@ renderProductTable();
 renderGaps();
 renderAIDims();
 setTimeout(drawOverview,100);
-setTimeout(refreshAll,400);
+// PageSpeed Insights runs independently (free, no credentials needed)
+setTimeout(renderPageSpeed, 600);
+// DataForSEO — prompt for credentials if not set, otherwise auto-refresh
+if(!getAuth()){
+  const st=document.getElementById('api-status');
+  st.className='api-status api-err';
+  st.textContent='✗ No credentials — click ⚙ API Settings';
+} else {
+  setTimeout(refreshAll,400);
+}
 </script>
 </body>
 </html>
