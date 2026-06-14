@@ -3291,6 +3291,222 @@ export const BLOG_POSTS_DATA = [
     author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
     relatedProducts: ["castable", "ramming-mass", "ceramic-fibre", "high-alumina-bricks"],
   },
+
+  // ─────────────────────────────────────────────────────────────
+  // 27. Refractory Lining Maintenance Scheduling Guide
+  //     Target keyword: maintenance scheduling for refractory linings
+  //     GSC: pos 2.9 — homepage ranking accidentally, no dedicated page
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 27,
+    slug: "refractory-lining-maintenance-scheduling-guide",
+    title: "Maintenance Scheduling for Refractory Linings: A Plant Engineer's Complete Guide",
+    metaTitle: "Refractory Lining Maintenance Scheduling Guide | Intervals & Planning",
+    metaDescription: "How to build a maintenance schedule for refractory linings by furnace type — daily, weekly, monthly, quarterly and annual intervals with shutdown planning templates. Written by refractory engineers with 45+ years of plant experience.",
+    category: "Maintenance Guide",
+    tags: [
+      "refractory lining maintenance scheduling",
+      "furnace maintenance schedule",
+      "refractory inspection intervals",
+      "shutdown planning refractories",
+      "campaign life extension",
+      "refractory patching schedule",
+      "furnace lining maintenance",
+    ],
+    readTime: "12 min",
+    publishDate: "2026-06-14",
+    lastModified: "2026-06-14",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    excerpt: "The difference between a 250-heat ladle campaign and a 140-heat campaign is rarely the grade of brick — it is whether the maintenance schedule was followed. This guide gives you the exact inspection intervals, patching triggers, shutdown timelines and reline decision criteria for steel ladles, induction furnaces, cement kilns, boilers and aluminium melting furnaces.",
+    keyTakeaways: [
+      "Maintenance scheduling is the single biggest lever on refractory campaign life — more than brand or grade.",
+      "Each furnace type has a different inspection rhythm: ladles are heat-count driven, cement kilns are calendar driven, boilers are load-cycle driven.",
+      "A two-shift inspection program (daily visual + weekly tap test + monthly IR) catches 80% of failures before they become breakouts.",
+      "The reline decision should be based on minimum safe thickness, not 'how does it look' — and that threshold must be set before the campaign starts.",
+      "Planned shutdowns cost 40-60% less than emergency shutdowns — because you control what's in stock and when the crew is ready.",
+    ],
+    content: `
+<h2>Why Scheduling Matters More Than the Material</h2>
+<p>When a refractory lining fails short of its designed campaign life, the first question is usually about the brand or grade. In our experience across 45+ years of plant visits, the answer is almost never the material. It is almost always one of three scheduling failures: inspection that happened too late, patching that was deferred until the window closed, or a shutdown that was planned around production targets instead of lining condition.</p>
+<p>Maintenance scheduling for refractory linings is not complicated, but it must be proactive. The lining does not file a service request. It degrades silently until a crack, spall or breakout makes the problem obvious — and by then, the cheapest intervention window has closed.</p>
+<p>This guide gives you the scheduling framework that works across the most common furnace types in Indian and GCC industry: steel ladles and EAF, induction furnaces, cement rotary kilns, industrial boilers, and aluminium melting furnaces.</p>
+
+<h2>The Four Pillars of a Refractory Maintenance Schedule</h2>
+<p>Every effective schedule rests on four activities at different time intervals:</p>
+<ol>
+  <li><strong>Routine inspection</strong> — daily or per-shift visual checks by crew.</li>
+  <li><strong>Condition monitoring</strong> — weekly tap test, monthly infrared thermography.</li>
+  <li><strong>Scheduled intervention</strong> — planned patching, joint repair, anchor replacement during available windows.</li>
+  <li><strong>Reline planning</strong> — triggered by thickness reaching the minimum safe limit, not by total failure.</li>
+</ol>
+<p>Without all four, a schedule is really just a list of intentions. The difference between a list and a working schedule is the trigger: what measurement or observation moves the team from monitoring to action.</p>
+
+<h2>Scheduling by Furnace Type</h2>
+
+<h3>Steel Ladles</h3>
+<p>Ladle lining maintenance is <strong>heat-count driven</strong>, not calendar driven. The inspection and intervention schedule below is calibrated for a 200–250 heat working lining campaign using 70% Al₂O₃ LCC or high-alumina brick:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th><th>Trigger for action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Every heat</td><td>Visual after tapping — check slag line, impact zone, bottom pouring area</td><td>Any cracking, spalling or deformation visible</td></tr>
+    <tr><td>Every 20–30 heats</td><td>Thickness gauge measurement at slag line, metal line and bottom</td><td>Thickness below 60% of original at slag line</td></tr>
+    <tr><td>Every 50 heats</td><td>Gunning patch of slag line, spot repair of impact zone if needed</td><td>Scheduled — do it regardless of visual appearance</td></tr>
+    <tr><td>Every 80–100 heats</td><td>Full lining inspection during planned turnaround</td><td>Review reline decision threshold</td></tr>
+    <tr><td>Campaign end</td><td>Full reline when minimum safe thickness reached</td><td>Typically 60–70 mm for a standard ladle working lining</td></tr>
+  </tbody>
+</table>
+<p>The most common ladle scheduling failure is skipping the 50-heat gunning interval because "it still looks okay." The gunning at heat 50 prevents the exponential wear acceleration that starts at heat 70–80 in an unpatched slag line.</p>
+
+<h3>Induction Furnaces (Ramming Mass Lining)</h3>
+<p>Induction furnace linings are typically replaced every 100–250 heats for silica ramming mass (iron melting) and 50–120 heats for alumina mass (steel melting). The schedule is:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Every heat</td><td>Measure metal level versus known bath volume — thinning lining increases apparent bath capacity</td></tr>
+    <tr><td>Every 10 heats</td><td>Record furnace frequency trend (rising frequency = thinner lining on medium-frequency furnaces)</td></tr>
+    <tr><td>Every 30–50 heats</td><td>Measure remaining thickness at coil level with a steel rod probe during cold shutdown</td></tr>
+    <tr><td>Campaign end</td><td>Full reline — never extend beyond minimum thickness (typically 50–60 mm at coil level)</td></tr>
+  </tbody>
+</table>
+<p>The critical scheduling point for induction furnaces: the reline must be <em>planned</em> during a low-production window. Emergency relines after a lining failure cost 3–4× more in crew time and 2–5× more in downtime because the replacement material may not be in stock.</p>
+
+<h3>Cement Rotary Kilns</h3>
+<p>Cement kiln refractory maintenance is <strong>calendar and temperature driven</strong>. The kiln cannot be inspected hot, so every scheduled shutdown is a maintenance window that must be fully used:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Weekly (hot kiln)</td><td>IR shell scanner survey — look for hot spots above baseline by 40°C+</td></tr>
+    <tr><td>Monthly</td><td>Full shell temperature profile analysis — trending, not just spot readings</td></tr>
+    <tr><td>Every planned shutdown</td><td>Brick thickness measurement by probe in all zones, anchor condition check in castable zones</td></tr>
+    <tr><td>Annual or on trigger</td><td>Full reline of worn zones — typically burning zone every 9–14 months, transition zone every 18–24 months</td></tr>
+  </tbody>
+</table>
+<p>The most expensive cement kiln maintenance decision is the one not made in time: running a burning zone past the safe minimum thickness to avoid a scheduled shutdown, only to have an unplanned stop 3 weeks later during peak production.</p>
+
+<h3>Industrial Boilers</h3>
+<p>Boiler refractory (back walls, baffles, door linings, nose arches) operates on a <strong>load-cycle schedule</strong>:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Daily</td><td>Visual inspection of visible surfaces during burner cleaning or firing adjustment</td></tr>
+    <tr><td>Weekly (during low-fire period)</td><td>Tap test on accessible refractory sections, check expansion joints</td></tr>
+    <tr><td>Every annual shutdown</td><td>Full thickness measurement, anchor inspection, full replacement of any section below minimum thickness</td></tr>
+    <tr><td>Every 5–8 years</td><td>Full reline — typical fireclay back wall life in coal-fired boiler</td></tr>
+  </tbody>
+</table>
+<p>Boiler refractory is often the last thing plant management thinks about — until a back wall failure forces an emergency shutdown during peak winter load. A 30-minute annual inspection with a tap rod and IR camera is all the data you need to plan ahead.</p>
+
+<h3>Aluminium Melting Furnaces</h3>
+<p>Aluminium furnace linings (SiC belly, castable walls, ceramic fibre roof) are subject to metal penetration and corundum growth. The schedule:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Every heat</td><td>Visual check of metal contact zones — any metal seepage on shell is a reline signal</td></tr>
+    <tr><td>Monthly</td><td>IR survey of shell — metal penetration shows as cold spot, not hot spot (metal conducts away the heat)</td></tr>
+    <tr><td>Quarterly</td><td>Measure belly wall thickness at coil level during cool-down</td></tr>
+    <tr><td>Every 2–3 years</td><td>Full reline of metal-contact zones; roof ceramic fibre replacement every 3–5 years</td></tr>
+  </tbody>
+</table>
+
+<h2>The Reline Decision: Setting the Trigger Before You Need It</h2>
+<p>The single biggest scheduling mistake is leaving the reline decision undefined until it becomes urgent. When the trigger is "how bad does it look," crews and supervisors will always find a reason to defer. The trigger should be a measured number — set at the start of the campaign, not in the heat of a production crunch.</p>
+<p>Standard minimum safe thickness thresholds (consult your refractory supplier to confirm for your specific product and vessel):</p>
+<ul>
+  <li><strong>Steel ladle working lining (LCC/brick):</strong> 60–70 mm at slag line</li>
+  <li><strong>Induction furnace lining:</strong> 50–60 mm at coil level</li>
+  <li><strong>BOF/EAF working lining (MgO-C):</strong> Per manufacturer specification per zone</li>
+  <li><strong>Cement kiln burning zone brick:</strong> 100–120 mm (measured through thermocouples or hot-stop probe)</li>
+  <li><strong>Boiler fireclay back wall:</strong> 75 mm minimum (from 230 mm installed)</li>
+</ul>
+<p>Once this threshold is reached, the reline is scheduled — not "considered." Any continued operation past the trigger adds breakout risk that no production benefit can justify.</p>
+
+<h2>Shutdown Planning Timeline</h2>
+<p>A planned refractory shutdown should be sequenced as follows — working backwards from the shutdown date:</p>
+<ul>
+  <li><strong>6–8 weeks before:</strong> Confirm lining condition assessment and scope of work (reline vs. patch vs. zone replacement). Place material order — lead time for some grades is 4–6 weeks.</li>
+  <li><strong>4 weeks before:</strong> Material confirmed in stock or on order with delivery date. Crew scheduled. Scaffolding and tooling booked. Dry-out burner availability confirmed.</li>
+  <li><strong>2 weeks before:</strong> Final material quantities confirmed against scope. Wear-zone anchors ordered if needed. Dry-out schedule written out hour by hour.</li>
+  <li><strong>Shutdown day 1–2:</strong> Cool-down, scale and slag removal. Detailed inspection and scope confirmation.</li>
+  <li><strong>Days 2–N (reline):</strong> Demolition, anchor replacement, installation, cure time per product specification.</li>
+  <li><strong>Final days:</strong> Dry-out per schedule. Acceptance check (thickness map, anchor inspection, dry-out completed).</li>
+  <li><strong>Restart:</strong> Ramp-up per product specification — never full firing rate on a new lining.</li>
+</ul>
+<p>The most common cause of shutdown over-run is a scope surprise discovered on day 1: a zone that needed replacement was not identified before the shutdown, the material is not in stock, and the shutdown extends by 5–7 days. A pre-shutdown inspection resolves this.</p>
+
+<h2>Record-Keeping: What Your Schedule Must Document</h2>
+<p>A maintenance schedule is only as useful as the records it generates. For each furnace, maintain a lining log with:</p>
+<ul>
+  <li>Lining installation date and product details (grade, brand, supplier, batch)</li>
+  <li>Dry-out curve followed (start time, ramp rates, holds, completion time)</li>
+  <li>Heat or campaign number at each inspection</li>
+  <li>Thickness measurements by zone at each measurement interval</li>
+  <li>All patching events: what was used, where, heat count</li>
+  <li>Shell temperature readings at each IR survey</li>
+  <li>Reline trigger threshold set at campaign start and actual trigger heat</li>
+  <li>Post-mortem notes on the stripped-out lining</li>
+</ul>
+<p>This log is what lets you predict the next campaign life with confidence — and what lets your refractory supplier give you genuinely useful grade recommendations instead of just catalogue specifications.</p>
+
+<h2>Common Scheduling Failures and How to Avoid Them</h2>
+<table>
+  <thead>
+    <tr><th>Failure</th><th>Cause</th><th>Prevention</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Patch window missed</td><td>Patching material not in stock when the window opened</td><td>Maintain minimum stock of 200–500 kg patching mass per furnace at all times</td></tr>
+    <tr><td>Dry-out skipped after shutdown</td><td>Production pressure on restart</td><td>Dry-out is a restart pre-condition, not optional — make it part of the restart checklist</td></tr>
+    <tr><td>Reline deferred past trigger</td><td>Undefined trigger, or trigger ignored under production pressure</td><td>Set numeric trigger before campaign; reline decision needs manager approval, not just crew judgement</td></tr>
+    <tr><td>Emergency shutdown from surprise wear</td><td>Monitoring gaps — long periods between thickness measurements</td><td>Monthly thickness measurement in high-wear zones; quarterly is not enough for a ladle at heat 150+</td></tr>
+    <tr><td>Material lead time crisis</td><td>Order placed too late because reline not planned far enough ahead</td><td>Order at 80% of expected campaign life, not at minimum thickness trigger</td></tr>
+  </tbody>
+</table>
+
+<h2>How Shanker Agencies Supports Your Maintenance Schedule</h2>
+<p>We keep common patching and maintenance materials — gunning mass, refractory mortar, ceramic fibre rope and blanket, insulating castable — in stock at our Shahdara, Delhi warehouse for same-week dispatch across India and 7–21 day transit to GCC and ASEAN. Our refractory engineers are available to join planned shutdowns for lining inspection, thickness mapping and dry-out supervision for customers on regular supply accounts.</p>
+<p>If your lining life is below the datasheet number, contact us. A 45-minute site visit and a review of your lining log usually identifies the scheduling gap within the first conversation.</p>
+`,
+    faqs: [
+      {
+        q: "How often should a steel ladle refractory lining be inspected?",
+        a: "A steel ladle should have a visual check after every heat at the slag line, impact zone and bottom. Thickness measurement should be done every 20–30 heats. A gunning patch of the slag line should be planned at every 50 heats regardless of visual appearance. At 80–100 heats, a full inspection during a planned turnaround should set the reline decision timeline.",
+      },
+      {
+        q: "What is the minimum safe thickness for a steel ladle working lining?",
+        a: "The reline trigger for a steel ladle working lining (LCC or high-alumina brick) is typically 60–70 mm at the slag line. This threshold should be confirmed with your refractory supplier based on your specific ladle dimensions, product grade and slag chemistry, and must be set at the start of the campaign — not evaluated under production pressure when the window has already narrowed.",
+      },
+      {
+        q: "How far in advance should a refractory shutdown be planned?",
+        a: "Material should be ordered 6–8 weeks before a planned refractory shutdown — some grades have 4–6 week lead times. Scope confirmation (reline vs. patch vs. zone replacement) should happen at 6 weeks. Crew, scaffolding, dry-out equipment and tooling should be locked in at 4 weeks. Waiting until 2 weeks before is the most common cause of emergency material procurement and shutdown over-runs.",
+      },
+      {
+        q: "What causes refractory lining life to fall below the datasheet figure?",
+        a: "In most cases, below-datasheet campaign life is a scheduling problem, not a material problem. The three most common causes are: skipping the mid-campaign patching interval (typically at 50 heats for a ladle), restarting after a shutdown without following the dry-out curve, and operating above the target tap temperature for extended periods. All three are preventable with a written maintenance schedule and minimum stock levels.",
+      },
+      {
+        q: "Is an infrared thermography survey necessary for refractory inspection?",
+        a: "For cement kilns, IR shell scanning is essential — it is the only real-time indicator of thinning lining while the kiln is running. For steel ladles and EAF, IR is useful but can be supplemented with regular thickness gauging. For industrial boilers, a handheld IR camera quarterly is sufficient. The alternative to IR — waiting for a visual crack or hot spot — gives you far less response time and far higher repair cost.",
+      },
+    ],
+    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
+    relatedProducts: [
+      "low-cement-castables",
+      "gunning-materials",
+      "ramming-masses",
+      "high-alumina-bricks",
+      "ceramic-fiber-products",
+    ],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
