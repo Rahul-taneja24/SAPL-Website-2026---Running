@@ -58,9 +58,32 @@ const nextConfig = {
       },
     ];
   },
-  // Consolidate apex host → www to avoid duplicate content and split PageRank
+  // Consolidate apex host → www to avoid duplicate content and split PageRank.
+  // HTTP→HTTPS is handled first (x-forwarded-proto check) so plain-HTTP requests
+  // on both apex and www land on https://www.shankeragencies.com in one hop.
   async redirects() {
     return [
+      // HTTP apex → HTTPS www (single hop)
+      {
+        source: '/:path*',
+        has: [
+          { type: 'header', key: 'x-forwarded-proto', value: 'http' },
+          { type: 'host', value: 'shankeragencies.com' },
+        ],
+        destination: 'https://www.shankeragencies.com/:path*',
+        permanent: true,
+      },
+      // HTTP www → HTTPS www
+      {
+        source: '/:path*',
+        has: [
+          { type: 'header', key: 'x-forwarded-proto', value: 'http' },
+          { type: 'host', value: 'www.shankeragencies.com' },
+        ],
+        destination: 'https://www.shankeragencies.com/:path*',
+        permanent: true,
+      },
+      // HTTPS apex → HTTPS www (existing — kept for completeness)
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'shankeragencies.com' }],
