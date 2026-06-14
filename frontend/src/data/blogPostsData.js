@@ -27,8 +27,22 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-03-15",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    keyTakeaways: [
+      "Silica ramming mass suits grey iron and mild steel; alumina suits stainless and tool steel; magnesia suits manganese steel.",
+      "Evaluate cost per heat — not cost per kg — to find the truly economical choice for your furnace.",
+      "Boric acid content (1–2.5%) in silica mass controls sintering speed and working face strength.",
+      "Sintering schedule is as critical as material choice — rushing sintering destroys lining life.",
+      "Grain size distribution (coarse/medium/fine) determines packing density and erosion resistance after sintering.",
+    ],
+    faqs: [
+      { q: "What is the difference between silica, alumina, and magnesia ramming mass?", a: "Silica ramming mass (SiO₂ >96%) suits acidic melts like grey iron and mild steel, operating up to 1,700°C. Alumina mass (Al₂O₃ 80–95%) handles neutral slags for stainless and tool steel up to 1,750°C. Magnesia mass (MgO >85%) resists basic slags for manganese steel up to 1,800°C but has shorter campaign life." },
+      { q: "How do I select ramming mass for my induction furnace?", a: "Match the mass chemistry to your melt chemistry: use silica for iron and mild steel, alumina for stainless and special alloys, and magnesia for manganese or basic-slag alloys. Also consider operating temperature, furnace size, and expected campaign life. When in doubt, consult your refractory supplier with your heat chemistry data." },
+      { q: "Why does my induction furnace lining fail early?", a: "Early lining failure is usually caused by an incorrect sintering schedule, wrong mass grade for the melt chemistry, excessive boric acid content causing over-sintering, thermal shock from rapid heat-cool cycles, or insufficient lining thickness. Check sintering temperature curves and review mass grade against your operating metal chemistry." },
+      { q: "What is the typical lining life for induction furnace ramming mass?", a: "Silica mass typically gives 150–350 heats for grey iron and mild steel. Alumina mass gives 80–200 heats for stainless steel. Magnesia mass gives 40–100 heats for manganese steel. Actual life depends on furnace size, melt temperature, charge practice, and sintering quality." },
+    ],
     excerpt:
       "Selecting the right ramming mass is the single most impactful decision you make for induction furnace lining life. This guide compares silica, alumina, and magnesia ramming mass across key parameters and explains how sintering profile, grain distribution, and boric acid content affect campaign life.",
     content: `
@@ -184,6 +198,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-03-10",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1200&q=80",
     excerpt:
@@ -319,6 +334,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "11 min",
     publishDate: "2026-03-08",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1562408590-e32931084e23?w=1200&q=80",
     excerpt:
@@ -471,6 +487,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "8 min",
     publishDate: "2026-03-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
     excerpt:
@@ -592,6 +609,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "12 min",
     publishDate: "2026-02-28",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1200&q=80",
     excerpt:
@@ -719,6 +737,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-02-20",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
     excerpt:
@@ -840,6 +859,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-02-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
     excerpt:
@@ -975,6 +995,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-02-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1530538987395-032d1800fdd4?w=1200&q=80",
     excerpt:
@@ -1093,6 +1114,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "8 min",
     publishDate: "2026-02-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     excerpt:
@@ -1220,6 +1242,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-01-28",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1200&q=80",
     excerpt:
@@ -1352,6 +1375,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "8 min",
     publishDate: "2026-01-20",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
     excerpt:
@@ -1498,6 +1522,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-01-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
     excerpt:
@@ -1629,6 +1654,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-01-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
     excerpt:
@@ -1753,6 +1779,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-01-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     excerpt:
@@ -1933,6 +1960,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2025-12-28",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     excerpt:
@@ -2077,8 +2105,21 @@ export const BLOG_POSTS_DATA = [
     tags: ["high alumina bricks", "AL70", "AL80", "steel ladle", "working lining", "alumina content"],
     readTime: "6 min",
     publishDate: "2026-01-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    keyTakeaways: [
+      "AL70 (68–72% Al₂O₃, CCS 60–70 MPa) is the standard choice for general steel ladle working linings with carbon and low-alloy steel.",
+      "AL80 (78–82% Al₂O₃, CCS 70–85 MPa) is required for slag lines, safety linings, and ladles processing stainless or high-alloy steel.",
+      "Higher alumina content means better refractoriness and slag resistance, but also higher cost — use only where the application demands it.",
+      "AL70 gives 120–180 heats in typical ladle duty; AL80 gives 150–220 heats in demanding zones.",
+      "Never use AL70 as a safety lining — the safety lining must withstand a full working lining failure without metal penetration.",
+    ],
+    faqs: [
+      { q: "What is the difference between AL70 and AL80 high alumina bricks?", a: "AL70 contains 68–72% Al₂O₃ with CCS of 60–70 MPa and is used for general ladle working linings. AL80 contains 78–82% Al₂O₃ with CCS of 70–85 MPa and is used in slag lines, safety linings, and high-alloy steel applications. AL80 offers better slag resistance and refractoriness but at higher cost." },
+      { q: "Which grade of high alumina brick should I use for my steel ladle?", a: "Use AL70 for the barrel and bottom working lining when processing carbon and low-alloy steel. Use AL80 for slag line zones where slag attack is severe, for safety linings in all steel grades, and for any ladle processing stainless steel, high-alloy, or calcium-treated steel. Mixing zones optimizes cost without compromising performance." },
+      { q: "What is the campaign life of AL70 vs AL80 bricks in a steel ladle?", a: "AL70 bricks typically achieve 120–180 heats in ladle working linings for carbon steel, depending on slag chemistry, tapping temperature, and operational practice. AL80 bricks achieve 150–220 heats in equivalent conditions due to higher hot strength and slag resistance. The actual campaign life depends more on operational factors than grade alone." },
+    ],
     excerpt: "AL70 (68–72% Al₂O₃) offers an excellent balance of cost and performance for general ladle working linings, while AL80 (78–82% Al₂O₃) delivers superior hot strength for demanding slag lines and safety linings. A practical selection guide comparing key parameters.",
     content: `
 <h2>Understanding Alumina Content in Ladle Bricks</h2>
@@ -2180,8 +2221,30 @@ export const BLOG_POSTS_DATA = [
     tags: ["LCC castable", "low cement castable", "castable installation", "heat-up schedule", "curing refractory", "vibration casting"],
     readTime: "7 min",
     publishDate: "2026-01-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+    keyTakeaways: [
+      "Water addition for LCC must be 4–6% by weight — even 1% extra drastically reduces strength and increases spalling risk.",
+      "Mix LCC for a minimum of 3–5 minutes in a forced-action mixer after all water is added.",
+      "Cure for minimum 24 hours at ambient temperature before heat-up; longer curing improves strength.",
+      "Heat-up rate should not exceed 25–50°C/hour up to 300°C to safely drive off free and chemically bound water.",
+      "Never add water to a partially mixed or stiff batch — discard and restart to avoid weak zones in the lining.",
+    ],
+    howToSteps: [
+      { name: "Prepare the mould and formwork", text: "Clean the formwork and apply a release agent. Ensure correct dimensions for lining thickness. Pre-heat if ambient temperature is below 10°C." },
+      { name: "Measure water addition accurately", text: "Weigh water to 4.5–6% of the dry castable weight. Never estimate — use a calibrated scale. Follow the product datasheet exactly." },
+      { name: "Mix in a forced-action mixer", text: "Add dry castable to the mixer, then add 80% of the water and mix for 1 minute. Add remaining water and mix for a further 3–4 minutes until fully homogeneous." },
+      { name: "Place and vibrate", text: "Pour or pump LCC into formwork within 20–30 minutes of mixing. Use a poker vibrator at 150mm intervals for 10–15 seconds per position until air bubbles cease." },
+      { name: "Cure at ambient temperature", text: "Cover with wet hessian and polythene for minimum 24 hours (48 hours preferred). Do not allow the surface to dry out during curing." },
+      { name: "Follow controlled heat-up schedule", text: "Heat at ≤25°C/hour from ambient to 110°C and hold for 2 hours. Then ≤50°C/hour to 300°C and hold for 2 hours. Then ≤100°C/hour to operating temperature." },
+    ],
+    faqs: [
+      { q: "What is the correct water addition for LCC castable?", a: "The correct water addition for most LCC castables is 4.5–6% by weight of dry castable. Adding more than 6% causes segregation, reduced density, and increased risk of explosive spalling during heat-up. Always follow the product-specific datasheet — different LCC grades have different optimal water ranges." },
+      { q: "How long should LCC castable be cured before heat-up?", a: "LCC castable should be cured for a minimum of 24 hours at ambient temperature before starting heat-up. For thicker sections (>150mm) or cold weather, 48 hours is recommended. Longer curing allows cement hydration to complete, building strength and reducing spalling risk during the first heat-up." },
+      { q: "What causes explosive spalling in refractory castables?", a: "Explosive spalling occurs when trapped water converts to steam faster than it can escape. Common causes include excessive water addition, insufficient curing time, too-fast heat-up rate below 300°C, and poor castable mixing. Prevention: use correct water addition, cure fully, and follow a controlled heat-up schedule with holds at 110°C and 300°C." },
+      { q: "What is the maximum heat-up rate for LCC?", a: "For most LCC castables, the maximum heat-up rate is 25–50°C/hour up to 300°C where free and chemically bound water must escape. Above 300°C, 50–100°C/hour is typically acceptable. Holds of 2–4 hours at 110°C and 300°C are critical. Exceeding these rates risks explosive spalling that can destroy the lining." },
+    ],
     excerpt: "Proper installation is critical for LCC performance. This guide covers optimal water addition (4–6%), mixing requirements, vibration casting vs. self-flow, curing procedures, and controlled heat-up schedules to prevent explosive spalling.",
     content: `
 <h2>Why LCC Installation Practice Determines Performance</h2>
@@ -2279,6 +2342,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["ceramic fiber", "insulating firebrick", "IFB", "furnace lining", "energy saving", "thermal insulation"],
     readTime: "6 min",
     publishDate: "2026-01-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
     excerpt: "Ceramic fiber offers 30–40% energy savings with lower thermal mass, ideal for cyclic operations. IFB provides better abrasion resistance for permanent hot-face linings. We compare thermal conductivity, maximum service temperatures, installation costs, and 5-year TCO.",
@@ -2380,6 +2444,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["steel ladle lining", "working lining", "MgO-C bricks", "LCC castable", "purging plug", "campaign life", "ladle refractory"],
     readTime: "8 min",
     publishDate: "2025-12-28",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1200&q=80",
     excerpt: "Comprehensive guide covering working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specifications, bottom design considerations, purging plug selection, and achieving 100+ heat campaigns with zone-specific recommendations based on ladle capacity.",
@@ -2480,6 +2545,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["cement kiln", "rotary kiln refractory", "burning zone", "magnesia spinel", "kiln refractory", "cement plant"],
     readTime: "7 min",
     publishDate: "2025-12-20",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
     excerpt: "Rotary kiln refractory selection varies dramatically by zone. The burning zone demands magnesia spinel or MgO-Chrome bricks; transition zones need high-alumina or andalusite; upper cyclone preheaters use castables. This guide maps thermal, chemical, and mechanical requirements to material solutions.",
@@ -2601,6 +2667,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["slide gate", "flow control", "ladle shroud", "slide gate plate", "continuous casting", "subentry nozzle"],
     readTime: "6 min",
     publishDate: "2025-12-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     excerpt: "Modern continuous casting demands precise flow control. This article covers slide gate plate materials (Al₂O₃-C, Al₂O₃-ZrO₂-C, MgO-C), nozzle selection criteria, anti-clogging strategies with argon purging, and practical tips for achieving longer sequence casting without interruption.",
@@ -2700,6 +2767,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["gunning refractory", "casting refractory", "hot repair", "refractory installation", "gunning mix", "refractory maintenance"],
     readTime: "5 min",
     publishDate: "2025-12-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     excerpt: "Gunning offers rapid installation and hot repair capability with minimal downtime, while casting provides denser, stronger linings for new construction. This guide compares application methods, rebound loss, material properties, cost implications, and provides a decision framework for plant engineers.",
@@ -2801,6 +2869,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["induction furnace lining", "ramming mass", "silica ramming mass", "sintering schedule", "foundry refractory", "lining failure"],
     readTime: "7 min",
     publishDate: "2025-12-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
     excerpt: "Silica, alumina, and magnesia ramming masses each serve different metallurgical requirements. This guide covers material selection based on melt type (iron, steel, copper), lining life expectations, sintering schedules and temperatures, and troubleshooting the most common failure modes.",
@@ -2914,6 +2983,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "12 min",
     publishDate: "2026-04-20",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&q=80",
     excerpt: "If you run a steel re-rolling mill in Wazirpur, an aluminium die-casting shop in Manesar or a foundry in Sahibabad, choosing the right refractory dealer is as important as choosing the right material. This guide walks through what to look for in a Delhi NCR refractory supplier in 2026, the trade-offs between authorised dealers, traders and factory agents, and a practical checklist you can use before placing your next order.",
@@ -3035,6 +3105,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "11 min",
     publishDate: "2026-04-18",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&q=80",
     excerpt: "Castable refractory cement is the workhorse lining for boilers, reheating furnaces, kiln hoods, transfer chutes and shaped anchors across Delhi NCR plants. This buyer's guide explains the differences between conventional, low cement and ultra low cement castables, how to pick the right alumina content, what curing and dry-out look like in practice, and how castable pricing works in 2026.",
@@ -3153,6 +3224,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-04-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=1200&q=80",
     excerpt: "Most refractory linings fail well before their designed campaign life because of avoidable maintenance misses. This 12-step checklist, drawn from 45 plus years of plant visits across steel, cement, aluminium, glass and power plants, covers the inspection, patching, dry-out, slag control and shutdown actions that buy you the extra heats your technical datasheet promised.",

@@ -4,7 +4,26 @@ from typing import List, Optional, Dict, Any
 from datetime import datetime, timezone
 from motor.motor_asyncio import AsyncIOMotorClient
 import os
+import httpx
 from bson import ObjectId
+
+INDEXNOW_KEY = "68c9e978104b40548276dada2151c101"
+SITE_HOST = "www.shankeragencies.com"
+SITE_BASE = f"https://{SITE_HOST}"
+
+async def _submit_indexnow(urls: list[str]) -> None:
+    """Fire-and-forget IndexNow submission — never raises."""
+    try:
+        async with httpx.AsyncClient(timeout=5.0) as client:
+            payload = {
+                "host": SITE_HOST,
+                "key": INDEXNOW_KEY,
+                "keyLocation": f"{SITE_BASE}/{INDEXNOW_KEY}.txt",
+                "urlList": urls,
+            }
+            await client.post("https://api.indexnow.org/indexnow", json=payload)
+    except Exception:
+        pass
 
 # Create router
 cms_router = APIRouter(prefix="/api", tags=["CMS"])
@@ -29,8 +48,8 @@ class BlogPost(BaseModel):
     category: str
     tags: List[str]
     featured_image: Optional[str] = None
-    meta_title: Optional[str] = None
-    meta_description: Optional[str] = None
+    meta_title: Optional[str] = Field(default=None, max_length=60)
+    meta_description: Optional[str] = Field(default=None, max_length=155)
     status: str = "draft"
     published_at: Optional[datetime] = None
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
@@ -51,8 +70,8 @@ class Product(BaseModel):
     images: List[str] = []
     featured_image: Optional[str] = None
     datasheet_url: Optional[str] = None
-    meta_title: Optional[str] = None
-    meta_description: Optional[str] = None
+    meta_title: Optional[str] = Field(default=None, max_length=60)
+    meta_description: Optional[str] = Field(default=None, max_length=155)
     status: str = "active"
     created_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
     updated_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
@@ -127,6 +146,8 @@ async def create_blog_post(post: BlogPost):
     existing = await db.blog_posts.find_one({"slug": post.slug})
     if existing: raise HTTPException(status_code=400, detail="Slug already exists")
     result = await db.blog_posts.insert_one(post.dict())
+    if post.status == "published":
+        await _submit_indexnow([f"{SITE_BASE}/blog/{post.slug}"])
     return {"message": "Blog post created", "id": str(result.inserted_id), "slug": post.slug}
 
 @cms_router.put("/blog/posts/{post_id}")
@@ -137,6 +158,8 @@ async def update_blog_post(post_id: str, post: BlogPost):
     post_dict["updated_at"] = datetime.now(timezone.utc)
     result = await db.blog_posts.update_one({"_id": object_id}, {"$set": post_dict})
     if result.matched_count == 0: raise HTTPException(status_code=404, detail="Post not found")
+    if post.status == "published":
+        await _submit_indexnow([f"{SITE_BASE}/blog/{post.slug}"])
     return {"message": "Blog post updated"}
 
 @cms_router.delete("/blog/posts/{post_id}")
