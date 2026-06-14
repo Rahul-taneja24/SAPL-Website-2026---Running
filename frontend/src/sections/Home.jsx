@@ -717,6 +717,62 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ══════════════════════════════════════════════
+          HOMEPAGE FAQ — visible HTML required by Google
+          before FAQPage schema activates.
+          Questions match app/page.jsx faqSchema exactly.
+      ══════════════════════════════════════════════ */}
+      <section className="bg-gray-50 py-16 px-4" aria-labelledby="faq-heading">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 id="faq-heading" className="font-oswald text-3xl font-bold text-[#1E3A5F] mb-3">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-500 text-sm max-w-xl mx-auto">
+              Common questions from steel plants, cement kilns, aluminium smelters and international buyers.
+            </p>
+          </div>
+          <div className="space-y-3">
+            {[
+              {
+                q: "What refractory materials does Shanker Agencies distribute?",
+                a: "Shanker Agencies distributes the full range of refractory materials: high alumina bricks (AL45–AL90), fireclay bricks, magnesia spinel and MgO-C bricks, low cement castables (LCC/ULCC), silica and alumina ramming mass, ceramic fiber blankets and modules, slide gate plates, ladle shrouds, subentry nozzles, acid proof bricks, and calcium silicate boards. Authorized dealers of CUMI, Crown Ceramics, and Divine Cerawool.",
+              },
+              {
+                q: "Which brands is Shanker Agencies authorized to distribute?",
+                a: "Shanker Agencies is an authorized dealer of CUMI Super Refractories, Crown Ceramics (acid proof products), and Divine Cerawool (ceramic fiber insulation). We also supply from Calderys, TRL Krosaki, and IFGL Refractories as trusted supply partners.",
+              },
+              {
+                q: "Does Shanker Agencies export refractory materials?",
+                a: "Yes. Shanker Agencies exports refractory materials to 50+ countries including UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain, Singapore, Malaysia, Bangladesh, Sri Lanka, Ghana, Kenya, South Africa, UK, and Germany. We provide complete export documentation: COO, material test reports, and MSDS.",
+              },
+              {
+                q: "How do I get a technical datasheet for a refractory product?",
+                a: "Technical datasheets for all refractory products are available on request. Contact via WhatsApp (+91-9899957888) or email (info@shankeragencies.com). Our team responds within 2 business hours. Visit shankeragencies.com/downloads for the full list.",
+              },
+              {
+                q: "What industries does Shanker Agencies supply refractory materials to?",
+                a: "We supply refractory materials to steel plants (EAF, BOF, induction furnaces, continuous casting), cement kilns, aluminium smelters, glass melting furnaces, petrochemical refineries, fertilizer plants, power stations, and ceramic & foundry industries.",
+              },
+            ].map((item, i) => (
+              <details
+                key={i}
+                className="group bg-white rounded-xl border border-gray-200 overflow-hidden"
+                {...(i === 0 ? { open: true } : {})}
+              >
+                <summary className="flex items-center justify-between gap-3 px-5 py-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-[#1E3A5F] text-sm">{item.q}</span>
+                  <ChevronDown className="w-4 h-4 text-[#F97316] flex-shrink-0 transition-transform group-open:rotate-180" />
+                </summary>
+                <div className="px-5 pb-5 pt-1">
+                  <p className="text-gray-600 text-sm leading-relaxed">{item.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };
