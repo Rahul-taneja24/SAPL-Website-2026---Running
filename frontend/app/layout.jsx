@@ -184,7 +184,7 @@ export default function RootLayout({ children }) {
               priceRange: '₹₹',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: '553, Main G.T Road, Shahdara',
+                streetAddress: '553, Main Grand Trunk Road, East Ram Nagar, Shahdara',
                 addressLocality: 'Delhi',
                 addressRegion: 'Delhi',
                 postalCode: '110032',
@@ -192,8 +192,8 @@ export default function RootLayout({ children }) {
               },
               geo: {
                 '@type': 'GeoCoordinates',
-                latitude: '28.67608',
-                longitude: '77.29595',
+                latitude: '28.6761047',
+                longitude: '77.2959900',
               },
               hasMap: 'https://share.google/Cz2EJCPRFsQtAvvOE',
               additionalType: 'https://www.wikidata.org/wiki/Q11642428',
@@ -257,10 +257,60 @@ export default function RootLayout({ children }) {
                 'https://www.globallinker.com/seller/shanker-agencies-private-limited',
               ],
               knowsAbout: [
-                'Refractory Materials', 'High Alumina Bricks', 'Low Cement Castables',
-                'Ceramic Fiber Insulation', 'Ramming Mass', 'Slide Gate Plates',
-                'Acid Proof Bricks', 'Steel Plant Refractories', 'Cement Kiln Refractories',
-                'Induction Furnace Lining', 'Furnace Engineering',
+                // Shaped refractories
+                'Refractory Materials', 'High Alumina Bricks', 'Fireclay Bricks',
+                'Magnesia Carbon Bricks (MgO-C)', 'Magnesia Chrome Bricks',
+                'Silicon Carbide Bricks', 'Insulating Fire Bricks (IFB)',
+                'Mullite Bricks', 'Andalusite Bricks', 'Fused Cast AZS Blocks',
+                // Unshaped / monolithic
+                'Low Cement Castables (LCC)', 'Ultra Low Cement Castables (ULCC)',
+                'Conventional Castables', 'Gunning Castables', 'Plastic Refractories',
+                'Ramming Mass', 'Refractory Mortar',
+                // Flow control
+                'Slide Gate Plates', 'Porous Plugs', 'Ladle Shrouds',
+                'Subentry Nozzles (SEN)', 'Monoblock Stoppers', 'Tundish Nozzles',
+                'Well Blocks', 'PCPF Blocks',
+                // Insulation
+                'Ceramic Fiber Blankets', 'Ceramic Fiber Modules', 'Ceramic Fiber Boards',
+                'Calcium Silicate Insulation', 'Microporous Insulation',
+                // Acid proofing
+                'Acid Proof Bricks (IS 4860)', 'Acid Proof Tiles', 'Carbon Bricks',
+                'Potassium Silicate Cement', 'Acid Proof Mortar',
+                // Engineering / applications
+                'Steel Plant Refractories', 'Cement Kiln Refractories',
+                'Induction Furnace Lining', 'Blast Furnace Refractories',
+                'Boiler Refractories', 'Glass Furnace Refractories',
+                'Aluminium Smelter Refractories', 'Copper Smelter Refractories',
+                'Refractory Lining Design', 'Refractory Anchor Systems',
+                'Refractory Lining Maintenance', 'Furnace Engineering',
+              ],
+              hasCredential: [
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'Corporate Registration',
+                  name: 'Corporate Identification Number',
+                  identifier: 'U51909DL2012PTC232825',
+                  recognizedBy: {
+                    '@type': 'GovernmentOrganization',
+                    name: 'Ministry of Corporate Affairs, Government of India',
+                  },
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'Tax Registration',
+                  name: 'GST Registration',
+                  identifier: '07AARCS1944B1ZC',
+                  recognizedBy: {
+                    '@type': 'GovernmentOrganization',
+                    name: 'Goods and Services Tax Network, Government of India',
+                  },
+                },
+                {
+                  '@type': 'EducationalOccupationalCredential',
+                  credentialCategory: 'Industry Experience',
+                  name: 'Refractory Engineering since 1980',
+                  description: '45+ years supplying authorized-brand refractories to steel, cement, aluminium, power and petrochemical industries across India and export markets.',
+                },
               ],
               hasOfferCatalog: {
                 '@type': 'OfferCatalog',
