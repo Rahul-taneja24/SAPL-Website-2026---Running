@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
       type: 'article',
       publishedTime: post.publishDate,
       modifiedTime: post.lastModified || post.publishDate,
-      authors: ['Rahul Taneja, Shanker Agencies'],
+      authors: [post.author?.name ? `${post.author.name}, Shanker Agencies` : 'Shanker Agencies Engineering Team'],
       tags: post.tags,
       images: [{ url: post.coverImage || '/opengraph-image', width: 1200, height: 630, alt: post.title }],
     },
@@ -63,10 +63,9 @@ export default async function BlogArticlePage({ params }) {
     image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
     author: {
       '@type': 'Person',
-      '@id': 'https://www.shankeragencies.com/about#rahul-taneja',
-      name: 'Rahul Taneja',
-      jobTitle: 'Refractory Engineering Expert',
-      description: 'Director at Shanker Agencies Pvt. Ltd. with 25+ years of refractory engineering expertise. Specializing in furnace lining design, refractory material selection, and industrial thermal engineering.',
+      name: post.author?.name || 'Shanker Agencies Engineering Team',
+      jobTitle: post.author?.role || 'Refractory Engineer',
+      description: `${post.author?.role || 'Refractory engineer'} at Shanker Agencies Pvt. Ltd. — India's leading refractory engineering partner since 1980.`,
       worksFor: {
         '@type': 'Organization',
         '@id': 'https://www.shankeragencies.com/#organization',
@@ -74,7 +73,6 @@ export default async function BlogArticlePage({ params }) {
         url: 'https://www.shankeragencies.com',
       },
       url: 'https://www.shankeragencies.com/about',
-      sameAs: ['https://www.linkedin.com/in/rahultaneja24/'],
     },
     publisher: {
       '@type': 'Organization',
@@ -191,15 +189,28 @@ export default async function BlogArticlePage({ params }) {
           <p className="text-lg text-white/75 leading-relaxed mb-8 max-w-3xl">{post.excerpt}</p>
 
           {/* Author byline */}
-          <div className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-white/8 border border-white/15 w-fit">
-            <div className="w-9 h-9 rounded-full bg-[#F97316] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-              RT
-            </div>
-            <div>
-              <p className="text-white font-semibold text-sm leading-none">Rahul Taneja</p>
-              <p className="text-white/55 text-xs mt-0.5">Refractory Engineering Expert · Director, SAPL</p>
-            </div>
-          </div>
+          {(() => {
+            const authorName = post.author?.name || 'Shanker Agencies Engineering Team';
+            const authorRole = post.author?.role || 'Refractory Engineer';
+            const initials = authorName
+              .split(' ')
+              .filter(Boolean)
+              .slice(0, 2)
+              .map((w) => w[0])
+              .join('')
+              .toUpperCase();
+            return (
+              <div className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-white/8 border border-white/15 w-fit">
+                <div className="w-9 h-9 rounded-full bg-[#F97316] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
+                  {initials}
+                </div>
+                <div>
+                  <p className="text-white font-semibold text-sm leading-none">{authorName}</p>
+                  <p className="text-white/55 text-xs mt-0.5">{authorRole}</p>
+                </div>
+              </div>
+            );
+          })()}
 
           <div className="flex flex-wrap gap-2">
             {post.tags.map((tag) => (
