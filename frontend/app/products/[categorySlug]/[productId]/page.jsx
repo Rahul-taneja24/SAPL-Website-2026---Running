@@ -75,7 +75,11 @@ export default async function ProductDetailPage({ params }) {
   const datasheet = getProductDatasheet(productId);
   const productUrl = `https://www.shankeragencies.com/products/${categorySlug}/${productId}`;
   const productName = catalogEntry?.name || seo?.name || product?.name;
-  const productImage = catalogEntry?.images?.[0] || product?.image;
+  // Always emit an image — falls back to OG image so Merchant listings never flag "Missing image"
+  const productImage =
+    catalogEntry?.images?.[0] ||
+    product?.image ||
+    'https://www.shankeragencies.com/opengraph-image';
 
   // ─── Enriched Product schema ────────────────────────────────────────────
   // Pulls every per-grade spec row from the catalog into additionalProperty
@@ -145,7 +149,7 @@ export default async function ProductDetailPage({ params }) {
           (product
             ? `${product.name} — ${product.use}. Max temperature: ${product.temp}. Al₂O₃: ${product.al2o3}. Bulk density: ${product.density}. Features: ${product.features}.`
             : seo?.metaDescription),
-        image: productImage ? [productImage] : undefined,
+        image: [productImage],
         url: productUrl,
         category: catalogEntry?.name || product?.type,
         brand: brandsList.map((b) => ({ '@type': 'Brand', name: b })),
