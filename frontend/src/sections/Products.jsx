@@ -182,16 +182,13 @@ function ProductFAQ({ faqs, accent }) {
         <div className="w-1 h-7 rounded-full" style={{ background: accent }} />
         <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F]">FREQUENTLY ASKED QUESTIONS</h2>
       </div>
-      <div className="space-y-2.5" itemScope itemType="https://schema.org/FAQPage">
+      <div className="space-y-2.5">
         {faqs.map((faq, i) => {
           const isOpen = open === i;
           return (
             <div
               key={i}
               className="border border-gray-200 rounded-xl overflow-hidden bg-white"
-              itemScope
-              itemProp="mainEntity"
-              itemType="https://schema.org/Question"
             >
               <button
                 type="button"
@@ -200,23 +197,21 @@ function ProductFAQ({ faqs, accent }) {
                 aria-expanded={isOpen}
               >
                 <HelpCircle size={18} className="flex-shrink-0 mt-0.5" style={{ color: accent }} aria-hidden="true" />
-                <span className="font-semibold text-[#1E3A5F] text-sm flex-1 pr-2" itemProp="name">{faq.q}</span>
+                <span className="font-semibold text-[#1E3A5F] text-sm flex-1 pr-2">{faq.q}</span>
                 <ChevronDown
                   size={18}
                   className={`flex-shrink-0 mt-0.5 text-gray-400 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
                   aria-hidden="true"
                 />
               </button>
-              {isOpen && (
-                <div
-                  className="px-5 pb-5 pl-[52px] pt-1"
-                  itemScope
-                  itemProp="acceptedAnswer"
-                  itemType="https://schema.org/Answer"
-                >
-                  <p className="text-gray-700 text-sm leading-relaxed" itemProp="text">{faq.a}</p>
-                </div>
-              )}
+              {/* Answer always in DOM so crawlers read all FAQ content; CSS hides it when collapsed */}
+              <div
+                className="px-5 pl-[52px] pt-1 overflow-hidden transition-all duration-200"
+                style={isOpen ? { maxHeight: '500px', paddingBottom: '20px', opacity: 1 } : { maxHeight: '0', paddingBottom: '0', opacity: 0 }}
+                aria-hidden={!isOpen}
+              >
+                <p className="text-gray-700 text-sm leading-relaxed">{faq.a}</p>
+              </div>
             </div>
           );
         })}
