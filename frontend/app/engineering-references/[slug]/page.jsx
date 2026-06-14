@@ -106,7 +106,7 @@ export default async function EngineeringReferencePage({ params }) {
     ].filter(Boolean),
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['[data-speakable="true"]', 'h1', 'h2'],
+      cssSelector: '[data-speakable="true"], h1, h2',
     },
     about: [{ '@type': 'Organization', '@id': `${BASE}/#organization` }],
     // Explicit disclosure inside the schema itself, so AI engines reading the

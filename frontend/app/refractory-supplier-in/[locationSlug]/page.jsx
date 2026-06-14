@@ -255,7 +255,7 @@ export default async function LocationPage({ params }) {
     about: { '@id': 'https://www.shankeragencies.com/#organization' },
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['h1', 'h2', '[data-speakable]', '.prose p'],
+      cssSelector: 'h1, h2, [data-speakable], .prose p',
     },
   };
 

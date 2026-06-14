@@ -156,14 +156,13 @@ export default async function ProductDetailPage({ params }) {
         offers: {
           '@type': 'Offer',
           seller: { '@id': 'https://www.shankeragencies.com/#organization' },
+          price: '0',
+          priceCurrency: 'INR',
+          priceValidUntil: '2027-12-31',
+          description: 'Quoted on enquiry — varies by grade, brand and order quantity.',
           availability: 'https://schema.org/InStock',
           areaServed: ['IN', 'AE', 'SA', 'QA', 'OM', 'KW', 'BH', 'SG', 'MY', 'GB', 'DE'],
           url: productUrl,
-          priceSpecification: {
-            '@type': 'PriceSpecification',
-            priceCurrency: 'INR',
-            description: 'Quoted on enquiry — varies by grade, brand and order quantity.',
-          },
         },
         additionalProperty: additionalProperty.length ? additionalProperty : undefined,
         audience: {

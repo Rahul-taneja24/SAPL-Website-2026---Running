@@ -97,7 +97,7 @@ export default async function BlogArticlePage({ params }) {
     },
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['article h2', 'article h3', 'blockquote'],
+      cssSelector: 'article h2, article h3, blockquote',
     },
     isAccessibleForFree: true,
     inLanguage: 'en-IN',
