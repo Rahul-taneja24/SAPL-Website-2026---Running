@@ -58,7 +58,7 @@ const certifications = [
 
 const differentiators = [
   "Refractory engineering partner — not just a supplier. We design, manufacture, and install.",
-  "Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool & Mahakoshal Refractories + supply partner for TRL Krosaki, IFGL & Calderys",
+  "Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool · Strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL & Saint-Gobain",
   "Manufacturing capability for custom refractory shapes, precast components & specialty products",
   "Brand-agnostic recommendations — we specify the best product for your application, not the highest margin",
   "In-house refractory engineers for furnace lining design, thermal analysis & installation supervision",
@@ -238,7 +238,7 @@ const About = () => {
                   What made SAPL different from the beginning was a commitment to <strong className="text-[#1E3A5F]">understanding the customer's problem, not just selling them a product.</strong> Mohan Taneja spent time in plants, understanding furnace conditions, failure modes, and operational pressures before recommending materials. That practice became the culture of the company — and was reinforced when <strong className="text-[#1E3A5F]">Rahul Taneja (second generation) joined as Director in 2018</strong>, adding modern sales engineering and digital capabilities to the family business.
                 </p>
                 <p>
-                  Today, we are an <strong className="text-[#1E3A5F]">authorized dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories</strong>, and a trusted supply partner for TRL Krosaki, IFGL and Calderys. We also manufacture custom refractory shapes, precast components, and specialty products — giving us the engineering depth and end-to-end capability that large steel plants, cement groups, and petrochemical companies expect from their refractory partner.
+                  Today, we are an <strong className="text-[#1E3A5F]">authorised dealer of CUMI, Crown Ceramics and Divine Cerawool</strong>, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. We also manufacture custom refractory shapes, precast components, and specialty products — giving us the engineering depth and end-to-end capability that large steel plants, cement groups, and petrochemical companies expect from their refractory partner.
                 </p>
               </div>
 

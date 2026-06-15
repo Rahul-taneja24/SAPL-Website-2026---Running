@@ -191,8 +191,8 @@ export default async function Image() {
                 marginTop: '8px',
               }}
             >
-              Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool & Mahakoshal \u00B7
-              Supply partner for TRL Krosaki, IFGL & Calderys
+              Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool \u00B7
+              Strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL & Saint-Gobain
             </span>
           </div>
 

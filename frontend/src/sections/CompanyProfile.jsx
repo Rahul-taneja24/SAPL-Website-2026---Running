@@ -425,7 +425,7 @@ function CompanyProfile() {
 
           <div className="mb-6 bg-gradient-to-br from-[#F97316]/5 to-[#3B82F6]/5 border border-[#F97316]/20 rounded-xl p-5">
             <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
-              India's premier refractory engineering partner since 1980, serving steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries. <strong className="text-[#1E3A5F]">Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal; strategic supply partner for TRL Krosaki, IFGL and Calderys.</strong>
+              India's premier refractory engineering partner since 1980, serving steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries. <strong className="text-[#1E3A5F]">Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain.</strong>
             </p>
           </div>
 
@@ -436,10 +436,11 @@ function CompanyProfile() {
                 { name: "CUMI (Carborundum Universal)", tag: "Authorised Dealer" },
                 { name: "Crown Ceramics", tag: "Authorised Dealer" },
                 { name: "Divine Cerawool", tag: "Authorised Dealer" },
-                { name: "Mahakoshal Refractories", tag: "Authorised Dealer" },
+                { name: "Mahakoshal Refractories", tag: "Supply Partner" },
                 { name: "TRL Krosaki (Tata Group)", tag: "Supply Partner" },
                 { name: "IFGL Refractories", tag: "Supply Partner" },
                 { name: "Calderys India", tag: "Supply Partner" },
+                { name: "Saint-Gobain", tag: "Supply Partner" },
               ].map(({ name, tag }) => (
                 <span
                   key={name}
