@@ -149,6 +149,15 @@ export default function RootLayout({ children }) {
                 height: 60,
               },
               foundingDate: '1980',
+              identifier: [
+                { '@type': 'PropertyValue', name: 'CIN', value: 'U51909DL2012PTC232825' },
+                { '@type': 'PropertyValue', name: 'GST', value: '07AARCS1944B1ZC' },
+              ],
+              hasCredential: {
+                '@type': 'EducationalOccupationalCredential',
+                credentialCategory: 'certification',
+                name: 'ISO 9001 Quality Management System',
+              },
               founder: {
                 '@type': 'Person',
                 '@id': 'https://www.shankeragencies.com/about#mohan-taneja',

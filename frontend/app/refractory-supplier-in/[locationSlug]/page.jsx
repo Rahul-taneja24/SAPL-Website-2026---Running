@@ -170,6 +170,15 @@ export default async function LocationPage({ params }) {
   const relatedLocations = getRelatedLocations(slug, 6);
   const faqs = generateFAQs(location);
 
+  const transitTimeByRegion = {
+    GCC: '7–14 days',
+    ASEAN: '10–21 days',
+    Africa: '14–28 days',
+    Europe: '18–25 days',
+    India: '2–5 days',
+  };
+  const transitTime = transitTimeByRegion[region] || '7–21 days';
+
   // Collect product cards for all local industries
   const productCards = [];
   const seen = new Set();
@@ -210,6 +219,15 @@ export default async function LocationPage({ params }) {
         '@type': 'Country',
         name: country,
       },
+    },
+    serviceArea: {
+      '@type': 'GeoShape',
+      description: `Refractory export supply to ${country} and surrounding region`,
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: `Refractory Products — CIF ${city}`,
+      url: 'https://www.shankeragencies.com/products',
     },
     priceRange: '$$',
     openingHoursSpecification: {
@@ -372,6 +390,66 @@ export default async function LocationPage({ params }) {
           </ol>
         </div>
       </nav>
+
+      {/* ------------------------------------------------------------------ */}
+      {/* EXPORT CTA — international locations only                          */}
+      {/* ------------------------------------------------------------------ */}
+      {isInternational && (
+        <section className="py-12 md:py-16 bg-blue-50 border-b border-blue-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid md:grid-cols-3 gap-8 items-start">
+              <div className="md:col-span-2">
+                <h2 className="font-oswald text-2xl md:text-3xl font-bold text-[#1E3A5F] mb-3">
+                  Get CIF Quote for {city}, {country}
+                </h2>
+                <p className="text-gray-700 mb-5 leading-relaxed">
+                  Shanker Agencies exports refractory products directly to {country}. We provide CIF {city} pricing with full documentation — MTC, Certificate of Origin, Packing List, and Bill of Lading — and typical transit time of {transitTime} from Delhi NCR.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  {[
+                    'CIF and FOB pricing available',
+                    'Samples before bulk orders',
+                    'Material Test Certificate (MTC) with every shipment',
+                    'Certificate of Origin for customs clearance',
+                    'Technical support from our refractory engineers',
+                  ].map((item) => (
+                    <li key={item} className="flex items-center gap-2 text-gray-700 text-sm">
+                      <CheckCircle2 className="w-4 h-4 text-green-500 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href={`/contact?enquiry=export&destination=${encodeURIComponent(city)}`}
+                    className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  >
+                    <Phone className="w-4 h-4" /> Request CIF Quote for {city}
+                  </Link>
+                  <Link
+                    href="/blog/how-to-order-refractory-from-india-export-guide"
+                    className="inline-flex items-center gap-2 border-2 border-[#1E3A5F] text-[#1E3A5F] hover:bg-[#1E3A5F] hover:text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                  >
+                    How export ordering works <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+              <div className="space-y-4">
+                {[
+                  { label: `Transit time to ${city}`, value: transitTime },
+                  { label: 'Incoterms offered', value: 'CIF · FOB · CFR' },
+                  { label: 'Response time', value: '4 business hours' },
+                ].map(({ label, value }) => (
+                  <div key={label} className="bg-white rounded-2xl border border-blue-100 p-5 shadow-sm">
+                    <p className="text-gray-500 text-xs font-semibold uppercase tracking-wide mb-1">{label}</p>
+                    <p className="font-oswald text-xl font-bold text-[#1E3A5F]">{value}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ------------------------------------------------------------------ */}
       {/* INTRO CONTENT */}
