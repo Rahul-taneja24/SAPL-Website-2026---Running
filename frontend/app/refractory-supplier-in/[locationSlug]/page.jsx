@@ -273,7 +273,7 @@ export default async function LocationPage({ params }) {
     about: { '@id': 'https://www.shankeragencies.com/#organization' },
     speakable: {
       '@type': 'SpeakableSpecification',
-      cssSelector: ['h1', 'h2', '[data-speakable]', '.prose p'],
+      cssSelector: 'h1, h2, [data-speakable], .prose p',
     },
   };
 
@@ -684,27 +684,45 @@ export default async function LocationPage({ params }) {
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-oswald text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-            Get a Quote for Refractory Supply in {city}
+            {isInternational
+              ? `Get CIF Quote — Refractory Export to ${city}`
+              : `Get a Quote for Refractory Supply in ${city}`}
           </h2>
-          <p className="text-white/80 text-lg mb-8 max-w-2xl mx-auto">
-            Whether you need a single pallet or full container loads, SAPL provides competitive pricing,
-            genuine branded products, and expert technical support for {city}&apos;s industries.
+          <p className="text-white/80 text-lg mb-4 max-w-2xl mx-auto">
+            {isInternational
+              ? `SAPL ships full containers and LCL shipments to ${city} with CIF pricing, MTC/COO documentation, and 7–21 day transit. All major branded grades in stock.`
+              : `Whether you need a single pallet or full container loads, SAPL provides competitive pricing, genuine branded products, and expert technical support for ${city}'s industries.`}
           </p>
+          {isInternational && (
+            <div className="flex flex-wrap justify-center gap-3 mb-6">
+              {[
+                { label: 'CIF & FOB pricing available' },
+                { label: 'MTC · COO · MSDS included' },
+                { label: '7–21 day transit to most ports' },
+              ].map(({ label }) => (
+                <span key={label} className="inline-flex items-center gap-1.5 text-xs text-white/70 bg-white/10 rounded-full px-3 py-1.5 border border-white/15">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#F97316] flex-shrink-0" />{label}
+                </span>
+              ))}
+            </div>
+          )}
           <div className="flex flex-wrap justify-center gap-4">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
-            >
-              <Phone className="w-5 h-5" /> Contact Us for a Quote
-            </Link>
             <a
-              href="https://wa.me/919899957888"
+              href={`https://wa.me/919899957888?text=${encodeURIComponent(`Hi, I need a CIF quote for refractory supply to ${city}. Please advise.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20BD5A] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
             >
-              <MessageCircle className="w-5 h-5" /> WhatsApp: +91-9899957888
+              <MessageCircle className="w-5 h-5" />
+              {isInternational ? `WhatsApp for CIF Quote` : `WhatsApp: +91-9899957888`}
             </a>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-bold px-8 py-4 rounded-xl text-lg transition-colors"
+            >
+              <Phone className="w-5 h-5" />
+              {isInternational ? `Send Enquiry` : `Contact Us for a Quote`}
+            </Link>
           </div>
           <p className="text-white/60 text-sm mt-6">
             Call us: <a href="tel:+919899957888" className="text-white/80 hover:text-white underline">+91-9899957888</a> |

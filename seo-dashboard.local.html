@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAPL — SEO + GEO Live Dashboard (Local)</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a0a;--s:#111;--card:#161616;--b:#222;--b2:#2a2a2a;
+  --acc:#e8ff47;--acc2:#b8cc30;
+  --red:#ff4444;--amb:#ffb347;--grn:#22c55e;--blu:#38bdf8;--pur:#a78bfa;
+  --t1:#f0f0f0;--t2:#888;--t3:#444;
+  --rbg:rgba(255,68,68,.1);--abg:rgba(255,179,71,.1);--gbg:rgba(34,197,94,.1);--bbg:rgba(56,189,248,.1);
+}
+body{background:var(--bg);color:var(--t1);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;min-height:100vh}
+button,input,select,textarea{font-family:inherit}
+
+/* HEADER */
+.hdr{background:var(--s);border-bottom:1px solid var(--b);padding:10px 18px;display:flex;align-items:center;gap:10px;position:sticky;top:0;z-index:50}
+.live-badge{display:flex;align-items:center;gap:5px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.25);border-radius:20px;padding:3px 9px;font-size:10px;font-weight:700;color:var(--grn);letter-spacing:.05em}
+.live-dot{width:5px;height:5px;border-radius:50%;background:var(--grn);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.2}}
+.local-badge{background:rgba(56,189,248,.12);border:1px solid rgba(56,189,248,.25);color:var(--blu);border-radius:20px;padding:3px 9px;font-size:10px;font-weight:700;letter-spacing:.05em}
+.hdr-title{font-size:13px;font-weight:600}
+.hdr-sub{font-size:11px;color:var(--t2)}
+.hdr-right{margin-left:auto;display:flex;gap:7px;align-items:center}
+.btn-acc{background:var(--acc);border:none;border-radius:7px;padding:5px 13px;color:#000;font-weight:700;font-size:11px;cursor:pointer}
+.btn-acc:hover{background:var(--acc2)}
+.btn-ghost{background:none;border:1px solid var(--b2);border-radius:7px;padding:5px 11px;color:var(--t2);font-size:11px;cursor:pointer}
+.btn-ghost:hover{color:var(--t1);border-color:var(--t3)}
+.api-status{font-size:10px;padding:3px 9px;border-radius:10px}
+.api-ok{background:var(--gbg);color:var(--grn);border:1px solid rgba(34,197,94,.2)}
+.api-err{background:var(--rbg);color:var(--red);border:1px solid rgba(255,68,68,.2)}
+.api-loading{background:var(--abg);color:var(--amb);border:1px solid rgba(255,179,71,.2)}
+
+/* TABS */
+.tabs{background:var(--s);border-bottom:1px solid var(--b);padding:0 18px;display:flex;gap:0;overflow-x:auto}
+.tab{padding:9px 14px;background:none;border:none;border-bottom:2px solid transparent;color:var(--t2);font-size:12px;cursor:pointer;white-space:nowrap}
+.tab.on{border-bottom-color:var(--acc);color:var(--acc);font-weight:500}
+
+/* LAYOUT */
+.body{padding:16px;max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.panel{display:none}.panel.on{display:flex;flex-direction:column;gap:14px}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.g5{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:8px}
+
+/* CARDS */
+.card{background:var(--card);border:1px solid var(--b);border-radius:12px;padding:14px}
+.card-sm{background:var(--card);border:1px solid var(--b);border-radius:8px;padding:11px}
+.ctitle{font-size:11px;font-weight:500;color:var(--t2);text-transform:uppercase;letter-spacing:.06em;margin-bottom:11px;display:flex;align-items:center;gap:6px;justify-content:space-between}
+.ctitle-left{display:flex;align-items:center;gap:6px}
+
+/* STAT */
+.stat{background:var(--card);border:1px solid var(--b);border-radius:9px;padding:12px}
+.slbl{font-size:10px;color:var(--t2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:4px}
+.sval{font-size:24px;font-weight:600;line-height:1;margin-bottom:3px}
+.ssub{font-size:11px;color:var(--t2)}
+.up{color:var(--grn)}.dn{color:var(--red)}.warn{color:var(--amb)}
+
+/* PILLS */
+.pill{display:inline-flex;align-items:center;font-size:10px;font-weight:600;padding:2px 7px;border-radius:8px;white-space:nowrap}
+.p-red{background:var(--rbg);color:var(--red)}
+.p-amb{background:var(--abg);color:var(--amb)}
+.p-grn{background:var(--gbg);color:var(--grn)}
+.p-blu{background:var(--bbg);color:var(--blu)}
+.p-acc{background:rgba(232,255,71,.12);color:var(--acc)}
+.p-pur{background:rgba(167,139,250,.12);color:var(--pur)}
+.p-gray{background:rgba(255,255,255,.07);color:var(--t2)}
+
+/* TABLE */
+.tbl{width:100%;border-collapse:collapse;font-size:12px}
+.tbl th{text-align:left;padding:7px 10px;font-size:10px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--b);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap}
+.tbl td{padding:8px 10px;border-bottom:1px solid var(--b);vertical-align:middle}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tbody tr:hover td{background:rgba(255,255,255,.02)}
+.num{font-weight:600}
+.dim{color:var(--t2);font-size:11px}
+.tiny{font-size:10px;color:var(--t3)}
+
+/* LOADING / ERROR */
+.ld{display:flex;align-items:center;gap:8px;padding:16px;color:var(--t2);font-size:12px}
+.spin{width:14px;height:14px;border:2px solid var(--b2);border-top-color:var(--acc);border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.emsg{padding:10px 12px;background:var(--rbg);border:1px solid rgba(255,68,68,.25);border-radius:7px;color:var(--red);font-size:12px}
+.wmsg{padding:10px 12px;background:var(--abg);border:1px solid rgba(255,179,71,.25);border-radius:7px;color:var(--amb);font-size:12px}
+.imsg{padding:10px 12px;background:var(--bbg);border:1px solid rgba(56,189,248,.25);border-radius:7px;color:var(--blu);font-size:12px}
+
+/* PROGRESS */
+.prog{display:flex;align-items:flex-start;gap:10px;padding:9px 11px;border-radius:8px;border:1px solid var(--b);margin-bottom:6px}
+.prog.done{border-color:rgba(34,197,94,.3);background:rgba(34,197,94,.04)}
+.prog.warn{border-color:rgba(255,179,71,.3);background:rgba(255,179,71,.04)}
+.prog.todo{border-color:rgba(255,68,68,.3);background:rgba(255,68,68,.04)}
+.prog-ico{font-size:14px;flex-shrink:0;margin-top:1px}
+.prog-body{flex:1}
+.prog-title{font-size:12px;font-weight:500;margin-bottom:2px}
+.prog-detail{font-size:11px;color:var(--t2);line-height:1.5}
+.prog-meta{display:flex;gap:5px;flex-wrap:wrap;margin-top:5px;align-items:center}
+.file-ref{font-size:10px;color:var(--blu);font-family:monospace;background:var(--card);padding:1px 6px;border-radius:4px;border:1px solid var(--b2)}
+.fix-btn{background:rgba(232,255,71,.12);border:1px solid rgba(232,255,71,.25);border-radius:5px;padding:2px 8px;color:var(--acc);font-size:10px;cursor:pointer;font-weight:600}
+.fix-btn:hover{background:rgba(232,255,71,.2)}
+
+/* CLAUDE PROMPT MODAL */
+.modal-ov{position:fixed;inset:0;z-index:150;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center;padding:16px}
+.modal-ov.open{display:flex}
+.modal-box{width:min(720px,96vw);max-height:90vh;background:var(--s);border:1px solid var(--b2);border-radius:14px;display:flex;flex-direction:column;overflow:hidden}
+.modal-hdr{padding:14px 16px;border-bottom:1px solid var(--b);display:flex;align-items:center;gap:10px}
+.modal-ttl{font-size:14px;font-weight:600;flex:1}
+.modal-x{background:none;border:none;color:var(--t2);font-size:20px;cursor:pointer}
+.modal-body{padding:16px;display:flex;flex-direction:column;gap:12px;overflow-y:auto;flex:1}
+.modal-foot{padding:12px 16px;border-top:1px solid var(--b);display:flex;gap:8px;justify-content:flex-end}
+.field-label{font-size:11px;color:var(--t2);margin-bottom:5px;display:block}
+.field-ta{width:100%;background:var(--card);border:1px solid var(--b2);border-radius:7px;padding:10px 12px;color:var(--t1);font-size:12px;outline:none;font-family:monospace;resize:vertical;min-height:280px;line-height:1.5}
+.field-ta:focus{border-color:var(--acc)}
+.copy-btn{background:var(--acc);border:none;border-radius:7px;padding:9px 18px;color:#000;font-weight:700;font-size:12px;cursor:pointer}
+.copy-btn:hover{background:var(--acc2)}
+.cancel-btn{background:none;border:1px solid var(--b2);border-radius:7px;padding:9px 14px;color:var(--t2);font-size:12px;cursor:pointer}
+.copied-msg{display:none;color:var(--grn);font-size:11px;align-items:center;gap:6px}
+.copied-msg.show{display:flex}
+
+/* CATEGORY FILTER */
+.cat-filters{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.cat-btn{background:var(--b2);border:1px solid var(--b);border-radius:6px;padding:4px 10px;color:var(--t2);font-size:11px;cursor:pointer}
+.cat-btn.on{background:rgba(232,255,71,.15);border-color:var(--acc);color:var(--acc)}
+
+/* CHART */
+.cw{position:relative;width:100%}
+</style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<div class="hdr">
+  <div class="live-badge"><div class="live-dot"></div>LIVE</div>
+  <div class="local-badge">LOCAL FILE</div>
+  <span class="hdr-title">SEO + GEO dashboard</span>
+  <span class="hdr-sub">shankeragencies.com</span>
+  <div class="hdr-right">
+    <span class="api-status api-loading" id="api-status">⏳ Connecting to DataForSEO…</span>
+    <span style="font-size:11px;color:var(--t3)" id="updated-time">—</span>
+    <button class="btn-ghost" onclick="refreshAll()" id="refresh-btn">↻ Refresh all</button>
+    <button class="btn-ghost" onclick="openSettings()" title="DataForSEO API credentials">⚙ API Settings</button>
+    <button class="btn-acc" onclick="openClaude('How can I improve my SEO + GEO + AI visibility further this week? Give me the top 3 actionable fixes I can ship today.')">✦ Ask Claude</button>
+  </div>
+</div>
+
+<!-- ══ TABS ══ -->
+<div class="tabs">
+  <button class="tab on" onclick="go('overview',this)">Overview</button>
+  <button class="tab" onclick="go('products',this)">All products <span style="font-size:10px;opacity:.5" id="prod-ct"></span></button>
+  <button class="tab" onclick="go('serp',this)">SERP positions</button>
+  <button class="tab" onclick="go('competitors',this)">Competitors</button>
+  <button class="tab" onclick="go('progress',this)">Progress <span style="font-size:10px;opacity:.5">5✓ 7✗</span></button>
+  <button class="tab" onclick="go('ai-vis',this)">AI visibility</button>
+  <button class="tab" onclick="go('gaps',this)">Content gaps</button>
+  <button class="tab" onclick="go('local-gmb',this)">Local + GMB</button>
+</div>
+
+<div class="body">
+
+<!-- ══ OVERVIEW ══ -->
+<div id="tab-overview" class="panel on">
+  <div class="g5">
+    <div class="stat"><div class="slbl">Avg position</div><div class="sval warn">12.7</div><div class="ssub">Target &lt;8</div></div>
+    <div class="stat"><div class="slbl">Clicks / 30d</div><div class="sval up">96</div><div class="ssub up">▲ 462%</div></div>
+    <div class="stat"><div class="slbl">Impressions</div><div class="sval">4,471</div><div class="ssub">30 days</div></div>
+    <div class="stat"><div class="slbl">Avg CTR</div><div class="sval">2.15%</div><div class="ssub warn">Norm 5–7%</div></div>
+    <div class="stat"><div class="slbl">Google health</div><div class="sval warn">52<small style="font-size:13px;opacity:.5">/100</small></div><div class="ssub">HTTPS only — pending</div></div>
+    <div class="stat"><div class="slbl">AI visibility</div><div class="sval dn">14<small style="font-size:13px;opacity:.5">/100</small></div><div class="ssub dn">0 of 5 platforms</div></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="ctitle"><span class="ctitle-left">📈 Daily impressions</span></div><div class="cw" style="height:130px"><canvas id="c-impr"></canvas></div></div>
+    <div class="card"><div class="ctitle"><span class="ctitle-left">📉 Avg position (lower = better)</span></div><div class="cw" style="height:130px"><canvas id="c-pos"></canvas></div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">🔍 Top opportunity keywords — volume × position gap</span><span class="dim">DataForSEO live</span></div>
+    <div id="ov-opps"><div class="ld"><div class="spin"></div>Loading keyword volumes from DataForSEO…</div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">🏁 Live SERP — "refractory supplier india"</span><span class="dim">DataForSEO live</span></div>
+    <div id="ov-serp"><div class="ld"><div class="spin"></div>Fetching live SERP…</div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">⚡ Core Web Vitals</span><span class="dim">Google PageSpeed Insights (free, live)</span></div>
+    <div id="psi-wrap"><div class="ld"><div class="spin"></div>Fetching PageSpeed scores…</div></div>
+  </div>
+</div>
+
+<!-- ══ ALL PRODUCTS ══ -->
+<div id="tab-products" class="panel">
+  <div class="imsg">All 8 product categories on shankeragencies.com — real search volume pulled from DataForSEO for every keyword. Click <strong>Optimise →</strong> to copy a Claude prompt that includes the file path of the page to edit.</div>
+  <div class="cat-filters" id="cat-filters"></div>
+  <div class="card" style="padding:0;overflow:hidden">
+    <table class="tbl" id="prod-table">
+      <thead><tr>
+        <th style="padding-left:14px;width:22%">Product</th>
+        <th style="width:14%">Category</th>
+        <th style="width:9%">Monthly vol</th>
+        <th style="width:8%">GSC pos</th>
+        <th style="width:8%">GSC impr</th>
+        <th style="width:7%">CPC $</th>
+        <th style="width:12%">Priority</th>
+        <th style="width:20%">Action</th>
+      </tr></thead>
+      <tbody id="prod-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══ SERP ══ -->
+<div id="tab-serp" class="panel">
+  <div class="g2">
+    <div class="card"><div class="ctitle"><span class="ctitle-left">🔎 "refractory supplier india"</span></div><div id="serp-1"><div class="ld"><div class="spin"></div>Loading…</div></div></div>
+    <div class="card"><div class="ctitle"><span class="ctitle-left">🔎 "high alumina bricks supplier india"</span></div><div id="serp-2"><div class="ld"><div class="spin"></div>Loading…</div></div></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="ctitle"><span class="ctitle-left">🔎 "LCC castable supplier india"</span></div><div id="serp-3"><div class="ld"><div class="spin"></div>Loading…</div></div></div>
+    <div class="card"><div class="ctitle"><span class="ctitle-left">🔎 "ceramic fiber blanket india"</span></div><div id="serp-4"><div class="ld"><div class="spin"></div>Loading…</div></div></div>
+  </div>
+  <div class="g2">
+    <div class="card"><div class="ctitle"><span class="ctitle-left">🔎 "acid proof bricks india"</span></div><div id="serp-5"><div class="ld"><div class="spin"></div>Loading…</div></div></div>
+    <div class="card"><div class="ctitle"><span class="ctitle-left">🔎 "ramming mass induction furnace"</span></div><div id="serp-6"><div class="ld"><div class="spin"></div>Loading…</div></div></div>
+  </div>
+</div>
+
+<!-- ══ COMPETITORS ══ -->
+<div id="tab-competitors" class="panel">
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">🏆 Organic competitors stealing your traffic</span><span class="dim">DataForSEO Labs</span></div>
+    <div id="comp-wrap"><div class="ld"><div class="spin"></div>Fetching competitors from DataForSEO…</div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">📊 Common keyword overlap</span></div>
+    <div class="cw" style="height:220px"><canvas id="c-comp"></canvas></div>
+  </div>
+</div>
+
+<!-- ══ PROGRESS ══ -->
+<div id="tab-progress" class="panel">
+  <div class="g2" style="gap:8px">
+    <div class="stat"><div class="slbl">Shipped</div><div class="sval up">5</div><div class="ssub up">robots · llms · datasheets · schema · redirects</div></div>
+    <div class="stat"><div class="slbl">Still needed</div><div class="sval dn">7</div><div class="ssub dn">blog posts · HTTPS · GMB · author · FAQ visible</div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">✅ Technical fixes</span></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">robots.txt — all AI crawlers allowed</div><div class="prog-detail">GPTBot, PerplexityBot, ClaudeBot, anthropic-ai, Google-Extended + 9 others. AhrefsBot, SemrushBot blocked.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/robots.js</span></div></div></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">llms.txt — AI content manifest live</div><div class="prog-detail">7 citable answer blocks live. CIN + GST + Incoterms. Dead URLs remapped to real pages.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/public/llms.txt</span></div></div></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">Organization schema — lat/long, knowsAbout, hasCredential</div><div class="prog-detail">Updated to 28.6761/77.2960 (East Ram Nagar). knowsAbout expanded to 40 specific topics. hasCredential adds CIN + GST + 45-year experience credentials.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/layout.jsx</span></div></div></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">FAQ schema — name attribute confirmed on all Questions</div><div class="prog-detail">Audited all FAQPage generators across product pages, blog, homepage, contact and location pages — name: f.q already present. Added dynamicParams=false + notFound() guard. GSC warning will clear on next crawl.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/products/[categorySlug]/[productId]/page.jsx</span></div></div></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">HTTP → HTTPS 301 redirect</div><div class="prog-detail">x-forwarded-proto: http redirects added to next.config.js for both apex and www — single hop to https://www.shankeragencies.com. GSC will clear the 196 http:// impressions on next crawl.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/next.config.js</span></div></div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">📝 JSON-LD schema cherry-picks</span></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">01 Organization — knowsAbout + hasCredential SHIPPED</div><div class="prog-detail">40-item knowsAbout, hasCredential array with CIN/GST/experience, geo updated to 28.6761/77.2960.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/layout.jsx</span></div></div></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">02 FAQPage schema — needs visible homepage FAQ text first</div><div class="prog-detail">Google penalises FAQ schema without matching visible on-page text.</div><div class="prog-meta"><span class="pill p-red">Blocked</span><span class="file-ref">frontend/src/sections/Home.jsx</span><button class="fix-btn" onclick="openClaude('On shankeragencies.com homepage (frontend/src/sections/Home.jsx) add a visible FAQ section with 5 questions and answers covering: (1) what SAPL supplies, (2) export markets, (3) industries served, (4) how to request a quote, (5) authorized brand relationships. Then add matching FAQPage JSON-LD schema. The visible text must exactly match the schema for Google compliance.')">Write FAQ →</button></div></div></div>
+    <div class="prog warn"><span class="prog-ico">⚠</span><div class="prog-body"><div class="prog-title">03 Product schema — already dynamic, add isRelatedTo + alternateName</div><div class="prog-detail">32 products already have schema. Minor additions only.</div><div class="prog-meta"><span class="pill p-amb">Minor add</span><span class="file-ref">frontend/app/products/[categorySlug]/[productId]/page.jsx</span><button class="fix-btn" onclick="openClaude('In frontend/app/products/[categorySlug]/[productId]/page.jsx add isRelatedTo (related products from same category) and alternateName (industry synonyms like Gunite/Guniting for Gunning Castable) to the existing dynamic Product JSON-LD schema. Use frontend/src/data/productCatalogData.js to pull related products from the same category.')">Apply →</button></div></div></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">04 Article schema — named author</div><div class="prog-detail">Currently "Shanker Agencies Engineering Team". Replace with real engineer name.</div><div class="prog-meta"><span class="pill p-red">Author needed</span><span class="file-ref">frontend/app/blog/[articleSlug]/page.jsx</span><button class="fix-btn" onclick="openClaude('Update frontend/app/blog/[articleSlug]/page.jsx so the Article JSON-LD uses a real Person schema author. The author name is Rahul Taneja (Director). Add /about/team/rahul-taneja as the Person URL with sameAs LinkedIn https://www.linkedin.com/in/rahultaneja24/. Also create the team page at frontend/app/about/team/[memberSlug]/page.jsx if it does not exist.')">Set author →</button></div></div></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">05 LocalBusiness — already on 55 location pages</div><div class="prog-detail">No changes needed.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span></div></div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">✍️ Content — 3 blog posts (highest ROI)</span></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Fix 1 — Refractory maintenance scheduling guide</div><div class="prog-detail">Pos 2.9 accidentally on homepage with no dedicated page. Write one post = guaranteed #1.</div><div class="prog-meta"><span class="pill p-red">Not written</span><span class="pill p-acc">pos 2.9 · 10 impr</span><span class="file-ref">frontend/src/data/blogPostsData.js</span><button class="fix-btn" onclick="openClaude('Write a complete 1,800-word blog post for shankeragencies.com: &quot;Refractory Lining Maintenance Scheduling: A Plant Engineer\\'s Guide&quot;. Add it to frontend/src/data/blogPostsData.js with slug refractory-lining-maintenance-scheduling-guide. Cover: heat-cycle counting (steel ladle 50-80 heats, rotary kiln 6-18 months), 3 warning indicators (IR thermography 300C+, consumption rate spike, hot spots), shutdown checklist, planned vs emergency cost comparison (40-60% saving), SAPL audit CTA, 5 FAQ questions. Author: Rahul Taneja, Director.')">Write full post →</button></div></div></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Fix 2 — Gunning castable complete guide</div><div class="prog-detail">11 keywords / 68+ impr split across 2 URLs, 0 clicks. One hub consolidates all.</div><div class="prog-meta"><span class="pill p-red">Not written</span><span class="pill p-acc">68+ impr</span><span class="file-ref">frontend/src/data/blogPostsData.js</span><button class="fix-btn" onclick="openClaude('Write a complete 2,000-word gunning castable guide for shankeragencies.com. Add to frontend/src/data/blogPostsData.js with slug gunning-castable-complete-guide. Define gunite = guniting = gunning in first 100 words. Include: dense vs insulating spec table (Al2O3%, max temp, bulk density), application matrix for steel/BOF/blast furnace/cement kiln/boiler/foundry, rebound loss (dry 15-25%, wet 5-10%), cement kiln alkali-resistant grades, power plant LCC grades, SAPL Calderys and Mahakoshal supply. End with 6-question FAQ. Author: Rahul Taneja, Director.')">Write full post →</button></div></div></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Fix 3 — Porous plug selection guide</div><div class="prog-detail">189 impr on product page at pos 34.5. Informational intent needs a guide.</div><div class="prog-meta"><span class="pill p-red">Not written</span><span class="pill p-acc">189 impr</span><span class="file-ref">frontend/src/data/blogPostsData.js</span><button class="fix-btn" onclick="openClaude('Write a complete 1,500-word porous plug guide for shankeragencies.com. Add to frontend/src/data/blogPostsData.js with slug porous-plug-refractory-selection-guide. Cover: what it does (argon purging, inclusion removal), corundum vs magnesia grades, purging rates 0.1-5 Nl/min/t, replacement frequency 20-50 heats, quality impact 40-60% inclusion reduction, SAPL IFGL supply MTC documentation GCC/ASEAN export. End with 6-question FAQ. Author: Rahul Taneja, Director.')">Write full post →</button></div></div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">🏅 E-E-A-T + AI citation</span></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Named author team pages</div><div class="prog-detail">Currently "SAPL Engineering Team". AI engines won't cite anonymous content.</div><div class="prog-meta"><span class="pill p-red">Pending</span><span class="file-ref">frontend/app/about/team/[memberSlug]/page.jsx</span><button class="fix-btn" onclick="openClaude('Create author profile pages at frontend/app/about/team/[memberSlug]/page.jsx for shankeragencies.com. Start with Rahul Taneja (Director, refractory engineering, since 2010). Include Person JSON-LD with sameAs to LinkedIn https://www.linkedin.com/in/rahultaneja24/, a 200-word bio establishing E-E-A-T, list of published guides, and contact link. Add him to a new frontend/src/data/teamData.js.')">Set up →</button></div></div></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Manufacturer dealer listing — highest AI citation impact (+18 pts)</div><div class="prog-detail">One link from CUMI or TRL Krosaki dealer page = more AI citation value than 20 blog posts.</div><div class="prog-meta"><span class="pill p-red">Not requested</span><button class="fix-btn" onclick="openClaude('Draft a professional email to CUMI Super Refractories (and a second to TRL Krosaki) requesting SAPL be listed on their authorized dealer locator page. Include SAPL credentials: CIN U51909DL2012PTC232825, 45 years experience, Delhi NCR territory, export to 50+ countries. Mention specific volume numbers.')">Draft email →</button></div></div></div>
+    <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Trade publication article (Steel360 / Indian Refractory Makers Journal)</div><div class="prog-detail">Bylined article = tier-1 citation source for all 5 AI engines.</div><div class="prog-meta"><span class="pill p-red">Not drafted</span><button class="fix-btn" onclick="openClaude('Write a 1,000-word guest article for Steel360.in or Indian Refractory Makers Journal. Topic: How planned refractory maintenance reduces steel plant downtime. Byline: Rahul Taneja, Director, Shanker Agencies Private Limited, Delhi NCR. Include real industry numbers and one case study.')">Draft article →</button></div></div></div>
+  </div>
+</div>
+
+<!-- ══ AI VISIBILITY ══ -->
+<div id="tab-ai-vis" class="panel">
+  <div class="g2">
+    <div class="stat"><div class="slbl">Current AI score</div><div class="sval dn">14<small style="font-size:13px;opacity:.5">/100</small></div><div class="ssub dn">+3 from Organization schema fix</div></div>
+    <div class="stat"><div class="slbl">Achievable (12 months)</div><div class="sval warn">62<small style="font-size:13px;opacity:.5">/100</small></div><div class="ssub up">With remaining 7 fixes</div></div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">🤖 Platform citation status</span></div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px">
+      <div class="card-sm" style="text-align:center"><div style="width:8px;height:8px;border-radius:50%;background:var(--red);margin:0 auto 6px"></div><div style="font-size:11px;font-weight:600;margin-bottom:3px">ChatGPT</div><div style="font-size:10px;color:var(--red);font-weight:600;margin-bottom:4px">Not cited</div><div style="font-size:9px;color:var(--t3);line-height:1.4">No trade pub coverage</div></div>
+      <div class="card-sm" style="text-align:center"><div style="width:8px;height:8px;border-radius:50%;background:var(--red);margin:0 auto 6px"></div><div style="font-size:11px;font-weight:600;margin-bottom:3px">Perplexity</div><div style="font-size:10px;color:var(--red);font-weight:600;margin-bottom:4px">Not cited</div><div style="font-size:9px;color:var(--t3);line-height:1.4">No cross-domain consensus</div></div>
+      <div class="card-sm" style="text-align:center"><div style="width:8px;height:8px;border-radius:50%;background:var(--red);margin:0 auto 6px"></div><div style="font-size:11px;font-weight:600;margin-bottom:3px">Gemini</div><div style="font-size:10px;color:var(--red);font-weight:600;margin-bottom:4px">Not cited</div><div style="font-size:9px;color:var(--t3);line-height:1.4">No Knowledge Graph entity</div></div>
+      <div class="card-sm" style="text-align:center;border-color:rgba(255,179,71,.35)"><div style="width:8px;height:8px;border-radius:50%;background:var(--amb);margin:0 auto 6px"></div><div style="font-size:11px;font-weight:600;margin-bottom:3px">Google AIO</div><div style="font-size:10px;color:var(--amb);font-weight:600;margin-bottom:4px">Partial</div><div style="font-size:9px;color:var(--t3);line-height:1.4">Brand only</div></div>
+      <div class="card-sm" style="text-align:center"><div style="width:8px;height:8px;border-radius:50%;background:var(--red);margin:0 auto 6px"></div><div style="font-size:11px;font-weight:600;margin-bottom:3px">Bing Copilot</div><div style="font-size:10px;color:var(--red);font-weight:600;margin-bottom:4px">Not cited</div><div style="font-size:9px;color:var(--t3);line-height:1.4">Not Bing top 10</div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">📊 Dimension scores (current → target)</span></div>
+    <div id="ai-dims" style="display:flex;flex-direction:column;gap:9px"></div>
+  </div>
+</div>
+
+<!-- ══ CONTENT GAPS ══ -->
+<div id="tab-gaps" class="panel">
+  <div class="card" style="padding:0;overflow:hidden">
+    <table class="tbl">
+      <thead><tr>
+        <th style="width:34%;padding-left:14px">Question buyers ask AI</th>
+        <th style="width:10%">Intent</th><th style="width:10%">Coverage</th>
+        <th style="width:9%">Type</th><th style="width:7%">Impr</th>
+        <th style="width:8%">Volume</th><th style="width:22%">Action</th>
+      </tr></thead>
+      <tbody id="gaps-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══ LOCAL + GMB + VOICE ══ -->
+<div id="tab-local-gmb" class="panel">
+  <div class="imsg">Maps, Google Business Profile (GMB), AI voice — the &quot;near me&quot; and local intent layer. This drives <strong>refractory supplier near me</strong>, <strong>refractory supplier in Delhi</strong>, and voice queries.</div>
+  <div class="g2">
+    <div class="card">
+      <div class="ctitle"><span class="ctitle-left">📍 Google Business Profile</span></div>
+      <div class="prog warn"><span class="prog-ico">⚠</span><div class="prog-body"><div class="prog-title">NAP consistency audit needed</div><div class="prog-detail">Name + Address + Phone must match exactly across Google, IndiaMart, TradeIndia, JustDial, Crunchbase. Even minor mismatches reduce local rank.</div><div class="prog-meta"><span class="pill p-amb">Audit</span><button class="fix-btn" onclick="openClaude('Audit NAP (Name, Address, Phone) consistency for Shanker Agencies Pvt. Ltd. across the schema in frontend/app/layout.jsx, llms.txt, footer (frontend/src/components/Footer.jsx), contact (frontend/src/sections/Contact.jsx), about (frontend/src/sections/About.jsx) and 55 location pages. Current canonical: &quot;Shanker Agencies Pvt. Ltd.&quot; / 553, Main Grand Trunk Road, East Ram Nagar, Shahdara, Delhi 110032 / +91-9899957888. Report mismatches and fix them.')">Run audit →</button></div></div></div>
+      <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">GMB posts — push 1 per week</div><div class="prog-detail">GMB posts feed Google AI Overviews and Bing Copilot for &quot;near me&quot; queries.</div><div class="prog-meta"><span class="pill p-red">Manual</span><button class="fix-btn" onclick="openClaude('Draft 8 weekly Google Business Profile posts for Shanker Agencies (Delhi NCR refractory supplier). Each 300 chars. Topics: (1) High alumina bricks in stock, (2) Ceramic fiber 1260/1425C grades, (3) LCC castables, (4) Saint-Gobain HeatKing supply, (5) Porous plugs MTC, (6) Acid proof bricks IS 4860, (7) Export to GCC, (8) Mahakoshal partnership. End each with a call to action and the +91-9899957888 number.')">Draft 8 posts →</button></div></div></div>
+      <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Review acquisition push — target 20-30 reviews</div><div class="prog-detail">Reviews + photos = direct rank signal. Currently underbuilt.</div><div class="prog-meta"><span class="pill p-red">Pending</span><button class="fix-btn" onclick="openClaude('Write a short customer review request email template for Shanker Agencies clients. Include the direct Google review link (https://g.page/r/PLACEHOLDER/review), and a 1-line ask. Also draft a WhatsApp version under 320 chars.')">Draft request →</button></div></div></div>
+    </div>
+    <div class="card">
+      <div class="ctitle"><span class="ctitle-left">🗣 AI voice search</span></div>
+      <div class="prog warn"><span class="prog-ico">⚠</span><div class="prog-body"><div class="prog-title">Conversational FAQ blocks for voice</div><div class="prog-detail">Voice queries (Siri/Alexa/Google Assistant) pull from concise FAQ answers in natural language.</div><div class="prog-meta"><span class="pill p-amb">In progress</span><span class="file-ref">frontend/src/data/productFaqsData.js</span><button class="fix-btn" onclick="openClaude('Review frontend/src/data/productFaqsData.js for shankeragencies.com — rewrite any answers longer than 60 words to fit voice search optimum (30-50 words, conversational tone, answer the question in the first sentence). Keep the existing keys intact. Show me a diff.')">Optimise →</button></div></div></div>
+      <div class="prog todo"><span class="prog-ico">✗</span><div class="prog-body"><div class="prog-title">Speakable schema for voice</div><div class="prog-detail">SpeakableSpecification helps Google Assistant pick blog posts for voice readouts.</div><div class="prog-meta"><span class="pill p-red">Not added</span><span class="file-ref">frontend/app/blog/[articleSlug]/page.jsx</span><button class="fix-btn" onclick="openClaude('Add SpeakableSpecification to the Article JSON-LD in frontend/app/blog/[articleSlug]/page.jsx for shankeragencies.com. Target the article summary paragraph + first FAQ answer (use a CSS selector like .speakable-summary). Keep the existing schema intact.')">Add schema →</button></div></div></div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="ctitle"><span class="ctitle-left">🗺 55 location pages (refractory-supplier-in/*)</span></div>
+    <div class="prog done"><span class="prog-ico">✓</span><div class="prog-body"><div class="prog-title">LocalBusiness schema live on all 55 city pages</div><div class="prog-detail">Already includes lat/long, address, areaServed, contactPoint for each city.</div><div class="prog-meta"><span class="pill p-grn">Shipped ✓</span><span class="file-ref">frontend/app/refractory-supplier-in/[locationSlug]/page.jsx</span></div></div></div>
+    <div class="prog warn"><span class="prog-ico">⚠</span><div class="prog-body"><div class="prog-title">Update lat/long to new precise office geo</div><div class="prog-detail">Some city pages may still hold older Shahdara coords. New canonical: 28.6761/77.2960.</div><div class="prog-meta"><span class="pill p-amb">Sync</span><button class="fix-btn" onclick="openClaude('Audit frontend/app/refractory-supplier-in/[locationSlug]/page.jsx and any location data file for shankeragencies.com. Where the home office lat/long is used (Shahdara HQ), update it to 28.6761047 / 77.2959900. Leave city-specific lat/longs untouched.')">Sync coords →</button></div></div></div>
+  </div>
+</div>
+
+</div><!-- /body -->
+
+<!-- ══ CLAUDE PROMPT MODAL ══ -->
+<div class="modal-ov" id="prompt-modal">
+  <div class="modal-box">
+    <div class="modal-hdr">
+      <span class="modal-ttl">✦ Copy this prompt → paste into Claude Desktop / Claude Code</span>
+      <button class="modal-x" onclick="closeClaude()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="imsg">This prompt includes the file paths from your repo and the exact change needed. Copy → paste into a Claude Code session — Claude will edit the files and commit. Vercel redeploys automatically.</div>
+      <div>
+        <label class="field-label">Prompt for Claude</label>
+        <textarea class="field-ta" id="prompt-text"></textarea>
+      </div>
+      <div class="copied-msg" id="copied-msg">✓ Copied to clipboard. Now paste into your Claude session.</div>
+    </div>
+    <div class="modal-foot">
+      <button class="cancel-btn" onclick="closeClaude()">Close</button>
+      <button class="copy-btn" id="copy-btn" onclick="copyPrompt()">📋 Copy to clipboard</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ SETTINGS MODAL ══ -->
+<div class="modal-ov" id="settings-modal">
+  <div class="modal-box" style="max-width:460px">
+    <div class="modal-hdr">
+      <span class="modal-ttl">⚙ API Credentials</span>
+      <button class="modal-x" onclick="closeSettings()">×</button>
+    </div>
+    <div class="modal-body" style="gap:16px">
+      <div style="font-size:11px;color:var(--t2);line-height:1.6">Credentials are stored in your browser's <b style="color:var(--t1)">localStorage</b> — never sent anywhere except directly to the DataForSEO API. You can find your password at <a href="https://app.dataforseo.com/api-dashboard" target="_blank" style="color:var(--blu)">app.dataforseo.com → API Dashboard</a>.</div>
+      <div>
+        <label class="field-label">DataForSEO Login (email)</label>
+        <input id="set-login" type="email" placeholder="info@shankeragencies.com" style="width:100%;background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 10px;color:var(--t1);font-size:12px;margin-top:4px">
+      </div>
+      <div>
+        <label class="field-label">DataForSEO Password</label>
+        <input id="set-pass" type="password" placeholder="API password from DataForSEO dashboard" style="width:100%;background:var(--bg);border:1px solid var(--b2);border-radius:7px;padding:8px 10px;color:var(--t1);font-size:12px;margin-top:4px">
+      </div>
+      <div style="background:var(--bg);border:1px solid var(--b);border-radius:8px;padding:12px">
+        <div style="font-size:10px;font-weight:700;color:var(--t2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:8px">Other connectors</div>
+        <div style="font-size:11px;color:var(--t2);line-height:2">
+          ✓ <b style="color:var(--t1)">PageSpeed Insights</b> — free, no key needed (auto-connected)<br>
+          ⊙ <b style="color:var(--amb)">Google Search Console</b> — requires OAuth. Use <a href="https://search.google.com/search-console" target="_blank" style="color:var(--blu)">GSC directly</a> or export CSV for now<br>
+          ⊙ <b style="color:var(--amb)">Bing Webmaster Tools</b> — needs API key from <a href="https://www.bing.com/webmasters" target="_blank" style="color:var(--blu)">bing.com/webmasters</a><br>
+          ⊙ <b style="color:var(--amb)">Google Business Profile</b> — OAuth only, manage at <a href="https://business.google.com" target="_blank" style="color:var(--blu)">business.google.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button class="cancel-btn" onclick="closeSettings()">Cancel</button>
+      <button class="copy-btn" onclick="applySettings()">💾 Save &amp; reconnect</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+// ═══ CONFIG ════════════════════════════════════════════════════════════════
+// Credentials are stored in localStorage — never hardcoded here.
+// Click "⚙ API Settings" in the header to enter your DataForSEO login + password.
+const BASE = 'https://api.dataforseo.com/v3';
+const PSI_BASE = 'https://www.googleapis.com/pagespeedonline/v5/runPagespeed';
+const SITE_URL = 'https://www.shankeragencies.com';
+
+function getAuth(){
+  const login = localStorage.getItem('dfs_login') || '';
+  const pass  = localStorage.getItem('dfs_pass')  || '';
+  if(!login || !pass) return null;
+  return 'Basic ' + btoa(login + ':' + pass);
+}
+function saveCredentials(login, pass){
+  localStorage.setItem('dfs_login', login.trim());
+  localStorage.setItem('dfs_pass',  pass.trim());
+}
+
+// ═══ Settings modal ════════════════════════════════════════════════════════
+function openSettings(){
+  document.getElementById('set-login').value = localStorage.getItem('dfs_login') || '';
+  document.getElementById('set-pass').value  = localStorage.getItem('dfs_pass')  || '';
+  document.getElementById('settings-modal').classList.add('open');
+}
+function closeSettings(){ document.getElementById('settings-modal').classList.remove('open'); }
+function applySettings(){
+  const l = document.getElementById('set-login').value.trim();
+  const p = document.getElementById('set-pass').value.trim();
+  if(!l || !p){ alert('Enter both DataForSEO login (email) and password.'); return; }
+  saveCredentials(l, p);
+  closeSettings();
+  document.getElementById('api-status').className='api-status api-loading';
+  document.getElementById('api-status').textContent='⏳ Testing credentials…';
+  setTimeout(refreshAll, 200);
+}
+
+// ═══ PRODUCT CATALOGUE — 60+ keywords across 8 categories ═════════════════
+const PRODUCTS = [
+  {cat:'Shaped',prod:'High Alumina Bricks AL45–AL90',kw:'high alumina bricks india',gsc_pos:4.7,gsc_impr:11,url:'/products/shaped-refractories/high-alumina-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'High Alumina Bricks AL90',kw:'90 high alumina fire bricks',gsc_pos:13,gsc_impr:1,url:'/products/shaped-refractories/high-alumina-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'Fire Bricks SK30–SK40',kw:'fire bricks supplier india',gsc_pos:null,gsc_impr:0,url:'/products/shaped-refractories/fire-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'Fireclay Bricks SK34',kw:'fireclay bricks india',gsc_pos:72,gsc_impr:1,url:'/products/shaped-refractories/fireclay-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'MgO-C Bricks',kw:'magnesia carbon bricks supplier india',gsc_pos:49,gsc_impr:1,url:'/products/shaped-refractories/magnesia-carbon-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'Insulating Fire Bricks',kw:'insulating fire bricks supplier india',gsc_pos:null,gsc_impr:0,url:'/products/shaped-refractories/insulating-fire-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'Magnesia Chrome Bricks',kw:'magnesia chrome bricks india',gsc_pos:null,gsc_impr:0,url:'/products/shaped-refractories/magnesia-chrome-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'Silicon Carbide Bricks',kw:'silicon carbide bricks supplier india',gsc_pos:null,gsc_impr:0,url:'/products/shaped-refractories/silicon-carbide-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'Alumina Carbon Bricks',kw:'alumina carbon bricks india',gsc_pos:4.3,gsc_impr:6,url:'/products/shaped-refractories/alumina-carbon-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Shaped',prod:'Mullite Bricks',kw:'mullite bricks supplier india',gsc_pos:null,gsc_impr:0,url:'/products/shaped-refractories/mullite-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'LCC Castable',kw:'low cement castable supplier india',gsc_pos:null,gsc_impr:0,url:'/products/unshaped-refractories/low-cement-castables',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'ULCC Castable',kw:'ultra low cement castable india',gsc_pos:null,gsc_impr:0,url:'/products/unshaped-refractories/ultra-low-cement-castables',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Conventional Castable',kw:'refractory castable supplier india',gsc_pos:null,gsc_impr:0,url:'/products/unshaped-refractories/conventional-castables',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Dense Gunning Mix',kw:'gunning castable',gsc_pos:9.7,gsc_impr:14,url:'/products/unshaped-refractories/gunning-materials',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Insulating Gunning Mix',kw:'insulating gunning material',gsc_pos:47,gsc_impr:1,url:'/products/unshaped-refractories/gunning-materials',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'High Temp Gunning Castable',kw:'high-temperature gunning castable',gsc_pos:8.5,gsc_impr:17,url:'/products/unshaped-refractories/gunning-materials',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Ramming Mass — Silica',kw:'ramming mass induction furnace',gsc_pos:6,gsc_impr:0,url:'/products/unshaped-refractories/ramming-masses',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Ramming Mass — Neutral',kw:'neutral ramming mass india',gsc_pos:null,gsc_impr:0,url:'/products/unshaped-refractories/ramming-masses',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Ramming Mass — Basic',kw:'basic magnesia ramming mass',gsc_pos:null,gsc_impr:0,url:'/products/unshaped-refractories/ramming-masses',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Refractory Mortar',kw:'refractory mortar supplier india',gsc_pos:null,gsc_impr:0,url:'/products/unshaped-refractories/refractory-mortars',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Unshaped',prod:'Plastic Refractory',kw:'plastic refractory material india',gsc_pos:null,gsc_impr:0,url:'/products/unshaped-refractories/plastic-refractories',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'Porous Plugs (IFGL)',kw:'porous plug refractory',gsc_pos:34.5,gsc_impr:189,url:'/products/flow-control/porous-plugs',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'Slide Gate Plates',kw:'slide gate plates refractory india',gsc_pos:null,gsc_impr:0,url:'/products/flow-control/slide-gate-plates',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'Ladle Shrouds',kw:'ladle shroud refractory',gsc_pos:27.3,gsc_impr:6,url:'/products/flow-control/ladle-shrouds',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'Subentry Nozzles (SEN)',kw:'subentry nozzle refractory india',gsc_pos:null,gsc_impr:0,url:'/products/flow-control/subentry-nozzles',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'Monoblock Stoppers',kw:'monoblock stopper refractory',gsc_pos:null,gsc_impr:0,url:'/products/flow-control/monoblock-stoppers',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'Well Blocks',kw:'well block refractory india',gsc_pos:null,gsc_impr:0,url:'/products/flow-control/well-blocks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'Bottom Pouring Sets',kw:'bottom pouring set exporters',gsc_pos:58,gsc_impr:5,url:'/products/flow-control/bottom-pouring-sets',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Flow Control',prod:'PCPF Blocks',kw:'pcpf blocks manufacturers',gsc_pos:59,gsc_impr:5,url:'/products/flow-control/pcpf-blocks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Insulation',prod:'Ceramic Fiber Blankets (Divine Cerawool)',kw:'ceramic fiber blanket supplier india',gsc_pos:7.7,gsc_impr:149,url:'/products/insulation/ceramic-fiber-products',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Insulation',prod:'Cerawool Insulation',kw:'cerawool insulation',gsc_pos:11.3,gsc_impr:4,url:'/products/insulation/ceramic-fiber-products',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Insulation',prod:'Calcium Silicate Board 650°C',kw:'calcium silicate insulation board',gsc_pos:60,gsc_impr:3,url:'/products/insulation/calcium-silicate',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Insulation',prod:'Microporous Insulation',kw:'microporous insulation supplier india',gsc_pos:null,gsc_impr:0,url:'/products/insulation/microporous-insulation',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Acid Proofing',prod:'Acid Proof Bricks (IS 4860)',kw:'acid proof bricks india',gsc_pos:null,gsc_impr:0,url:'/products/acid-proofing/acid-proof-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Acid Proofing',prod:'Acid Proof Tiles',kw:'acid proof tiles supplier india',gsc_pos:null,gsc_impr:0,url:'/products/acid-proofing/acid-proof-tiles',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Acid Proofing',prod:'Carbon Bricks',kw:'carbon bricks refractory india',gsc_pos:null,gsc_impr:0,url:'/products/acid-proofing/carbon-bricks',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Acid Proofing',prod:'Acid Proof Cement',kw:'acid proof mortar supplier india',gsc_pos:null,gsc_impr:0,url:'/products/acid-proofing/acid-proof-cement',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Anchors',prod:'V-Anchors',kw:'refractory anchors supplier india',gsc_pos:9.7,gsc_impr:64,url:'/products/anchors',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Anchors',prod:'Y-Anchors',kw:'y anchor refractory',gsc_pos:null,gsc_impr:0,url:'/products/anchors',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Anchors',prod:'Bullhorn Anchors',kw:'ceramic anchor suppliers',gsc_pos:69,gsc_impr:1,url:'/products/anchors',file:'frontend/src/data/productsSeoData.js'},
+  {cat:'Export',prod:'Refractory supplier India (general)',kw:'refractory supplier india',gsc_pos:9.3,gsc_impr:867,url:'/',file:'frontend/app/layout.jsx'},
+  {cat:'Export',prod:'Refractory exporter India',kw:'refractory exporter india',gsc_pos:null,gsc_impr:0,url:'/',file:'frontend/app/layout.jsx'},
+  {cat:'Export',prod:'Industrial refractory suppliers',kw:'industrial refractory suppliers',gsc_pos:25.8,gsc_impr:19,url:'/',file:'frontend/app/layout.jsx'},
+  {cat:'Export',prod:'Fire bricks Oman export',kw:'fire bricks in oman',gsc_pos:1,gsc_impr:1,url:'/refractory-supplier-in/muscat',file:'frontend/app/refractory-supplier-in/[locationSlug]/page.jsx'},
+];
+
+// GSC daily data
+const DAILY=[
+  {d:"May 14",clicks:3,impr:59,pos:8.1},{d:"May 15",clicks:1,impr:54,pos:7.4},
+  {d:"May 16",clicks:2,impr:49,pos:6.3},{d:"May 17",clicks:0,impr:52,pos:9.5},
+  {d:"May 18",clicks:1,impr:58,pos:9.7},{d:"May 19",clicks:1,impr:55,pos:6.0},
+  {d:"May 20",clicks:0,impr:48,pos:11.2},{d:"May 21",clicks:2,impr:56,pos:9.1},
+  {d:"May 22",clicks:2,impr:85,pos:15.5},{d:"May 23",clicks:3,impr:133,pos:13.8},
+  {d:"May 24",clicks:0,impr:99,pos:18.4},{d:"May 25",clicks:7,impr:150,pos:11.6},
+  {d:"May 26",clicks:5,impr:129,pos:13.6},{d:"May 27",clicks:2,impr:141,pos:13.4},
+  {d:"May 28",clicks:6,impr:131,pos:14.8},{d:"May 29",clicks:4,impr:116,pos:12.3},
+  {d:"May 30",clicks:0,impr:93,pos:17.4},{d:"May 31",clicks:3,impr:124,pos:14.7},
+  {d:"Jun 1",clicks:2,impr:182,pos:13.8},{d:"Jun 2",clicks:3,impr:238,pos:14.3},
+  {d:"Jun 3",clicks:4,impr:265,pos:15.2},{d:"Jun 4",clicks:8,impr:261,pos:10.4},
+  {d:"Jun 5",clicks:5,impr:241,pos:16.2},{d:"Jun 6",clicks:3,impr:207,pos:10.8},
+  {d:"Jun 7",clicks:3,impr:252,pos:15.6},{d:"Jun 8",clicks:5,impr:227,pos:11.8},
+  {d:"Jun 9",clicks:9,impr:283,pos:14.1},{d:"Jun 10",clicks:4,impr:248,pos:11.5},
+  {d:"Jun 11",clicks:4,impr:205,pos:9.2},{d:"Jun 12",clicks:4,impr:250,pos:8.3}
+];
+
+const GAPS=[
+  {q:"What is a porous plug?",intent:"Info",cov:"none",type:"Blog",impr:189,kw:"porous plug refractory",file:"frontend/src/data/blogPostsData.js"},
+  {q:"LCC vs ULCC vs conventional castable?",intent:"Info",cov:"none",type:"Comparison",impr:40,kw:"low cement castable supplier india",file:"frontend/src/data/blogPostsData.js"},
+  {q:"When to use gunning vs casting?",intent:"Info",cov:"thin",type:"Blog hub",impr:68,kw:"gunning castable",file:"frontend/src/data/blogPostsData.js"},
+  {q:"How to schedule refractory maintenance?",intent:"Info",cov:"none",type:"Blog",impr:10,kw:"refractory lining maintenance",file:"frontend/src/data/blogPostsData.js"},
+  {q:"Ramming mass for induction furnace?",intent:"Commercial",cov:"thin",type:"Blog",impr:35,kw:"ramming mass induction furnace",file:"frontend/src/data/blogPostsData.js"},
+  {q:"Best refractory for cement kiln?",intent:"Commercial",cov:"none",type:"Blog",impr:30,kw:"cement kiln refractory",file:"frontend/src/data/blogPostsData.js"},
+  {q:"What is acid proofing?",intent:"Info",cov:"thin",type:"Blog",impr:9,kw:"acid proofing",file:"frontend/src/data/blogPostsData.js"},
+  {q:"Ceramic fiber vs insulating fire brick?",intent:"Info",cov:"thin",type:"Comparison",impr:15,kw:"ceramic fiber blanket supplier india",file:"frontend/src/data/blogPostsData.js"},
+  {q:"Gunning material for boilers?",intent:"Commercial",cov:"none",type:"Blog",impr:11,kw:"gunning castable",file:"frontend/src/data/blogPostsData.js"},
+  {q:"How to cure refractory castable?",intent:"Info",cov:"none",type:"Blog",impr:10,kw:"refractory castable supplier india",file:"frontend/src/data/blogPostsData.js"},
+  {q:"Ladle lining zones + materials?",intent:"Info",cov:"none",type:"Blog",impr:9,kw:"ladle refractory materials",file:"frontend/src/data/blogPostsData.js"},
+  {q:"AL45–AL90 grade comparison?",intent:"Info",cov:"thin",type:"Comparison",impr:9,kw:"high alumina bricks india",file:"frontend/src/data/blogPostsData.js"},
+  {q:"How to import refractory from India?",intent:"Transact",cov:"thin",type:"Blog",impr:8,kw:"refractory exporter india",file:"frontend/src/data/blogPostsData.js"},
+  {q:"What is a slide gate system?",intent:"Info",cov:"none",type:"Blog",impr:8,kw:"slide gate plates refractory india",file:"frontend/src/data/blogPostsData.js"},
+  {q:"MgO-C vs high alumina for BOF?",intent:"Commercial",cov:"none",type:"Comparison",impr:4,kw:"magnesia carbon bricks supplier india",file:"frontend/src/data/blogPostsData.js"},
+];
+
+const AI_DIMS=[
+  {l:"Entity registration",s:18,t:70},{l:"Structured data",s:35,t:80},
+  {l:"E-E-A-T / named expertise",s:6,t:60},{l:"Third-party citations",s:4,t:50},
+  {l:"Content depth",s:62,t:80},{l:"Search ranking (top 5)",s:14,t:55},
+  {l:"Cross-domain consensus",s:5,t:45},{l:"B2B profile quality",s:22,t:50},
+];
+
+let vols={}, serps={}, comps=[], activeFilter='All';
+
+// ═══ DataForSEO — direct browser call (local file, no proxy needed) ═══════
+async function dfsPost(ep, body){
+  const auth = getAuth();
+  if(!auth){
+    document.getElementById('api-status').className='api-status api-err';
+    document.getElementById('api-status').textContent='✗ No credentials — click ⚙ API Settings';
+    openSettings();
+    throw new Error('No credentials');
+  }
+  const r = await fetch(BASE+ep, {
+    method:'POST',
+    headers:{'Authorization':auth,'Content-Type':'application/json'},
+    body:JSON.stringify(body)
+  });
+  if(!r.ok) throw new Error('HTTP '+r.status);
+  return r.json();
+}
+
+// ═══ PageSpeed Insights — free, no API key, Core Web Vitals ═══════════════
+async function fetchPageSpeed(url, strategy='mobile'){
+  const endpoint = `${PSI_BASE}?url=${encodeURIComponent(url)}&strategy=${strategy}&category=performance&category=seo`;
+  const r = await fetch(endpoint);
+  if(!r.ok) throw new Error('PSI HTTP '+r.status);
+  return r.json();
+}
+async function renderPageSpeed(){
+  const el = document.getElementById('psi-wrap');
+  if(!el) return;
+  el.innerHTML='<div class="ld"><div class="spin"></div>Fetching Core Web Vitals…</div>';
+  try{
+    const [mob, desk] = await Promise.all([
+      fetchPageSpeed(SITE_URL,'mobile'),
+      fetchPageSpeed(SITE_URL,'desktop')
+    ]);
+    const fmt = (d, key) => {
+      const cat = d.lighthouseResult?.categories;
+      const perf = Math.round((cat?.performance?.score||0)*100);
+      const seo  = Math.round((cat?.seo?.score||0)*100);
+      const lcp  = d.lighthouseResult?.audits?.['largest-contentful-paint']?.displayValue || '—';
+      const cls  = d.lighthouseResult?.audits?.['cumulative-layout-shift']?.displayValue || '—';
+      const fcp  = d.lighthouseResult?.audits?.['first-contentful-paint']?.displayValue || '—';
+      const pc   = perf>=90?'var(--grn)':perf>=50?'var(--amb)':'var(--red)';
+      return `<div class="card-sm"><div style="font-size:10px;font-weight:700;color:var(--t2);text-transform:uppercase;margin-bottom:8px">${key}</div>
+        <div style="display:flex;gap:14px;margin-bottom:8px">
+          <div><div style="font-size:22px;font-weight:700;color:${pc}">${perf}</div><div style="font-size:9px;color:var(--t3)">Performance</div></div>
+          <div><div style="font-size:22px;font-weight:700;color:var(--grn)">${seo}</div><div style="font-size:9px;color:var(--t3)">SEO score</div></div>
+        </div>
+        <div style="font-size:10px;color:var(--t2);line-height:1.8">LCP: <b>${lcp}</b> &nbsp; CLS: <b>${cls}</b> &nbsp; FCP: <b>${fcp}</b></div>
+      </div>`;
+    };
+    el.innerHTML = `<div class="g2">${fmt(mob,'📱 Mobile')}${fmt(desk,'🖥 Desktop')}</div>
+      <div style="margin-top:8px;font-size:10px;color:var(--t3)">Source: Google PageSpeed Insights API (no key required). <a href="https://pagespeed.web.dev/analysis?url=${encodeURIComponent(SITE_URL)}" target="_blank" style="color:var(--blu)">Full report →</a></div>`;
+  }catch(e){
+    el.innerHTML=`<div class="emsg">PageSpeed API error: ${e.message}</div>`;
+  }
+}
+
+async function fetchVolumes(){
+  const allKws=[...new Set([...PRODUCTS.map(p=>p.kw),...GAPS.map(g=>g.kw)])].filter(Boolean);
+  const batches=[];
+  for(let i=0;i<allKws.length;i+=100) batches.push(allKws.slice(i,i+100));
+  for(const batch of batches){
+    try{
+      const data=await dfsPost('/keywords_data/google_ads/search_volume/live',[{
+        keywords:batch, location_code:2356, language_code:'en'
+      }]);
+      if(data.tasks?.[0]?.result){
+        data.tasks[0].result.forEach(r=>{
+          vols[r.keyword]={volume:r.search_volume||0,cpc:r.cpc||0,competition:r.competition||0};
+        });
+      }
+    }catch(e){console.warn('Volume batch:',e.message);}
+  }
+}
+
+async function fetchSerp(query,storeKey){
+  try{
+    const data=await dfsPost('/serp/google/organic/live/regular',[{
+      keyword:query,location_code:2356,language_code:'en',device:'desktop',depth:10
+    }]);
+    const items=(data.tasks?.[0]?.result?.[0]?.items||[]).filter(i=>i.type==='organic');
+    serps[storeKey]=items;
+    return items;
+  }catch(e){console.warn('SERP:',e.message);return[];}
+}
+
+async function fetchCompetitors(){
+  try{
+    const data=await dfsPost('/dataforseo_labs/google/competitors_domain/live',[{
+      target:'shankeragencies.com',location_code:2356,language_code:'en',limit:10
+    }]);
+    comps=data.tasks?.[0]?.result?.[0]?.items||[];
+    return comps;
+  }catch(e){console.warn('Competitors:',e.message);return[];}
+}
+
+// ═══ Render helpers ═════════════════════════════════════════════════════════
+function pColor(p){return !p?'var(--t3)':p<10?'var(--grn)':p<20?'var(--amb)':'var(--red)';}
+function volColor(v){return !v?'var(--t3)':v>=1000?'var(--acc)':v>=200?'var(--amb)':'var(--t2)';}
+function volFmt(v){
+  if(v==null)return'<span class="dim">—</span>';
+  if(v===0)return'<span class="dim">&lt;10</span>';
+  if(v>=1000)return`<span style="color:${volColor(v)};font-weight:600">${(v/1000).toFixed(1)}k</span>`;
+  return`<span style="color:${volColor(v)};font-weight:600">${v}</span>`;
+}
+function priFmt(p,v){
+  if(!p&&!v)return'<span class="dim">Unknown</span>';
+  const score=(v||0)*(p&&p>5?1:0.3);
+  if(score>5000)return'<span class="pill p-red">🔥 High</span>';
+  if(score>500)return'<span class="pill p-amb">⚡ Medium</span>';
+  return'<span class="pill p-gray">Monitor</span>';
+}
+function intentPill(i){
+  if(i==='Info')return'<span class="pill p-blu">Info</span>';
+  if(i==='Commercial')return'<span class="pill p-amb">Commercial</span>';
+  return'<span class="pill p-red">Transact</span>';
+}
+function covPill(c){
+  if(c==='none')return'<span class="pill p-red">No answer</span>';
+  if(c==='thin')return'<span class="pill p-amb">Thin</span>';
+  return'<span class="pill p-grn">Full</span>';
+}
+
+const CATS=['All',...new Set(PRODUCTS.map(p=>p.cat))];
+function renderCatFilters(){
+  const el=document.getElementById('cat-filters');
+  if(!el)return;
+  el.innerHTML=CATS.map(c=>`<button class="cat-btn${c===activeFilter?' on':''}" onclick="setFilter('${c}')">${c}</button>`).join('');
+}
+function setFilter(cat){activeFilter=cat;renderCatFilters();renderProductTable();}
+function renderProductTable(){
+  const tbody=document.getElementById('prod-tbody');
+  if(!tbody)return;
+  const rows=activeFilter==='All'?PRODUCTS:PRODUCTS.filter(p=>p.cat===activeFilter);
+  document.getElementById('prod-ct').textContent=rows.length;
+  tbody.innerHTML=rows.map(p=>{
+    const v=vols[p.kw];
+    const vol=v!=null?v.volume:null;
+    const cpc=v!=null?v.cpc:null;
+    const prompt=`Optimise the SEO for shankeragencies.com product page ${p.url}.\nProduct: ${p.prod} (${p.cat}).\nKeyword: "${p.kw}".\nCurrent GSC position: ${p.gsc_pos||'not ranking'}. GSC impressions: ${p.gsc_impr}.\nMonthly search volume: ${vol!=null?vol:'unknown'}.\n\nUpdate the relevant entry in ${p.file}:\n1. Optimise metaTitle (max 60 chars, include "${p.kw}" or close variant).\n2. Optimise metaDescription (max 155 chars, include CTA + a number/spec).\n3. Add 2 internal links from related category pages.\n4. Suggest one citation-worthy data point to add to the product page body (specific spec, standard, or use-case).`;
+    return`<tr>
+      <td style="padding-left:14px;font-weight:500;font-size:11px">${p.prod}</td>
+      <td><span class="pill p-gray" style="font-size:9px">${p.cat}</span></td>
+      <td>${volFmt(vol)}</td>
+      <td><span style="color:${pColor(p.gsc_pos)};font-weight:600">${p.gsc_pos||'—'}</span></td>
+      <td class="num">${p.gsc_impr||0}</td>
+      <td class="dim">${cpc?'$'+cpc.toFixed(2):'—'}</td>
+      <td>${priFmt(p.gsc_pos,vol)}</td>
+      <td><button class="fix-btn" onclick='openClaude(${JSON.stringify(prompt)})'>Optimise →</button></td>
+    </tr>`;
+  }).join('');
+}
+
+function renderSerp(items,elId,query){
+  const el=document.getElementById(elId);
+  if(!el)return;
+  if(!items||!items.length){el.innerHTML='<div class="emsg">No SERP data for this query.</div>';return;}
+  let html=`<table class="tbl"><thead><tr><th>#</th><th>Domain</th><th style="width:45%">Title</th></tr></thead><tbody>`;
+  items.slice(0,10).forEach((item,i)=>{
+    const isSapl=(item.url||'').includes('shankeragencies');
+    const domain=item.domain||(()=>{try{return new URL(item.url).hostname}catch{return'—'}})();
+    const title=(item.title||'').substring(0,55)+(item.title?.length>55?'…':'');
+    const bg=isSapl?'background:rgba(232,255,71,.07);':'';
+    html+=`<tr style="${bg}"><td class="num" style="color:${i<3?'var(--grn)':i<6?'var(--amb)':'var(--t3)'}">${i+1}</td>
+      <td style="font-size:11px;font-weight:${isSapl?'600':'400'};color:${isSapl?'var(--acc)':'var(--t1)'}">${isSapl?'★ '+domain:domain}</td>
+      <td class="dim" style="font-size:10px">${title}</td></tr>`;
+  });
+  const saplIdx=items.findIndex(i=>(i.url||'').includes('shankeragencies'));
+  if(saplIdx===-1) html+=`<tr><td colspan="3" style="padding:10px;text-align:center"><span class="pill p-red">shankeragencies.com not in top 10 for "${query}"</span></td></tr>`;
+  html+='</tbody></table>';
+  el.innerHTML=html;
+}
+
+function renderCompetitors(){
+  const el=document.getElementById('comp-wrap');
+  if(!el)return;
+  if(!comps.length){el.innerHTML='<div class="emsg">No competitor data. DataForSEO Labs endpoint may need separate credits.</div>';return;}
+  let html=`<table class="tbl"><thead><tr><th>Domain</th><th>Common kws</th><th>Avg position</th><th>Overlap</th><th>Action</th></tr></thead><tbody>`;
+  comps.forEach(c=>{
+    const ints=c.intersections||c.metrics?.organic?.count||0;
+    const prompt=`Analyse this refractory competitor vs shankeragencies.com: ${c.domain}. They share ${ints} overlapping keywords. What content do they have that SAPL is missing? Pick the top 3 pages we should create in frontend/src/data/blogPostsData.js to take their traffic.`;
+    html+=`<tr><td style="font-weight:500">${c.domain||'—'}</td><td class="num">${ints}</td><td class="num">${c.avg_position?.toFixed(1)||'—'}</td>
+      <td><div style="width:80px;height:5px;background:var(--b2);border-radius:3px;overflow:hidden"><div style="height:100%;width:${Math.min(100,ints/5)}%;background:var(--pur)"></div></div></td>
+      <td><button class="fix-btn" onclick='openClaude(${JSON.stringify(prompt)})'>Analyse →</button></td></tr>`;
+  });
+  html+='</tbody></table>';
+  el.innerHTML=html;
+  renderCompChart();
+}
+
+function renderCompChart(){
+  const el=document.getElementById('c-comp');
+  if(!el||!window.Chart||!comps.length)return;
+  const top=comps.slice(0,8);
+  if(el._ci)el._ci.destroy();
+  el._ci=new Chart(el,{type:'bar',
+    data:{labels:top.map(c=>(c.domain||'').replace('www.','').substring(0,22)),
+      datasets:[{label:'Common keywords',data:top.map(c=>c.intersections||c.metrics?.organic?.count||0),backgroundColor:'rgba(167,139,250,.65)',borderRadius:4}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false}},
+      scales:{x:{ticks:{color:'#666',font:{size:9}},grid:{color:'rgba(255,255,255,.04)'}},
+              y:{ticks:{color:'#aaa',font:{size:10}},grid:{display:false}}}}});
+}
+
+function renderOppTable(){
+  const el=document.getElementById('ov-opps');
+  if(!el)return;
+  const opps=PRODUCTS
+    .filter(p=>p.gsc_pos&&p.gsc_pos>5&&p.gsc_pos<40)
+    .map(p=>({...p,vol:vols[p.kw]?.volume||0}))
+    .sort((a,b)=>b.vol-a.vol).slice(0,12);
+  if(!opps.length){el.innerHTML='<div class="wmsg">Volume data loading…</div>';return;}
+  let html=`<table class="tbl"><thead><tr><th style="padding-left:10px">Product / keyword</th><th>Category</th><th>Monthly vol</th><th>GSC pos</th><th>Gap</th><th>Action</th></tr></thead><tbody>`;
+  opps.forEach(p=>{
+    const prompt=`Write the exact SEO fix for shankeragencies.com product: ${p.prod}. Keyword: "${p.kw}". Current position: ${p.gsc_pos}. Monthly searches: ${p.vol||0}. Update ${p.file}: optimised title tag (max 60 chars), meta description (max 155 chars), and 3 bullet points of content to add to the page at ${p.url}.`;
+    html+=`<tr>
+      <td style="padding-left:10px;font-weight:500;font-size:11px">${p.prod}</td>
+      <td><span class="pill p-gray" style="font-size:9px">${p.cat}</span></td>
+      <td>${volFmt(p.vol)}</td>
+      <td><span style="color:${pColor(p.gsc_pos)};font-weight:600">${p.gsc_pos}</span></td>
+      <td>${p.gsc_pos>10?'<span class="pill p-red">Off pg 1</span>':p.gsc_pos>5?'<span class="pill p-amb">Close</span>':'<span class="pill p-grn">Page 1</span>'}</td>
+      <td><button class="fix-btn" onclick='openClaude(${JSON.stringify(prompt)})'>Optimise →</button></td>
+    </tr>`;
+  });
+  html+='</tbody></table>';
+  el.innerHTML=html;
+}
+
+function renderAIDims(){
+  const el=document.getElementById('ai-dims');
+  if(!el)return;
+  el.innerHTML=AI_DIMS.map(d=>`
+    <div style="display:flex;align-items:center;gap:10px;font-size:11px">
+      <span style="width:190px;flex-shrink:0;color:var(--t2)">${d.l}</span>
+      <div style="flex:1;height:7px;background:var(--b2);border-radius:4px;position:relative;overflow:hidden">
+        <div style="position:absolute;left:0;top:0;height:100%;width:${d.t}%;background:rgba(255,255,255,.08)"></div>
+        <div style="position:absolute;left:0;top:0;height:100%;width:${d.s}%;background:${d.s<15?'var(--red)':d.s<30?'var(--amb)':'var(--grn)'};border-radius:4px;transition:width .6s"></div>
+      </div>
+      <span style="font-weight:600;color:${d.s<15?'var(--red)':d.s<30?'var(--amb)':'var(--grn)'};width:28px;text-align:right">${d.s}</span>
+      <span style="color:var(--t3);width:14px;text-align:center">→</span>
+      <span style="color:var(--t2);width:24px">${d.t}</span>
+    </div>`).join('');
+}
+
+function renderGaps(){
+  const tbody=document.getElementById('gaps-tbody');
+  if(!tbody)return;
+  tbody.innerHTML=GAPS.map(g=>{
+    const v=vols[g.kw];
+    const p=`Write the complete content to answer this buyer question for shankeragencies.com: "${g.q}". Type: ${g.type}. Target keyword: "${g.kw}". Add to ${g.file}. Include SAPL product specifics, technical numbers, and make it citable by AI engines. End with 5-question FAQ. Author: Rahul Taneja, Director.`;
+    return`<tr>
+      <td style="padding-left:14px;font-weight:500;font-size:11px">${g.q}</td>
+      <td>${intentPill(g.intent)}</td><td>${covPill(g.cov)}</td>
+      <td class="dim">${g.type}</td>
+      <td class="num">${g.impr}</td>
+      <td>${volFmt(v?.volume??null)}</td>
+      <td><button class="fix-btn" onclick='openClaude(${JSON.stringify(p)})'>Write →</button></td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══ Charts ═════════════════════════════════════════════════════════════════
+function drawOverview(){
+  const gc='rgba(255,255,255,.05)',tc='#444';
+  const ic=document.getElementById('c-impr');
+  if(ic&&!ic._ci){
+    ic._ci=new Chart(ic,{type:'bar',
+      data:{labels:DAILY.map(d=>d.d),datasets:[{label:'Impressions',data:DAILY.map(d=>d.impr),backgroundColor:'rgba(56,189,248,.6)',borderRadius:2}]},
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{display:false},y:{ticks:{color:tc,font:{size:9},maxTicksLimit:4},grid:{color:gc}}}}});
+  }
+  const pc=document.getElementById('c-pos');
+  if(pc&&!pc._ci){
+    pc._ci=new Chart(pc,{type:'line',
+      data:{labels:DAILY.map(d=>d.d),datasets:[{label:'Position',data:DAILY.map(d=>d.pos),borderColor:'#ffb347',borderWidth:1.5,pointRadius:0,tension:.3,fill:false}]},
+      options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{display:false},y:{reverse:true,ticks:{color:tc,font:{size:9},maxTicksLimit:4},grid:{color:gc}}}}});
+  }
+}
+
+function go(id,btn){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));
+  document.getElementById('tab-'+id).classList.add('on');
+  btn.classList.add('on');
+  if(id==='overview') setTimeout(drawOverview,50);
+}
+
+async function refreshAll(){
+  const btn=document.getElementById('refresh-btn');
+  const st=document.getElementById('api-status');
+  btn.textContent='↻ Loading…'; btn.disabled=true;
+  st.className='api-status api-loading'; st.textContent='⏳ Fetching DataForSEO…';
+  const ld=id=>{const e=document.getElementById(id);if(e)e.innerHTML='<div class="ld"><div class="spin"></div>Loading…</div>';};
+  ['ov-opps','ov-serp','serp-1','serp-2','serp-3','serp-4','serp-5','serp-6','comp-wrap'].forEach(ld);
+  try{
+    const results=await Promise.allSettled([
+      fetchVolumes(),
+      fetchSerp('refractory supplier india','q1'),
+      fetchSerp('high alumina bricks supplier india','q2'),
+      fetchSerp('LCC castable supplier india','q3'),
+      fetchSerp('ceramic fiber blanket india','q4'),
+      fetchSerp('acid proof bricks india','q5'),
+      fetchSerp('ramming mass induction furnace','q6'),
+      fetchCompetitors()
+    ]);
+    renderProductTable(); renderGaps(); renderOppTable(); renderCompetitors();
+    renderSerp(serps['q1'],'ov-serp','refractory supplier india');
+    renderSerp(serps['q1'],'serp-1','refractory supplier india');
+    renderSerp(serps['q2'],'serp-2','high alumina bricks supplier india');
+    renderSerp(serps['q3'],'serp-3','LCC castable supplier india');
+    renderSerp(serps['q4'],'serp-4','ceramic fiber blanket india');
+    renderSerp(serps['q5'],'serp-5','acid proof bricks india');
+    renderSerp(serps['q6'],'serp-6','ramming mass induction furnace');
+    const failed=results.filter(r=>r.status==='rejected').length;
+    if(failed===0){st.className='api-status api-ok';st.textContent='✓ DataForSEO connected';}
+    else{st.className='api-status api-err';st.textContent=`⚠ ${failed} DataForSEO call(s) failed`;}
+    document.getElementById('updated-time').textContent='Updated '+new Date().toLocaleTimeString();
+  }catch(e){
+    st.className='api-status api-err';st.textContent='✗ DataForSEO error';console.error(e);
+  }
+  btn.textContent='↻ Refresh all'; btn.disabled=false;
+}
+
+// ═══ Claude prompt modal ═══════════════════════════════════════════════════
+const CONTEXT_HEADER = `You are editing the shankeragencies.com Next.js codebase (Shanker Agencies Pvt. Ltd., Delhi NCR refractory supplier since 1980, CIN U51909DL2012PTC232825, GST 07AARCS1944B1ZC).
+
+Repo layout: /frontend is the Next.js 14 App Router app deployed to Vercel.
+Key data files: frontend/src/data/productsSeoData.js, productCatalogData.js, productFaqsData.js, productDatasheetData.js, blogPostsData.js.
+Routing: frontend/app/products/[categorySlug]/[productId]/page.jsx, frontend/app/blog/[articleSlug]/page.jsx.
+Schema: Organization+LocalBusiness in frontend/app/layout.jsx (already updated with 28.6761/77.2960 geo, knowsAbout 40 items, hasCredential).
+
+When the task is unclear, read the named file first. Commit with a concise feat/fix message. Push to the active branch.
+
+──── TASK ────
+`;
+
+function openClaude(p){
+  const fullPrompt = CONTEXT_HEADER + p;
+  document.getElementById('prompt-text').value = fullPrompt;
+  document.getElementById('copied-msg').classList.remove('show');
+  document.getElementById('prompt-modal').classList.add('open');
+}
+function closeClaude(){document.getElementById('prompt-modal').classList.remove('open');}
+
+async function copyPrompt(){
+  const ta = document.getElementById('prompt-text');
+  try{
+    await navigator.clipboard.writeText(ta.value);
+    document.getElementById('copied-msg').classList.add('show');
+    setTimeout(()=>document.getElementById('copied-msg').classList.remove('show'), 3500);
+  }catch{
+    // Fallback for file:// where clipboard API may be blocked
+    ta.select();
+    document.execCommand('copy');
+    document.getElementById('copied-msg').classList.add('show');
+  }
+}
+
+// ═══ Init ══════════════════════════════════════════════════════════════════
+renderCatFilters();
+renderProductTable();
+renderGaps();
+renderAIDims();
+setTimeout(drawOverview,100);
+// PageSpeed Insights runs independently (free, no credentials needed)
+setTimeout(renderPageSpeed, 600);
+// DataForSEO — prompt for credentials if not set, otherwise auto-refresh
+if(!getAuth()){
+  const st=document.getElementById('api-status');
+  st.className='api-status api-err';
+  st.textContent='✗ No credentials — click ⚙ API Settings';
+} else {
+  setTimeout(refreshAll,400);
+}
+</script>
+</body>
+</html>

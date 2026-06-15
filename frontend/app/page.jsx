@@ -24,9 +24,10 @@ const webPageSchema = {
   isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
   about: { '@id': 'https://www.shankeragencies.com/#organization' },
   inLanguage: 'en-IN',
+  description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki, IFGL, Calderys & Divine Cerawool.",
   speakable: {
     '@type': 'SpeakableSpecification',
-    cssSelector: ['h1', '.speakable', '[data-speakable="true"]'],
+    cssSelector: 'h1, .speakable, [data-speakable="true"]',
   },
 };
 

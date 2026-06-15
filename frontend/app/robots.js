@@ -38,11 +38,19 @@ export default function robots() {
       { userAgent: 'YouBot', allow: '/' },
       { userAgent: 'Diffbot', allow: '/' },
       { userAgent: 'Amazonbot', allow: '/' },
+      { userAgent: 'DataForSeoBot', allow: '/' },
 
       // ── Social/Meta ──
       { userAgent: 'Meta-ExternalAgent', allow: '/' },
       { userAgent: 'FacebookBot', allow: '/' },
       { userAgent: 'Bytespider', allow: '/' },
+
+      // ── Block aggressive SEO/backlink scrapers ──
+      // (high request volume, low value, often slow the site)
+      { userAgent: 'AhrefsBot', disallow: '/' },
+      { userAgent: 'SemrushBot', disallow: '/' },
+      { userAgent: 'MJ12bot', disallow: '/' },
+      { userAgent: 'DotBot', disallow: '/' },
     ],
     sitemap: 'https://www.shankeragencies.com/sitemap.xml',
     host: 'https://www.shankeragencies.com',

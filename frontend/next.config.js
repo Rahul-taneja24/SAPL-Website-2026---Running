@@ -58,9 +58,32 @@ const nextConfig = {
       },
     ];
   },
-  // Consolidate apex host → www to avoid duplicate content and split PageRank
+  // Consolidate apex host → www to avoid duplicate content and split PageRank.
+  // HTTP→HTTPS is handled first (x-forwarded-proto check) so plain-HTTP requests
+  // on both apex and www land on https://www.shankeragencies.com in one hop.
   async redirects() {
     return [
+      // HTTP apex → HTTPS www (single hop)
+      {
+        source: '/:path*',
+        has: [
+          { type: 'header', key: 'x-forwarded-proto', value: 'http' },
+          { type: 'host', value: 'shankeragencies.com' },
+        ],
+        destination: 'https://www.shankeragencies.com/:path*',
+        permanent: true,
+      },
+      // HTTP www → HTTPS www
+      {
+        source: '/:path*',
+        has: [
+          { type: 'header', key: 'x-forwarded-proto', value: 'http' },
+          { type: 'host', value: 'www.shankeragencies.com' },
+        ],
+        destination: 'https://www.shankeragencies.com/:path*',
+        permanent: true,
+      },
+      // HTTPS apex → HTTPS www (existing — kept for completeness)
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'shankeragencies.com' }],
@@ -79,6 +102,24 @@ const nextConfig = {
       {
         source: '/case-studies',
         destination: '/engineering-references',
+        permanent: true,
+      },
+      // Legacy product slugs → current pages. These old URLs were indexed by
+      // Google before the catalog was renamed; 301 sends visitors and crawlers
+      // straight to the live page (no duplicate content, no 404).
+      {
+        source: '/products/unshaped-refractories/ultra-low-cement-castable',
+        destination: '/products/unshaped-refractories/ultra-low-cement-castables',
+        permanent: true,
+      },
+      {
+        source: '/products/unshaped-refractories/refractory-mortar',
+        destination: '/products/unshaped-refractories/refractory-mortars',
+        permanent: true,
+      },
+      {
+        source: '/products/unshaped-refractories/gunning-mix',
+        destination: '/products/unshaped-refractories/gunning-materials',
         permanent: true,
       },
     ];

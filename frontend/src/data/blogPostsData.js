@@ -27,8 +27,22 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-03-15",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    keyTakeaways: [
+      "Silica ramming mass suits grey iron and mild steel; alumina suits stainless and tool steel; magnesia suits manganese steel.",
+      "Evaluate cost per heat — not cost per kg — to find the truly economical choice for your furnace.",
+      "Boric acid content (1–2.5%) in silica mass controls sintering speed and working face strength.",
+      "Sintering schedule is as critical as material choice — rushing sintering destroys lining life.",
+      "Grain size distribution (coarse/medium/fine) determines packing density and erosion resistance after sintering.",
+    ],
+    faqs: [
+      { q: "What is the difference between silica, alumina, and magnesia ramming mass?", a: "Silica ramming mass (SiO₂ >96%) suits acidic melts like grey iron and mild steel, operating up to 1,700°C. Alumina mass (Al₂O₃ 80–95%) handles neutral slags for stainless and tool steel up to 1,750°C. Magnesia mass (MgO >85%) resists basic slags for manganese steel up to 1,800°C but has shorter campaign life." },
+      { q: "How do I select ramming mass for my induction furnace?", a: "Match the mass chemistry to your melt chemistry: use silica for iron and mild steel, alumina for stainless and special alloys, and magnesia for manganese or basic-slag alloys. Also consider operating temperature, furnace size, and expected campaign life. When in doubt, consult your refractory supplier with your heat chemistry data." },
+      { q: "Why does my induction furnace lining fail early?", a: "Early lining failure is usually caused by an incorrect sintering schedule, wrong mass grade for the melt chemistry, excessive boric acid content causing over-sintering, thermal shock from rapid heat-cool cycles, or insufficient lining thickness. Check sintering temperature curves and review mass grade against your operating metal chemistry." },
+      { q: "What is the typical lining life for induction furnace ramming mass?", a: "Silica mass typically gives 150–350 heats for grey iron and mild steel. Alumina mass gives 80–200 heats for stainless steel. Magnesia mass gives 40–100 heats for manganese steel. Actual life depends on furnace size, melt temperature, charge practice, and sintering quality." },
+    ],
     excerpt:
       "Selecting the right ramming mass is the single most impactful decision you make for induction furnace lining life. This guide compares silica, alumina, and magnesia ramming mass across key parameters and explains how sintering profile, grain distribution, and boric acid content affect campaign life.",
     content: `
@@ -151,7 +165,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Partner with Shanker Agencies for Ramming Mass Solutions</h2>
 <p>At Shanker Agencies Pvt. Ltd., we have been helping foundries and steel plants optimize their induction furnace lining performance since 1980. As authorized dealers of CUMI and other leading manufacturers, we supply the full range of silica, alumina, and magnesia ramming mass grades. Our technical team can conduct a lining audit at your plant, recommend the right grade, and help you establish the optimal sintering schedule. Contact us for a consultation or to request test samples.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Vikram Bhattacharya", role: "Senior Refractory Engineer · Induction Furnace Linings" },
     relatedProducts: [
       "ramming-mass",
       "induction-furnace-lining",
@@ -184,6 +198,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-03-10",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1200&q=80",
     excerpt:
@@ -288,7 +303,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Work with SAPL for Quality-Assured High Alumina Bricks</h2>
 <p>Shanker Agencies Pvt. Ltd. supplies the complete range of high alumina bricks from AL45 through AL90, sourced from CUMI, Crown Ceramics, and other established manufacturers. Every shipment comes with test certificates, and our engineers can help you select the optimal grade for your application. With over four decades of experience and a track record across hundreds of plants, we help you get the specification right the first time. Reach out to discuss your requirements.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
     relatedProducts: [
       "high-alumina-bricks",
       "fireclay-bricks",
@@ -319,6 +334,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "11 min",
     publishDate: "2026-03-08",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1562408590-e32931084e23?w=1200&q=80",
     excerpt:
@@ -441,7 +457,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Castable Installation Partner</h2>
 <p>Shanker Agencies supplies the full range of refractory castables &mdash; conventional, LCC, ULCC, and self-flow &mdash; from CUMI and other leading manufacturers. Beyond supplying material, our technical team provides on-site installation supervision to ensure your castable achieves its rated performance. We have supervised installations in steel plants, cement plants, petrochemical units, and power plants across India and internationally. Contact us for product datasheets, installation guidance, or to schedule a site visit.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Anil Khanna", role: "Refractory Installation Consultant" },
     relatedProducts: [
       "refractory-castable",
       "low-cement-castable",
@@ -471,6 +487,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "8 min",
     publishDate: "2026-03-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
     excerpt:
@@ -561,7 +578,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Get Expert Insulation Advice from SAPL</h2>
 <p>Shanker Agencies is an authorized dealer of Divine Cerawool ceramic fiber products and supplies the full range of insulating fire bricks. Our engineers can perform a thermal analysis of your equipment and recommend the optimal insulation solution &mdash; whether that is ceramic fiber, IFB, or a hybrid design. We help you balance thermal performance, cost, and service life. Contact us to discuss your insulation requirements.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Mohan Desai", role: "Insulation & Materials Technologist" },
     relatedProducts: [
       "ceramic-fiber-blanket",
       "insulating-fire-brick",
@@ -592,6 +609,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "12 min",
     publishDate: "2026-02-28",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1200&q=80",
     excerpt:
@@ -688,7 +706,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Steel Ladle Refractory Partner</h2>
 <p>Shanker Agencies supplies the complete range of ladle refractories: MgO-C bricks, high alumina bricks, AMC bricks, castables, gunning mixes, slide gate plates, and flow control components. With 45+ years of experience in the Indian steel industry, our team can assist with lining design, material selection, and campaign life optimization. Contact us for a lining audit or to discuss your ladle refractory needs.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
     relatedProducts: [
       "mgo-c-bricks",
       "high-alumina-bricks",
@@ -719,6 +737,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-02-20",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
     excerpt:
@@ -810,7 +829,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Refractory Solutions for Cement Plants</h2>
 <p>Shanker Agencies has supplied refractories to cement plants across India for over four decades. We provide the full range of materials for every kiln zone: magnesia-spinel bricks for the burning zone, high alumina bricks for transition and calcining zones, castables for preheaters, and insulation materials. Our technical team can assist with kiln audits, material recommendations, and lining design optimization. Contact us to discuss your cement plant refractory requirements.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Pradeep Reddy", role: "Cement Kiln Refractory Lead" },
     relatedProducts: [
       "magnesia-spinel-bricks",
       "high-alumina-bricks",
@@ -840,6 +859,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-02-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
     excerpt:
@@ -945,7 +965,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Acid Proof Lining Solutions</h2>
 <p>Shanker Agencies supplies acid proof bricks, chemical-resistant jointing cements, membrane materials, and carbon bricks for chemical plant applications. We work with leading manufacturers to ensure you receive materials with verified acid resistance test certificates. Our engineering team can help you select the right combination of brick, cement, and membrane for your specific chemical exposure. Contact us for a consultation or to request material datasheets.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Arjun Mehta", role: "Acid-Proofing Lining Specialist" },
     relatedProducts: [
       "acid-proof-bricks",
       "acid-proof-cement",
@@ -975,6 +995,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-02-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1530538987395-032d1800fdd4?w=1200&q=80",
     excerpt:
@@ -1063,7 +1084,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Glass Furnace Refractory Solutions</h2>
 <p>Shanker Agencies works with glass plants across India, supplying AZS fused cast blocks, silica crown bricks, regenerator bricks, forehearth materials, and insulation products. Our experience with container glass, float glass, and specialty glass furnaces allows us to recommend the right material for each zone and glass type. Contact us for a consultation or to discuss your upcoming furnace rebuild or repair.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Rajesh Krishnan", role: "Glass Refractory Engineer" },
     relatedProducts: [
       "azs-fused-cast",
       "silica-bricks",
@@ -1093,6 +1114,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "8 min",
     publishDate: "2026-02-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     excerpt:
@@ -1189,7 +1211,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Slide Gate Solutions for Steel Plants</h2>
 <p>Shanker Agencies supplies slide gate plates, well blocks, collector nozzles, and complete flow control refractory systems for steel ladles of all sizes. We work with leading manufacturers to provide plates matched to your specific gate mechanism and steel grades. Our technical team can help optimize plate selection, preheating practice, and usage protocols to maximize life and minimize cost per heat. Contact us for samples, datasheets, or a consultation.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Deepak Sharma", role: "Flow Control Refractories Engineer" },
     relatedProducts: [
       "slide-gate-plates",
       "well-blocks",
@@ -1220,6 +1242,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-01-28",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1200&q=80",
     excerpt:
@@ -1321,7 +1344,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Refractory Optimization Partner</h2>
 <p>Shanker Agencies takes a consultative approach to refractory supply. We do not just sell products &mdash; we work with your plant team to optimize lining designs, implement TCO-based material selection, and improve campaign life. With 45+ years of experience across Indian steel plants, we bring practical knowledge that translates directly into cost savings. Contact us to schedule a refractory audit of your plant or to discuss specific optimization opportunities.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
     relatedProducts: [
       "steel-plant-refractories",
       "gunning-mix",
@@ -1352,6 +1375,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "8 min",
     publishDate: "2026-01-20",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&q=80",
     excerpt:
@@ -1471,7 +1495,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Why Plants Trust Shanker Agencies</h2>
 <p>We share this evaluation framework because we are confident in how we score. Since 1980, Shanker Agencies has built its reputation on quality, reliability, and technical expertise. As authorized dealers of CUMI, Crown Ceramics, and Divine Cerawool, every product we supply comes with verified test certificates. Our team of refractory engineers provides hands-on technical support, from material selection to on-site installation supervision. We invite you to evaluate us against this checklist &mdash; and against any other supplier. Contact us to start the conversation.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Rahul Taneja", role: "Director, Shanker Agencies" },
     relatedProducts: [],
   },
 
@@ -1498,6 +1522,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-01-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
     excerpt:
@@ -1598,7 +1623,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: MgO-C Bricks for Steelmaking</h2>
 <p>Shanker Agencies supplies MgO-C bricks across the full range of carbon contents and magnesia qualities for BOFs, EAFs, ladles, and converters. Our technical team works closely with steel plants to optimize zonal lining designs and improve campaign life. We supply from established manufacturers with full test certification and provide ongoing technical support throughout the campaign. Contact us to discuss your steelmaking refractory requirements.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
     relatedProducts: [
       "mgo-c-bricks",
       "magnesia-bricks",
@@ -1629,6 +1654,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-01-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
     excerpt:
@@ -1726,7 +1752,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Indian Refractory Export Partner</h2>
 <p>Shanker Agencies has been exporting refractory products from India to clients in the Middle East, Southeast Asia, and Africa. As authorized dealers of CUMI, Crown Ceramics, and Divine Cerawool, we provide internationally certified products with comprehensive documentation. We handle all export logistics including pre-shipment inspection, container loading supervision, and shipping coordination. Our team communicates in English and can prepare documentation in the format your country's customs authority requires. Contact us with your requirements for a quotation and export timeline.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Anil Khanna", role: "Export & Logistics Consultant" },
     relatedProducts: [],
   },
 
@@ -1753,6 +1779,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "10 min",
     publishDate: "2026-01-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     excerpt:
@@ -1902,7 +1929,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Supporting Your Induction Furnace Operations</h2>
 <p>Shanker Agencies has been helping foundries and steel melting shops optimize induction furnace lining performance since 1980. We supply the full range of silica, alumina, and magnesia ramming mass from CUMI and other trusted manufacturers. More importantly, we provide practical technical support: helping you choose the right grade, establishing proper sintering schedules, troubleshooting lining failures, and training your operators. If you are experiencing premature lining failures, contact us for a root cause analysis and recommendations. We will help you reach the lining life your operation deserves.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Vikram Bhattacharya", role: "Senior Refractory Engineer · Induction Furnace Linings" },
     relatedProducts: [
       "ramming-mass",
       "silica-ramming-mass",
@@ -1933,6 +1960,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2025-12-28",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     excerpt:
@@ -2054,7 +2082,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Complete Anchoring Solutions</h2>
 <p>Shanker Agencies supplies refractory anchors in all types and materials &mdash; V, Y, bullhorn, hex metal, and ceramic fiber anchoring systems. We provide anchors manufactured to your specification in SS304, SS310, Inconel, and other heat-resistant alloys. Our technical team can assist with anchor layout design, spacing calculations, and material selection based on your application temperature and conditions. Contact us for a quotation or to discuss your anchoring requirements for an upcoming project.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Anil Khanna", role: "Refractory Installation Consultant" },
     relatedProducts: [
       "refractory-anchors",
       "v-anchors",
@@ -2077,8 +2105,21 @@ export const BLOG_POSTS_DATA = [
     tags: ["high alumina bricks", "AL70", "AL80", "steel ladle", "working lining", "alumina content"],
     readTime: "6 min",
     publishDate: "2026-01-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    keyTakeaways: [
+      "AL70 (68–72% Al₂O₃, CCS 60–70 MPa) is the standard choice for general steel ladle working linings with carbon and low-alloy steel.",
+      "AL80 (78–82% Al₂O₃, CCS 70–85 MPa) is required for slag lines, safety linings, and ladles processing stainless or high-alloy steel.",
+      "Higher alumina content means better refractoriness and slag resistance, but also higher cost — use only where the application demands it.",
+      "AL70 gives 120–180 heats in typical ladle duty; AL80 gives 150–220 heats in demanding zones.",
+      "Never use AL70 as a safety lining — the safety lining must withstand a full working lining failure without metal penetration.",
+    ],
+    faqs: [
+      { q: "What is the difference between AL70 and AL80 high alumina bricks?", a: "AL70 contains 68–72% Al₂O₃ with CCS of 60–70 MPa and is used for general ladle working linings. AL80 contains 78–82% Al₂O₃ with CCS of 70–85 MPa and is used in slag lines, safety linings, and high-alloy steel applications. AL80 offers better slag resistance and refractoriness but at higher cost." },
+      { q: "Which grade of high alumina brick should I use for my steel ladle?", a: "Use AL70 for the barrel and bottom working lining when processing carbon and low-alloy steel. Use AL80 for slag line zones where slag attack is severe, for safety linings in all steel grades, and for any ladle processing stainless steel, high-alloy, or calcium-treated steel. Mixing zones optimizes cost without compromising performance." },
+      { q: "What is the campaign life of AL70 vs AL80 bricks in a steel ladle?", a: "AL70 bricks typically achieve 120–180 heats in ladle working linings for carbon steel, depending on slag chemistry, tapping temperature, and operational practice. AL80 bricks achieve 150–220 heats in equivalent conditions due to higher hot strength and slag resistance. The actual campaign life depends more on operational factors than grade alone." },
+    ],
     excerpt: "AL70 (68–72% Al₂O₃) offers an excellent balance of cost and performance for general ladle working linings, while AL80 (78–82% Al₂O₃) delivers superior hot strength for demanding slag lines and safety linings. A practical selection guide comparing key parameters.",
     content: `
 <h2>Understanding Alumina Content in Ladle Bricks</h2>
@@ -2163,7 +2204,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What about MgO-C bricks vs AL80 for slag line?</h3>
 <p>MgO-C bricks offer superior slag resistance but have higher thermal conductivity (leads to heat loss) and require a sealed ladle environment. For open-top ladles with moderate FeO slag, AL80 is often preferred. For converters, torpedo ladles, and continuous casters, MgO-C is standard.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
     relatedProducts: ["high-alumina-bricks", "steel-ladle-lining", "magnesia-carbon-bricks"],
   },
 
@@ -2180,8 +2221,30 @@ export const BLOG_POSTS_DATA = [
     tags: ["LCC castable", "low cement castable", "castable installation", "heat-up schedule", "curing refractory", "vibration casting"],
     readTime: "7 min",
     publishDate: "2026-01-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+    keyTakeaways: [
+      "Water addition for LCC must be 4–6% by weight — even 1% extra drastically reduces strength and increases spalling risk.",
+      "Mix LCC for a minimum of 3–5 minutes in a forced-action mixer after all water is added.",
+      "Cure for minimum 24 hours at ambient temperature before heat-up; longer curing improves strength.",
+      "Heat-up rate should not exceed 25–50°C/hour up to 300°C to safely drive off free and chemically bound water.",
+      "Never add water to a partially mixed or stiff batch — discard and restart to avoid weak zones in the lining.",
+    ],
+    howToSteps: [
+      { name: "Prepare the mould and formwork", text: "Clean the formwork and apply a release agent. Ensure correct dimensions for lining thickness. Pre-heat if ambient temperature is below 10°C." },
+      { name: "Measure water addition accurately", text: "Weigh water to 4.5–6% of the dry castable weight. Never estimate — use a calibrated scale. Follow the product datasheet exactly." },
+      { name: "Mix in a forced-action mixer", text: "Add dry castable to the mixer, then add 80% of the water and mix for 1 minute. Add remaining water and mix for a further 3–4 minutes until fully homogeneous." },
+      { name: "Place and vibrate", text: "Pour or pump LCC into formwork within 20–30 minutes of mixing. Use a poker vibrator at 150mm intervals for 10–15 seconds per position until air bubbles cease." },
+      { name: "Cure at ambient temperature", text: "Cover with wet hessian and polythene for minimum 24 hours (48 hours preferred). Do not allow the surface to dry out during curing." },
+      { name: "Follow controlled heat-up schedule", text: "Heat at ≤25°C/hour from ambient to 110°C and hold for 2 hours. Then ≤50°C/hour to 300°C and hold for 2 hours. Then ≤100°C/hour to operating temperature." },
+    ],
+    faqs: [
+      { q: "What is the correct water addition for LCC castable?", a: "The correct water addition for most LCC castables is 4.5–6% by weight of dry castable. Adding more than 6% causes segregation, reduced density, and increased risk of explosive spalling during heat-up. Always follow the product-specific datasheet — different LCC grades have different optimal water ranges." },
+      { q: "How long should LCC castable be cured before heat-up?", a: "LCC castable should be cured for a minimum of 24 hours at ambient temperature before starting heat-up. For thicker sections (>150mm) or cold weather, 48 hours is recommended. Longer curing allows cement hydration to complete, building strength and reducing spalling risk during the first heat-up." },
+      { q: "What causes explosive spalling in refractory castables?", a: "Explosive spalling occurs when trapped water converts to steam faster than it can escape. Common causes include excessive water addition, insufficient curing time, too-fast heat-up rate below 300°C, and poor castable mixing. Prevention: use correct water addition, cure fully, and follow a controlled heat-up schedule with holds at 110°C and 300°C." },
+      { q: "What is the maximum heat-up rate for LCC?", a: "For most LCC castables, the maximum heat-up rate is 25–50°C/hour up to 300°C where free and chemically bound water must escape. Above 300°C, 50–100°C/hour is typically acceptable. Holds of 2–4 hours at 110°C and 300°C are critical. Exceeding these rates risks explosive spalling that can destroy the lining." },
+    ],
     excerpt: "Proper installation is critical for LCC performance. This guide covers optimal water addition (4–6%), mixing requirements, vibration casting vs. self-flow, curing procedures, and controlled heat-up schedules to prevent explosive spalling.",
     content: `
 <h2>Why LCC Installation Practice Determines Performance</h2>
@@ -2262,7 +2325,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What LCC thickness is standard for steel ladles?</h3>
 <p>For a 70&ndash;100 tonne steel ladle working lining in the barrel, LCC thickness is typically 180&ndash;230 mm. The bottom is usually 250&ndash;300 mm to handle the impact from steel charging.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Anil Khanna", role: "Refractory Installation Consultant" },
     relatedProducts: ["low-cement-castable", "ultra-low-cement-castable", "conventional-castable"],
   },
 
@@ -2279,6 +2342,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["ceramic fiber", "insulating firebrick", "IFB", "furnace lining", "energy saving", "thermal insulation"],
     readTime: "6 min",
     publishDate: "2026-01-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
     excerpt: "Ceramic fiber offers 30–40% energy savings with lower thermal mass, ideal for cyclic operations. IFB provides better abrasion resistance for permanent hot-face linings. We compare thermal conductivity, maximum service temperatures, installation costs, and 5-year TCO.",
@@ -2363,7 +2427,7 @@ export const BLOG_POSTS_DATA = [
 <h3>Do ceramic fibers pose health risks?</h3>
 <p>Ceramic fiber is classified as a possible carcinogen (IARC Group 2B) in the respirable form. Always wear a P2 or N95 respirator, gloves, and protective clothing when handling ceramic fiber. Wet the fiber during demolition to minimize dust. Most suppliers provide Safety Data Sheets (SDS) with handling guidelines.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Mohan Desai", role: "Insulation & Materials Technologist" },
     relatedProducts: ["ceramic-fibre-blanket", "ceramic-fibre-module", "insulating-fire-bricks"],
   },
 
@@ -2380,6 +2444,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["steel ladle lining", "working lining", "MgO-C bricks", "LCC castable", "purging plug", "campaign life", "ladle refractory"],
     readTime: "8 min",
     publishDate: "2025-12-28",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1200&q=80",
     excerpt: "Comprehensive guide covering working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specifications, bottom design considerations, purging plug selection, and achieving 100+ heat campaigns with zone-specific recommendations based on ladle capacity.",
@@ -2463,7 +2528,7 @@ export const BLOG_POSTS_DATA = [
 <h3>How often should I do a lining inspection?</h3>
 <p>Use laser profilometry or manual measurement every 20&ndash;25 heats to track wear rates by zone. Establish minimum thickness limits for each zone and trigger a relining decision based on data, not just heat count.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
     relatedProducts: ["magnesia-carbon-bricks", "low-cement-castable", "high-alumina-bricks", "slide-gate-plates"],
   },
 
@@ -2480,6 +2545,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["cement kiln", "rotary kiln refractory", "burning zone", "magnesia spinel", "kiln refractory", "cement plant"],
     readTime: "7 min",
     publishDate: "2025-12-20",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
     excerpt: "Rotary kiln refractory selection varies dramatically by zone. The burning zone demands magnesia spinel or MgO-Chrome bricks; transition zones need high-alumina or andalusite; upper cyclone preheaters use castables. This guide maps thermal, chemical, and mechanical requirements to material solutions.",
@@ -2584,7 +2650,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What causes burning zone brick loss in one spot (hot spot)?</h3>
 <p>The most common causes are: (1) shell ovality at that point &mdash; a deformed shell brick cracks the brick radially; (2) loss of coating at that position due to a cold zone in the flame; (3) inferior bricks in that ring (mixed batch); (4) tyre/roller alignment issues creating excessive flexing stress. Shell red spot requires immediate kiln stop, cool-down, and hot brick repair.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Pradeep Reddy", role: "Cement Kiln Refractory Lead" },
     relatedProducts: ["magnesia-spinel-bricks", "high-alumina-bricks", "andalusite-bricks", "low-cement-castable"],
   },
 
@@ -2601,6 +2667,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["slide gate", "flow control", "ladle shroud", "slide gate plate", "continuous casting", "subentry nozzle"],
     readTime: "6 min",
     publishDate: "2025-12-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     excerpt: "Modern continuous casting demands precise flow control. This article covers slide gate plate materials (Al₂O₃-C, Al₂O₃-ZrO₂-C, MgO-C), nozzle selection criteria, anti-clogging strategies with argon purging, and practical tips for achieving longer sequence casting without interruption.",
@@ -2683,7 +2750,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What causes a stuck slide gate?</h3>
 <p>Most common causes: (1) steel solidified in the bore during a long turnaround — use O2 lancing to open; (2) plate sticker due to steel infiltration between worn plates; (3) hydraulic system failure. Always inspect plates after each heat and replace if erosion is asymmetric or bore diameter is &gt;20% above original specification.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Deepak Sharma", role: "Flow Control Refractories Engineer" },
     relatedProducts: ["slide-gate-plates", "ladle-shrouds", "subentry-nozzles", "tundish-nozzles"],
   },
 
@@ -2700,6 +2767,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["gunning refractory", "casting refractory", "hot repair", "refractory installation", "gunning mix", "refractory maintenance"],
     readTime: "5 min",
     publishDate: "2025-12-10",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     excerpt: "Gunning offers rapid installation and hot repair capability with minimal downtime, while casting provides denser, stronger linings for new construction. This guide compares application methods, rebound loss, material properties, cost implications, and provides a decision framework for plant engineers.",
@@ -2784,7 +2852,7 @@ export const BLOG_POSTS_DATA = [
 <h3>How do I reduce rebound loss?</h3>
 <p>Key techniques: correct water addition at nozzle (too wet = flow-off, too dry = high rebound); proper nozzle distance and angle; consistent air pressure; using a fine mesh screen to capture and dispose of rebound separately. With good technique, rebound can be reduced to 8&ndash;12%.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
     relatedProducts: ["gunning-mix", "low-cement-castable", "ramming-mass"],
   },
 
@@ -2801,6 +2869,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["induction furnace lining", "ramming mass", "silica ramming mass", "sintering schedule", "foundry refractory", "lining failure"],
     readTime: "7 min",
     publishDate: "2025-12-05",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
     excerpt: "Silica, alumina, and magnesia ramming masses each serve different metallurgical requirements. This guide covers material selection based on melt type (iron, steel, copper), lining life expectations, sintering schedules and temperatures, and troubleshooting the most common failure modes.",
@@ -2890,7 +2959,7 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Source from a trusted supplier:</strong> Ramming mass quality (grain size distribution, boric acid content, SiO<sub>2</sub> purity) varies significantly between suppliers. A premium product from a quality-controlled source consistently outperforms the lowest-cost option.</li>
 </ol>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Vikram Bhattacharya", role: "Senior Refractory Engineer · Induction Furnace Linings" },
     relatedProducts: ["ramming-mass", "silica-ramming-mass", "alumina-ramming-mass"],
   },
 
@@ -2914,6 +2983,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "12 min",
     publishDate: "2026-04-20",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&q=80",
     excerpt: "If you run a steel re-rolling mill in Wazirpur, an aluminium die-casting shop in Manesar or a foundry in Sahibabad, choosing the right refractory dealer is as important as choosing the right material. This guide walks through what to look for in a Delhi NCR refractory supplier in 2026, the trade-offs between authorised dealers, traders and factory agents, and a practical checklist you can use before placing your next order.",
@@ -3011,7 +3081,7 @@ export const BLOG_POSTS_DATA = [
 </ol>
 <p>If you can get clean answers to these seven questions, you have found a dealer worth working with for the long haul. The brand on the bag matters less than the dealer on the phone at 11 pm when your lining is at risk.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Rahul Taneja", role: "Director, Shanker Agencies" },
     relatedProducts: ["castable", "ramming-mass", "ceramic-fibre"],
   },
 
@@ -3035,6 +3105,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "11 min",
     publishDate: "2026-04-18",
+    lastModified: "2026-04-20",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&q=80",
     excerpt: "Castable refractory cement is the workhorse lining for boilers, reheating furnaces, kiln hoods, transfer chutes and shaped anchors across Delhi NCR plants. This buyer's guide explains the differences between conventional, low cement and ultra low cement castables, how to pick the right alumina content, what curing and dry-out look like in practice, and how castable pricing works in 2026.",
@@ -3129,7 +3200,7 @@ export const BLOG_POSTS_DATA = [
 </ol>
 <p>Castable is one of the most forgiving and one of the most unforgiving refractory products in the same bag. Buy the right grade, follow the dry-out curve and you will get lining life numbers that match the technical datasheet. Cut corners on either side and you will be re-lining in six months.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Rahul Taneja", role: "Director, Shanker Agencies" },
     relatedProducts: ["castable", "lcc-castable", "abrasion-resistant-castable"],
   },
 
@@ -3153,6 +3224,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2026-04-15",
+    lastModified: "2026-04-20",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=1200&q=80",
     excerpt: "Most refractory linings fail well before their designed campaign life because of avoidable maintenance misses. This 12-step checklist, drawn from 45 plus years of plant visits across steel, cement, aluminium, glass and power plants, covers the inspection, patching, dry-out, slag control and shutdown actions that buy you the extra heats your technical datasheet promised.",
@@ -3216,8 +3288,224 @@ export const BLOG_POSTS_DATA = [
 <h2>Summary</h2>
 <p>Lining life is almost never limited by the brand of brick or castable. It is limited by how the lining is installed, dried out, operated and inspected. This 12-step checklist costs nothing to implement. The payback is measured in lakhs per avoided breakout, thousands of tonnes of extra production per extended campaign and far fewer emergency calls at 2 am.</p>
 `,
-    author: { name: "SAPL Technical Team", role: "Refractory Engineers" },
+    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
     relatedProducts: ["castable", "ramming-mass", "ceramic-fibre", "high-alumina-bricks"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 27. Refractory Lining Maintenance Scheduling Guide
+  //     Target keyword: maintenance scheduling for refractory linings
+  //     GSC: pos 2.9 — homepage ranking accidentally, no dedicated page
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 27,
+    slug: "refractory-lining-maintenance-scheduling-guide",
+    title: "Maintenance Scheduling for Refractory Linings: A Plant Engineer's Complete Guide",
+    metaTitle: "Refractory Lining Maintenance Scheduling Guide | Intervals & Planning",
+    metaDescription: "How to build a maintenance schedule for refractory linings by furnace type — daily, weekly, monthly, quarterly and annual intervals with shutdown planning templates. Written by refractory engineers with 45+ years of plant experience.",
+    category: "Maintenance Guide",
+    tags: [
+      "refractory lining maintenance scheduling",
+      "furnace maintenance schedule",
+      "refractory inspection intervals",
+      "shutdown planning refractories",
+      "campaign life extension",
+      "refractory patching schedule",
+      "furnace lining maintenance",
+    ],
+    readTime: "12 min",
+    publishDate: "2026-06-14",
+    lastModified: "2026-06-14",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    excerpt: "The difference between a 250-heat ladle campaign and a 140-heat campaign is rarely the grade of brick — it is whether the maintenance schedule was followed. This guide gives you the exact inspection intervals, patching triggers, shutdown timelines and reline decision criteria for steel ladles, induction furnaces, cement kilns, boilers and aluminium melting furnaces.",
+    keyTakeaways: [
+      "Maintenance scheduling is the single biggest lever on refractory campaign life — more than brand or grade.",
+      "Each furnace type has a different inspection rhythm: ladles are heat-count driven, cement kilns are calendar driven, boilers are load-cycle driven.",
+      "A two-shift inspection program (daily visual + weekly tap test + monthly IR) catches 80% of failures before they become breakouts.",
+      "The reline decision should be based on minimum safe thickness, not 'how does it look' — and that threshold must be set before the campaign starts.",
+      "Planned shutdowns cost 40-60% less than emergency shutdowns — because you control what's in stock and when the crew is ready.",
+    ],
+    content: `
+<h2>Why Scheduling Matters More Than the Material</h2>
+<p>When a refractory lining fails short of its designed campaign life, the first question is usually about the brand or grade. In our experience across 45+ years of plant visits, the answer is almost never the material. It is almost always one of three scheduling failures: inspection that happened too late, patching that was deferred until the window closed, or a shutdown that was planned around production targets instead of lining condition.</p>
+<p>Maintenance scheduling for refractory linings is not complicated, but it must be proactive. The lining does not file a service request. It degrades silently until a crack, spall or breakout makes the problem obvious — and by then, the cheapest intervention window has closed.</p>
+<p>This guide gives you the scheduling framework that works across the most common furnace types in Indian and GCC industry: steel ladles and EAF, induction furnaces, cement rotary kilns, industrial boilers, and aluminium melting furnaces.</p>
+
+<h2>The Four Pillars of a Refractory Maintenance Schedule</h2>
+<p>Every effective schedule rests on four activities at different time intervals:</p>
+<ol>
+  <li><strong>Routine inspection</strong> — daily or per-shift visual checks by crew.</li>
+  <li><strong>Condition monitoring</strong> — weekly tap test, monthly infrared thermography.</li>
+  <li><strong>Scheduled intervention</strong> — planned patching, joint repair, anchor replacement during available windows.</li>
+  <li><strong>Reline planning</strong> — triggered by thickness reaching the minimum safe limit, not by total failure.</li>
+</ol>
+<p>Without all four, a schedule is really just a list of intentions. The difference between a list and a working schedule is the trigger: what measurement or observation moves the team from monitoring to action.</p>
+
+<h2>Scheduling by Furnace Type</h2>
+
+<h3>Steel Ladles</h3>
+<p>Ladle lining maintenance is <strong>heat-count driven</strong>, not calendar driven. The inspection and intervention schedule below is calibrated for a 200–250 heat working lining campaign using 70% Al₂O₃ LCC or high-alumina brick:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th><th>Trigger for action</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Every heat</td><td>Visual after tapping — check slag line, impact zone, bottom pouring area</td><td>Any cracking, spalling or deformation visible</td></tr>
+    <tr><td>Every 20–30 heats</td><td>Thickness gauge measurement at slag line, metal line and bottom</td><td>Thickness below 60% of original at slag line</td></tr>
+    <tr><td>Every 50 heats</td><td>Gunning patch of slag line, spot repair of impact zone if needed</td><td>Scheduled — do it regardless of visual appearance</td></tr>
+    <tr><td>Every 80–100 heats</td><td>Full lining inspection during planned turnaround</td><td>Review reline decision threshold</td></tr>
+    <tr><td>Campaign end</td><td>Full reline when minimum safe thickness reached</td><td>Typically 60–70 mm for a standard ladle working lining</td></tr>
+  </tbody>
+</table>
+<p>The most common ladle scheduling failure is skipping the 50-heat gunning interval because "it still looks okay." The gunning at heat 50 prevents the exponential wear acceleration that starts at heat 70–80 in an unpatched slag line.</p>
+
+<h3>Induction Furnaces (Ramming Mass Lining)</h3>
+<p>Induction furnace linings are typically replaced every 100–250 heats for silica ramming mass (iron melting) and 50–120 heats for alumina mass (steel melting). The schedule is:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Every heat</td><td>Measure metal level versus known bath volume — thinning lining increases apparent bath capacity</td></tr>
+    <tr><td>Every 10 heats</td><td>Record furnace frequency trend (rising frequency = thinner lining on medium-frequency furnaces)</td></tr>
+    <tr><td>Every 30–50 heats</td><td>Measure remaining thickness at coil level with a steel rod probe during cold shutdown</td></tr>
+    <tr><td>Campaign end</td><td>Full reline — never extend beyond minimum thickness (typically 50–60 mm at coil level)</td></tr>
+  </tbody>
+</table>
+<p>The critical scheduling point for induction furnaces: the reline must be <em>planned</em> during a low-production window. Emergency relines after a lining failure cost 3–4× more in crew time and 2–5× more in downtime because the replacement material may not be in stock.</p>
+
+<h3>Cement Rotary Kilns</h3>
+<p>Cement kiln refractory maintenance is <strong>calendar and temperature driven</strong>. The kiln cannot be inspected hot, so every scheduled shutdown is a maintenance window that must be fully used:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Weekly (hot kiln)</td><td>IR shell scanner survey — look for hot spots above baseline by 40°C+</td></tr>
+    <tr><td>Monthly</td><td>Full shell temperature profile analysis — trending, not just spot readings</td></tr>
+    <tr><td>Every planned shutdown</td><td>Brick thickness measurement by probe in all zones, anchor condition check in castable zones</td></tr>
+    <tr><td>Annual or on trigger</td><td>Full reline of worn zones — typically burning zone every 9–14 months, transition zone every 18–24 months</td></tr>
+  </tbody>
+</table>
+<p>The most expensive cement kiln maintenance decision is the one not made in time: running a burning zone past the safe minimum thickness to avoid a scheduled shutdown, only to have an unplanned stop 3 weeks later during peak production.</p>
+
+<h3>Industrial Boilers</h3>
+<p>Boiler refractory (back walls, baffles, door linings, nose arches) operates on a <strong>load-cycle schedule</strong>:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Daily</td><td>Visual inspection of visible surfaces during burner cleaning or firing adjustment</td></tr>
+    <tr><td>Weekly (during low-fire period)</td><td>Tap test on accessible refractory sections, check expansion joints</td></tr>
+    <tr><td>Every annual shutdown</td><td>Full thickness measurement, anchor inspection, full replacement of any section below minimum thickness</td></tr>
+    <tr><td>Every 5–8 years</td><td>Full reline — typical fireclay back wall life in coal-fired boiler</td></tr>
+  </tbody>
+</table>
+<p>Boiler refractory is often the last thing plant management thinks about — until a back wall failure forces an emergency shutdown during peak winter load. A 30-minute annual inspection with a tap rod and IR camera is all the data you need to plan ahead.</p>
+
+<h3>Aluminium Melting Furnaces</h3>
+<p>Aluminium furnace linings (SiC belly, castable walls, ceramic fibre roof) are subject to metal penetration and corundum growth. The schedule:</p>
+<table>
+  <thead>
+    <tr><th>Interval</th><th>Activity</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Every heat</td><td>Visual check of metal contact zones — any metal seepage on shell is a reline signal</td></tr>
+    <tr><td>Monthly</td><td>IR survey of shell — metal penetration shows as cold spot, not hot spot (metal conducts away the heat)</td></tr>
+    <tr><td>Quarterly</td><td>Measure belly wall thickness at coil level during cool-down</td></tr>
+    <tr><td>Every 2–3 years</td><td>Full reline of metal-contact zones; roof ceramic fibre replacement every 3–5 years</td></tr>
+  </tbody>
+</table>
+
+<h2>The Reline Decision: Setting the Trigger Before You Need It</h2>
+<p>The single biggest scheduling mistake is leaving the reline decision undefined until it becomes urgent. When the trigger is "how bad does it look," crews and supervisors will always find a reason to defer. The trigger should be a measured number — set at the start of the campaign, not in the heat of a production crunch.</p>
+<p>Standard minimum safe thickness thresholds (consult your refractory supplier to confirm for your specific product and vessel):</p>
+<ul>
+  <li><strong>Steel ladle working lining (LCC/brick):</strong> 60–70 mm at slag line</li>
+  <li><strong>Induction furnace lining:</strong> 50–60 mm at coil level</li>
+  <li><strong>BOF/EAF working lining (MgO-C):</strong> Per manufacturer specification per zone</li>
+  <li><strong>Cement kiln burning zone brick:</strong> 100–120 mm (measured through thermocouples or hot-stop probe)</li>
+  <li><strong>Boiler fireclay back wall:</strong> 75 mm minimum (from 230 mm installed)</li>
+</ul>
+<p>Once this threshold is reached, the reline is scheduled — not "considered." Any continued operation past the trigger adds breakout risk that no production benefit can justify.</p>
+
+<h2>Shutdown Planning Timeline</h2>
+<p>A planned refractory shutdown should be sequenced as follows — working backwards from the shutdown date:</p>
+<ul>
+  <li><strong>6–8 weeks before:</strong> Confirm lining condition assessment and scope of work (reline vs. patch vs. zone replacement). Place material order — lead time for some grades is 4–6 weeks.</li>
+  <li><strong>4 weeks before:</strong> Material confirmed in stock or on order with delivery date. Crew scheduled. Scaffolding and tooling booked. Dry-out burner availability confirmed.</li>
+  <li><strong>2 weeks before:</strong> Final material quantities confirmed against scope. Wear-zone anchors ordered if needed. Dry-out schedule written out hour by hour.</li>
+  <li><strong>Shutdown day 1–2:</strong> Cool-down, scale and slag removal. Detailed inspection and scope confirmation.</li>
+  <li><strong>Days 2–N (reline):</strong> Demolition, anchor replacement, installation, cure time per product specification.</li>
+  <li><strong>Final days:</strong> Dry-out per schedule. Acceptance check (thickness map, anchor inspection, dry-out completed).</li>
+  <li><strong>Restart:</strong> Ramp-up per product specification — never full firing rate on a new lining.</li>
+</ul>
+<p>The most common cause of shutdown over-run is a scope surprise discovered on day 1: a zone that needed replacement was not identified before the shutdown, the material is not in stock, and the shutdown extends by 5–7 days. A pre-shutdown inspection resolves this.</p>
+
+<h2>Record-Keeping: What Your Schedule Must Document</h2>
+<p>A maintenance schedule is only as useful as the records it generates. For each furnace, maintain a lining log with:</p>
+<ul>
+  <li>Lining installation date and product details (grade, brand, supplier, batch)</li>
+  <li>Dry-out curve followed (start time, ramp rates, holds, completion time)</li>
+  <li>Heat or campaign number at each inspection</li>
+  <li>Thickness measurements by zone at each measurement interval</li>
+  <li>All patching events: what was used, where, heat count</li>
+  <li>Shell temperature readings at each IR survey</li>
+  <li>Reline trigger threshold set at campaign start and actual trigger heat</li>
+  <li>Post-mortem notes on the stripped-out lining</li>
+</ul>
+<p>This log is what lets you predict the next campaign life with confidence — and what lets your refractory supplier give you genuinely useful grade recommendations instead of just catalogue specifications.</p>
+
+<h2>Common Scheduling Failures and How to Avoid Them</h2>
+<table>
+  <thead>
+    <tr><th>Failure</th><th>Cause</th><th>Prevention</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Patch window missed</td><td>Patching material not in stock when the window opened</td><td>Maintain minimum stock of 200–500 kg patching mass per furnace at all times</td></tr>
+    <tr><td>Dry-out skipped after shutdown</td><td>Production pressure on restart</td><td>Dry-out is a restart pre-condition, not optional — make it part of the restart checklist</td></tr>
+    <tr><td>Reline deferred past trigger</td><td>Undefined trigger, or trigger ignored under production pressure</td><td>Set numeric trigger before campaign; reline decision needs manager approval, not just crew judgement</td></tr>
+    <tr><td>Emergency shutdown from surprise wear</td><td>Monitoring gaps — long periods between thickness measurements</td><td>Monthly thickness measurement in high-wear zones; quarterly is not enough for a ladle at heat 150+</td></tr>
+    <tr><td>Material lead time crisis</td><td>Order placed too late because reline not planned far enough ahead</td><td>Order at 80% of expected campaign life, not at minimum thickness trigger</td></tr>
+  </tbody>
+</table>
+
+<h2>How Shanker Agencies Supports Your Maintenance Schedule</h2>
+<p>We keep common patching and maintenance materials — gunning mass, refractory mortar, ceramic fibre rope and blanket, insulating castable — in stock at our Shahdara, Delhi warehouse for same-week dispatch across India and 7–21 day transit to GCC and ASEAN. Our refractory engineers are available to join planned shutdowns for lining inspection, thickness mapping and dry-out supervision for customers on regular supply accounts.</p>
+<p>If your lining life is below the datasheet number, contact us. A 45-minute site visit and a review of your lining log usually identifies the scheduling gap within the first conversation.</p>
+`,
+    faqs: [
+      {
+        q: "How often should a steel ladle refractory lining be inspected?",
+        a: "A steel ladle should have a visual check after every heat at the slag line, impact zone and bottom. Thickness measurement should be done every 20–30 heats. A gunning patch of the slag line should be planned at every 50 heats regardless of visual appearance. At 80–100 heats, a full inspection during a planned turnaround should set the reline decision timeline.",
+      },
+      {
+        q: "What is the minimum safe thickness for a steel ladle working lining?",
+        a: "The reline trigger for a steel ladle working lining (LCC or high-alumina brick) is typically 60–70 mm at the slag line. This threshold should be confirmed with your refractory supplier based on your specific ladle dimensions, product grade and slag chemistry, and must be set at the start of the campaign — not evaluated under production pressure when the window has already narrowed.",
+      },
+      {
+        q: "How far in advance should a refractory shutdown be planned?",
+        a: "Material should be ordered 6–8 weeks before a planned refractory shutdown — some grades have 4–6 week lead times. Scope confirmation (reline vs. patch vs. zone replacement) should happen at 6 weeks. Crew, scaffolding, dry-out equipment and tooling should be locked in at 4 weeks. Waiting until 2 weeks before is the most common cause of emergency material procurement and shutdown over-runs.",
+      },
+      {
+        q: "What causes refractory lining life to fall below the datasheet figure?",
+        a: "In most cases, below-datasheet campaign life is a scheduling problem, not a material problem. The three most common causes are: skipping the mid-campaign patching interval (typically at 50 heats for a ladle), restarting after a shutdown without following the dry-out curve, and operating above the target tap temperature for extended periods. All three are preventable with a written maintenance schedule and minimum stock levels.",
+      },
+      {
+        q: "Is an infrared thermography survey necessary for refractory inspection?",
+        a: "For cement kilns, IR shell scanning is essential — it is the only real-time indicator of thinning lining while the kiln is running. For steel ladles and EAF, IR is useful but can be supplemented with regular thickness gauging. For industrial boilers, a handheld IR camera quarterly is sufficient. The alternative to IR — waiting for a visual crack or hot spot — gives you far less response time and far higher repair cost.",
+      },
+    ],
+    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
+    relatedProducts: [
+      "low-cement-castables",
+      "gunning-materials",
+      "ramming-masses",
+      "high-alumina-bricks",
+      "ceramic-fiber-products",
+    ],
   },
 ];
 
