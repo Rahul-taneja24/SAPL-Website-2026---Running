@@ -17,6 +17,7 @@ const VALID_BRANDS = [
     desc: 'Monolithic refractories, castables, gunning mixes and specialty refractory solutions for steel, cement and glass.',
     products: ['Monolithic Castables', 'Gunning Mixes', 'Low Cement Castables', 'Insulation Castables'],
     parent: 'Imerys Group',
+    partnerOnly: true,
   },
   {
     slug: 'trl-krosaki',

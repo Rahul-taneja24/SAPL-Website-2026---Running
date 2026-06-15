@@ -3187,7 +3187,7 @@ export const BLOG_POSTS_DATA = [
 <p>If a quote is significantly below these ranges for the same grade and same brand, ask to see the MTC and sieve analysis before you commit.</p>
 
 <h2>Where to Buy in Delhi NCR</h2>
-<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, <a href="/brands/calderys">Calderys</a>, Mahakoshal, IFGL) based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is one such dealer and maintains stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
+<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Mahakoshal, IFGL) or a strategic supply partner of <a href="/brands/calderys">Calderys</a> based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is an authorised dealer of CUMI and Mahakoshal and a strategic supply partner for <a href="/brands/calderys">Calderys</a> — maintaining stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
 
 <h2>Short Buyer's Checklist</h2>
 <ol>
