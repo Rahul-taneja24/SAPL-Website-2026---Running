@@ -169,7 +169,7 @@ const Contact = () => {
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://www.shankeragencies.com/#organization",
+        "@id": "https://www.shankeragencies.com/#localbusiness",
         name: "Shanker Agencies Private Limited",
         alternateName: "SAPL",
         description: "India's premier refractory engineering partner since 1980. Strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL refractories.",
@@ -177,12 +177,12 @@ const Contact = () => {
         email: "info@shankeragencies.com",
         url: "https://www.shankeragencies.com",
         foundingDate: "1980",
-        geo: { "@type": "GeoCoordinates", latitude: 28.67608, longitude: 77.29595 },
+        geo: { "@type": "GeoCoordinates", latitude: 28.676098255212455, longitude: 77.29598125527387 },
         hasMap: "https://share.google/Cz2EJCPRFsQtAvvOE",
         address: {
           "@type": "PostalAddress",
-          streetAddress: "553, Main G.T Road, Shahdara",
-          addressLocality: "Delhi",
+          streetAddress: "553, Main Grand Trunk Road, East Ram Nagar",
+          addressLocality: "Shahdara",
           postalCode: "110032",
           addressCountry: "IN",
         },
@@ -191,7 +191,7 @@ const Contact = () => {
         ],
         sameAs: [
           "https://share.google/Cz2EJCPRFsQtAvvOE",
-          "https://www.linkedin.com/company/shankeragencies",
+          "https://www.linkedin.com/company/shanker-agencies-private-limited/",
           "https://www.indiamart.com/shankeragencies/",
           "https://www.tradeindia.com/shanker-agencies-pvt-ltd-2386358/",
         ],
@@ -515,7 +515,7 @@ const Contact = () => {
                   </div>
                   <address className="not-italic text-sm text-gray-600 leading-relaxed">
                     <strong className="text-[#1E3A5F] block">Shanker Agencies Pvt. Ltd.</strong>
-                    553, Main G.T Road, Shahdara<br />
+                    553, Main Grand Trunk Road, East Ram Nagar, Shahdara<br />
                     Delhi 110032, India
                   </address>
                 </div>
@@ -549,7 +549,7 @@ const Contact = () => {
                     View on Maps
                   </a>
                   <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=28.67608,77.29595&destination_place_id=Shanker+Agencies+Pvt+Ltd+553+GT+Road+Shahdara+Delhi"
+                    href="https://www.google.com/maps/dir/?api=1&destination=28.676098255212455,77.29598125527387&destination_place_id=Shanker+Agencies+Pvt+Ltd+553+Main+Grand+Trunk+Road+Shahdara+Delhi"
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center justify-center gap-2 py-2.5 bg-[#3B82F6] text-white rounded-xl text-xs font-semibold hover:bg-[#2563EB] transition-colors"

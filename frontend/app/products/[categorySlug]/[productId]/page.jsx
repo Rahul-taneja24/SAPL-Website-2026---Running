@@ -155,7 +155,7 @@ export default async function ProductDetailPage({ params }) {
         },
         additionalProperty: additionalProperty.length ? additionalProperty : undefined,
         audience: {
-          '@type': 'BusinessAudience',
+          '@type': 'Audience',
           audienceType: 'Industrial Buyers — Steel, Cement, Aluminium, Glass, Power, Petrochemical',
         },
       }

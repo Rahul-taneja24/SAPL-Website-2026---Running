@@ -86,12 +86,12 @@ const About = () => {
     "@type": "Person",
     "@id": "https://www.shankeragencies.com/about#rahul-taneja",
     name: "Rahul Taneja",
-    jobTitle: "Director & Refractory Engineering Expert",
+    jobTitle: "Director, Refractory Engineering",
     description: "Director at Shanker Agencies Pvt. Ltd. since 2018, second-generation leadership. Specializes in refractory engineering, furnace lining design, and refractory material selection for steel ladles, cement kilns, and induction furnaces. Serves clients across India, GCC, and ASEAN markets.",
     worksFor: {
       "@type": "Organization",
       "@id": "https://www.shankeragencies.com/#organization",
-      name: "Shanker Agencies Pvt. Ltd.",
+      name: "Shanker Agencies Private Limited",
       url: "https://www.shankeragencies.com",
     },
     url: "https://www.shankeragencies.com/about",
@@ -124,7 +124,7 @@ const About = () => {
     worksFor: {
       "@type": "Organization",
       "@id": "https://www.shankeragencies.com/#organization",
-      name: "Shanker Agencies Pvt. Ltd.",
+      name: "Shanker Agencies Private Limited",
       url: "https://www.shankeragencies.com",
     },
     url: "https://www.shankeragencies.com/about",
@@ -573,7 +573,7 @@ const About = () => {
               </div>
               <div>
                 <p className="font-semibold text-[#1E3A5F]">Corporate Headquarters</p>
-                <p className="text-gray-500 text-sm mt-0.5">553, Main G.T Road, Shahdara, Delhi 110032, India</p>
+                <p className="text-gray-500 text-sm mt-0.5">553, Main Grand Trunk Road, East Ram Nagar, Shahdara, Delhi 110032, India</p>
               </div>
             </div>
             <div className="flex items-center gap-4">

@@ -206,8 +206,8 @@ export default async function LocationPage({ params }) {
     foundingDate: '1980',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '553, Main G.T Road, Shahdara',
-      addressLocality: 'Delhi',
+      streetAddress: '553, Main Grand Trunk Road, East Ram Nagar',
+      addressLocality: 'Shahdara',
       addressRegion: 'Delhi',
       postalCode: '110032',
       addressCountry: 'IN',

@@ -152,7 +152,7 @@ const Footer = () => {
               <div className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin size={15} className="mt-0.5 flex-shrink-0 text-[#F97316]" aria-hidden="true" />
                 <div>
-                  <p>553, Main G.T Road, Shahdara</p>
+                  <p>553, Main Grand Trunk Road, East Ram Nagar, Shahdara</p>
                   <p>Delhi 110032, India</p>
                 </div>
               </div>

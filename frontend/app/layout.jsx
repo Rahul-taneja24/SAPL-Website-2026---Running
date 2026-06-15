@@ -164,7 +164,7 @@ export default function RootLayout({ children }) {
                   priceRange: '₹₹',
                   address: {
                     '@type': 'PostalAddress',
-                    streetAddress: '553, Main, Grand Trunk Rd, East Ram Nagar, Ram Nagar',
+                    streetAddress: '553, Main Grand Trunk Road, East Ram Nagar',
                     addressLocality: 'Shahdara',
                     addressRegion: 'Delhi',
                     postalCode: '110032',
@@ -189,7 +189,7 @@ export default function RootLayout({ children }) {
                   contactPoint: [
                     {
                       '@type': 'ContactPoint',
-                      telephone: '+91-98999-57888',
+                      telephone: '+91-9899957888',
                       contactType: 'sales',
                       email: 'info@shankeragencies.com',
                       availableLanguage: ['English', 'Hindi'],
@@ -293,11 +293,11 @@ export default function RootLayout({ children }) {
                   '@id': 'https://www.shankeragencies.com/#localbusiness',
                   name: 'Shanker Agencies Private Limited',
                   url: 'https://www.shankeragencies.com',
-                  telephone: '+91-98999-57888',
+                  telephone: '+91-9899957888',
                   email: 'info@shankeragencies.com',
                   address: {
                     '@type': 'PostalAddress',
-                    streetAddress: '553, Main, Grand Trunk Rd, East Ram Nagar, Ram Nagar',
+                    streetAddress: '553, Main Grand Trunk Road, East Ram Nagar',
                     addressLocality: 'Shahdara',
                     addressRegion: 'Delhi',
                     postalCode: '110032',
