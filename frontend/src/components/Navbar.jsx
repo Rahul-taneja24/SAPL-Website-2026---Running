@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useApp } from '@/context/AppContext';
 import { Menu, X, ChevronDown, Globe, Phone, Mail, Zap, Languages, ArrowRight, Flame, Layers, Wrench, Package, FileText } from "lucide-react";
@@ -228,9 +229,12 @@ const Navbar = () => {
               data-testid="logo-link"
               aria-label="Shanker Agencies Home"
             >
-              <img
+              <Image
                 src="/images/sapl-logo.png"
                 alt="SAPL Logo"
+                width={160}
+                height={40}
+                priority={true}
                 className="h-9 sm:h-10 w-auto flex-shrink-0"
               />
               <div className="flex flex-col justify-center leading-none">

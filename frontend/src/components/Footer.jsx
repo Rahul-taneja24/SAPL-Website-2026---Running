@@ -1,5 +1,6 @@
 'use client';
 import Link from "next/link";
+import Image from "next/image";
 import { useApp } from '@/context/AppContext';
 
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook, Youtube, Globe, Download } from "lucide-react";
@@ -32,11 +33,12 @@ const Footer = () => {
               className="inline-flex items-center gap-3.5 mb-5 group"
             >
               <span className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-white/95 ring-1 ring-white/20 shadow-lg shadow-black/20 p-1.5 flex-shrink-0 group-hover:scale-105 transition-transform">
-                <img
+                <Image
                   src={LOGO_URL}
                   alt="Shanker Agencies logo"
+                  width={160}
+                  height={60}
                   className="w-full h-full object-contain"
-                  loading="lazy"
                 />
               </span>
               <span className="flex flex-col justify-center leading-tight">

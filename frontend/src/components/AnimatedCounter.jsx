@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from 'react';
 
 const AnimatedCounter = ({ end, duration = 2000, suffix = '', prefix = '' }) => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(parseInt(end));
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef(null);
 
@@ -29,6 +29,7 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '', prefix = '' }) => 
     let startTime;
     const startValue = 0;
     const endValue = parseInt(end);
+    setCount(0);
 
     const animate = (currentTime) => {
       if (!startTime) startTime = currentTime;
