@@ -275,7 +275,14 @@ export const LOCATIONS_DATA = [
       industries: "The UAE's industrial base includes Emirates Steel Arkan (the GCC's largest integrated steel plant), Dubai Aluminium (DUBAL) and Emirates Global Aluminium (EGA), multiple cement plants, glass manufacturing, and oil refinery operations. These industries require high-quality refractories that meet international specifications and withstand the region's demanding operating conditions.",
       products: "We export the complete range of CUMI refractories to Dubai: high alumina bricks, fireclay bricks, low cement castables, conventional castables, ceramic fiber blankets and modules, insulating fire bricks, acid proof bricks, and specialty products. All exports are accompanied by test certificates and meet ASTM/IS specifications required by UAE buyers.",
       whyUs: "SAPL offers the best value proposition for UAE refractory buyers: genuine Indian-manufactured products at competitive export prices, backed by our 45+ years of technical expertise. Our established shipping routes to Jebel Ali and other UAE ports ensure reliable delivery timelines. We support Dubai customers with technical data sheets, installation guidelines, and virtual consultation for refractory selection."
-    }
+    },
+    relatedBlogPosts: [
+      {
+        slug: "importing-refractories-from-india-buyers-guide",
+        title: "Importing Refractories from India: Buyer's Guide",
+        url: "/blog/importing-refractories-from-india-buyers-guide",
+      },
+    ],
   },
   {
     slug: "riyadh",

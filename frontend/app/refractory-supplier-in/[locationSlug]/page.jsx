@@ -275,6 +275,13 @@ export default async function LocationPage({ params }) {
       '@type': 'SpeakableSpecification',
       cssSelector: 'h1, h2, [data-speakable], .prose p',
     },
+    ...(location.relatedBlogPosts?.length > 0 && {
+      mentions: location.relatedBlogPosts.map((post) => ({
+        '@type': 'Article',
+        name: post.title,
+        url: `https://www.shankeragencies.com${post.url}`,
+      })),
+    }),
   };
 
   // JSON-LD: Service — positions the listing as a genuine service, not just content
