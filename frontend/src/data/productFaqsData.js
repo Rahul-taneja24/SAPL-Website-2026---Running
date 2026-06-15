@@ -282,7 +282,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Which brands of refractory mortar do you supply?',
-      a: 'We are an authorised dealer for Mahakoshal Refractories — covering their full mortar range from fireclay to HA-80, basic, and insulating grades. We also stock CUMI Super Refractories and Calderys mortars for matching their proprietary brick chemistries, plus Crown Ceramics acid-proof mortars. Same-day dispatch from Delhi for standard grades.',
+      a: 'We are a strategic supply partner for Mahakoshal Refractories — covering their full mortar range from fireclay to HA-80, basic, and insulating grades. We also supply CUMI Super Refractories (authorised dealer) and Calderys mortars for matching their proprietary brick chemistries, plus Crown Ceramics acid-proof mortars (authorised dealer). Same-day dispatch from Delhi for standard grades.',
     },
   ],
 

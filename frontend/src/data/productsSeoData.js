@@ -128,7 +128,7 @@ export const PRODUCT_SEO = [
     productId: "refractory-mortars",
     name: "Refractory Mortars (Fireclay, High Alumina, Basic, Acid-Proof)",
     metaTitle: "Refractory Mortars: Fireclay, High Alumina, Basic & Acid-Proof | Mahakoshal | Shanker Agencies",
-    metaDescription: "Refractory mortars for brick jointing — fireclay, HA-50/70/80 high alumina, basic magnesia, insulating and acid-proof grades. Mahakoshal authorized dealer. Pan-India delivery from Delhi.",
+    metaDescription: "Refractory mortars for brick jointing — fireclay, HA-50/70/80 high alumina, basic magnesia, insulating and acid-proof grades. Mahakoshal supply partner. Pan-India delivery from Delhi.",
   },
   {
     categorySlug: "unshaped-refractories",

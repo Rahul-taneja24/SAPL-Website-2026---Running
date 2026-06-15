@@ -601,7 +601,7 @@ export default async function LocationPage({ params }) {
               {
                 icon: ShieldCheck,
                 title: 'Authorised Dealer',
-                desc: 'Authorised dealer for CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal, plus supply partner for TRL Krosaki, IFGL and Calderys. Every dispatch ships with the original manufacturer test certificate.',
+                desc: 'Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. Every dispatch ships with the original manufacturer test certificate.',
               },
               {
                 icon: Factory,

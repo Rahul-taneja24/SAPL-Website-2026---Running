@@ -58,6 +58,7 @@ const VALID_BRANDS = [
     desc: 'Refractory bricks and castables for steel and industrial furnace applications.',
     products: ['Fire Bricks', 'High Alumina Bricks', 'Castables', 'Ramming Mass'],
     parent: 'Mahakoshal Refractories',
+    partnerOnly: true,
   },
   {
     slug: 'saint-gobain',

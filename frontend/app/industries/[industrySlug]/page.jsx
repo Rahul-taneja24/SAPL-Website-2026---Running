@@ -64,7 +64,7 @@ export async function generateMetadata({ params }) {
   const data = INDUSTRY_DATA[industrySlug];
   const name = data?.name || industrySlug;
   const title = `Refractory Supplier for ${name} Plants in India | Shanker Agencies`;
-  const description = `Refractory materials and on-site engineering help for ${name.toLowerCase()} plants across India. Authorised dealer for CUMI, TRL Krosaki, IFGL, Calderys and Mahakoshal. Working with the industry since 1980.`;
+  const description = `Refractory materials and on-site engineering help for ${name.toLowerCase()} plants across India. Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. Working with the industry since 1980.`;
   return {
     title,
     description,

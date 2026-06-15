@@ -2994,8 +2994,8 @@ export const BLOG_POSTS_DATA = [
 <h2>How to Read This Guide</h2>
 <p>We grouped the Delhi NCR refractory dealer landscape into four types. Each type has a legitimate place in the market. The trick is matching the dealer type to your use case.</p>
 <ol>
-  <li><strong>Authorised dealers of Indian majors</strong> (CUMI, Crown Ceramics, Divine Cerawool, Mahakoshal). These carry factory-backed pricing and genuine products. Shanker Agencies (SAPL) sits in this category.</li>
-  <li><strong>Supply partners for large plants</strong> (TRL Krosaki, IFGL, Calderys, Dalmia-OCL, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
+  <li><strong>Authorised dealers of Indian majors</strong> (CUMI, Crown Ceramics, Divine Cerawool). These carry factory-backed pricing and genuine products. Shanker Agencies (SAPL) sits in this category for CUMI, Crown Ceramics and Divine Cerawool.</li>
+  <li><strong>Strategic supply partners</strong> (Calderys, TRL Krosaki, Mahakoshal, IFGL, Saint-Gobain, Dalmia-OCL, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
   <li><strong>Local stockists and traders</strong>. Smaller operators with mixed-brand stock. Good for small value top-ups, less reliable for critical shutdown orders.</li>
   <li><strong>Online marketplaces</strong> (IndiaMART, TradeIndia, Justdial listings). Useful to compare prices but you are one step removed from the factory.</li>
 </ol>
@@ -3066,7 +3066,7 @@ export const BLOG_POSTS_DATA = [
 </ul>
 
 <h2>The SAPL Position, Honestly</h2>
-<p>Shanker Agencies is an authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal and a supply partner for TRL Krosaki, IFGL and Calderys. We stock the fast-movers in our Shahdara warehouse and can ship same-day to most of Delhi NCR. Our engineers visit plants for lining audits and sintering supervision. We also export to 50+ countries with standard CIF documentation, which means our paperwork discipline holds up at PSU and group-procurement level.</p>
+<p>Shanker Agencies is an authorised dealer of CUMI, Crown Ceramics and Divine Cerawool, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. We stock the fast-movers in our Shahdara warehouse and can ship same-day to most of Delhi NCR. Our engineers visit plants for lining audits and sintering supervision. We also export to 50+ countries with standard CIF documentation, which means our paperwork discipline holds up at PSU and group-procurement level.</p>
 <p>That does not make us the right answer for every buyer. A 200 kg emergency patch order from a small Wazirpur foundry might be faster from a local Wazirpur stockist. A massive cement kiln rebuild might be better handled by Calderys direct with us supplying the insulation package. We have seen both cases end well. The point of this guide is to help you match the dealer type to the job, not to claim any single dealer is right for everything.</p>
 
 <h2>Checklist You Can Print and Use</h2>
@@ -3187,7 +3187,7 @@ export const BLOG_POSTS_DATA = [
 <p>If a quote is significantly below these ranges for the same grade and same brand, ask to see the MTC and sieve analysis before you commit.</p>
 
 <h2>Where to Buy in Delhi NCR</h2>
-<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Mahakoshal, IFGL) or a strategic supply partner of <a href="/brands/calderys">Calderys</a> based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is an authorised dealer of CUMI and Mahakoshal and a strategic supply partner for <a href="/brands/calderys">Calderys</a> — maintaining stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
+<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Mahakoshal, IFGL) or a strategic supply partner of <a href="/brands/calderys">Calderys</a> based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is an authorised dealer of CUMI and Crown Ceramics and a strategic supply partner for <a href="/brands/calderys">Calderys</a> and Mahakoshal — maintaining stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
 
 <h2>Short Buyer's Checklist</h2>
 <ol>
@@ -3283,7 +3283,7 @@ export const BLOG_POSTS_DATA = [
 <p>Most unplanned extensions and unplanned shutdowns happen because one or two items on this list were assumed rather than confirmed.</p>
 
 <h2>Where SAPL Fits In</h2>
-<p>As an authorised dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal and a supply partner for TRL Krosaki, IFGL and Calderys, Shanker Agencies keeps patching mass, mortar, ceramic fibre and anchor consumables in stock in our Shahdara, Delhi warehouse. Our refractory engineers can join planned shutdowns across Delhi NCR for lining audits, anchor inspection and dry-out supervision at no extra cost for customers on regular supply accounts. If lining life in your plant is running below the datasheet number, a site visit and a look at the last failed lining usually reveals the gap within an hour.</p>
+<p>As an authorised dealer of CUMI, Crown Ceramics and Divine Cerawool, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal and IFGL, Shanker Agencies keeps patching mass, mortar, ceramic fibre and anchor consumables in stock in our Shahdara, Delhi warehouse. Our refractory engineers can join planned shutdowns across Delhi NCR for lining audits, anchor inspection and dry-out supervision at no extra cost for customers on regular supply accounts. If lining life in your plant is running below the datasheet number, a site visit and a look at the last failed lining usually reveals the gap within an hour.</p>
 
 <h2>Summary</h2>
 <p>Lining life is almost never limited by the brand of brick or castable. It is limited by how the lining is installed, dried out, operated and inspected. This 12-step checklist costs nothing to implement. The payback is measured in lakhs per avoided breakout, thousands of tonnes of extra production per extended campaign and far fewer emergency calls at 2 am.</p>

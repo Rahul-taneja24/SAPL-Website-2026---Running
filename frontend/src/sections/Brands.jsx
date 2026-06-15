@@ -408,7 +408,7 @@ function Brands() {
     "@context": "https://schema.org",
     "@type": "ItemList",
     name: "Partner Refractory Brands at Shanker Agencies",
-    description: "Shanker Agencies is an authorised dealer and supply partner for CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool and Crown Ceramics refractories in India.",
+    description: "Shanker Agencies is an authorised dealer of CUMI, Crown Ceramics and Divine Cerawool, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain refractories in India.",
     itemListElement: brandsData.map((b, idx) => ({
       "@type": "ListItem",
       position: idx + 1,

@@ -22,7 +22,7 @@ export const metadata = {
   },
   // 158 chars — under Google's 160-char limit so AI snippets don't truncate
   description:
-    "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown, Divine, Mahakoshal — supplying steel, cement, glass plants.",
+    "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool — supplying steel, cement, glass plants.",
   // Trimmed from 109 terms (audit M5: read as keyword stuffing) to 12 high-intent
   // commercial phrases. Google ignores this tag, but some AI crawlers use it as
   // a quality signal — long lists are downgraded as low-quality content.
@@ -46,7 +46,7 @@ export const metadata = {
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
     title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
-    description: "India's premier refractory engineering partner since 1980. Authorised for CUMI, Crown Ceramics, Divine Cerawool, Mahakoshal. Strategic supply partner for TRL Krosaki, IFGL and Calderys. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
+    description: "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool. Strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980' }],
   },
   twitter: {
