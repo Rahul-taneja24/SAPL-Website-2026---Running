@@ -44,7 +44,8 @@ SAPL is a verified and listed business on all major B2B directories and marketpl
 - **Kompass** — B2B profile for international procurement
 - **GlobalLinker** — business networking profile
 - **Crunchbase** — https://www.crunchbase.com/organization/shanker-agencies-pvt-ltd
-- **LinkedIn (Company)** — https://www.linkedin.com/company/shankeragencies
+- **Wikidata** — https://www.wikidata.org/wiki/Q140220528
+- **LinkedIn (Company)** — https://www.linkedin.com/company/shanker-agencies-private-limited/
 - **LinkedIn (Director, Rahul Taneja)** — https://www.linkedin.com/in/rahultaneja24/
 
 ## Product Catalog

@@ -272,6 +272,7 @@ export default function RootLayout({ children }) {
                     url: 'https://www.shankeragencies.com/products',
                   },
                   sameAs: [
+                    'https://www.wikidata.org/wiki/Q140220528',
                     'https://share.google/Cz2EJCPRFsQtAvvOE',
                     'https://www.bing.com/maps?ss=ypid.YN4070x7110777838778892043',
                     'https://maps.apple/p/0~tnc_7sCut830',
