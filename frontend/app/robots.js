@@ -53,6 +53,5 @@ export default function robots() {
       { userAgent: 'DotBot', disallow: '/' },
     ],
     sitemap: 'https://www.shankeragencies.com/sitemap.xml',
-    host: 'https://www.shankeragencies.com',
   };
 }

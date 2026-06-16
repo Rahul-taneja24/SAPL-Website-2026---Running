@@ -20,9 +20,9 @@ export const metadata = {
     default: "Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980",
     template: '%s | Shanker Agencies',
   },
-  // 158 chars — under Google's 160-char limit so AI snippets don't truncate
+  // 156 chars — within Bing's 145-158 target and under Google's 160-char limit
   description:
-    "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool — supplying steel, cement, glass plants.",
+    "India's premier refractory exporter since 1980. Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool. CIF supply of bricks & castables to GCC, ASEAN.",
   // Trimmed from 109 terms (audit M5: read as keyword stuffing) to 12 high-intent
   // commercial phrases. Google ignores this tag, but some AI crawlers use it as
   // a quality signal — long lists are downgraded as low-quality content.
