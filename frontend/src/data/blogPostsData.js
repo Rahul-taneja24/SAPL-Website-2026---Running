@@ -32,9 +32,9 @@ export const BLOG_POSTS_DATA = [
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     keyTakeaways: [
       "Silica ramming mass suits grey iron and mild steel; alumina suits stainless and tool steel; magnesia suits manganese steel.",
-      "Evaluate cost per heat — not cost per kg — to find the truly economical choice for your furnace.",
+      "Evaluate cost per heat, not cost per kg, to find the truly economical choice for your furnace.",
       "Boric acid content (1–2.5%) in silica mass controls sintering speed and working face strength.",
-      "Sintering schedule is as critical as material choice — rushing sintering destroys lining life.",
+      "Sintering schedule is as critical as material choice, rushing sintering destroys lining life.",
       "Grain size distribution (coarse/medium/fine) determines packing density and erosion resistance after sintering.",
     ],
     faqs: [
@@ -2093,7 +2093,7 @@ export const BLOG_POSTS_DATA = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 16. AL70 vs AL80 High Alumina Bricks — Grade Selection Guide
+  // 16. AL70 vs AL80 High Alumina Bricks, Grade Selection Guide
   // ─────────────────────────────────────────────────────────────
   {
     id: 16,
@@ -2111,9 +2111,9 @@ export const BLOG_POSTS_DATA = [
     keyTakeaways: [
       "AL70 (68–72% Al₂O₃, CCS 60–70 MPa) is the standard choice for general steel ladle working linings with carbon and low-alloy steel.",
       "AL80 (78–82% Al₂O₃, CCS 70–85 MPa) is required for slag lines, safety linings, and ladles processing stainless or high-alloy steel.",
-      "Higher alumina content means better refractoriness and slag resistance, but also higher cost — use only where the application demands it.",
+      "Higher alumina content means better refractoriness and slag resistance, but also higher cost, use only where the application demands it.",
       "AL70 gives 120–180 heats in typical ladle duty; AL80 gives 150–220 heats in demanding zones.",
-      "Never use AL70 as a safety lining — the safety lining must withstand a full working lining failure without metal penetration.",
+      "Never use AL70 as a safety lining, the safety lining must withstand a full working lining failure without metal penetration.",
     ],
     faqs: [
       { q: "What is the difference between AL70 and AL80 high alumina bricks?", a: "AL70 contains 68–72% Al₂O₃ with CCS of 60–70 MPa and is used for general ladle working linings. AL80 contains 78–82% Al₂O₃ with CCS of 70–85 MPa and is used in slag lines, safety linings, and high-alloy steel applications. AL80 offers better slag resistance and refractoriness but at higher cost." },
@@ -2162,7 +2162,7 @@ export const BLOG_POSTS_DATA = [
 <h3>AL80: For Demanding Zones and High-Performance Linings</h3>
 <p>AL80 bricks become necessary when slag chemistry is more aggressive, operating temperatures are higher, or when you need longer campaign life to reduce relining frequency. Key applications:</p>
 <ul>
-  <li><strong>Slag line zone</strong> of steel ladles — the most chemically aggressive zone where FeO-rich, CaO-rich slag attacks the working lining. AL80 provides measurably better resistance.</li>
+  <li><strong>Slag line zone</strong> of steel ladles, the most chemically aggressive zone where FeO-rich, CaO-rich slag attacks the working lining. AL80 provides measurably better resistance.</li>
   <li>Safety linings of large ladles (&gt;100 tonne) where thermal load is high</li>
   <li>Continuous casting tundish linings and impact pads</li>
   <li>High-alloy steel processing with more aggressive slag compositions</li>
@@ -2176,7 +2176,7 @@ export const BLOG_POSTS_DATA = [
     <tr><th>Ladle Zone</th><th>Recommended Grade</th><th>Reasoning</th></tr>
   </thead>
   <tbody>
-    <tr><td>Slag line (top 300 mm)</td><td>AL80 or MgO-C</td><td>Maximum slag attack — needs highest resistance</td></tr>
+    <tr><td>Slag line (top 300 mm)</td><td>AL80 or MgO-C</td><td>Maximum slag attack, needs highest resistance</td></tr>
     <tr><td>Upper barrel (300&ndash;900 mm)</td><td>AL80</td><td>High thermal + chemical load from liquid steel</td></tr>
     <tr><td>Lower barrel / bottom area</td><td>AL70</td><td>Lower slag contact; cost-effective without compromising life</td></tr>
     <tr><td>Safety / backup lining</td><td>AL70 or 60% insulating</td><td>Primarily thermal function; lower chemical exposure</td></tr>
@@ -2190,7 +2190,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>Practical Selection Tips</h2>
 <ol>
-  <li><strong>Check your slag FeO content:</strong> FeO &gt; 25% in slag — upgrade slag line to AL80 minimum, consider MgO-C.</li>
+  <li><strong>Check your slag FeO content:</strong> FeO &gt; 25% in slag, upgrade slag line to AL80 minimum, consider MgO-C.</li>
   <li><strong>Consider ladle turnaround time:</strong> Slow turnaround = longer thermal cycles = more thermal shock stress. AL70 handles thermal shock slightly better; AL80 handles chemical attack better.</li>
   <li><strong>Monitor actual wear patterns:</strong> If AL70 is eroding uniformly and slowly, no reason to upgrade. If slag line shows 3&times; the wear of the barrel, upgrade slag line to AL80.</li>
   <li><strong>Evaluate your downstream cost:</strong> Steel contamination from refractory wear costs more than upgrading bricks. If your slag line fails at 60 heats and forces an emergency relining, the total cost far exceeds using AL80 from the start.</li>
@@ -2198,7 +2198,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>Frequently Asked Questions</h2>
 <h3>Can I mix AL70 and AL80 in the same lining?</h3>
-<p>Yes — this is actually the recommended practice. Use AL80 for high-wear zones (slag line, upper barrel) and AL70 elsewhere. The two grades are thermally and chemically compatible.</p>
+<p>Yes, this is actually the recommended practice. Use AL80 for high-wear zones (slag line, upper barrel) and AL70 elsewhere. The two grades are thermally and chemically compatible.</p>
 <h3>Is AL90 ever needed for ladle linings?</h3>
 <p>AL90 (88&ndash;92% Al<sub>2</sub>O<sub>3</sub>) is occasionally used in the slag line of very large ladles (&gt;200 tonne) or for high-alloy steel with very aggressive slag. For most Indian steel plants processing 40&ndash;120 tonne heats, AL80 in the slag line is sufficient.</p>
 <h3>What about MgO-C bricks vs AL80 for slag line?</h3>
@@ -2225,22 +2225,22 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
     keyTakeaways: [
-      "Water addition for LCC must be 4–6% by weight — even 1% extra drastically reduces strength and increases spalling risk.",
+      "Water addition for LCC must be 4–6% by weight, even 1% extra drastically reduces strength and increases spalling risk.",
       "Mix LCC for a minimum of 3–5 minutes in a forced-action mixer after all water is added.",
       "Cure for minimum 24 hours at ambient temperature before heat-up; longer curing improves strength.",
       "Heat-up rate should not exceed 25–50°C/hour up to 300°C to safely drive off free and chemically bound water.",
-      "Never add water to a partially mixed or stiff batch — discard and restart to avoid weak zones in the lining.",
+      "Never add water to a partially mixed or stiff batch, discard and restart to avoid weak zones in the lining.",
     ],
     howToSteps: [
       { name: "Prepare the mould and formwork", text: "Clean the formwork and apply a release agent. Ensure correct dimensions for lining thickness. Pre-heat if ambient temperature is below 10°C." },
-      { name: "Measure water addition accurately", text: "Weigh water to 4.5–6% of the dry castable weight. Never estimate — use a calibrated scale. Follow the product datasheet exactly." },
+      { name: "Measure water addition accurately", text: "Weigh water to 4.5–6% of the dry castable weight. Never estimate, use a calibrated scale. Follow the product datasheet exactly." },
       { name: "Mix in a forced-action mixer", text: "Add dry castable to the mixer, then add 80% of the water and mix for 1 minute. Add remaining water and mix for a further 3–4 minutes until fully homogeneous." },
       { name: "Place and vibrate", text: "Pour or pump LCC into formwork within 20–30 minutes of mixing. Use a poker vibrator at 150mm intervals for 10–15 seconds per position until air bubbles cease." },
       { name: "Cure at ambient temperature", text: "Cover with wet hessian and polythene for minimum 24 hours (48 hours preferred). Do not allow the surface to dry out during curing." },
       { name: "Follow controlled heat-up schedule", text: "Heat at ≤25°C/hour from ambient to 110°C and hold for 2 hours. Then ≤50°C/hour to 300°C and hold for 2 hours. Then ≤100°C/hour to operating temperature." },
     ],
     faqs: [
-      { q: "What is the correct water addition for LCC castable?", a: "The correct water addition for most LCC castables is 4.5–6% by weight of dry castable. Adding more than 6% causes segregation, reduced density, and increased risk of explosive spalling during heat-up. Always follow the product-specific datasheet — different LCC grades have different optimal water ranges." },
+      { q: "What is the correct water addition for LCC castable?", a: "The correct water addition for most LCC castables is 4.5–6% by weight of dry castable. Adding more than 6% causes segregation, reduced density, and increased risk of explosive spalling during heat-up. Always follow the product-specific datasheet, different LCC grades have different optimal water ranges." },
       { q: "How long should LCC castable be cured before heat-up?", a: "LCC castable should be cured for a minimum of 24 hours at ambient temperature before starting heat-up. For thicker sections (>150mm) or cold weather, 48 hours is recommended. Longer curing allows cement hydration to complete, building strength and reducing spalling risk during the first heat-up." },
       { q: "What causes explosive spalling in refractory castables?", a: "Explosive spalling occurs when trapped water converts to steam faster than it can escape. Common causes include excessive water addition, insufficient curing time, too-fast heat-up rate below 300°C, and poor castable mixing. Prevention: use correct water addition, cure fully, and follow a controlled heat-up schedule with holds at 110°C and 300°C." },
       { q: "What is the maximum heat-up rate for LCC?", a: "For most LCC castables, the maximum heat-up rate is 25–50°C/hour up to 300°C where free and chemically bound water must escape. Above 300°C, 50–100°C/hour is typically acceptable. Holds of 2–4 hours at 110°C and 300°C are critical. Exceeding these rates risks explosive spalling that can destroy the lining." },
@@ -2251,7 +2251,7 @@ export const BLOG_POSTS_DATA = [
 <p>Low Cement Castables (LCC) contain only 3&ndash;8% cement (CaO &lt; 2.5%), replacing the traditional 15&ndash;25% cement content of conventional castables. This dramatically improves hot strength, slag resistance, and service life at high temperatures. But LCC's low cement content also means the microstructure is more sensitive to installation variables. Poor water addition, inadequate mixing, or a rushed heat-up schedule can negate all of these advantages.</p>
 <p>At Shanker Agencies, we have supervised hundreds of LCC installations across steel ladles, boiler walls, torpedo ladles, and reheat furnaces. The most common cause of premature failure is not a product problem &mdash; it is an installation problem.</p>
 
-<h2>Step 1: Water Addition — The Most Critical Variable</h2>
+<h2>Step 1: Water Addition, The Most Critical Variable</h2>
 <p>LCC requires significantly less water than conventional castable &mdash; typically <strong>4.5&ndash;6.5% by weight</strong>, versus 10&ndash;14% for conventional castables. Excess water is the single biggest mistake in LCC installation.</p>
 <table>
   <thead>
@@ -2277,7 +2277,7 @@ export const BLOG_POSTS_DATA = [
 </ol>
 <p><strong>Batch size tip:</strong> Mix in batches that can be placed within 20&ndash;25 minutes. LCC begins to stiffen after this point due to dispersant activity. Do not re-temper with water &mdash; discard and mix a fresh batch.</p>
 
-<h2>Step 3: Placement — Vibration Casting vs. Self-Flow</h2>
+<h2>Step 3: Placement, Vibration Casting vs. Self-Flow</h2>
 <h3>Vibration Casting (Standard LCC)</h3>
 <p>Most LCC grades require vibration to achieve proper consolidation. Use an internal vibrator with a 35&ndash;50 mm diameter head. Vibrate in layers no thicker than 200 mm. Insert the vibrator vertically and withdraw slowly; do not move the vibrator sideways (this causes segregation).</p>
 <h3>Self-Flow (SCC-LCC)</h3>
@@ -2300,26 +2300,26 @@ export const BLOG_POSTS_DATA = [
     <tr><th>Stage</th><th>Temperature Range</th><th>Heating Rate</th><th>Hold</th><th>Purpose</th></tr>
   </thead>
   <tbody>
-    <tr><td>1 — Drying</td><td>Ambient → 150 degC</td><td>20&ndash;30 degC/hr</td><td>4&ndash;6 hrs at 150 degC</td><td>Drive off free moisture</td></tr>
-    <tr><td>2 — Dehydration</td><td>150 → 350 degC</td><td>25&ndash;30 degC/hr</td><td>2&ndash;3 hrs at 350 degC</td><td>Remove cement hydrate water</td></tr>
-    <tr><td>3 — Rehydrate phases</td><td>350 → 600 degC</td><td>30&ndash;40 degC/hr</td><td>1&ndash;2 hrs at 600 degC</td><td>Complete phase transformations</td></tr>
-    <tr><td>4 — Ramp to service</td><td>600 degC → service temp</td><td>50&ndash;75 degC/hr</td><td>Hold at service temp</td><td>Develop ceramic bond</td></tr>
+    <tr><td>1, Drying</td><td>Ambient → 150 degC</td><td>20&ndash;30 degC/hr</td><td>4&ndash;6 hrs at 150 degC</td><td>Drive off free moisture</td></tr>
+    <tr><td>2, Dehydration</td><td>150 → 350 degC</td><td>25&ndash;30 degC/hr</td><td>2&ndash;3 hrs at 350 degC</td><td>Remove cement hydrate water</td></tr>
+    <tr><td>3, Rehydrate phases</td><td>350 → 600 degC</td><td>30&ndash;40 degC/hr</td><td>1&ndash;2 hrs at 600 degC</td><td>Complete phase transformations</td></tr>
+    <tr><td>4, Ramp to service</td><td>600 degC → service temp</td><td>50&ndash;75 degC/hr</td><td>Hold at service temp</td><td>Develop ceramic bond</td></tr>
   </tbody>
 </table>
 <p><em>Note: These are general guidelines. Always follow the specific heat-up curve provided by the castable manufacturer for the exact grade you are using. Thicker sections (&gt;200 mm) require slower heating rates.</em></p>
 
 <h2>Common Mistakes and How to Avoid Them</h2>
 <ul>
-  <li><strong>Adding too much water for better flow</strong> — Use a self-flow grade or increase vibration instead. Excess water destroys density and strength.</li>
-  <li><strong>Re-tempering stiffened castable</strong> — If castable has started to stiffen, it means hydration has begun. Adding water breaks the structure. Always discard and mix fresh.</li>
-  <li><strong>Skipping or shortening holds in heat-up</strong> — The holds are designed to ensure moisture escape. Rushing through them increases spalling risk significantly.</li>
-  <li><strong>Cold weather installation without protection</strong> — LCC requires ambient temperature above 10 degC during mixing and curing. In winter, use heated water and tent the work area.</li>
-  <li><strong>Installing against a hot background</strong> — If repairing a hot lining, cool to below 50 degC before installing LCC. LCC installed against a hot surface dries too fast and forms a weak layer.</li>
+  <li><strong>Adding too much water for better flow</strong>, Use a self-flow grade or increase vibration instead. Excess water destroys density and strength.</li>
+  <li><strong>Re-tempering stiffened castable</strong>, If castable has started to stiffen, it means hydration has begun. Adding water breaks the structure. Always discard and mix fresh.</li>
+  <li><strong>Skipping or shortening holds in heat-up</strong>, The holds are designed to ensure moisture escape. Rushing through them increases spalling risk significantly.</li>
+  <li><strong>Cold weather installation without protection</strong>, LCC requires ambient temperature above 10 degC during mixing and curing. In winter, use heated water and tent the work area.</li>
+  <li><strong>Installing against a hot background</strong>, If repairing a hot lining, cool to below 50 degC before installing LCC. LCC installed against a hot surface dries too fast and forms a weak layer.</li>
 </ul>
 
 <h2>Frequently Asked Questions</h2>
 <h3>Can LCC be gunned instead of cast?</h3>
-<p>Standard LCC is designed for casting. There are specific "gunning LCC" grades that use a different particle size distribution and bonding system to work with gunning equipment. Do not gun standard vibration-cast LCC — the rebound loss and properties will be poor.</p>
+<p>Standard LCC is designed for casting. There are specific "gunning LCC" grades that use a different particle size distribution and bonding system to work with gunning equipment. Do not gun standard vibration-cast LCC, the rebound loss and properties will be poor.</p>
 <h3>How do I know if my LCC was installed correctly?</h3>
 <p>After heat-up: tap the surface gently with a hammer. A clear, high-pitched ring indicates a dense, well-cured lining. A dull thud suggests internal voids or delamination. Core sampling (diamond drilling) and bulk density measurement give a definitive assessment.</p>
 <h3>What LCC thickness is standard for steel ladles?</h3>
@@ -2380,14 +2380,14 @@ export const BLOG_POSTS_DATA = [
 <ul>
   <li>IFB lining heat storage per cycle: ~320 kWh/m² of lining area</li>
   <li>Ceramic fiber lining heat storage per cycle: ~22 kWh/m² of lining area</li>
-  <li>Saving per m² per day (3 cycles): ~894 kWh — a <strong>93% reduction in heat storage losses</strong></li>
+  <li>Saving per m² per day (3 cycles): ~894 kWh, a <strong>93% reduction in heat storage losses</strong></li>
 </ul>
 <p>For continuous furnaces (no cooling between cycles), this advantage disappears. In a pusher kiln running 24/7, heat storage doesn't matter because the lining is always hot.</p>
 
 <h2>When to Use Ceramic Fiber</h2>
 <ul>
-  <li><strong>Batch furnaces</strong> — box furnaces, bell furnaces, car-bottom furnaces, batch annealing</li>
-  <li><strong>Furnace door linings</strong> — subjected to frequent opening/closing thermal shock</li>
+  <li><strong>Batch furnaces</strong>, box furnaces, bell furnaces, car-bottom furnaces, batch annealing</li>
+  <li><strong>Furnace door linings</strong>, subjected to frequent opening/closing thermal shock</li>
   <li><strong>Backup insulation layers</strong> behind a dense working lining (no direct exposure)</li>
   <li><strong>Ladle preheaters</strong> and transfer car linings</li>
   <li>Any application requiring rapid heat-up and the lining will not see abrasion, gas flow, or mechanical impact</li>
@@ -2432,7 +2432,7 @@ export const BLOG_POSTS_DATA = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 19. Steel Ladle Refractory Selection — Complete Guide
+  // 19. Steel Ladle Refractory Selection, Complete Guide
   // ─────────────────────────────────────────────────────────────
   {
     id: 19,
@@ -2452,7 +2452,7 @@ export const BLOG_POSTS_DATA = [
 <h2>The Steel Ladle: A Refractory Engineering Challenge</h2>
 <p>The steel ladle is one of the most demanding refractory applications in the steelmaking process. A typical 100-tonne ladle holds liquid steel at 1,580&ndash;1,650 degC, undergoes secondary metallurgy treatments including argon purging, synthetic slag additions, and sometimes vacuum degassing. The refractory lining must withstand:</p>
 <ul>
-  <li>Extreme thermal cycling — from cold start to 1,640 degC and back, multiple times per day</li>
+  <li>Extreme thermal cycling, from cold start to 1,640 degC and back, multiple times per day</li>
   <li>Highly corrosive synthetic slag with high CaO, Al<sub>2</sub>O<sub>3</sub>, FeO, and MnO content</li>
   <li>Mechanical stress from steel impact during tapping</li>
   <li>Erosion from argon purging at the plug area</li>
@@ -2499,7 +2499,7 @@ export const BLOG_POSTS_DATA = [
   <li>K-30 insulating firebrick (for thermal insulation focus) or</li>
   <li>Combination of 40 mm microporous insulation board + 60 mm IFB (best thermal performance)</li>
 </ul>
-<p>Monitor safety lining erosion by measuring working lining wear and maintaining a minimum 80 mm residual safety lining thickness. If the working lining wears faster than expected, the safety lining may be reached early — this is a relining trigger condition regardless of planned campaign length.</p>
+<p>Monitor safety lining erosion by measuring working lining wear and maintaining a minimum 80 mm residual safety lining thickness. If the working lining wears faster than expected, the safety lining may be reached early, this is a relining trigger condition regardless of planned campaign length.</p>
 
 <h2>Purging Plug Selection and Installation</h2>
 <p>The argon purging plug is the most heavily attacked area in a ladle lining due to constant argon flow, thermal cycling, and slag penetration. Best practices:</p>
@@ -2533,7 +2533,7 @@ export const BLOG_POSTS_DATA = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 20. Cement Kiln Refractory Zones — Zone-by-Zone Selection
+  // 20. Cement Kiln Refractory Zones, Zone-by-Zone Selection
   // ─────────────────────────────────────────────────────────────
   {
     id: 20,
@@ -2573,7 +2573,7 @@ export const BLOG_POSTS_DATA = [
 <p><strong>Material choice:</strong> 60&ndash;70% Al<sub>2</sub>O<sub>3</sub> dense castable or high-CCS aluminosilicate castable. For the nose ring (the outermost ring exposed to hot air from the cooler): spinel-alumina castable or AL60 bricks with steel fibre reinforcement for thermal shock.</p>
 <p><strong>Key requirement:</strong> Excellent thermal shock resistance. If the cooler stops and the nose ring suddenly cools, or if kiln start-up is frequent, the nose ring bricks experience severe cycling. Avoid low thermal shock grades here.</p>
 
-<h3>Zone 2: Burning Zone (1,350–1,450 degC) — The Most Critical Zone</h3>
+<h3>Zone 2: Burning Zone (1,350–1,450 degC), The Most Critical Zone</h3>
 <p><strong>Dominant stress:</strong> Maximum temperature + corrosive clinker liquid phase (CaO-Al<sub>2</sub>O<sub>3</sub>-SiO<sub>2</sub>-Fe<sub>2</sub>O<sub>3</sub> melt) + SO<sub>3</sub> vapour + mechanical flexing from kiln shell ovality</p>
 <p><strong>Material choice:</strong></p>
 <ul>
@@ -2596,7 +2596,7 @@ export const BLOG_POSTS_DATA = [
 <p><strong>Dominant stress:</strong> Alkali sulphate (K<sub>2</sub>SO<sub>4</sub>, Na<sub>2</sub>SO<sub>4</sub>) vapour condensation and attack; moderate temperature; thermal shock</p>
 <p><strong>Material choice:</strong></p>
 <ul>
-  <li><strong>Fireclay or 40&ndash;50% Al<sub>2</sub>O<sub>3</sub> bricks:</strong> Standard choice for this zone. Alkali attack resistance improves with lower Al<sub>2</sub>O<sub>3</sub> content (paradoxically) — high-alumina bricks form alkali-aluminates more aggressively.</li>
+  <li><strong>Fireclay or 40&ndash;50% Al<sub>2</sub>O<sub>3</sub> bricks:</strong> Standard choice for this zone. Alkali attack resistance improves with lower Al<sub>2</sub>O<sub>3</sub> content (paradoxically), high-alumina bricks form alkali-aluminates more aggressively.</li>
   <li>Alternative: 50&ndash;60% Al<sub>2</sub>O<sub>3</sub> bricks with low total alkali in the raw mix, if thermal shock is the primary concern</li>
 </ul>
 
@@ -2655,7 +2655,7 @@ export const BLOG_POSTS_DATA = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 21. Slide Gate Flow Control — Fully Explained
+  // 21. Slide Gate Flow Control, Fully Explained
   // ─────────────────────────────────────────────────────────────
   {
     id: 21,
@@ -2675,7 +2675,7 @@ export const BLOG_POSTS_DATA = [
 <h2>What Is Slide Gate Flow Control and Why Does It Matter?</h2>
 <p>In continuous casting, liquid steel must flow from the ladle to the tundish, and from the tundish to the mould, at a precise and controllable rate. Too fast and the mould overflows; too slow and solidification begins in the nozzle, causing a clog and a costly sequence break. The slide gate system is the primary mechanism for controlling this flow.</p>
 <p>A slide gate system consists of three key refractory components working together: the <strong>upper plate</strong> (fixed, in the ladle bottom), the <strong>lower plate</strong> (sliding), and the <strong>collector nozzle</strong>. The sliding lower plate creates a variable aperture whose opening controls steel flow rate. Additional components include the ladle shroud (connecting ladle to tundish) and the subentry nozzle (connecting tundish to mould).</p>
-<p>The entire system must maintain dimensional precision while submerged in or adjacent to 1,600 degC liquid steel. Even a 0.2 mm wear asymmetry in the plate faces allows liquid steel infiltration — leading to a sticker, plate explosion, or uncontrolled steel flow.</p>
+<p>The entire system must maintain dimensional precision while submerged in or adjacent to 1,600 degC liquid steel. Even a 0.2 mm wear asymmetry in the plate faces allows liquid steel infiltration, leading to a sticker, plate explosion, or uncontrolled steel flow.</p>
 
 <h2>Slide Gate Plate Materials</h2>
 <h3>1. Al₂O₃-C (Alumina-Carbon) Plates</h3>
@@ -2693,7 +2693,7 @@ export const BLOG_POSTS_DATA = [
 <p>An upgraded composition where 5&ndash;20% ZrO<sub>2</sub> (zirconia) is added to the alumina-carbon matrix. Properties:</p>
 <ul>
   <li>Significantly better erosion resistance than pure Al<sub>2</sub>O<sub>3</sub>-C, especially against calcium-treated steels</li>
-  <li>Better oxidation resistance — less decarburization of the carbon phase at the plate face</li>
+  <li>Better oxidation resistance, less decarburization of the carbon phase at the plate face</li>
   <li>Suitable for demanding grades: Ca-treated steel, stainless, electrical grades</li>
   <li>Cost: 30&ndash;50% higher than standard Al<sub>2</sub>O<sub>3</sub>-C</li>
 </ul>
@@ -2710,9 +2710,9 @@ export const BLOG_POSTS_DATA = [
 <h3>Ladle Shroud</h3>
 <p>The ladle shroud is the tube that transfers steel from the ladle nozzle into the tundish, submerged below the tundish slag layer. Its primary function is to prevent reoxidation of liquid steel during transfer. Material: typically Al<sub>2</sub>O<sub>3</sub>-C (88% Al<sub>2</sub>O<sub>3</sub>, 10% C). Key requirements:</p>
 <ul>
-  <li>Tight, gas-impermeable bore — prevents air suction during ladle open/close operations</li>
-  <li>Good thermal shock resistance — must survive rapid heating from cold on first heat</li>
-  <li>Argon purging ports — most modern shrouds include argon slots at the metal/air interface to form a protective gas curtain</li>
+  <li>Tight, gas-impermeable bore, prevents air suction during ladle open/close operations</li>
+  <li>Good thermal shock resistance, must survive rapid heating from cold on first heat</li>
+  <li>Argon purging ports, most modern shrouds include argon slots at the metal/air interface to form a protective gas curtain</li>
 </ul>
 
 <h2>Anti-Clogging Strategies</h2>
@@ -2722,8 +2722,8 @@ export const BLOG_POSTS_DATA = [
 <ul>
   <li>Argon injection rate: typically 3&ndash;8 NL/min through the nozzle bore</li>
   <li>Start argon injection 30 seconds before ladle opening to purge the nozzle</li>
-  <li>Argon should be of high purity (&gt;99.9%) — moisture in argon creates Al<sub>2</sub>O<sub>3</sub> inclusions</li>
-  <li>Monitor argon flow rate — if flow drops suddenly, the porous insert may be blocked. Switch to the backup inlet immediately.</li>
+  <li>Argon should be of high purity (&gt;99.9%), moisture in argon creates Al<sub>2</sub>O<sub>3</sub> inclusions</li>
+  <li>Monitor argon flow rate, if flow drops suddenly, the porous insert may be blocked. Switch to the backup inlet immediately.</li>
 </ul>
 <h3>ZrO₂-Enhanced Nozzles</h3>
 <p>Zirconia inserts in the nozzle bore (ZrO<sub>2</sub> &gt; 90%) significantly reduce alumina build-up. Zirconia's low wettability by molten steel reduces inclusion adhesion. However, ZrO<sub>2</sub> inserts are expensive and can crack under thermal shock if preheating is inadequate.</p>
@@ -2748,14 +2748,14 @@ export const BLOG_POSTS_DATA = [
 <h3>Can the same plates be used for ladle and tundish?</h3>
 <p>No. Ladle and tundish operate under very different conditions. Ladle slide gates see higher temperatures and longer exposure times. Tundish slide gates have lighter duty but may see different steel chemistry effects. Always use grade-specific plates designed for each position.</p>
 <h3>What causes a stuck slide gate?</h3>
-<p>Most common causes: (1) steel solidified in the bore during a long turnaround — use O2 lancing to open; (2) plate sticker due to steel infiltration between worn plates; (3) hydraulic system failure. Always inspect plates after each heat and replace if erosion is asymmetric or bore diameter is &gt;20% above original specification.</p>
+<p>Most common causes: (1) steel solidified in the bore during a long turnaround, use O2 lancing to open; (2) plate sticker due to steel infiltration between worn plates; (3) hydraulic system failure. Always inspect plates after each heat and replace if erosion is asymmetric or bore diameter is &gt;20% above original specification.</p>
 `,
     author: { name: "Deepak Sharma", role: "Flow Control Refractories Engineer" },
     relatedProducts: ["slide-gate-plates", "ladle-shrouds", "subentry-nozzles", "tundish-nozzles"],
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 22. Gunning vs Casting Refractories — Decision Guide
+  // 22. Gunning vs Casting Refractories, Decision Guide
   // ─────────────────────────────────────────────────────────────
   {
     id: 22,
@@ -2773,7 +2773,7 @@ export const BLOG_POSTS_DATA = [
     excerpt: "Gunning offers rapid installation and hot repair capability with minimal downtime, while casting provides denser, stronger linings for new construction. This guide compares application methods, rebound loss, material properties, cost implications, and provides a decision framework for plant engineers.",
     content: `
 <h2>Two Different Tools for Two Different Jobs</h2>
-<p>Gunning and casting are both methods of installing monolithic (unshaped) refractories, but they are optimised for fundamentally different scenarios. Treating them as interchangeable leads to poor lining performance and unnecessary cost. Understanding when to use each — and why — is a core skill for any refractory engineer or plant maintenance manager.</p>
+<p>Gunning and casting are both methods of installing monolithic (unshaped) refractories, but they are optimised for fundamentally different scenarios. Treating them as interchangeable leads to poor lining performance and unnecessary cost. Understanding when to use each, and why, is a core skill for any refractory engineer or plant maintenance manager.</p>
 
 <h2>Casting: For New Construction and Highest-Quality Linings</h2>
 <p>Casting (or vibration-cast installation) involves mixing a wet, flowable castable and placing it into a formed void using a mould or formwork, then consolidating it by vibration. The result is a dense, homogeneous monolithic lining with properties approaching the theoretical maximum of the material.</p>
@@ -2795,7 +2795,7 @@ export const BLOG_POSTS_DATA = [
 <p>Gunning (or shotcrete application) involves projecting dry or semi-dry castable mix through a hose and nozzle using compressed air, with water added at the nozzle or a short distance before. The material is applied directly onto the worn surface at high velocity, forming a bonded layer without formwork.</p>
 <h3>Advantages of Gunning</h3>
 <ul>
-  <li><strong>Hot repair capability:</strong> Can be applied to a hot lining (surface temperatures up to 1,000 degC for some gunning mixes) without shutting down the entire furnace or vessel. This is the most important advantage — it turns a multi-day rebuild into a 4&ndash;8 hour repair.</li>
+  <li><strong>Hot repair capability:</strong> Can be applied to a hot lining (surface temperatures up to 1,000 degC for some gunning mixes) without shutting down the entire furnace or vessel. This is the most important advantage, it turns a multi-day rebuild into a 4&ndash;8 hour repair.</li>
   <li><strong>Rapid application:</strong> An experienced gunner can apply 5&ndash;10 tonnes of material per hour. Large areas can be covered quickly.</li>
   <li><strong>No formwork required:</strong> Material bonds directly to the existing lining surface via the impact velocity and the binder system. Only access to the nozzle area is needed.</li>
   <li><strong>Repair-specific grades:</strong> Gunning mixes are formulated with bonding agents (sodium silicate, cement) that promote adhesion to cold or hot existing refractories.</li>
@@ -2857,7 +2857,7 @@ export const BLOG_POSTS_DATA = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 23. Induction Furnace Ramming Mass — Selection & Installation
+  // 23. Induction Furnace Ramming Mass, Selection & Installation
   // ─────────────────────────────────────────────────────────────
   {
     id: 23,
@@ -2875,7 +2875,7 @@ export const BLOG_POSTS_DATA = [
     excerpt: "Silica, alumina, and magnesia ramming masses each serve different metallurgical requirements. This guide covers material selection based on melt type (iron, steel, copper), lining life expectations, sintering schedules and temperatures, and troubleshooting the most common failure modes.",
     content: `
 <h2>The Ramming Mass Decision: Getting It Right From the Start</h2>
-<p>In a coreless induction furnace, the ramming mass lining is the only protection between 1,600+ degC liquid metal and the water-cooled copper induction coil. Unlike most industrial refractory linings, there is no backup lining — the ramming mass is it. A lining failure is not a maintenance event; it is an emergency that can result in coil destruction, metal breakout, and significant safety risk.</p>
+<p>In a coreless induction furnace, the ramming mass lining is the only protection between 1,600+ degC liquid metal and the water-cooled copper induction coil. Unlike most industrial refractory linings, there is no backup lining, the ramming mass is it. A lining failure is not a maintenance event; it is an emergency that can result in coil destruction, metal breakout, and significant safety risk.</p>
 <p>The starting point for ramming mass selection is always the same question: <strong>What metal are you melting?</strong> The melt chemistry determines the slag chemistry, which determines whether you need an acidic, neutral, or basic ramming mass.</p>
 
 <h2>Melt Type vs. Ramming Mass Selection</h2>
@@ -2893,7 +2893,7 @@ export const BLOG_POSTS_DATA = [
     <tr><td>Aluminium (induction)</td><td>Alumina-rich</td><td>Alumina or castable lining</td></tr>
   </tbody>
 </table>
-<p><strong>Key rule:</strong> Never use an acidic lining with a basic slag, or a basic lining with an acidic slag. The chemical incompatibility dramatically accelerates lining erosion — you may get only 20&ndash;30 heats instead of 200+ heats.</p>
+<p><strong>Key rule:</strong> Never use an acidic lining with a basic slag, or a basic lining with an acidic slag. The chemical incompatibility dramatically accelerates lining erosion, you may get only 20&ndash;30 heats instead of 200+ heats.</p>
 
 <h2>Silica Ramming Mass: The Grey Iron Foundry Standard</h2>
 <p>Silica ramming mass (SiO<sub>2</sub> &gt; 96%) with boric acid addition (1.0&ndash;1.8%) is the industry standard for grey iron and SG iron melting in induction furnaces across India and globally. Its advantages:</p>
@@ -2910,13 +2910,13 @@ export const BLOG_POSTS_DATA = [
 <ol>
   <li><strong>Coil preparation:</strong> Apply a thin coat (1&ndash;2 mm) of coil coat cement over the coil insulation to protect it. Allow to dry completely.</li>
   <li><strong>Bottom ramming:</strong> Add the ramming mass in the bottom of the furnace in 50&ndash;75 mm layers. Ram each layer firmly with a pneumatic rammer until the surface becomes dense and non-yielding. Typical bottom thickness: 150&ndash;200 mm for the bottom knuckle area.</li>
-  <li><strong>Former placement:</strong> Place the cylindrical former (steel shell or cardboard tube) concentrically in the furnace with the correct gap from the coil (specified by the furnace OEM — typically 15&ndash;25 mm minimum working lining thickness plus the sintered layer).</li>
-  <li><strong>Wall ramming:</strong> Fill between the former and the coil in 75&ndash;100 mm lifts. Ram each lift uniformly around the circumference. Avoid ramming too hard in one spot — this causes density variations that lead to uneven sintering.</li>
+  <li><strong>Former placement:</strong> Place the cylindrical former (steel shell or cardboard tube) concentrically in the furnace with the correct gap from the coil (specified by the furnace OEM, typically 15&ndash;25 mm minimum working lining thickness plus the sintered layer).</li>
+  <li><strong>Wall ramming:</strong> Fill between the former and the coil in 75&ndash;100 mm lifts. Ram each lift uniformly around the circumference. Avoid ramming too hard in one spot, this causes density variations that lead to uneven sintering.</li>
   <li><strong>Top collar:</strong> Ram the top section without the former to form the collar/lip that retains the charge. Use a drier, slightly richer boric acid mix for the top 100 mm (greater stability needed here).</li>
 </ol>
 
 <h2>Sintering Schedule: The Make-or-Break Step</h2>
-<p>Sintering transforms loose rammed material into a strong, dense working face. The former must remain in place during sintering — do not remove it before the material has sintered.</p>
+<p>Sintering transforms loose rammed material into a strong, dense working face. The former must remain in place during sintering, do not remove it before the material has sintered.</p>
 <h3>Typical Sintering Schedule for 1-Tonne Silica Ramming Mass</h3>
 <table>
   <thead>
@@ -2935,7 +2935,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>Troubleshooting Common Lining Failure Modes</h2>
 <h3>Rapid Erosion in the First 20 Heats</h3>
-<p><strong>Cause:</strong> Under-sintering — the sintered layer has not fully developed. Possible reasons: heating too fast through sintering temperature; sintering hold time too short; boric acid content too low.<br>
+<p><strong>Cause:</strong> Under-sintering, the sintered layer has not fully developed. Possible reasons: heating too fast through sintering temperature; sintering hold time too short; boric acid content too low.<br>
 <strong>Fix:</strong> Lengthen the sinter hold at 1,450 degC by 1&ndash;2 hours for the next new lining. Have the ramming mass tested for boric acid content.</p>
 
 <h3>Cracking in the Top Third of the Lining</h3>
@@ -3002,7 +3002,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>What to Check Before Placing an Order</h2>
 <h3>1. Is the dealer authorised by the brand?</h3>
-<p>An authorised dealership means the dealer can pull product directly from the factory with factory pricing and lot traceability. Ask for the current dealership letter. Don't accept "we have worked with them for years" — ask for the letter.</p>
+<p>An authorised dealership means the dealer can pull product directly from the factory with factory pricing and lot traceability. Ask for the current dealership letter. Don't accept "we have worked with them for years", ask for the letter.</p>
 
 <h3>2. How deep is the local stock?</h3>
 <p>For a ramming mass breakdown or an emergency castable top-up at a Manesar foundry, you need stock that can move same-day from a Delhi NCR warehouse. Ask specifically: how many tonnes of your grade is physically in the warehouse today?</p>
@@ -3011,7 +3011,7 @@ export const BLOG_POSTS_DATA = [
 <p>Good dealers have engineers who can visit your plant, map your lining zone by zone, recommend the right grade and supervise installation. Pure traders do not have this capability. For induction furnace sintering, ladle lining, EAF hot-spot selection or cement kiln coating stability issues, engineering support usually decides lining life more than brand choice.</p>
 
 <h3>4. Can they handle GeM, SAIL, NTPC, BHEL paperwork?</h3>
-<p>Public sector units have strict documentation standards — MTC, EN 10204 3.1 test certificates, PO matching, challan formats, GeM compliance. A dealer who has run PSU tenders before will get your documents right the first time. A new dealer will bounce 3 or 4 rounds of corrections.</p>
+<p>Public sector units have strict documentation standards, MTC, EN 10204 3.1 test certificates, PO matching, challan formats, GeM compliance. A dealer who has run PSU tenders before will get your documents right the first time. A new dealer will bounce 3 or 4 rounds of corrections.</p>
 
 <h3>5. Export capability (if you need it)</h3>
 <p>If you export finished products or buy on behalf of a group with plants abroad, check whether the dealer can also export: IEC code, EPCG familiarity, container loading at ICD Tughlakabad, CIF/FOB quoting discipline. Not every Delhi dealer can do this cleanly.</p>
@@ -3111,7 +3111,7 @@ export const BLOG_POSTS_DATA = [
     excerpt: "Castable refractory cement is the workhorse lining for boilers, reheating furnaces, kiln hoods, transfer chutes and shaped anchors across Delhi NCR plants. This buyer's guide explains the differences between conventional, low cement and ultra low cement castables, how to pick the right alumina content, what curing and dry-out look like in practice, and how castable pricing works in 2026.",
     content: `
 <h2>What Is a Castable Refractory Cement?</h2>
-<p>A refractory castable is a dry mix of calcined alumina or fireclay aggregate, calcium aluminate cement binder and chemical additives. Add water on site, pour or shotcrete into place, let it cure, then dry it out on a controlled heating curve and it becomes a monolithic refractory lining. Castable is the most flexible lining format on the market — it can be poured into almost any geometry, anchored with steel studs and used everywhere from 900 degree boiler shells to 1800 degree reformer furnaces.</p>
+<p>A refractory castable is a dry mix of calcined alumina or fireclay aggregate, calcium aluminate cement binder and chemical additives. Add water on site, pour or shotcrete into place, let it cure, then dry it out on a controlled heating curve and it becomes a monolithic refractory lining. Castable is the most flexible lining format on the market, it can be poured into almost any geometry, anchored with steel studs and used everywhere from 900 degree boiler shells to 1800 degree reformer furnaces.</p>
 
 <h2>The Three Castable Families You Need to Know</h2>
 <h3>Conventional Castables (CC)</h3>
@@ -3187,7 +3187,7 @@ export const BLOG_POSTS_DATA = [
 <p>If a quote is significantly below these ranges for the same grade and same brand, ask to see the MTC and sieve analysis before you commit.</p>
 
 <h2>Where to Buy in Delhi NCR</h2>
-<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Mahakoshal, IFGL) or a strategic supply partner of <a href="/brands/calderys">Calderys</a> based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is an authorised dealer of CUMI and Crown Ceramics and a strategic supply partner for <a href="/brands/calderys">Calderys</a> and Mahakoshal — maintaining stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
+<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Mahakoshal, IFGL) or a strategic supply partner of <a href="/brands/calderys">Calderys</a> based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is an authorised dealer of CUMI and Crown Ceramics and a strategic supply partner for <a href="/brands/calderys">Calderys</a> and Mahakoshal, maintaining stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
 
 <h2>Short Buyer's Checklist</h2>
 <ol>
@@ -3195,7 +3195,7 @@ export const BLOG_POSTS_DATA = [
   <li>Confirm aggregate type: bauxite, tabular alumina, white fused alumina, SiC mix.</li>
   <li>Ask for MTC with chemistry, bulk density, cold crushing strength and permanent linear change.</li>
   <li>Ask for the recommended dry-out curve in writing.</li>
-  <li>Confirm shelf life on the bag. Castable ages — 12 months is typical from manufacture date.</li>
+  <li>Confirm shelf life on the bag. Castable ages, 12 months is typical from manufacture date.</li>
   <li>For large linings, ask the dealer to supervise the first pour and sign off on mixing water and placement technique.</li>
 </ol>
 <p>Castable is one of the most forgiving and one of the most unforgiving refractory products in the same bag. Buy the right grade, follow the dry-out curve and you will get lining life numbers that match the technical datasheet. Cut corners on either side and you will be re-lining in six months.</p>
@@ -3295,14 +3295,14 @@ export const BLOG_POSTS_DATA = [
   // ─────────────────────────────────────────────────────────────
   // 27. Refractory Lining Maintenance Scheduling Guide
   //     Target keyword: maintenance scheduling for refractory linings
-  //     GSC: pos 2.9 — homepage ranking accidentally, no dedicated page
+  //     GSC: pos 2.9, homepage ranking accidentally, no dedicated page
   // ─────────────────────────────────────────────────────────────
   {
     id: 27,
     slug: "refractory-lining-maintenance-scheduling-guide",
     title: "Maintenance Scheduling for Refractory Linings: A Plant Engineer's Complete Guide",
     metaTitle: "Refractory Lining Maintenance Scheduling Guide | Intervals & Planning",
-    metaDescription: "How to build a maintenance schedule for refractory linings by furnace type — daily, weekly, monthly, quarterly and annual intervals with shutdown planning templates. Written by refractory engineers with 45+ years of plant experience.",
+    metaDescription: "How to build a maintenance schedule for refractory linings by furnace type, daily, weekly, monthly, quarterly and annual intervals with shutdown planning templates. Written by refractory engineers with 45+ years of plant experience.",
     category: "Maintenance Guide",
     tags: [
       "refractory lining maintenance scheduling",
@@ -3318,27 +3318,27 @@ export const BLOG_POSTS_DATA = [
     lastModified: "2026-06-14",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
-    excerpt: "The difference between a 250-heat ladle campaign and a 140-heat campaign is rarely the grade of brick — it is whether the maintenance schedule was followed. This guide gives you the exact inspection intervals, patching triggers, shutdown timelines and reline decision criteria for steel ladles, induction furnaces, cement kilns, boilers and aluminium melting furnaces.",
+    excerpt: "The difference between a 250-heat ladle campaign and a 140-heat campaign is rarely the grade of brick, it is whether the maintenance schedule was followed. This guide gives you the exact inspection intervals, patching triggers, shutdown timelines and reline decision criteria for steel ladles, induction furnaces, cement kilns, boilers and aluminium melting furnaces.",
     keyTakeaways: [
-      "Maintenance scheduling is the single biggest lever on refractory campaign life — more than brand or grade.",
+      "Maintenance scheduling is the single biggest lever on refractory campaign life, more than brand or grade.",
       "Each furnace type has a different inspection rhythm: ladles are heat-count driven, cement kilns are calendar driven, boilers are load-cycle driven.",
       "A two-shift inspection program (daily visual + weekly tap test + monthly IR) catches 80% of failures before they become breakouts.",
-      "The reline decision should be based on minimum safe thickness, not 'how does it look' — and that threshold must be set before the campaign starts.",
-      "Planned shutdowns cost 40-60% less than emergency shutdowns — because you control what's in stock and when the crew is ready.",
+      "The reline decision should be based on minimum safe thickness, not 'how does it look', and that threshold must be set before the campaign starts.",
+      "Planned shutdowns cost 40-60% less than emergency shutdowns, because you control what's in stock and when the crew is ready.",
     ],
     content: `
 <h2>Why Scheduling Matters More Than the Material</h2>
 <p>When a refractory lining fails short of its designed campaign life, the first question is usually about the brand or grade. In our experience across 45+ years of plant visits, the answer is almost never the material. It is almost always one of three scheduling failures: inspection that happened too late, patching that was deferred until the window closed, or a shutdown that was planned around production targets instead of lining condition.</p>
-<p>Maintenance scheduling for refractory linings is not complicated, but it must be proactive. The lining does not file a service request. It degrades silently until a crack, spall or breakout makes the problem obvious — and by then, the cheapest intervention window has closed.</p>
+<p>Maintenance scheduling for refractory linings is not complicated, but it must be proactive. The lining does not file a service request. It degrades silently until a crack, spall or breakout makes the problem obvious, and by then, the cheapest intervention window has closed.</p>
 <p>This guide gives you the scheduling framework that works across the most common furnace types in Indian and GCC industry: steel ladles and EAF, induction furnaces, cement rotary kilns, industrial boilers, and aluminium melting furnaces.</p>
 
 <h2>The Four Pillars of a Refractory Maintenance Schedule</h2>
 <p>Every effective schedule rests on four activities at different time intervals:</p>
 <ol>
-  <li><strong>Routine inspection</strong> — daily or per-shift visual checks by crew.</li>
-  <li><strong>Condition monitoring</strong> — weekly tap test, monthly infrared thermography.</li>
-  <li><strong>Scheduled intervention</strong> — planned patching, joint repair, anchor replacement during available windows.</li>
-  <li><strong>Reline planning</strong> — triggered by thickness reaching the minimum safe limit, not by total failure.</li>
+  <li><strong>Routine inspection</strong>, daily or per-shift visual checks by crew.</li>
+  <li><strong>Condition monitoring</strong>, weekly tap test, monthly infrared thermography.</li>
+  <li><strong>Scheduled intervention</strong>, planned patching, joint repair, anchor replacement during available windows.</li>
+  <li><strong>Reline planning</strong>, triggered by thickness reaching the minimum safe limit, not by total failure.</li>
 </ol>
 <p>Without all four, a schedule is really just a list of intentions. The difference between a list and a working schedule is the trigger: what measurement or observation moves the team from monitoring to action.</p>
 
@@ -3351,9 +3351,9 @@ export const BLOG_POSTS_DATA = [
     <tr><th>Interval</th><th>Activity</th><th>Trigger for action</th></tr>
   </thead>
   <tbody>
-    <tr><td>Every heat</td><td>Visual after tapping — check slag line, impact zone, bottom pouring area</td><td>Any cracking, spalling or deformation visible</td></tr>
+    <tr><td>Every heat</td><td>Visual after tapping, check slag line, impact zone, bottom pouring area</td><td>Any cracking, spalling or deformation visible</td></tr>
     <tr><td>Every 20–30 heats</td><td>Thickness gauge measurement at slag line, metal line and bottom</td><td>Thickness below 60% of original at slag line</td></tr>
-    <tr><td>Every 50 heats</td><td>Gunning patch of slag line, spot repair of impact zone if needed</td><td>Scheduled — do it regardless of visual appearance</td></tr>
+    <tr><td>Every 50 heats</td><td>Gunning patch of slag line, spot repair of impact zone if needed</td><td>Scheduled, do it regardless of visual appearance</td></tr>
     <tr><td>Every 80–100 heats</td><td>Full lining inspection during planned turnaround</td><td>Review reline decision threshold</td></tr>
     <tr><td>Campaign end</td><td>Full reline when minimum safe thickness reached</td><td>Typically 60–70 mm for a standard ladle working lining</td></tr>
   </tbody>
@@ -3367,10 +3367,10 @@ export const BLOG_POSTS_DATA = [
     <tr><th>Interval</th><th>Activity</th></tr>
   </thead>
   <tbody>
-    <tr><td>Every heat</td><td>Measure metal level versus known bath volume — thinning lining increases apparent bath capacity</td></tr>
+    <tr><td>Every heat</td><td>Measure metal level versus known bath volume, thinning lining increases apparent bath capacity</td></tr>
     <tr><td>Every 10 heats</td><td>Record furnace frequency trend (rising frequency = thinner lining on medium-frequency furnaces)</td></tr>
     <tr><td>Every 30–50 heats</td><td>Measure remaining thickness at coil level with a steel rod probe during cold shutdown</td></tr>
-    <tr><td>Campaign end</td><td>Full reline — never extend beyond minimum thickness (typically 50–60 mm at coil level)</td></tr>
+    <tr><td>Campaign end</td><td>Full reline, never extend beyond minimum thickness (typically 50–60 mm at coil level)</td></tr>
   </tbody>
 </table>
 <p>The critical scheduling point for induction furnaces: the reline must be <em>planned</em> during a low-production window. Emergency relines after a lining failure cost 3–4× more in crew time and 2–5× more in downtime because the replacement material may not be in stock.</p>
@@ -3382,10 +3382,10 @@ export const BLOG_POSTS_DATA = [
     <tr><th>Interval</th><th>Activity</th></tr>
   </thead>
   <tbody>
-    <tr><td>Weekly (hot kiln)</td><td>IR shell scanner survey — look for hot spots above baseline by 40°C+</td></tr>
-    <tr><td>Monthly</td><td>Full shell temperature profile analysis — trending, not just spot readings</td></tr>
+    <tr><td>Weekly (hot kiln)</td><td>IR shell scanner survey, look for hot spots above baseline by 40°C+</td></tr>
+    <tr><td>Monthly</td><td>Full shell temperature profile analysis, trending, not just spot readings</td></tr>
     <tr><td>Every planned shutdown</td><td>Brick thickness measurement by probe in all zones, anchor condition check in castable zones</td></tr>
-    <tr><td>Annual or on trigger</td><td>Full reline of worn zones — typically burning zone every 9–14 months, transition zone every 18–24 months</td></tr>
+    <tr><td>Annual or on trigger</td><td>Full reline of worn zones, typically burning zone every 9–14 months, transition zone every 18–24 months</td></tr>
   </tbody>
 </table>
 <p>The most expensive cement kiln maintenance decision is the one not made in time: running a burning zone past the safe minimum thickness to avoid a scheduled shutdown, only to have an unplanned stop 3 weeks later during peak production.</p>
@@ -3400,10 +3400,10 @@ export const BLOG_POSTS_DATA = [
     <tr><td>Daily</td><td>Visual inspection of visible surfaces during burner cleaning or firing adjustment</td></tr>
     <tr><td>Weekly (during low-fire period)</td><td>Tap test on accessible refractory sections, check expansion joints</td></tr>
     <tr><td>Every annual shutdown</td><td>Full thickness measurement, anchor inspection, full replacement of any section below minimum thickness</td></tr>
-    <tr><td>Every 5–8 years</td><td>Full reline — typical fireclay back wall life in coal-fired boiler</td></tr>
+    <tr><td>Every 5–8 years</td><td>Full reline, typical fireclay back wall life in coal-fired boiler</td></tr>
   </tbody>
 </table>
-<p>Boiler refractory is often the last thing plant management thinks about — until a back wall failure forces an emergency shutdown during peak winter load. A 30-minute annual inspection with a tap rod and IR camera is all the data you need to plan ahead.</p>
+<p>Boiler refractory is often the last thing plant management thinks about, until a back wall failure forces an emergency shutdown during peak winter load. A 30-minute annual inspection with a tap rod and IR camera is all the data you need to plan ahead.</p>
 
 <h3>Aluminium Melting Furnaces</h3>
 <p>Aluminium furnace linings (SiC belly, castable walls, ceramic fibre roof) are subject to metal penetration and corundum growth. The schedule:</p>
@@ -3412,15 +3412,15 @@ export const BLOG_POSTS_DATA = [
     <tr><th>Interval</th><th>Activity</th></tr>
   </thead>
   <tbody>
-    <tr><td>Every heat</td><td>Visual check of metal contact zones — any metal seepage on shell is a reline signal</td></tr>
-    <tr><td>Monthly</td><td>IR survey of shell — metal penetration shows as cold spot, not hot spot (metal conducts away the heat)</td></tr>
+    <tr><td>Every heat</td><td>Visual check of metal contact zones, any metal seepage on shell is a reline signal</td></tr>
+    <tr><td>Monthly</td><td>IR survey of shell, metal penetration shows as cold spot, not hot spot (metal conducts away the heat)</td></tr>
     <tr><td>Quarterly</td><td>Measure belly wall thickness at coil level during cool-down</td></tr>
     <tr><td>Every 2–3 years</td><td>Full reline of metal-contact zones; roof ceramic fibre replacement every 3–5 years</td></tr>
   </tbody>
 </table>
 
 <h2>The Reline Decision: Setting the Trigger Before You Need It</h2>
-<p>The single biggest scheduling mistake is leaving the reline decision undefined until it becomes urgent. When the trigger is "how bad does it look," crews and supervisors will always find a reason to defer. The trigger should be a measured number — set at the start of the campaign, not in the heat of a production crunch.</p>
+<p>The single biggest scheduling mistake is leaving the reline decision undefined until it becomes urgent. When the trigger is "how bad does it look," crews and supervisors will always find a reason to defer. The trigger should be a measured number, set at the start of the campaign, not in the heat of a production crunch.</p>
 <p>Standard minimum safe thickness thresholds (consult your refractory supplier to confirm for your specific product and vessel):</p>
 <ul>
   <li><strong>Steel ladle working lining (LCC/brick):</strong> 60–70 mm at slag line</li>
@@ -3429,18 +3429,18 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Cement kiln burning zone brick:</strong> 100–120 mm (measured through thermocouples or hot-stop probe)</li>
   <li><strong>Boiler fireclay back wall:</strong> 75 mm minimum (from 230 mm installed)</li>
 </ul>
-<p>Once this threshold is reached, the reline is scheduled — not "considered." Any continued operation past the trigger adds breakout risk that no production benefit can justify.</p>
+<p>Once this threshold is reached, the reline is scheduled, not "considered." Any continued operation past the trigger adds breakout risk that no production benefit can justify.</p>
 
 <h2>Shutdown Planning Timeline</h2>
-<p>A planned refractory shutdown should be sequenced as follows — working backwards from the shutdown date:</p>
+<p>A planned refractory shutdown should be sequenced as follows, working backwards from the shutdown date:</p>
 <ul>
-  <li><strong>6–8 weeks before:</strong> Confirm lining condition assessment and scope of work (reline vs. patch vs. zone replacement). Place material order — lead time for some grades is 4–6 weeks.</li>
+  <li><strong>6–8 weeks before:</strong> Confirm lining condition assessment and scope of work (reline vs. patch vs. zone replacement). Place material order, lead time for some grades is 4–6 weeks.</li>
   <li><strong>4 weeks before:</strong> Material confirmed in stock or on order with delivery date. Crew scheduled. Scaffolding and tooling booked. Dry-out burner availability confirmed.</li>
   <li><strong>2 weeks before:</strong> Final material quantities confirmed against scope. Wear-zone anchors ordered if needed. Dry-out schedule written out hour by hour.</li>
   <li><strong>Shutdown day 1–2:</strong> Cool-down, scale and slag removal. Detailed inspection and scope confirmation.</li>
   <li><strong>Days 2–N (reline):</strong> Demolition, anchor replacement, installation, cure time per product specification.</li>
   <li><strong>Final days:</strong> Dry-out per schedule. Acceptance check (thickness map, anchor inspection, dry-out completed).</li>
-  <li><strong>Restart:</strong> Ramp-up per product specification — never full firing rate on a new lining.</li>
+  <li><strong>Restart:</strong> Ramp-up per product specification, never full firing rate on a new lining.</li>
 </ul>
 <p>The most common cause of shutdown over-run is a scope surprise discovered on day 1: a zone that needed replacement was not identified before the shutdown, the material is not in stock, and the shutdown extends by 5–7 days. A pre-shutdown inspection resolves this.</p>
 
@@ -3456,7 +3456,7 @@ export const BLOG_POSTS_DATA = [
   <li>Reline trigger threshold set at campaign start and actual trigger heat</li>
   <li>Post-mortem notes on the stripped-out lining</li>
 </ul>
-<p>This log is what lets you predict the next campaign life with confidence — and what lets your refractory supplier give you genuinely useful grade recommendations instead of just catalogue specifications.</p>
+<p>This log is what lets you predict the next campaign life with confidence, and what lets your refractory supplier give you genuinely useful grade recommendations instead of just catalogue specifications.</p>
 
 <h2>Common Scheduling Failures and How to Avoid Them</h2>
 <table>
@@ -3465,15 +3465,15 @@ export const BLOG_POSTS_DATA = [
   </thead>
   <tbody>
     <tr><td>Patch window missed</td><td>Patching material not in stock when the window opened</td><td>Maintain minimum stock of 200–500 kg patching mass per furnace at all times</td></tr>
-    <tr><td>Dry-out skipped after shutdown</td><td>Production pressure on restart</td><td>Dry-out is a restart pre-condition, not optional — make it part of the restart checklist</td></tr>
+    <tr><td>Dry-out skipped after shutdown</td><td>Production pressure on restart</td><td>Dry-out is a restart pre-condition, not optional, make it part of the restart checklist</td></tr>
     <tr><td>Reline deferred past trigger</td><td>Undefined trigger, or trigger ignored under production pressure</td><td>Set numeric trigger before campaign; reline decision needs manager approval, not just crew judgement</td></tr>
-    <tr><td>Emergency shutdown from surprise wear</td><td>Monitoring gaps — long periods between thickness measurements</td><td>Monthly thickness measurement in high-wear zones; quarterly is not enough for a ladle at heat 150+</td></tr>
+    <tr><td>Emergency shutdown from surprise wear</td><td>Monitoring gaps, long periods between thickness measurements</td><td>Monthly thickness measurement in high-wear zones; quarterly is not enough for a ladle at heat 150+</td></tr>
     <tr><td>Material lead time crisis</td><td>Order placed too late because reline not planned far enough ahead</td><td>Order at 80% of expected campaign life, not at minimum thickness trigger</td></tr>
   </tbody>
 </table>
 
 <h2>How Shanker Agencies Supports Your Maintenance Schedule</h2>
-<p>We keep common patching and maintenance materials — gunning mass, refractory mortar, ceramic fibre rope and blanket, insulating castable — in stock at our Shahdara, Delhi warehouse for same-week dispatch across India and 7–21 day transit to GCC and ASEAN. Our refractory engineers are available to join planned shutdowns for lining inspection, thickness mapping and dry-out supervision for customers on regular supply accounts.</p>
+<p>We keep common patching and maintenance materials, gunning mass, refractory mortar, ceramic fibre rope and blanket, insulating castable, in stock at our Shahdara, Delhi warehouse for same-week dispatch across India and 7–21 day transit to GCC and ASEAN. Our refractory engineers are available to join planned shutdowns for lining inspection, thickness mapping and dry-out supervision for customers on regular supply accounts.</p>
 <p>If your lining life is below the datasheet number, contact us. A 45-minute site visit and a review of your lining log usually identifies the scheduling gap within the first conversation.</p>
 `,
     faqs: [
@@ -3483,11 +3483,11 @@ export const BLOG_POSTS_DATA = [
       },
       {
         q: "What is the minimum safe thickness for a steel ladle working lining?",
-        a: "The reline trigger for a steel ladle working lining (LCC or high-alumina brick) is typically 60–70 mm at the slag line. This threshold should be confirmed with your refractory supplier based on your specific ladle dimensions, product grade and slag chemistry, and must be set at the start of the campaign — not evaluated under production pressure when the window has already narrowed.",
+        a: "The reline trigger for a steel ladle working lining (LCC or high-alumina brick) is typically 60–70 mm at the slag line. This threshold should be confirmed with your refractory supplier based on your specific ladle dimensions, product grade and slag chemistry, and must be set at the start of the campaign, not evaluated under production pressure when the window has already narrowed.",
       },
       {
         q: "How far in advance should a refractory shutdown be planned?",
-        a: "Material should be ordered 6–8 weeks before a planned refractory shutdown — some grades have 4–6 week lead times. Scope confirmation (reline vs. patch vs. zone replacement) should happen at 6 weeks. Crew, scaffolding, dry-out equipment and tooling should be locked in at 4 weeks. Waiting until 2 weeks before is the most common cause of emergency material procurement and shutdown over-runs.",
+        a: "Material should be ordered 6–8 weeks before a planned refractory shutdown, some grades have 4–6 week lead times. Scope confirmation (reline vs. patch vs. zone replacement) should happen at 6 weeks. Crew, scaffolding, dry-out equipment and tooling should be locked in at 4 weeks. Waiting until 2 weeks before is the most common cause of emergency material procurement and shutdown over-runs.",
       },
       {
         q: "What causes refractory lining life to fall below the datasheet figure?",
@@ -3495,7 +3495,7 @@ export const BLOG_POSTS_DATA = [
       },
       {
         q: "Is an infrared thermography survey necessary for refractory inspection?",
-        a: "For cement kilns, IR shell scanning is essential — it is the only real-time indicator of thinning lining while the kiln is running. For steel ladles and EAF, IR is useful but can be supplemented with regular thickness gauging. For industrial boilers, a handheld IR camera quarterly is sufficient. The alternative to IR — waiting for a visual crack or hot spot — gives you far less response time and far higher repair cost.",
+        a: "For cement kilns, IR shell scanning is essential, it is the only real-time indicator of thinning lining while the kiln is running. For steel ladles and EAF, IR is useful but can be supplemented with regular thickness gauging. For industrial boilers, a handheld IR camera quarterly is sufficient. The alternative to IR, waiting for a visual crack or hot spot, gives you far less response time and far higher repair cost.",
       },
     ],
     author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },

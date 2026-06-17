@@ -78,7 +78,7 @@ const blogPosts = [
     id: 7,
     slug: "gunning-vs-casting-when-to-use",
     title: "Gunning vs Casting Refractories: When to Use Which Method",
-    excerpt: "Gunning offers rapid installation and hot repair capability with minimal downtime, while casting provides denser, stronger linings for new construction. We compare application methods, rebound loss, material properties, and cost implications — with a decision framework for plant engineers.",
+    excerpt: "Gunning offers rapid installation and hot repair capability with minimal downtime, while casting provides denser, stronger linings for new construction. We compare application methods, rebound loss, material properties, and cost implications, with a decision framework for plant engineers.",
     category: "How-To",
     date: "Dec 10, 2025",
     readTime: "5 min read",
@@ -176,7 +176,7 @@ function Blog() {
             <span className="text-shimmer">KNOWLEDGE</span>
           </h1>
           <p className="text-gray-300 max-w-2xl text-lg leading-relaxed">
-            Technical guides, product comparisons, and industry insights from SAPL's engineering team — designed for plant managers, procurement engineers, and refractory professionals.
+            Technical guides, product comparisons, and industry insights from SAPL's engineering team, designed for plant managers, procurement engineers, and refractory professionals.
           </p>
 
           {/* Inline search */}
@@ -355,7 +355,7 @@ function Blog() {
             STAY AHEAD IN REFRACTORIES
           </h2>
           <p className="text-white/70 mb-8 text-sm leading-relaxed">
-            Join 2,000+ refractory engineers and procurement heads who receive our monthly technical insights, new product alerts, and industry updates — no spam, unsubscribe anytime.
+            Join 2,000+ refractory engineers and procurement heads who receive our monthly technical insights, new product alerts, and industry updates, no spam, unsubscribe anytime.
           </p>
           {subscribed ? (
             <div className="flex items-center justify-center gap-2 text-white font-semibold">

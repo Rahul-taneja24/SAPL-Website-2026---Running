@@ -26,7 +26,7 @@ const SLUG_TO_FAMILY_ID = {
   'acid-proofing': 'acid-proof',
 };
 
-// Only the five known categories are valid — any other slug returns a real 404.
+// Only the five known categories are valid, any other slug returns a real 404.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -57,7 +57,7 @@ export default async function ProductCategoryPage({ params }) {
   // Products that have dedicated detail pages in this category
   const seoProducts = PRODUCT_SEO.filter((s) => s.categorySlug === categorySlug);
 
-  // Sub-family rows from productFamiliesData.js — use these for the
+  // Sub-family rows from productFamiliesData.js, use these for the
   // property comparison block + enrich the ItemList schema's per-item
   // additionalProperty arrays so AI engines can read the same specs
   // from both the visible HTML <table> and the embedded JSON-LD.
@@ -108,8 +108,8 @@ export default async function ProductCategoryPage({ params }) {
       ? {
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: `${categoryTitle} — Shanker Agencies`,
-          description: `Complete range of ${categoryTitle.toLowerCase()} from Shanker Agencies Pvt. Ltd. — authorized dealer of CUMI, TRL Krosaki, IFGL, Divine Cerawool & Crown Ceramics.`,
+          name: `${categoryTitle}, Shanker Agencies`,
+          description: `Complete range of ${categoryTitle.toLowerCase()} from Shanker Agencies Pvt. Ltd., authorized dealer of CUMI, TRL Krosaki, IFGL, Divine Cerawool & Crown Ceramics.`,
           url: `https://www.shankeragencies.com/products/${categorySlug}`,
           numberOfItems: seoProducts.length,
           itemListElement: seoProducts.map((seo, index) => {
@@ -181,7 +181,7 @@ export default async function ProductCategoryPage({ params }) {
                   price: '0',
                   priceCurrency: 'INR',
                   priceValidUntil: '2027-12-31',
-                  description: 'Quoted on enquiry — varies by grade and order quantity.',
+                  description: 'Quoted on enquiry, varies by grade and order quantity.',
                   availability: 'https://schema.org/InStock',
                   areaServed: ['IN', 'AE', 'SA', 'SG', 'MY'],
                   url: `https://www.shankeragencies.com/products/${categorySlug}/${seo.productId}`,
@@ -222,7 +222,7 @@ export default async function ProductCategoryPage({ params }) {
       <Products />
 
       {/* ──────────────────────────────────────────────────────────────
-          PROPERTY COMPARISON TABLE — visible HTML <table> backed by
+          PROPERTY COMPARISON TABLE, visible HTML <table> backed by
           parsed keyRanges from productFamiliesData.js. Renders one
           row per sub-family with columns derived from the property
           set, so AI engines (and Google rich results) can read each
@@ -242,7 +242,7 @@ export default async function ProductCategoryPage({ params }) {
                 id={`compare-${categorySlug}-heading`}
                 className="font-oswald text-3xl md:text-4xl font-bold text-[#1E3A5F]"
               >
-                {categoryTitle.toUpperCase()} — KEY PROPERTIES AT A GLANCE
+                {categoryTitle.toUpperCase()}, KEY PROPERTIES AT A GLANCE
               </h2>
               <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed mt-4">
                 Indicative property ranges across our {categoryTitle.toLowerCase()} portfolio.

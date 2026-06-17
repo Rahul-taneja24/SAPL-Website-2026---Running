@@ -1,18 +1,18 @@
-// /engineering-references/[slug] — Individual Engineering Reference Scenario.
+// /engineering-references/[slug], Individual Engineering Reference Scenario.
 //
-// EDITORIAL FRAMING — IMPORTANT:
+// EDITORIAL FRAMING, IMPORTANT:
 //   These pages are illustrative reference scenarios for typical application
 //   classes. They are NOT records of specific SAPL project deliveries. Schema
 //   type is `TechArticle` to make this explicit to AI engines.
 //
 // Schema strategy:
-//   1. TechArticle — technical reference content (NOT Article, which implies
+//   1. TechArticle, technical reference content (NOT Article, which implies
 //      authored journalism on a specific event).
-//   2. mentions — every brand, product and industry the scenario touches, so
+//   2. mentions, every brand, product and industry the scenario touches, so
 //      AI engines can build the multi-entity graph.
-//   3. publisher = SAPL Organization (no individual author byline — these are
+//   3. publisher = SAPL Organization (no individual author byline, these are
 //      not signed-off project records).
-//   4. Speakable — voice assistants get the headline + key takeaway.
+//   4. Speakable, voice assistants get the headline + key takeaway.
 
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: cs.title,
-    description: `${cs.keyTakeaway || cs.problem.slice(0, 150)} — ${cs.industry} application reference scenario from Shanker Agencies. Illustrative — not a record of a specific SAPL project.`,
+    description: `${cs.keyTakeaway || cs.problem.slice(0, 150)}, ${cs.industry} application reference scenario from Shanker Agencies. Illustrative, not a record of a specific SAPL project.`,
     alternates: { canonical: `/engineering-references/${slug}` },
     openGraph: {
       title: cs.title,
@@ -64,7 +64,7 @@ export default async function EngineeringReferencePage({ params }) {
   const dateModified = new Date('2026-05-08T00:00:00.000Z').toISOString();
 
   // ─── TechArticle schema ──────────────────────────────────────────────
-  // Using TechArticle (not Article) — this is reference material describing a
+  // Using TechArticle (not Article), this is reference material describing a
   // typical application class, not authored journalism about a specific event
   // or project. The publisher is the SAPL Organization; no Person author
   // byline (these are not signed-off case studies).
@@ -81,7 +81,7 @@ export default async function EngineeringReferencePage({ params }) {
     publisher: { '@id': `${BASE}/#organization` },
     author: { '@id': `${BASE}/#organization` },
     description: cs.keyTakeaway || cs.problem.slice(0, 200),
-    articleSection: `${cs.industry} — Refractory Application Reference`,
+    articleSection: `${cs.industry}, Refractory Application Reference`,
     proficiencyLevel: 'Expert',
     keywords: [
       cs.industry,
@@ -154,7 +154,7 @@ export default async function EngineeringReferencePage({ params }) {
             !
           </span>
           <p className="text-sm text-amber-900 leading-relaxed">
-            <strong>Engineering reference scenario — not a project record.</strong> This
+            <strong>Engineering reference scenario, not a project record.</strong> This
             page describes a typical application class and the expected outcome range
             from correctly specified refractory. It is{' '}
             <strong>not a record of a specific SAPL project delivery</strong>. Real
@@ -208,7 +208,7 @@ export default async function EngineeringReferencePage({ params }) {
         >
           <div className="max-w-5xl mx-auto">
             <p className="text-white/90 text-center text-xs font-bold uppercase tracking-widest mb-6">
-              Expected outcome ranges (illustrative — not project results)
+              Expected outcome ranges (illustrative, not project results)
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
               {Object.entries(cs.metrics).map(([k, v]) => (
@@ -288,14 +288,14 @@ export default async function EngineeringReferencePage({ params }) {
             </section>
           )}
 
-          {/* Result — reframed as Expected Outcome Range */}
+          {/* Result, reframed as Expected Outcome Range */}
           {cs.result?.length > 0 && (
             <section className="mb-10 bg-green-50 border border-green-100 rounded-2xl p-7">
               <h2 className="font-oswald text-2xl font-bold text-green-900 mb-2">
                 Expected Outcome Range
               </h2>
               <p className="text-xs text-green-800 italic mb-4">
-                Illustrative — not project results. Actual outcomes vary with operating
+                Illustrative, not project results. Actual outcomes vary with operating
                 conditions and installation quality.
               </p>
               <ul className="space-y-2 list-disc pl-5">
@@ -348,7 +348,7 @@ export default async function EngineeringReferencePage({ params }) {
           <footer className="mt-12 pt-6 border-t border-gray-200 text-xs text-gray-500 italic">
             <p>
               This page is an illustrative engineering reference scenario for a typical
-              application class — not a record of a specific SAPL project delivery.
+              application class, not a record of a specific SAPL project delivery.
               Financial figures (₹ and USD) are typical industry ranges drawn from May
               2026 market data and standard industry practice. USD equivalents calculated
               at ₹94.5 per USD (May 2026 rate). Your specific outcome will vary with

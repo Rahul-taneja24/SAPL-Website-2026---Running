@@ -72,7 +72,7 @@ function CompanyProfile() {
         inquiry_type: "Company Profile Download",
         message: `${leadForm.name} downloaded the Company Profile PDF.`,
       };
-      // Fire-and-forget — don't block download on slow form API
+      // Fire-and-forget, don't block download on slow form API
       fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
@@ -83,7 +83,7 @@ function CompanyProfile() {
       setShowLeadModal(false);
       toast.success("Thanks! Your PDF is downloading and our team is notified.");
 
-      // Open WhatsApp in a new tab (best-effort — browsers may block popups without user gesture)
+      // Open WhatsApp in a new tab (best-effort, browsers may block popups without user gesture)
       window.open(WHATSAPP_URL, "_blank", "noopener,noreferrer");
 
       // Start the PDF download
@@ -278,7 +278,7 @@ function CompanyProfile() {
         </div>
       )}
 
-      {/* Document — A4 on desktop & print; auto-height on mobile so there's no empty whitespace */}
+      {/* Document, A4 on desktop & print; auto-height on mobile so there's no empty whitespace */}
       <div id="company-profile-doc" className="mx-auto bg-white shadow-xl my-0 sm:my-8 print:my-0 print:shadow-none" style={{ width: '210mm', maxWidth: '100%' }}>
 
         {/* PAGE 1 */}

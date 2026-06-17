@@ -5,7 +5,7 @@ import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 export const metadata = {
   title: 'Refractory Engineering Blog | Technical Guides, How-Tos & Industry Insights',
   description:
-    'Expert refractory engineering articles from Shanker Agencies — 45+ years of experience. Technical guides on high alumina bricks, castables, ramming mass, ceramic fiber, steel ladle linings, cement kiln refractories, and more.',
+    'Expert refractory engineering articles from Shanker Agencies, 45+ years of experience. Technical guides on high alumina bricks, castables, ramming mass, ceramic fiber, steel ladle linings, cement kiln refractories, and more.',
   alternates: { canonical: '/blog' },
   openGraph: {
     title: 'Refractory Engineering Blog | Shanker Agencies',
@@ -113,7 +113,7 @@ export default function BlogPage() {
     isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
     about: { '@id': 'https://www.shankeragencies.com/#organization' },
     inLanguage: 'en-IN',
-    description: 'Technical guides and industry insights on refractory engineering from Shanker Agencies — 45+ years of expertise.',
+    description: 'Technical guides and industry insights on refractory engineering from Shanker Agencies, 45+ years of expertise.',
   };
 
   const breadcrumbSchema = {
@@ -174,7 +174,7 @@ export default function BlogPage() {
             Refractory Engineering Knowledge Base
           </h1>
           <p className="text-lg md:text-xl text-white/75 max-w-3xl leading-relaxed mb-8">
-            Technical guides, comparison articles, and industry insights from SAPL&apos;s engineers —
+            Technical guides, comparison articles, and industry insights from SAPL&apos;s engineers
             45+ years of refractory expertise, shared freely. Transparent knowledge for better industrial decisions.
           </p>
 
@@ -251,7 +251,7 @@ export default function BlogPage() {
             </h2>
             <p className="text-white/75 text-base mb-8 max-w-2xl mx-auto">
               Our engineers answer application-specific questions directly. Get advice on material selection,
-              lining design, installation best practices — no obligation.
+              lining design, installation best practices, no obligation.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

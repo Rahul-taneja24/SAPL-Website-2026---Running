@@ -1,12 +1,12 @@
 import Home from '@/sections/Home';
 
 export const metadata = {
-  title: "Refractory Supplier & Exporter India — CUMI Dealer | Shanker Agencies",
-  description: "Shanker Agencies — India's premier refractory exporter since 1980. Authorized CUMI dealer. High alumina bricks, LCC/ULCC castables, porous plugs, ceramic fiber. CIF to GCC, ASEAN, Africa.",
+  title: "Refractory Supplier & Exporter India, CUMI Dealer | Shanker Agencies",
+  description: "Shanker Agencies, India's premier refractory exporter since 1980. Authorized CUMI dealer. High alumina bricks, LCC/ULCC castables, porous plugs, ceramic fiber. CIF to GCC, ASEAN, Africa.",
   alternates: { canonical: '/' },
   openGraph: {
-    title: "Refractory Supplier & Exporter India — CUMI Dealer | Shanker Agencies",
-    description: "Shanker Agencies — India's premier refractory exporter since 1980. Authorized CUMI dealer. High alumina bricks, LCC/ULCC castables, porous plugs, ceramic fiber. CIF to GCC, ASEAN, Africa.",
+    title: "Refractory Supplier & Exporter India, CUMI Dealer | Shanker Agencies",
+    description: "Shanker Agencies, India's premier refractory exporter since 1980. Authorized CUMI dealer. High alumina bricks, LCC/ULCC castables, porous plugs, ceramic fiber. CIF to GCC, ASEAN, Africa.",
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',
@@ -93,7 +93,7 @@ export default function HomePage() {
       />
       <Home />
 
-      {/* Visible FAQ section — required for Google FAQ rich result */}
+      {/* Visible FAQ section, required for Google FAQ rich result */}
       <section className="py-16 md:py-20 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">

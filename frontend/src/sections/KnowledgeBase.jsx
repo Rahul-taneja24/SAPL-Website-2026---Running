@@ -35,7 +35,7 @@ const insulationTypes = [
 
 const applicationGuides = [
   { title: "Steel Ladle", zone: "Working Lining", products: ["AL70/AL80 High Alumina Bricks", "LCC-70/LCC-80 Castable", "MgO-C Bricks (slag zone)"], temp: "1650°C", tip: "Use AL70 for barrel, AL80 at slag lines. LCC-80 for bottom. MgO-C for high-wear slag impact zone.", link: "/solutions/steel" },
-  { title: "Cement Rotary Kiln", zone: "Burning Zone", products: ["Magnesia Spinel Bricks", "Magnesia 95", "Chrome-free alternatives"], temp: "1450°C kiln gas", tip: "Chrome-free mag-spinel is now preferred for environmental compliance. Coating adherence critical — specify from CUMI or Calderys.", link: "/solutions/cement" },
+  { title: "Cement Rotary Kiln", zone: "Burning Zone", products: ["Magnesia Spinel Bricks", "Magnesia 95", "Chrome-free alternatives"], temp: "1450°C kiln gas", tip: "Chrome-free mag-spinel is now preferred for environmental compliance. Coating adherence critical, specify from CUMI or Calderys.", link: "/solutions/cement" },
   { title: "Induction Furnace", zone: "Crucible Lining", products: ["Silica Ramming Mass (iron/CI)", "Alumina Ramming Mass (steel)", "Magnesia Ramming Mass (basic)"], temp: "1650°C", tip: "Match ramming mass to metal chemistry. Silica for cast iron, alumina for steel, magnesia for high-Mn alloys. Sintering schedule is critical.", link: "/solutions/steel" },
   { title: "Aluminum Holding Furnace", zone: "Metal Contact", products: ["Non-Wetting Castables", "Phosphate-Bonded High Alumina", "Ceramic Fiber (backup)"], temp: "800-900°C", tip: "Low-Fe, non-wetting formulations prevent metal penetration. Use ceramic fiber backup for energy efficiency and fast cool-down.", link: "/solutions/aluminum" },
   { title: "Reheating Furnace", zone: "Roof & Walls", products: ["AL60/AL70 Bricks", "LC Castable", "Ceramic Fiber Modules (backup)"], temp: "1300-1350°C", tip: "Ceramic fiber backup behind brick reduces shell temperature and fuel consumption by 15-25%. Spec dense AL60 for high velocity zones.", link: "/solutions/steel" },
@@ -80,7 +80,7 @@ const KnowledgeBase = () => {
   const knowledgeStructuredData = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    name: "Refractory Technical Reference Guide — Shanker Agencies",
+    name: "Refractory Technical Reference Guide, Shanker Agencies",
     description: "Comprehensive technical information about refractory grades (AL40–AL90), castable types (LCC, ULCC), ceramic fiber, and application guides for steel, cement, aluminum industries.",
     about: ["Firebricks", "High Alumina Bricks", "Castables", "Ceramic Fiber Insulation", "Steel Ladle Refractories", "Cement Kiln Refractories"],
     author: { "@type": "Organization", name: "Shanker Agencies Private Limited" },
@@ -116,7 +116,7 @@ const KnowledgeBase = () => {
             Grade comparison tables, castable selection criteria, insulation specs and equipment-specific application guides. Everything a procurement engineer or plant manager needs in one place.
           </p>
 
-          {/* Author byline — E-E-A-T signal */}
+          {/* Author byline, E-E-A-T signal */}
           <div className="mt-6 flex items-center gap-3 text-white/80 text-sm">
             <div className="w-10 h-10 rounded-full bg-[#F97316] flex items-center justify-center font-oswald font-bold text-white">
               RT
@@ -222,7 +222,7 @@ const KnowledgeBase = () => {
                 <Info size={18} className="text-[#3B82F6] flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <p className="font-semibold text-[#1E3A5F] text-sm mb-1">Selection Tip: AL70 vs AL80</p>
-                  <p className="text-gray-600 text-sm">AL70 is the most widely used grade for steel ladle working linings — good balance of cost and performance. AL80 is specified for slag lines and safety linings where the higher CCS and refractoriness justify the additional cost. Don't over-specify — AL80 in a general barrel position adds cost without benefit.</p>
+                  <p className="text-gray-600 text-sm">AL70 is the most widely used grade for steel ladle working linings, good balance of cost and performance. AL80 is specified for slag lines and safety linings where the higher CCS and refractoriness justify the additional cost. Don't over-specify, AL80 in a general barrel position adds cost without benefit.</p>
                 </div>
               </div>
 
@@ -270,7 +270,7 @@ const KnowledgeBase = () => {
               {selectedGrade && (
                 <div className="bg-orange-50 border border-orange-200 rounded-2xl p-6 mb-6 flex flex-col sm:flex-row gap-6 items-start">
                   <div className="flex-1">
-                    <p className="font-oswald text-xl font-bold text-[#1E3A5F] mb-1">{selectedGrade.grade} — {selectedGrade.name}</p>
+                    <p className="font-oswald text-xl font-bold text-[#1E3A5F] mb-1">{selectedGrade.grade}, {selectedGrade.name}</p>
                     <p className="text-gray-600 text-sm mb-4">{selectedGrade.applications}</p>
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                       {[
@@ -423,8 +423,8 @@ const KnowledgeBase = () => {
               <div className="bg-green-50 border-l-4 border-green-500 rounded-xl p-5 flex gap-3">
                 <CheckCircle size={18} className="text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="font-semibold text-green-800 text-sm mb-1">Ceramic Fiber vs IFB — When to Choose Which</p>
-                  <p className="text-green-700 text-sm">Use ceramic fiber when the furnace cycles frequently (daily heat-up/cool-down) — its low thermal mass means fast heat-up and less wasted energy. Use IFB when the furnace runs continuously and you need abrasion resistance on the hot face. Combining both (CF backup + dense brick hot face) achieves the best overall performance.</p>
+                  <p className="font-semibold text-green-800 text-sm mb-1">Ceramic Fiber vs IFB, When to Choose Which</p>
+                  <p className="text-green-700 text-sm">Use ceramic fiber when the furnace cycles frequently (daily heat-up/cool-down), its low thermal mass means fast heat-up and less wasted energy. Use IFB when the furnace runs continuously and you need abrasion resistance on the hot face. Combining both (CF backup + dense brick hot face) achieves the best overall performance.</p>
                 </div>
               </div>
             </div>
@@ -529,7 +529,7 @@ const KnowledgeBase = () => {
             CAN'T FIND WHAT YOU NEED?
           </h2>
           <p className="text-white/75 mb-8 text-sm max-w-xl mx-auto">
-            Our engineers have 45+ years of hands-on refractory experience. If your application isn't covered here, we can provide a custom selection — free of charge.
+            Our engineers have 45+ years of hands-on refractory experience. If your application isn't covered here, we can provide a custom selection, free of charge.
           </p>
           <Link
             href="/contact"

@@ -25,7 +25,7 @@ import './globals.css';
 
 // Google Analytics 4 measurement ID. Doubles as the Google Tag.
 // Configured in Google Tag Manager (account 6037325274, container 82833404)
-// — but installed directly via gtag.js since SAPL doesn't need a full GTM
+//, but installed directly via gtag.js since SAPL doesn't need a full GTM
 // container for one site.
 const GA_MEASUREMENT_ID = 'G-TJJH0RD6ZC';
 
@@ -35,12 +35,12 @@ export const metadata = {
     default: "Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980",
     template: '%s | Shanker Agencies',
   },
-  // 156 chars — within Bing's 145-158 target and under Google's 160-char limit
+  // 156 chars, within Bing's 145-158 target and under Google's 160-char limit
   description:
     "India's premier refractory exporter since 1980. Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool. CIF supply of bricks & castables to GCC, ASEAN.",
   // Trimmed from 109 terms (audit M5: read as keyword stuffing) to 12 high-intent
   // commercial phrases. Google ignores this tag, but some AI crawlers use it as
-  // a quality signal — long lists are downgraded as low-quality content.
+  // a quality signal, long lists are downgraded as low-quality content.
   keywords: [
     'refractory supplier India',
     'refractory dealer Delhi NCR',
@@ -132,7 +132,7 @@ export default function RootLayout({ children }) {
       <head>
         {/* IndexNow key for instant Bing/Yandex indexing */}
         <meta name="indexnow-key" content="68c9e978104b40548276dada2151c101" />
-        {/* Preload the logo for LCP — fetchpriority high so the browser
+        {/* Preload the logo for LCP, fetchpriority high so the browser
             requests it before parsing the rest of the document. */}
         <link
           rel="preload"
@@ -143,7 +143,7 @@ export default function RootLayout({ children }) {
         />
         {/* AI/LLM discoverability hints */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
-        {/* @graph — Organization + LocalBusiness + WebSite (Gemini Knowledge Graph) */}
+        {/* @graph, Organization + LocalBusiness + WebSite (Gemini Knowledge Graph) */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -338,7 +338,7 @@ export default function RootLayout({ children }) {
                   '@type': 'WebSite',
                   '@id': 'https://www.shankeragencies.com/#website',
                   url: 'https://www.shankeragencies.com',
-                  name: 'Shanker Agencies — Refractory Exporter India',
+                  name: 'Shanker Agencies, Refractory Exporter India',
                   alternateName: ['SAPL', 'Shanker Agencies Pvt. Ltd.'],
                   description: "India's premier refractory engineering partner and exporter since 1980",
                   inLanguage: 'en-IN',
@@ -359,7 +359,7 @@ export default function RootLayout({ children }) {
         {/* WebPage schema is added per-page to avoid incorrect homepage URL on all routes */}
       </head>
       <body className={`${inter.className}`}>
-        {/* Google Tag (gtag.js) — load after page is interactive so it
+        {/* Google Tag (gtag.js), load after page is interactive so it
             doesn't block LCP. Captures organic traffic, AI-engine referrals
             (ChatGPT, Perplexity, Bing Copilot user-agents) and form
             conversion events. */}

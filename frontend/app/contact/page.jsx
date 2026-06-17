@@ -15,7 +15,7 @@ const webPageSchema = {
   isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
   about: { '@id': 'https://www.shankeragencies.com/#organization' },
   inLanguage: 'en-IN',
-  description: 'Contact Shanker Agencies for refractory product enquiries, technical consultation and quotes. WhatsApp, email or phone — responds within 2 business hours.',
+  description: 'Contact Shanker Agencies for refractory product enquiries, technical consultation and quotes. WhatsApp, email or phone, responds within 2 business hours.',
 };
 
 const breadcrumbSchema = {

@@ -1,5 +1,5 @@
 /**
- * Product-level FAQs — keyed by the productId used in the URL
+ * Product-level FAQs, keyed by the productId used in the URL
  * (i.e. /products/[categorySlug]/[productId]).
  *
  * These FAQs are rendered both as visible HTML on each product detail page
@@ -18,15 +18,15 @@ export const PRODUCT_FAQS = {
   'high-alumina-bricks': [
     {
       q: 'What is the difference between HA-45, HA-60, HA-70 and HA-90 high alumina bricks?',
-      a: 'The number indicates the Al₂O₃ content. HA-45 has 45% alumina and is rated to about 1550°C — used for general-purpose linings. HA-60 and HA-70 (60% and 70% Al₂O₃) cover mid-range duty up to 1750°C. HA-80 and HA-90 are used for severe duty in steel ladles, blast furnace bosh and reformer hot zones up to 1850°C. As alumina content rises, refractoriness, slag resistance and price all rise.',
+      a: 'The number indicates the Al₂O₃ content. HA-45 has 45% alumina and is rated to about 1550°C, used for general-purpose linings. HA-60 and HA-70 (60% and 70% Al₂O₃) cover mid-range duty up to 1750°C. HA-80 and HA-90 are used for severe duty in steel ladles, blast furnace bosh and reformer hot zones up to 1850°C. As alumina content rises, refractoriness, slag resistance and price all rise.',
     },
     {
       q: 'What temperature can high alumina bricks withstand?',
-      a: 'Service temperatures depend on grade. HA-45 is used up to about 1550°C, HA-60 up to 1650°C, HA-70 up to 1750°C, and HA-80/HA-90 up to 1800–1850°C. PCE (Pyrometric Cone Equivalent) values are SK 33 to SK 38+ depending on grade. Always specify by application — soaking pit, ladle slag line and blast furnace bosh each demand different chemistries.',
+      a: 'Service temperatures depend on grade. HA-45 is used up to about 1550°C, HA-60 up to 1650°C, HA-70 up to 1750°C, and HA-80/HA-90 up to 1800–1850°C. PCE (Pyrometric Cone Equivalent) values are SK 33 to SK 38+ depending on grade. Always specify by application, soaking pit, ladle slag line and blast furnace bosh each demand different chemistries.',
     },
     {
       q: 'Which industries use high alumina bricks the most?',
-      a: 'Steel plants are the largest user — for ladles, torpedo cars, blast furnace bosh and belly, and reheating furnace roofs. Cement rotary kilns use HA-60 to HA-80 in the burning and transition zones. Glass tank regenerators, petrochemical reformers, EAF roof, and coke oven jambs are other regular applications.',
+      a: 'Steel plants are the largest user, for ladles, torpedo cars, blast furnace bosh and belly, and reheating furnace roofs. Cement rotary kilns use HA-60 to HA-80 in the burning and transition zones. Glass tank regenerators, petrochemical reformers, EAF roof, and coke oven jambs are other regular applications.',
     },
     {
       q: 'What size and shape options are available?',
@@ -53,11 +53,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is the IS 8 standard for fireclay bricks?',
-      a: 'IS 8:2013 is the Indian Standard specifying fireclay refractory bricks by chemical composition, refractoriness, cold crushing strength, apparent porosity and dimensions. It defines four classes — Super Duty, High Duty, Medium Duty and Low Duty — based on Al₂O₃ content (40% down to 22%) and PCE (SK 35 down to SK 28). All Shanker Agencies fireclay supply complies with IS 8.',
+      a: 'IS 8:2013 is the Indian Standard specifying fireclay refractory bricks by chemical composition, refractoriness, cold crushing strength, apparent porosity and dimensions. It defines four classes, Super Duty, High Duty, Medium Duty and Low Duty, based on Al₂O₃ content (40% down to 22%) and PCE (SK 35 down to SK 28). All Shanker Agencies fireclay supply complies with IS 8.',
     },
     {
       q: 'Where should fireclay bricks NOT be used?',
-      a: 'Avoid fireclay in working linings exposed to basic slags (steel converters, EAF, cement burning zone) — they will react and fail rapidly. Also avoid them where temperatures consistently exceed 1400°C, in glass contact zones, or in atmospheres with high alkali content. For these, use high alumina, basic, magnesia spinel or fused-cast AZS depending on the duty.',
+      a: 'Avoid fireclay in working linings exposed to basic slags (steel converters, EAF, cement burning zone), they will react and fail rapidly. Also avoid them where temperatures consistently exceed 1400°C, in glass contact zones, or in atmospheres with high alkali content. For these, use high alumina, basic, magnesia spinel or fused-cast AZS depending on the duty.',
     },
     {
       q: 'How long do fireclay bricks last in a boiler back wall?',
@@ -65,14 +65,14 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Do you stock fireclay bricks in Delhi for immediate dispatch?',
-      a: 'Yes — STD-40 and HFK-32 are stocked in standard sizes for same-day dispatch on quantities up to 5 MT from our Delhi warehouse. Larger orders, special shapes or higher Al₂O₃ grades typically dispatch in 2–7 working days. We deliver pan-India and handle full export documentation for GCC, ASEAN and African shipments.',
+      a: 'Yes, STD-40 and HFK-32 are stocked in standard sizes for same-day dispatch on quantities up to 5 MT from our Delhi warehouse. Larger orders, special shapes or higher Al₂O₃ grades typically dispatch in 2–7 working days. We deliver pan-India and handle full export documentation for GCC, ASEAN and African shipments.',
     },
   ],
 
   'insulating-fire-bricks': [
     {
       q: 'What is an insulating fire brick (IFB) and how is it different from a dense brick?',
-      a: 'An IFB is a porous refractory brick — typically 40–80% porosity by volume — engineered for low thermal conductivity (0.15–0.35 W/mK) and low heat storage. A dense fireclay brick has 22–28% porosity and conducts heat 3–5 times faster. IFBs save energy and lower furnace shell temperatures, but cannot handle direct slag, metal or mechanical abuse like a dense brick can.',
+      a: 'An IFB is a porous refractory brick, typically 40–80% porosity by volume, engineered for low thermal conductivity (0.15–0.35 W/mK) and low heat storage. A dense fireclay brick has 22–28% porosity and conducts heat 3–5 times faster. IFBs save energy and lower furnace shell temperatures, but cannot handle direct slag, metal or mechanical abuse like a dense brick can.',
     },
     {
       q: 'What do K-23, K-26 and K-30 mean in insulating fire brick nomenclature?',
@@ -84,15 +84,15 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Can IFBs be used as a hot-face lining?',
-      a: 'Only in low-duty service — heat treatment furnaces, ceramic kilns, laboratory furnaces and lehrs where there is no contact with liquid metal, slag, abrasive load or mechanical impact. For melting or steelmaking, IFBs must always sit behind a dense working lining. Direct flame impingement on IFBs is acceptable in radiant heating but reduces life.',
+      a: 'Only in low-duty service, heat treatment furnaces, ceramic kilns, laboratory furnaces and lehrs where there is no contact with liquid metal, slag, abrasive load or mechanical impact. For melting or steelmaking, IFBs must always sit behind a dense working lining. Direct flame impingement on IFBs is acceptable in radiant heating but reduces life.',
     },
     {
       q: 'Which brand of IFB do you recommend?',
-      a: 'For 1260–1430°C duty (most heat treatment work) we recommend Divine Cerawool IFBs — we are an authorised dealer and stock them in Delhi. For 1540–1760°C duty and tighter tolerances, CUMI Super Refractories IFBs are the standard choice. Both come with full ASTM C-155 documentation. We can sample a single carton for trial before bulk supply.',
+      a: 'For 1260–1430°C duty (most heat treatment work) we recommend Divine Cerawool IFBs, we are an authorised dealer and stock them in Delhi. For 1540–1760°C duty and tighter tolerances, CUMI Super Refractories IFBs are the standard choice. Both come with full ASTM C-155 documentation. We can sample a single carton for trial before bulk supply.',
     },
     {
       q: 'How are IFBs handled and installed?',
-      a: 'Handle gently — IFBs have low crushing strength (0.5–5 MPa) so impact damage is easy. Use lightweight insulating mortar or a colloidal silica binder. Saw-cut to size with a masonry blade. Maintain joint thickness 2–3 mm. Dry-out schedule: ambient to 200°C at 10°C/hr, hold 4 hours, then ramp normally. Never expose unbacked IFBs to flowing molten metal.',
+      a: 'Handle gently, IFBs have low crushing strength (0.5–5 MPa) so impact damage is easy. Use lightweight insulating mortar or a colloidal silica binder. Saw-cut to size with a masonry blade. Maintain joint thickness 2–3 mm. Dry-out schedule: ambient to 200°C at 10°C/hr, hold 4 hours, then ramp normally. Never expose unbacked IFBs to flowing molten metal.',
     },
   ],
 
@@ -103,7 +103,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is the difference between magnesia-chrome and magnesia-spinel bricks?',
-      a: 'Magnesia-chrome bricks contain 12–22% Cr₂O₃ and offer the best slag and thermal-shock resistance, but the chrome can leach into hexavalent Cr⁶⁺ during disposal — environmentally regulated. Magnesia-spinel bricks replace chrome with MgAl₂O₄ spinel, giving similar coating-formation behaviour and thermal shock with no Cr⁶⁺ liability. Most modern cement plants now specify magnesia-spinel for the burning zone.',
+      a: 'Magnesia-chrome bricks contain 12–22% Cr₂O₃ and offer the best slag and thermal-shock resistance, but the chrome can leach into hexavalent Cr⁶⁺ during disposal, environmentally regulated. Magnesia-spinel bricks replace chrome with MgAl₂O₄ spinel, giving similar coating-formation behaviour and thermal shock with no Cr⁶⁺ liability. Most modern cement plants now specify magnesia-spinel for the burning zone.',
     },
     {
       q: 'What is an MgO-C (magnesia-carbon) brick used for?',
@@ -115,18 +115,18 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Are chrome-free basic bricks available for cement kilns?',
-      a: 'Yes — magnesia-spinel and magnesia-hercynite (MgO-FeAl₂O₄) grades are now the standard in environmentally-conscious cement plants. They eliminate Cr⁶⁺ disposal liability while delivering equivalent or better burning-zone life. We supply chrome-free grades from CUMI and TRL Krosaki, with full disposal-class certification.',
+      a: 'Yes, magnesia-spinel and magnesia-hercynite (MgO-FeAl₂O₄) grades are now the standard in environmentally-conscious cement plants. They eliminate Cr⁶⁺ disposal liability while delivering equivalent or better burning-zone life. We supply chrome-free grades from CUMI and TRL Krosaki, with full disposal-class certification.',
     },
     {
       q: 'How should basic bricks be stored and handled?',
-      a: 'Critical — keep dry. MgO and MgO-C bricks hydrate in humid air, causing dimensional growth and surface spalling. Store in sealed plastic on pallets, preferably in a dehumidified shed. Use within 6 months of receipt. Open pallets only when ready to install. Mortar joints must be 1–2 mm. After installation, dry out within 24 hours to avoid moisture damage.',
+      a: 'Critical, keep dry. MgO and MgO-C bricks hydrate in humid air, causing dimensional growth and surface spalling. Store in sealed plastic on pallets, preferably in a dehumidified shed. Use within 6 months of receipt. Open pallets only when ready to install. Mortar joints must be 1–2 mm. After installation, dry out within 24 hours to avoid moisture damage.',
     },
   ],
 
   'silicon-carbide-bricks': [
     {
       q: 'When should I specify silicon carbide refractory instead of high alumina?',
-      a: 'Choose SiC where abrasion, erosion, thermal cycling or high heat-transfer rates dominate. Common cases: aluminium melting and holding furnaces (non-wetting), zinc smelter retorts, waste incinerator hearths, blast furnace bosh, kiln burner blocks, and recuperator tubes. SiC has 5–10× the thermal conductivity of high alumina — ideal where heat must move through the lining, problematic where insulation is needed.',
+      a: 'Choose SiC where abrasion, erosion, thermal cycling or high heat-transfer rates dominate. Common cases: aluminium melting and holding furnaces (non-wetting), zinc smelter retorts, waste incinerator hearths, blast furnace bosh, kiln burner blocks, and recuperator tubes. SiC has 5–10× the thermal conductivity of high alumina, ideal where heat must move through the lining, problematic where insulation is needed.',
     },
     {
       q: 'What temperature can silicon carbide bricks handle?',
@@ -138,7 +138,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What bond systems are used for SiC refractories?',
-      a: 'Three common bonds: oxide-bonded (clay or alumina, lowest cost, used in non-critical zones), Si₃N₄-bonded (silicon nitride, premium aluminium duty), and direct-sintered or recrystallised SiC (highest performance, kiln furniture and special parts). The bond choice drives both price and service life — typically a 2–4× span across the range.',
+      a: 'Three common bonds: oxide-bonded (clay or alumina, lowest cost, used in non-critical zones), Si₃N₄-bonded (silicon nitride, premium aluminium duty), and direct-sintered or recrystallised SiC (highest performance, kiln furniture and special parts). The bond choice drives both price and service life, typically a 2–4× span across the range.',
     },
     {
       q: 'What is the minimum order quantity for SiC bricks?',
@@ -146,7 +146,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Are silicon carbide refractories more expensive than alumina?',
-      a: 'Yes — typically 3–6× the price per tonne of HA-90, depending on bond and SiC content. The economic case is built on longer life, lower energy loss and higher productivity, not initial cost. For an aluminium melter the payback on Si₃N₄-bonded SiC over alumina-silicate is usually 9–18 months in extra metal yield and reduced relining frequency.',
+      a: 'Yes, typically 3–6× the price per tonne of HA-90, depending on bond and SiC content. The economic case is built on longer life, lower energy loss and higher productivity, not initial cost. For an aluminium melter the payback on Si₃N₄-bonded SiC over alumina-silicate is usually 9–18 months in extra metal yield and reduced relining frequency.',
     },
   ],
 
@@ -162,7 +162,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'How long should an LCC lining be dried out?',
-      a: 'A typical 200–300 mm thick LCC lining requires a controlled dry-out of 24–72 hours. Standard schedule: ambient to 110°C at 10–15°C/hr, hold 12 hours, then 30°C/hr to 350°C, hold 8 hours, then 50°C/hr to operating temperature. Skipping dry-out causes steam explosion (spalling) — the single most common failure of new castable linings.',
+      a: 'A typical 200–300 mm thick LCC lining requires a controlled dry-out of 24–72 hours. Standard schedule: ambient to 110°C at 10–15°C/hr, hold 12 hours, then 30°C/hr to 350°C, hold 8 hours, then 50°C/hr to operating temperature. Skipping dry-out causes steam explosion (spalling), the single most common failure of new castable linings.',
     },
     {
       q: 'How long does an LCC steel ladle working lining last?',
@@ -174,7 +174,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Can LCC be installed by gunning or shotcreting?',
-      a: 'Standard LCC is installed by vibration casting. For gunning and shotcreting, use a specifically-formulated LCC-gunning blend or a self-flow LCC — these have modified particle size distributions and additives. Mixing standard cast LCC with high water and gunning it gives poor density and short life. Always check the data sheet for the recommended placement method.',
+      a: 'Standard LCC is installed by vibration casting. For gunning and shotcreting, use a specifically-formulated LCC-gunning blend or a self-flow LCC, these have modified particle size distributions and additives. Mixing standard cast LCC with high water and gunning it gives poor density and short life. Always check the data sheet for the recommended placement method.',
     },
   ],
 
@@ -185,7 +185,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'When should I specify ULCC over LCC?',
-      a: 'Specify ULCC where lining life is the dominant cost driver — steel ladle slag bands, EAF tap holes, reheating furnace skid rails, copper anode furnace launders, aluminium melter ramps, and continuous casting tundish working linings. ULCC typically gives 1.4–2× the life of LCC in these zones, justifying the 30–80% price premium.',
+      a: 'Specify ULCC where lining life is the dominant cost driver, steel ladle slag bands, EAF tap holes, reheating furnace skid rails, copper anode furnace launders, aluminium melter ramps, and continuous casting tundish working linings. ULCC typically gives 1.4–2× the life of LCC in these zones, justifying the 30–80% price premium.',
     },
     {
       q: 'How is ULCC dry-out different from LCC?',
@@ -197,22 +197,22 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Can ULCC be used for steel ladle working lining?',
-      a: 'Yes — premium ladle linings increasingly use 90% Al₂O₃ ULCC with 6–10% spinel addition. Typical campaign life is 110–180 heats versus 80–140 for standard LCC. The cost premium is offset by reduced relining frequency and lower lost-production hours. Slag bands and impact zones may still be supplemented with MgO-C bricks.',
+      a: 'Yes, premium ladle linings increasingly use 90% Al₂O₃ ULCC with 6–10% spinel addition. Typical campaign life is 110–180 heats versus 80–140 for standard LCC. The cost premium is offset by reduced relining frequency and lower lost-production hours. Slag bands and impact zones may still be supplemented with MgO-C bricks.',
     },
     {
       q: 'Which brands of ULCC do you supply?',
-      a: 'CUMI Super Refractories ULCC range — we are the authorised dealer. Also Calderys ACCMON, ULTRACASTING and KERAFLEX series, and IFGL ULCC for steel applications. Each manufacturer has 4–6 grades; we help you select the right grade based on your installation method, vessel size, slag chemistry and target campaign life.',
+      a: 'CUMI Super Refractories ULCC range, we are the authorised dealer. Also Calderys ACCMON, ULTRACASTING and KERAFLEX series, and IFGL ULCC for steel applications. Each manufacturer has 4–6 grades; we help you select the right grade based on your installation method, vessel size, slag chemistry and target campaign life.',
     },
   ],
 
   'ramming-masses': [
     {
       q: 'What is ramming mass and where is it used?',
-      a: 'Ramming mass is a granular dry refractory mix that is rammed in place — typically by pneumatic vibrators — to form a monolithic lining. The most common use is induction furnace linings for melting iron, steel, copper and brass. It is also used for steel ladle bottoms, blast furnace troughs and EAF bottoms.',
+      a: 'Ramming mass is a granular dry refractory mix that is rammed in place, typically by pneumatic vibrators, to form a monolithic lining. The most common use is induction furnace linings for melting iron, steel, copper and brass. It is also used for steel ladle bottoms, blast furnace troughs and EAF bottoms.',
     },
     {
       q: 'What is the difference between silica, alumina and magnesia ramming mass?',
-      a: 'Silica ramming mass is the standard for iron and carbon steel induction furnaces — economical, good thermal shock, neutral with iron melts. Alumina-based mass is used for stainless steel and special alloys where silica pickup must be avoided. Magnesia-based mass is used for high-manganese steel and copper alloys where basic slags are present. Choosing the wrong chemistry causes rapid lining failure.',
+      a: 'Silica ramming mass is the standard for iron and carbon steel induction furnaces, economical, good thermal shock, neutral with iron melts. Alumina-based mass is used for stainless steel and special alloys where silica pickup must be avoided. Magnesia-based mass is used for high-manganese steel and copper alloys where basic slags are present. Choosing the wrong chemistry causes rapid lining failure.',
     },
     {
       q: 'How long does an induction furnace lining last?',
@@ -224,7 +224,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Do you supply ramming mass for a 5-tonne induction furnace?',
-      a: 'Yes — silica, alumina and magnesia ramming mass are supplied in 25 kg bags, with quantities calculated against your furnace cross-section. A typical 5-tonne iron-melting furnace requires 3–4 MT of silica ramming mass per lining. We supply CUMI authorised grades with technical guidance from our induction furnace specialists.',
+      a: 'Yes, silica, alumina and magnesia ramming mass are supplied in 25 kg bags, with quantities calculated against your furnace cross-section. A typical 5-tonne iron-melting furnace requires 3–4 MT of silica ramming mass per lining. We supply CUMI authorised grades with technical guidance from our induction furnace specialists.',
     },
     {
       q: 'How is ramming mass priced?',
@@ -243,11 +243,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is the difference between hot and cold gunning?',
-      a: 'Hot gunning is applied at 600–1400°C — the hot face is still glowing. The mass develops a strong ceramic bond by reacting with the residual lining heat. Cold gunning is applied below 200°C and relies on a hydraulic or chemical bond, typically requiring a controlled re-heat before service. Hot gunning gives stronger bonds and faster turnaround.',
+      a: 'Hot gunning is applied at 600–1400°C, the hot face is still glowing. The mass develops a strong ceramic bond by reacting with the residual lining heat. Cold gunning is applied below 200°C and relies on a hydraulic or chemical bond, typically requiring a controlled re-heat before service. Hot gunning gives stronger bonds and faster turnaround.',
     },
     {
       q: 'What chemistries of gunning mass are available?',
-      a: 'Silica-alumina gunning for general fireclay and high-alumina linings, basic gunning (magnesia-based) for steel ladle slag bands and EAF/BOF working linings, neutral gunning for transition zones, and specialty SiC-containing gunning for aluminium and incinerator duty. Choosing a chemistry matched to the original lining is essential — wrong chemistry causes rejection or rapid spalling.',
+      a: 'Silica-alumina gunning for general fireclay and high-alumina linings, basic gunning (magnesia-based) for steel ladle slag bands and EAF/BOF working linings, neutral gunning for transition zones, and specialty SiC-containing gunning for aluminium and incinerator duty. Choosing a chemistry matched to the original lining is essential, wrong chemistry causes rejection or rapid spalling.',
     },
     {
       q: 'What equipment is needed to apply gunning mass?',
@@ -255,22 +255,22 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Do you supply gunning mass with on-site gunning service?',
-      a: 'Yes. For large steel and cement plants we offer turnkey gunning campaigns — material supply, machine, trained crew, and refractory engineer supervision. For routine maintenance we supply Calderys, CUMI and IFGL gunning masses for application by your in-house team. Both options come with technical guidance on best-practice gunning thickness and frequency.',
+      a: 'Yes. For large steel and cement plants we offer turnkey gunning campaigns, material supply, machine, trained crew, and refractory engineer supervision. For routine maintenance we supply Calderys, CUMI and IFGL gunning masses for application by your in-house team. Both options come with technical guidance on best-practice gunning thickness and frequency.',
     },
   ],
 
   'refractory-mortars': [
     {
       q: 'What is a refractory mortar and what is it used for?',
-      a: 'A refractory mortar is a fine-grained bonding material used to lay refractory bricks and fill the joints between them. It is supplied as a wet ready-to-use paste or a dry powder mixed with water on site. Beyond brick laying, mortars are also used for surface finishing of cast linings, expansion joint filling, and small hot-face patch repairs. The mortar must be chemistry-matched to the brick — fireclay mortar with fireclay bricks, high alumina mortar with HA-70/80, basic mortar with magnesia bricks.',
+      a: 'A refractory mortar is a fine-grained bonding material used to lay refractory bricks and fill the joints between them. It is supplied as a wet ready-to-use paste or a dry powder mixed with water on site. Beyond brick laying, mortars are also used for surface finishing of cast linings, expansion joint filling, and small hot-face patch repairs. The mortar must be chemistry-matched to the brick, fireclay mortar with fireclay bricks, high alumina mortar with HA-70/80, basic mortar with magnesia bricks.',
     },
     {
       q: 'What is the difference between fireclay mortar, high alumina mortar and basic mortar?',
-      a: 'Chemistry. Fireclay mortar is 30–42% Al₂O₃ with the rest silica and binder, rated to about 1400°C — used with fireclay bricks. High alumina mortar (HA-50 to HA-80) carries 50–82% Al₂O₃ to match the brick course it lays, rated up to 1750°C. Basic mortar is 85–92% MgO, used with magnesia and dolomite bricks in steel converters and cement kiln burning zones. Using the wrong chemistry creates a chemically incompatible joint that cracks, spalls or melts at temperature.',
+      a: 'Chemistry. Fireclay mortar is 30–42% Al₂O₃ with the rest silica and binder, rated to about 1400°C, used with fireclay bricks. High alumina mortar (HA-50 to HA-80) carries 50–82% Al₂O₃ to match the brick course it lays, rated up to 1750°C. Basic mortar is 85–92% MgO, used with magnesia and dolomite bricks in steel converters and cement kiln burning zones. Using the wrong chemistry creates a chemically incompatible joint that cracks, spalls or melts at temperature.',
     },
     {
       q: 'What is the difference between air-setting, heat-setting and hydraulic-setting mortars?',
-      a: 'Air-setting mortars develop strength on drying at room temperature — convenient for repairs that cannot be heated. Heat-setting (ceramic-bonded) mortars are weak when laid but develop high refractoriness at 800–1000°C — used for the strongest hot-face joints. Hydraulic mortars contain calcium aluminate cement and set wet, like a fast-curing castable. We help match the setting type to your installation schedule and dry-out plan.',
+      a: 'Air-setting mortars develop strength on drying at room temperature, convenient for repairs that cannot be heated. Heat-setting (ceramic-bonded) mortars are weak when laid but develop high refractoriness at 800–1000°C, used for the strongest hot-face joints. Hydraulic mortars contain calcium aluminate cement and set wet, like a fast-curing castable. We help match the setting type to your installation schedule and dry-out plan.',
     },
     {
       q: 'How thick should a refractory brick joint be?',
@@ -282,14 +282,14 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Which brands of refractory mortar do you supply?',
-      a: 'We are a strategic supply partner for Mahakoshal Refractories — covering their full mortar range from fireclay to HA-80, basic, and insulating grades. We also supply CUMI Super Refractories (authorised dealer) and Calderys mortars for matching their proprietary brick chemistries, plus Crown Ceramics acid-proof mortars (authorised dealer). Same-day dispatch from Delhi for standard grades.',
+      a: 'We are a strategic supply partner for Mahakoshal Refractories, covering their full mortar range from fireclay to HA-80, basic, and insulating grades. We also supply CUMI Super Refractories (authorised dealer) and Calderys mortars for matching their proprietary brick chemistries, plus Crown Ceramics acid-proof mortars (authorised dealer). Same-day dispatch from Delhi for standard grades.',
     },
   ],
 
   'conventional-castables': [
     {
       q: 'What is a conventional castable and how is it different from LCC or ULCC?',
-      a: 'A conventional castable is a fireclay or low-purity high alumina aggregate bonded with 15–25% calcium aluminate cement — the original castable formulation that has been used in industrial linings for over 50 years. It is roughly half the price of an equivalent low cement castable (LCC at 3–5% cement) and one-third the price of ULCC. The trade-off: lower hot strength, higher porosity, and lower slag resistance. Right product for backup linings and low-wear zones; wrong product for steel ladle hot face.',
+      a: 'A conventional castable is a fireclay or low-purity high alumina aggregate bonded with 15–25% calcium aluminate cement, the original castable formulation that has been used in industrial linings for over 50 years. It is roughly half the price of an equivalent low cement castable (LCC at 3–5% cement) and one-third the price of ULCC. The trade-off: lower hot strength, higher porosity, and lower slag resistance. Right product for backup linings and low-wear zones; wrong product for steel ladle hot face.',
     },
     {
       q: 'When should I specify a conventional castable instead of LCC?',
@@ -301,11 +301,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Why is the water demand higher for conventional castables than LCC?',
-      a: 'More cement means more water needed to wet the cement particles for hydration — typically 8–12% water by weight versus 4.5–5.5% for LCC. The trade-off is higher porosity in the cured castable (cement hydration leaves micro-pores). For non-critical applications this porosity is acceptable; for slag-line and impact zones it is not, which is why LCC dominates those zones.',
+      a: 'More cement means more water needed to wet the cement particles for hydration, typically 8–12% water by weight versus 4.5–5.5% for LCC. The trade-off is higher porosity in the cured castable (cement hydration leaves micro-pores). For non-critical applications this porosity is acceptable; for slag-line and impact zones it is not, which is why LCC dominates those zones.',
     },
     {
       q: 'How fast can I install a conventional castable lining?',
-      a: 'Conventional castables tolerate faster installation than LCC. Cast in 200–250 mm layers, vibrate for 20–30 seconds per layer, demould after 12–18 hours, and dry out at 25°C/hour to 110°C with an 8-hour soak — versus the 24-hour cure and 12-hour soak typical for LCC. A mid-size boiler sidewall job that takes 5 days with LCC can be done in 3 days with conventional castable.',
+      a: 'Conventional castables tolerate faster installation than LCC. Cast in 200–250 mm layers, vibrate for 20–30 seconds per layer, demould after 12–18 hours, and dry out at 25°C/hour to 110°C with an 8-hour soak, versus the 24-hour cure and 12-hour soak typical for LCC. A mid-size boiler sidewall job that takes 5 days with LCC can be done in 3 days with conventional castable.',
     },
     {
       q: 'Which brands of conventional castable do you supply?',
@@ -329,7 +329,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Are slide gate plates a regulated or proprietary item?',
-      a: 'They are proprietary — each major refractory manufacturer (IFGL, RHI, Vesuvius, Krosaki) makes plates dimensioned to their gate mechanism. A plate from one manufacturer will usually not fit another\'s gate without a frame change. We help match your existing gate mechanism to compatible plates from IFGL India and TRL Krosaki, our authorised supply partners.',
+      a: 'They are proprietary, each major refractory manufacturer (IFGL, RHI, Vesuvius, Krosaki) makes plates dimensioned to their gate mechanism. A plate from one manufacturer will usually not fit another\'s gate without a frame change. We help match your existing gate mechanism to compatible plates from IFGL India and TRL Krosaki, our authorised supply partners.',
     },
     {
       q: 'What is the lead time for slide gate plates?',
@@ -337,7 +337,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Do you supply complete slide gate refractory packages?',
-      a: 'Yes — slide gate plates, ladle nozzles, well blocks, ladle shrouds, mortar and gaskets in coordinated grades to match your gate mechanism. Buying as a package ensures dimensional and chemical compatibility, simplifies inventory, and consolidates technical support. Send us your ladle drawing and we will build a quoted package.',
+      a: 'Yes, slide gate plates, ladle nozzles, well blocks, ladle shrouds, mortar and gaskets in coordinated grades to match your gate mechanism. Buying as a package ensures dimensional and chemical compatibility, simplifies inventory, and consolidates technical support. Send us your ladle drawing and we will build a quoted package.',
     },
   ],
 
@@ -360,7 +360,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Can ladle shrouds be reused?',
-      a: 'No — shrouds are single-campaign items. After a heat sequence, the shroud is discarded and a new one is fitted. Attempting to reuse a shroud risks cold-start cracking, slag spalling, and contaminated steel. The shroud-and-tundish-nozzle pair are matched assemblies designed for one continuous operating window.',
+      a: 'No, shrouds are single-campaign items. After a heat sequence, the shroud is discarded and a new one is fitted. Attempting to reuse a shroud risks cold-start cracking, slag spalling, and contaminated steel. The shroud-and-tundish-nozzle pair are matched assemblies designed for one continuous operating window.',
     },
     {
       q: 'What size shrouds do you supply?',
@@ -418,7 +418,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Do you supply complete plug + well block packages?',
-      a: 'Yes — we supply matched porous plug and well block sets from IFGL Refractories, with full purge-line dimensions and pressure-test certification. We can also supply the surrounding ladle-bottom castable as a coordinated package. Send us your ladle bottom drawing and stirring practice and we will quote a complete bottom-purge solution.',
+      a: 'Yes, we supply matched porous plug and well block sets from IFGL Refractories, with full purge-line dimensions and pressure-test certification. We can also supply the surrounding ladle-bottom castable as a coordinated package. Send us your ladle bottom drawing and stirring practice and we will quote a complete bottom-purge solution.',
     },
   ],
 
@@ -430,15 +430,15 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is the difference between blanket, module and board?',
-      a: 'Blanket is a flexible roll (1, 2, 3 inch thicknesses, 96–128 kg/m³ density) — used for back-up insulation, expansion joints and pipe lagging. Modules are pre-compressed folded blanket attached to anchors, used as a one-shot hot-face lining for furnace walls and roofs. Boards are rigid, machinable panels (200–300 kg/m³) for high-velocity zones, ladle covers and burner blocks.',
+      a: 'Blanket is a flexible roll (1, 2, 3 inch thicknesses, 96–128 kg/m³ density), used for back-up insulation, expansion joints and pipe lagging. Modules are pre-compressed folded blanket attached to anchors, used as a one-shot hot-face lining for furnace walls and roofs. Boards are rigid, machinable panels (200–300 kg/m³) for high-velocity zones, ladle covers and burner blocks.',
     },
     {
       q: 'How is ceramic fibre service temperature classified?',
-      a: 'Standard ASTM C-892 / EN 1094 classes: 1260°C (Class A — standard alumino-silicate), 1325°C (Class C — zirconia-doped), 1400°C (Class D — high-purity), and 1430°C (Class E — high-alumina polycrystalline). Continuous-use temperature is typically 100–150°C below the classification temperature for long life. Above 1300°C, devitrification reduces fibre flexibility over time.',
+      a: 'Standard ASTM C-892 / EN 1094 classes: 1260°C (Class A, standard alumino-silicate), 1325°C (Class C, zirconia-doped), 1400°C (Class D, high-purity), and 1430°C (Class E, high-alumina polycrystalline). Continuous-use temperature is typically 100–150°C below the classification temperature for long life. Above 1300°C, devitrification reduces fibre flexibility over time.',
     },
     {
       q: 'Is ceramic fibre safe to handle and install?',
-      a: 'Refractory ceramic fibre (RCF) requires controlled handling — dust generated during cutting and fitting can cause respiratory irritation. Use FFP3 dust masks, gloves, long-sleeved cotton overalls. Modern bio-soluble alkaline-earth-silicate (AES) fibre wools (rated to 1200°C) are exempt from carcinogen classification under EU regulation. We supply both RCF and AES grades — see the data sheet for the recommended PPE.',
+      a: 'Refractory ceramic fibre (RCF) requires controlled handling, dust generated during cutting and fitting can cause respiratory irritation. Use FFP3 dust masks, gloves, long-sleeved cotton overalls. Modern bio-soluble alkaline-earth-silicate (AES) fibre wools (rated to 1200°C) are exempt from carcinogen classification under EU regulation. We supply both RCF and AES grades, see the data sheet for the recommended PPE.',
     },
     {
       q: 'What energy saving will I get from a ceramic fibre furnace upgrade?',
@@ -446,7 +446,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Are you an authorised dealer for ceramic fibre products?',
-      a: 'Yes — Shanker Agencies is an authorised dealer for Divine Cerawool. We stock standard 1260°C and 1430°C blanket and modules in Delhi for same-day dispatch. Boards, paper, ropes and special shapes are also supplied. Full PPE recommendation and installation guidance comes with every order.',
+      a: 'Yes, Shanker Agencies is an authorised dealer for Divine Cerawool. We stock standard 1260°C and 1430°C blanket and modules in Delhi for same-day dispatch. Boards, paper, ropes and special shapes are also supplied. Full PPE recommendation and installation guidance comes with every order.',
     },
   ],
 
@@ -461,11 +461,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Is calcium silicate moisture-resistant?',
-      a: 'Calcium silicate is hygroscopic — it absorbs ambient moisture. Modern boards include water-repellent silicone treatment, but prolonged outdoor exposure or wet-bulb conditions still degrade the insulation. For outdoor pipe insulation use a properly sealed cladding (aluminium or stainless steel) with sealed seams and weather-jacketing on horizontal runs.',
+      a: 'Calcium silicate is hygroscopic, it absorbs ambient moisture. Modern boards include water-repellent silicone treatment, but prolonged outdoor exposure or wet-bulb conditions still degrade the insulation. For outdoor pipe insulation use a properly sealed cladding (aluminium or stainless steel) with sealed seams and weather-jacketing on horizontal runs.',
     },
     {
       q: 'How does calcium silicate compare with rockwool or microporous?',
-      a: 'Rockwool: lower cost, lower temperature limit (650°C), and lower compressive strength — used for general lagging. Calcium silicate: higher compressive strength, machinable, supports loads — used in ducts, boilers and below-grade pipe. Microporous: 30–40% lower thermal conductivity at high temperatures, much higher cost — used where space and weight are constrained (ladle covers, kilns, aerospace).',
+      a: 'Rockwool: lower cost, lower temperature limit (650°C), and lower compressive strength, used for general lagging. Calcium silicate: higher compressive strength, machinable, supports loads, used in ducts, boilers and below-grade pipe. Microporous: 30–40% lower thermal conductivity at high temperatures, much higher cost, used where space and weight are constrained (ladle covers, kilns, aerospace).',
     },
     {
       q: 'What thicknesses of calcium silicate boards are available?',
@@ -473,7 +473,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Can I cut calcium silicate boards on site?',
-      a: 'Yes — calcium silicate is highly machinable. Use a hand saw, jigsaw or table saw with a wood blade. Drill, screw and rebate it like a soft hardwood. Always wear an FFP3 dust mask — the silica dust is hazardous. Off-cuts can be reused for filling small gaps. Mortar joints between boards use a calcium-silicate based jointing compound.',
+      a: 'Yes, calcium silicate is highly machinable. Use a hand saw, jigsaw or table saw with a wood blade. Drill, screw and rebate it like a soft hardwood. Always wear an FFP3 dust mask, the silica dust is hazardous. Off-cuts can be reused for filling small gaps. Mortar joints between boards use a calcium-silicate based jointing compound.',
     },
   ],
 
@@ -485,7 +485,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Which acids do acid-proof bricks resist?',
-      a: 'Acid-proof bricks resist sulphuric, hydrochloric, nitric, phosphoric, acetic, citric, lactic and most other mineral and organic acids at all concentrations. They do NOT resist hydrofluoric acid (HF), strong alkalis, or molten salts — for those, switch to carbon brick or fluoropolymer linings. Always specify the chemical environment when ordering.',
+      a: 'Acid-proof bricks resist sulphuric, hydrochloric, nitric, phosphoric, acetic, citric, lactic and most other mineral and organic acids at all concentrations. They do NOT resist hydrofluoric acid (HF), strong alkalis, or molten salts, for those, switch to carbon brick or fluoropolymer linings. Always specify the chemical environment when ordering.',
     },
     {
       q: 'What is the standard for acid-proof bricks in India?',
@@ -497,7 +497,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'How are acid-proof bricks installed?',
-      a: 'Surface preparation: clean concrete or steel substrate, primer coat. Membrane: bituminous or rubber sheet to seal the substrate. Bedding: chemical-resistant mortar at 6–10 mm thickness. Brick-laying: stretcher bond, joints 3–6 mm wide, fully filled. Cure: 24–72 hours before chemical exposure. Skilled installation is essential — bad workmanship will fail in months.',
+      a: 'Surface preparation: clean concrete or steel substrate, primer coat. Membrane: bituminous or rubber sheet to seal the substrate. Bedding: chemical-resistant mortar at 6–10 mm thickness. Brick-laying: stretcher bond, joints 3–6 mm wide, fully filled. Cure: 24–72 hours before chemical exposure. Skilled installation is essential, bad workmanship will fail in months.',
     },
     {
       q: 'How long do acid-proof brick linings last?',
@@ -516,7 +516,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What standards do acid-resistant tiles comply with?',
-      a: 'IS 4457 (Indian Standard) specifies acid-resistance, porosity, water absorption, modulus of rupture, and thermal-shock requirements. International equivalents are DIN 51091 (Germany), ASTM C-279 (USA), and EN 12808 (Europe). Crown Ceramics tiles supplied by Shanker Agencies comply with IS 4457 Class 1 — full test certificates with every dispatch.',
+      a: 'IS 4457 (Indian Standard) specifies acid-resistance, porosity, water absorption, modulus of rupture, and thermal-shock requirements. International equivalents are DIN 51091 (Germany), ASTM C-279 (USA), and EN 12808 (Europe). Crown Ceramics tiles supplied by Shanker Agencies comply with IS 4457 Class 1, full test certificates with every dispatch.',
     },
     {
       q: 'What sizes and thicknesses are available?',
@@ -524,11 +524,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What jointing is used with acid-resistant tiles?',
-      a: 'For most chemical floors: silicate cement (sulphuric, HCl, dilute acids, low cost), furan resin (best general resistance including organic acids), or epoxy resin (mechanical impact areas, food and pharma). Joint width is typically 3–6 mm. The membrane below the tile (bituminous or rubber) is just as important as the joint material — both must be specified together.',
+      a: 'For most chemical floors: silicate cement (sulphuric, HCl, dilute acids, low cost), furan resin (best general resistance including organic acids), or epoxy resin (mechanical impact areas, food and pharma). Joint width is typically 3–6 mm. The membrane below the tile (bituminous or rubber) is just as important as the joint material, both must be specified together.',
     },
     {
       q: 'Do you supply complete acid-proofing systems?',
-      a: 'Yes — we supply full system packages: membrane, bedding mortar, acid-resistant tiles, jointing compound, and edge sealants. Buying the full system from one source ensures chemical compatibility, simplifies inventory, and consolidates warranty. Crown Ceramics tiles plus matching mortar from our regular supply partners. We can also recommend qualified installation contractors in your region.',
+      a: 'Yes, we supply full system packages: membrane, bedding mortar, acid-resistant tiles, jointing compound, and edge sealants. Buying the full system from one source ensures chemical compatibility, simplifies inventory, and consolidates warranty. Crown Ceramics tiles plus matching mortar from our regular supply partners. We can also recommend qualified installation contractors in your region.',
     },
   ],
 
@@ -540,7 +540,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What temperature can mullite bricks withstand?',
-      a: 'Mullite bricks (60–75% Al₂O₃) are used up to about 1800°C, with PCE values around SK 37–38. Their defining strength is low creep — they resist slow deformation under load at temperature better than ordinary high-alumina brick, which is why they are preferred for load-bearing structures like blast furnace stoves and kiln car decks.',
+      a: 'Mullite bricks (60–75% Al₂O₃) are used up to about 1800°C, with PCE values around SK 37–38. Their defining strength is low creep, they resist slow deformation under load at temperature better than ordinary high-alumina brick, which is why they are preferred for load-bearing structures like blast furnace stoves and kiln car decks.',
     },
     {
       q: 'Where are mullite bricks used?',
@@ -559,7 +559,7 @@ export const PRODUCT_FAQS = {
   'andalusite-bricks': [
     {
       q: 'What is special about andalusite bricks?',
-      a: 'Andalusite bricks are made from the natural mineral andalusite, which converts to mullite plus a siliceous phase when fired — a reaction called mullitisation. This in-situ reaction gives excellent volume stability and low creep, so the bricks hold their dimensions through repeated thermal cycles. They are an economical step up from fireclay where stability matters.',
+      a: 'Andalusite bricks are made from the natural mineral andalusite, which converts to mullite plus a siliceous phase when fired, a reaction called mullitisation. This in-situ reaction gives excellent volume stability and low creep, so the bricks hold their dimensions through repeated thermal cycles. They are an economical step up from fireclay where stability matters.',
     },
     {
       q: 'What is the maximum service temperature of andalusite brick?',
@@ -567,7 +567,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'When should I choose andalusite over high alumina brick?',
-      a: 'Choose andalusite where you need excellent volume stability and low creep at moderate temperatures (up to ~1600°C) at a lower cost than 70%+ high-alumina brick — for example reheating furnace hearths, stove zones and ceramic kilns. For higher temperatures or severe slag duty, step up to high-alumina or mullite grades.',
+      a: 'Choose andalusite where you need excellent volume stability and low creep at moderate temperatures (up to ~1600°C) at a lower cost than 70%+ high-alumina brick, for example reheating furnace hearths, stove zones and ceramic kilns. For higher temperatures or severe slag duty, step up to high-alumina or mullite grades.',
     },
     {
       q: 'Where are andalusite bricks used?',
@@ -582,11 +582,11 @@ export const PRODUCT_FAQS = {
   'fused-cast-azs-blocks': [
     {
       q: 'What does AZS stand for?',
-      a: 'AZS stands for Alumina-Zirconia-Silica — the three main oxides in the block. Fused cast AZS is produced by melting the oxide blend above 1800°C and casting it into dense, near-zero-porosity blocks. The zirconia content (33–41% ZrO₂) is what gives the exceptional resistance to molten glass corrosion that makes AZS the standard for glass furnace contact zones.',
+      a: 'AZS stands for Alumina-Zirconia-Silica, the three main oxides in the block. Fused cast AZS is produced by melting the oxide blend above 1800°C and casting it into dense, near-zero-porosity blocks. The zirconia content (33–41% ZrO₂) is what gives the exceptional resistance to molten glass corrosion that makes AZS the standard for glass furnace contact zones.',
     },
     {
       q: 'What is the difference between AZS-33, AZS-36 and AZS-41?',
-      a: 'The number is the ZrO₂ percentage: AZS-33 has about 33% zirconia, AZS-36 about 36%, and AZS-41 about 41%. Higher zirconia means greater resistance to glass corrosion and higher density (3.4 to 4.0 g/cc) — and higher cost. AZS-33 is used in superstructure, AZS-36 in sidewalls, and AZS-41 in the most aggressive throat and paving zones.',
+      a: 'The number is the ZrO₂ percentage: AZS-33 has about 33% zirconia, AZS-36 about 36%, and AZS-41 about 41%. Higher zirconia means greater resistance to glass corrosion and higher density (3.4 to 4.0 g/cc), and higher cost. AZS-33 is used in superstructure, AZS-36 in sidewalls, and AZS-41 in the most aggressive throat and paving zones.',
     },
     {
       q: 'What is void-free (VF) cast AZS?',
@@ -628,7 +628,7 @@ export const PRODUCT_FAQS = {
   'alumina-carbon-bricks': [
     {
       q: 'What are alumina-carbon bricks used for?',
-      a: 'Alumina-carbon (Al₂O₃-C) bricks are used mainly in steel ladles — for the wall working lining, bottom impact pad, slide-gate surround and well-block area. The graphite makes them non-wetting to steel and slag and highly resistant to thermal shock, while the alumina provides refractoriness and erosion resistance through the ladle campaign.',
+      a: 'Alumina-carbon (Al₂O₃-C) bricks are used mainly in steel ladles, for the wall working lining, bottom impact pad, slide-gate surround and well-block area. The graphite makes them non-wetting to steel and slag and highly resistant to thermal shock, while the alumina provides refractoriness and erosion resistance through the ladle campaign.',
     },
     {
       q: 'Why is carbon added to alumina bricks?',
@@ -640,18 +640,18 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'How are alumina-carbon bricks installed?',
-      a: 'They are laid with tight joints (1–2 mm) using carbon-bonded or high-alumina mortar. Because the carbon oxidises above about 400°C in air, dry-out should limit oxidising atmosphere — coke-breeze or controlled reducing heat-up is used where specified. Proper alignment around the slide-gate and well block is essential.',
+      a: 'They are laid with tight joints (1–2 mm) using carbon-bonded or high-alumina mortar. Because the carbon oxidises above about 400°C in air, dry-out should limit oxidising atmosphere, coke-breeze or controlled reducing heat-up is used where specified. Proper alignment around the slide-gate and well block is essential.',
     },
     {
       q: 'Does Shanker Agencies supply alumina-carbon bricks?',
-      a: 'Yes. Shanker Agencies supplies TRL Krosaki and IFGL alumina-carbon bricks zoned to your ladle design — barrel, slag line, metal line and impact pad — with campaign-life optimisation support and matching flow-control refractories.',
+      a: 'Yes. Shanker Agencies supplies TRL Krosaki and IFGL alumina-carbon bricks zoned to your ladle design, barrel, slag line, metal line and impact pad, with campaign-life optimisation support and matching flow-control refractories.',
     },
   ],
 
   'magnesia-carbon-bricks': [
     {
       q: 'What are MgO-C (magnesia-carbon) bricks used for?',
-      a: 'MgO-C bricks are the standard lining for basic oxygen furnaces (BOF/converters), electric arc furnace (EAF) hot spots and slag lines, and steel ladle slag and metal lines. The magnesia resists basic steelmaking slags while the graphite makes the brick non-wetting and highly thermal-shock resistant — essential for the severe cycling of converters and arc furnaces.',
+      a: 'MgO-C bricks are the standard lining for basic oxygen furnaces (BOF/converters), electric arc furnace (EAF) hot spots and slag lines, and steel ladle slag and metal lines. The magnesia resists basic steelmaking slags while the graphite makes the brick non-wetting and highly thermal-shock resistant, essential for the severe cycling of converters and arc furnaces.',
     },
     {
       q: 'How much carbon do magnesia-carbon bricks contain?',
@@ -674,11 +674,11 @@ export const PRODUCT_FAQS = {
   'plastic-refractories': [
     {
       q: 'What is a plastic refractory?',
-      a: 'A plastic refractory is a stiff, putty-like refractory mix supplied ready to install — you ram or gun it into place and dry it in service, rather than casting it. Phosphate-bonded high-alumina grades develop strength quickly on heating and hold their shape around complex geometry, making them ideal for burner blocks, patching and linings around tubes.',
+      a: 'A plastic refractory is a stiff, putty-like refractory mix supplied ready to install, you ram or gun it into place and dry it in service, rather than casting it. Phosphate-bonded high-alumina grades develop strength quickly on heating and hold their shape around complex geometry, making them ideal for burner blocks, patching and linings around tubes.',
     },
     {
       q: 'What is the difference between plastic refractory and castable?',
-      a: 'Castables are mixed with water and poured or vibrated into formwork, setting by hydraulic bond. Plastic refractories are supplied at installation consistency and rammed in by hand or pneumatic rammer — no water added to phosphate-bonded grades. Plastics are better for repairs, complex shapes and overhead/vertical work where formwork is impractical.',
+      a: 'Castables are mixed with water and poured or vibrated into formwork, setting by hydraulic bond. Plastic refractories are supplied at installation consistency and rammed in by hand or pneumatic rammer, no water added to phosphate-bonded grades. Plastics are better for repairs, complex shapes and overhead/vertical work where formwork is impractical.',
     },
     {
       q: 'Where are plastic refractories used?',
@@ -697,15 +697,15 @@ export const PRODUCT_FAQS = {
   'microporous-insulation': [
     {
       q: 'What is microporous insulation?',
-      a: 'Microporous insulation is a solid made from fumed (pyrogenic) silica with infrared opacifiers and reinforcing fibre, engineered so its pores are smaller than the mean free path of air molecules. This suppresses heat transfer by gas conduction, giving the lowest thermal conductivity of any solid insulation — around 0.020–0.030 W/m·K.',
+      a: 'Microporous insulation is a solid made from fumed (pyrogenic) silica with infrared opacifiers and reinforcing fibre, engineered so its pores are smaller than the mean free path of air molecules. This suppresses heat transfer by gas conduction, giving the lowest thermal conductivity of any solid insulation, around 0.020–0.030 W/m·K.',
     },
     {
       q: 'Why is microporous insulation better than ceramic fibre or calcium silicate?',
-      a: 'Its thermal conductivity is roughly three to five times lower, so a much thinner panel achieves the same insulation. That makes it ideal where space is tight — ladle and tundish back-up, or shells where you must cut surface temperature without adding thickness. It costs more per unit, but the thickness and energy savings often justify it.',
+      a: 'Its thermal conductivity is roughly three to five times lower, so a much thinner panel achieves the same insulation. That makes it ideal where space is tight, ladle and tundish back-up, or shells where you must cut surface temperature without adding thickness. It costs more per unit, but the thickness and energy savings often justify it.',
     },
     {
       q: 'What temperature can microporous insulation handle?',
-      a: 'Standard microporous boards and panels are rated to about 1000°C. Because it is a back-up insulation, it always sits behind the dense or ceramic-fibre hot-face lining — never in direct flame or molten-metal contact. Within that role it dramatically reduces shell temperature and heat loss.',
+      a: 'Standard microporous boards and panels are rated to about 1000°C. Because it is a back-up insulation, it always sits behind the dense or ceramic-fibre hot-face lining, never in direct flame or molten-metal contact. Within that role it dramatically reduces shell temperature and heat loss.',
     },
     {
       q: 'Where is microporous insulation used?',
@@ -728,7 +728,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is argon purging in a monoblock stopper?',
-      a: 'Many stoppers have an internal argon line that purges gas through the nose. The argon flow prevents alumina build-up (clogging) at the sealing surface — critical when casting aluminium-killed steels — and helps keep the flow path clean through long sequence casts. IFGL supplies argon-purging stopper designs.',
+      a: 'Many stoppers have an internal argon line that purges gas through the nose. The argon flow prevents alumina build-up (clogging) at the sealing surface, critical when casting aluminium-killed steels, and helps keep the flow path clean through long sequence casts. IFGL supplies argon-purging stopper designs.',
     },
     {
       q: 'What is the difference between a stopper rod and a slide gate?',
@@ -747,7 +747,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'How does a tundish nozzle work with a stopper rod?',
-      a: 'The stopper nose seats into the tundish nozzle bore. As the stopper raises and lowers, the gap between stopper and nozzle opens or closes, controlling the steel flow rate into the mould. The two components are matched as a pair — bore and nose geometry must align for a clean seal and accurate flow.',
+      a: 'The stopper nose seats into the tundish nozzle bore. As the stopper raises and lowers, the gap between stopper and nozzle opens or closes, controlling the steel flow rate into the mould. The two components are matched as a pair, bore and nose geometry must align for a clean seal and accurate flow.',
     },
     {
       q: 'Why do tundish nozzles have zirconia bore inserts?',
@@ -774,7 +774,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'How long does a well block last?',
-      a: 'Well blocks are longer-life components than the consumable slide-gate plates and inner nozzles they house — they are typically changed during full ladle relining rather than every heat. Actual life depends on steel grade, teeming temperature and slide-gate practice. Erosion at the nozzle seat is the usual wear mode.',
+      a: 'Well blocks are longer-life components than the consumable slide-gate plates and inner nozzles they house, they are typically changed during full ladle relining rather than every heat. Actual life depends on steel grade, teeming temperature and slide-gate practice. Erosion at the nozzle seat is the usual wear mode.',
     },
     {
       q: 'How is a well block installed?',
@@ -793,11 +793,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Why do carbon bricks resist acids so well?',
-      a: 'Carbon is chemically inert to almost all mineral acids, alkalis and organic solvents — including hydrofluoric and phosphoric acid that attack silica-based and most oxide refractories. This near-universal corrosion resistance, combined with high thermal conductivity, makes carbon brick the material of choice for aggressive chemical and blast-furnace-hearth duty.',
+      a: 'Carbon is chemically inert to almost all mineral acids, alkalis and organic solvents, including hydrofluoric and phosphoric acid that attack silica-based and most oxide refractories. This near-universal corrosion resistance, combined with high thermal conductivity, makes carbon brick the material of choice for aggressive chemical and blast-furnace-hearth duty.',
     },
     {
       q: 'Can carbon bricks be used in air at high temperature?',
-      a: 'No — carbon oxidises (burns off) in air above roughly 400–500°C, so carbon bricks are specified for reducing or chemical (non-oxidising) environments, not open-air oxidising furnaces. In blast furnace hearths and sealed chemical vessels the atmosphere is non-oxidising, so the carbon is stable and long-lasting.',
+      a: 'No, carbon oxidises (burns off) in air above roughly 400–500°C, so carbon bricks are specified for reducing or chemical (non-oxidising) environments, not open-air oxidising furnaces. In blast furnace hearths and sealed chemical vessels the atmosphere is non-oxidising, so the carbon is stable and long-lasting.',
     },
     {
       q: 'What is impervious (resin-impregnated) carbon brick?',
@@ -812,7 +812,7 @@ export const PRODUCT_FAQS = {
   'acid-proof-cement': [
     {
       q: 'What is acid proof cement used for?',
-      a: 'Acid proof cement is the bedding and jointing material that holds acid-proof brick and tile linings together and seals the joints against chemical attack. It is used in chemical plant floors, acid storage tanks, absorption and scrubbing towers, pickling tanks, effluent channels and chimney linings — wherever acid-resistant masonry is laid.',
+      a: 'Acid proof cement is the bedding and jointing material that holds acid-proof brick and tile linings together and seals the joints against chemical attack. It is used in chemical plant floors, acid storage tanks, absorption and scrubbing towers, pickling tanks, effluent channels and chimney linings, wherever acid-resistant masonry is laid.',
     },
     {
       q: 'What types of acid proof cement are there?',
@@ -824,11 +824,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'How is acid proof cement applied?',
-      a: 'Silicate cement is mixed with hardener in strict ratio and used within its pot life, applied over an installed membrane with full, void-free joints. Silicate joints must be cured ("soured" with acid wash) before chemical service per the supplier schedule. The membrane beneath is as important as the cement — both are specified together.',
+      a: 'Silicate cement is mixed with hardener in strict ratio and used within its pot life, applied over an installed membrane with full, void-free joints. Silicate joints must be cured ("soured" with acid wash) before chemical service per the supplier schedule. The membrane beneath is as important as the cement, both are specified together.',
     },
     {
       q: 'Does Shanker Agencies supply acid proof cement systems?',
-      a: 'Yes. Shanker Agencies supplies the complete Crown Ceramics acid-proof system — membrane, cement, bricks and tiles — with the cement chemistry matched to your exact chemical exposure, and can recommend qualified installation contractors.',
+      a: 'Yes. Shanker Agencies supplies the complete Crown Ceramics acid-proof system, membrane, cement, bricks and tiles, with the cement chemistry matched to your exact chemical exposure, and can recommend qualified installation contractors.',
     },
   ],
 };

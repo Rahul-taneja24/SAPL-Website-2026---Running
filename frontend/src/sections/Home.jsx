@@ -28,7 +28,7 @@ const featuredSolutions = [
   { title: "Cement Kiln Linings", icon: Flame, desc: "Engineered for rotary kilns, preheaters, and coolers resisting alkali attack.", products: "Basic Bricks · High Alumina · Castables", metric: "Operating at 1450°C+" },
   { title: "Aluminum Furnace Solutions", icon: Thermometer, desc: "Non-wetting, thermal shock resistant linings preventing iron contamination.", products: "Silicon Carbide · High Alumina Castables", metric: "Zero-iron contamination" },
   { title: "Ceramic Fiber & Insulation", icon: Zap, desc: "Energy-saving insulation systems that cut heat loss by up to 40%.", products: "Ceramic Fiber Blankets · Modules · Boards", metric: "Up to 40% energy savings" },
-  { title: "Flow Control Systems", icon: GitBranch, desc: "Complete flow control packages for continuous casting — ladle to mould.", products: "Slide Gates · Shrouds · SEN", metric: "Precision to 0.1 t/min" },
+  { title: "Flow Control Systems", icon: GitBranch, desc: "Complete flow control packages for continuous casting, ladle to mould.", products: "Slide Gates · Shrouds · SEN", metric: "Precision to 0.1 t/min" },
   { title: "Chemical & Acid Proofing", icon: Shield, desc: "Corrosion-resistant linings for fertilizer, pharma, and chemical processing plants.", products: "Acid Proof Bricks · Tiles · Carbon Bricks", metric: "Resists pH 0–14" },
 ];
 
@@ -43,10 +43,10 @@ const brands = [
 ];
 
 const whyUs = [
-  { icon: Shield, title: "Engineering & Manufacturing", desc: "We don't just supply — we engineer solutions. From furnace lining design and material selection to manufacturing custom refractory shapes and installation supervision.", highlight: "Full lifecycle" },
+  { icon: Shield, title: "Engineering & Manufacturing", desc: "We don't just supply, we engineer solutions. From furnace lining design and material selection to manufacturing custom refractory shapes and installation supervision.", highlight: "Full lifecycle" },
   { icon: Globe, title: "Exporting to 50+ Countries", desc: "Serving steel plants, cement factories & foundries across GCC, ASEAN, Africa, UK & Europe. Export documentation, international logistics, and dedicated account management.", highlight: "Global reach" },
   { icon: Package, title: "Authorized & Premium Brands", desc: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Strategic supply partner for TRL Krosaki, IFGL, Calderys & more.", highlight: "Single source" },
-  { icon: TrendingUp, title: "Total Cost Optimized", desc: "Our engineers recommend the right refractory — not the most expensive. We optimize for campaign life, energy efficiency & reduced downtime, cutting your TCO by 15-30%.", highlight: "Cost optimized" },
+  { icon: TrendingUp, title: "Total Cost Optimized", desc: "Our engineers recommend the right refractory, not the most expensive. We optimize for campaign life, energy efficiency & reduced downtime, cutting your TCO by 15-30%.", highlight: "Cost optimized" },
 ];
 
 const testimonials = [
@@ -156,7 +156,7 @@ const Home = () => {
       {/* ══════════════════════════════════════════════
           HERO
           ─────────────────────────────────────────────
-          Gradient: IDENTICAL to About.jsx hero —
+          Gradient: IDENTICAL to About.jsx hero
             rgba(30, 58, 95, 0.95) → rgba(30, 64, 175, 0.85)
           Height: fills viewport below navbar
           Includes: Ken Burns bg, particles, grid pattern
@@ -178,7 +178,7 @@ const Home = () => {
           aria-hidden="true"
         />
 
-        {/* Gradient overlay — SAME as About.jsx */}
+        {/* Gradient overlay, SAME as About.jsx */}
         <div
           className="absolute inset-0"
           style={{
@@ -188,7 +188,7 @@ const Home = () => {
           aria-hidden="true"
         />
 
-        {/* Subtle orange grid — industrial character */}
+        {/* Subtle orange grid, industrial character */}
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -204,12 +204,12 @@ const Home = () => {
 
         <div className="relative z-10 flex flex-col flex-1 w-full">
 
-          {/* ── Main content — grows to fill space ── */}
+          {/* ── Main content, grows to fill space ── */}
           <div className="flex-1 flex items-center lg:items-center pb-6 pt-2 lg:py-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
 
-                {/* LEFT — text */}
+                {/* LEFT, text */}
                 <div>
                   {/* Trust badge */}
                   <div className="hero-reveal hero-d0 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
@@ -221,7 +221,7 @@ const Home = () => {
                     </span>
                   </div>
 
-                  {/* H1 — Simplified for SEO */}
+                  {/* H1, Simplified for SEO */}
                   <h1
                     className="hero-reveal hero-d1 font-oswald font-bold text-white leading-tight mb-4"
                     style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", letterSpacing: "0.02em" }}
@@ -232,11 +232,11 @@ const Home = () => {
                   {/* Subheadline */}
                   <p className="hero-reveal hero-d2 text-gray-200 text-lg mb-6 leading-relaxed max-w-lg">
                     {region === "india"
-                      ? "India's premier refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool — supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical plants."
-                      : "India's premier refractory engineering partner. We supply & engineer world-class refractories — delivering to GCC, ASEAN, Africa, UK & Europe with full technical documentation and installation guidance."}
+                      ? "India's premier refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool, supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical plants."
+                      : "India's premier refractory engineering partner. We supply & engineer world-class refractories, delivering to GCC, ASEAN, Africa, UK & Europe with full technical documentation and installation guidance."}
                   </p>
 
-                  {/* Trust pills — Sleek, horizontal, smaller font */}
+                  {/* Trust pills, Sleek, horizontal, smaller font */}
                   <div className="hero-reveal hero-d3 flex flex-wrap items-center gap-x-6 gap-y-2 mb-6">
                     {["Trusted Partner for Industrial Clients", "Dedicated Technical & Customer Support", "Tailored Refractory Solutions Across Sectors"].map((item) => (
                       <div key={item} className="flex items-center gap-2">
@@ -267,7 +267,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                {/* RIGHT — stat cards, desktop only */}
+                {/* RIGHT, stat cards, desktop only */}
                 <div className="hero-reveal hero-d5 hidden lg:grid grid-cols-2 gap-3">
                   {[
                     { value: "45", suffix: "+", label: "Years of Excellence", sub: "Since 1980", icon: Award, orange: true },
@@ -303,7 +303,7 @@ const Home = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          MOBILE STATS (hidden on lg — already in hero cards)
+          MOBILE STATS (hidden on lg, already in hero cards)
       ══════════════════════════════════════════════ */}
       <section
         className="lg:hidden py-10 px-4"
@@ -328,7 +328,7 @@ const Home = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          SCROLLING MARQUEE — product name ticker
+          SCROLLING MARQUEE, product name ticker
       ══════════════════════════════════════════════ */}
       <div className="bg-gray-900 border-y border-gray-800 py-4 overflow-hidden" aria-hidden="true">
         <div className="flex" style={{ animation: "marquee 30s linear infinite" }}>
@@ -412,7 +412,7 @@ const Home = () => {
               Refractory Engineering &amp; Manufacturing Since 1980
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed mb-10">
-              As India's premier refractory engineering partner, we engineer, manufacture, and supply the full spectrum of refractory solutions. From high alumina bricks and castables to ceramic fiber insulation and flow control systems — our 45+ years of expertise covers blast furnaces, steel ladles, rotary kilns, induction furnaces, and chemical plants. Authorised dealer of CUMI, Crown Ceramics &amp; Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL &amp; Saint-Gobain. Our engineers focus on thermal shock resistance, slag corrosion protection, and energy efficiency to extend your campaign life by 25-40% and reduce plant downtime.
+              As India's premier refractory engineering partner, we engineer, manufacture, and supply the full spectrum of refractory solutions. From high alumina bricks and castables to ceramic fiber insulation and flow control systems, our 45+ years of expertise covers blast furnaces, steel ladles, rotary kilns, induction furnaces, and chemical plants. Authorised dealer of CUMI, Crown Ceramics &amp; Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL &amp; Saint-Gobain. Our engineers focus on thermal shock resistance, slag corrosion protection, and energy efficiency to extend your campaign life by 25-40% and reduce plant downtime.
             </p>
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="h-px w-12 bg-gray-200" />
@@ -514,7 +514,7 @@ const Home = () => {
               ENGINEERED FOR PERFORMANCE
             </h2>
             <p className="text-gray-500 max-w-2xl mx-auto text-sm leading-relaxed">
-              Complete refractory packages designed around your specific equipment and processes — not generic product lists
+              Complete refractory packages designed around your specific equipment and processes, not generic product lists
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
@@ -560,7 +560,7 @@ const Home = () => {
               7+ PREMIUM BRAND PARTNERS
             </h2>
             <p className="text-gray-400 text-sm mt-5 max-w-md mx-auto">
-              One expert contact for your entire refractory range — from India's most trusted manufacturers.
+              One expert contact for your entire refractory range, from India's most trusted manufacturers.
             </p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8 stagger-children">
@@ -587,7 +587,7 @@ const Home = () => {
 
       {/* ══════════════════════════════════════════════
           WHY CHOOSE US
-          Uses gradient-dark + industrial-texture —
+          Uses gradient-dark + industrial-texture
           SAME as About.jsx stats section
       ══════════════════════════════════════════════ */}
       <section className="py-24 px-4 gradient-dark industrial-texture reveal reveal-up" data-testid="why-choose-us">
@@ -602,7 +602,7 @@ const Home = () => {
               <span className="text-[#F97316]">NOT JUST A SUPPLIER</span>
             </h2>
             <p className="text-white/60 max-w-lg mx-auto text-sm">
-              The difference between a refractory vendor and a refractory partner is measurable — in campaign life, energy costs, and plant uptime.
+              The difference between a refractory vendor and a refractory partner is measurable, in campaign life, energy costs, and plant uptime.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
@@ -617,7 +617,7 @@ const Home = () => {
               </article>
             ))}
           </div>
-          {/* ISO certifications — same style as About.jsx */}
+          {/* ISO certifications, same style as About.jsx */}
           <div className="flex flex-wrap justify-center gap-4 mt-12">
             {["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018"].map((cert) => (
               <div key={cert} className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 border border-white/15 text-white text-sm font-medium">
@@ -678,7 +678,7 @@ const Home = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          CTA — gradient-orange, same as About.jsx CTA
+          CTA, gradient-orange, same as About.jsx CTA
       ══════════════════════════════════════════════ */}
       <section className="py-20 px-4 gradient-orange reveal reveal-up" data-testid="cta-section">
         <div className="max-w-5xl mx-auto text-center">
@@ -688,7 +688,7 @@ const Home = () => {
             YOUR REQUIREMENTS?
           </h2>
           <p className="text-white/85 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
-            Our refractory engineers respond within 4 business hours. Expert recommendations and competitive quotes — no obligation.
+            Our refractory engineers respond within 4 business hours. Expert recommendations and competitive quotes, no obligation.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button

@@ -1,4 +1,4 @@
-// app/sitemap.js — Comprehensive sitemap for Shanker Agencies
+// app/sitemap.js, Comprehensive sitemap for Shanker Agencies
 // Google ignores <priority> and <changefreq>, so we emit only <loc> and <lastmod>.
 // We also compute a realistic lastmod per URL where possible (blog post publishDate,
 // and a stable per-deploy timestamp for structural pages) rather than a single
@@ -12,18 +12,18 @@ const BASE = 'https://www.shankeragencies.com';
 // Stable per-deploy timestamp for structural pages (refreshes on every build).
 const DEPLOY_TS = new Date().toISOString();
 
-// Structural pages — use the deploy timestamp. These genuinely change each deploy
+// Structural pages, use the deploy timestamp. These genuinely change each deploy
 // as data or copy is refreshed.
 const STRUCTURAL_LASTMOD = DEPLOY_TS;
 
-// Evergreen legal pages — very infrequent updates. Pin a fixed date so crawlers
+// Evergreen legal pages, very infrequent updates. Pin a fixed date so crawlers
 // stop re-crawling every build.
 const LEGAL_LASTMOD = '2026-01-01T00:00:00.000Z';
 
 export default async function sitemap() {
   const mainPages = [
     // Homepage canonical is `https://www.shankeragencies.com` (no trailing slash),
-    // so the sitemap entry must match exactly — mismatched URLs are a known
+    // so the sitemap entry must match exactly, mismatched URLs are a known
     // credibility issue with both Google and AI crawlers.
     { url: `${BASE}`,                           lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/about`,                     lastModified: STRUCTURAL_LASTMOD },
@@ -64,13 +64,13 @@ export default async function sitemap() {
     'cumi', 'calderys', 'trl-krosaki', 'ifgl', 'mahakoshal', 'divine-cerawool', 'crown-ceramics', 'saint-gobain',
   ].map((slug) => ({ url: `${BASE}/brands/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
 
-  // Geo location pages — all from static data
+  // Geo location pages, all from static data
   const locationPages = LOCATIONS_DATA.map((loc) => ({
     url: `${BASE}/refractory-supplier-in/${loc.slug}`,
     lastModified: STRUCTURAL_LASTMOD,
   }));
 
-  // Engineering Reference Scenarios — fixed per-page lastmod tied to year so
+  // Engineering Reference Scenarios, fixed per-page lastmod tied to year so
   // the sitemap stays stable between deploys (instead of a single deploy-time
   // bump on every URL, which Google flags as low-credibility).
   const engineeringReferencePages = CASE_STUDIES.map((cs) => ({
@@ -80,7 +80,7 @@ export default async function sitemap() {
       : STRUCTURAL_LASTMOD,
   }));
 
-  // Blog pages — use each post's own publishDate so lastmod is unique per URL
+  // Blog pages, use each post's own publishDate so lastmod is unique per URL
   const staticBlogPages = BLOG_POSTS_DATA.map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: post.publishDate
@@ -88,7 +88,7 @@ export default async function sitemap() {
       : STRUCTURAL_LASTMOD,
   }));
 
-  // CMS-authored posts (optional — pulled from the backend if reachable)
+  // CMS-authored posts (optional, pulled from the backend if reachable)
   let apiBlogPages = [];
   try {
     const res = await fetch(
@@ -109,7 +109,7 @@ export default async function sitemap() {
     }
   } catch (_) {}
 
-  // Note: llms.txt / ai-roadmap.json intentionally NOT in sitemap — Google/Bing
+  // Note: llms.txt / ai-roadmap.json intentionally NOT in sitemap, Google/Bing
   // won't index them and they waste crawl budget. They are served and referenced
   // in robots.js + layout metadata instead.
 

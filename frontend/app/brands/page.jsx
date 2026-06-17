@@ -2,7 +2,7 @@ import Brands from '@/sections/Brands';
 
 export const metadata = {
   title: 'Authorized Refractory Brands | CUMI, Divine Cerawool, Crown Ceramics | Shanker Agencies',
-  description: "Shanker Agencies is an authorized dealer of CUMI, Crown Ceramics & Divine Cerawool — and trusted supply partner for Calderys, TRL Krosaki & IFGL. Genuine products, factory-direct pricing, technical support.",
+  description: "Shanker Agencies is an authorized dealer of CUMI, Crown Ceramics & Divine Cerawool, and trusted supply partner for Calderys, TRL Krosaki & IFGL. Genuine products, factory-direct pricing, technical support.",
   alternates: { canonical: '/brands' },
   openGraph: {
     title: 'Authorized Refractory Brands | Shanker Agencies',
@@ -47,7 +47,7 @@ const brandsSchema = {
         "@type": "Brand",
         "name": "CUMI Super Refractories",
         "alternateName": "CUMI",
-        "description": "India's leading refractory manufacturer — high alumina bricks, castables, ramming mass, insulating fire bricks, ceramic fiber.",
+        "description": "India's leading refractory manufacturer, high alumina bricks, castables, ramming mass, insulating fire bricks, ceramic fiber.",
         "url": "https://www.shankeragencies.com/brands/cumi"
       }
     },

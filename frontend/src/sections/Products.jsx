@@ -86,7 +86,7 @@ function Gallery({ images, name }) {
           {images.map((img, i) => (
             <button key={i} onClick={() => setActive(i)} aria-label={`View ${name} image ${i + 1}`}
               className={`w-16 h-16 rounded-lg overflow-hidden border-2 transition-all flex-shrink-0 ${active === i ? "border-[#F97316]" : "border-gray-200 hover:border-gray-400"}`}>
-              <img src={img} alt={`${name} — view ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
+              <img src={img} alt={`${name}, view ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
             </button>
           ))}
         </div>
@@ -102,7 +102,7 @@ function ProductCard({ product, categorySlug }) {
     <Link href={`/products/${categorySlug}/${product.id}`}
       className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col">
 
-      {/* Image — taller, with gradient overlay */}
+      {/* Image, taller, with gradient overlay */}
       <div className="relative h-52 overflow-hidden bg-gray-100 flex-shrink-0">
         <img src={product.images?.[0]} alt={product.name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
@@ -116,7 +116,7 @@ function ProductCard({ product, categorySlug }) {
           </span>
         )}
 
-        {/* Temp badge — bottom left */}
+        {/* Temp badge, bottom left */}
         <span className="absolute bottom-3 left-3 flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold text-white"
           style={{ background: `${meta.accent}cc`, backdropFilter: "blur(4px)" }}>
           <Thermometer size={10} /> {product.tempMax || "—"}
@@ -332,7 +332,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
                   <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F]">TECHNICAL SPECIFICATIONS</h2>
                 </div>
                 <SpecTable specs={product.specs} />
-                <p className="mt-3 text-xs text-gray-400 italic">* Test conditions: IS 1528 (India) / ASTM C-133 / EN 1402. Values are typical — exact data sheets available on request.</p>
+                <p className="mt-3 text-xs text-gray-400 italic">* Test conditions: IS 1528 (India) / ASTM C-133 / EN 1402. Values are typical, exact data sheets available on request.</p>
               </div>
             )}
 
@@ -401,7 +401,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
               </div>
             )}
 
-            {/* FAQs — buyer-intent Q&A for AI Overviews / Perplexity / Bing Copilot */}
+            {/* FAQs, buyer-intent Q&A for AI Overviews / Perplexity / Bing Copilot */}
             <ProductFAQ faqs={faqs} accent={meta.accent} />
           </div>
 
@@ -472,7 +472,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
               {/* Delivery note */}
               <div className="bg-green-50 rounded-xl p-4 border border-green-100">
                 <p className="text-xs text-green-800 font-semibold mb-1">📦 Quick Delivery</p>
-                <p className="text-xs text-green-700">Standard grades in stock — Delhi warehouse. Pan-India delivery in 2–5 days. Same-day dispatch for urgent orders ≤ 2 MT.</p>
+                <p className="text-xs text-green-700">Standard grades in stock, Delhi warehouse. Pan-India delivery in 2–5 days. Same-day dispatch for urgent orders ≤ 2 MT.</p>
               </div>
             </div>
           </div>
@@ -532,7 +532,7 @@ function CategoryPage({ category, categorySlug }) {
     <div className="bg-white">
       
 
-      {/* ── Category Hero — full bleed with real background image ── */}
+      {/* ── Category Hero, full bleed with real background image ── */}
       <section className="relative overflow-hidden"
         style={{ minHeight: "420px" }}>
         {/* Background image */}
@@ -618,7 +618,7 @@ function CategoryPage({ category, categorySlug }) {
       <section className="py-14 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-8">
-            ALL PRODUCTS — <span style={{ color: meta.accent }}>{category.name.toUpperCase()}</span>
+            ALL PRODUCTS, <span style={{ color: meta.accent }}>{category.name.toUpperCase()}</span>
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {category.products.map(product => (
@@ -693,7 +693,7 @@ function OverviewPage() {
               REFRACTORY<br /><span className="text-[#F97316]">PRODUCT RANGE</span>
             </h1>
             <p className="text-gray-300 text-base sm:text-lg mb-8 max-w-xl leading-relaxed">
-              CUMI · Calderys · TRL Krosaki · IFGL · Mahakoshal · Divine Cerawool — complete grade tables and application guides.
+              CUMI · Calderys · TRL Krosaki · IFGL · Mahakoshal · Divine Cerawool, complete grade tables and application guides.
             </p>
             <div className="relative max-w-md">
               <Search size={15} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -747,7 +747,7 @@ function OverviewPage() {
                   <Link key={cat.slug} href={`/products/${cat.slug}`}
                     className="group relative bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
 
-                    {/* Full-width image top — portrait crop on mobile, wider on desktop */}
+                    {/* Full-width image top, portrait crop on mobile, wider on desktop */}
                     <div className="relative h-52 sm:h-44 overflow-hidden">
                       <img src={cat.image} alt={cat.name}
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
@@ -771,7 +771,7 @@ function OverviewPage() {
                         </div>
                       </div>
 
-                      {/* Temp badge — top right */}
+                      {/* Temp badge, top right */}
                       <div className="absolute top-4 right-4">
                         <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold text-white"
                           style={{ background: `${cat.accent}cc`, backdropFilter: "blur(4px)" }}>
@@ -779,7 +779,7 @@ function OverviewPage() {
                         </span>
                       </div>
 
-                      {/* Product count — bottom right */}
+                      {/* Product count, bottom right */}
                       <div className="absolute bottom-3 right-4">
                         <span className="text-white/50 text-[10px] font-semibold uppercase tracking-widest">
                           {cat.count} Products
@@ -861,7 +861,7 @@ function OverviewPage() {
       {/* Why SAPL */}
       <section className="py-12 px-4 bg-[#1E3A5F]">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[{ icon: CheckCircle, title: "ISO 9001:2015 Certified", sub: "Quality management across all products and processes" }, { icon: Shield, title: "No Minimum Order", sub: "Trial quantities or bulk — we supply both" }, { icon: Zap, title: "Same-Day Response", sub: "Technical quotes within 4 business hours" }, { icon: Package, title: "Pan-India Delivery", sub: "Delhi warehouse — nationwide in 2–5 days" }].map(({ icon: I, title, sub }) => (
+          {[{ icon: CheckCircle, title: "ISO 9001:2015 Certified", sub: "Quality management across all products and processes" }, { icon: Shield, title: "No Minimum Order", sub: "Trial quantities or bulk, we supply both" }, { icon: Zap, title: "Same-Day Response", sub: "Technical quotes within 4 business hours" }, { icon: Package, title: "Pan-India Delivery", sub: "Delhi warehouse, nationwide in 2–5 days" }].map(({ icon: I, title, sub }) => (
             <div key={title} className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
                 <I size={18} className="text-[#F97316]" />
@@ -879,7 +879,7 @@ function OverviewPage() {
       <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="font-oswald text-4xl font-bold text-[#1E3A5F] mb-4">CAN'T FIND WHAT YOU NEED?</h2>
-          <p className="text-gray-600 mb-8">We carry 200+ grades not all listed here. Call us — our engineers will match the right refractory to your process in minutes.</p>
+          <p className="text-gray-600 mb-8">We carry 200+ grades not all listed here. Call us, our engineers will match the right refractory to your process in minutes.</p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-4 rounded-full font-bold transition-colors shadow-lg shadow-orange-200">
               <MessageCircle size={17} /> Talk to an Engineer

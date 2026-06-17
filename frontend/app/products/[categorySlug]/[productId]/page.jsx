@@ -28,7 +28,7 @@ export async function generateMetadata({ params }) {
       .join(' ');
     return {
       title: `${name} | Refractory Products | Shanker Agencies`,
-      description: `${name} — premium refractory product from Shanker Agencies Pvt. Ltd. 45+ years of refractory engineering expertise. Supply across India, GCC & ASEAN.`,
+      description: `${name}, premium refractory product from Shanker Agencies Pvt. Ltd. 45+ years of refractory engineering expertise. Supply across India, GCC & ASEAN.`,
       alternates: { canonical: `/products/${categorySlug}/${productId}` },
     };
   }
@@ -59,7 +59,7 @@ export default async function ProductDetailPage({ params }) {
     (p) => p.id === productId
   );
 
-  // Lightweight DATA entry (chemistry / brand) — fallback when catalog missing
+  // Lightweight DATA entry (chemistry / brand), fallback when catalog missing
   const product = PRODUCTS_DATA.find(
     (p) =>
       p.subcategory === productId ||
@@ -75,7 +75,7 @@ export default async function ProductDetailPage({ params }) {
   const datasheet = getProductDatasheet(productId);
   const productUrl = `https://www.shankeragencies.com/products/${categorySlug}/${productId}`;
   const productName = catalogEntry?.name || seo?.name || product?.name;
-  // Always emit an image — falls back to OG image so Merchant listings never flag "Missing image"
+  // Always emit an image, falls back to OG image so Merchant listings never flag "Missing image"
   const productImage =
     catalogEntry?.images?.[0] ||
     product?.image ||
@@ -120,7 +120,7 @@ export default async function ProductDetailPage({ params }) {
         if (key === 'grade' || key === 'type' || !val) return;
         additionalProperty.push({
           '@type': 'PropertyValue',
-          name: `${grade} — ${key.toUpperCase()}`,
+          name: `${grade}, ${key.toUpperCase()}`,
           value: String(val),
         });
       });
@@ -147,7 +147,7 @@ export default async function ProductDetailPage({ params }) {
         description:
           catalogEntry?.fullDesc ||
           (product
-            ? `${product.name} — ${product.use}. Max temperature: ${product.temp}. Al₂O₃: ${product.al2o3}. Bulk density: ${product.density}. Features: ${product.features}.`
+            ? `${product.name}, ${product.use}. Max temperature: ${product.temp}. Al₂O₃: ${product.al2o3}. Bulk density: ${product.density}. Features: ${product.features}.`
             : seo?.metaDescription),
         image: [productImage],
         url: productUrl,
@@ -163,7 +163,7 @@ export default async function ProductDetailPage({ params }) {
           price: '0',
           priceCurrency: 'INR',
           priceValidUntil: '2027-12-31',
-          description: 'Quoted on enquiry — varies by grade, brand and order quantity.',
+          description: 'Quoted on enquiry, varies by grade, brand and order quantity.',
           availability: 'https://schema.org/InStock',
           areaServed: ['IN', 'AE', 'SA', 'QA', 'OM', 'KW', 'BH', 'SG', 'MY', 'GB', 'DE'],
           url: productUrl,
@@ -171,7 +171,7 @@ export default async function ProductDetailPage({ params }) {
         additionalProperty: additionalProperty.length ? additionalProperty : undefined,
         audience: {
           '@type': 'Audience',
-          audienceType: 'Industrial Buyers — Steel, Cement, Aluminium, Glass, Power, Petrochemical',
+          audienceType: 'Industrial Buyers, Steel, Cement, Aluminium, Glass, Power, Petrochemical',
         },
       }
     : null;
@@ -184,7 +184,7 @@ export default async function ProductDetailPage({ params }) {
           '@type': 'HowTo',
           '@id': `${productUrl}#howto-install`,
           name: `How to install ${productName}`,
-          description: `Step-by-step refractory installation guidance for ${productName} from Shanker Agencies — authorised dealer with 45+ years of plant-side experience.`,
+          description: `Step-by-step refractory installation guidance for ${productName} from Shanker Agencies, authorised dealer with 45+ years of plant-side experience.`,
           totalTime: 'PT24H',
           tool: [
             { '@type': 'HowToTool', name: 'Refractory mortar / castable mixer' },
@@ -204,7 +204,7 @@ export default async function ProductDetailPage({ params }) {
         }
       : null;
 
-  // ─── FAQPage schema — buyer-intent Q&A for AI Overviews / Perplexity ────
+  // ─── FAQPage schema, buyer-intent Q&A for AI Overviews / Perplexity ────
   const faqSchema =
     faqs.length > 0
       ? {
@@ -266,7 +266,7 @@ export default async function ProductDetailPage({ params }) {
           <div className="max-w-4xl mx-auto">
             <div className="flex items-baseline justify-between flex-wrap gap-2 mb-1">
               <h2 className="font-oswald text-2xl sm:text-3xl font-bold text-[#1E3A5F]">
-                Technical Data Sheet — {productName}
+                Technical Data Sheet, {productName}
               </h2>
               <span className="text-xs text-gray-400">Shanker Agencies Pvt. Ltd. · Typical Values</span>
             </div>
@@ -337,7 +337,7 @@ export default async function ProductDetailPage({ params }) {
               Disclaimer: Values are typical and compiled by Shanker Agencies Pvt. Ltd. from standard
               industry data and published specifications of partner manufacturers (CUMI, Calderys, TRL
               Krosaki, IFGL, Divine Cerawool, Crown Ceramics, Mahakoshal, Saint-Gobain). They are indicative
-              and not a guarantee — confirm the exact grade datasheet before specifying. For a certified
+              and not a guarantee, confirm the exact grade datasheet before specifying. For a certified
               datasheet or quotation, contact info@shankeragencies.com or +91 98999 57888.
             </p>
           </div>

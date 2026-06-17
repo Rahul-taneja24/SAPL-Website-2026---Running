@@ -52,7 +52,7 @@ const INDUSTRY_DATA = {
   },
 };
 
-// Only the eight known industries are valid — any other slug returns a real 404.
+// Only the eight known industries are valid, any other slug returns a real 404.
 export const dynamicParams = false;
 
 export async function generateStaticParams() {

@@ -130,7 +130,7 @@ function IndustrySolutions() {
     const overviewStructuredData = {
       "@context": "https://schema.org",
       "@type": "ItemList",
-      name: "Industry Solutions — Shanker Agencies Refractories",
+      name: "Industry Solutions, Shanker Agencies Refractories",
       description: "Specialized refractory solutions for Steel, Cement, Aluminum, Glass, Petrochemical, and Power industries.",
       itemListElement: allIndustries.map((ind, i) => ({
         "@type": "ListItem",
@@ -218,10 +218,10 @@ function IndustrySolutions() {
                   WHY INDUSTRY-SPECIFIC MATTERS
                 </h2>
                 <p className="text-gray-500 text-sm mb-6 leading-relaxed">
-                  Generic refractory selection is one of the most common causes of premature lining failure. Each industry imposes unique challenges — a steel ladle sees molten metal at 1650°C with aggressive slag attack; a cement kiln deals with alkali cycling at 1450°C; a glass furnace requires near-zero porosity to prevent glass contamination.
+                  Generic refractory selection is one of the most common causes of premature lining failure. Each industry imposes unique challenges, a steel ladle sees molten metal at 1650°C with aggressive slag attack; a cement kiln deals with alkali cycling at 1450°C; a glass furnace requires near-zero porosity to prevent glass contamination.
                 </p>
                 <p className="text-gray-500 text-sm leading-relaxed mb-6">
-                  Our engineers have spent 45+ years understanding these nuances. When you consult us, you're not just getting a product catalogue — you're getting application-specific expertise that helps you avoid costly mistakes.
+                  Our engineers have spent 45+ years understanding these nuances. When you consult us, you're not just getting a product catalogue, you're getting application-specific expertise that helps you avoid costly mistakes.
                 </p>
                 <Link
                   href="/contact"
@@ -261,7 +261,7 @@ function IndustrySolutions() {
               NEED A CUSTOM SOLUTION?
             </h2>
             <p className="text-white/75 text-sm mb-8 max-w-xl mx-auto">
-              If your application isn't standard or you're dealing with an unusual combination of conditions, our engineers will design a custom recommendation — free of charge.
+              If your application isn't standard or you're dealing with an unusual combination of conditions, our engineers will design a custom recommendation, free of charge.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
@@ -288,7 +288,7 @@ function IndustrySolutions() {
   const industryStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: `${industry.name} Refractory Solutions — Shanker Agencies`,
+    name: `${industry.name} Refractory Solutions, Shanker Agencies`,
     description: industry.description,
     about: {
       "@type": "Thing",
@@ -472,7 +472,7 @@ function IndustrySolutions() {
               READY TO OPTIMIZE YOUR {industry.name.replace(" Solutions", "").toUpperCase()}?
             </h2>
             <p className="text-gray-500 text-sm mb-8 max-w-xl mx-auto">
-              Our engineers are ready to analyze your specific furnace conditions and recommend the optimal lining strategy — at no charge.
+              Our engineers are ready to analyze your specific furnace conditions and recommend the optimal lining strategy, at no charge.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link

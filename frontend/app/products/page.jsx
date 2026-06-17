@@ -15,7 +15,7 @@ const webPageSchema = {
   isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
   about: { '@id': 'https://www.shankeragencies.com/#organization' },
   inLanguage: 'en-IN',
-  description: 'Complete refractory product catalog — high alumina bricks, castables, ceramic fiber, flow control, acid proof bricks. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool.',
+  description: 'Complete refractory product catalog, high alumina bricks, castables, ceramic fiber, flow control, acid proof bricks. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool.',
 };
 
 const breadcrumbSchema = {

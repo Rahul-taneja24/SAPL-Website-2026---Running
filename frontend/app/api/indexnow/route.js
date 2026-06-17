@@ -1,12 +1,12 @@
 /**
- * IndexNow submission endpoint — pings Bing + IndexNow on demand.
+ * IndexNow submission endpoint, pings Bing + IndexNow on demand.
  *
  * Routes:
  *   POST /api/indexnow
- *     Body: { urls: string[] }   — submit a specific list of URLs
- *     Body: {}                   — submit ALL site URLs (sitemap)
+ *     Body: { urls: string[] }  , submit a specific list of URLs
+ *     Body: {}                  , submit ALL site URLs (sitemap)
  *   GET  /api/indexnow
- *     No body                    — submit ALL site URLs (manual trigger)
+ *     No body                   , submit ALL site URLs (manual trigger)
  *
  * Why call this:
  *   - Bing crawls slowly without IndexNow. ChatGPT, Copilot and Perplexity
@@ -30,7 +30,7 @@ const HOST = 'www.shankeragencies.com';
 const BASE = `https://${HOST}`;
 const KEY_LOCATION = `${BASE}/${INDEX_NOW_KEY}.txt`;
 
-// Build the same URL list the sitemap generates — single source of truth.
+// Build the same URL list the sitemap generates, single source of truth.
 function buildAllUrls() {
   const urls = new Set();
 
@@ -102,7 +102,7 @@ async function submitToIndexNow(urls) {
     urlList: urls,
   };
 
-  // Submit to Bing IndexNow (primary — ChatGPT/Copilot/Perplexity build on
+  // Submit to Bing IndexNow (primary, ChatGPT/Copilot/Perplexity build on
   // Bing's index for the Microsoft AI stack)
   const bingResponse = await fetch('https://www.bing.com/indexnow', {
     method: 'POST',
@@ -145,7 +145,7 @@ export async function POST(request) {
   }
 }
 
-// GET — convenient manual trigger from a browser or curl.
+// GET, convenient manual trigger from a browser or curl.
 export async function GET() {
   try {
     const urls = buildAllUrls();

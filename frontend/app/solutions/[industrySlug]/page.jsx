@@ -44,7 +44,7 @@ const SOLUTION_DATA = {
   },
 };
 
-// Only the eight known solution slugs are valid — any other slug returns a real 404.
+// Only the eight known solution slugs are valid, any other slug returns a real 404.
 export const dynamicParams = false;
 
 export async function generateStaticParams() {

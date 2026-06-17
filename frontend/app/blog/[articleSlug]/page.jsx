@@ -65,7 +65,7 @@ export default async function BlogArticlePage({ params }) {
       '@type': 'Person',
       name: post.author?.name || 'Shanker Agencies Engineering Team',
       jobTitle: post.author?.role || 'Refractory Engineer',
-      description: `${post.author?.role || 'Refractory engineer'} at Shanker Agencies Pvt. Ltd. — India's leading refractory engineering partner since 1980.`,
+      description: `${post.author?.role || 'Refractory engineer'} at Shanker Agencies Pvt. Ltd., India's leading refractory engineering partner since 1980.`,
       worksFor: {
         '@type': 'Organization',
         '@id': 'https://www.shankeragencies.com/#organization',
@@ -276,7 +276,7 @@ export default async function BlogArticlePage({ params }) {
                 </div>
                 <div className="bg-white p-6">
                   <p className="text-gray-600 text-sm mb-5 leading-relaxed">
-                    Have questions about the topics in this article? Our refractory engineers review your specific application and recommend the right solution — no obligation.
+                    Have questions about the topics in this article? Our refractory engineers review your specific application and recommend the right solution, no obligation.
                   </p>
                   <div className="flex flex-wrap gap-3">
                     <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white font-semibold px-5 py-2.5 rounded-xl text-sm transition-colors">

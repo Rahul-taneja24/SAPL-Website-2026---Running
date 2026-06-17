@@ -23,28 +23,28 @@ const values = [
   {
     icon: Shield,
     title: "Engineering-First Approach",
-    desc: "We don't just sell products — we study your furnace, process, and performance targets before recommending a single material. This engineering mindset has prevented costly specification errors for hundreds of clients.",
+    desc: "We don't just sell products, we study your furnace, process, and performance targets before recommending a single material. This engineering mindset has prevented costly specification errors for hundreds of clients.",
     color: "text-[#1E40AF]",
     bg: "bg-blue-50",
   },
   {
     icon: Handshake,
     title: "Long-Term Partnerships",
-    desc: "Over 60% of our revenue comes from clients who have been with us for more than 10 years. We earn loyalty by being available, honest, and consistently delivering on promises — even when things get complicated.",
+    desc: "Over 60% of our revenue comes from clients who have been with us for more than 10 years. We earn loyalty by being available, honest, and consistently delivering on promises, even when things get complicated.",
     color: "text-[#F97316]",
     bg: "bg-orange-50",
   },
   {
     icon: Globe,
     title: "Global Reach, Local Depth",
-    desc: "We have supplied refractories to 50+ countries but our strength is knowing India's industrial landscape intimately. This combination — global brands, local knowledge — is genuinely rare in the segment.",
+    desc: "We have supplied refractories to 50+ countries but our strength is knowing India's industrial landscape intimately. This combination, global brands, local knowledge, is genuinely rare in the segment.",
     color: "text-green-600",
     bg: "bg-green-50",
   },
   {
     icon: TrendingUp,
     title: "Total Cost Focus",
-    desc: "The cheapest refractory that fails in 3 months is far more expensive than the right refractory that runs for 12. We optimize for total cost of ownership — campaign life, energy use, downtime risk — not just unit price.",
+    desc: "The cheapest refractory that fails in 3 months is far more expensive than the right refractory that runs for 12. We optimize for total cost of ownership, campaign life, energy use, downtime risk, not just unit price.",
     color: "text-purple-600",
     bg: "bg-purple-50",
   },
@@ -57,14 +57,14 @@ const certifications = [
 ];
 
 const differentiators = [
-  "Refractory engineering partner — not just a supplier. We design, manufacture, and install.",
+  "Refractory engineering partner, not just a supplier. We design, manufacture, and install.",
   "Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool · Strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL & Saint-Gobain",
   "Manufacturing capability for custom refractory shapes, precast components & specialty products",
-  "Brand-agnostic recommendations — we specify the best product for your application, not the highest margin",
+  "Brand-agnostic recommendations, we specify the best product for your application, not the highest margin",
   "In-house refractory engineers for furnace lining design, thermal analysis & installation supervision",
   "Export to 50+ countries: GCC, ASEAN, Africa, UK & Europe with full documentation handled",
-  "Emergency supply capability for unplanned shutdowns — 48-hour dispatch for critical items",
-  "Second-generation leadership — Mohan Taneja (founder, heads SAPL since 1980) and Rahul Taneja (Director, joined 2018)",
+  "Emergency supply capability for unplanned shutdowns, 48-hour dispatch for critical items",
+  "Second-generation leadership, Mohan Taneja (founder, heads SAPL since 1980) and Rahul Taneja (Director, joined 2018)",
 ];
 
 // ─── COMPONENT ─────────────────────────────────────────────────────────────────
@@ -181,7 +181,7 @@ const About = () => {
               EXCELLENCE
             </h1>
             <p className="text-gray-300 text-lg max-w-2xl leading-relaxed">
-              What began as a small trading company in Delhi has grown into one of India's most trusted refractory engineering partners — built one client relationship at a time, over 45 years.
+              What began as a small trading company in Delhi has grown into one of India's most trusted refractory engineering partners, built one client relationship at a time, over 45 years.
             </p>
           </div>
         </div>
@@ -229,16 +229,16 @@ const About = () => {
               </h2>
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  Shanker Agencies Private Limited (SAPL) was founded in 1980 in Shahdara — then, as now, one of Delhi's most industrially active commercial corridors — and has been <strong className="text-[#1E3A5F]">headed by Mohan Taneja since its inception</strong>. The founding vision was simple: provide India's growing industrial sector with quality refractory materials and honest service.
+                  Shanker Agencies Private Limited (SAPL) was founded in 1980 in Shahdara, then, as now, one of Delhi's most industrially active commercial corridors, and has been <strong className="text-[#1E3A5F]">headed by Mohan Taneja since its inception</strong>. The founding vision was simple: provide India's growing industrial sector with quality refractory materials and honest service.
                 </p>
                 <p>
-                  SAPL began with <strong className="text-[#1E3A5F]">local marketing</strong>, supplying general refractories to copper smelters, glass units, and small foundries around Delhi NCR. As India's industrial landscape evolved, so did we — shifting focus to <strong className="text-[#1E3A5F]">steel, cement, aluminium and power plant customers</strong> across the country, and progressing from general refractories to premium grades to branded products from the world's leading manufacturers.
+                  SAPL began with <strong className="text-[#1E3A5F]">local marketing</strong>, supplying general refractories to copper smelters, glass units, and small foundries around Delhi NCR. As India's industrial landscape evolved, so did we, shifting focus to <strong className="text-[#1E3A5F]">steel, cement, aluminium and power plant customers</strong> across the country, and progressing from general refractories to premium grades to branded products from the world's leading manufacturers.
                 </p>
                 <p>
-                  What made SAPL different from the beginning was a commitment to <strong className="text-[#1E3A5F]">understanding the customer's problem, not just selling them a product.</strong> Mohan Taneja spent time in plants, understanding furnace conditions, failure modes, and operational pressures before recommending materials. That practice became the culture of the company — and was reinforced when <strong className="text-[#1E3A5F]">Rahul Taneja (second generation) joined as Director in 2018</strong>, adding modern sales engineering and digital capabilities to the family business.
+                  What made SAPL different from the beginning was a commitment to <strong className="text-[#1E3A5F]">understanding the customer's problem, not just selling them a product.</strong> Mohan Taneja spent time in plants, understanding furnace conditions, failure modes, and operational pressures before recommending materials. That practice became the culture of the company, and was reinforced when <strong className="text-[#1E3A5F]">Rahul Taneja (second generation) joined as Director in 2018</strong>, adding modern sales engineering and digital capabilities to the family business.
                 </p>
                 <p>
-                  Today, we are an <strong className="text-[#1E3A5F]">authorised dealer of CUMI, Crown Ceramics and Divine Cerawool</strong>, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. We also manufacture custom refractory shapes, precast components, and specialty products — giving us the engineering depth and end-to-end capability that large steel plants, cement groups, and petrochemical companies expect from their refractory partner.
+                  Today, we are an <strong className="text-[#1E3A5F]">authorised dealer of CUMI, Crown Ceramics and Divine Cerawool</strong>, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. We also manufacture custom refractory shapes, precast components, and specialty products, giving us the engineering depth and end-to-end capability that large steel plants, cement groups, and petrochemical companies expect from their refractory partner.
                 </p>
               </div>
 
@@ -253,7 +253,7 @@ const About = () => {
               </ul>
             </div>
 
-            {/* Right — visual with accent cards */}
+            {/* Right, visual with accent cards */}
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl bg-white border border-gray-100 p-12 flex items-center justify-center min-h-[400px]">
                 <div className="flex flex-col text-center">
@@ -309,7 +309,7 @@ const About = () => {
               </div>
               <h3 className="font-oswald text-2xl font-bold mb-4 text-[#1E3A5F]">OUR VISION</h3>
               <p className="text-gray-600 leading-relaxed">
-                To be the most trusted refractory engineering partner globally — known not just for the products we supply, but for the expertise, reliability, and long-term value we bring to every client relationship.
+                To be the most trusted refractory engineering partner globally, known not just for the products we supply, but for the expertise, reliability, and long-term value we bring to every client relationship.
               </p>
             </article>
             <article className="bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
@@ -318,7 +318,7 @@ const About = () => {
               </div>
               <h3 className="font-oswald text-2xl font-bold mb-4 text-[#1E3A5F]">OUR MISSION</h3>
               <p className="text-gray-600 leading-relaxed">
-                To optimize industrial furnace performance through expert material selection, engineering consultation, and reliable supply — delivering measurable improvements in campaign life, energy efficiency, and total cost of ownership for every client.
+                To optimize industrial furnace performance through expert material selection, engineering consultation, and reliable supply, delivering measurable improvements in campaign life, energy efficiency, and total cost of ownership for every client.
               </p>
             </article>
           </div>
@@ -336,7 +336,7 @@ const About = () => {
               CORE VALUES
             </h2>
             <p className="text-gray-500 max-w-xl mx-auto mt-4 text-sm">
-              These aren't wall posters — they're the operating principles our team uses when making decisions for clients every day.
+              These aren't wall posters, they're the operating principles our team uses when making decisions for clients every day.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
@@ -418,7 +418,7 @@ const About = () => {
                 INTERNATIONAL STANDARDS
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                Our certifications are renewed annually through independent audit — they reflect the quality management systems, environmental practices, and safety standards that govern every aspect of our operations.
+                Our certifications are renewed annually through independent audit, they reflect the quality management systems, environmental practices, and safety standards that govern every aspect of our operations.
               </p>
               <div className="space-y-4">
                 {certifications.map((cert) => (
@@ -468,7 +468,7 @@ const About = () => {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {/* Mohan Taneja — Founder & CEO */}
+            {/* Mohan Taneja, Founder & CEO */}
             <article className="bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
               <div className="bg-gradient-to-br from-[#0B1628] to-[#1E3A5F] p-8 flex items-center justify-center">
                 <div className="w-20 h-20 rounded-full bg-white/20 border-2 border-white/40 flex items-center justify-center">
@@ -500,7 +500,7 @@ const About = () => {
                 <h3 className="font-oswald text-xl font-bold text-[#1E3A5F]">Rahul Taneja</h3>
                 <p className="text-[#F97316] text-xs font-semibold uppercase tracking-wide mb-3">Director &amp; Refractory Engineering Expert</p>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                  Joined SAPL in 2018 as second-generation leadership. Leads technical and commercial operations — refractory specifications for steel ladles, cement kilns and induction furnaces at 300+ industrial plants across India, GCC and ASEAN. Drives SAPL's digital transformation and export growth.
+                  Joined SAPL in 2018 as second-generation leadership. Leads technical and commercial operations, refractory specifications for steel ladles, cement kilns and induction furnaces at 300+ industrial plants across India, GCC and ASEAN. Drives SAPL's digital transformation and export growth.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {['Joined 2018', 'Steel &amp; Cement', 'Export Markets'].map(s => (
@@ -540,7 +540,7 @@ const About = () => {
                   </div>
                   <h3 className="font-oswald text-xl font-bold text-white mb-3">Our Engineering Promise</h3>
                   <p className="text-white/75 text-sm leading-relaxed">
-                    Every refractory recommendation we make is backed by an engineer who has seen the application in person — not just a product brochure. We stake our 45-year reputation on every specification.
+                    Every refractory recommendation we make is backed by an engineer who has seen the application in person, not just a product brochure. We stake our 45-year reputation on every specification.
                   </p>
                 </div>
                 <div className="mt-8 space-y-2">

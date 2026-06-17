@@ -87,7 +87,7 @@ const brandsData = [
     founded: "1989",
     headquarters: "Kolkata, India",
     parent: "Listed on NSE/BSE",
-    desc: "India's leading manufacturer of flow control refractories for the steel industry with state-of-the-art manufacturing and dedicated R&D facilities. IFGL is a publicly listed company with exports to 25+ countries. Their flow control products — slide gates, tundish nozzles, and monoblock stoppers — are used by 100+ steel mills worldwide.",
+    desc: "India's leading manufacturer of flow control refractories for the steel industry with state-of-the-art manufacturing and dedicated R&D facilities. IFGL is a publicly listed company with exports to 25+ countries. Their flow control products, slide gates, tundish nozzles, and monoblock stoppers, are used by 100+ steel mills worldwide.",
     strengths: ["Flow control market leader", "25+ country exports", "Dedicated R&D centre", "100+ steel mill customers"],
     products: ["Slide Gate Systems", "Monoblock Stoppers", "Tundish Nozzles", "Ladle Shrouds", "Porous Plugs"],
     industries: ["Steel"],
@@ -121,7 +121,7 @@ const brandsData = [
     founded: "1958",
     headquarters: "Odisha, India",
     parent: "Tata Group + Krosaki Harima Corporation",
-    desc: "A joint venture between Tata Steel and Japan's Krosaki Harima Corporation — one of the world's top refractory companies. TRL Krosaki brings Japanese manufacturing precision and Tata quality standards to India. Particularly strong in flow control products for continuous casting and basic refractories for BOF/EAF.",
+    desc: "A joint venture between Tata Steel and Japan's Krosaki Harima Corporation, one of the world's top refractory companies. TRL Krosaki brings Japanese manufacturing precision and Tata quality standards to India. Particularly strong in flow control products for continuous casting and basic refractories for BOF/EAF.",
     strengths: ["Japanese technology partnership", "Tata Group quality standards", "Flow control excellence", "Strong basic refractory range"],
     products: ["Slide Gate Plates", "Ladle Shrouds", "Subentry Nozzles", "MgO-C Bricks", "Dolomite Bricks"],
     industries: ["Steel", "Foundry", "Cement"],
@@ -138,7 +138,7 @@ const brandsData = [
     founded: "1665",
     headquarters: "France (global operations)",
     parent: "Saint-Gobain Group",
-    desc: "A global leader in performance ceramics and refractories, part of the 350-year-old Saint-Gobain Group. Its HeatKing range covers induction furnace linings and monolithic castables engineered for steel and foundry melting applications. Shanker Agencies works with Saint-Gobain as a supply partner — customers can contact us for HeatKing induction furnace lining material and monolithic castables.",
+    desc: "A global leader in performance ceramics and refractories, part of the 350-year-old Saint-Gobain Group. Its HeatKing range covers induction furnace linings and monolithic castables engineered for steel and foundry melting applications. Shanker Agencies works with Saint-Gobain as a supply partner, customers can contact us for HeatKing induction furnace lining material and monolithic castables.",
     strengths: ["Global performance-ceramics leader", "HeatKing induction furnace linings", "Advanced monolithic castables", "Engineered melt-shop solutions"],
     products: ["HeatKing Induction Furnace Lining", "HeatKing Monolithic Castables", "High-Performance Ceramics", "Refractory Solutions"],
     industries: ["Steel", "Foundry", "Induction Melting"],
@@ -523,7 +523,7 @@ function Brands() {
                 style={{ background: "linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)" }}
               >
                 <h3 className="font-oswald text-2xl font-bold text-white mb-2">Can't Decide Which Brand?</h3>
-                <p className="text-white/75 text-sm mb-6 max-w-md mx-auto">Tell us your application, temperature range, and industry — our engineers will recommend the best brand and grade for your specific needs.</p>
+                <p className="text-white/75 text-sm mb-6 max-w-md mx-auto">Tell us your application, temperature range, and industry, our engineers will recommend the best brand and grade for your specific needs.</p>
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-8 py-3.5 rounded-full font-bold text-sm transition-colors"

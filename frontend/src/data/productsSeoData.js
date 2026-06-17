@@ -1,5 +1,5 @@
 /**
- * Product SEO metadata — used by server components (generateMetadata, generateStaticParams)
+ * Product SEO metadata, used by server components (generateMetadata, generateStaticParams)
  * Mirrors the product IDs/slugs in Products.jsx DATA object.
  */
 
@@ -9,7 +9,7 @@ export const PRODUCT_SEO = [
     productId: "high-alumina-bricks",
     name: "High Alumina Bricks (AL45–AL90)",
     metaTitle: "High Alumina Bricks AL45 to AL90 | Refractory Bricks for Steel, Cement & Glass | Shanker Agencies",
-    metaDescription: "Buy high alumina bricks (45–90% Al₂O₃) from Shanker Agencies — authorized CUMI dealer. Grades HA-45 to HA-90 for steel ladles, cement kilns, glass furnaces & blast furnaces. Pan-India supply from Delhi.",
+    metaDescription: "Buy high alumina bricks (45–90% Al₂O₃) from Shanker Agencies, authorized CUMI dealer. Grades HA-45 to HA-90 for steel ladles, cement kilns, glass furnaces & blast furnaces. Pan-India supply from Delhi.",
   },
   {
     categorySlug: "shaped-refractories",
@@ -58,7 +58,7 @@ export const PRODUCT_SEO = [
     productId: "ramming-masses",
     name: "Ramming Mass (Silica, Alumina, Magnesia)",
     metaTitle: "Ramming Mass for Induction Furnace | Silica, Alumina & Magnesia Types | Shanker Agencies",
-    metaDescription: "Silica, alumina & magnesia ramming mass for induction furnace linings. Authorized CUMI dealer. Selection guidance by melt type — iron, steel, copper, manganese. Delhi supply to pan-India.",
+    metaDescription: "Silica, alumina & magnesia ramming mass for induction furnace linings. Authorized CUMI dealer. Selection guidance by melt type, iron, steel, copper, manganese. Delhi supply to pan-India.",
   },
   {
     categorySlug: "unshaped-refractories",
@@ -79,7 +79,7 @@ export const PRODUCT_SEO = [
     productId: "ladle-shrouds",
     name: "Ladle Shrouds",
     metaTitle: "Ladle Shrouds for Continuous Casting | Reoxidation Prevention | IFGL | Shanker Agencies",
-    metaDescription: "Ladle shrouds (Al₂O₃-C) for continuous casting — prevent steel reoxidation during transfer. IFGL authorized supply. Argon purging slots, tight gas-impermeable bore. India & export supply.",
+    metaDescription: "Ladle shrouds (Al₂O₃-C) for continuous casting, prevent steel reoxidation during transfer. IFGL authorized supply. Argon purging slots, tight gas-impermeable bore. India & export supply.",
   },
   {
     categorySlug: "flow-control",
@@ -128,7 +128,7 @@ export const PRODUCT_SEO = [
     productId: "refractory-mortars",
     name: "Refractory Mortars (Fireclay, High Alumina, Basic, Acid-Proof)",
     metaTitle: "Refractory Mortars: Fireclay, High Alumina, Basic & Acid-Proof | Mahakoshal | Shanker Agencies",
-    metaDescription: "Refractory mortars for brick jointing — fireclay, HA-50/70/80 high alumina, basic magnesia, insulating and acid-proof grades. Mahakoshal supply partner. Pan-India delivery from Delhi.",
+    metaDescription: "Refractory mortars for brick jointing, fireclay, HA-50/70/80 high alumina, basic magnesia, insulating and acid-proof grades. Mahakoshal supply partner. Pan-India delivery from Delhi.",
   },
   {
     categorySlug: "unshaped-refractories",

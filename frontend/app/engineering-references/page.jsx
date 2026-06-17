@@ -1,8 +1,8 @@
-// /engineering-references — listing page for SAPL's Engineering Reference Scenarios.
+// /engineering-references, listing page for SAPL's Engineering Reference Scenarios.
 //
 // IMPORTANT EDITORIAL FRAMING:
 //   These pages are NOT records of specific SAPL project deliveries. They are
-//   illustrative engineering scenarios for typical application classes —
+//   illustrative engineering scenarios for typical application classes
 //   designed to help buyers/engineers understand the economic and technical
 //   logic of correct refractory specification. Every detail page carries an
 //   unmissable banner stating this. Schema type is TechArticle (technical
@@ -22,10 +22,10 @@ const BASE = 'https://www.shankeragencies.com';
 export const metadata = {
   title: 'Engineering Reference Scenarios | Refractory Application Notes by SAPL',
   description:
-    'Illustrative engineering reference scenarios across steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specifications, expected outcome ranges, market-pricing economics — not records of specific SAPL projects.',
+    'Illustrative engineering reference scenarios across steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specifications, expected outcome ranges, market-pricing economics, not records of specific SAPL projects.',
   alternates: { canonical: '/engineering-references' },
   openGraph: {
-    title: 'Refractory Engineering Reference Scenarios — Shanker Agencies',
+    title: 'Refractory Engineering Reference Scenarios, Shanker Agencies',
     description:
       'Application notes covering 6 industrial refractory classes with expected outcome ranges and 2026 market economics.',
     url: `${BASE}/engineering-references`,
@@ -36,13 +36,13 @@ export const metadata = {
 export default function EngineeringReferencesIndexPage() {
   const scenarios = getCaseStudiesByYear();
 
-  // CollectionPage + ItemList — but framed as a reference collection so AI
+  // CollectionPage + ItemList, but framed as a reference collection so AI
   // engines understand this is reference material, not authored journalism.
   const collectionSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     '@id': `${BASE}/engineering-references/#collection`,
-    name: 'Shanker Agencies — Refractory Engineering Reference Scenarios',
+    name: 'Shanker Agencies, Refractory Engineering Reference Scenarios',
     url: `${BASE}/engineering-references`,
     description:
       'Illustrative engineering reference scenarios across 6 refractory application classes. Each scenario documents typical baseline conditions, common failure modes, recommended specification, and expected outcome ranges based on May 2026 Indian market data. These are NOT records of specific SAPL project deliveries.',
@@ -112,7 +112,7 @@ export default function EngineeringReferencesIndexPage() {
           </h1>
           <p className="text-gray-300 max-w-3xl text-lg leading-relaxed">
             Six refractory application classes covering steel, foundry, cement, power,
-            aluminium and glass. For each, this is the typical baseline — common failure
+            aluminium and glass. For each, this is the typical baseline, common failure
             modes, recommended specification, and the{' '}
             <span className="font-semibold text-white">
               expected outcome range with 2026 Indian-market pricing economics
@@ -133,7 +133,7 @@ export default function EngineeringReferencesIndexPage() {
           </span>
           <p className="text-sm text-amber-900 leading-relaxed">
             <strong>Note on framing:</strong> These are illustrative engineering reference
-            scenarios for typical application classes — they are{' '}
+            scenarios for typical application classes, they are{' '}
             <strong>not records of specific SAPL project deliveries</strong>. The scenarios
             describe baseline conditions, common failure modes and expected outcome ranges
             drawn from May 2026 Indian market data and standard industry practice. Real
@@ -209,7 +209,7 @@ export default function EngineeringReferencesIndexPage() {
             </h3>
             <p className="text-gray-500 text-sm max-w-xl mx-auto mb-6">
               Our refractory engineers respond within 4 business hours. Send us your furnace
-              type, current campaign life and failure mode — we&apos;ll come back with a
+              type, current campaign life and failure mode, we&apos;ll come back with a
               specification proposal and indicative pricing.
             </p>
             <Link

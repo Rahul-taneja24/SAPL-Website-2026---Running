@@ -1,7 +1,7 @@
-// caseStudiesData.js — 6 ENGINEERING REFERENCE SCENARIOS.
+// caseStudiesData.js, 6 ENGINEERING REFERENCE SCENARIOS.
 //
 // These pages are deliberately framed as illustrative engineering scenarios
-// for typical application classes — NOT records of specific SAPL project
+// for typical application classes, NOT records of specific SAPL project
 // deliveries. Every page carries an unmissable banner stating this. The
 // schema type is TechArticle (technical reference content) rather than
 // Article (which implies an authored journalistic account).
@@ -12,7 +12,7 @@
 // EDITORIAL NOTE:
 //   The financial figures below are TYPICAL INDUSTRY RANGES based on May 2026
 //   market data (see below for sources). They illustrate the ECONOMIC
-//   IMPACT POTENTIAL of correct refractory specification — they are not
+//   IMPACT POTENTIAL of correct refractory specification, they are not
 //   claims of specific outcomes delivered by SAPL. Each USD equivalent uses
 //   1 USD = ₹94.5 (May 2026 rate).
 //
@@ -29,15 +29,15 @@
 //   - A356.2 ingot: $3,050–3,200/T FOB (Fastmarkets, ChemAnalyst)
 //   - LM6 commercial: ₹155–235/kg India (IndiaMART, AlCircleBiz)
 //   - Glass furnace rebuild: $5–30M benchmarks (O-I Glass, Beta Glass, Sivesa)
-//   - USD/INR: ₹94.5 per USD (May 7, 2026 — Federal Reserve H.10, Trading Economics)
+//   - USD/INR: ₹94.5 per USD (May 7, 2026, Federal Reserve H.10, Trading Economics)
 //
 // FIELDS:
-//   slug         : URL slug — drives /case-studies/[slug]
+//   slug         : URL slug, drives /case-studies/[slug]
 //   title        : H1 / metaTitle base
 //   client       : anonymised description (industry + region)
 //   industry     : maps to /industries/[slug]
 //   industrySlug : URL slug for the industry breadcrumb link
-//   products     : array of { name, productPath } — wires the `mentions`
+//   products     : array of { name, productPath }, wires the `mentions`
 //                  schema to product/brand entities
 //   brand        : main brand involved (CUMI / Calderys / TRL Krosaki / etc.)
 //   year         : project year (helps content freshness)
@@ -45,12 +45,12 @@
 //   problem      : 1-2 paragraph problem statement
 //   specification: bullet list of grades / quantities / engineering inputs
 //   installation : bullet list of steps / supervision notes
-//   result       : bullet list of measurable outcomes — THIS IS THE GOLD
+//   result       : bullet list of measurable outcomes, THIS IS THE GOLD
 //   metrics      : { campaignLifeBefore, campaignLifeAfter, savingsINR,
-//                    energySavingsPct, lossPreventedINR, etc. } — used in
+//                    energySavingsPct, lossPreventedINR, etc. }, used in
 //                  the headline result band + Article schema
 //   keyTakeaway  : single-sentence pull quote
-//   reviewedBy   : Rahul Taneja (default) — drives author + reviewedBy
+//   reviewedBy   : Rahul Taneja (default), drives author + reviewedBy
 //                  schema for E-E-A-T
 
 export const CASE_STUDIES = [
@@ -75,10 +75,10 @@ export const CASE_STUDIES = [
       },
     ],
     problem:
-      "A typical 160-tonne steel ladle running on a mid-grade LCC slag-line averages 60–70 heats per campaign — below the 85-heat target most steelmaking cells set. Slag-line erosion at the metal/slag interface is the primary failure mode in this application class, with secondary impact wear at the bottom impact pad. In 2026 Indian market terms, every early reline costs roughly ₹18–22 lakh (USD 19,000–23,000) in materials plus 36 hours of unplanned downtime per ladle per campaign cycle.",
+      "A typical 160-tonne steel ladle running on a mid-grade LCC slag-line averages 60–70 heats per campaign, below the 85-heat target most steelmaking cells set. Slag-line erosion at the metal/slag interface is the primary failure mode in this application class, with secondary impact wear at the bottom impact pad. In 2026 Indian market terms, every early reline costs roughly ₹18–22 lakh (USD 19,000–23,000) in materials plus 36 hours of unplanned downtime per ladle per campaign cycle.",
     diagnosis: [
       'Post-mortem of retired ladles to identify primary wear mode',
-      'Slag chemistry sampled across multiple heats — basicity (CaO/SiO₂) typically 2.8–3.4',
+      'Slag chemistry sampled across multiple heats, basicity (CaO/SiO₂) typically 2.8–3.4',
       'Baseline lining: mid-grade LCC-70 (70% Al₂O₃) at slag line',
       'Typical wear: 2.0–2.6 mm/heat in slag zone vs 1.0–1.3 mm/heat in barrel',
     ],
@@ -94,7 +94,7 @@ export const CASE_STUDIES = [
       '24-hour ambient cure under polythene cover before form removal',
       'Dry-out: 20°C/hr to 110°C → hold 12h → 15°C/hr to 300°C → hold 8h → 30°C/hr to 1100°C',
       'SAPL refractory engineer on-site for first heat sintering observation',
-      'Total downtime per reline: 4.5 days (vs 5.2 days previously — 0.7 day saved per cycle)',
+      'Total downtime per reline: 4.5 days (vs 5.2 days previously, 0.7 day saved per cycle)',
     ],
     result: [
       'Expected campaign life: 60–70 heats → 85–95 heats range (30–45% improvement typical)',
@@ -111,7 +111,7 @@ export const CASE_STUDIES = [
       payback: '< 1 reline cycle',
     },
     keyTakeaway:
-      'For this ladle class, targeting only the slag-line ring to LCC-80 — while keeping cost-effective LCC-70 in low-wear zones — typically produces a 30–45% campaign life improvement at less than 18% material cost premium. The economics depend on slag chemistry, tap temperature and operating cycle.',
+      'For this ladle class, targeting only the slag-line ring to LCC-80, while keeping cost-effective LCC-70 in low-wear zones, typically produces a 30–45% campaign life improvement at less than 18% material cost premium. The economics depend on slag chemistry, tap temperature and operating cycle.',
   },
 
   {
@@ -134,7 +134,7 @@ export const CASE_STUDIES = [
       'A typical 5-tonne coreless induction furnace producing grey iron castings often runs at only 80–100 heats per lining campaign instead of the 150+ heats the material is rated for. Premature lining failure triggers unplanned re-rams every 2 weeks, dropping daily output by roughly ₹4–6 lakh (USD 4,200–6,300) per re-ram event. The visual signature is thermal-cycling cracks running radially from hot face to backup.',
     diagnosis: [
       'Typical charge mix: 70% return scrap + 30% fresh pig iron',
-      'Tap temperature: 1480°C — within normal range',
+      'Tap temperature: 1480°C, within normal range',
       'Baseline lining: standard silica ramming mass, 75 mm hot face',
       'Failure mode: thermal shock cracking (not chemical attack)',
       'Common root cause in this class: shortened sintering schedule (4h vs 6h spec) to save energy',
@@ -149,7 +149,7 @@ export const CASE_STUDIES = [
     installation: [
       'Ramming pattern: spiral from bottom, 50–75 mm layers, density verified by tap test',
       'Top-locking ring fitted per OEM spec',
-      'First heat (sintering): 6 hours at 75% power with cold scrap charge — no metal tapped',
+      'First heat (sintering): 6 hours at 75% power with cold scrap charge, no metal tapped',
       'Second and third heats: gradual ramp to full operating temperature',
       'SAPL technician supervised first sintering campaign on both furnaces',
     ],
@@ -168,7 +168,7 @@ export const CASE_STUDIES = [
       payback: 'First campaign',
     },
     keyTakeaway:
-      'Lining failures often attributed to "ramming mass quality" are actually caused by a shortened sintering schedule. In this application class, the fix is usually a procedural change — restoring the 6-hour first-heat sintering — supported by a higher-purity ramming mass, not necessarily a more expensive product.',
+      'Lining failures often attributed to "ramming mass quality" are actually caused by a shortened sintering schedule. In this application class, the fix is usually a procedural change, restoring the 6-hour first-heat sintering, supported by a higher-purity ramming mass, not necessarily a more expensive product.',
   },
 
   {
@@ -192,7 +192,7 @@ export const CASE_STUDIES = [
       },
     ],
     problem:
-      "A typical 5,500 TPD precalciner kiln burning high-alkali raw mix (Cl + SO₃ + R₂O ≈ 4%+) on legacy magnesia-chrome lining tends to fail in the burning zone after only 7–9 months — well below the 14–18 month target for modern kilns. Beyond service life, chrome-bearing refractory creates environmental disposal concerns. In 2026 Indian terms, every unplanned shutdown for partial relining costs approximately ₹1.8–2.0 crore (USD 190,000–212,000) per day in clinker production loss.",
+      "A typical 5,500 TPD precalciner kiln burning high-alkali raw mix (Cl + SO₃ + R₂O ≈ 4%+) on legacy magnesia-chrome lining tends to fail in the burning zone after only 7–9 months, well below the 14–18 month target for modern kilns. Beyond service life, chrome-bearing refractory creates environmental disposal concerns. In 2026 Indian terms, every unplanned shutdown for partial relining costs approximately ₹1.8–2.0 crore (USD 190,000–212,000) per day in clinker production loss.",
     diagnosis: [
       'Typical hot meal volatile circulation: Cl ~0.8%, SO₃ ~1.6%, alkali ~1.8%',
       'Burning zone gas temperature: 1450–1500°C',
@@ -201,7 +201,7 @@ export const CASE_STUDIES = [
       'Industry driver: phasing out chrome-bearing refractories for environmental compliance',
     ],
     specification: [
-      'Burning zone (10 m): magnesia-spinel bricks (Mag-Sp 90), 200 mm — chrome-free',
+      'Burning zone (10 m): magnesia-spinel bricks (Mag-Sp 90), 200 mm, chrome-free',
       'Transition zone (12 m): high alumina HA-80, 200 mm',
       'Calcining zone (8 m): HA-70, 180 mm',
       'Cooler nose ring: precast HA-80 shapes (250 kg each, 8 sections)',
@@ -253,11 +253,11 @@ export const CASE_STUDIES = [
       },
     ],
     problem:
-      'A typical 250 MW CFBC (circulating fluidised bed combustion) boiler running on conventional castable in the cyclone, return-leg and burning zone tends to experience 8–11 forced outages per year from refractory failure — abrasive bed-ash erosion compounded by thermal cycling during start-stop cycles. Each outage costs a captive plant approximately ₹70–90 lakh per day (USD 74,000–95,000) in alternative grid power, calculated at the ~₹3/kWh differential between captive generation and industrial grid tariff.',
+      'A typical 250 MW CFBC (circulating fluidised bed combustion) boiler running on conventional castable in the cyclone, return-leg and burning zone tends to experience 8–11 forced outages per year from refractory failure, abrasive bed-ash erosion compounded by thermal cycling during start-stop cycles. Each outage costs a captive plant approximately ₹70–90 lakh per day (USD 74,000–95,000) in alternative grid power, calculated at the ~₹3/kWh differential between captive generation and industrial grid tariff.',
     diagnosis: [
       'Cyclone hot face: typical abrasion wear ~1.2 mm/1000 hours on conventional castable',
       'Return leg: thermal cycling cracks every 4–6 weeks',
-      'Baseline refractory: conventional castable (~15% cement) — designed for static furnaces, not CFBC',
+      'Baseline refractory: conventional castable (~15% cement), designed for static furnaces, not CFBC',
       'Bed temperature: 850–900°C, but wall temperature spikes to ~1100°C during transients',
     ],
     specification: [
@@ -289,7 +289,7 @@ export const CASE_STUDIES = [
       payback: '~9 months',
     },
     keyTakeaway:
-      'CFBC boiler refractory is a different discipline from static furnace refractory. For this application class, erosion-resistant LCC with SiC additive in cyclone hot faces is essential — conventional castable engineered for static duty is not the right specification regardless of how it is rated thermally.',
+      'CFBC boiler refractory is a different discipline from static furnace refractory. For this application class, erosion-resistant LCC with SiC additive in cyclone hot faces is essential, conventional castable engineered for static duty is not the right specification regardless of how it is rated thermally.',
   },
 
   {
@@ -313,12 +313,12 @@ export const CASE_STUDIES = [
       },
     ],
     problem:
-      "A typical 60-tonne reverberatory holding furnace cycling A356.2 / LM6 series alloy on a standard alumina castable is prone to iron contamination from corundum and aluminium spinel growth on the hot face. When iron content creeps above 0.6%, premium A356.2 (~USD 3,100/tonne, ₹2.93 lakh/T) gets downgraded to commercial-grade LM6-equivalent (~USD 2,100/tonne, ₹1.98 lakh/T) — a price differential of approximately USD 1,000 (₹94,500) per tonne. The hot-face lining chemistry — not the rated temperature — is the deciding factor in this application class.",
+      "A typical 60-tonne reverberatory holding furnace cycling A356.2 / LM6 series alloy on a standard alumina castable is prone to iron contamination from corundum and aluminium spinel growth on the hot face. When iron content creeps above 0.6%, premium A356.2 (~USD 3,100/tonne, ₹2.93 lakh/T) gets downgraded to commercial-grade LM6-equivalent (~USD 2,100/tonne, ₹1.98 lakh/T), a price differential of approximately USD 1,000 (₹94,500) per tonne. The hot-face lining chemistry, not the rated temperature, is the deciding factor in this application class.",
     diagnosis: [
       'Hot face spalling typically shows Al₂O₃·MgO·SiO₂ corundum growth',
-      'Typical bath chemistry: 0.05% Mg, 0.15% Mn — sufficient for spinel formation',
+      'Typical bath chemistry: 0.05% Mg, 0.15% Mn, sufficient for spinel formation',
       'Operating cycle: ~4 fills/day, bath temperature ~720°C',
-      'Baseline castable: 70% Al₂O₃ standard LCC — typically wetted by molten aluminium over 4–6 months',
+      'Baseline castable: 70% Al₂O₃ standard LCC, typically wetted by molten aluminium over 4–6 months',
     ],
     specification: [
       'Hot face: non-wetting LCC with BaSO₄ + AlF₃ additives (15% combined)',
@@ -337,7 +337,7 @@ export const CASE_STUDIES = [
     result: [
       'Expected iron pickup: 0.6%+ → consistent < 0.18% (within A356.2 spec)',
       'Expected A356.2 alloy yield: 78% → 96% (price-grade upgrade)',
-      'Expected annual revenue impact: ~USD 4–6 million (₹38–57 crore) on the affected production line — commercial grade → premium grade',
+      'Expected annual revenue impact: ~USD 4–6 million (₹38–57 crore) on the affected production line, commercial grade → premium grade',
       'Expected hot-face campaign life: 6 months → 14 months',
       'Energy: bath holding consumption typically -7 to -10% from improved insulation backup',
     ],
@@ -349,7 +349,7 @@ export const CASE_STUDIES = [
       payback: '~3 months',
     },
     keyTakeaway:
-      'Non-wetting castables are not a single product — the right additive blend depends on alloy chemistry, bath temperature and cycling pattern. For this application class, a non-wetting LCC matched to A356.2 chemistry typically eliminates iron pickup entirely; the engineering decision is the additive package, not the brand.',
+      'Non-wetting castables are not a single product, the right additive blend depends on alloy chemistry, bath temperature and cycling pattern. For this application class, a non-wetting LCC matched to A356.2 chemistry typically eliminates iron pickup entirely; the engineering decision is the additive package, not the brand.',
   },
 
   {
@@ -381,7 +381,7 @@ export const CASE_STUDIES = [
       'Atmosphere: oxidising with elevated SO₃ content from petcoke fuel switch',
     ],
     specification: [
-      'Flux-line course: AZS-36 (36% ZrO₂, 50% Al₂O₃, 14% SiO₂) — premium grade',
+      'Flux-line course: AZS-36 (36% ZrO₂, 50% Al₂O₃, 14% SiO₂), premium grade',
       'Bottom paving: standard AZS-32 (cost-effective, low wear zone)',
       'Throat: AZS-41 (highest premium, most aggressive zone)',
       'Crown: silica refractory (no change)',
@@ -409,7 +409,7 @@ export const CASE_STUDIES = [
       payback: 'Capex deferral covers premium AZS upcharge',
     },
     keyTakeaway:
-      'Premium AZS-36 at the flux line — paired with re-tuned cooling air — typically delivers both longer life AND better glass quality in this application class. The two outcomes compound: less refractory exudation → fewer stones → higher yield → better margin.',
+      'Premium AZS-36 at the flux line, paired with re-tuned cooling air, typically delivers both longer life AND better glass quality in this application class. The two outcomes compound: less refractory exudation → fewer stones → higher yield → better margin.',
   },
 ];
 

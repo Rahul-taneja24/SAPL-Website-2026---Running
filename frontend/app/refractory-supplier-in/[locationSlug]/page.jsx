@@ -226,7 +226,7 @@ export default async function LocationPage({ params }) {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: `Refractory Products — CIF ${city}`,
+      name: `Refractory Products, CIF ${city}`,
       url: 'https://www.shankeragencies.com/products',
     },
     priceRange: '$$',
@@ -260,7 +260,7 @@ export default async function LocationPage({ params }) {
     ],
   };
 
-  // JSON-LD: WebPage with Speakable — helps Google Assistant / voice AI read our answers
+  // JSON-LD: WebPage with Speakable, helps Google Assistant / voice AI read our answers
   const webPageSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
@@ -284,7 +284,7 @@ export default async function LocationPage({ params }) {
     }),
   };
 
-  // JSON-LD: Service — positions the listing as a genuine service, not just content
+  // JSON-LD: Service, positions the listing as a genuine service, not just content
   const cityServiceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
@@ -399,7 +399,7 @@ export default async function LocationPage({ params }) {
       </nav>
 
       {/* ------------------------------------------------------------------ */}
-      {/* EXPORT CTA — international locations only                          */}
+      {/* EXPORT CTA, international locations only                          */}
       {/* ------------------------------------------------------------------ */}
       {isInternational && (
         <section className="py-12 md:py-16 bg-blue-50 border-b border-blue-100">
@@ -410,7 +410,7 @@ export default async function LocationPage({ params }) {
                   Get CIF Quote for {city}, {country}
                 </h2>
                 <p className="text-gray-700 mb-5 leading-relaxed">
-                  Shanker Agencies exports refractory products directly to {country}. We provide CIF {city} pricing with full documentation — MTC, Certificate of Origin, Packing List, and Bill of Lading — and typical transit time of {transitTime} from Delhi NCR.
+                  Shanker Agencies exports refractory products directly to {country}. We provide CIF {city} pricing with full documentation, MTC, Certificate of Origin, Packing List, and Bill of Lading, and typical transit time of {transitTime} from Delhi NCR.
                 </p>
                 <ul className="space-y-2 mb-6">
                   {[
@@ -692,7 +692,7 @@ export default async function LocationPage({ params }) {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-oswald text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
             {isInternational
-              ? `Get CIF Quote — Refractory Export to ${city}`
+              ? `Get CIF Quote, Refractory Export to ${city}`
               : `Get a Quote for Refractory Supply in ${city}`}
           </h2>
           <p className="text-white/80 text-lg mb-4 max-w-2xl mx-auto">

@@ -6,7 +6,7 @@ export const metadata = {
   alternates: { canonical: '/knowledge' },
 };
 
-// E-E-A-T author entity — Rahul Taneja signs the Knowledge Base content.
+// E-E-A-T author entity, Rahul Taneja signs the Knowledge Base content.
 const authorSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',

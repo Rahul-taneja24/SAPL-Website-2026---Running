@@ -1,9 +1,9 @@
-// productCatalogData.js — server-safe export of the full product catalog.
+// productCatalogData.js, server-safe export of the full product catalog.
 //
 // Previously this lived inside `frontend/src/sections/Products.jsx`, which is
 // a client component (`'use client'`). Next.js 15 (and React Server
 // Components) forbids server components from "dotting into" exports of a
-// client module — `PRODUCT_CATALOG[slug].products` from a server component
+// client module, `PRODUCT_CATALOG[slug].products` from a server component
 // throws at build time. Moving the data here (no `'use client'` directive)
 // lets BOTH the client section and the server route handlers import it
 // safely.
@@ -16,16 +16,16 @@
 /*
  * Path B image curation (May 2026):
  *  - Mahakoshal product photos: mahakoshalrefractories.com/wp-content/uploads/2025/...
- *    (SAPL is authorised dealer — direct links to manufacturer's published assets)
+ *    (SAPL is authorised dealer, direct links to manufacturer's published assets)
  *  - CUMI product photos: cumi-murugappa.com/refractories/wp-content/uploads/...
- *    (SAPL is authorised dealer — official product photo library)
+ *    (SAPL is authorised dealer, official product photo library)
  *  - IFGL product photos: ifglgroup.com/wp-content/uploads/...
- *    (SAPL is supply partner — official 2025 product line photos)
+ *    (SAPL is supply partner, official 2025 product line photos)
  *  - Unsplash retained ONLY where no authorised brand alternative exists, and
  *    only for sector-relevant industrial shots (not generic factory pics).
  */
 export const IMG = {
-  /* ── category heroes — sector-relevant industrial shots ── */
+  /* ── category heroes, sector-relevant industrial shots ── */
   shapedHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg',
   unshapedHero: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
   flowHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladel-Well-Block-new.png',
@@ -115,7 +115,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Al₂O₃ Range', value: '60 – 75%' },
           { label: 'Max Service Temp', value: 'Up to 1800°C' },
           { label: 'Bulk Density', value: '2.3 – 2.6 g/cc' },
-          { label: 'Creep Resistance', value: 'Excellent — very low creep' },
+          { label: 'Creep Resistance', value: 'Excellent, very low creep' },
           { label: 'Thermal Expansion', value: 'Low' },
           { label: 'Spalling Resistance', value: 'Good' },
         ],
@@ -136,7 +136,7 @@ export const PRODUCT_CATALOG = {
         id: 'andalusite-bricks',
         name: 'Andalusite Bricks',
         shortDesc: 'Volume-stable andalusite bricks that mullitise in service for stoves, reheating furnaces and kilns',
-        fullDesc: 'Andalusite bricks are made from the natural mineral andalusite (Al₂SiO₅), which converts to mullite plus a siliceous phase on firing — giving 55–63% Al₂O₃ with excellent volume stability, low creep and good thermal shock resistance. They are an economical step up from fireclay where dimensional stability under thermal cycling matters. CUMI supplies andalusite grades under the CUMILITE family.',
+        fullDesc: 'Andalusite bricks are made from the natural mineral andalusite (Al₂SiO₅), which converts to mullite plus a siliceous phase on firing, giving 55–63% Al₂O₃ with excellent volume stability, low creep and good thermal shock resistance. They are an economical step up from fireclay where dimensional stability under thermal cycling matters. CUMI supplies andalusite grades under the CUMILITE family.',
         tempMax: '1600°C',
         images: [IMG.highAlumina2, IMG.fireclay1],
         grades: ['A-55', 'A-60', 'ANK Series (CUMILITE)'],
@@ -200,9 +200,9 @@ export const PRODUCT_CATALOG = {
           { grade: 'AZS-41', zro2: '40-42%', al2o3: '45-47%', density: '4.00 g/cc', temp: '1500-1700°C' },
         ],
         installation: [
-          'Heavy blocks — handle with rated lifting equipment and protect cast faces',
+          'Heavy blocks, handle with rated lifting equipment and protect cast faces',
           'Use zircon-based or AZS-compatible bedding mortar at joints',
-          'Plan controlled furnace heat-up; AZS exudes glassy phase (exudation) on first heat — design joints for it',
+          'Plan controlled furnace heat-up; AZS exudes glassy phase (exudation) on first heat, design joints for it',
           'Select VF (void-free) grade where glass quality (stone/blister-free) is critical',
         ],
         whyChoose: 'Shanker Agencies supplies Calderys fused cast AZS blocks cut and sized to glass-furnace drawings. We advise on grade (33/36/41) and cast type by glass type, pull rate and tank zone.',
@@ -239,7 +239,7 @@ export const PRODUCT_CATALOG = {
         installation: [
           'Joint with zircon-based mortar to maintain corrosion resistance at seams',
           'Use as bottom paving beneath AZS sidewalls in glass tanks',
-          'Low thermal expansion allows tight joints — follow OEM heat-up curve',
+          'Low thermal expansion allows tight joints, follow OEM heat-up curve',
           'Excellent for areas demanding dimensional stability under thermal cycling',
         ],
         whyChoose: 'Shanker Agencies supplies Calderys zircon bricks and zircon-mullite grades for glass and foundry customers, sized to drawing with technical guidance on paving layout.',
@@ -276,11 +276,11 @@ export const PRODUCT_CATALOG = {
         ],
         installation: [
           'Joint with carbon-bonded or high-alumina mortar; keep joints tight (1–2 mm)',
-          'Protect carbon-containing brick from oxidation during dry-out — limit air exposure above 400°C',
+          'Protect carbon-containing brick from oxidation during dry-out, limit air exposure above 400°C',
           'Use coke-breeze or controlled reducing dry-out where specified',
           'Match grade to ladle zone: barrel (Al₂O₃-C), slag line (Al₂O₃-ZrO₂-C), impact pad (high-strength)',
         ],
-        whyChoose: 'Shanker Agencies supplies TRL Krosaki and IFGL alumina-carbon bricks zoned to your ladle design — barrel, slag line, metal line and impact pad — with campaign-life optimisation support.',
+        whyChoose: 'Shanker Agencies supplies TRL Krosaki and IFGL alumina-carbon bricks zoned to your ladle design, barrel, slag line, metal line and impact pad, with campaign-life optimisation support.',
       },
       {
         id: 'magnesia-carbon-bricks',
@@ -357,13 +357,13 @@ export const PRODUCT_CATALOG = {
           { grade: 'HA-90', al2o3: '88-92%', fe2o3: '1.0%', ap: '14-18%', ccs: '70 MPa', pce: 'SK 38', temp: '1850°C' },
         ],
         installation: [
-          'Store in dry conditions — protect from moisture and contamination before use',
+          'Store in dry conditions, protect from moisture and contamination before use',
           'Use matching high alumina mortar (same Al₂O₃ % as brick) for jointing',
           'Maintain joint thickness 1.5–3 mm for optimal bond integrity',
           'Follow controlled dry-out schedule: 20°C/hr to 110°C, hold 12 hrs, then 30°C/hr to operating temp',
           'Apply expansion allowances: 6–8 mm per metre for silica-bonded grades, 8–10 mm for Al₂O₃ >70%',
         ],
-        whyChoose: "With 45+ years of experience specifying refractories across India's steel and cement sectors, Shanker Agencies stocks all six HA grades ready-to-ship from Delhi. We supply CUMI, Calderys, TRL Krosaki and IFGL variants — matching the exact grade to your furnace design and budget.",
+        whyChoose: "With 45+ years of experience specifying refractories across India's steel and cement sectors, Shanker Agencies stocks all six HA grades ready-to-ship from Delhi. We supply CUMI, Calderys, TRL Krosaki and IFGL variants, matching the exact grade to your furnace design and budget.",
       },
       {
         id: 'fireclay-bricks',
@@ -401,7 +401,7 @@ export const PRODUCT_CATALOG = {
           'Use fireclay mortar of matching composition for jointing',
           'Keep joint width between 2–4 mm',
           'Dry-out at 25°C/hr up to 120°C, hold 8 hrs minimum before heating to operating temp',
-          'Suitable for both straight and arch courses — wedge bricks available on request',
+          'Suitable for both straight and arch courses, wedge bricks available on request',
         ],
         whyChoose: 'Shanker Agencies stocks fireclay bricks from CUMI and Calderys in standard IS sizes. Bulk discounts available. Same-day dispatch from Delhi warehouse for quantities up to 5 MT.',
       },
@@ -438,9 +438,9 @@ export const PRODUCT_CATALOG = {
           { grade: 'IFB-32', al2o3: '65%', density: '1.10 g/cc', tc: '0.35 W/mK', ccs: '5.0 MPa', temp: '1650°C' },
         ],
         installation: [
-          'Handle with care — lower crushing strength than dense bricks',
+          'Handle with care, lower crushing strength than dense bricks',
           'Use lightweight insulating mortar or colloidal silica bonded mortar',
-          'Never expose directly to liquid metal or slag — always use with working lining',
+          'Never expose directly to liquid metal or slag, always use with working lining',
           'Dry-out schedule: ambient to 200°C at 10°C/hr, hold 4 hrs, then proceed slowly',
         ],
         whyChoose: 'IFBs paired with a working lining can reduce furnace shell temperatures by 60–80°C and cut energy consumption by up to 30%. Shanker Agencies engineers can calculate the optimal lining thickness for your application.',
@@ -480,7 +480,7 @@ export const PRODUCT_CATALOG = {
         installation: [
           'Use magnesite mortar or dry-gunning compound for basic brick joints',
           'Keep joint thickness to absolute minimum: 1–2 mm for highest density',
-          'Mag-carbon bricks: handle in dry conditions only — avoid moisture contact',
+          'Mag-carbon bricks: handle in dry conditions only, avoid moisture contact',
           'Follow steel-plant dry-out curves: 15°C/hr to 200°C, hold 24 hrs',
           'Expansion allowances: 8–12 mm per metre of lining length',
         ],
@@ -518,19 +518,19 @@ export const PRODUCT_CATALOG = {
           { grade: 'NSiC', sic: '72-78%', density: '2.5 g/cc', tc: '14 W/mK', ccs: '120 MPa', temp: '1650°C' },
         ],
         installation: [
-          'Silicon carbide has a high thermal expansion coefficient — allow 10 mm/m expansion',
+          'Silicon carbide has a high thermal expansion coefficient, allow 10 mm/m expansion',
           'Use SiC mortar or colloidal silica bonded cement for jointing',
           'Nitride-bonded grades: do not expose to reducing atmospheres above 1400°C',
           'Oxide-bonded grades: suitable for oxidising atmospheres up to 1500°C',
         ],
-        whyChoose: 'We supply CUMI SiC bricks in all bond types — specify your atmosphere (oxidising/reducing) and temperature for the correct grade recommendation.',
+        whyChoose: 'We supply CUMI SiC bricks in all bond types, specify your atmosphere (oxidising/reducing) and temperature for the correct grade recommendation.',
       },
     ],
   },
 
   'unshaped-refractories': {
     name: 'Unshaped Refractories',
-    tagline: 'Monolithic solutions — faster installation, fewer joints, complex shapes',
+    tagline: 'Monolithic solutions, faster installation, fewer joints, complex shapes',
     desc: 'Unshaped or monolithic refractories are supplied in powder or granular form and formed in-situ during installation. They eliminate brick joints, reduce installation time, and allow lining of complex geometries impossible with shaped bricks.',
     image: IMG.unshapedHero,
     tempRange: '1200–1850°C',
@@ -540,7 +540,7 @@ export const PRODUCT_CATALOG = {
         id: 'plastic-refractories',
         name: 'Plastic Refractories',
         shortDesc: 'Ready-to-use rammable plastic refractory for burner blocks, patching and monolithic linings',
-        fullDesc: 'Plastic refractories are stiff, putty-like mixes supplied ready to install — rammed or pneumatically gunned into place and then dried in service. Phosphate-bonded high-alumina grades develop strength rapidly on heating and give excellent volume stability around complex shapes. They are ideal for burner blocks, kiln nose rings, patching and any lining around tubes or irregular geometry where casting is impractical. CUMI supplies clay, high-alumina and SiC plastic grades.',
+        fullDesc: 'Plastic refractories are stiff, putty-like mixes supplied ready to install, rammed or pneumatically gunned into place and then dried in service. Phosphate-bonded high-alumina grades develop strength rapidly on heating and give excellent volume stability around complex shapes. They are ideal for burner blocks, kiln nose rings, patching and any lining around tubes or irregular geometry where casting is impractical. CUMI supplies clay, high-alumina and SiC plastic grades.',
         tempMax: '1800°C',
         images: [IMG.ramming1, IMG.gunning1],
         grades: ['Clay-based (45% Al₂O₃)', 'High-Alumina (70-80%)', 'SiC Plastic', 'Phosphate-bonded patching'],
@@ -558,7 +558,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Max Service Temp', value: '1400 – 1800°C' },
           { label: 'Bulk Density (fired)', value: '2.2 – 2.7 g/cc' },
           { label: 'Bond Type', value: 'Phosphate / air-setting' },
-          { label: 'Installation', value: 'Ramming / gunning — ready to use' },
+          { label: 'Installation', value: 'Ramming / gunning, ready to use' },
           { label: 'Volume Stability', value: 'Excellent' },
         ],
         specs: [
@@ -567,7 +567,7 @@ export const PRODUCT_CATALOG = {
           { grade: 'HA-80 Plastic', al2o3: '78-82%', density: '2.7 g/cc', ccs: '70 MPa', temp: '1800°C' },
         ],
         installation: [
-          'Supplied ready to use — do not add water to phosphate-bonded grades',
+          'Supplied ready to use, do not add water to phosphate-bonded grades',
           'Ram in 25–50 mm layers with a pneumatic rammer; key into anchors for vertical/overhead work',
           'Cut vent holes for moisture/volatile escape before heat-up',
           'Controlled dry-out: 30°C/hr to 350°C with holds; phosphate bond develops strength on first firing',
@@ -577,7 +577,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'low-cement-castables',
         name: 'Low Cement Castables (LCC)',
-        shortDesc: "High-strength castables with 3–5% cement — the industry standard for steel ladles",
+        shortDesc: "High-strength castables with 3–5% cement, the industry standard for steel ladles",
         fullDesc: "Low cement castables (LCC) contain only 3–5% hydraulic cement binder, far less than conventional castables. This translates to dramatically higher hot strength, superior slag resistance, reduced porosity, and better thermal shock resistance. LCC is the dominant monolithic refractory in India's steel ladles, tundishes, and torpedo cars.",
         popular: true,
         tempMax: '1750°C',
@@ -598,7 +598,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Water Addition', value: '4.5 – 5.5% by weight' },
           { label: 'Installation Method', value: 'Vibro-cast, pump, trowel' },
           { label: 'De-moulding Time', value: '16 – 24 hrs at ambient' },
-          { label: 'Dry-out Requirement', value: 'Mandatory — see schedule' },
+          { label: 'Dry-out Requirement', value: 'Mandatory, see schedule' },
         ],
         specs: [
           { grade: 'LCC-60', al2o3: '58-62%', cement: '4-5%', density: '2.60 g/cc', ccs110: '40 MPa', ccs1200: '80 MPa', temp: '1650°C' },
@@ -612,7 +612,7 @@ export const PRODUCT_CATALOG = {
           'Cast in layers no thicker than 300 mm and vibrate thoroughly to eliminate voids',
           'Cover with polythene sheet after casting to retain moisture during curing (24 hrs minimum)',
           'Critical dry-out: 25°C→110°C at 20°C/hr, hold 12 hrs; 110°C→300°C at 15°C/hr, hold 8 hrs; then 30°C/hr to operating temperature',
-          'Never accelerate dry-out with open flame — steam explosion risk',
+          'Never accelerate dry-out with open flame, steam explosion risk',
         ],
         whyChoose: 'Shanker Agencies is the strategic supply partner for Calderys and TRL Krosaki LCC products in Delhi NCR. We provide on-site technical support, dry-out monitoring, and mixing/pumping equipment rental.',
       },
@@ -628,7 +628,7 @@ export const PRODUCT_CATALOG = {
           'Blast furnace main troughs & tilting runners',
           'EAF delta section & taphole area',
           'Ladle impact pad',
-          'High-wear zones — torpedo car mouth',
+          'High-wear zones, torpedo car mouth',
           'Direct-reduced iron (DRI) vessels',
           'Aluminium holding furnace high-wear zones',
         ],
@@ -648,13 +648,13 @@ export const PRODUCT_CATALOG = {
           { grade: 'ULCC-90', al2o3: '88-92%', cement: '0.5-1%', density: '3.20 g/cc', ccs: '180 MPa', temp: '1850°C' },
         ],
         installation: [
-          'Strictly follow manufacturer water addition (typically 3.5–4.5%) — excess water destroys properties',
-          'Use forced-action or planetary mixer — drum mixer not suitable for ULCC',
+          'Strictly follow manufacturer water addition (typically 3.5–4.5%), excess water destroys properties',
+          'Use forced-action or planetary mixer, drum mixer not suitable for ULCC',
           'Vibration is critical: 30–45 seconds per layer using 25–40 mm needle vibrator',
           'Extended curing: minimum 48 hrs covered before dry-out begins',
           'Dry-out is slower than LCC: 10°C/hr to 110°C, hold 24 hrs; then 15°C/hr stages to operating temp',
         ],
-        whyChoose: 'ULCC is not a commodity product — grade selection, water content, and dry-out protocol must be matched to each application. Shanker Agencies provides full application engineering support with every ULCC order.',
+        whyChoose: 'ULCC is not a commodity product, grade selection, water content, and dry-out protocol must be matched to each application. Shanker Agencies provides full application engineering support with every ULCC order.',
       },
       {
         id: 'ramming-masses',
@@ -674,11 +674,11 @@ export const PRODUCT_CATALOG = {
         brands: ['Calderys India', 'Mahakoshal'],
         keyProperties: [
           { label: 'Application Method', value: 'Hand or mechanical ramming' },
-          { label: 'Sintering Required', value: 'Yes — gradual heat-up of new lining' },
+          { label: 'Sintering Required', value: 'Yes, gradual heat-up of new lining' },
           { label: 'Lining Life', value: '100–500 heats (grade-dependent)' },
           { label: 'Re-lining Speed', value: '4–8 hrs for induction furnace' },
           { label: 'Water Content', value: 'Dry to semi-dry (0–3%)' },
-          { label: 'Key Advantage', value: 'No joints — zero melt infiltration' },
+          { label: 'Key Advantage', value: 'No joints, zero melt infiltration' },
         ],
         specs: [
           { grade: 'Silica', sio2: '95-98%', density: '1.90 g/cc', application: 'Cast iron induction furnace', temp: '1650°C' },
@@ -689,7 +689,7 @@ export const PRODUCT_CATALOG = {
         installation: [
           'Clean furnace shell and apply one coat of release agent before ramming',
           'Ram in 50–75 mm layers using the correct pattern (spiral from bottom up)',
-          'Each layer must be uniformly compacted — check with density gauge if available',
+          'Each layer must be uniformly compacted, check with density gauge if available',
           'For induction furnaces: sinter with a gradual heat-up using scrap metal charge',
           'First heat: fill with metal charge, heat slowly to operating temperature, do not tap',
           'Typical sintering cycle: 4–8 hrs at full power to form a glassy bonded shell',
@@ -699,7 +699,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'gunning-materials',
         name: 'Gunning Materials',
-        shortDesc: 'Pneumatically applied repair mixes — minimise downtime with in-situ hot repairs',
+        shortDesc: 'Pneumatically applied repair mixes, minimise downtime with in-situ hot repairs',
         fullDesc: 'Gunning materials are specially formulated to be applied by pneumatic gunning equipment, typically while the vessel is still hot. They are the fastest way to extend vessel campaign life by repairing eroded zones without a full re-lining shutdown, saving significant production time and cost.',
         tempMax: '1700°C',
         images: [IMG.gunning1, IMG.gunning2],
@@ -728,10 +728,10 @@ export const PRODUCT_CATALOG = {
         ],
         installation: [
           'Ensure gunning machine is calibrated for correct air pressure (3–5 bar) and water addition',
-          'Clean eroded surface — remove loose material and wash with air jet before gunning',
+          'Clean eroded surface, remove loose material and wash with air jet before gunning',
           'Apply in thin layers (25–50 mm per pass) to prevent slumping on vertical surfaces',
           'Allow each layer to set before applying the next',
-          'Water ring position is critical — adjust to achieve optimal wet/dry gunning consistency',
+          'Water ring position is critical, adjust to achieve optimal wet/dry gunning consistency',
           'Preheat repair area to 200–400°C before gunning on cold substrate',
         ],
         whyChoose: 'We supply gunning equipment rental alongside material for complete turnkey repair contracts. Our technicians have supervised ladle and BF trough repair campaigns across 50+ steel plants in India.',
@@ -740,7 +740,7 @@ export const PRODUCT_CATALOG = {
         id: 'refractory-mortars',
         name: 'Refractory Mortars',
         shortDesc: 'High alumina, fireclay, basic and acid-proof mortars for jointing, finishing and minor repair work',
-        fullDesc: 'Refractory mortars are fine-grained bonding materials used to lay refractory bricks, fill expansion joints, and repair small areas of furnace lining. The right mortar matches the brick chemistry — fireclay mortars for fireclay bricks, high alumina mortars for high alumina linings, basic mortars for magnesia and dolomite zones — so the joint chemistry stays consistent with the surrounding refractory mass. Available in air-setting, heat-setting (ceramic-bonded) and hydraulic-setting variants depending on the application.',
+        fullDesc: 'Refractory mortars are fine-grained bonding materials used to lay refractory bricks, fill expansion joints, and repair small areas of furnace lining. The right mortar matches the brick chemistry, fireclay mortars for fireclay bricks, high alumina mortars for high alumina linings, basic mortars for magnesia and dolomite zones, so the joint chemistry stays consistent with the surrounding refractory mass. Available in air-setting, heat-setting (ceramic-bonded) and hydraulic-setting variants depending on the application.',
         tempMax: '1750°C',
         images: [IMG.mortars1, IMG.mortars2],
         grades: ['Fireclay Mortar', '50% Al₂O₃ Mortar', '70% Al₂O₃ Mortar', '80% Al₂O₃ Mortar', 'Magnesia Mortar', 'Insulating Mortar', 'Acid-Proof Mortar (Furan / Potassium Silicate)'],
@@ -750,7 +750,7 @@ export const PRODUCT_CATALOG = {
           'Expansion joint filling in long brick courses',
           'Hot-face patching of small eroded areas',
           'Anchor pocket filling around stainless steel anchors',
-          'Boiler refractory brick laying — water wall + roof',
+          'Boiler refractory brick laying, water wall + roof',
           'Acid plant tile and brick lining (acid-proof grades)',
         ],
         brands: ['Mahakoshal Refractories', 'CUMI Super Refractories', 'Calderys India'],
@@ -772,21 +772,21 @@ export const PRODUCT_CATALOG = {
           { grade: 'Acid-Proof Mortar', sio2: '70-85%', density: '1.95 g/cc', application: 'Acid-proof bricks / tiles', temp: '500°C' },
         ],
         installation: [
-          'Match the mortar chemistry to the brick — never use fireclay mortar with high alumina bricks above HA-70',
+          'Match the mortar chemistry to the brick, never use fireclay mortar with high alumina bricks above HA-70',
           'Mix dry powder with measured potable water (typically 22–30% by weight) until smooth',
           'Apply joint thickness of 1.5–3 mm using a steel trowel on bedding surface AND brick face',
           'Lay bricks within 10 minutes of mortar application before initial set',
-          'Hammer-tap each brick into final position — never adjust after the mortar has stiffened',
+          'Hammer-tap each brick into final position, never adjust after the mortar has stiffened',
           'Allow 24 hours air-set before any heat-up; first heat-up at 25°C/hour to 200°C with a 4-hour soak',
           'For acid-proof furan mortar: 7-day cure at 25°C before any chemical exposure',
         ],
-        whyChoose: 'Shanker Agencies stocks the full Mahakoshal Refractories mortar range — fireclay, high alumina (HA-50 to HA-80), basic and insulating grades — alongside Crown Ceramics acid-proof furan and potassium silicate mortars. Our engineers will match the mortar chemistry to your brick spec so the joint never becomes the weakest link in the lining.',
+        whyChoose: 'Shanker Agencies stocks the full Mahakoshal Refractories mortar range, fireclay, high alumina (HA-50 to HA-80), basic and insulating grades, alongside Crown Ceramics acid-proof furan and potassium silicate mortars. Our engineers will match the mortar chemistry to your brick spec so the joint never becomes the weakest link in the lining.',
       },
       {
         id: 'conventional-castables',
         name: 'Conventional Castables (Fireclay-Based)',
         shortDesc: 'Cost-effective fireclay-based castables (15–25% cement) for general furnace linings and backup applications',
-        fullDesc: 'Conventional castables are the workhorse monolithic refractories for general industrial applications — fireclay-based or low-purity high alumina aggregates bonded with 15–25% calcium aluminate cement. They cost roughly half what an equivalent LCC costs and install faster (no special vibration or extended cure required), making them the right specification for backup linings, low-wear zones, and repair work where premium hot-strength is not required. Indian foundries, boiler plants and cement preheater backup zones still consume large volumes of conventional castables every year.',
+        fullDesc: 'Conventional castables are the workhorse monolithic refractories for general industrial applications, fireclay-based or low-purity high alumina aggregates bonded with 15–25% calcium aluminate cement. They cost roughly half what an equivalent LCC costs and install faster (no special vibration or extended cure required), making them the right specification for backup linings, low-wear zones, and repair work where premium hot-strength is not required. Indian foundries, boiler plants and cement preheater backup zones still consume large volumes of conventional castables every year.',
         tempMax: '1500°C',
         images: [IMG.conventional1, IMG.conventional2],
         grades: ['40% Al₂O₃ Conventional Castable', '50% Al₂O₃ Conventional Castable', '60% Al₂O₃ Conventional Castable', '70% Al₂O₃ Conventional Castable', 'Insulating Castable (LD-1.5)'],
@@ -824,15 +824,15 @@ export const PRODUCT_CATALOG = {
           'Standard dry-out: 25°C/hr to 110°C, hold 8 hrs; then 30°C/hr to operating temperature',
           'For thin sections (< 100 mm): consider hand-pack or gunning instead of casting',
         ],
-        whyChoose: 'Conventional castables are not glamorous — but they save Indian plants money where premium LCC offers no measurable benefit (backup linings, low-wear zones, repair work). Shanker Agencies stocks Mahakoshal Refractories conventional grades 40–70 ready-to-ship from Delhi, alongside Calderys and CUMI variants. Our engineers will recommend conventional vs LCC based on actual zone duty, not blanket spec.',
+        whyChoose: 'Conventional castables are not glamorous, but they save Indian plants money where premium LCC offers no measurable benefit (backup linings, low-wear zones, repair work). Shanker Agencies stocks Mahakoshal Refractories conventional grades 40–70 ready-to-ship from Delhi, alongside Calderys and CUMI variants. Our engineers will recommend conventional vs LCC based on actual zone duty, not blanket spec.',
       },
     ],
   },
 
   'flow-control': {
     name: 'Flow Control',
-    tagline: 'Precision refractories that control molten steel — directly impacting steel quality',
-    desc: 'Flow control refractories regulate the flow of molten steel during continuous casting. They must survive extreme thermal shock, erosion from high-velocity steel, and chemical attack from steel and slag — all while maintaining dimensional tolerances critical to casting quality.',
+    tagline: 'Precision refractories that control molten steel, directly impacting steel quality',
+    desc: 'Flow control refractories regulate the flow of molten steel during continuous casting. They must survive extreme thermal shock, erosion from high-velocity steel, and chemical attack from steel and slag, all while maintaining dimensional tolerances critical to casting quality.',
     image: IMG.flowHero,
     tempRange: '1500–1650°C',
     industries: ['Steel'],
@@ -953,7 +953,7 @@ export const PRODUCT_CATALOG = {
         id: 'slide-gate-plates',
         name: 'Slide Gate Plates',
         shortDesc: 'Sliding mechanism plates controlling molten steel flow from ladle to tundish',
-        fullDesc: 'Slide gate plates are the critical refractory components in the ladle and tundish slide gate systems that control, start, and stop the flow of molten steel. They slide against each other under hydraulic pressure, requiring extreme dimensional accuracy, high thermal shock resistance, and resistance to both steel erosion and slag attack. Service life is measured in heats — a premium grade lasting 20+ heats vs 8–10 for standard.',
+        fullDesc: 'Slide gate plates are the critical refractory components in the ladle and tundish slide gate systems that control, start, and stop the flow of molten steel. They slide against each other under hydraulic pressure, requiring extreme dimensional accuracy, high thermal shock resistance, and resistance to both steel erosion and slag attack. Service life is measured in heats, a premium grade lasting 20+ heats vs 8–10 for standard.',
         popular: true,
         tempMax: '1650°C',
         images: [IMG.slideGate1, IMG.slideGate2],
@@ -982,11 +982,11 @@ export const PRODUCT_CATALOG = {
         ],
         installation: [
           'Inspect slide gate frame and cassette for squareness before fitting plates',
-          'Ensure plate seating surface is clean and flat — any gap causes steel leakage',
+          'Ensure plate seating surface is clean and flat, any gap causes steel leakage',
           'Apply thin layer of refractory mortar or anti-oxidation paste to back of plate',
           'Preheat assembled slide gate to 100–150°C before first heat (electric pre-heater preferred)',
-          'Check plate wear gauge after each heat — replace when bore erosion exceeds limit',
-          'Store slide plates in dry conditions — moisture causes cracking during first heat',
+          'Check plate wear gauge after each heat, replace when bore erosion exceeds limit',
+          'Store slide plates in dry conditions, moisture causes cracking during first heat',
         ],
         whyChoose: "Shanker Agencies is the strategic supply partner for IFGL Refractories (India's largest flow control manufacturer) in North India. We maintain stock of standard ladle plate sizes for same-day dispatch.",
       },
@@ -999,7 +999,7 @@ export const PRODUCT_CATALOG = {
         images: [IMG.shroud1],
         grades: ['Isostatically Pressed Al₂O₃-C', 'Standard Pressed', 'Fused Silica Shroud'],
         applications: [
-          'Ladle to tundish transfer — slab/bloom/billet casters',
+          'Ladle to tundish transfer, slab/bloom/billet casters',
           'Sequence casting (multiple heats without replacing shroud)',
           'High-grade steel production requiring low inclusion counts',
         ],
@@ -1008,7 +1008,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Material', value: 'Al₂O₃-C or Fused Silica' },
           { label: 'Manufacturing', value: 'Isostatic pressing (premium)' },
           { label: 'Thermal Shock Resistance', value: 'Excellent' },
-          { label: 'Argon Purging', value: 'Available — prevents clogging' },
+          { label: 'Argon Purging', value: 'Available, prevents clogging' },
           { label: 'Service Life', value: '1 heat (standard) or sequence' },
           { label: 'Connection System', value: 'Bayonet / quick-change' },
         ],
@@ -1020,8 +1020,8 @@ export const PRODUCT_CATALOG = {
         installation: [
           'Always pre-heat shroud to 800–1000°C using lance pre-heater before first use',
           'Apply anti-oxidation paste to upper flange seating area',
-          'Argon purging: connect purge line before opening ladle — purge at 10–15 Nl/min',
-          'Check bayonet lock engagement before casting — loose connection causes steel splash',
+          'Argon purging: connect purge line before opening ladle, purge at 10–15 Nl/min',
+          'Check bayonet lock engagement before casting, loose connection causes steel splash',
         ],
         whyChoose: 'We stock IFGL ladle shrouds in standard ISO sizes (200–250 mm OD, lengths 700–900 mm) with 48-hour availability for custom sizes.',
       },
@@ -1041,7 +1041,7 @@ export const PRODUCT_CATALOG = {
         ],
         brands: ['IFGL Refractories', 'TRL Krosaki'],
         keyProperties: [
-          { label: 'Port Design', value: 'Single / Dual port — custom angles' },
+          { label: 'Port Design', value: 'Single / Dual port, custom angles' },
           { label: 'Anti-clogging', value: 'Zirconia insert at steel-contact bore' },
           { label: 'Immersion Depth', value: 'Customer-specified' },
           { label: 'Thermal Shock', value: 'Extremely high resistance required' },
@@ -1055,8 +1055,8 @@ export const PRODUCT_CATALOG = {
         ],
         installation: [
           'Pre-heat SEN to 1000–1100°C using dedicated SEN pre-heater (minimum 45 minutes)',
-          'Never cold-insert SEN into liquid steel — thermal shock will crack it immediately',
-          'Align SEN centrally in mould — offset causes asymmetric flow and quality problems',
+          'Never cold-insert SEN into liquid steel, thermal shock will crack it immediately',
+          'Align SEN centrally in mould, offset causes asymmetric flow and quality problems',
           'Apply anti-oxidation paste to upper flange and tundish bottom nozzle interface',
         ],
         whyChoose: "IFGL (India's leading flow control refractory manufacturer) has developed SEN designs optimised for each major Indian caster configuration. Shanker Agencies supplies IFGL SEN with the full plant-specific documentation package.",
@@ -1065,11 +1065,11 @@ export const PRODUCT_CATALOG = {
         id: 'porous-plugs',
         name: 'Porous Plugs & Ladle Bottom Nozzles',
         shortDesc: 'Enable argon gas stirring for steel homogenisation and inclusion flotation',
-        fullDesc: 'Porous plugs are installed in the ladle bottom and connected to an argon gas supply. Bubbling argon through the steel bath stirs the melt, homogenises temperature and chemistry, promotes inclusion flotation, and reduces total oxygen content — directly improving finished steel cleanliness and mechanical properties.',
+        fullDesc: 'Porous plugs are installed in the ladle bottom and connected to an argon gas supply. Bubbling argon through the steel bath stirs the melt, homogenises temperature and chemistry, promotes inclusion flotation, and reduces total oxygen content, directly improving finished steel cleanliness and mechanical properties.',
         tempMax: '1650°C',
         images: [IMG.porous1, IMG.porous2],
         applications: [
-          'Ladle bottom stirring — all steel grades',
+          'Ladle bottom stirring, all steel grades',
           'Secondary metallurgy (LF, VD, VOD)',
           'Desulphurisation station',
           'Rinsing and homogenisation before casting',
@@ -1090,9 +1090,9 @@ export const PRODUCT_CATALOG = {
         ],
         installation: [
           'Ensure mortar completely seals the annular gap between porous plug and well block',
-          'Connect argon line — test gas flow before tapping first heat',
-          'After each campaign: inspect and measure plug erosion — replace if worn beyond safe limit',
-          'Monitor gas pressure during heat — sudden pressure increase indicates plug clogging',
+          'Connect argon line, test gas flow before tapping first heat',
+          'After each campaign: inspect and measure plug erosion, replace if worn beyond safe limit',
+          'Monitor gas pressure during heat, sudden pressure increase indicates plug clogging',
         ],
         whyChoose: 'Shanker Agencies supplies IFGL porous plugs matched to your ladle well block dimensions. We also supply the steel sleeve assembly and mortar for complete replacement.',
       },
@@ -1111,7 +1111,7 @@ export const PRODUCT_CATALOG = {
         id: 'microporous-insulation',
         name: 'Microporous Insulation',
         shortDesc: 'Ultra-low-conductivity microporous panels for back-up insulation in tight spaces',
-        fullDesc: 'Microporous insulation is built from fumed (pyrogenic) silica with infrared opacifiers and reinforcing fibre, engineered so the pore size is below the mean free path of air molecules. The result is the lowest thermal conductivity of any solid insulation — around 0.020–0.030 W/m·K — letting a thin panel match the performance of a much thicker conventional board. Ideal for back-up insulation where space and shell temperature are both constrained.',
+        fullDesc: 'Microporous insulation is built from fumed (pyrogenic) silica with infrared opacifiers and reinforcing fibre, engineered so the pore size is below the mean free path of air molecules. The result is the lowest thermal conductivity of any solid insulation, around 0.020–0.030 W/m·K, letting a thin panel match the performance of a much thicker conventional board. Ideal for back-up insulation where space and shell temperature are both constrained.',
         tempMax: '1000°C',
         images: [IMG.calciumSil1, IMG.insulHero],
         grades: ['Microporous Board', 'Flexible / Encapsulated Panel', 'Machinable Block', 'Foil-faced Panel'],
@@ -1139,17 +1139,17 @@ export const PRODUCT_CATALOG = {
         ],
         installation: [
           'Cut boards with a fine-tooth saw; wear respiratory protection for dust',
-          'Install as a back-up layer behind the dense/fibre hot-face lining — never on the hot face',
+          'Install as a back-up layer behind the dense/fibre hot-face lining, never on the hot face',
           'Keep panels dry; encapsulated/foil-faced grades resist handling damage',
           'Use to cut shell temperature or save lining thickness where space is limited',
         ],
-        whyChoose: 'Shanker Agencies supplies microporous insulation panels for ladle, tundish and furnace back-up where shell temperature and space are critical — with heat-loss calculation to size the layer.',
+        whyChoose: 'Shanker Agencies supplies microporous insulation panels for ladle, tundish and furnace back-up where shell temperature and space are critical, with heat-loss calculation to size the layer.',
       },
       {
         id: 'ceramic-fiber-products',
         name: 'Ceramic Fiber Products',
         shortDesc: 'Ultra-lightweight blankets, modules and boards for energy-efficient furnace linings',
-        fullDesc: 'Ceramic fiber products are manufactured from aluminosilicate fibres produced by melting and fiberising a blend of Al₂O₃ and SiO₂. They offer extremely low thermal mass (enabling rapid furnace heat-up and cool-down), very low thermal conductivity, and good resistance to thermal shock. Available in blankets, modules, boards, papers, and loose wool — each suited to different installation requirements.',
+        fullDesc: 'Ceramic fiber products are manufactured from aluminosilicate fibres produced by melting and fiberising a blend of Al₂O₃ and SiO₂. They offer extremely low thermal mass (enabling rapid furnace heat-up and cool-down), very low thermal conductivity, and good resistance to thermal shock. Available in blankets, modules, boards, papers, and loose wool, each suited to different installation requirements.',
         popular: true,
         tempMax: '1600°C',
         images: [IMG.ceramicFiber1, IMG.ceramicFiber2],
@@ -1170,7 +1170,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Thermal Conductivity', value: '0.08 – 0.12 W/mK (at 500°C)' },
           { label: 'Bulk Density', value: '64 – 200 kg/m³' },
           { label: 'Heat Storage', value: '5–10% of equivalent dense refractory' },
-          { label: 'Thermal Shock', value: 'Excellent — no cracking' },
+          { label: 'Thermal Shock', value: 'Excellent, no cracking' },
           { label: 'Chemical Resistance', value: 'Good to most atmospheres' },
         ],
         specs: [
@@ -1182,9 +1182,9 @@ export const PRODUCT_CATALOG = {
           { grade: 'Ceramic Paper', tempC: '1260°C', density: '160-200 kg/m³', tc_500: '0.10 W/mK', tensile: '—', form: 'Roll (5m × 300mm)' },
         ],
         installation: [
-          'Blanket: wrap around cylindrical vessels or layer on flat surfaces — overlap joints by 50 mm',
-          'Modules: attach to shell plate using stud welding — butt joints, no gaps',
-          'Boards: cut with hand saw or angle grinder — wear respiratory protection when cutting fibres',
+          'Blanket: wrap around cylindrical vessels or layer on flat surfaces, overlap joints by 50 mm',
+          'Modules: attach to shell plate using stud welding, butt joints, no gaps',
+          'Boards: cut with hand saw or angle grinder, wear respiratory protection when cutting fibres',
           'Expansion gaps: ceramic fiber requires no expansion gaps (it compresses and expands freely)',
           'Anchoring: stainless steel stud anchors every 300–400 mm for overhead and vertical applications',
           'Vapour barrier: apply rigidiser or colloidal silica coating on hot face to prevent fibre erosion in high-velocity gas applications',
@@ -1195,7 +1195,7 @@ export const PRODUCT_CATALOG = {
         id: 'calcium-silicate',
         name: 'Calcium Silicate Boards',
         shortDesc: 'Rigid, load-bearing insulation boards for backup lining and structural insulation',
-        fullDesc: 'Calcium silicate boards are manufactured by autoclaving a slurry of silica, lime, and reinforcing fibres. They are rigid, dimensionally stable at temperature, and can bear significant compressive loads — unlike ceramic fiber which deflects under mechanical pressure. Essential for applications requiring a firm, flat substrate.',
+        fullDesc: 'Calcium silicate boards are manufactured by autoclaving a slurry of silica, lime, and reinforcing fibres. They are rigid, dimensionally stable at temperature, and can bear significant compressive loads, unlike ceramic fiber which deflects under mechanical pressure. Essential for applications requiring a firm, flat substrate.',
         tempMax: '1000°C',
         images: [IMG.calciumSil1, IMG.ceramicFiber2],
         grades: ['CS-650 (650°C)', 'CS-870 (870°C)', 'CS-1000 (1000°C)'],
@@ -1204,7 +1204,7 @@ export const PRODUCT_CATALOG = {
           'Ladle furniture and covers',
           'Kiln car decks (under the refractory deck)',
           'Heat shields around vessel steel structures',
-          'Pipe insulation — industrial process piping',
+          'Pipe insulation, industrial process piping',
           'Flat-bed furnace hearth backup',
         ],
         brands: ['Mahakoshal'],
@@ -1212,7 +1212,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Max Service Temp', value: '650°C – 1000°C' },
           { label: 'Thermal Conductivity', value: '0.15 – 0.25 W/mK' },
           { label: 'Compressive Strength', value: '0.5 – 2.0 MPa' },
-          { label: 'Rigidity', value: 'Excellent — load-bearing' },
+          { label: 'Rigidity', value: 'Excellent, load-bearing' },
           { label: 'Cutting', value: 'Easily cut with hand saw' },
           { label: 'Moisture', value: 'Can be re-dried after wetting' },
         ],
@@ -1222,9 +1222,9 @@ export const PRODUCT_CATALOG = {
           { grade: 'CS-1000', maxTemp: '1000°C', density: '280-320 g/cc', tc: '0.22 W/mK', ccs: '1.0 MPa', size: '1000×500×25-75mm' },
         ],
         installation: [
-          'Cut to size using hand saw or jigsaw — no specialist tools required',
+          'Cut to size using hand saw or jigsaw, no specialist tools required',
           'Attach with stainless steel screws or high-temp adhesive to steel substrate',
-          'Butt joints — use ceramic fiber paper (1260°C) to seal joints if gas-tight seal required',
+          'Butt joints, use ceramic fiber paper (1260°C) to seal joints if gas-tight seal required',
           'Pre-dry if boards were stored in damp conditions before installation (200°C, 4 hrs)',
         ],
         whyChoose: 'Calcium silicate boards are a cost-effective way to add 50–100 mm of rigid backup insulation to any furnace. Shanker Agencies stocks standard board sizes (1000×500 mm) in 25, 50, and 75 mm thicknesses.',
@@ -1244,7 +1244,7 @@ export const PRODUCT_CATALOG = {
         id: 'carbon-bricks',
         name: 'Carbon Bricks',
         shortDesc: 'High-carbon anti-corrosion bricks for chemical reactors, acid towers and blast furnace hearths',
-        fullDesc: 'Carbon bricks are pitch- or resin-bonded blocks of amorphous carbon or graphite (>90% C) prized for near-universal chemical resistance — they withstand strong mineral acids (including HF and phosphoric acid) that destroy oxide ceramics, plus high thermal conductivity for blast furnace hearths. Because carbon oxidises in air above about 400–500°C, they are specified for reducing or chemical (non-oxidising) service. Impervious resin-impregnated grades give the lowest permeability.',
+        fullDesc: 'Carbon bricks are pitch- or resin-bonded blocks of amorphous carbon or graphite (>90% C) prized for near-universal chemical resistance, they withstand strong mineral acids (including HF and phosphoric acid) that destroy oxide ceramics, plus high thermal conductivity for blast furnace hearths. Because carbon oxidises in air above about 400–500°C, they are specified for reducing or chemical (non-oxidising) service. Impervious resin-impregnated grades give the lowest permeability.',
         tempMax: '1500°C',
         images: [IMG.acidBrick2, IMG.basicBricks1],
         grades: ['Carbon Brick', 'Semi-Graphite', 'Graphite Brick', 'Impervious (resin-impregnated)'],
@@ -1314,7 +1314,7 @@ export const PRODUCT_CATALOG = {
           'Cure silicate joints (acid-wash / "souring") before chemical exposure per supplier schedule',
           'Select chemistry by exposure: silicate for mineral acids, furan/epoxy for organic or mixed media',
         ],
-        whyChoose: 'Shanker Agencies supplies the complete Crown Ceramics acid-proof system — membrane, cement, bricks and tiles — with cement chemistry matched to your exact chemical exposure.',
+        whyChoose: 'Shanker Agencies supplies the complete Crown Ceramics acid-proof system, membrane, cement, bricks and tiles, with cement chemistry matched to your exact chemical exposure.',
       },
       {
         id: 'acid-proof-bricks',
@@ -1331,7 +1331,7 @@ export const PRODUCT_CATALOG = {
           'Absorption tower internal lining',
           'Chimney and flue gas duct lining',
           'Effluent treatment plant sumps and channels',
-          'Fertiliser plant — sulphuric acid plant',
+          'Fertiliser plant, sulphuric acid plant',
           'Pickling tank lining (steel processing)',
           'Battery room floors',
         ],
@@ -1353,11 +1353,11 @@ export const PRODUCT_CATALOG = {
         ],
         installation: [
           'Surface preparation: concrete or steel substrate must be clean, dry, and free of oil/grease',
-          'Apply primer coat — epoxy primer for steel, concrete primer for concrete substrate',
+          'Apply primer coat, epoxy primer for steel, concrete primer for concrete substrate',
           'Use appropriate acid-resistant cement: furan resin (best acid resistance), phenolic resin, or potassium silicate',
           'Bed mortar thickness: 3–6 mm, applied to both brick and substrate (buttered joint)',
           'Joint width: 3–6 mm, fully filled with acid-resistant mortar',
-          'Curing: furan resin mortars — 24 hrs at 25°C before any chemical exposure; heat curing improves performance',
+          'Curing: furan resin mortars, 24 hrs at 25°C before any chemical exposure; heat curing improves performance',
           'Test before commissioning: hydraulic leak test or chemical spot test',
         ],
         whyChoose: 'Shanker Agencies supplies Crown Ceramics acid proof bricks (IS 4860 compliant) along with the complete range of Chemset acid-resistant mortars and cements. We provide lining design support for new constructions and repair specification for existing linings.',
@@ -1396,9 +1396,9 @@ export const PRODUCT_CATALOG = {
           { grade: 'Channel Invert', size: 'Custom', absorption: '<0.5%', acidRes: '99%', finish: 'Smooth', usecase: 'Effluent channel invert' },
         ],
         installation: [
-          'Substrate: smooth, level concrete (± 3mm in 3m) — grind high spots, fill low spots with epoxy mortar',
+          'Substrate: smooth, level concrete (± 3mm in 3m), grind high spots, fill low spots with epoxy mortar',
           'Use only acid-resistant tile adhesive mortar (furan-based for strong acids, potassium silicate for milder duty)',
-          'Lay tiles with minimum 3mm joint width — do not butt joint',
+          'Lay tiles with minimum 3mm joint width, do not butt joint',
           'Grout all joints with acid-resistant grout immediately after tile adhesive has set (24–48 hrs)',
           'Seal around drains and wall junctions with acid-resistant flexible sealant',
           'Cure for 5–7 days before any chemical exposure',
