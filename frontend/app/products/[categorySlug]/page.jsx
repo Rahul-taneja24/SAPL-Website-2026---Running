@@ -164,7 +164,7 @@ export default async function ProductCategoryPage({ params }) {
                 name: seo.name,
                 description: seo.metaDescription,
                 url: `https://www.shankeragencies.com/products/${categorySlug}/${seo.productId}`,
-                ...(product?.image ? { image: product.image } : {}),
+                image: product?.image || 'https://www.shankeragencies.com/opengraph-image',
                 ...(product
                   ? {
                       brand: { '@type': 'Brand', name: product.brand },
@@ -178,6 +178,10 @@ export default async function ProductCategoryPage({ params }) {
                     name: 'Shanker Agencies Pvt. Ltd.',
                     '@id': 'https://www.shankeragencies.com/#organization',
                   },
+                  price: '0',
+                  priceCurrency: 'INR',
+                  priceValidUntil: '2027-12-31',
+                  description: 'Quoted on enquiry — varies by grade and order quantity.',
                   availability: 'https://schema.org/InStock',
                   areaServed: ['IN', 'AE', 'SA', 'SG', 'MY'],
                   url: `https://www.shankeragencies.com/products/${categorySlug}/${seo.productId}`,
