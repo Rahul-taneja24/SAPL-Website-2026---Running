@@ -1,6 +1,21 @@
 import Script from 'next/script';
+import { Oswald, Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
 import { AppProvider } from '@/context/AppContext';
+
+const oswald = Oswald({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-oswald',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-inter',
+  display: 'swap',
+});
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
@@ -113,7 +128,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${oswald.variable} ${inter.variable}`}>
       <head>
         {/* IndexNow key for instant Bing/Yandex indexing */}
         <meta name="indexnow-key" content="68c9e978104b40548276dada2151c101" />
@@ -343,7 +358,7 @@ export default function RootLayout({ children }) {
         />
         {/* WebPage schema is added per-page to avoid incorrect homepage URL on all routes */}
       </head>
-      <body>
+      <body className={`${inter.className}`}>
         {/* Google Tag (gtag.js) — load after page is interactive so it
             doesn't block LCP. Captures organic traffic, AI-engine referrals
             (ChatGPT, Perplexity, Bing Copilot user-agents) and form

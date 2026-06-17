@@ -574,6 +574,7 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
   overflow: hidden;
   z-index: 5;
+  contain: layout style;
 }
 
 .hero-particles::before,
@@ -604,6 +605,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(251, 146, 60, 0.7);
   filter: blur(0.5px);
   pointer-events: none;
+  will-change: transform, opacity;
 }
 
 .spark-1  { width: 3px; height: 3px; left: 15%; bottom: 15%; animation: float-ember 3.5s ease-in 0s infinite; }
