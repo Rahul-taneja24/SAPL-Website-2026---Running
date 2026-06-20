@@ -434,7 +434,7 @@ export default async function LocationPage({ params }) {
                     <Phone className="w-4 h-4" /> Request CIF Quote for {city}
                   </Link>
                   <Link
-                    href="/blog/how-to-order-refractory-from-india-export-guide"
+                    href="/blog/importing-refractories-from-india-buyers-guide"
                     className="inline-flex items-center gap-2 border-2 border-[#1E3A5F] text-[#1E3A5F] hover:bg-[#1E3A5F] hover:text-white font-semibold px-6 py-3 rounded-xl transition-colors"
                   >
                     How export ordering works <ArrowRight className="w-4 h-4" />

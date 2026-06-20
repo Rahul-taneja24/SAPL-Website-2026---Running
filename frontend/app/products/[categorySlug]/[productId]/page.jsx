@@ -160,7 +160,7 @@ export default async function ProductDetailPage({ params }) {
         offers: {
           '@type': 'Offer',
           seller: { '@id': 'https://www.shankeragencies.com/#organization' },
-          price: '0',
+          price: 0,
           priceCurrency: 'INR',
           priceValidUntil: '2027-12-31',
           description: 'Quoted on enquiry, varies by grade, brand and order quantity.',

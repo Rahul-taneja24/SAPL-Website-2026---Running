@@ -178,7 +178,7 @@ export default async function ProductCategoryPage({ params }) {
                     name: 'Shanker Agencies Pvt. Ltd.',
                     '@id': 'https://www.shankeragencies.com/#organization',
                   },
-                  price: '0',
+                  price: 0,
                   priceCurrency: 'INR',
                   priceValidUntil: '2027-12-31',
                   description: 'Quoted on enquiry, varies by grade and order quantity.',
