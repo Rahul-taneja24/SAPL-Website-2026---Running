@@ -3506,6 +3506,152 @@ export const BLOG_POSTS_DATA = [
       "high-alumina-bricks",
       "ceramic-fiber-products",
     ],
+  },,
+
+  {
+    id: 26,
+    slug: "gunning-castable-complete-guide",
+    title: "Gunning Castable: Complete Guide to Grades, Applications and Selection",
+    excerpt: "Technical guide to gunning castable (gunite) refractory covering dense vs insulating grades, full application matrix for steel, cement and power sectors, rebound loss data, and how to choose the right grade.",
+    metaDescription: "Technical guide to gunning castable (gunite) refractory — dense vs insulating grades, application matrix for steel, cement and power, rebound loss data, and India supply from SAPL.",
+    publishDate: "2026-06-20",
+    lastModified: "2026-06-20",
+    category: "Refractory Products",
+    tags: ["gunning castable", "gunite refractory", "guniting", "dense gunning", "insulating gunning", "refractory repair", "gunning materials"],
+    coverImage: "https://www.shankeragencies.com/opengraph-image",
+    content: `
+<p>Gunning castable, also called gunite, guniting material, or gunning mix, is a monolithic refractory applied pneumatically through a hose and nozzle, without formwork, making it the preferred method for hot repairs and difficult-access applications. Dense gunning mixes contain 40 to 70% Al<sub>2</sub>O<sub>3</sub> and achieve service temperatures up to 1700&deg;C; they are specified for hot repair of BOF vessels, EAF patches, blast furnace taphole areas, rotary kiln shell repairs, and steel ladle sidewall rebuilds. Insulating gunning mixes use lightweight aggregates such as perlite or vermiculite and achieve bulk densities of 0.8 to 1.4 g/cm3; they are used for boiler insulation linings and heat-conservation layers. Key selection parameters are operating temperature, chemical attack type (acid slag, basic slag, or cement clinker alkali), lining thickness, and whether the repair is hot-face or cold-face. Rebound loss in dry-process gunning is 15 to 25%; wet-process reduces this to 5 to 10% and improves bond strength. Shanker Agencies supplies Calderys and Mahakoshal gunning grades from Delhi NCR with same-week dispatch and CIF export to GCC and ASEAN.</p>
+
+<h2>What Is Gunning Castable? All Synonyms Explained</h2>
+<p>Gunning, gunite, and guniting all refer to the same pneumatic refractory application process. The mix is fed dry into a gunning machine, conveyed through a hose by compressed air, and water is added at the nozzle just before the material strikes the substrate. The impact velocity compacts the mix against the surface without any formwork required. This is called the dry process.</p>
+<p>In the wet process (sometimes called shotcreting), the mix is pre-blended with water and pumped as a slurry; air velocity at the nozzle provides the final compaction force. The wet process produces less rebound and a more consistent water-to-cement ratio, but requires more specialised equipment and is less common in refractory hot-repair applications.</p>
+<p>Equipment needed for dry-process gunning: a gunning machine (rotary-drum or pressure-vessel type), an air compressor providing 5 to 10 bar at 10 to 15 m3/min, a water ring at the nozzle with a flow meter, and a rubber hose typically 38 to 50mm bore.</p>
+<p>Gunning is chosen over casting when hot repairs are needed during or between campaigns, when the geometry is too tight or angled to place formwork, when speed is critical, or when only a localised zone has eroded and shutting down adjacent equipment would be impractical. See also: <a href="/blog/gunning-vs-casting-when-to-use">when to choose gunning over casting</a> for a full decision framework.</p>
+
+<h2>Dense vs Insulating Gunning Castable: Grade Comparison</h2>
+<p>The two main families are dense gunning castables (for hot-face structural repairs) and insulating gunning castables (for backup layers and heat conservation). Dense grades contain 40 to 70% Al<sub>2</sub>O<sub>3</sub> and bond ceramically at high temperatures. Insulating grades use perlite or vermiculite aggregates for low bulk density and low thermal conductivity.</p>
+<p>Dense 40% Al<sub>2</sub>O<sub>3</sub> grades are used for general repair work up to 1450&deg;C, with bulk density 2.0 to 2.2 g/cm3 and rebound loss 20 to 25%. Dense 50% grades handle up to 1550&deg;C for boilers and preheaters (rebound 18 to 22%). Dense 60% grades are specified for ladle and kiln repairs up to 1650&deg;C (rebound 15 to 20%). Dense 70% grades serve BOF, EAF, and blast furnace taphole applications up to 1700&deg;C (rebound 15 to 18%). Insulating perlite-based grades operate to 900&deg;C at 0.8 to 1.0 g/cm3. Vermiculite-based insulating grades reach 1100&deg;C at 1.0 to 1.4 g/cm3.</p>
+
+<h2>Application Matrix: Which Grade for Which Equipment</h2>
+<p>Steel ladle sidewall hot repair uses dense 60 to 70% Al<sub>2</sub>O<sub>3</sub> at 1600&deg;C against basic slag, applied between campaigns. BOF vessel repair requires dense 70% at 1700&deg;C against basic slag plus iron oxide during campaign downtime. Blast furnace taphole is repaired daily with dense 70% against iron and slag at 1650&deg;C. EAF roof and sidewall patching uses 60 to 70% grade at 1650&deg;C for rapid turnaround. Cement kiln preheater repair requires alkali-resistant 50 to 60% grade with SiC addition at 1100&deg;C. Cement kiln burning zone shell repairs use 60 to 70% as a temporary fix before full relining. Power plant boiler combustion chambers use 60% Al<sub>2</sub>O<sub>3</sub> plus SiC at 1100&deg;C for flyash erosion resistance. FBC cyclones require 60 to 70% plus SiC at 950&deg;C because of high-velocity flyash particle erosion. Foundry cupola tuyere and shaft repair uses dense 50 to 60% at 1400&deg;C. Induction furnace collar and pouring spout repair uses dense 60% at 1550&deg;C against steel and flux.</p>
+
+<h2>Cement Kiln Gunning: Alkali Attack and How to Prevent It</h2>
+<p>Standard gunning mixes fail rapidly in cement kilns because alkali compounds in cement clinker chemistry, primarily potassium sulphate (K<sub>2</sub>SO<sub>4</sub>) and sodium sulphate (Na<sub>2</sub>SO<sub>4</sub>), attack and destroy calcium aluminate bonds within weeks. Alkali-resistant gunning grades address this through silicon carbide addition of 3 to 8% or zircon addition of 5 to 10%, which resists the sulphate-alkali reaction. The applicable Indian Standard for cement kiln gunning materials is IS 8. Water addition at the nozzle should be 7 to 10% by weight. Application must be done with the kiln rotating slowly to prevent the applied mix from sagging on the hot surface. Do not gun onto surfaces above 700&deg;C; allow cooling to 400 to 500&deg;C for best adhesion and minimum rebound.</p>
+<p>Alkali attack is most severe in preheater cyclone cones and riser ducts where alkali vapour concentration is highest. In these zones, plan for repair intervals of every 2 to 3 months using alkali-resistant grades. Waiting for visible failure before scheduling repair consistently results in larger affected areas and higher material quantities per intervention.</p>
+
+<h2>Power Plant and FBC Boiler Gunning</h2>
+<p>Fluidised bed combustion (FBC) boilers present the most aggressive refractory wear environment in the power sector. Flyash particles travel at 20 to 40 m/s and cause severe abrasive erosion on all hot-face surfaces. Standard high-alumina gunning grades wear rapidly in FBC service. The correct specification for FBC combustion chambers and cyclones is 60 to 70% Al<sub>2</sub>O<sub>3</sub> with 10 to 15% SiC addition; the SiC provides the hardness needed to resist high-velocity particle erosion. Gunning is not recommended for FBC grate zones; use vibro-castable instead. For conventional pulverised coal boilers, the furnace chamber and burner zones use dense 50% Al<sub>2</sub>O<sub>3</sub> gunning. The economiser and air preheater benefit from insulating gunning at 0.8 to 1.0 g/cm3 bulk density to reduce external heat losses.</p>
+
+<h2>Rebound Loss: What Causes It and How to Minimise It</h2>
+<p>Rebound loss is the percentage of material that bounces off the substrate during gunning and falls to the floor. In dry-process gunning, rebound is 15 to 25% for dense high-alumina mixes. Wet-process (shotcrete) gunning reduces rebound to 5 to 10% and improves bond strength through more consistent water distribution.</p>
+<p>To minimise rebound: maintain nozzle distance of 0.5 to 1.0 m from the surface and hold the nozzle perpendicular to the substrate. Keep water addition at 7 to 12% by weight at the nozzle. Use a properly calibrated water ring with a flow meter; inconsistent water delivery is the primary cause of high rebound. Add microsilica to the mix where permitted (3 to 5% addition reduces rebound by 3 to 5%). Apply in layers of 20 to 30mm allowing initial set before the next layer. For material quantity calculation: volume needed multiplied by bulk density multiplied by 1.25 accounts for 20 to 25% rebound loss.</p>
+
+<h2>SAPL Gunning Castable Supply</h2>
+<p>Shanker Agencies maintains stock of Calderys India and Mahakoshal Refractories gunning grades at our Delhi NCR warehouse. Available grades include dense 50%, 60%, and 70% Al<sub>2</sub>O<sub>3</sub> variants, alkali-resistant cement kiln grades with SiC addition, and insulating grades for boiler and heat conservation applications. Standard grades dispatch within the same week. CIF export to GCC destinations has a 7 to 14 day transit time; ASEAN destinations 10 to 21 days. Full material test certificates and certificates of origin are provided with every export shipment. Contact info@shankeragencies.com with your application details for a grade recommendation. View our <a href="/products/unshaped-refractories/gunning-materials">full gunning castable range</a>.</p>
+`,
+    faqs: [
+      {
+        question: "What is the difference between gunning castable and casting refractory?",
+        answer: "Gunning castable is applied pneumatically through a hose and nozzle without formwork, relying on the impact velocity of the material to compact it against the substrate. Casting refractory is mixed with water to a pourable consistency and cast into formwork, then vibrated to remove air. Gunning is used for hot repairs during campaigns, difficult-access areas, and localised erosion zones where setting up formwork is impractical. Castable is used for new construction or full relining of standard geometries where high density and low porosity are critical. Gunning allows faster repairs with less downtime; casting typically achieves higher density and lower porosity in the finished lining."
+      },
+      {
+        question: "What does gunite mean in refractory? Is it the same as gunning?",
+        answer: "Yes, gunite and gunning are the same process in the refractory context. The term gunite originates from the construction industry where shotcrete was called gunite. In refractory applications, gunning, gunite, and guniting all refer to the pneumatic application of dry refractory mix through a hose and nozzle with water added at the point of application. The terms are used interchangeably across Indian and international refractory specifications. Some specifications refer to the material as gunning mix, gunning castable, or guniting material; all describe the same product category."
+      },
+      {
+        question: "Which gunning castable grade is best for cement kiln repair?",
+        answer: "For cement kiln preheater and calciner repairs, use an alkali-resistant gunning grade containing silicon carbide (3 to 8%) or zircon addition to resist K2SO4 and Na2SO4 attack. The alumina content should be 50 to 60% for preheater zones. For burning zone shell repairs, a 60 to 70% Al2O3 dense grade with alkali resistance is recommended. Standard high-alumina gunning mixes without alkali resistance fail rapidly in cement kiln service because calcium aluminate bonds are destroyed by sulphate-alkali reactions within weeks. Always specify alkali-resistant grades for cement kiln applications and allow the kiln to cool to below 700 degrees before gunning for best adhesion."
+      },
+      {
+        question: "What is rebound loss in gunning and how can it be reduced?",
+        answer: "Rebound loss is the percentage of gunning mix that bounces off the substrate instead of adhering. In dry-process gunning, rebound is typically 15 to 25% for dense high-alumina mixes, meaning you must order 20 to 25% more material than the net volume requires. To reduce rebound: maintain nozzle distance at 0.5 to 1.0 m from the surface; keep water addition at 7 to 12% by weight at the nozzle; use a properly calibrated water ring with a flow meter; add microsilica (3 to 5%) to the mix where the specification allows; apply in 20 to 30mm layers allowing initial set before the next layer. Wet-process gunning reduces rebound to 5 to 10% but requires different equipment."
+      },
+      {
+        question: "What gunning material is used for power plant FBC boilers?",
+        answer: "For fluidised bed combustion (FBC) boiler combustion chambers and cyclones, specify dense gunning castable with 60 to 70% Al2O3 and 10 to 15% silicon carbide addition. The SiC content is essential because FBC service involves flyash particles at 20 to 40 m/s velocity causing severe abrasive erosion; standard alumina grades without SiC wear rapidly. For FBC grate areas, gunning is not recommended; use vibro-castable instead. For conventional pulverised coal boilers, 50% Al2O3 dense gunning is standard for furnace chamber and burner zones. Insulating gunning at 0.8 to 1.0 g/cm3 is used for economiser and air preheater sections to reduce external heat loss."
+      },
+      {
+        question: "Where can I buy gunning castable in India with export capability?",
+        answer: "Shanker Agencies Pvt. Ltd. supplies Calderys and Mahakoshal gunning castable grades from our Delhi NCR warehouse with same-week dispatch for standard grades. We export CIF to GCC destinations (UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain) with 7 to 14 days transit, and to ASEAN destinations (Singapore, Malaysia, Indonesia, Vietnam, Thailand) with 10 to 21 days transit. All export shipments include material test certificates and certificates of origin. Contact info@shankeragencies.com or call +91-9899957888 with your application details and required grade for a quotation."
+      }
+    ],
+    author: { name: "Arjun Mehta", role: "Senior Refractory Engineer" },
+    relatedProducts: [
+      "gunning-materials",
+      "unshaped-refractories",
+      "low-cement-castables",
+    ],
+  },
+  {
+    id: 27,
+    slug: "porous-plug-refractory-selection-guide",
+    title: "Porous Plug Refractory: How It Works, Types and Selection Guide",
+    excerpt: "A porous plug is the gas-permeable refractory element in a steel ladle used for argon purging. This guide explains how it works, corundum vs magnesia grade selection, purging rates, replacement frequency, and steel quality benefits.",
+    metaDescription: "What is a porous plug? How argon purging works in steel ladles, corundum vs magnesia grade selection, purging rates, replacement cycles, and IFGL porous plug supply from SAPL.",
+    publishDate: "2026-06-20",
+    lastModified: "2026-06-20",
+    category: "Flow Control",
+    tags: ["porous plug", "argon purging", "steel ladle", "flow control", "IFGL", "argon bubbling", "ladle bottom"],
+    coverImage: "https://www.shankeragencies.com/opengraph-image",
+    content: `
+<p>A porous plug is a gas-permeable refractory element installed in the bottom of a steel ladle, used to inject argon gas upward through molten steel, a process called argon purging or argon bubbling. The rising argon bubbles homogenise steel temperature and chemical composition, float non-metallic inclusions to the slag surface, and reduce total oxygen content before continuous casting. Porous plugs are manufactured from corundum (Al<sub>2</sub>O<sub>3</sub> greater than 90%) or magnesia (MgO greater than 90%) refractory with engineered porosity of 20 to 28%, providing consistent gas flow at purging rates from 0.1 to 5 Nl/min per tonne of liquid steel. Correct porous plug selection and argon flow control reduce non-metallic inclusion content in finished steel by 40 to 60%, improve desulphurisation efficiency by 10 to 30%, and extend ladle lining campaign life by reducing thermal gradient fluctuations at the ladle bottom. Shanker Agencies supplies IFGL-manufactured porous plugs with full material test certificates for domestic delivery and CIF export to GCC and ASEAN markets.</p>
+
+<h2>How a Porous Plug Works: The Argon Purging Process</h2>
+<p>Pressurised argon gas is fed through a stainless steel sleeve assembly into the porous refractory plug at the ladle bottom. At tapping temperatures of approximately 1600&deg;C, the argon passes through the interconnected pore structure of the plug, emerging as fine bubbles at the ladle floor. These bubbles rise through the liquid steel, creating controlled circulation throughout the heat.</p>
+<p>Bubble size determines mixing efficiency and back-pressure. Smaller bubbles from finer pore structures provide better mixing and inclusion flotation but require higher inlet pressure. Engineered porosity in the 20 to 28% range balances these requirements for most ladle sizes and steel grades.</p>
+<p>The four metallurgical objectives served by argon purging are: (1) temperature homogenisation, eliminating thermal stratification in the ladle and targeting plus or minus 5 degrees variation across the heat before casting; (2) chemical homogenisation, equalising alloy distribution throughout the steel volume after alloy additions; (3) inclusion removal, where argon bubbles attach to oxide and sulphide inclusions and carry them to the slag-steel interface for absorption; and (4) assisting desulphurisation when combined with lime-based desulphurisation slag treatment.</p>
+<p>Open-eye purging occurs when the argon flow rate breaks through the slag layer and exposes molten steel to the atmosphere. This is acceptable for temperature and chemical homogenisation but risks reoxidation from atmospheric oxygen contact. Closed-eye purging maintains full slag cover and is preferred for clean steel grades where total oxygen targets are stringent.</p>
+
+<h2>Corundum vs Magnesia Porous Plugs: When to Use Each</h2>
+<p>Corundum porous plugs (Al<sub>2</sub>O<sub>3</sub> greater than 90%) are the standard choice for carbon steel, low-alloy steel, structural steel, pipe steel, and most engineering grades. Corundum resists the basic CaO-SiO<sub>2</sub>-Al<sub>2</sub>O<sub>3</sub> slag chemistry typical of carbon steelmaking and is the most cost-effective option for high-volume production.</p>
+<p>Magnesia porous plugs (MgO greater than 90%) are specified for stainless steel, high-manganese steel, silicon electrical steel, and any grade where aluminium contamination from a corundum plug is prohibited by the steel grade specification. Magnesia is also used where slag basicity (the V-ratio, calculated as CaO divided by SiO<sub>2</sub>) exceeds 3.5, at which point corundum dissolution by the highly basic slag becomes significant enough to compromise plug integrity and introduce Al<sub>2</sub>O<sub>3</sub> into the steel.</p>
+<p>Key decision rules: if the steel grade specification prohibits aluminium pick-up, use magnesia. If slag basicity index exceeds 3.5, use magnesia. For all other grades and slags, corundum is the standard and more economical choice.</p>
+
+<h2>Purging Rate Selection</h2>
+<p>Flow rates from 0.1 to 0.5 Nl/min per tonne are used for temperature equalisation only, with no risk of open eye. Rates of 0.5 to 1.5 Nl/min per tonne achieve general homogenisation. Rates of 1.5 to 3.0 Nl/min per tonne are used for inclusion removal and desulphurisation, with monitoring required to avoid open-eye development. Rates of 3.0 to 5.0 Nl/min per tonne provide aggressive stirring for alloy dissolution but carry open-eye risk at the upper end. Rates above 5.0 Nl/min per tonne are not recommended because open eye causes reoxidation from the atmosphere.</p>
+<p>Flow rate is set using back-pressure on the gas control panel. Normal operating back-pressure is 0.3 to 0.8 MPa for a healthy plug. If back-pressure rises above 1.0 MPa to achieve the target flow rate, the plug is becoming clogged with steel skull or slag infiltration and should be inspected and replaced at the next planned opportunity.</p>
+
+<h2>Replacement Frequency and Warning Signs</h2>
+<p>Porous plug service life depends primarily on steel grade and ladle temperature. For carbon steel grades, the typical service life is 20 to 50 heats per plug. For stainless and high-alloy grades, expect 15 to 30 heats. For high-manganese grades, 10 to 20 heats per plug. Replace immediately, regardless of heat count, if any of these warning signs appear: back-pressure required to achieve target argon flow increases by more than 30% above the start-of-campaign baseline; the visible purging area (open eye) is weak, irregular, or absent despite normal gas flow settings; or the plug face shows erosion or cracking with remaining face thickness below 50mm from the ladle floor. Best practice is to replace the porous plug as part of every planned ladle relining. Running a plug to complete mechanical failure risks steel breakout through the ladle bottom.</p>
+
+<h2>Steel Quality Impact: Specific Numbers</h2>
+<p>Correctly applied argon purging with a properly selected porous plug delivers measurable improvements. Total non-metallic inclusion count is reduced by 40 to 60%. Total oxygen content falls by 20 to 40%. Desulphurisation efficiency improves by 10 to 30% when combined with lime-based desulphurisation slag treatment. Continuous casting subentry nozzle blockage frequency drops by 30 to 50%, extending sequence casting length. Ladle lining campaign life is extended through reduced thermal gradient fluctuations at the ladle bottom (fewer thermal shock cycles per campaign). Yield typically improves by 0.1 to 0.3% from reduced skull formation. See also our <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladle refractory lining guide</a> for related information on ladle lining management.</p>
+
+<h2>SAPL Supply: IFGL Porous Plugs</h2>
+<p>IFGL Refractories Limited is India's leading manufacturer of flow control refractories for steelmaking. Shanker Agencies is a strategic supply partner of IFGL and supplies corundum and magnesia porous plugs for ladle capacities from 20 to 300 tonnes. Corundum grade (Al<sub>2</sub>O<sub>3</sub> greater than 90%) is for standard carbon and low-alloy steel service. Magnesia grade (MgO greater than 90%) is for stainless steel, high-alloy grades, and high-basicity slag service. Every shipment includes a full material test certificate with chemical analysis, porosity measurement, and permeability data. Export orders include a certificate of origin. CIF transit times: GCC destinations 7 to 14 days, ASEAN destinations 10 to 21 days. Standard corundum grades for common ladle sizes typically dispatch within the same week from our Delhi NCR warehouse. To order, email ladle capacity in tonnes, steel grade, and target purging rate to info@shankeragencies.com. View our <a href="/products/flow-control/porous-plugs">IFGL porous plug product range</a>.</p>
+`,
+    faqs: [
+      {
+        question: "What is a porous plug in a steel ladle?",
+        answer: "A porous plug is a gas-permeable refractory element installed in the bottom of a steel ladle. It allows pressurised argon gas to be injected upward through molten steel during the secondary metallurgy stage of steelmaking. The argon bubbles homogenise steel temperature and chemical composition, float non-metallic inclusions to the slag surface for removal, and improve desulphurisation efficiency. Porous plugs are made from corundum (Al2O3 greater than 90%) or magnesia (MgO greater than 90%) with engineered porosity of 20 to 28%, and are replaced every 15 to 50 heats depending on the steel grade and operating conditions."
+      },
+      {
+        question: "What is the difference between corundum and magnesia porous plugs?",
+        answer: "Corundum porous plugs (Al2O3 greater than 90%) are the standard choice for carbon steel, low-alloy steel, and most engineering grades. They are cost-effective and resist the basic slag chemistry typical of carbon steelmaking. Magnesia porous plugs (MgO greater than 90%) are used for stainless steel, high-manganese steel, silicon electrical steel, and any steel grade where the specification prohibits aluminium pick-up from a corundum plug. Magnesia is also specified when slag basicity (CaO divided by SiO2) exceeds 3.5, at which point corundum dissolution by the basic slag becomes significant. Share the steel grade specification and slag chemistry data with your supplier to confirm the right grade."
+      },
+      {
+        question: "How often should porous plugs be replaced?",
+        answer: "Porous plug replacement frequency depends on steel grade and ladle temperature. For carbon steel, the typical service life is 20 to 50 heats per plug. For stainless and high-alloy grades, expect 15 to 30 heats. For high-manganese grades, 10 to 20 heats. Warning signs that require early replacement regardless of heat count: back-pressure rising more than 30% above baseline to achieve target argon flow, weak or irregular open eye despite normal gas flow settings, and plug face erosion below 50mm from ladle floor. Best practice is to replace the porous plug as part of every planned ladle relining rather than running to failure."
+      },
+      {
+        question: "What happens if the argon purging rate is too high?",
+        answer: "Purging rates above approximately 3 to 5 Nl per minute per tonne of steel risk creating an open eye, where the argon flow pushes the slag layer aside and exposes molten steel directly to the atmosphere. This causes reoxidation: atmospheric oxygen and nitrogen dissolve into the steel, increasing total oxygen content and creating new non-metallic inclusions. For clean steel grades with stringent total oxygen targets, maintain closed-eye purging by keeping flow rates below the open-eye threshold. Normal back-pressure during purging should be 0.3 to 0.8 MPa; higher pressure at the same flow rate indicates plug clogging."
+      },
+      {
+        question: "How much does correct argon purging improve steel cleanliness?",
+        answer: "Properly applied argon purging with a correctly selected porous plug reduces total non-metallic inclusion count by 40 to 60% and total oxygen content by 20 to 40% compared to untreated heats. When combined with lime-based desulphurisation slag treatment, desulphurisation efficiency improves by 10 to 30%. Continuous casting subentry nozzle blockage frequency drops by 30 to 50%, extending sequence casting length and reducing casting interruptions. Yield typically improves by 0.1 to 0.3% from reduced skull formation. Actual results depend on ladle design, operating practice, and steel grade."
+      },
+      {
+        question: "Where can I buy IFGL porous plugs in India for export?",
+        answer: "Shanker Agencies Pvt. Ltd. is a strategic supply partner of IFGL Refractories and supplies corundum and magnesia porous plugs for ladle capacities from 20 to 300 tonnes. Standard corundum grades for common ladle sizes typically dispatch within the same week from our Delhi NCR warehouse. Export shipments to GCC destinations transit in 7 to 14 days; ASEAN destinations transit in 10 to 21 days. All shipments include material test certificates and certificates of origin. To request a quotation, email ladle capacity, steel grade, and required purging rate to info@shankeragencies.com or call +91-9899957888."
+      }
+    ],
+    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
+    relatedProducts: [
+      "porous-plugs",
+      "flow-control",
+      "slide-gate-plates",
+    ],
   },
 ];
 
