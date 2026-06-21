@@ -3506,8 +3506,7 @@ export const BLOG_POSTS_DATA = [
       "high-alumina-bricks",
       "ceramic-fiber-products",
     ],
-  },,
-
+  },
   {
     id: 26,
     slug: "gunning-castable-complete-guide",
