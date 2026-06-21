@@ -165,7 +165,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Partner with Shanker Agencies for Ramming Mass Solutions</h2>
 <p>At Shanker Agencies Pvt. Ltd., we have been helping foundries and steel plants optimize their induction furnace lining performance since 1980. As authorized dealers of CUMI and other leading manufacturers, we supply the full range of silica, alumina, and magnesia ramming mass grades. Our technical team can conduct a lining audit at your plant, recommend the right grade, and help you establish the optimal sintering schedule. Contact us for a consultation or to request test samples.</p>
 `,
-    author: { name: "Vikram Bhattacharya", role: "Senior Refractory Engineer · Induction Furnace Linings" },
+    author: { name: "Deepak Chauhan", role: "Process Engineer" },
     relatedProducts: [
       "ramming-mass",
       "induction-furnace-lining",
@@ -303,7 +303,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Work with SAPL for Quality-Assured High Alumina Bricks</h2>
 <p>Shanker Agencies Pvt. Ltd. supplies the complete range of high alumina bricks from AL45 through AL90, sourced from CUMI, Crown Ceramics, and other established manufacturers. Every shipment comes with test certificates, and our engineers can help you select the optimal grade for your application. With over four decades of experience and a track record across hundreds of plants, we help you get the specification right the first time. Reach out to discuss your requirements.</p>
 `,
-    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
+    author: { name: "Neha Sharma", role: "Quality & Standards Engineer" },
     relatedProducts: [
       "high-alumina-bricks",
       "fireclay-bricks",
@@ -578,7 +578,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Get Expert Insulation Advice from SAPL</h2>
 <p>Shanker Agencies is an authorized dealer of Divine Cerawool ceramic fiber products and supplies the full range of insulating fire bricks. Our engineers can perform a thermal analysis of your equipment and recommend the optimal insulation solution &mdash; whether that is ceramic fiber, IFB, or a hybrid design. We help you balance thermal performance, cost, and service life. Contact us to discuss your insulation requirements.</p>
 `,
-    author: { name: "Mohan Desai", role: "Insulation & Materials Technologist" },
+    author: { name: "Neha Sharma", role: "Quality & Standards Engineer" },
     relatedProducts: [
       "ceramic-fiber-blanket",
       "insulating-fire-brick",
@@ -706,7 +706,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Steel Ladle Refractory Partner</h2>
 <p>Shanker Agencies supplies the complete range of ladle refractories: MgO-C bricks, high alumina bricks, AMC bricks, castables, gunning mixes, slide gate plates, and flow control components. With 45+ years of experience in the Indian steel industry, our team can assist with lining design, material selection, and campaign life optimization. Contact us for a lining audit or to discuss your ladle refractory needs.</p>
 `,
-    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
+    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
     relatedProducts: [
       "mgo-c-bricks",
       "high-alumina-bricks",
@@ -965,7 +965,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Acid Proof Lining Solutions</h2>
 <p>Shanker Agencies supplies acid proof bricks, chemical-resistant jointing cements, membrane materials, and carbon bricks for chemical plant applications. We work with leading manufacturers to ensure you receive materials with verified acid resistance test certificates. Our engineering team can help you select the right combination of brick, cement, and membrane for your specific chemical exposure. Contact us for a consultation or to request material datasheets.</p>
 `,
-    author: { name: "Arjun Mehta", role: "Acid-Proofing Lining Specialist" },
+    author: { name: "Neha Sharma", role: "Quality & Standards Engineer" },
     relatedProducts: [
       "acid-proof-bricks",
       "acid-proof-cement",
@@ -1211,7 +1211,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Slide Gate Solutions for Steel Plants</h2>
 <p>Shanker Agencies supplies slide gate plates, well blocks, collector nozzles, and complete flow control refractory systems for steel ladles of all sizes. We work with leading manufacturers to provide plates matched to your specific gate mechanism and steel grades. Our technical team can help optimize plate selection, preheating practice, and usage protocols to maximize life and minimize cost per heat. Contact us for samples, datasheets, or a consultation.</p>
 `,
-    author: { name: "Deepak Sharma", role: "Flow Control Refractories Engineer" },
+    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
     relatedProducts: [
       "slide-gate-plates",
       "well-blocks",
@@ -1752,7 +1752,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Indian Refractory Export Partner</h2>
 <p>Shanker Agencies has been exporting refractory products from India to clients in the Middle East, Southeast Asia, and Africa. As authorized dealers of CUMI, Crown Ceramics, and Divine Cerawool, we provide internationally certified products with comprehensive documentation. We handle all export logistics including pre-shipment inspection, container loading supervision, and shipping coordination. Our team communicates in English and can prepare documentation in the format your country's customs authority requires. Contact us with your requirements for a quotation and export timeline.</p>
 `,
-    author: { name: "Anil Khanna", role: "Export & Logistics Consultant" },
+    author: { name: "Sandeep Kulkarni", role: "Export & Technical Advisor" },
     relatedProducts: [],
   },
 
@@ -2427,7 +2427,7 @@ export const BLOG_POSTS_DATA = [
 <h3>Do ceramic fibers pose health risks?</h3>
 <p>Ceramic fiber is classified as a possible carcinogen (IARC Group 2B) in the respirable form. Always wear a P2 or N95 respirator, gloves, and protective clothing when handling ceramic fiber. Wet the fiber during demolition to minimize dust. Most suppliers provide Safety Data Sheets (SDS) with handling guidelines.</p>
 `,
-    author: { name: "Mohan Desai", role: "Insulation & Materials Technologist" },
+    author: { name: "Priya Nair", role: "Materials Engineer" },
     relatedProducts: ["ceramic-fibre-blanket", "ceramic-fibre-module", "insulating-fire-bricks"],
   },
 
@@ -2750,7 +2750,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What causes a stuck slide gate?</h3>
 <p>Most common causes: (1) steel solidified in the bore during a long turnaround, use O2 lancing to open; (2) plate sticker due to steel infiltration between worn plates; (3) hydraulic system failure. Always inspect plates after each heat and replace if erosion is asymmetric or bore diameter is &gt;20% above original specification.</p>
 `,
-    author: { name: "Deepak Sharma", role: "Flow Control Refractories Engineer" },
+    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
     relatedProducts: ["slide-gate-plates", "ladle-shrouds", "subentry-nozzles", "tundish-nozzles"],
   },
 
@@ -2852,7 +2852,7 @@ export const BLOG_POSTS_DATA = [
 <h3>How do I reduce rebound loss?</h3>
 <p>Key techniques: correct water addition at nozzle (too wet = flow-off, too dry = high rebound); proper nozzle distance and angle; consistent air pressure; using a fine mesh screen to capture and dispose of rebound separately. With good technique, rebound can be reduced to 8&ndash;12%.</p>
 `,
-    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
+    author: { name: "Arjun Mehta", role: "Senior Refractory Engineer" },
     relatedProducts: ["gunning-mix", "low-cement-castable", "ramming-mass"],
   },
 
@@ -3498,7 +3498,7 @@ export const BLOG_POSTS_DATA = [
         a: "For cement kilns, IR shell scanning is essential, it is the only real-time indicator of thinning lining while the kiln is running. For steel ladles and EAF, IR is useful but can be supplemented with regular thickness gauging. For industrial boilers, a handheld IR camera quarterly is sufficient. The alternative to IR, waiting for a visual crack or hot spot, gives you far less response time and far higher repair cost.",
       },
     ],
-    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
+    author: { name: "Deepak Chauhan", role: "Process Engineer" },
     relatedProducts: [
       "low-cement-castables",
       "gunning-materials",

@@ -65,14 +65,11 @@ export default async function BlogArticlePage({ params }) {
       '@type': 'Person',
       name: post.author?.name || 'Shanker Agencies Engineering Team',
       jobTitle: post.author?.role || 'Refractory Engineer',
-      description: `${post.author?.role || 'Refractory engineer'} at Shanker Agencies Pvt. Ltd., India's leading refractory engineering partner since 1980.`,
       worksFor: {
         '@type': 'Organization',
         '@id': 'https://www.shankeragencies.com/#organization',
-        name: 'Shanker Agencies Pvt. Ltd.',
-        url: 'https://www.shankeragencies.com',
+        name: 'Shanker Agencies Private Limited',
       },
-      url: 'https://www.shankeragencies.com/about',
     },
     publisher: {
       '@type': 'Organization',
@@ -188,29 +185,6 @@ export default async function BlogArticlePage({ params }) {
           </h1>
           <p className="text-lg text-white/75 leading-relaxed mb-8 max-w-3xl">{post.excerpt}</p>
 
-          {/* Author byline */}
-          {(() => {
-            const authorName = post.author?.name || 'Shanker Agencies Engineering Team';
-            const authorRole = post.author?.role || 'Refractory Engineer';
-            const initials = authorName
-              .split(' ')
-              .filter(Boolean)
-              .slice(0, 2)
-              .map((w) => w[0])
-              .join('')
-              .toUpperCase();
-            return (
-              <div className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-white/8 border border-white/15 w-fit">
-                <div className="w-9 h-9 rounded-full bg-[#F97316] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
-                  {initials}
-                </div>
-                <div>
-                  <p className="text-white font-semibold text-sm leading-none">{authorName}</p>
-                  <p className="text-white/55 text-xs mt-0.5">{authorRole}</p>
-                </div>
-              </div>
-            );
-          })()}
 
           <div className="flex flex-wrap gap-2">
             {post.tags.map((tag) => (
