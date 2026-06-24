@@ -83,11 +83,18 @@ const nextConfig = {
         destination: 'https://www.shankeragencies.com/:path*',
         permanent: true,
       },
-      // HTTPS apex → HTTPS www (existing — kept for completeness)
+      // HTTPS apex → HTTPS www. statusCode: 301 is explicit — permanent: true
+      // alone emits 308 which Vercel can serve as 307 on has-matched redirects.
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'shankeragencies.com' }],
         destination: 'https://www.shankeragencies.com/:path*',
+        statusCode: 301,
+      },
+      // /abouts (typo URL crawled by Google) → /about
+      {
+        source: '/abouts',
+        destination: '/about',
         permanent: true,
       },
       // /case-studies/* was renamed to /engineering-references/* on 2026-05-08
