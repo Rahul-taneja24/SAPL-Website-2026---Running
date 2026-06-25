@@ -165,7 +165,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Partner with Shanker Agencies for Ramming Mass Solutions</h2>
 <p>At Shanker Agencies Pvt. Ltd., we have been helping foundries and steel plants optimize their induction furnace lining performance since 1980. As authorized dealers of CUMI and other leading manufacturers, we supply the full range of silica, alumina, and magnesia ramming mass grades. Our technical team can conduct a lining audit at your plant, recommend the right grade, and help you establish the optimal sintering schedule. Contact us for a consultation or to request test samples.</p>
 `,
-    author: { name: "Deepak Chauhan", role: "Process Engineer" },
+    author: { name: "Amit Kumar" },
     relatedProducts: [
       "ramming-mass",
       "induction-furnace-lining",
@@ -303,7 +303,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Work with SAPL for Quality-Assured High Alumina Bricks</h2>
 <p>Shanker Agencies Pvt. Ltd. supplies the complete range of high alumina bricks from AL45 through AL90, sourced from CUMI, Crown Ceramics, and other established manufacturers. Every shipment comes with test certificates, and our engineers can help you select the optimal grade for your application. With over four decades of experience and a track record across hundreds of plants, we help you get the specification right the first time. Reach out to discuss your requirements.</p>
 `,
-    author: { name: "Neha Sharma", role: "Quality & Standards Engineer" },
+    author: { name: "Priya Sharma" },
     relatedProducts: [
       "high-alumina-bricks",
       "fireclay-bricks",
@@ -457,7 +457,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Castable Installation Partner</h2>
 <p>Shanker Agencies supplies the full range of refractory castables &mdash; conventional, LCC, ULCC, and self-flow &mdash; from CUMI and other leading manufacturers. Beyond supplying material, our technical team provides on-site installation supervision to ensure your castable achieves its rated performance. We have supervised installations in steel plants, cement plants, petrochemical units, and power plants across India and internationally. Contact us for product datasheets, installation guidance, or to schedule a site visit.</p>
 `,
-    author: { name: "Anil Khanna", role: "Refractory Installation Consultant" },
+    author: { name: "Ravi Singh" },
     relatedProducts: [
       "refractory-castable",
       "low-cement-castable",
@@ -578,7 +578,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Get Expert Insulation Advice from SAPL</h2>
 <p>Shanker Agencies is an authorized dealer of Divine Cerawool ceramic fiber products and supplies the full range of insulating fire bricks. Our engineers can perform a thermal analysis of your equipment and recommend the optimal insulation solution &mdash; whether that is ceramic fiber, IFB, or a hybrid design. We help you balance thermal performance, cost, and service life. Contact us to discuss your insulation requirements.</p>
 `,
-    author: { name: "Neha Sharma", role: "Quality & Standards Engineer" },
+    author: { name: "Sunita Patel" },
     relatedProducts: [
       "ceramic-fiber-blanket",
       "insulating-fire-brick",
@@ -706,7 +706,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Steel Ladle Refractory Partner</h2>
 <p>Shanker Agencies supplies the complete range of ladle refractories: MgO-C bricks, high alumina bricks, AMC bricks, castables, gunning mixes, slide gate plates, and flow control components. With 45+ years of experience in the Indian steel industry, our team can assist with lining design, material selection, and campaign life optimization. Contact us for a lining audit or to discuss your ladle refractory needs.</p>
 `,
-    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
+    author: { name: "Mohit Gupta" },
     relatedProducts: [
       "mgo-c-bricks",
       "high-alumina-bricks",
@@ -829,7 +829,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Refractory Solutions for Cement Plants</h2>
 <p>Shanker Agencies has supplied refractories to cement plants across India for over four decades. We provide the full range of materials for every kiln zone: magnesia-spinel bricks for the burning zone, high alumina bricks for transition and calcining zones, castables for preheaters, and insulation materials. Our technical team can assist with kiln audits, material recommendations, and lining design optimization. Contact us to discuss your cement plant refractory requirements.</p>
 `,
-    author: { name: "Pradeep Reddy", role: "Cement Kiln Refractory Lead" },
+    author: { name: "Sunil Verma" },
     relatedProducts: [
       "magnesia-spinel-bricks",
       "high-alumina-bricks",
@@ -965,7 +965,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Acid Proof Lining Solutions</h2>
 <p>Shanker Agencies supplies acid proof bricks, chemical-resistant jointing cements, membrane materials, and carbon bricks for chemical plant applications. We work with leading manufacturers to ensure you receive materials with verified acid resistance test certificates. Our engineering team can help you select the right combination of brick, cement, and membrane for your specific chemical exposure. Contact us for a consultation or to request material datasheets.</p>
 `,
-    author: { name: "Neha Sharma", role: "Quality & Standards Engineer" },
+    author: { name: "Anita Joshi" },
     relatedProducts: [
       "acid-proof-bricks",
       "acid-proof-cement",
@@ -1084,7 +1084,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Glass Furnace Refractory Solutions</h2>
 <p>Shanker Agencies works with glass plants across India, supplying AZS fused cast blocks, silica crown bricks, regenerator bricks, forehearth materials, and insulation products. Our experience with container glass, float glass, and specialty glass furnaces allows us to recommend the right material for each zone and glass type. Contact us for a consultation or to discuss your upcoming furnace rebuild or repair.</p>
 `,
-    author: { name: "Rajesh Krishnan", role: "Glass Refractory Engineer" },
+    author: { name: "Kavita Nair" },
     relatedProducts: [
       "azs-fused-cast",
       "silica-bricks",
@@ -1211,7 +1211,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Slide Gate Solutions for Steel Plants</h2>
 <p>Shanker Agencies supplies slide gate plates, well blocks, collector nozzles, and complete flow control refractory systems for steel ladles of all sizes. We work with leading manufacturers to provide plates matched to your specific gate mechanism and steel grades. Our technical team can help optimize plate selection, preheating practice, and usage protocols to maximize life and minimize cost per heat. Contact us for samples, datasheets, or a consultation.</p>
 `,
-    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
+    author: { name: "Vijay Kumar" },
     relatedProducts: [
       "slide-gate-plates",
       "well-blocks",
@@ -1344,7 +1344,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Refractory Optimization Partner</h2>
 <p>Shanker Agencies takes a consultative approach to refractory supply. We do not just sell products &mdash; we work with your plant team to optimize lining designs, implement TCO-based material selection, and improve campaign life. With 45+ years of experience across Indian steel plants, we bring practical knowledge that translates directly into cost savings. Contact us to schedule a refractory audit of your plant or to discuss specific optimization opportunities.</p>
 `,
-    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
+    author: { name: "Pooja Mehta" },
     relatedProducts: [
       "steel-plant-refractories",
       "gunning-mix",
@@ -1495,7 +1495,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Why Plants Trust Shanker Agencies</h2>
 <p>We share this evaluation framework because we are confident in how we score. Since 1980, Shanker Agencies has built its reputation on quality, reliability, and technical expertise. As authorized dealers of CUMI, Crown Ceramics, and Divine Cerawool, every product we supply comes with verified test certificates. Our team of refractory engineers provides hands-on technical support, from material selection to on-site installation supervision. We invite you to evaluate us against this checklist &mdash; and against any other supplier. Contact us to start the conversation.</p>
 `,
-    author: { name: "Rahul Taneja", role: "Director, Shanker Agencies" },
+    author: { name: "Arun Sharma" },
     relatedProducts: [],
   },
 
@@ -1623,7 +1623,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: MgO-C Bricks for Steelmaking</h2>
 <p>Shanker Agencies supplies MgO-C bricks across the full range of carbon contents and magnesia qualities for BOFs, EAFs, ladles, and converters. Our technical team works closely with steel plants to optimize zonal lining designs and improve campaign life. We supply from established manufacturers with full test certification and provide ongoing technical support throughout the campaign. Contact us to discuss your steelmaking refractory requirements.</p>
 `,
-    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
+    author: { name: "Deepa Reddy" },
     relatedProducts: [
       "mgo-c-bricks",
       "magnesia-bricks",
@@ -1752,7 +1752,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Your Indian Refractory Export Partner</h2>
 <p>Shanker Agencies has been exporting refractory products from India to clients in the Middle East, Southeast Asia, and Africa. As authorized dealers of CUMI, Crown Ceramics, and Divine Cerawool, we provide internationally certified products with comprehensive documentation. We handle all export logistics including pre-shipment inspection, container loading supervision, and shipping coordination. Our team communicates in English and can prepare documentation in the format your country's customs authority requires. Contact us with your requirements for a quotation and export timeline.</p>
 `,
-    author: { name: "Sandeep Kulkarni", role: "Export & Technical Advisor" },
+    author: { name: "Sanjay Patel" },
     relatedProducts: [],
   },
 
@@ -1929,7 +1929,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Supporting Your Induction Furnace Operations</h2>
 <p>Shanker Agencies has been helping foundries and steel melting shops optimize induction furnace lining performance since 1980. We supply the full range of silica, alumina, and magnesia ramming mass from CUMI and other trusted manufacturers. More importantly, we provide practical technical support: helping you choose the right grade, establishing proper sintering schedules, troubleshooting lining failures, and training your operators. If you are experiencing premature lining failures, contact us for a root cause analysis and recommendations. We will help you reach the lining life your operation deserves.</p>
 `,
-    author: { name: "Vikram Bhattacharya", role: "Senior Refractory Engineer · Induction Furnace Linings" },
+    author: { name: "Nisha Gupta" },
     relatedProducts: [
       "ramming-mass",
       "silica-ramming-mass",
@@ -2082,7 +2082,7 @@ export const BLOG_POSTS_DATA = [
 <h2>SAPL: Complete Anchoring Solutions</h2>
 <p>Shanker Agencies supplies refractory anchors in all types and materials &mdash; V, Y, bullhorn, hex metal, and ceramic fiber anchoring systems. We provide anchors manufactured to your specification in SS304, SS310, Inconel, and other heat-resistant alloys. Our technical team can assist with anchor layout design, spacing calculations, and material selection based on your application temperature and conditions. Contact us for a quotation or to discuss your anchoring requirements for an upcoming project.</p>
 `,
-    author: { name: "Anil Khanna", role: "Refractory Installation Consultant" },
+    author: { name: "Rohit Verma" },
     relatedProducts: [
       "refractory-anchors",
       "v-anchors",
@@ -2204,7 +2204,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What about MgO-C bricks vs AL80 for slag line?</h3>
 <p>MgO-C bricks offer superior slag resistance but have higher thermal conductivity (leads to heat loss) and require a sealed ladle environment. For open-top ladles with moderate FeO slag, AL80 is often preferred. For converters, torpedo ladles, and continuous casters, MgO-C is standard.</p>
 `,
-    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
+    author: { name: "Meena Iyer" },
     relatedProducts: ["high-alumina-bricks", "steel-ladle-lining", "magnesia-carbon-bricks"],
   },
 
@@ -2325,7 +2325,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What LCC thickness is standard for steel ladles?</h3>
 <p>For a 70&ndash;100 tonne steel ladle working lining in the barrel, LCC thickness is typically 180&ndash;230 mm. The bottom is usually 250&ndash;300 mm to handle the impact from steel charging.</p>
 `,
-    author: { name: "Anil Khanna", role: "Refractory Installation Consultant" },
+    author: { name: "Ajay Kumar" },
     relatedProducts: ["low-cement-castable", "ultra-low-cement-castable", "conventional-castable"],
   },
 
@@ -2427,7 +2427,7 @@ export const BLOG_POSTS_DATA = [
 <h3>Do ceramic fibers pose health risks?</h3>
 <p>Ceramic fiber is classified as a possible carcinogen (IARC Group 2B) in the respirable form. Always wear a P2 or N95 respirator, gloves, and protective clothing when handling ceramic fiber. Wet the fiber during demolition to minimize dust. Most suppliers provide Safety Data Sheets (SDS) with handling guidelines.</p>
 `,
-    author: { name: "Priya Nair", role: "Materials Engineer" },
+    author: { name: "Rekha Singh" },
     relatedProducts: ["ceramic-fibre-blanket", "ceramic-fibre-module", "insulating-fire-bricks"],
   },
 
@@ -2528,7 +2528,7 @@ export const BLOG_POSTS_DATA = [
 <h3>How often should I do a lining inspection?</h3>
 <p>Use laser profilometry or manual measurement every 20&ndash;25 heats to track wear rates by zone. Establish minimum thickness limits for each zone and trigger a relining decision based on data, not just heat count.</p>
 `,
-    author: { name: "Suresh Iyer", role: "Steel Plant Refractory Specialist" },
+    author: { name: "Manoj Sharma" },
     relatedProducts: ["magnesia-carbon-bricks", "low-cement-castable", "high-alumina-bricks", "slide-gate-plates"],
   },
 
@@ -2650,7 +2650,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What causes burning zone brick loss in one spot (hot spot)?</h3>
 <p>The most common causes are: (1) shell ovality at that point &mdash; a deformed shell brick cracks the brick radially; (2) loss of coating at that position due to a cold zone in the flame; (3) inferior bricks in that ring (mixed batch); (4) tyre/roller alignment issues creating excessive flexing stress. Shell red spot requires immediate kiln stop, cool-down, and hot brick repair.</p>
 `,
-    author: { name: "Pradeep Reddy", role: "Cement Kiln Refractory Lead" },
+    author: { name: "Neha Patel" },
     relatedProducts: ["magnesia-spinel-bricks", "high-alumina-bricks", "andalusite-bricks", "low-cement-castable"],
   },
 
@@ -2750,7 +2750,7 @@ export const BLOG_POSTS_DATA = [
 <h3>What causes a stuck slide gate?</h3>
 <p>Most common causes: (1) steel solidified in the bore during a long turnaround, use O2 lancing to open; (2) plate sticker due to steel infiltration between worn plates; (3) hydraulic system failure. Always inspect plates after each heat and replace if erosion is asymmetric or bore diameter is &gt;20% above original specification.</p>
 `,
-    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
+    author: { name: "Rajesh Kumar" },
     relatedProducts: ["slide-gate-plates", "ladle-shrouds", "subentry-nozzles", "tundish-nozzles"],
   },
 
@@ -2852,7 +2852,7 @@ export const BLOG_POSTS_DATA = [
 <h3>How do I reduce rebound loss?</h3>
 <p>Key techniques: correct water addition at nozzle (too wet = flow-off, too dry = high rebound); proper nozzle distance and angle; consistent air pressure; using a fine mesh screen to capture and dispose of rebound separately. With good technique, rebound can be reduced to 8&ndash;12%.</p>
 `,
-    author: { name: "Arjun Mehta", role: "Senior Refractory Engineer" },
+    author: { name: "Vinod Sharma" },
     relatedProducts: ["gunning-mix", "low-cement-castable", "ramming-mass"],
   },
 
@@ -2959,7 +2959,7 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Source from a trusted supplier:</strong> Ramming mass quality (grain size distribution, boric acid content, SiO<sub>2</sub> purity) varies significantly between suppliers. A premium product from a quality-controlled source consistently outperforms the lowest-cost option.</li>
 </ol>
 `,
-    author: { name: "Vikram Bhattacharya", role: "Senior Refractory Engineer · Induction Furnace Linings" },
+    author: { name: "Sushma Iyer" },
     relatedProducts: ["ramming-mass", "silica-ramming-mass", "alumina-ramming-mass"],
   },
 
@@ -3081,7 +3081,7 @@ export const BLOG_POSTS_DATA = [
 </ol>
 <p>If you can get clean answers to these seven questions, you have found a dealer worth working with for the long haul. The brand on the bag matters less than the dealer on the phone at 11 pm when your lining is at risk.</p>
 `,
-    author: { name: "Rahul Taneja", role: "Director, Shanker Agencies" },
+    author: { name: "Dinesh Verma" },
     relatedProducts: ["castable", "ramming-mass", "ceramic-fibre"],
   },
 
@@ -3200,7 +3200,7 @@ export const BLOG_POSTS_DATA = [
 </ol>
 <p>Castable is one of the most forgiving and one of the most unforgiving refractory products in the same bag. Buy the right grade, follow the dry-out curve and you will get lining life numbers that match the technical datasheet. Cut corners on either side and you will be re-lining in six months.</p>
 `,
-    author: { name: "Rahul Taneja", role: "Director, Shanker Agencies" },
+    author: { name: "Kamla Singh" },
     relatedProducts: ["castable", "lcc-castable", "abrasion-resistant-castable"],
   },
 
@@ -3288,7 +3288,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Summary</h2>
 <p>Lining life is almost never limited by the brand of brick or castable. It is limited by how the lining is installed, dried out, operated and inspected. This 12-step checklist costs nothing to implement. The payback is measured in lakhs per avoided breakout, thousands of tonnes of extra production per extended campaign and far fewer emergency calls at 2 am.</p>
 `,
-    author: { name: "Sanjay Gupta", role: "Furnace Engineering Consultant" },
+    author: { name: "Suresh Nair" },
     relatedProducts: ["castable", "ramming-mass", "ceramic-fibre", "high-alumina-bricks"],
   },
 
@@ -3498,7 +3498,7 @@ export const BLOG_POSTS_DATA = [
         a: "For cement kilns, IR shell scanning is essential, it is the only real-time indicator of thinning lining while the kiln is running. For steel ladles and EAF, IR is useful but can be supplemented with regular thickness gauging. For industrial boilers, a handheld IR camera quarterly is sufficient. The alternative to IR, waiting for a visual crack or hot spot, gives you far less response time and far higher repair cost.",
       },
     ],
-    author: { name: "Deepak Chauhan", role: "Process Engineer" },
+    author: { name: "Ramesh Yadav" },
     relatedProducts: [
       "low-cement-castables",
       "gunning-materials",
@@ -3574,7 +3574,7 @@ export const BLOG_POSTS_DATA = [
         answer: "Shanker Agencies Pvt. Ltd. supplies Calderys and Mahakoshal gunning castable grades from our Delhi NCR warehouse with same-week dispatch for standard grades. We export CIF to GCC destinations (UAE, Saudi Arabia, Qatar, Oman, Kuwait, Bahrain) with 7 to 14 days transit, and to ASEAN destinations (Singapore, Malaysia, Indonesia, Vietnam, Thailand) with 10 to 21 days transit. All export shipments include material test certificates and certificates of origin. Contact info@shankeragencies.com or call +91-9899957888 with your application details and required grade for a quotation."
       }
     ],
-    author: { name: "Arjun Mehta", role: "Senior Refractory Engineer" },
+    author: { name: "Pavan Kumar" },
     relatedProducts: [
       "gunning-materials",
       "unshaped-refractories",
@@ -3645,7 +3645,7 @@ export const BLOG_POSTS_DATA = [
         answer: "Shanker Agencies Pvt. Ltd. is a strategic supply partner of IFGL Refractories and supplies corundum and magnesia porous plugs for ladle capacities from 20 to 300 tonnes. Standard corundum grades for common ladle sizes typically dispatch within the same week from our Delhi NCR warehouse. Export shipments to GCC destinations transit in 7 to 14 days; ASEAN destinations transit in 10 to 21 days. All shipments include material test certificates and certificates of origin. To request a quotation, email ladle capacity, steel grade, and required purging rate to info@shankeragencies.com or call +91-9899957888."
       }
     ],
-    author: { name: "Vikram Sinha", role: "Steel Plant Applications Specialist" },
+    author: { name: "Geeta Sharma" },
     relatedProducts: [
       "porous-plugs",
       "flow-control",
@@ -3751,7 +3751,7 @@ export const BLOG_POSTS_DATA = [
         answer: "Acid-resistant brick lining is one component. Acid proofing is the complete engineered system — substrate preparation, membrane barrier, chemical-resistant mortar, and the brick or tile wearing course working together."
       }
     ],
-    author: { name: "Neha Sharma", role: "Quality & Standards Engineer" },
+    author: { name: "Anjali Verma" },
     relatedProducts: [
       "acid-resistant-bricks",
       "acid-proof-tiles",
@@ -3830,7 +3830,7 @@ export const BLOG_POSTS_DATA = [
         answer: "Yes. Established Indian refractory partners regularly supply the GCC, ASEAN, Africa, and Europe with full technical documentation and installation guidance."
       }
     ],
-    author: { name: "Sandeep Kulkarni", role: "Export & Technical Advisor" },
+    author: { name: "Rakesh Patel" },
     relatedProducts: [
       "high-alumina-bricks",
       "castable-refractories",

@@ -64,7 +64,7 @@ export default async function BlogArticlePage({ params }) {
     author: {
       '@type': 'Person',
       name: post.author?.name || 'Shanker Agencies Engineering Team',
-      jobTitle: post.author?.role || 'Refractory Engineer',
+      jobTitle: 'Refractory Engineer',
       worksFor: {
         '@type': 'Organization',
         '@id': 'https://www.shankeragencies.com/#organization',
