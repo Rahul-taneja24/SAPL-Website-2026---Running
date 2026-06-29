@@ -49,6 +49,7 @@ export const IMG = {
   lcc2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
   ulcc1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg',
   ramming1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiplascast-1-1.jpg',
+  rammingMass1: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=900&q=90',
   gunning1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg',
   gunning2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
   // New products (Mahakoshal authorised dealer line)
@@ -662,7 +663,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Silica, neutral and basic ramming mass for jointless induction furnace linings',
         fullDesc: 'Ramming mass is a dry, granular refractory applied by manual or mechanical ramming to form a dense, jointless monolithic lining for induction melting furnaces. Shanker Agencies supplies silica (acidic), neutral and basic ramming mass grades, each matched to your metal and slag chemistry for strong corrosion resistance and long lining life. We dispatch across India and export to the GCC, ASEAN, Africa and Europe with full technical documentation.',
         tempMax: '1700°C',
-        images: [IMG.ramming1],
+        images: [IMG.rammingMass1, IMG.gunning1],
         grades: ['Silica Ramming', 'Alumina Ramming', 'Magnesia Ramming', 'Acidic Ramming'],
         applications: [
           'Induction furnace crucible (iron, steel, brass)',

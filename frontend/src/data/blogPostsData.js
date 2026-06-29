@@ -3838,6 +3838,8 @@ export const BLOG_POSTS_DATA = [
 
 <p>This guide explains the main types of ramming mass, where each is used, how it sinters, and how to select the correct grade for your furnace and metal.</p>
 
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=900&q=80&auto=format&fit=crop" alt="Molten metal in an induction melting furnace lined with ramming mass" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Ramming mass forms the jointless lining of an induction melting furnace.</figcaption></figure>
+
 <h2>What is ramming mass used for?</h2>
 <p>Ramming mass is used to line the crucible of coreless induction furnaces that melt steel, iron, copper, aluminium and other metals. It is also used for furnace spouts, ladle bottoms, and patch repairs. Because it is installed as a single jointless mass, it resists the electromagnetic stirring, thermal cycling and metal penetration that crack a brick lining.</p>
 
@@ -3905,10 +3907,12 @@ export const BLOG_POSTS_DATA = [
     tags: ["castable refractory", "castable material", "low cement castable", "refractory concrete", "monolithic refractory"],
     publishDate: "2026-06-28",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop",
     content: `<p><strong>Castable refractory is a dry mix of refractory aggregate, binder and additives that is mixed with water and cast, poured or vibrated into shape, much like ordinary concrete but able to withstand temperatures above 1,400°C.</strong> Because it is installed as a single jointless mass, it is also called a monolithic refractory. After casting it is cured and dried, then heated to develop a hard, wear-resistant lining.</p>
 
 <p>This guide explains what castable refractory is, the main types, where each is used, and how to select the right grade.</p>
+
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=900&q=80&auto=format&fit=crop" alt="Refractory castable being cast into a furnace lining" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Castable refractory is mixed with water and cast into a jointless monolithic lining.</figcaption></figure>
 
 <h2>What is castable refractory used for?</h2>
 <p>Castable refractory is used to line furnaces, kilns, boilers, ladles, incinerators, and any high-temperature vessel where a jointless, custom-shaped lining is needed. It is ideal for complex shapes, repairs, and precast components because it can be poured into a mould instead of laid as bricks.</p>
@@ -3977,7 +3981,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["magnesia carbon bricks", "MgO-C bricks", "refractory export UAE", "India refractory exporter", "steel refractories"],
     publishDate: "2026-06-28",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&auto=format&fit=crop",
     content: `<p><strong>UAE steel plants import magnesia carbon (MgO-C) bricks from India because Indian suppliers offer the same metallurgical quality as Western producers at lower cost, with short sea transit of 4 to 6 days from Mundra to Jebel Ali and reliable, well-documented supply.</strong> For converter (BOF), electric arc furnace (EAF) and ladle slag-line linings, this combination of price, quality and proximity makes India the preferred source for the Gulf.</p>
 
 <p>This article explains why magnesia carbon bricks are critical to steel making, and why UAE and wider GCC buyers increasingly source them from India.</p>
