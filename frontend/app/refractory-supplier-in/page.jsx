@@ -6,18 +6,19 @@ import {
 import { LOCATIONS_DATA, getAllRegions, getLocationsByRegion } from '@/data/locationsData';
 
 export const metadata = {
-  title: 'Refractory Supplier Locations | India & Global Supply Network - Shanker Agencies',
+  title: 'Refractory Supplier Locations | Shanker Agencies',
   description:
-    'Shanker Agencies supplies refractory products across India and to 50+ countries. Find refractory bricks, castables, insulation & acid proof materials for steel, cement, aluminum & petrochemical plants in your city. Authorized CUMI, Crown Ceramics & Divine Cerawool dealer.',
+    'Shanker Agencies supplies refractory bricks, castables, insulation and acid proof materials across India and 50+ countries. CUMI, Crown Ceramics & Divine Cerawool dealer.',
   alternates: { canonical: '/refractory-supplier-in' },
   openGraph: {
-    title: 'Refractory Supplier Locations | India & Global Supply Network',
+    title: 'Refractory Supplier Locations | Shanker Agencies',
     description:
-      'Find Shanker Agencies refractory supply locations across India, GCC, ASEAN, Africa & Europe. 45+ years serving steel, cement & process industries worldwide.',
+      'Shanker Agencies supplies refractory bricks, castables, insulation and acid proof materials across India and 50+ countries. CUMI, Crown Ceramics & Divine Cerawool dealer.',
     url: 'https://www.shankeragencies.com/refractory-supplier-in',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Supply Locations' }],
   },
 };
 

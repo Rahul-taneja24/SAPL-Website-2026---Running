@@ -20,16 +20,17 @@ import {
 const BASE = 'https://www.shankeragencies.com';
 
 export const metadata = {
-  title: 'Engineering Reference Scenarios | Refractory Application Notes by SAPL',
+  title: 'Engineering Reference Scenarios | Shanker Agencies',
   description:
-    'Illustrative engineering reference scenarios across steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specifications, expected outcome ranges, market-pricing economics, not records of specific SAPL projects.',
+    'Illustrative refractory engineering scenarios for steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specs and outcome ranges.',
   alternates: { canonical: '/engineering-references' },
   openGraph: {
-    title: 'Refractory Engineering Reference Scenarios, Shanker Agencies',
+    title: 'Engineering Reference Scenarios | Shanker Agencies',
     description:
-      'Application notes covering 6 industrial refractory classes with expected outcome ranges and 2026 market economics.',
+      'Illustrative refractory engineering scenarios for steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specs and outcome ranges.',
     url: `${BASE}/engineering-references`,
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Engineering References' }],
   },
 };
 

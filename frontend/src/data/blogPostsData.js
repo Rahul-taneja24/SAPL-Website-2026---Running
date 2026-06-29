@@ -14,8 +14,7 @@ export const BLOG_POSTS_DATA = [
     title: "How to Select Ramming Mass for Induction Furnace: Complete Guide",
     metaTitle:
       "How to Select Ramming Mass for Induction Furnace | Expert Guide 2026",
-    metaDescription:
-      "Learn how to choose the right ramming mass for your induction furnace. Compare silica, alumina & magnesia types. Sintering profiles, lining life tips & selection criteria from 45+ years of refractory expertise.",
+    metaDescription: "Learn how to choose the right ramming mass for your induction furnace. Compare silica, alumina & magnesia types.",
     category: "Technical Guide",
     tags: [
       "ramming mass",
@@ -183,8 +182,7 @@ export const BLOG_POSTS_DATA = [
       "High Alumina Bricks: Complete Specification Guide (AL45 to AL90)",
     metaTitle:
       "High Alumina Bricks Specification Guide AL45 to AL90 | SAPL 2026",
-    metaDescription:
-      "Comprehensive guide to high alumina brick grades from AL45 to AL90. Compare properties, applications, and specifications. Learn how to specify correctly for your application.",
+    metaDescription: "Comprehensive guide to high alumina brick grades from AL45 to AL90. Compare properties, applications, and specifications.",
     category: "Technical Guide",
     tags: [
       "high alumina bricks",
@@ -321,8 +319,7 @@ export const BLOG_POSTS_DATA = [
       "Refractory Castable Installation Guide: LCC vs ULCC vs Conventional",
     metaTitle:
       "Refractory Castable Installation Guide LCC ULCC Conventional | SAPL",
-    metaDescription:
-      "Step-by-step guide to installing refractory castables. Compare LCC, ULCC & conventional types. Curing schedules, water addition, mixing, and common installation mistakes to avoid.",
+    metaDescription: "Step-by-step guide to installing refractory castables. Compare LCC, ULCC & conventional types.",
     category: "How-To",
     tags: [
       "refractory castable",
@@ -474,8 +471,7 @@ export const BLOG_POSTS_DATA = [
     title: "Ceramic Fiber Blanket vs Insulating Fire Brick: Which to Choose?",
     metaTitle:
       "Ceramic Fiber Blanket vs Insulating Fire Brick Comparison | SAPL",
-    metaDescription:
-      "Detailed comparison of ceramic fiber blanket and insulating fire brick (IFB). Compare thermal performance, cost, installation, and applications. Decision matrix included.",
+    metaDescription: "Detailed comparison of ceramic fiber blanket and insulating fire brick (IFB). Compare thermal performance, cost, installation, and applications.",
     category: "Comparison",
     tags: [
       "ceramic fiber blanket",
@@ -596,8 +592,7 @@ export const BLOG_POSTS_DATA = [
       "Steel Ladle Refractory Lining: Material Selection & Campaign Life Optimization",
     metaTitle:
       "Steel Ladle Refractory Lining Guide | Material Selection | SAPL",
-    metaDescription:
-      "Complete guide to steel ladle refractory lining design. Working lining, safety lining, bottom design, and flow control. Learn how to maximize campaign life and reduce total cost.",
+    metaDescription: "Complete guide to steel ladle refractory lining design. Working lining, safety lining, bottom design, and flow control.",
     category: "Technical Guide",
     tags: [
       "steel ladle",
@@ -724,8 +719,7 @@ export const BLOG_POSTS_DATA = [
     title: "Cement Kiln Refractory Zones: Complete Material Selection Guide",
     metaTitle:
       "Cement Kiln Refractory Zones Material Selection Guide | SAPL 2026",
-    metaDescription:
-      "Zone-by-zone guide to cement rotary kiln refractory selection. Burning zone, transition zone, safety zone, and preheater. Material types, properties, and optimization tips.",
+    metaDescription: "Zone-by-zone guide to cement rotary kiln refractory selection. Burning zone, transition zone, safety zone, and preheater.",
     category: "Industry Guide",
     tags: [
       "cement kiln",
@@ -847,8 +841,7 @@ export const BLOG_POSTS_DATA = [
     title: "Acid Proof Brick Lining for Chemical Plants: Complete Guide",
     metaTitle:
       "Acid Proof Brick Lining for Chemical Plants | Installation Guide | SAPL",
-    metaDescription:
-      "Complete guide to acid proof brick lining for chemical industry. Selection, installation, jointing materials, acid resistance testing, and failure prevention.",
+    metaDescription: "Complete guide to acid proof brick lining for chemical industry. Selection, installation, jointing materials, acid resistance testing, and failure.",
     category: "Industry Guide",
     tags: [
       "acid proof bricks",
@@ -983,8 +976,7 @@ export const BLOG_POSTS_DATA = [
       "Refractory Materials for Glass Melting Furnace: AZS, Zircon & Silica",
     metaTitle:
       "Glass Melting Furnace Refractory Materials AZS Zircon Silica | SAPL",
-    metaDescription:
-      "Guide to refractory materials for glass furnaces. AZS for glass contact, silica for crown, zircon for feeders. Zone-by-zone selection for container, float, and fiber glass.",
+    metaDescription: "Guide to refractory materials for glass furnaces. AZS for glass contact, silica for crown, zircon for feeders.",
     category: "Industry Guide",
     tags: [
       "glass furnace",
@@ -1102,8 +1094,7 @@ export const BLOG_POSTS_DATA = [
     title: "Slide Gate Plate Selection Guide for Steel Ladles",
     metaTitle:
       "Slide Gate Plate Selection Guide for Steel Ladles | SAPL 2026",
-    metaDescription:
-      "How to select slide gate plates for steel ladles. Compare alumina-carbon, MgO-C types. Bore diameter, life optimization, and common failure modes explained.",
+    metaDescription: "How to select slide gate plates for steel ladles. Compare alumina-carbon, MgO-C types.",
     category: "Buyer's Guide",
     tags: [
       "slide gate",
@@ -1229,8 +1220,7 @@ export const BLOG_POSTS_DATA = [
     title: "How to Reduce Refractory Consumption in Steel Plants",
     metaTitle:
       "Reduce Refractory Consumption in Steel Plants | TCO Guide | SAPL",
-    metaDescription:
-      "Proven strategies to reduce refractory consumption and total cost in steel plants. Lining design optimization, maintenance practices, and TCO approach explained by experts.",
+    metaDescription: "Proven strategies to reduce refractory consumption and total cost in steel plants.",
     category: "Technical Guide",
     tags: [
       "refractory consumption",
@@ -1363,8 +1353,7 @@ export const BLOG_POSTS_DATA = [
       "Refractory Supplier Selection: 10 Things to Check Before You Buy",
     metaTitle:
       "Refractory Supplier Selection Guide | 10 Things to Check | SAPL",
-    metaDescription:
-      "How to choose a reliable refractory supplier. 10 critical factors: quality certificates, testing, delivery, technical support, and more. Avoid costly mistakes with this checklist.",
+    metaDescription: "How to choose a reliable refractory supplier. 10 critical factors: quality certificates, testing, delivery, technical support, and more.",
     category: "Buyer's Guide",
     tags: [
       "refractory supplier",
@@ -1509,8 +1498,7 @@ export const BLOG_POSTS_DATA = [
       "Magnesia Carbon Bricks for BOF & EAF: Selection & Performance Guide",
     metaTitle:
       "Magnesia Carbon Bricks for BOF EAF Selection Guide | SAPL 2026",
-    metaDescription:
-      "Complete guide to MgO-C bricks for BOF and EAF steelmaking. Carbon content selection, antioxidant types, slag resistance, and performance optimization strategies.",
+    metaDescription: "Complete guide to MgO-C bricks for BOF and EAF steelmaking. Carbon content selection, antioxidant types, slag resistance, and performance optimization.",
     category: "Technical Guide",
     tags: [
       "magnesia carbon bricks",
@@ -1642,8 +1630,7 @@ export const BLOG_POSTS_DATA = [
       "Importing Refractories from India: A Buyer's Guide for International Clients",
     metaTitle:
       "Import Refractories from India | International Buyer's Guide | SAPL",
-    metaDescription:
-      "Guide for international buyers importing refractory materials from India. Export process, documentation, quality assurance, shipping logistics, and how to find reliable Indian suppliers.",
+    metaDescription: "Guide for international buyers importing refractory materials from India. Export process, documentation, quality assurance, shipping logistics, and how.",
     category: "Buyer's Guide",
     tags: [
       "refractory export",
@@ -1766,8 +1753,7 @@ export const BLOG_POSTS_DATA = [
       "Induction Furnace Lining Failure: Common Causes & How to Prevent Them",
     metaTitle:
       "Induction Furnace Lining Failure Causes & Prevention | SAPL 2026",
-    metaDescription:
-      "Why induction furnace linings fail prematurely and how to prevent it. Covers sintering problems, thermal shock, slag attack, metal penetration, and operational best practices.",
+    metaDescription: "Why induction furnace linings fail prematurely and how to prevent it. Covers sintering problems, thermal shock, slag attack, metal penetration, and.",
     category: "How-To",
     tags: [
       "induction furnace",
@@ -1947,8 +1933,7 @@ export const BLOG_POSTS_DATA = [
       "Refractory Anchors & Fastening Systems: Types, Selection & Installation",
     metaTitle:
       "Refractory Anchors & Fastening Systems Guide | Types Selection | SAPL",
-    metaDescription:
-      "Complete guide to refractory anchoring systems. V anchors, Y anchors, ceramic anchors, bullhorn tips. Selection criteria, spacing, welding, and installation best practices.",
+    metaDescription: "Complete guide to refractory anchoring systems. V anchors, Y anchors, ceramic anchors, bullhorn tips.",
     category: "Technical Guide",
     tags: [
       "refractory anchors",
@@ -2100,7 +2085,7 @@ export const BLOG_POSTS_DATA = [
     slug: "al70-vs-al80-high-alumina-bricks",
     title: "AL70 vs AL80 High Alumina Bricks: Which Grade for Your Steel Ladle?",
     metaTitle: "AL70 vs AL80 High Alumina Bricks for Steel Ladles | Comparison Guide",
-    metaDescription: "Compare AL70 (68–72% Al₂O₃) and AL80 (78–82% Al₂O₃) high alumina bricks for steel ladle linings. Refractoriness, CCS, AP%, campaign life, and cost-benefit analysis from SAPL's 45+ years of experience.",
+    metaDescription: "Compare AL70 (68–72% Al₂O₃) and AL80 (78–82% Al₂O₃) high alumina bricks for steel ladle linings.",
     category: "Comparison Guide",
     tags: ["high alumina bricks", "AL70", "AL80", "steel ladle", "working lining", "alumina content"],
     readTime: "6 min",
@@ -2216,7 +2201,7 @@ export const BLOG_POSTS_DATA = [
     slug: "lcc-installation-best-practices",
     title: "Low Cement Castables: Best Practices for Installation & Heat-Up",
     metaTitle: "LCC Installation Best Practices: Water Addition, Curing & Heat-Up Guide",
-    metaDescription: "Master LCC castable installation with expert guidance on optimal water addition (4–6%), mixing, vibration casting, curing, and controlled heat-up schedules. Prevent explosive spalling and maximize campaign life.",
+    metaDescription: "Master LCC castable installation with expert guidance on optimal water addition (4–6%), mixing, vibration casting, curing, and controlled heat-up.",
     category: "How-To Guide",
     tags: ["LCC castable", "low cement castable", "castable installation", "heat-up schedule", "curing refractory", "vibration casting"],
     readTime: "7 min",
@@ -2337,7 +2322,7 @@ export const BLOG_POSTS_DATA = [
     slug: "ceramic-fiber-vs-insulating-firebrick",
     title: "Ceramic Fiber vs Insulating Firebrick: Making the Right Choice",
     metaTitle: "Ceramic Fiber vs Insulating Firebrick (IFB): Complete Comparison 2026",
-    metaDescription: "Compare ceramic fiber and insulating firebricks for furnace linings. Thermal conductivity, maximum service temperature, installation cost, and 5-year TCO analysis. Decision framework for plant engineers.",
+    metaDescription: "Compare ceramic fiber and insulating firebricks for furnace linings. Thermal conductivity, maximum service temperature, installation cost, and 5-year TCO.",
     category: "Comparison Guide",
     tags: ["ceramic fiber", "insulating firebrick", "IFB", "furnace lining", "energy saving", "thermal insulation"],
     readTime: "6 min",
@@ -2439,7 +2424,7 @@ export const BLOG_POSTS_DATA = [
     slug: "steel-ladle-refractory-selection-guide",
     title: "Steel Ladle Refractory Selection: Complete Guide to Working Lining Best Practices",
     metaTitle: "Steel Ladle Refractory Lining Selection Guide | Working Lining Best Practices",
-    metaDescription: "Comprehensive guide to steel ladle refractory selection: working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specs, bottom design, purging plugs, and achieving 100+ heat campaigns.",
+    metaDescription: "Comprehensive guide to steel ladle refractory selection: working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specs, bottom design, purging.",
     category: "Technical Guide",
     tags: ["steel ladle lining", "working lining", "MgO-C bricks", "LCC castable", "purging plug", "campaign life", "ladle refractory"],
     readTime: "8 min",
@@ -2540,7 +2525,7 @@ export const BLOG_POSTS_DATA = [
     slug: "cement-kiln-zone-refractory-selection",
     title: "Cement Kiln Refractory Zones: Material Selection Zone by Zone",
     metaTitle: "Cement Kiln Refractory Selection Zone by Zone | Complete Guide",
-    metaDescription: "Zone-by-zone cement kiln refractory selection guide. Burning zone, transition zones, nose ring, cooler, inlet zone, and cyclone preheater material recommendations with thermal and chemical requirements.",
+    metaDescription: "Zone-by-zone cement kiln refractory selection guide. Burning zone, transition zones, nose ring, cooler, inlet zone, and cyclone preheater material.",
     category: "Industry Guide",
     tags: ["cement kiln", "rotary kiln refractory", "burning zone", "magnesia spinel", "kiln refractory", "cement plant"],
     readTime: "7 min",
@@ -2662,7 +2647,7 @@ export const BLOG_POSTS_DATA = [
     slug: "slide-gate-flow-control-explained",
     title: "Flow Control Refractories: Slide Gate Systems Fully Explained",
     metaTitle: "Slide Gate Plate Systems for Steel Ladles: Materials & Selection Guide",
-    metaDescription: "Everything you need to know about slide gate flow control systems for steel ladles: plate materials (Al₂O₃-C, Al₂O₃-ZrO₂-C, MgO-C), nozzle types, anti-clogging with argon, and longer sequence casting tips.",
+    metaDescription: "Everything you need to know about slide gate flow control systems for steel ladles: plate materials (Al₂O₃-C, Al₂O₃-ZrO₂-C, MgO-C), nozzle types.",
     category: "Technical Guide",
     tags: ["slide gate", "flow control", "ladle shroud", "slide gate plate", "continuous casting", "subentry nozzle"],
     readTime: "6 min",
@@ -2762,7 +2747,7 @@ export const BLOG_POSTS_DATA = [
     slug: "gunning-vs-casting-when-to-use",
     title: "Gunning vs Casting Refractories: When to Use Which Method",
     metaTitle: "Gunning vs Casting Refractories: Installation Method Comparison Guide",
-    metaDescription: "Compare gunning and casting refractory installation methods. Application techniques, rebound loss, material properties, cost implications, and a decision framework for plant engineers selecting the right method.",
+    metaDescription: "Compare gunning and casting refractory installation methods. Application techniques, rebound loss, material properties, cost implications, and a decision.",
     category: "How-To Guide",
     tags: ["gunning refractory", "casting refractory", "hot repair", "refractory installation", "gunning mix", "refractory maintenance"],
     readTime: "5 min",
@@ -2864,7 +2849,7 @@ export const BLOG_POSTS_DATA = [
     slug: "induction-furnace-ramming-mass-selection",
     title: "Induction Furnace Lining: Ramming Mass Selection & Installation Guide",
     metaTitle: "Induction Furnace Ramming Mass Selection & Sintering Guide | SAPL",
-    metaDescription: "Complete guide to induction furnace lining with ramming mass. Compare silica, alumina, and magnesia types by melt chemistry. Sintering schedules, failure troubleshooting, and lining life optimization.",
+    metaDescription: "Complete guide to induction furnace lining with ramming mass. Compare silica, alumina, and magnesia types by melt chemistry.",
     category: "Technical Guide",
     tags: ["induction furnace lining", "ramming mass", "silica ramming mass", "sintering schedule", "foundry refractory", "lining failure"],
     readTime: "7 min",
@@ -2971,7 +2956,7 @@ export const BLOG_POSTS_DATA = [
     slug: "top-10-refractory-dealers-in-delhi-ncr-2026",
     title: "Top 10 Refractory Dealers in Delhi NCR 2026: Honest Comparison for Buyers",
     metaTitle: "Top 10 Refractory Dealers in Delhi NCR 2026 | Honest Comparison",
-    metaDescription: "A practical comparison of refractory dealers in Delhi NCR for 2026. Covers authorised dealer status, brand mix, stock depth, engineering support and delivery across Delhi, Noida, Gurgaon, Faridabad and Ghaziabad.",
+    metaDescription: "A practical comparison of refractory dealers in Delhi NCR for 2026. Covers authorised dealer status, brand mix, stock depth, engineering support and.",
     category: "Buyer's Guide",
     tags: [
       "refractory dealer delhi",
@@ -3093,7 +3078,7 @@ export const BLOG_POSTS_DATA = [
     slug: "castable-refractory-cement-delhi-ncr-buyers-guide",
     title: "Castable Refractory Cement in Delhi NCR: 2026 Buyer's Guide",
     metaTitle: "Castable Refractory Cement in Delhi NCR | 2026 Buyer's Guide",
-    metaDescription: "Complete buyer's guide to castable refractory cement in Delhi NCR. LCC vs ULCC vs conventional castables, grade selection, curing and dry-out, pricing ranges and authorised dealer tips for 2026.",
+    metaDescription: "Complete buyer's guide to castable refractory cement in Delhi NCR. LCC vs ULCC vs conventional castables, grade selection, curing and dry-out, pricing.",
     category: "Buyer's Guide",
     tags: [
       "castable refractory cement",
@@ -3212,7 +3197,7 @@ export const BLOG_POSTS_DATA = [
     slug: "refractory-lining-maintenance-12-step-checklist",
     title: "Refractory Lining Maintenance: 12-Step Checklist to Extend Campaign Life",
     metaTitle: "Refractory Lining Maintenance Checklist | 12 Steps to Longer Life",
-    metaDescription: "A 12-step refractory lining maintenance checklist covering inspection, patching, dry-out after shutdown, slag control and shutdown planning. Written by refractory engineers with 45+ years of plant experience.",
+    metaDescription: "A 12-step refractory lining maintenance checklist covering inspection, patching, dry-out after shutdown, slag control and shutdown planning.",
     category: "Maintenance Guide",
     tags: [
       "refractory lining maintenance",
@@ -3302,7 +3287,7 @@ export const BLOG_POSTS_DATA = [
     slug: "refractory-lining-maintenance-scheduling-guide",
     title: "Maintenance Scheduling for Refractory Linings: A Plant Engineer's Complete Guide",
     metaTitle: "Refractory Lining Maintenance Scheduling Guide | Intervals & Planning",
-    metaDescription: "How to build a maintenance schedule for refractory linings by furnace type, daily, weekly, monthly, quarterly and annual intervals with shutdown planning templates. Written by refractory engineers with 45+ years of plant experience.",
+    metaDescription: "How to build a maintenance schedule for refractory linings by furnace type, daily, weekly, monthly, quarterly and annual intervals with shutdown planning.",
     category: "Maintenance Guide",
     tags: [
       "refractory lining maintenance scheduling",
@@ -3512,7 +3497,7 @@ export const BLOG_POSTS_DATA = [
     slug: "gunning-castable-complete-guide",
     title: "Gunning Castable: Complete Guide to Grades, Applications and Selection",
     excerpt: "Technical guide to gunning castable (gunite) refractory covering dense vs insulating grades, full application matrix for steel, cement and power sectors, rebound loss data, and how to choose the right grade.",
-    metaDescription: "Technical guide to gunning castable (gunite) refractory — dense vs insulating grades, application matrix for steel, cement and power, rebound loss data, and India supply from SAPL.",
+    metaDescription: "Technical guide to gunning castable (gunite) refractory — dense vs insulating grades, application matrix for steel, cement and power, rebound loss data.",
     publishDate: "2026-06-20",
     lastModified: "2026-06-20",
     category: "Refractory Products",
@@ -3586,7 +3571,7 @@ export const BLOG_POSTS_DATA = [
     slug: "porous-plug-refractory-selection-guide",
     title: "Porous Plug Refractory: How It Works, Types and Selection Guide",
     excerpt: "A porous plug is the gas-permeable refractory element in a steel ladle used for argon purging. This guide explains how it works, corundum vs magnesia grade selection, purging rates, replacement frequency, and steel quality benefits.",
-    metaDescription: "What is a porous plug? How argon purging works in steel ladles, corundum vs magnesia grade selection, purging rates, replacement cycles, and IFGL porous plug supply from SAPL.",
+    metaDescription: "What is a porous plug? How argon purging works in steel ladles, corundum vs magnesia grade selection, purging rates, replacement cycles, and IFGL porous.",
     publishDate: "2026-06-20",
     lastModified: "2026-06-20",
     category: "Flow Control",
@@ -3764,7 +3749,7 @@ export const BLOG_POSTS_DATA = [
     title: "Best Refractory Suppliers in India: How to Choose (2026 Guide)",
     excerpt: "How to choose the best refractory supplier in India: selection criteria, supplier types, and the products and engineering support a full-range partner should offer.",
     metaTitle: "Best Refractory Suppliers in India: How to Choose (2026 Guide)",
-    metaDescription: "How to choose the best refractory supplier in India: selection criteria, supplier types, and the products and engineering support a full-range partner should offer.",
+    metaDescription: "How to choose the best refractory supplier in India: selection criteria, supplier types, and the products and engineering support a full-range partner.",
     category: "Refractory Engineering",
     tags: ["refractory suppliers India", "refractory supplier selection", "refractory engineering partner", "India refractory export", "best refractory supplier"],
     publishDate: "2026-06-25",

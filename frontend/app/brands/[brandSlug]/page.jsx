@@ -102,6 +102,7 @@ export async function generateMetadata({ params }) {
       description: `${brand.name} refractory products from India's trusted dealer since 1980. ${brand.desc}`,
       url: `https://www.shankeragencies.com/brands/${brandSlug}`,
       type: 'website',
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: `${brand.name} | Shanker Agencies` }],
     },
     twitter: {
       card: 'summary_large_image',

@@ -80,6 +80,7 @@ export async function generateMetadata({ params }) {
       description,
       url: `https://www.shankeragencies.com/industries/${industrySlug}`,
       type: 'website',
+      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: 'summary_large_image',

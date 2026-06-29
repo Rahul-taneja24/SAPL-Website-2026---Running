@@ -3,17 +3,17 @@ import { Calendar, Clock, ArrowRight, BookOpen, Tag, ChevronRight } from 'lucide
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 
 export const metadata = {
-  title: 'Refractory Engineering Blog | Technical Guides, How-Tos & Industry Insights',
-  description:
-    'Expert refractory engineering articles from Shanker Agencies, 45+ years of experience. Technical guides on high alumina bricks, castables, ramming mass, ceramic fiber, steel ladle linings, cement kiln refractories, and more.',
+  title: 'Refractory Engineering Blog | Shanker Agencies',
+  description: 'Technical guides on refractory selection, installation and performance. High alumina bricks, castables, ramming mass, ceramic fiber, steel ladle and kiln linings.',
   alternates: { canonical: '/blog' },
   openGraph: {
     title: 'Refractory Engineering Blog | Shanker Agencies',
-    description: 'Expert technical articles on refractory selection, installation, and performance from India\'s premier refractory engineering partner since 1980.',
+    description: 'Technical guides on refractory selection, installation and performance. High alumina bricks, castables, ramming mass, ceramic fiber, steel ladle and kiln linings.',
     url: 'https://www.shankeragencies.com/blog',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',
     type: 'website',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Refractory Blog' }],
   },
 };
 

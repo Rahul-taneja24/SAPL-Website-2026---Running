@@ -1,13 +1,14 @@
 import Downloads from '@/sections/Downloads';
 
 export const metadata = {
-  title: 'Technical Downloads & Datasheets | Refractory Products | Shanker Agencies',
-  description: 'Download technical datasheets, installation guides, heat-up schedules, and company profile for refractory products, high alumina bricks, castables, ceramic fiber, ramming mass & more.',
+  title: 'Technical Datasheets & Downloads | Shanker Agencies',
+  description: 'Download technical datasheets, installation guides and heat-up schedules for high alumina bricks, LCC castables, ceramic fiber, ramming mass and slide gate plates.',
   alternates: { canonical: '/downloads' },
   openGraph: {
-    title: 'Refractory Technical Downloads | Shanker Agencies',
-    description: 'Technical datasheets and installation guides for refractory materials, high alumina bricks, LCC castables, ceramic fiber, ramming mass, slide gate plates.',
+    title: 'Technical Datasheets & Downloads | Shanker Agencies',
+    description: 'Download technical datasheets, installation guides and heat-up schedules for high alumina bricks, LCC castables, ceramic fiber, ramming mass and slide gate plates.',
     url: 'https://www.shankeragencies.com/downloads',
+    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Technical Downloads' }],
   },
 };
 
