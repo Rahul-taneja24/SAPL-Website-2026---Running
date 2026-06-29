@@ -701,8 +701,9 @@ export const PRODUCT_CATALOG = {
       {
         id: 'gunning-materials',
         name: 'Gunning Materials',
-        shortDesc: 'Pneumatically applied repair mixes, minimise downtime with in-situ hot repairs',
-        fullDesc: 'Gunning materials are specially formulated to be applied by pneumatic gunning equipment, typically while the vessel is still hot. They are the fastest way to extend vessel campaign life by repairing eroded zones without a full re-lining shutdown, saving significant production time and cost.',
+        shortDesc: 'Gunning mass, gunning castable and cement gunning material for in-situ hot repairs',
+        h1: 'Gunning Mass & Gunning Castable for Hot Repairs',
+        fullDesc: 'Gunning materials (gunning mass, gunning castable and cement gunning material) are dry refractory mixes applied by pneumatic gunning equipment, usually while the vessel is still hot. Guniting is the fastest way to extend vessel campaign life by repairing eroded zones without a full re-lining shutdown, saving significant production time and cost. Shanker Agencies supplies dense and insulating gunning grades across India and exports to the GCC, ASEAN, Africa and Europe.',
         tempMax: '1700°C',
         images: [IMG.gunning1, IMG.gunning2],
         grades: ['LC Gun Mix', 'HA Gun Mix', 'Mag Gun Mix', 'Silica Gun Mix'],

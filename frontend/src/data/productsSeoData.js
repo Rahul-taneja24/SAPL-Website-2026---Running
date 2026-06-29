@@ -64,8 +64,8 @@ export const PRODUCT_SEO = [
     categorySlug: "unshaped-refractories",
     productId: "gunning-materials",
     name: "Gunning Mass / Gunning Mix",
-    metaTitle: "Gunning Mass & Refractory Gunning Mix | Hot Repair Refractory | Shanker Agencies",
-    metaDescription: "Gunning mass for hot refractory repairs, lining maintenance & localized wear repair. Rapid application without shutdown. Calderys & CUMI grades.",
+    metaTitle: "Gunning Castable, Gunning Mass & Cement Gunning Material | Shanker Agencies",
+    metaDescription: "Gunning castable, gunning mass and cement gunning material for hot refractory repairs and guniting. Rapid in-situ application without shutdown.",
   },
   {
     categorySlug: "flow-control",

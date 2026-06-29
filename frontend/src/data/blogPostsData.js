@@ -3460,6 +3460,7 @@ export const BLOG_POSTS_DATA = [
 <h2>How Shanker Agencies Supports Your Maintenance Schedule</h2>
 <p>We keep common patching and maintenance materials, gunning mass, refractory mortar, ceramic fibre rope and blanket, insulating castable, in stock at our Shahdara, Delhi warehouse for same-week dispatch across India and 7–21 day transit to GCC and ASEAN. Our refractory engineers are available to join planned shutdowns for lining inspection, thickness mapping and dry-out supervision for customers on regular supply accounts.</p>
 <p>If your lining life is below the datasheet number, contact us. A 45-minute site visit and a review of your lining log usually identifies the scheduling gap within the first conversation.</p>
+<p>Ready to source the material? See our <a href="/products/unshaped-refractories/gunning-materials">gunning mass and gunning castable range</a> for hot in-situ repairs, or our <a href="/products/unshaped-refractories/low-cement-castables">low cement castables</a> for cast linings.</p>
 `,
     faqs: [
       {
