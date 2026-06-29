@@ -3822,6 +3822,150 @@ export const BLOG_POSTS_DATA = [
       "ceramic-fiber-products",
     ],
   },
+  {
+    id: 30,
+    slug: "what-is-ramming-mass-types-uses-guide",
+    title: "What is Ramming Mass? Types, Uses and Selection Guide",
+    excerpt: "Ramming mass is a dry refractory for induction furnace linings. Learn the silica, neutral and basic types and how to select the right grade.",
+    metaTitle: "What is Ramming Mass? Types, Uses & Selection | Shanker Agencies",
+    metaDescription: "Ramming mass is a dry refractory lining for induction furnaces. Compare silica, neutral and basic grades, their uses, sintering and selection.",
+    category: "Refractory Engineering",
+    tags: ["ramming mass", "silica ramming mass", "neutral ramming mass", "induction furnace", "refractory lining"],
+    publishDate: "2026-06-28",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&auto=format&fit=crop",
+    content: `<p><strong>Ramming mass is a dry, granular refractory material used to form the monolithic lining of induction furnaces, ladle bottoms and similar metal-melting vessels. It is rammed (compacted) in place around a former, then sintered by the heat of the first melt to form a dense, crack-resistant working lining.</strong> Unlike bricks, it has no joints, which is why it is preferred for the high thermal and mechanical stress of coreless induction furnaces.</p>
+
+<p>This guide explains the main types of ramming mass, where each is used, how it sinters, and how to select the correct grade for your furnace and metal.</p>
+
+<h2>What is ramming mass used for?</h2>
+<p>Ramming mass is used to line the crucible of coreless induction furnaces that melt steel, iron, copper, aluminium and other metals. It is also used for furnace spouts, ladle bottoms, and patch repairs. Because it is installed as a single jointless mass, it resists the electromagnetic stirring, thermal cycling and metal penetration that crack a brick lining.</p>
+
+<h2>Types of ramming mass</h2>
+<h3>Silica (acidic) ramming mass</h3>
+<p>Silica ramming mass is the most widely used grade for melting steel and cast iron in coreless induction furnaces. It is based on high-purity quartzite with a boric acid sintering agent. It is acidic, so it suits acidic slags and gives long lining life at lower cost. Typical SiO₂ content is 98% or higher.</p>
+
+<h3>Neutral ramming mass</h3>
+<p>Neutral ramming mass is based on alumina, spinel or high-alumina aggregates. It resists both acidic and basic slags, making it the choice for alloy steels, manganese steel and applications where slag chemistry varies. It offers higher refractoriness and better corrosion resistance than silica grades.</p>
+
+<h3>Basic ramming mass</h3>
+<p>Basic ramming mass is based on magnesia (MgO). It is used for melting high-manganese steel and where strongly basic slags would attack silica or neutral linings. It has the highest refractoriness but needs careful sintering and handling.</p>
+
+<h2>How ramming mass sinters</h2>
+<p>A ramming mass lining develops three zones during the first heats: a sintered (ceramic) zone next to the metal, a transition zone, and a loose powder zone next to the coil. The loose back layer is intentional, it stays compressible to absorb thermal expansion and acts as a safety indicator. Correct sintering, following a controlled first heat-up schedule, is the single biggest factor in lining life.</p>
+
+<h2>How to select the right ramming mass</h2>
+<ul>
+<li><strong>Metal and slag chemistry:</strong> acidic slag → silica; mixed or alloy → neutral; strongly basic → magnesia.</li>
+<li><strong>Furnace size and power:</strong> larger, high-power furnaces need higher-grade neutral or magnesia masses.</li>
+<li><strong>Operating temperature:</strong> higher tap temperatures push you toward neutral and basic grades.</li>
+<li><strong>Lining life target vs cost:</strong> silica is cheapest per tonne; neutral and basic last longer in demanding duty.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>What is ramming mass made of?</h3>
+<p>Silica ramming mass is made from high-purity quartzite (98%+ SiO₂) with a boric acid sintering agent. Neutral grades use alumina or spinel aggregates, and basic grades use magnesia (MgO). All are supplied as a dry, graded powder.</p>
+
+<h3>What is the difference between silica and neutral ramming mass?</h3>
+<p>Silica ramming mass is acidic and best for melting plain steel and cast iron at lower cost. Neutral ramming mass uses alumina or spinel, resists both acidic and basic slags, and suits alloy steels and variable slag chemistry with longer life.</p>
+
+<h3>How long does a ramming mass lining last?</h3>
+<p>Lining life depends on grade, metal, and operating practice. Silica linings commonly give 30 to 80 heats for steel, while neutral and magnesia linings can run longer in demanding duty. Correct sintering and consistent operation are the main drivers of life.</p>
+
+<p>Need help selecting the right ramming mass for your induction furnace? <a href="https://www.shankeragencies.com/contact">Talk to the Shanker Agencies engineering team</a> with your furnace size, metal and slag details.</p>`,
+    faqs: [
+      {
+        question: "What is ramming mass made of?",
+        answer: "Silica ramming mass is made from high-purity quartzite (98%+ SiO₂) with a boric acid sintering agent. Neutral grades use alumina or spinel aggregates, and basic grades use magnesia (MgO). All are supplied as a dry, graded powder."
+      },
+      {
+        question: "What is the difference between silica and neutral ramming mass?",
+        answer: "Silica ramming mass is acidic and best for melting plain steel and cast iron at lower cost. Neutral ramming mass uses alumina or spinel, resists both acidic and basic slags, and suits alloy steels and variable slag chemistry with longer life."
+      },
+      {
+        question: "How long does a ramming mass lining last?",
+        answer: "Lining life depends on grade, metal, and operating practice. Silica linings commonly give 30 to 80 heats for steel, while neutral and magnesia linings can run longer in demanding duty. Correct sintering and consistent operation are the main drivers of life."
+      }
+    ],
+    author: { name: "Amit Kumar" },
+    relatedProducts: [
+      "ramming-masses",
+      "low-cement-castables",
+      "high-alumina-bricks",
+    ],
+  },
+  {
+    id: 31,
+    slug: "what-is-castable-refractory-complete-guide",
+    title: "What is Castable Refractory? A Complete Guide",
+    excerpt: "Castable refractory is a refractory concrete mixed with water and cast into shape. Learn the types, uses and how to choose the right grade.",
+    metaTitle: "What is Castable Refractory? Types & Uses | Shanker Agencies",
+    metaDescription: "Castable refractory is a refractory concrete cast with water. Compare conventional, low cement and insulating castables, their uses and selection.",
+    category: "Refractory Engineering",
+    tags: ["castable refractory", "castable material", "low cement castable", "refractory concrete", "monolithic refractory"],
+    publishDate: "2026-06-28",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&auto=format&fit=crop",
+    content: `<p><strong>Castable refractory is a dry mix of refractory aggregate, binder and additives that is mixed with water and cast, poured or vibrated into shape, much like ordinary concrete but able to withstand temperatures above 1,400°C.</strong> Because it is installed as a single jointless mass, it is also called a monolithic refractory. After casting it is cured and dried, then heated to develop a hard, wear-resistant lining.</p>
+
+<p>This guide explains what castable refractory is, the main types, where each is used, and how to select the right grade.</p>
+
+<h2>What is castable refractory used for?</h2>
+<p>Castable refractory is used to line furnaces, kilns, boilers, ladles, incinerators, and any high-temperature vessel where a jointless, custom-shaped lining is needed. It is ideal for complex shapes, repairs, and precast components because it can be poured into a mould instead of laid as bricks.</p>
+
+<h2>Types of castable refractory</h2>
+<h3>Conventional castable</h3>
+<p>Conventional castables use 15 to 25% calcium aluminate cement as the binder. They are economical and easy to install, suited to backup linings, boilers and general furnace work up to moderate temperatures.</p>
+
+<h3>Low cement castable (LCC)</h3>
+<p>Low cement castables reduce cement content to roughly 4 to 8%, which lowers porosity and raises strength and hot performance. They are used for steel ladles, tundish, and demanding wear zones.</p>
+
+<h3>Ultra low cement castable (ULCC)</h3>
+<p>Ultra low cement castables contain under 4% cement, giving very high density and excellent resistance to slag and abrasion for the most critical high-temperature linings.</p>
+
+<h3>Insulating castable</h3>
+<p>Insulating castables use lightweight aggregate to give low thermal conductivity. They are used as backup insulation behind a dense working lining to cut heat loss.</p>
+
+<h2>How to select the right castable</h2>
+<ul>
+<li><strong>Service temperature:</strong> higher temperatures push you toward low and ultra low cement grades.</li>
+<li><strong>Wear and chemical attack:</strong> slag and abrasion call for dense LCC or ULCC; backup zones can use conventional or insulating castable.</li>
+<li><strong>Installation method:</strong> pouring, vibration casting, or gunning each suit different grades.</li>
+<li><strong>Insulation vs strength:</strong> dense castables for the hot face, insulating castables behind them.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>What is the difference between castable and refractory cement?</h3>
+<p>Refractory cement is only the binder. Castable refractory is the complete ready-to-use mix of refractory aggregate, binder and additives, you add water and cast it into a finished lining, similar to how concrete differs from cement.</p>
+
+<h3>What temperature can castable refractory withstand?</h3>
+<p>It depends on grade. Conventional castables serve up to about 1,400 to 1,500°C, while high alumina low cement and ultra low cement castables can withstand 1,600 to 1,800°C in continuous service.</p>
+
+<h3>How is castable refractory installed?</h3>
+<p>The dry mix is blended with a controlled amount of clean water, cast or vibrated into a mould or against an anchored surface, cured, dried, and then heated on a controlled schedule to remove moisture and develop strength. Correct water addition and dry-out prevent explosive spalling.</p>
+
+<p>Need help choosing a castable grade for your furnace or kiln? <a href="https://www.shankeragencies.com/contact">Talk to the Shanker Agencies engineering team</a> with your temperature, wear and shape requirements.</p>`,
+    faqs: [
+      {
+        question: "What is the difference between castable and refractory cement?",
+        answer: "Refractory cement is only the binder. Castable refractory is the complete ready-to-use mix of refractory aggregate, binder and additives, you add water and cast it into a finished lining, similar to how concrete differs from cement."
+      },
+      {
+        question: "What temperature can castable refractory withstand?",
+        answer: "It depends on grade. Conventional castables serve up to about 1,400 to 1,500°C, while high alumina low cement and ultra low cement castables can withstand 1,600 to 1,800°C in continuous service."
+      },
+      {
+        question: "How is castable refractory installed?",
+        answer: "The dry mix is blended with a controlled amount of clean water, cast or vibrated into a mould or against an anchored surface, cured, dried, and then heated on a controlled schedule to remove moisture and develop strength. Correct water addition and dry-out prevent explosive spalling."
+      }
+    ],
+    author: { name: "Priya Sharma" },
+    relatedProducts: [
+      "low-cement-castables",
+      "ultra-low-cement-castables",
+      "conventional-castables",
+    ],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
