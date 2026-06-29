@@ -104,8 +104,8 @@ export default async function BlogArticlePage({ params }) {
         '@type': 'FAQPage',
         mainEntity: post.faqs.map((f) => ({
           '@type': 'Question',
-          name: f.q,
-          acceptedAnswer: { '@type': 'Answer', text: f.a },
+          name: f.q || f.question,
+          acceptedAnswer: { '@type': 'Answer', text: f.a || f.answer },
         })),
       }
     : null;
@@ -276,10 +276,10 @@ export default async function BlogArticlePage({ params }) {
                       <details key={i} className="group bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden" {...(i === 0 ? { open: true } : {})}>
                         <summary className="flex items-start gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
                           <ChevronRight className="w-5 h-5 text-[#F97316] flex-shrink-0 mt-0.5 transition-transform group-open:rotate-90" />
-                          <h3 className="font-oswald text-base font-semibold text-[#1E3A5F]">{faq.q}</h3>
+                          <h3 className="font-oswald text-base font-semibold text-[#1E3A5F]">{faq.q || faq.question}</h3>
                         </summary>
                         <div className="px-5 pb-5">
-                          <p className="text-gray-600 text-sm leading-relaxed ml-8">{faq.a}</p>
+                          <p className="text-gray-600 text-sm leading-relaxed ml-8">{faq.a || faq.answer}</p>
                         </div>
                       </details>
                     ))}
