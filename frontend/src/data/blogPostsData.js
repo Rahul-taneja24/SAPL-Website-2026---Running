@@ -4111,6 +4111,144 @@ export const BLOG_POSTS_DATA = [
       "low-cement-castables",
     ],
   },
+  {
+    id: 34,
+    slug: "refractory-for-aluminium-smelters-gcc-india",
+    title: "Refractory Materials for Aluminium Smelters and Remelt Plants: GCC & India",
+    excerpt: "A guide to refractory selection for aluminium smelters and remelt furnaces, with the GCC and India expansion context driving demand in 2026.",
+    metaTitle: "Refractory for Aluminium Smelters: GCC & India Guide | Shanker Agencies",
+    metaDescription: "Refractory materials for aluminium smelters and remelt furnaces: non-wetting castables, high alumina, SiC and insulation for GCC and India plants.",
+    category: "Export & Global Supply",
+    tags: ["aluminium smelter refractory", "non-wetting castable", "aluminium furnace lining", "GCC aluminium", "refractory export"],
+    publishDate: "2026-06-29",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&auto=format&fit=crop",
+    content: `<p><strong>Aluminium smelters and remelt plants need refractories that resist molten aluminium penetration and corrosion: non-wetting castables for melting and holding furnaces, high alumina and silicon carbide bricks for hot zones, and ceramic fibre and calcium silicate for back-up insulation.</strong> As the Gulf and India add primary smelting, recycling and downstream capacity through 2026, plant owners are sourcing these linings from Indian suppliers for cost, quality and short transit.</p>
+
+<p>This guide covers the refractory system an aluminium plant needs, why non-wetting performance matters, and how the current GCC and India expansion is shaping supply.</p>
+
+<h2>Why aluminium needs special refractories</h2>
+<p>Molten aluminium and its alloys wet and penetrate ordinary refractories, reacting with the lining to form corundum growth that spalls and contaminates the metal. Aluminium furnaces therefore use non-wetting castables containing barium sulphate or other additives, and dense low-cement castables, that stop metal penetration and keep the bath clean. Hot-face zones, launders and transfer systems use high alumina or silicon carbide refractories for abrasion and thermal-shock resistance.</p>
+
+<h2>The refractory system for an aluminium plant</h2>
+<ul>
+<li><strong>Non-wetting castables:</strong> melting and holding furnace hearths, walls and ramps, the critical metal-contact zones.</li>
+<li><strong>High alumina bricks and castables:</strong> burner zones, roofs and higher-temperature areas.</li>
+<li><strong>Silicon carbide refractories:</strong> launders, troughs and high-abrasion transfer points.</li>
+<li><strong>Ceramic fibre and calcium silicate:</strong> back-up insulation to cut heat loss and shell temperature.</li>
+<li><strong>Insulating fire bricks:</strong> intermediate back-up between hot face and insulation.</li>
+</ul>
+
+<h2>Why GCC and India demand is rising in 2026</h2>
+<p>The Gulf is in a major aluminium expansion. Oman is developing a green-aluminium cluster at Duqm, including a large primary smelter, alongside its operating Sohar Aluminium smelter and a downstream processing cluster. Saudi Arabia is building an integrated aluminium complex in Yanbu and a foil-rolling complex in Dammam. In the UAE, EGA has opened the country's largest aluminium recycling plant at Al Taweelah. Each new smelter, remelt and casting line is a long-term consumer of aluminium-grade refractories, and India is a preferred source for the region.</p>
+
+<h2>Why aluminium plants source refractory from India</h2>
+<ul>
+<li><strong>Cost:</strong> Indian non-wetting castables and high alumina products are priced below Western equivalents at comparable quality.</li>
+<li><strong>Short transit:</strong> Mundra port to Gulf ports is typically 4 to 9 days, far quicker than Far East or European supply.</li>
+<li><strong>Full-range supply:</strong> one Indian partner can ship castables, bricks, SiC, fibre and insulation together.</li>
+<li><strong>Documentation:</strong> material test certificates and full export paperwork as standard.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>What refractory is used in aluminium melting furnaces?</h3>
+<p>Aluminium melting and holding furnaces use non-wetting castables in the metal-contact zones to stop molten aluminium penetration and corundum growth, with high alumina or silicon carbide refractories in hot and high-abrasion zones and ceramic fibre or calcium silicate as back-up insulation.</p>
+
+<h3>Why does aluminium need non-wetting refractory?</h3>
+<p>Molten aluminium wets and penetrates ordinary refractories, reacting to form corundum that spalls the lining and contaminates the metal. Non-wetting castables contain additives such as barium sulphate that prevent the metal from soaking into the lining, extending campaign life and keeping the bath clean.</p>
+
+<h3>Can Indian suppliers serve GCC aluminium plants?</h3>
+<p>Yes. Indian refractory partners regularly supply aluminium smelters and remelt plants across the GCC with non-wetting castables, high alumina and SiC products and insulation, shipping in 4 to 9 days from Mundra with full test certificates and export documentation.</p>
+
+<p>Building or relining an aluminium smelter or remelt furnace in the GCC, India or Africa? <a href="https://www.shankeragencies.com/contact">Talk to the Shanker Agencies engineering team</a> for an aluminium-grade refractory specification and CIF pricing.</p>`,
+    faqs: [
+      {
+        question: "What refractory is used in aluminium melting furnaces?",
+        answer: "Aluminium melting and holding furnaces use non-wetting castables in the metal-contact zones to stop molten aluminium penetration and corundum growth, with high alumina or silicon carbide refractories in hot and high-abrasion zones and ceramic fibre or calcium silicate as back-up insulation."
+      },
+      {
+        question: "Why does aluminium need non-wetting refractory?",
+        answer: "Molten aluminium wets and penetrates ordinary refractories, reacting to form corundum that spalls the lining and contaminates the metal. Non-wetting castables contain additives such as barium sulphate that prevent the metal from soaking into the lining, extending campaign life and keeping the bath clean."
+      },
+      {
+        question: "Can Indian suppliers serve GCC aluminium plants?",
+        answer: "Yes. Indian refractory partners regularly supply aluminium smelters and remelt plants across the GCC with non-wetting castables, high alumina and SiC products and insulation, shipping in 4 to 9 days from Mundra with full test certificates and export documentation."
+      }
+    ],
+    author: { name: "Rajesh Kumar" },
+    relatedProducts: [
+      "low-cement-castables",
+      "high-alumina-bricks",
+      "ceramic-fiber-products",
+    ],
+  },
+  {
+    id: 35,
+    slug: "refractory-for-new-gcc-steel-plants-eaf-ladle-casting",
+    title: "Refractory for New GCC Steel Plants: EAF, Ladle and Continuous Casting",
+    excerpt: "New GCC steel plants need EAF, ladle and continuous-casting refractories. A guide to the lining system and why India is the preferred source in 2026.",
+    metaTitle: "Refractory for New GCC Steel Plants: EAF & Ladle | Shanker Agencies",
+    metaDescription: "Refractory for new GCC steel plants: MgO-C bricks, castables, slide gates and porous plugs for EAF, ladle and continuous casting, supplied from India.",
+    category: "Export & Global Supply",
+    tags: ["steel plant refractory", "magnesia carbon bricks", "EAF refractory", "ladle refractory", "continuous casting"],
+    publishDate: "2026-06-29",
+    readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&auto=format&fit=crop",
+    content: `<p><strong>New steel plants need a full refractory system: magnesia carbon (MgO-C) bricks for electric arc furnaces and ladle slag lines, low and ultra low cement castables for ladle and tundish working linings, and flow-control products such as slide gate plates, porous plugs, ladle shrouds and tundish nozzles for continuous casting.</strong> With major steel investments underway in the Gulf in 2026, plant owners are sourcing these linings from India for cost, full-range supply and short transit.</p>
+
+<p>This guide covers the refractory system a modern steel plant needs, zone by zone, and why the current GCC expansion is driving demand from Indian suppliers.</p>
+
+<h2>The steel plant refractory system, zone by zone</h2>
+<ul>
+<li><strong>Electric arc furnace (EAF):</strong> MgO-C bricks in hot spots and slag line, ramming mass and gunning mixes for the bottom and patch repairs.</li>
+<li><strong>Steel ladle:</strong> MgO-C in the slag line, low and ultra low cement castables or bricks in the barrel and bottom, porous plugs for argon stirring, well blocks and slide gate plates for flow control.</li>
+<li><strong>Tundish:</strong> conventional and basic castables or boards for the working lining, with monoblock stoppers, tundish nozzles and subentry nozzles for casting flow.</li>
+<li><strong>Continuous casting:</strong> ladle shrouds and subentry nozzles to shield the steel stream from oxidation.</li>
+</ul>
+
+<h2>Why GCC steel demand is rising in 2026</h2>
+<p>The Gulf is adding large steel capacity. In Saudi Arabia, Essar has committed to a multi-billion-dollar flat steel complex at Ras Al-Khair, and Tosyali is investing in a new steel plant, both requiring electric arc furnaces, ladle refining and continuous casting at commercial scale. These projects, alongside mega-developments like NEOM, generate sustained demand for EAF, ladle and casting refractories, and India is well placed to supply them.</p>
+
+<h2>Why steel plants source refractory from India</h2>
+<ul>
+<li><strong>Cost:</strong> Indian MgO-C bricks, castables and flow-control products are priced below Western, Japanese and Korean equivalents at comparable quality.</li>
+<li><strong>Short transit:</strong> Mundra port to Jebel Ali is 4 to 6 days, and to Dammam and Jubail around 6 to 9 days.</li>
+<li><strong>Full-range supply:</strong> one Indian partner can ship MgO-C, castables, ramming mass and flow-control products in consolidated shipments.</li>
+<li><strong>Engineering support:</strong> the better Indian partners specify and support the lining, not just sell the material.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>What refractories does a steel plant need?</h3>
+<p>A steel plant needs MgO-C bricks for the EAF and ladle slag line, low and ultra low cement castables for ladle and tundish working linings, ramming mass and gunning mixes for the EAF bottom and repairs, and flow-control products such as slide gate plates, porous plugs, ladle shrouds and tundish nozzles for continuous casting.</p>
+
+<h3>What refractory is used in an electric arc furnace?</h3>
+<p>An electric arc furnace uses magnesia carbon (MgO-C) bricks in the hot spots and slag line for resistance to basic slag and thermal cycling, with magnesia ramming mass for the bottom and gunning mixes for hot patch repairs between heats.</p>
+
+<h3>Can one Indian supplier provide a full steel plant refractory package?</h3>
+<p>Yes. A full-range Indian refractory partner can supply MgO-C bricks, castables, ramming mass and flow-control products together in consolidated shipments to GCC steel plants, with material test certificates and full export documentation, simplifying procurement.</p>
+
+<p>Building or relining a steel plant in the GCC, India or Africa? <a href="https://www.shankeragencies.com/contact">Talk to the Shanker Agencies engineering team</a> for a full EAF, ladle and casting refractory specification and CIF pricing.</p>`,
+    faqs: [
+      {
+        question: "What refractories does a steel plant need?",
+        answer: "A steel plant needs MgO-C bricks for the EAF and ladle slag line, low and ultra low cement castables for ladle and tundish working linings, ramming mass and gunning mixes for the EAF bottom and repairs, and flow-control products such as slide gate plates, porous plugs, ladle shrouds and tundish nozzles for continuous casting."
+      },
+      {
+        question: "What refractory is used in an electric arc furnace?",
+        answer: "An electric arc furnace uses magnesia carbon (MgO-C) bricks in the hot spots and slag line for resistance to basic slag and thermal cycling, with magnesia ramming mass for the bottom and gunning mixes for hot patch repairs between heats."
+      },
+      {
+        question: "Can one Indian supplier provide a full steel plant refractory package?",
+        answer: "Yes. A full-range Indian refractory partner can supply MgO-C bricks, castables, ramming mass and flow-control products together in consolidated shipments to GCC steel plants, with material test certificates and full export documentation, simplifying procurement."
+      }
+    ],
+    author: { name: "Vijay Kumar" },
+    relatedProducts: [
+      "magnesia-carbon-bricks",
+      "low-cement-castables",
+      "slide-gate-plates",
+    ],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────

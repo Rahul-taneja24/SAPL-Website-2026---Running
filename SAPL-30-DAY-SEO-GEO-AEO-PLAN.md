@@ -182,6 +182,27 @@ Target definition + comparison queries with concise 40–55 word answers:
 
 ---
 
+## 9b. Market-trend intelligence (2026) → where the demand is moving
+
+Live industry news confirms where to aim the export content. Each project below is a multi-year refractory consumer:
+
+| Region | 2026 development | Refractory pull (your products) |
+|---|---|---|
+| **Oman** | Duqm green-aluminium cluster (530kt CMOC smelter); Sohar Aluminium + downstream processing cluster | Non-wetting castables, high alumina, SiC, ceramic fibre |
+| **Saudi** | Essar $4B flat steel (Ras Al-Khair); Tosyali $3.6B steel — EAF + ladle + casting; Yanbu integrated aluminium (PIF/Red Sea); Tahweel foil (Dammam); NEOM | MgO-C, LCC/ULCC castables, slide gates, porous plugs, ladle shrouds |
+| **UAE** | EGA Al Taweelah aluminium recycling (185kt); RevivAL/CelestiAL | Remelt-furnace non-wetting castables, high alumina, fibre |
+| **India** | Continued steel/aluminium capacity additions | All product lines |
+
+**Content executed against this (live):**
+- `/blog/refractory-for-aluminium-smelters-gcc-india` — targets aluminium plant owners (Oman/Saudi/UAE/India/Africa)
+- `/blog/refractory-for-new-gcc-steel-plants-eaf-ladle-casting` — targets steel plant owners (Saudi/India/GCC)
+
+**Audience-targeting principle:** plant *owners* search by application + project ("refractory for EAF", "aluminium smelter lining", "BAPCO refractory supplier") — not "refractory supplier". Build content around their projects and zones, not generic supplier terms.
+
+**Refresh cadence:** re-run this trend scan monthly (alcircle.com, zawya.com, PIF/EGA news) and publish a project-aligned post within days of each major announcement — this is how you get cited as the topical authority before competitors react.
+
+---
+
 ## 10. Single highest-impact action
 
 **Win the gunning cluster.** You already own page-1 real estate for the biggest live impression pool on your site. Tighten the gunning-vs-casting post + gunning-materials product page, resolve the cannibalization, add the answer-first snippet, and you move from position 8–20 to top 5 — the largest near-term traffic and lead gain available.
