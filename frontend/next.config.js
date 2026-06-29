@@ -97,6 +97,12 @@ const nextConfig = {
         destination: '/about',
         permanent: true,
       },
+      // Phantom /link/acid-proofing-material (indexed, never existed) → acid-proofing hub
+      {
+        source: '/link/acid-proofing-material',
+        destination: '/products/acid-proofing',
+        permanent: true,
+      },
       // /case-studies/* was renamed to /engineering-references/* on 2026-05-08
       // (rebrand from project-record framing to illustrative-reference framing).
       // Permanent redirect preserves any link equity + ensures AI crawlers
