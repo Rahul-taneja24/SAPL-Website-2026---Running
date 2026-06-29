@@ -659,7 +659,7 @@ export const PRODUCT_CATALOG = {
       },
       {
         id: 'ramming-masses',
-        name: 'Ramming Masses',
+        name: 'Ramming Mass',
         shortDesc: 'Silica, neutral and basic ramming mass for jointless induction furnace linings',
         fullDesc: 'Ramming mass is a dry, granular refractory applied by manual or mechanical ramming to form a dense, jointless monolithic lining for induction melting furnaces. Shanker Agencies supplies silica (acidic), neutral and basic ramming mass grades, each matched to your metal and slag chemistry for strong corrosion resistance and long lining life. We dispatch across India and export to the GCC, ASEAN, Africa and Europe with full technical documentation.',
         tempMax: '1700°C',

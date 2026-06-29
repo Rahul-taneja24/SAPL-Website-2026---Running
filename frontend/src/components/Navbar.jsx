@@ -56,7 +56,7 @@ const navLinks = [
         heading: "Monolithics & Flow Control",
         links: [
           { name: "Low Cement Castables", path: "/products/unshaped-refractories/low-cement-castables" },
-          { name: "Ramming Masses", path: "/products/unshaped-refractories/ramming-masses" },
+          { name: "Ramming Mass", path: "/products/unshaped-refractories/ramming-masses" },
           { name: "Slide Gate Plates", path: "/products/flow-control/slide-gate-plates" },
           { name: "Ceramic Fiber Products", path: "/products/insulation/ceramic-fiber-products" },
         ],
