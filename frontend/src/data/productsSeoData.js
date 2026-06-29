@@ -9,7 +9,7 @@ export const PRODUCT_SEO = [
     productId: "high-alumina-bricks",
     name: "High Alumina Bricks (AL45–AL90)",
     metaTitle: "High Alumina Bricks AL45 to AL90 | Refractory Bricks for Steel, Cement & Glass | Shanker Agencies",
-    metaDescription: "Buy high alumina bricks (45–90% Al₂O₃) from Shanker Agencies, authorized CUMI dealer.",
+    metaDescription: "High alumina bricks (AL45–AL90, 45–90% Al₂O₃) for steel, cement & glass furnaces. Alumina refractory bricks from an authorized CUMI dealer.",
   },
   {
     categorySlug: "shaped-refractories",
@@ -58,7 +58,7 @@ export const PRODUCT_SEO = [
     productId: "ramming-masses",
     name: "Ramming Mass (Silica, Alumina, Magnesia)",
     metaTitle: "Ramming Mass for Induction Furnace | Silica, Alumina & Magnesia Types | Shanker Agencies",
-    metaDescription: "Silica, alumina & magnesia ramming mass for induction furnace linings. Authorized CUMI dealer.",
+    metaDescription: "Silica, neutral & basic ramming mass for induction furnace linings. Grades, properties and uses explained. Authorized CUMI dealer, price on enquiry.",
   },
   {
     categorySlug: "unshaped-refractories",
