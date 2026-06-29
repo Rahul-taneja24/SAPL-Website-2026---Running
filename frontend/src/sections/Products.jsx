@@ -260,7 +260,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
             )}
           </div>
           <h1 className="font-oswald text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3 leading-tight">
-            {product.name.toUpperCase()}
+            {(product.h1 || product.name).toUpperCase()}
           </h1>
           <p className="text-blue-200 text-sm sm:text-base max-w-2xl leading-relaxed">{product.shortDesc}</p>
         </div>

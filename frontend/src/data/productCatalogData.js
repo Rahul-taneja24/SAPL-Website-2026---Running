@@ -660,6 +660,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'ramming-masses',
         name: 'Ramming Mass',
+        h1: 'Ramming Mass for Induction Furnaces',
         shortDesc: 'Silica, neutral and basic ramming mass for jointless induction furnace linings',
         fullDesc: 'Ramming mass is a dry, granular refractory applied by manual or mechanical ramming to form a dense, jointless monolithic lining for induction melting furnaces. Shanker Agencies supplies silica (acidic), neutral and basic ramming mass grades, each matched to your metal and slag chemistry for strong corrosion resistance and long lining life. We dispatch across India and export to the GCC, ASEAN, Africa and Europe with full technical documentation.',
         tempMax: '1700°C',
@@ -841,6 +842,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'monoblock-stoppers',
         name: 'Monoblock Stoppers',
+        h1: 'Monoblock Stoppers for Tundish Flow Control',
         shortDesc: 'Isostatically pressed alumina-graphite stopper rods for precise tundish-to-mould flow control',
         fullDesc: 'The monoblock stopper (stopper rod) is an isostatically pressed alumina-graphite refractory rod that seats into the tundish nozzle to regulate steel flow into the continuous-casting mould. A ZrO₂-C nose insert resists erosion at the sealing point, and an internal argon line can purge the nose to prevent clogging. Precise stopper control governs mould level stability, vortex prevention and steel cleanliness. IFGL supplies a full range of alumina-graphite and oxygen-purging stoppers.',
         tempMax: '1600°C',
@@ -878,6 +880,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'tundish-nozzles',
         name: 'Tundish Nozzles',
+        h1: 'Tundish Nozzles for Continuous Casting',
         shortDesc: 'Alumina-graphite tundish nozzles that seat the stopper and meter steel into the mould',
         fullDesc: 'The tundish nozzle (well nozzle) is the seat against which the monoblock stopper closes, metering steel from the tundish into the mould or submerged entry shroud. Made from isostatically pressed alumina-graphite with optional zirconia bore inserts for anti-clogging, it must hold a precise, erosion-resistant bore through long sequence casts. IFGL supplies standard and hot-change (TCM) tundish nozzle systems.',
         tempMax: '1600°C',
@@ -915,6 +918,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'well-blocks',
         name: 'Well Blocks',
+        h1: 'Well Blocks for Steel Ladles',
         shortDesc: 'High-alumina/alumina-carbon ladle bottom blocks that house the slide-gate inner nozzle',
         fullDesc: 'The well block is the heavy refractory block set into the steel ladle bottom that seats the slide-gate inner nozzle and forms the teeming pocket. It must resist steel erosion, thermal shock and the mechanical load of the slide-gate mechanism through the full ladle campaign. IFGL supplies alumina-carbon, alumina-zirconia-carbon and magnesia-spinel-carbon well blocks (1QC/2QC/3QC and FL-series grades).',
         tempMax: '1650°C',
@@ -953,6 +957,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'slide-gate-plates',
         name: 'Slide Gate Plates',
+        h1: 'Slide Gate Plates for Steel Ladles',
         shortDesc: 'Sliding mechanism plates controlling molten steel flow from ladle to tundish',
         fullDesc: 'Slide gate plates are the critical refractory components in the ladle and tundish slide gate systems that control, start, and stop the flow of molten steel. They slide against each other under hydraulic pressure, requiring extreme dimensional accuracy, high thermal shock resistance, and resistance to both steel erosion and slag attack. Service life is measured in heats, a premium grade lasting 20+ heats vs 8–10 for standard.',
         popular: true,
@@ -994,6 +999,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'ladle-shrouds',
         name: 'Ladle Shrouds',
+        h1: 'Ladle Shrouds for Continuous Casting',
         shortDesc: 'Shield the steel stream from oxidation during ladle-to-tundish transfer',
         fullDesc: 'Ladle shrouds are tubular refractory components that form a sealed connection between the ladle bottom nozzle and the tundish, preventing atmospheric oxygen from contacting the steel stream. Without a ladle shroud, steel picks up oxygen and nitrogen causing inclusions that degrade finished steel quality.',
         tempMax: '1600°C',
@@ -1029,6 +1035,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'subentry-nozzles',
         name: 'Subentry Nozzles (SEN)',
+        h1: 'Subentry Nozzles (SEN) for Continuous Casting',
         shortDesc: 'Direct steel from tundish to mould with precision flow control for surface quality',
         fullDesc: 'Subentry nozzles (SEN) are immersed in the liquid steel pool inside the continuous casting mould, directing steel flow below the meniscus. The flow pattern created by the SEN geometry directly influences slab surface quality, solidification uniformity, and inclusion distribution. Premium SEN design reduces oscillation marks and improves yield.',
         tempMax: '1600°C',
@@ -1065,6 +1072,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'porous-plugs',
         name: 'Porous Plugs & Ladle Bottom Nozzles',
+        h1: 'Porous Plugs for Steel Ladles',
         shortDesc: 'Enable argon gas stirring for steel homogenisation and inclusion flotation',
         fullDesc: 'Porous plugs are installed in the ladle bottom and connected to an argon gas supply. Bubbling argon through the steel bath stirs the melt, homogenises temperature and chemistry, promotes inclusion flotation, and reduces total oxygen content, directly improving finished steel cleanliness and mechanical properties.',
         tempMax: '1650°C',
@@ -1282,6 +1290,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'acid-proof-cement',
         name: 'Acid Proof Cement',
+        h1: 'Acid Proof Cement for Chemical Linings',
         shortDesc: 'Silicate and resin-based acid-resistant cements for bedding and jointing acid-proof linings',
         fullDesc: 'Acid proof cement is the bedding and jointing material that holds acid-proof brick and tile linings together and seals them against chemical attack. Sodium/potassium-silicate (water-glass) types with a silicofluoride hardener give >96% acid resistance and service to ~1000°C; furan, epoxy and phenolic resin mortars handle organic chemistry and combined acid-alkali exposure at lower temperatures. Correct cement selection is as important as the brick itself.',
         tempMax: '1000°C',
@@ -1320,6 +1329,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'acid-proof-bricks',
         name: 'Acid Proof Bricks',
+        h1: 'Acid Proof Bricks for Chemical Plants',
         shortDesc: 'Dense vitrified bricks with 97–99%+ acid resistance for chemical vessels and reactors',
         fullDesc: 'Acid proof bricks are dense, vitrified bricks made from selected clays fired to low water absorption (0.1–6%), used to line chemical tanks, reactors and effluent channels against acid attack. They offer excellent chemical resistance to virtually all inorganic and organic acids except hydrofluoric acid (HF). They are bonded with acid-resistant cements (furan, phenolic, or potassium silicate based) to form acid-proof linings for chemical storage tanks, reaction vessels, absorption towers, and effluent channels.',
         popular: true,
@@ -1366,6 +1376,7 @@ export const PRODUCT_CATALOG = {
       {
         id: 'acid-resistant-tiles',
         name: 'Acid Resistant Tiles',
+        h1: 'Acid Resistant Tiles for Chemical Plants',
         shortDesc: 'Floor, wall and channel tiles for chemical plant, laboratory and industrial areas',
         fullDesc: 'Acid resistant tiles are thin-section vitrified ceramic tiles used to protect floors, walls, drainage channels, and work surfaces from chemical spillage. Unlike standard ceramic floor tiles, acid resistant tiles achieve near-zero porosity through high-temperature firing, and are installed with acid-resistant mortar and grout to form a fully impervious chemical-resistant surface.',
         tempMax: '400°C',
