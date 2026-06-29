@@ -23,11 +23,11 @@ const nextConfig = {
     // posture flagged in the GEO audit (M2).
     const cspValue = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://images.unsplash.com https://www.shankeragencies.com https://shankeragencies.com https://www.cumi-murugappa.com https://mahakoshalrefractories.com https://ifglgroup.com https://maps.gstatic.com https://maps.googleapis.com",
+      "img-src 'self' data: blob: https://images.unsplash.com https://www.shankeragencies.com https://shankeragencies.com https://www.cumi-murugappa.com https://mahakoshalrefractories.com https://ifglgroup.com https://maps.gstatic.com https://maps.googleapis.com https://*.clarity.ms https://www.google-analytics.com",
       "font-src 'self' data:",
-      "connect-src 'self' https://api.web3forms.com https://www.bing.com https://api.indexnow.org",
+      "connect-src 'self' https://api.web3forms.com https://www.bing.com https://api.indexnow.org https://*.clarity.ms https://www.google-analytics.com",
       "frame-src 'self' https://www.google.com https://maps.google.com",
       "frame-ancestors 'none'",
       "form-action 'self' https://api.web3forms.com",
