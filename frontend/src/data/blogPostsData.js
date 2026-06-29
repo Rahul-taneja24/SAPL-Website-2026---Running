@@ -4334,6 +4334,77 @@ export const BLOG_POSTS_DATA = [
       "ceramic-fiber-products",
     ],
   },
+  {
+    id: 37,
+    slug: "bottom-pouring-set-refractory-components-guide",
+    title: "Bottom Pouring Set: Refractory Components, Selection and Supply",
+    excerpt: "A bottom pouring set is the refractory assembly used to teem steel ingots from below. Learn the components, grades and how to source from India.",
+    metaTitle: "Bottom Pouring Set: Refractory Components & Supply | Shanker Agencies",
+    metaDescription: "A bottom pouring set is the refractory assembly for teeming steel ingots from below: trumpet, runner, fountain and bricks. Components, grades and supply.",
+    category: "Refractory Engineering",
+    tags: ["bottom pouring set", "ingot teeming", "steel ingot casting", "fountain brick", "runner brick"],
+    publishDate: "2026-06-29",
+    readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&auto=format&fit=crop",
+    content: `<p><strong>A bottom pouring set (BP set) is the assembly of refractory components used to teem molten steel into ingot moulds from the bottom, giving a clean, splash-free fill and a better ingot surface. A complete set includes the trumpet (central runner), runner bricks, a fountain or spider piece, and the bottom plate or base bricks that channel steel from a central stream into several moulds at once.</strong> Bottom pouring protects ingot quality and is standard for high-value forging and special-steel ingots.</p>
+
+<p>This guide covers the components of a bottom pouring set, the refractory grades used, and what to check when sourcing from India.</p>
+
+<h2>What is a bottom pouring set used for?</h2>
+<p>In bottom pouring (uphill teeming), steel is poured into a central trumpet and flows down and along runner channels to enter each ingot mould from the base. Because the metal rises gently up the mould instead of falling from the top, splashing, surface defects and reoxidation are reduced, giving a superior ingot surface. It is the preferred method for forging-quality, tool-steel and special-steel ingots.</p>
+
+<h2>Components of a bottom pouring set</h2>
+<ul>
+<li><strong>Trumpet / central runner:</strong> the vertical refractory tube that receives the steel stream from the ladle.</li>
+<li><strong>Runner bricks (guide tubes):</strong> horizontal channels that carry steel from the trumpet base to each mould.</li>
+<li><strong>Fountain / spider piece:</strong> the junction that splits the central stream toward multiple moulds.</li>
+<li><strong>Bottom / base bricks and seating blocks:</strong> seat the mould and connect the runner to the mould entry.</li>
+<li><strong>Joint and bedding mortar:</strong> high-alumina mortar that seals the assembly against metal leakage.</li>
+</ul>
+
+<h2>Refractory grades used</h2>
+<p>Bottom pouring components are made from fireclay and high alumina grades, chosen for thermal shock resistance, erosion resistance against the flowing steel stream, and dimensional accuracy so the channels seal cleanly. High alumina runner and trumpet tubes are specified where stream erosion and temperature are highest. Accurate sizing and good jointing are critical, as any gap leaks metal and scraps the pour.</p>
+
+<h2>Sourcing a bottom pouring set from India</h2>
+<ul>
+<li><strong>Match the set to your ingot layout:</strong> number of moulds, ingot size and pouring rate determine trumpet bore and runner dimensions.</li>
+<li><strong>Specify the grade:</strong> high alumina for high-erosion trumpet and runner, fireclay for lower-duty seating.</li>
+<li><strong>Check dimensional tolerance:</strong> precise sizing is essential for leak-free joints.</li>
+<li><strong>Confirm export packing:</strong> these are fragile shaped pieces, so robust packing and material test certificates matter for export shipments.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>What is a bottom pouring set in steel making?</h3>
+<p>A bottom pouring set is the refractory assembly, trumpet, runner bricks, fountain piece and base bricks, that channels molten steel into ingot moulds from the bottom during uphill teeming, giving a cleaner, splash-free fill and a better ingot surface than top pouring.</p>
+
+<h3>What refractory is used in a bottom pouring set?</h3>
+<p>Bottom pouring sets use fireclay and high alumina refractory grades. High alumina is specified for the trumpet and runner tubes where stream erosion and temperature are highest, with fireclay for lower-duty seating and base pieces, all jointed with high-alumina mortar.</p>
+
+<h3>Can I import a bottom pouring set from India?</h3>
+<p>Yes. Indian refractory suppliers manufacture and export complete bottom pouring sets in fireclay and high alumina grades, matched to your ingot layout, with robust export packing and material test certificates for steel plants in the GCC, ASEAN, Africa and beyond.</p>
+
+<p>Need a bottom pouring set matched to your ingot layout? <a href="https://www.shankeragencies.com/contact">Talk to the Shanker Agencies team</a> with your mould count, ingot size and pouring rate for a specification and quote.</p>`,
+    faqs: [
+      {
+        question: "What is a bottom pouring set in steel making?",
+        answer: "A bottom pouring set is the refractory assembly, trumpet, runner bricks, fountain piece and base bricks, that channels molten steel into ingot moulds from the bottom during uphill teeming, giving a cleaner, splash-free fill and a better ingot surface than top pouring."
+      },
+      {
+        question: "What refractory is used in a bottom pouring set?",
+        answer: "Bottom pouring sets use fireclay and high alumina refractory grades. High alumina is specified for the trumpet and runner tubes where stream erosion and temperature are highest, with fireclay for lower-duty seating and base pieces, all jointed with high-alumina mortar."
+      },
+      {
+        question: "Can I import a bottom pouring set from India?",
+        answer: "Yes. Indian refractory suppliers manufacture and export complete bottom pouring sets in fireclay and high alumina grades, matched to your ingot layout, with robust export packing and material test certificates for steel plants in the GCC, ASEAN, Africa and beyond."
+      }
+    ],
+    author: { name: "Vijay Kumar" },
+    relatedProducts: [
+      "high-alumina-bricks",
+      "fireclay-bricks",
+      "refractory-mortars",
+    ],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
