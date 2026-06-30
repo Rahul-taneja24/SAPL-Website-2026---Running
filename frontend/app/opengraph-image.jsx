@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const alt =
-  'Shanker Agencies | India\u2019s Refractory Engineering Partner Since 1980 \u2014 CUMI, TRL Krosaki, IFGL, Calderys, Mahakoshal';
+  'Shanker Agencies | India\u2019s Refractory Engineering Partner Since 1980 \u2014 CUMI, TRL Krosaki, Calderys, Mahakoshal';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -192,7 +192,7 @@ export default async function Image() {
               }}
             >
               Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool \u00B7
-              Strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL & Saint-Gobain
+              Supply partner for Calderys, TRL Krosaki, Mahakoshal & Saint-Gobain
             </span>
           </div>
 
@@ -207,7 +207,7 @@ export default async function Image() {
             }}
           >
             <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-              {['CUMI', 'Calderys', 'TRL Krosaki', 'IFGL', 'Mahakoshal', 'Crown Ceramics'].map((tag) => (
+              {['CUMI', 'Calderys', 'TRL Krosaki', 'Mahakoshal', 'Crown Ceramics'].map((tag) => (
                 <div
                   key={tag}
                   style={{

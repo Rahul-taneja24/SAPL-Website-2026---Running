@@ -61,13 +61,13 @@ export const metadata = {
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
     title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
-    description: "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool. Strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
+    description: "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool. Supply partner for Calderys, TRL Krosaki, Mahakoshal and Saint-Gobain. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
-    description: "India's premier refractory engineering partner since 1980. CUMI, Crown, Mahakoshal, TRL Krosaki, IFGL and Calderys.",
+    description: "India's premier refractory engineering partner since 1980. CUMI, Crown, Mahakoshal, TRL Krosaki and Calderys.",
     images: ['/opengraph-image'],
   },
   robots: {
@@ -259,7 +259,6 @@ export default function RootLayout({ children }) {
                     { '@type': 'Brand', name: 'CUMI (Carborundum Universal)' },
                     { '@type': 'Brand', name: 'Calderys India' },
                     { '@type': 'Brand', name: 'TRL Krosaki Refractories' },
-                    { '@type': 'Brand', name: 'IFGL Refractories' },
                     { '@type': 'Brand', name: 'Mahakoshal Refractories' },
                     { '@type': 'Brand', name: 'Divine Cerawool' },
                     { '@type': 'Brand', name: 'Crown Ceramics' },

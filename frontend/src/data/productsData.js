@@ -32,12 +32,12 @@ export const PRODUCTS_DATA = [
   { id: 22, name: "Microporous Insulation", brand: "Calderys", category: "insulation", subcategory: "microporous", type: "Microporous Panel", temp: "1000°C", al2o3: "-", density: "200-350 kg/m³", use: "Space constrained areas, ladle covers, tundish", features: "Ultra low thermal conductivity, Thin profile, High performance", pdfUrl: null, image: null },
 
   // FLOW CONTROL
-  { id: 23, name: "Slide Gate Plate", brand: "IFGL", category: "flow-control", subcategory: "slide-gate", type: "Slide Gate Plate", temp: "1650°C", al2o3: "85-95%", density: "3.0-3.4 g/cc", use: "Steel ladle flow control", features: "High erosion resistance, Thermal shock resistant, Precise flow control", pdfUrl: null, image: "https://www.shankeragencies.com/uploads/careerimg/6233314e72e40b535e3b451c4065aca0.png" },
-  { id: 24, name: "Ladle Shroud", brand: "IFGL", category: "flow-control", subcategory: "shroud", type: "Ladle Shroud", temp: "1600°C", al2o3: "70-85%", density: "2.8-3.2 g/cc", use: "Protection of steel stream from ladle to tundish", features: "Prevents reoxidation, Long life, Consistent performance", pdfUrl: null, image: null },
-  { id: 25, name: "Subentry Nozzle (SEN)", brand: "IFGL", category: "flow-control", subcategory: "sen", type: "Subentry Nozzle", temp: "1600°C", al2o3: "75-90%", density: "2.9-3.3 g/cc", use: "Tundish to mold steel transfer", features: "Anti-clogging design, Uniform flow distribution", pdfUrl: null, image: null },
-  { id: 26, name: "Monoblock Stopper", brand: "IFGL", category: "flow-control", subcategory: "stopper", type: "Monoblock Stopper", temp: "1650°C", al2o3: "80-95%", density: "3.0-3.4 g/cc", use: "Ladle flow control", features: "Integrated design, Excellent sealing, Long campaign life", pdfUrl: null, image: null },
-  { id: 27, name: "Tundish Nozzle", brand: "IFGL", category: "flow-control", subcategory: "tundish-nozzle", type: "Tundish Nozzle", temp: "1600°C", al2o3: "70-85%", density: "2.7-3.1 g/cc", use: "Steel flow from tundish", features: "Erosion resistant, Consistent bore", pdfUrl: null, image: null },
-  { id: 28, name: "Well Block", brand: "IFGL", category: "flow-control", subcategory: "well-block", type: "Well Block", temp: "1650°C", al2o3: "80-95%", density: "3.0-3.4 g/cc", use: "Ladle bottom, collector nozzle seat", features: "High strength, Thermal shock resistant", pdfUrl: null, image: null },
+  { id: 23, name: "Slide Gate Plate", brand: "Flow Control", category: "flow-control", subcategory: "slide-gate", type: "Slide Gate Plate", temp: "1650°C", al2o3: "85-95%", density: "3.0-3.4 g/cc", use: "Steel ladle flow control", features: "High erosion resistance, Thermal shock resistant, Precise flow control", pdfUrl: null, image: "https://www.shankeragencies.com/uploads/careerimg/6233314e72e40b535e3b451c4065aca0.png" },
+  { id: 24, name: "Ladle Shroud", brand: "Flow Control", category: "flow-control", subcategory: "shroud", type: "Ladle Shroud", temp: "1600°C", al2o3: "70-85%", density: "2.8-3.2 g/cc", use: "Protection of steel stream from ladle to tundish", features: "Prevents reoxidation, Long life, Consistent performance", pdfUrl: null, image: null },
+  { id: 25, name: "Subentry Nozzle (SEN)", brand: "Flow Control", category: "flow-control", subcategory: "sen", type: "Subentry Nozzle", temp: "1600°C", al2o3: "75-90%", density: "2.9-3.3 g/cc", use: "Tundish to mold steel transfer", features: "Anti-clogging design, Uniform flow distribution", pdfUrl: null, image: null },
+  { id: 26, name: "Monoblock Stopper", brand: "Flow Control", category: "flow-control", subcategory: "stopper", type: "Monoblock Stopper", temp: "1650°C", al2o3: "80-95%", density: "3.0-3.4 g/cc", use: "Ladle flow control", features: "Integrated design, Excellent sealing, Long campaign life", pdfUrl: null, image: null },
+  { id: 27, name: "Tundish Nozzle", brand: "Flow Control", category: "flow-control", subcategory: "tundish-nozzle", type: "Tundish Nozzle", temp: "1600°C", al2o3: "70-85%", density: "2.7-3.1 g/cc", use: "Steel flow from tundish", features: "Erosion resistant, Consistent bore", pdfUrl: null, image: null },
+  { id: 28, name: "Well Block", brand: "Flow Control", category: "flow-control", subcategory: "well-block", type: "Well Block", temp: "1650°C", al2o3: "80-95%", density: "3.0-3.4 g/cc", use: "Ladle bottom, collector nozzle seat", features: "High strength, Thermal shock resistant", pdfUrl: null, image: null },
 
   // ACID PROOFING
   { id: 29, name: "Acid Proof Brick", brand: "Crown", category: "acid-proof", subcategory: "acid-brick", type: "Acid Proof Brick", temp: "1000°C", al2o3: "-", density: "2.3-2.5 g/cc", use: "Chemical plants, acid tanks, flooring", features: "Excellent acid resistance, Low porosity, High compressive strength", pdfUrl: null, image: "https://www.shankeragencies.com/uploads/careerimg/f16e25f62676379237dfd55f1e36f5df.png" },
@@ -60,7 +60,6 @@ export const BRANDS = [
   { id: "CUMI", name: "CUMI" },
   { id: "Calderys", name: "Calderys" },
   { id: "TRL Krosaki", name: "TRL Krosaki" },
-  { id: "IFGL", name: "IFGL" },
   { id: "Divine", name: "Divine Cerawool" },
   { id: "Crown", name: "Crown Ceramics" },
   { id: "Mahakoshal", name: "Mahakoshal" }

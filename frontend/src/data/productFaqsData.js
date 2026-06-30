@@ -38,7 +38,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Are you an authorised dealer for high alumina bricks?',
-      a: 'Yes. Shanker Agencies is an authorised dealer for CUMI Super Refractories and supplies CUMI, Calderys, TRL Krosaki and IFGL grades from our Delhi warehouse. Every dispatch ships with an original manufacturer test certificate. We have been supplying high alumina bricks since 1980 with on-site engineering support across India and 50+ export markets.',
+      a: 'Yes. Shanker Agencies is an authorised dealer for CUMI Super Refractories and supplies CUMI, Calderys and TRL Krosaki grades from our Delhi warehouse. Every dispatch ships with an original manufacturer test certificate. We have been supplying high alumina bricks since 1980 with on-site engineering support across India and 50+ export markets.',
     },
   ],
 
@@ -170,7 +170,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What grades of LCC do you supply?',
-      a: 'We supply 60% Al₂O₃ LCC for tundish and general ladle backup, 70% Al₂O₃ LCC for standard ladle working linings, 80% Al₂O₃ LCC with spinel addition for premium ladle and steel-treatment work, and 90% Al₂O₃ self-flow LCC for complex shapes and nozzles. Authorised CUMI dealer; also Calderys and IFGL grades stocked.',
+      a: 'We supply 60% Al₂O₃ LCC for tundish and general ladle backup, 70% Al₂O₃ LCC for standard ladle working linings, 80% Al₂O₃ LCC with spinel addition for premium ladle and steel-treatment work, and 90% Al₂O₃ self-flow LCC for complex shapes and nozzles. Authorised CUMI dealer; also Calderys stocked.',
     },
     {
       q: 'Can LCC be installed by gunning or shotcreting?',
@@ -201,7 +201,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Which brands of ULCC do you supply?',
-      a: 'CUMI Super Refractories ULCC range, we are the authorised dealer. Also Calderys ACCMON, ULTRACASTING and KERAFLEX series, and IFGL ULCC for steel applications. Each manufacturer has 4–6 grades; we help you select the right grade based on your installation method, vessel size, slag chemistry and target campaign life.',
+      a: 'CUMI Super Refractories ULCC range, we are the authorised dealer. Also Calderys ACCMON, ULTRACASTING and KERAFLEX series for steel applications. Each manufacturer has 4–6 grades; we help you select the right grade based on your installation method, vessel size, slag chemistry and target campaign life.',
     },
   ],
 
@@ -255,7 +255,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Do you supply gunning mass with on-site gunning service?',
-      a: 'Yes. For large steel and cement plants we offer turnkey gunning campaigns, material supply, machine, trained crew, and refractory engineer supervision. For routine maintenance we supply Calderys, CUMI and IFGL gunning masses for application by your in-house team. Both options come with technical guidance on best-practice gunning thickness and frequency.',
+      a: 'Yes. For large steel and cement plants we offer turnkey gunning campaigns, material supply, machine, trained crew, and refractory engineer supervision. For routine maintenance we supply Calderys and CUMI gunning masses for application by your in-house team. Both options come with technical guidance on best-practice gunning thickness and frequency.',
     },
   ],
 
@@ -321,7 +321,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What grades of slide gate plate are available?',
-      a: 'Three primary grades: Alumina-Carbon (Al₂O₃-C) for standard carbon steel duty, Alumina-Zirconia-Carbon (Al₂O₃-ZrO₂-C) for higher sequence casting and special steels, and Magnesia-Carbon (MgO-C) for high-manganese and basic-slag duty. Plate thickness, bore diameter and corner geometry are matched to the ladle gate mechanism (typically RHI, IFGL or Vesuvius design).',
+      a: 'Three primary grades: Alumina-Carbon (Al₂O₃-C) for standard carbon steel duty, Alumina-Zirconia-Carbon (Al₂O₃-ZrO₂-C) for higher sequence casting and special steels, and Magnesia-Carbon (MgO-C) for high-manganese and basic-slag duty. Plate thickness, bore diameter and corner geometry are matched to the ladle gate mechanism (typically RHI, Vesuvius or Krosaki design).',
     },
     {
       q: 'How many heats does a slide gate plate last?',
@@ -329,7 +329,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Are slide gate plates a regulated or proprietary item?',
-      a: 'They are proprietary, each major refractory manufacturer (IFGL, RHI, Vesuvius, Krosaki) makes plates dimensioned to their gate mechanism. A plate from one manufacturer will usually not fit another\'s gate without a frame change. We help match your existing gate mechanism to compatible plates from IFGL India and TRL Krosaki, our authorised supply partners.',
+      a: 'They are proprietary, each major refractory manufacturer (RHI, Vesuvius, Krosaki) makes plates dimensioned to their gate mechanism. A plate from one manufacturer will usually not fit another\'s gate without a frame change. We help match your existing gate mechanism to compatible plates from TRL Krosaki and other leading suppliers.',
     },
     {
       q: 'What is the lead time for slide gate plates?',
@@ -364,7 +364,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What size shrouds do you supply?',
-      a: 'We supply alumina-graphite ladle shrouds with bore diameters 60–110 mm and lengths 800–1800 mm to match standard caster geometries. Both straight and bell-mouth designs available. IFGL India is our primary supply partner with TRL Krosaki as alternate. Custom dimensions are made to drawing on 4–6 weeks lead time.',
+      a: 'We supply alumina-graphite ladle shrouds with bore diameters 60–110 mm and lengths 800–1800 mm to match standard caster geometries. Both straight and bell-mouth designs available. TRL Krosaki is our primary supply partner. Custom dimensions are made to drawing on 4–6 weeks lead time.',
     },
   ],
 
@@ -387,7 +387,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What discharge port designs do you supply?',
-      a: 'Common designs: bottom-only (most common), straight side ports (slab caster), angled side ports (5–35° down-angle for mould flow control), and slot-type for thin-slab casting. Port geometry is selected based on caster width, casting speed, and mould flow profile target. We supply IFGL India SENs in all standard port configurations.',
+      a: 'Common designs: bottom-only (most common), straight side ports (slab caster), angled side ports (5–35° down-angle for mould flow control), and slot-type for thin-slab casting. Port geometry is selected based on caster width, casting speed, and mould flow profile target. We supply SENs in all standard port configurations.',
     },
     {
       q: 'How is an SEN priced?',
@@ -418,7 +418,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Do you supply complete plug + well block packages?',
-      a: 'Yes, we supply matched porous plug and well block sets from IFGL Refractories, with full purge-line dimensions and pressure-test certification. We can also supply the surrounding ladle-bottom castable as a coordinated package. Send us your ladle bottom drawing and stirring practice and we will quote a complete bottom-purge solution.',
+      a: 'Yes, we supply matched porous plug and well block sets from leading flow-control manufacturers, with full purge-line dimensions and pressure-test certification. We can also supply the surrounding ladle-bottom castable as a coordinated package. Send us your ladle bottom drawing and stirring practice and we will quote a complete bottom-purge solution.',
     },
   ],
 
@@ -644,7 +644,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Does Shanker Agencies supply alumina-carbon bricks?',
-      a: 'Yes. Shanker Agencies supplies TRL Krosaki and IFGL alumina-carbon bricks zoned to your ladle design, barrel, slag line, metal line and impact pad, with campaign-life optimisation support and matching flow-control refractories.',
+      a: 'Yes. Shanker Agencies supplies alumina-carbon bricks from TRL Krosaki and other leading manufacturers, zoned to your ladle design, barrel, slag line, metal line and impact pad, with campaign-life optimisation support and matching flow-control refractories.',
     },
   ],
 
@@ -728,7 +728,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is argon purging in a monoblock stopper?',
-      a: 'Many stoppers have an internal argon line that purges gas through the nose. The argon flow prevents alumina build-up (clogging) at the sealing surface, critical when casting aluminium-killed steels, and helps keep the flow path clean through long sequence casts. IFGL supplies argon-purging stopper designs.',
+      a: 'Many stoppers have an internal argon line that purges gas through the nose. The argon flow prevents alumina build-up (clogging) at the sealing surface, critical when casting aluminium-killed steels, and helps keep the flow path clean through long sequence casts. Argon-purging stopper designs are available.',
     },
     {
       q: 'What is the difference between a stopper rod and a slide gate?',
@@ -736,7 +736,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Does Shanker Agencies supply monoblock stoppers?',
-      a: 'Yes. Shanker Agencies supplies IFGL monoblock stoppers matched to your tundish well nozzle and caster type, including argon-purging designs for anti-clogging on aluminium-killed steels, with matching tundish nozzles and flow-control refractories.',
+      a: 'Yes. Shanker Agencies supplies monoblock stoppers matched to your tundish well nozzle and caster type, including argon-purging designs for anti-clogging on aluminium-killed steels, with matching tundish nozzles and flow-control refractories.',
     },
   ],
 
@@ -755,11 +755,11 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is a TCM hot-change tundish nozzle?',
-      a: 'TCM (tube-change mechanism) systems allow the tundish/submerged nozzle to be changed during casting without stopping the sequence, extending caster runtime. IFGL supplies hot-change tundish nozzle systems alongside standard and zirconia-insert nozzles for billet, bloom and slab casters.',
+      a: 'TCM (tube-change mechanism) systems allow the tundish/submerged nozzle to be changed during casting without stopping the sequence, extending caster runtime. Hot-change tundish nozzle systems are available alongside standard and zirconia-insert nozzles for billet, bloom and slab casters.',
     },
     {
       q: 'Does Shanker Agencies supply tundish nozzles?',
-      a: 'Yes. Shanker Agencies supplies IFGL tundish nozzles and hot-change (TCM) systems matched to your stopper and caster, with zirconia-bore options for anti-clogging performance on aluminium-killed steel grades.',
+      a: 'Yes. Shanker Agencies supplies tundish nozzles and hot-change (TCM) systems matched to your stopper and caster, with zirconia-bore options for anti-clogging performance on aluminium-killed steel grades.',
     },
   ],
 
@@ -770,7 +770,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What materials are well blocks made from?',
-      a: 'Well blocks are made from high-alumina, alumina-carbon (Al₂O₃-C), alumina-zirconia-carbon (Al₂O₃-Zr-C) or magnesia-spinel-carbon depending on duty. Carbon-bearing grades resist steel penetration and thermal shock; zirconia-containing grades add erosion resistance at the nozzle seat. IFGL grades include the 1QC/2QC/3QC and FL series.',
+      a: 'Well blocks are made from high-alumina, alumina-carbon (Al₂O₃-C), alumina-zirconia-carbon (Al₂O₃-Zr-C) or magnesia-spinel-carbon depending on duty. Carbon-bearing grades resist steel penetration and thermal shock; zirconia-containing grades add erosion resistance at the nozzle seat. Standard grades include 1QC/2QC/3QC and FL series.',
     },
     {
       q: 'How long does a well block last?',
@@ -782,7 +782,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'Does Shanker Agencies supply well blocks?',
-      a: 'Yes. Shanker Agencies supplies IFGL well blocks (1QC/2QC/3QC and FL-series) matched to your ladle slide-gate system and steel grade, together with inner nozzles, collector nozzles and slide-gate plates as a complete flow-control package.',
+      a: 'Yes. Shanker Agencies supplies well blocks (1QC/2QC/3QC and FL-series) matched to your ladle slide-gate system and steel grade, together with inner nozzles, collector nozzles and slide-gate plates as a complete flow-control package.',
     },
   ],
 

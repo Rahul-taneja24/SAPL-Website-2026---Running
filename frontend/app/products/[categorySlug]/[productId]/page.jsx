@@ -336,7 +336,7 @@ export default async function ProductDetailPage({ params }) {
             <p className="text-xs text-gray-400 italic border-t border-gray-100 pt-4">
               Disclaimer: Values are typical and compiled by Shanker Agencies Pvt. Ltd. from standard
               industry data and published specifications of partner manufacturers (CUMI, Calderys, TRL
-              Krosaki, IFGL, Divine Cerawool, Crown Ceramics, Mahakoshal, Saint-Gobain). They are indicative
+              Krosaki, Divine Cerawool, Crown Ceramics, Mahakoshal, Saint-Gobain). They are indicative
               and not a guarantee, confirm the exact grade datasheet before specifying. For a certified
               datasheet or quotation, contact info@shankeragencies.com or +91 98999 57888.
             </p>

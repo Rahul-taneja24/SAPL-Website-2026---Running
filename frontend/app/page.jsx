@@ -24,7 +24,7 @@ const webPageSchema = {
   isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
   about: { '@id': 'https://www.shankeragencies.com/#organization' },
   inLanguage: 'en-IN',
-  description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki, IFGL, Calderys & Divine Cerawool.",
+  description: "India's leading refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics, TRL Krosaki, Calderys & Divine Cerawool.",
   speakable: {
     '@type': 'SpeakableSpecification',
     cssSelector: 'h1, .speakable, [data-speakable="true"]',
@@ -72,7 +72,7 @@ const faqSchema = {
       "name": "Is Shanker Agencies an authorized CUMI dealer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Shanker Agencies Private Limited is an authorized dealer of CUMI Super Refractories, one of India's largest refractory manufacturers. We are also authorized dealers of Crown Ceramics and Divine Cerawool, and strategic supply partners of TRL Krosaki, IFGL Refractories, Calderys India, and Mahakoshal Refractories."
+        "text": "Yes. Shanker Agencies Private Limited is an authorized dealer of CUMI Super Refractories, one of India's largest refractory manufacturers. We are also authorized dealers of Crown Ceramics and Divine Cerawool, and supply partners for TRL Krosaki, Calderys India, and Mahakoshal Refractories."
       }
     }
   ]

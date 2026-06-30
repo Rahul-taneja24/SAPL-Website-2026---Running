@@ -141,7 +141,7 @@ export default async function Image({ params }) {
                 ))
               ) : (
                 <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '14px', fontWeight: 600 }}>
-                  Authorised dealer: CUMI \u00B7 Crown Ceramics \u00B7 Divine Cerawool \u00B7 Supply partner: Calderys \u00B7 TRL Krosaki \u00B7 Mahakoshal \u00B7 IFGL
+                  Authorised dealer: CUMI \u00B7 Crown Ceramics \u00B7 Divine Cerawool \u00B7 Supply partner: Calderys \u00B7 TRL Krosaki \u00B7 Mahakoshal
                 </span>
               )}
             </div>

@@ -72,7 +72,7 @@ const blogPosts = [
     date: "Dec 15, 2025",
     readTime: "5 min read",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
-    tags: ["Flow Control", "Slide Gate", "Continuous Casting", "IFGL"],
+    tags: ["Flow Control", "Slide Gate", "Continuous Casting"],
   },
   {
     id: 7,

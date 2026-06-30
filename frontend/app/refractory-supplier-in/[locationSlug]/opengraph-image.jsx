@@ -77,7 +77,7 @@ export default async function Image({ params }) {
             </span>
 
             <span style={{ color: 'rgba(255,255,255,0.72)', fontSize: '20px', fontWeight: 500, lineHeight: 1.4, marginTop: '6px' }}>
-              Same-day dispatch \u00B7 CUMI / Calderys / TRL Krosaki / IFGL / Mahakoshal \u00B7 45+ years of refractory engineering
+              Same-day dispatch \u00B7 CUMI / Calderys / TRL Krosaki / Mahakoshal \u00B7 45+ years of refractory engineering
             </span>
           </div>
 

@@ -73,7 +73,7 @@ function buildAllUrls() {
     });
 
   // Brands
-  ['cumi', 'calderys', 'trl-krosaki', 'ifgl', 'mahakoshal', 'divine-cerawool', 'crown-ceramics']
+  ['cumi', 'calderys', 'trl-krosaki', 'mahakoshal', 'divine-cerawool', 'crown-ceramics']
     .forEach((slug) => urls.add(`${BASE}/brands/${slug}`));
 
   // Geo locations (50+)

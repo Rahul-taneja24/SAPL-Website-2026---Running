@@ -109,7 +109,7 @@ export default async function ProductCategoryPage({ params }) {
           '@context': 'https://schema.org',
           '@type': 'ItemList',
           name: `${categoryTitle}, Shanker Agencies`,
-          description: `Complete range of ${categoryTitle.toLowerCase()} from Shanker Agencies Pvt. Ltd., authorized dealer of CUMI, TRL Krosaki, IFGL, Divine Cerawool & Crown Ceramics.`,
+          description: `Complete range of ${categoryTitle.toLowerCase()} from Shanker Agencies Pvt. Ltd., authorized dealer of CUMI, TRL Krosaki, Divine Cerawool & Crown Ceramics.`,
           url: `https://www.shankeragencies.com/products/${categorySlug}`,
           numberOfItems: seoProducts.length,
           itemListElement: seoProducts.map((seo, index) => {

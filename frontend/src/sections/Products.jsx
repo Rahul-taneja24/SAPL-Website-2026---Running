@@ -693,7 +693,7 @@ function OverviewPage() {
               REFRACTORY<br /><span className="text-[#F97316]">PRODUCT RANGE</span>
             </h1>
             <p className="text-gray-300 text-base sm:text-lg mb-8 max-w-xl leading-relaxed">
-              CUMI · Calderys · TRL Krosaki · IFGL · Mahakoshal · Divine Cerawool, complete grade tables and application guides.
+              CUMI · Calderys · TRL Krosaki · Mahakoshal · Divine Cerawool, complete grade tables and application guides.
             </p>
             <div className="relative max-w-md">
               <Search size={15} className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
@@ -827,9 +827,9 @@ function OverviewPage() {
       {/* Brands strip */}
       <section className="py-10 px-4 bg-gray-50 border-y border-gray-200">
         <div className="max-w-7xl mx-auto">
-          <p className="text-center text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6">Strategic Supply Partner For</p>
-          <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
-            {[{ n: "CUMI", c: "#1E3A5F" }, { n: "Calderys", c: "#1E40AF" }, { n: "TRL Krosaki", c: "#DC2626" }, { n: "IFGL", c: "#F97316" }, { n: "Mahakoshal", c: "#10B981" }, { n: "Crown", c: "#7C3AED" }].map(b => (
+          <p className="text-center text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6">Our Supply Partners</p>
+          <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
+            {[{ n: "CUMI", c: "#1E3A5F" }, { n: "Calderys", c: "#1E40AF" }, { n: "TRL Krosaki", c: "#DC2626" }, { n: "Mahakoshal", c: "#10B981" }, { n: "Crown", c: "#7C3AED" }].map(b => (
               <div key={b.n} className="flex flex-col items-center justify-center bg-white rounded-xl p-4 border border-gray-100 shadow-sm">
                 <span className="font-oswald text-sm font-bold" style={{ color: b.c }}>{b.n}</span>
               </div>

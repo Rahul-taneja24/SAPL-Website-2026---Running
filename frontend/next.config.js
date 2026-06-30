@@ -7,7 +7,6 @@ const nextConfig = {
       { protocol: 'https', hostname: 'www.shankeragencies.com' },
       { protocol: 'https', hostname: 'www.cumi-murugappa.com' },
       { protocol: 'https', hostname: 'mahakoshalrefractories.com' },
-      { protocol: 'https', hostname: 'ifglgroup.com' },
     ],
   },
   trailingSlash: false,
@@ -90,6 +89,12 @@ const nextConfig = {
         has: [{ type: 'host', value: 'shankeragencies.com' }],
         destination: 'https://www.shankeragencies.com/:path*',
         statusCode: 301,
+      },
+      // /brands/ifgl was removed — redirect to flow-control category
+      {
+        source: '/brands/ifgl',
+        destination: '/products/flow-control',
+        permanent: true,
       },
       // /abouts (typo URL crawled by Google) → /about
       {

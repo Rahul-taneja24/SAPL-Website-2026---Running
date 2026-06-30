@@ -330,7 +330,7 @@ function CompanyProfile() {
               <strong className="text-[#1E3A5F]">Shanker Agencies Pvt. Ltd. (SAPL)</strong> was started in New Delhi in 1980 by Mohan Taneja. For over 45 years we have supplied refractory products and on-site engineering help to steel, cement, aluminium, glass, petrochemical and power plants across India, and have shipped into 50+ countries.
             </p>
             <p className="text-gray-700 text-sm leading-relaxed">
-              We deal in <strong>CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool and Crown Ceramics</strong>. Every order ships with original manufacturer test certificates and is backed by our own plant-side support team.
+              We deal in <strong>CUMI, Calderys, TRL Krosaki, Mahakoshal, Divine Cerawool and Crown Ceramics</strong>. Every order ships with original manufacturer test certificates and is backed by our own plant-side support team.
             </p>
           </div>
 
@@ -425,7 +425,7 @@ function CompanyProfile() {
 
           <div className="mb-6 bg-gradient-to-br from-[#F97316]/5 to-[#3B82F6]/5 border border-[#F97316]/20 rounded-xl p-5">
             <p className="text-gray-800 text-sm sm:text-base leading-relaxed">
-              India's premier refractory engineering partner since 1980, serving steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries. <strong className="text-[#1E3A5F]">Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain.</strong>
+              India's premier refractory engineering partner since 1980, serving steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries. <strong className="text-[#1E3A5F]">Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; supply partner for Calderys, TRL Krosaki, Mahakoshal and Saint-Gobain.</strong>
             </p>
           </div>
 
@@ -438,7 +438,6 @@ function CompanyProfile() {
                 { name: "Divine Cerawool", tag: "Authorised Dealer" },
                 { name: "Mahakoshal Refractories", tag: "Supply Partner" },
                 { name: "TRL Krosaki (Tata Group)", tag: "Supply Partner" },
-                { name: "IFGL Refractories", tag: "Supply Partner" },
                 { name: "Calderys India", tag: "Supply Partner" },
                 { name: "Saint-Gobain", tag: "Supply Partner" },
               ].map(({ name, tag }) => (

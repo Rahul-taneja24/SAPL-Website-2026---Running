@@ -95,7 +95,7 @@ const steelProducts = [
   { name: "AL80 Brick", brand: "CUMI", use: "Severe duty", temp: "1750°C" },
   { name: "MgO-C Brick", brand: "Tata", use: "BOF/EAF", temp: "1800°C" },
   { name: "Slide Gate", brand: "Tata", use: "Flow control", temp: "1650°C" },
-  { name: "SEN", brand: "IFGL", use: "Casting", temp: "1650°C" }
+  { name: "SEN", brand: "Flow Control", use: "Casting", temp: "1650°C" }
 ];
 
 const cementProducts = [

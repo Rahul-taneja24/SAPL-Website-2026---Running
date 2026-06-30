@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     q: "What brands are you an official supply partner for?",
-    a: "We are strategic supply partners for CUMI (Carborundum Universal), Calderys, TRL Krosaki (Tata Group), IFGL Refractories, Mahakoshal Refractories, Divine Cerawool, and Crown Ceramics.",
+    a: "We are authorised dealers of CUMI (Carborundum Universal), Crown Ceramics, and Divine Cerawool, and supply partners for Calderys, TRL Krosaki (Tata Group), and Mahakoshal Refractories.",
   },
 ];
 
@@ -172,7 +172,7 @@ const Contact = () => {
         "@id": "https://www.shankeragencies.com/#localbusiness",
         name: "Shanker Agencies Private Limited",
         alternateName: "SAPL",
-        description: "India's premier refractory engineering partner since 1980. Strategic supply partner of CUMI, Calderys, TRL Krosaki, IFGL refractories.",
+        description: "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for Calderys, TRL Krosaki & Mahakoshal.",
         telephone: "+91-9899957888",
         email: "info@shankeragencies.com",
         url: "https://www.shankeragencies.com",

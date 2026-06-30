@@ -6,7 +6,7 @@ const INDUSTRY_DATA = {
     name: 'Steel',
     applications: ['EAF / IF Lining', 'Blast Furnace', 'Ladles &amp; Tundishes', 'Reheating Furnaces'],
     products: ['MgO-C Bricks', 'High Alumina Castables', 'Slide Gate Plates', 'Ramming Mass', 'Precast Shapes'],
-    brands: ['TRL Krosaki', 'IFGL', 'CUMI', 'Calderys'],
+    brands: ['TRL Krosaki', 'CUMI', 'Calderys'],
   },
   cement: {
     name: 'Cement',
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }) {
   const data = INDUSTRY_DATA[industrySlug];
   const name = data?.name || industrySlug;
   const title = `Refractory Supplier for ${name} Plants in India | Shanker Agencies`;
-  const description = `Refractory materials and on-site engineering help for ${name.toLowerCase()} plants across India. Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. Working with the industry since 1980.`;
+  const description = `Refractory materials and on-site engineering help for ${name.toLowerCase()} plants across India. Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; supply partner for Calderys, TRL Krosaki, Mahakoshal and Saint-Gobain. Working with the industry since 1980.`;
   return {
     title,
     description,

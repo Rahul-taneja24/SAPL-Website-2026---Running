@@ -18,7 +18,7 @@ const CATEGORY_META = {
   'flow-control': {
     title: 'Flow Control Refractories',
     blurb: 'Slide gate plates, ladle shrouds, subentry nozzles, monoblock stoppers',
-    brands: ['IFGL', 'TRL Krosaki'],
+    brands: ['TRL Krosaki', 'Vesuvius', 'RHI'],
   },
   'insulation': {
     title: 'Insulation Products',
@@ -41,7 +41,7 @@ export default async function Image({ params }) {
       .map((w) => w[0].toUpperCase() + w.slice(1))
       .join(' '),
     blurb: 'Industrial refractory products for steel, cement, glass, aluminium, power and petrochemical industries.',
-    brands: ['CUMI', 'TRL Krosaki', 'IFGL', 'Calderys'],
+    brands: ['CUMI', 'TRL Krosaki', 'Calderys'],
   };
 
   return new ImageResponse(

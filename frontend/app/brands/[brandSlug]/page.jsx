@@ -28,14 +28,6 @@ const VALID_BRANDS = [
     parent: 'Tata Group &amp; Krosaki Harima',
   },
   {
-    slug: 'ifgl',
-    name: 'IFGL Refractories',
-    shortName: 'IFGL',
-    desc: 'Slide gate plates, ladle shrouds, subentry nozzles, monoblock stoppers and continuous casting flow control refractories.',
-    products: ['Slide Gate Plates', 'Ladle Shrouds', 'Subentry Nozzles', 'Monoblock Stoppers', 'Tundish Nozzles'],
-    parent: 'IFGL Refractories Ltd (listed, BSE/NSE)',
-  },
-  {
     slug: 'divine-cerawool',
     name: 'Divine Cerawool',
     shortName: 'Divine Cerawool',

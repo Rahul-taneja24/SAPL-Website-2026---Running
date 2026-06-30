@@ -56,7 +56,7 @@ export async function generateMetadata({ params }) {
   const data = SOLUTION_DATA[industrySlug];
   const name = data?.name || industrySlug;
   const title = `${name} Refractory Solutions | Shanker Agencies`;
-  const description = `Lining design, grade selection and installation support for ${name.toLowerCase()} plants. Plant-side engineering help from Shanker Agencies since 1980, partnered with CUMI, TRL Krosaki, IFGL, Calderys and Mahakoshal.`;
+  const description = `Lining design, grade selection and installation support for ${name.toLowerCase()} plants. Plant-side engineering help from Shanker Agencies since 1980, partnered with CUMI, TRL Krosaki, Calderys and Mahakoshal.`;
   return {
     title,
     description,
@@ -139,7 +139,7 @@ function buildSolutionJsonLd(slug, data) {
           name: `Is the engineering support tied to a specific brand?`,
           acceptedAnswer: {
             '@type': 'Answer',
-            text: `No. We are an authorised dealer for CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal and a supply partner for TRL Krosaki, IFGL and Calderys. The recommended grade is picked on engineering merit for your plant, not on brand lock-in.`,
+            text: `No. We are an authorised dealer for CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal and a supply partner for TRL Krosaki and Calderys. The recommended grade is picked on engineering merit for your plant, not on brand lock-in.`,
           },
         },
       ],

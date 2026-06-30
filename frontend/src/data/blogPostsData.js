@@ -2980,7 +2980,7 @@ export const BLOG_POSTS_DATA = [
 <p>We grouped the Delhi NCR refractory dealer landscape into four types. Each type has a legitimate place in the market. The trick is matching the dealer type to your use case.</p>
 <ol>
   <li><strong>Authorised dealers of Indian majors</strong> (CUMI, Crown Ceramics, Divine Cerawool). These carry factory-backed pricing and genuine products. Shanker Agencies (SAPL) sits in this category for CUMI, Crown Ceramics and Divine Cerawool.</li>
-  <li><strong>Strategic supply partners</strong> (Calderys, TRL Krosaki, Mahakoshal, IFGL, Saint-Gobain, Dalmia-OCL, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
+  <li><strong>Strategic supply partners</strong> (Calderys, TRL Krosaki, Mahakoshal, Saint-Gobain, Dalmia-OCL, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
   <li><strong>Local stockists and traders</strong>. Smaller operators with mixed-brand stock. Good for small value top-ups, less reliable for critical shutdown orders.</li>
   <li><strong>Online marketplaces</strong> (IndiaMART, TradeIndia, Justdial listings). Useful to compare prices but you are one step removed from the factory.</li>
 </ol>
@@ -3033,7 +3033,7 @@ export const BLOG_POSTS_DATA = [
 <p>Buy non-wetting castables, SiC crucibles and ceramic fibre insulation from an authorised <a href="/brands/calderys">Calderys</a> or CUMI dealer that has a warehouse in Delhi NCR. JIT auto operations cannot afford a 2-week indent cycle on an aluminium holding furnace relining.</p>
 
 <h3>Integrated steel plant, large cement plant or oil refinery</h3>
-<p>Supply partner route (TRL Krosaki, IFGL, Calderys direct or through their authorised partners) is usually right for campaign-scale orders where engineering collaboration, on-site supervision and post-mortem analysis are bundled in with the supply. Spot items and smaller top-ups can still come from an authorised NCR dealer.</p>
+<p>Supply partner route (TRL Krosaki, Calderys direct or through their authorised partners) is usually right for campaign-scale orders where engineering collaboration, on-site supervision and post-mortem analysis are bundled in with the supply. Spot items and smaller top-ups can still come from an authorised NCR dealer.</p>
 
 <h3>Chemical, electroplating or acid-resistant lining job</h3>
 <p>You want a Crown Ceramics authorised dealer. Acid-proof brick, tile and chemical-resistant mortar is a specialist segment, and generalists will often get the mortar-to-brick chemistry pairing wrong.</p>
@@ -3051,7 +3051,7 @@ export const BLOG_POSTS_DATA = [
 </ul>
 
 <h2>The SAPL Position, Honestly</h2>
-<p>Shanker Agencies is an authorised dealer of CUMI, Crown Ceramics and Divine Cerawool, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. We stock the fast-movers in our Shahdara warehouse and can ship same-day to most of Delhi NCR. Our engineers visit plants for lining audits and sintering supervision. We also export to 50+ countries with standard CIF documentation, which means our paperwork discipline holds up at PSU and group-procurement level.</p>
+<p>Shanker Agencies is an authorised dealer of CUMI, Crown Ceramics and Divine Cerawool, and a supply partner for Calderys, TRL Krosaki, Mahakoshal and Saint-Gobain. We stock the fast-movers in our Shahdara warehouse and can ship same-day to most of Delhi NCR. Our engineers visit plants for lining audits and sintering supervision. We also export to 50+ countries with standard CIF documentation, which means our paperwork discipline holds up at PSU and group-procurement level.</p>
 <p>That does not make us the right answer for every buyer. A 200 kg emergency patch order from a small Wazirpur foundry might be faster from a local Wazirpur stockist. A massive cement kiln rebuild might be better handled by Calderys direct with us supplying the insulation package. We have seen both cases end well. The point of this guide is to help you match the dealer type to the job, not to claim any single dealer is right for everything.</p>
 
 <h2>Checklist You Can Print and Use</h2>
@@ -3172,7 +3172,7 @@ export const BLOG_POSTS_DATA = [
 <p>If a quote is significantly below these ranges for the same grade and same brand, ask to see the MTC and sieve analysis before you commit.</p>
 
 <h2>Where to Buy in Delhi NCR</h2>
-<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Mahakoshal, IFGL) or a strategic supply partner of <a href="/brands/calderys">Calderys</a> based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is an authorised dealer of CUMI and Crown Ceramics and a strategic supply partner for <a href="/brands/calderys">Calderys</a> and Mahakoshal, maintaining stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
+<p>For most Delhi NCR buyers, an authorised dealer of a major castable brand (CUMI, Mahakoshal, Calderys) or a strategic supply partner of <a href="/brands/calderys">Calderys</a> based in Delhi will give the right combination of price, stock availability and engineering support. Shanker Agencies is an authorised dealer of CUMI and Crown Ceramics and a strategic supply partner for <a href="/brands/calderys">Calderys</a> and Mahakoshal, maintaining stock of LCC 60, LCC 70 and AR grades in our Shahdara warehouse for same-day dispatch to Delhi, Noida, Greater Noida, Gurgaon, Manesar, Faridabad, Ghaziabad, Sonipat and Panipat. For ULCC and specialty grades, typical lead time is 1 to 3 weeks from the factory.</p>
 
 <h2>Short Buyer's Checklist</h2>
 <ol>
@@ -3268,7 +3268,7 @@ export const BLOG_POSTS_DATA = [
 <p>Most unplanned extensions and unplanned shutdowns happen because one or two items on this list were assumed rather than confirmed.</p>
 
 <h2>Where SAPL Fits In</h2>
-<p>As an authorised dealer of CUMI, Crown Ceramics and Divine Cerawool, and a strategic supply partner for Calderys, TRL Krosaki, Mahakoshal and IFGL, Shanker Agencies keeps patching mass, mortar, ceramic fibre and anchor consumables in stock in our Shahdara, Delhi warehouse. Our refractory engineers can join planned shutdowns across Delhi NCR for lining audits, anchor inspection and dry-out supervision at no extra cost for customers on regular supply accounts. If lining life in your plant is running below the datasheet number, a site visit and a look at the last failed lining usually reveals the gap within an hour.</p>
+<p>As an authorised dealer of CUMI, Crown Ceramics and Divine Cerawool, and a supply partner for Calderys, TRL Krosaki and Mahakoshal, Shanker Agencies keeps patching mass, mortar, ceramic fibre and anchor consumables in stock in our Shahdara, Delhi warehouse. Our refractory engineers can join planned shutdowns across Delhi NCR for lining audits, anchor inspection and dry-out supervision at no extra cost for customers on regular supply accounts. If lining life in your plant is running below the datasheet number, a site visit and a look at the last failed lining usually reveals the gap within an hour.</p>
 
 <h2>Summary</h2>
 <p>Lining life is almost never limited by the brand of brick or castable. It is limited by how the lining is installed, dried out, operated and inspected. This 12-step checklist costs nothing to implement. The payback is measured in lakhs per avoided breakout, thousands of tonnes of extra production per extended campaign and far fewer emergency calls at 2 am.</p>
@@ -3572,14 +3572,14 @@ export const BLOG_POSTS_DATA = [
     slug: "porous-plug-refractory-selection-guide",
     title: "Porous Plug Refractory: How It Works, Types and Selection Guide",
     excerpt: "A porous plug is the gas-permeable refractory element in a steel ladle used for argon purging. This guide explains how it works, corundum vs magnesia grade selection, purging rates, replacement frequency, and steel quality benefits.",
-    metaDescription: "What is a porous plug? How argon purging works in steel ladles, corundum vs magnesia grade selection, purging rates, replacement cycles, and IFGL porous.",
+    metaDescription: "What is a porous plug? How argon purging works in steel ladles, corundum vs magnesia grade selection, purging rates, replacement cycles, and selection guide.",
     publishDate: "2026-06-20",
     lastModified: "2026-06-20",
     category: "Flow Control",
-    tags: ["porous plug", "argon purging", "steel ladle", "flow control", "IFGL", "argon bubbling", "ladle bottom"],
+    tags: ["porous plug", "argon purging", "steel ladle", "flow control", "argon bubbling", "ladle bottom"],
     coverImage: "https://www.shankeragencies.com/opengraph-image",
     content: `
-<p>A porous plug is a gas-permeable refractory element installed in the bottom of a steel ladle, used to inject argon gas upward through molten steel, a process called argon purging or argon bubbling. The rising argon bubbles homogenise steel temperature and chemical composition, float non-metallic inclusions to the slag surface, and reduce total oxygen content before continuous casting. Porous plugs are manufactured from corundum (Al<sub>2</sub>O<sub>3</sub> greater than 90%) or magnesia (MgO greater than 90%) refractory with engineered porosity of 20 to 28%, providing consistent gas flow at purging rates from 0.1 to 5 Nl/min per tonne of liquid steel. Correct porous plug selection and argon flow control reduce non-metallic inclusion content in finished steel by 40 to 60%, improve desulphurisation efficiency by 10 to 30%, and extend ladle lining campaign life by reducing thermal gradient fluctuations at the ladle bottom. Shanker Agencies supplies IFGL-manufactured porous plugs with full material test certificates for domestic delivery and CIF export to GCC and ASEAN markets.</p>
+<p>A porous plug is a gas-permeable refractory element installed in the bottom of a steel ladle, used to inject argon gas upward through molten steel, a process called argon purging or argon bubbling. The rising argon bubbles homogenise steel temperature and chemical composition, float non-metallic inclusions to the slag surface, and reduce total oxygen content before continuous casting. Porous plugs are manufactured from corundum (Al<sub>2</sub>O<sub>3</sub> greater than 90%) or magnesia (MgO greater than 90%) refractory with engineered porosity of 20 to 28%, providing consistent gas flow at purging rates from 0.1 to 5 Nl/min per tonne of liquid steel. Correct porous plug selection and argon flow control reduce non-metallic inclusion content in finished steel by 40 to 60%, improve desulphurisation efficiency by 10 to 30%, and extend ladle lining campaign life by reducing thermal gradient fluctuations at the ladle bottom. Shanker Agencies supplies porous plugs from leading flow-control manufacturers with full material test certificates for domestic delivery and CIF export to GCC and ASEAN markets.</p>
 
 <h2>How a Porous Plug Works: The Argon Purging Process</h2>
 <p>Pressurised argon gas is fed through a stainless steel sleeve assembly into the porous refractory plug at the ladle bottom. At tapping temperatures of approximately 1600&deg;C, the argon passes through the interconnected pore structure of the plug, emerging as fine bubbles at the ladle floor. These bubbles rise through the liquid steel, creating controlled circulation throughout the heat.</p>
@@ -3602,8 +3602,8 @@ export const BLOG_POSTS_DATA = [
 <h2>Steel Quality Impact: Specific Numbers</h2>
 <p>Correctly applied argon purging with a properly selected porous plug delivers measurable improvements. Total non-metallic inclusion count is reduced by 40 to 60%. Total oxygen content falls by 20 to 40%. Desulphurisation efficiency improves by 10 to 30% when combined with lime-based desulphurisation slag treatment. Continuous casting subentry nozzle blockage frequency drops by 30 to 50%, extending sequence casting length. Ladle lining campaign life is extended through reduced thermal gradient fluctuations at the ladle bottom (fewer thermal shock cycles per campaign). Yield typically improves by 0.1 to 0.3% from reduced skull formation. See also our <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladle refractory lining guide</a> for related information on ladle lining management.</p>
 
-<h2>SAPL Supply: IFGL Porous Plugs</h2>
-<p>IFGL Refractories Limited is India's leading manufacturer of flow control refractories for steelmaking. Shanker Agencies is a strategic supply partner of IFGL and supplies corundum and magnesia porous plugs for ladle capacities from 20 to 300 tonnes. Corundum grade (Al<sub>2</sub>O<sub>3</sub> greater than 90%) is for standard carbon and low-alloy steel service. Magnesia grade (MgO greater than 90%) is for stainless steel, high-alloy grades, and high-basicity slag service. Every shipment includes a full material test certificate with chemical analysis, porosity measurement, and permeability data. Export orders include a certificate of origin. CIF transit times: GCC destinations 7 to 14 days, ASEAN destinations 10 to 21 days. Standard corundum grades for common ladle sizes typically dispatch within the same week from our Delhi NCR warehouse. To order, email ladle capacity in tonnes, steel grade, and target purging rate to info@shankeragencies.com. View our <a href="/products/flow-control/porous-plugs">IFGL porous plug product range</a>.</p>
+<h2>Porous Plug Supply from SAPL</h2>
+<p>Shanker Agencies supplies corundum and magnesia porous plugs from leading flow-control manufacturers for ladle capacities from 20 to 300 tonnes. Corundum grade (Al<sub>2</sub>O<sub>3</sub> greater than 90%) is for standard carbon and low-alloy steel service. Magnesia grade (MgO greater than 90%) is for stainless steel, high-alloy grades, and high-basicity slag service. Every shipment includes a full material test certificate with chemical analysis, porosity measurement, and permeability data. Export orders include a certificate of origin. CIF transit times: GCC destinations 7 to 14 days, ASEAN destinations 10 to 21 days. Standard corundum grades for common ladle sizes typically dispatch within the same week from our Delhi NCR warehouse. To order, email ladle capacity in tonnes, steel grade, and target purging rate to info@shankeragencies.com. View our <a href="/products/flow-control/porous-plugs">porous plug product range</a>.</p>
 `,
     faqs: [
       {
@@ -3627,8 +3627,8 @@ export const BLOG_POSTS_DATA = [
         answer: "Properly applied argon purging with a correctly selected porous plug reduces total non-metallic inclusion count by 40 to 60% and total oxygen content by 20 to 40% compared to untreated heats. When combined with lime-based desulphurisation slag treatment, desulphurisation efficiency improves by 10 to 30%. Continuous casting subentry nozzle blockage frequency drops by 30 to 50%, extending sequence casting length and reducing casting interruptions. Yield typically improves by 0.1 to 0.3% from reduced skull formation. Actual results depend on ladle design, operating practice, and steel grade."
       },
       {
-        question: "Where can I buy IFGL porous plugs in India for export?",
-        answer: "Shanker Agencies Pvt. Ltd. is a strategic supply partner of IFGL Refractories and supplies corundum and magnesia porous plugs for ladle capacities from 20 to 300 tonnes. Standard corundum grades for common ladle sizes typically dispatch within the same week from our Delhi NCR warehouse. Export shipments to GCC destinations transit in 7 to 14 days; ASEAN destinations transit in 10 to 21 days. All shipments include material test certificates and certificates of origin. To request a quotation, email ladle capacity, steel grade, and required purging rate to info@shankeragencies.com or call +91-9899957888."
+        question: "Where can I buy porous plugs in India for export?",
+        answer: "Shanker Agencies Pvt. Ltd. supplies corundum and magnesia porous plugs for ladle capacities from 20 to 300 tonnes. Standard corundum grades for common ladle sizes typically dispatch within the same week from our Delhi NCR warehouse. Export shipments to GCC destinations transit in 7 to 14 days; ASEAN destinations transit in 10 to 21 days. All shipments include material test certificates and certificates of origin. To request a quotation, email ladle capacity, steel grade, and required purging rate to info@shankeragencies.com or call +91-9899957888."
       }
     ],
     author: { name: "Geeta Sharma" },

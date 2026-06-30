@@ -110,7 +110,6 @@ const BRANDS = [
   { name: 'Crown Ceramics', type: 'Authorized Dealer', desc: 'Leading acid proof bricks, tiles & carbon brick manufacturer.' },
   { name: 'Divine Cerawool', type: 'Authorized Dealer', desc: 'Ceramic fiber blankets, modules, boards & insulation products.' },
   { name: 'TRL Krosaki', type: 'Supply Partner', desc: 'Magnesia carbon bricks, basic refractories & silicon carbide products.' },
-  { name: 'IFGL Refractories', type: 'Supply Partner', desc: 'Flow control systems - slide gate plates, shrouds, SEN & stoppers.' },
   { name: 'Calderys', type: 'Supply Partner', desc: 'Monolithics, gunning mass, fused cast blocks & microporous insulation.' },
 ];
 
@@ -601,7 +600,7 @@ export default async function LocationPage({ params }) {
               {
                 icon: ShieldCheck,
                 title: 'Authorised Dealer',
-                desc: 'Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; strategic supply partner for Calderys, TRL Krosaki, Mahakoshal, IFGL and Saint-Gobain. Every dispatch ships with the original manufacturer test certificate.',
+                desc: 'Authorised dealer of CUMI, Crown Ceramics and Divine Cerawool; supply partner for Calderys, TRL Krosaki, Mahakoshal and Saint-Gobain. Every dispatch ships with the original manufacturer test certificate.',
               },
               {
                 icon: Factory,

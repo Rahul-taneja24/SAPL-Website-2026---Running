@@ -2,11 +2,11 @@ import Brands from '@/sections/Brands';
 
 export const metadata = {
   title: 'Authorized Refractory Brands | Shanker Agencies',
-  description: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for Calderys, TRL Krosaki & IFGL. Genuine products and technical support since 1980.",
+  description: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for Calderys, TRL Krosaki & Mahakoshal. Genuine products and technical support since 1980.",
   alternates: { canonical: '/brands' },
   openGraph: {
     title: 'Authorized Refractory Brands | Shanker Agencies',
-    description: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for Calderys, TRL Krosaki & IFGL. Genuine products and technical support since 1980.",
+    description: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for Calderys, TRL Krosaki & Mahakoshal. Genuine products and technical support since 1980.",
     url: 'https://www.shankeragencies.com/brands',
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Refractory Brands' }],
   },
@@ -21,7 +21,7 @@ const webPageSchema = {
   isPartOf: { '@id': 'https://www.shankeragencies.com/#website' },
   about: { '@id': 'https://www.shankeragencies.com/#organization' },
   inLanguage: 'en-IN',
-  description: 'Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for TRL Krosaki, IFGL Refractories & Calderys.',
+  description: 'Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for TRL Krosaki, Calderys & Mahakoshal.',
 };
 
 const breadcrumbSchema = {
@@ -95,16 +95,6 @@ const brandsSchema = {
     {
       "@type": "ListItem",
       "position": 6,
-      "item": {
-        "@type": "Brand",
-        "name": "IFGL Refractories",
-        "description": "Slide gate plates, ladle shrouds, subentry nozzles and flow control refractories for continuous casting.",
-        "url": "https://www.shankeragencies.com/brands/ifgl"
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
       "item": {
         "@type": "Brand",
         "name": "Mahakoshal Refractories",

@@ -51,7 +51,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              India's premier refractory engineering partner since 1980. Strategic supply partner of CUMI, Calderys, TRL Krosaki & IFGL — delivering world-class refractory solutions to steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries worldwide.
+              India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool — delivering world-class refractory solutions to steel, cement, aluminium, glass, power and petrochemical industries across India and 50+ countries worldwide.
             </p>
 
             {/* Social icons */}

@@ -20,11 +20,6 @@ const BRAND_META = {
     tagline: 'Supply Partner',
     blurb: 'MgO-C bricks, magnesia bricks, silicon carbide products and advanced refractories for iron and steel.',
   },
-  ifgl: {
-    name: 'IFGL Refractories',
-    tagline: 'Supply Partner',
-    blurb: 'Slide gate plates, ladle shrouds, subentry nozzles, monoblock stoppers and continuous casting flow control.',
-  },
   'divine-cerawool': {
     name: 'Divine Cerawool',
     tagline: 'Authorized Dealer',

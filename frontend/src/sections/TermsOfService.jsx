@@ -30,7 +30,7 @@ const TermsOfService = () => {
             <div>
               <h2 className="font-oswald text-2xl font-bold mb-4 gradient-text">2. Services Description</h2>
               <p className="text-muted-foreground leading-relaxed">
-                SAPL is an strategic supply partner of refractory materials from leading manufacturers including CUMI, Calderys, TRL Krosaki, IFGL, Mahakoshal, Divine Cerawool, and Crown Ceramics. Our services include:
+                SAPL supplies refractory materials from leading manufacturers including CUMI, Calderys, TRL Krosaki, Mahakoshal, Divine Cerawool, and Crown Ceramics. Our services include:
               </p>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
                 <li>Supply of shaped and unshaped refractories</li>

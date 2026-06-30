@@ -61,7 +61,7 @@ export default async function sitemap() {
   ].map((slug) => ({ url: `${BASE}/solutions/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
 
   const brandPages = [
-    'cumi', 'calderys', 'trl-krosaki', 'ifgl', 'mahakoshal', 'divine-cerawool', 'crown-ceramics', 'saint-gobain',
+    'cumi', 'calderys', 'trl-krosaki', 'mahakoshal', 'divine-cerawool', 'crown-ceramics', 'saint-gobain',
   ].map((slug) => ({ url: `${BASE}/brands/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
 
   // Geo location pages, all from static data

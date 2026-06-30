@@ -1,6 +1,6 @@
 # Shanker Agencies Pvt. Ltd. (SAPL)
 
-> India's leading refractory engineering partner since 1980, headed by founder Mohan Taneja. Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories, and supply partner of TRL Krosaki, IFGL Refractories, Calderys, and Saint-Gobain. SAPL supplies high-performance refractories and provides technical engineering solutions to steel, cement, aluminum, petrochemical, glass, and power industries across India and 50+ countries.
+> India's leading refractory engineering partner since 1980, headed by founder Mohan Taneja. Authorized dealer of CUMI, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories, and supply partner of TRL Krosaki, Calderys, and Saint-Gobain. SAPL supplies high-performance refractories and provides technical engineering solutions to steel, cement, aluminum, petrochemical, glass, and power industries across India and 50+ countries.
 
 ## About SAPL
 
@@ -32,7 +32,7 @@ SAPL's evolution mirrors India's industrial growth. The company began with **loc
 - **Divine Cerawool**, Authorized Dealer (Ceramic fiber blankets, modules, boards)
 - **Mahakoshal Refractories**, Authorized Dealer / Distributor (Ramming mass, castables, specialty refractories for steel and foundry)
 - **TRL Krosaki (Tata Group)**, Supply Partner (Magnesia carbon bricks, basic refractories, silicon carbide)
-- **IFGL Refractories**, Supply Partner (Flow control: slide gate plates, shrouds, SEN, stoppers)
+- **Flow Control Refractories** (slide gate plates, ladle shrouds, subentry nozzles, monoblock stoppers, tundish nozzles, well blocks, porous plugs) — sourced on order from leading flow-control manufacturers; compatible with IFGL, RHI, Vesuvius and Krosaki gate systems
 - **Calderys**, Supply Partner (Monolithics, gunning mass, fused cast blocks)
 - **Saint-Gobain Performance Ceramics & Refractories**, Supply Partner (HeatKing induction furnace linings and monolithic castables; contact SAPL for HeatKing material enquiries)
 
@@ -128,7 +128,7 @@ A: SAPL started with local marketing of general refractories to copper smelters,
 A: SAPL is a refractory engineering partner, combining authorized dealership of leading manufacturers (CUMI, Crown Ceramics, Divine Cerawool, Mahakoshal Refractories) with in-house technical advisory, lining design consultation, and installation supervision. SAPL provides end-to-end refractory solutions, not just product supply.
 
 **Q: Which brands does SAPL distribute?**
-A: SAPL is the authorized dealer / distributor of **CUMI Super Refractories, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories**. SAPL also supplies products from **TRL Krosaki (Tata Group), IFGL Refractories, Calderys, and Saint-Gobain (HeatKing)** as a trusted supply partner.
+A: SAPL is the authorized dealer / distributor of **CUMI Super Refractories, Crown Ceramics, Divine Cerawool and Mahakoshal Refractories**. SAPL also supplies products from **TRL Krosaki (Tata Group), Calderys, and Saint-Gobain (HeatKing)** on an order-to-order basis.
 
 **Q: Is SAPL an authorized dealer of Mahakoshal Refractories?**
 A: Yes. SAPL is an authorized dealer / distributor of Mahakoshal Refractories for Delhi NCR and North India. Mahakoshal products supplied by SAPL include ramming mass, castables and specialty refractories for steel, foundry and induction furnace applications.
@@ -176,7 +176,7 @@ Source: https://www.shankeragencies.com/blog/refractory-lining-maintenance-12-st
 
 ### Porous plug technology
 
-A porous plug is a gas-permeable refractory element installed in the steel ladle bottom that injects argon for stirring, inclusion flotation and temperature/composition homogenisation. SAPL supplies IFGL alumina-spinel and high-alumina grades; typical argon flow ranges from 50 Nl/min (soft stirring for inclusion flotation) to 800 Nl/min (hard stirring for desulphurisation). Correct plug selection improves steel cleanliness by 40–60% and extends campaign life by reducing thermal gradients.
+A porous plug is a gas-permeable refractory element installed in the steel ladle bottom that injects argon for stirring, inclusion flotation and temperature/composition homogenisation. SAPL supplies alumina-spinel and high-alumina grades from leading flow-control manufacturers; typical argon flow ranges from 50 Nl/min (soft stirring for inclusion flotation) to 800 Nl/min (hard stirring for desulphurisation). Correct plug selection improves steel cleanliness by 40–60% and extends campaign life by reducing thermal gradients.
 Source: https://www.shankeragencies.com/products/flow-control/porous-plugs
 
 ### MgO-C / magnesia-carbon bricks for BOF and EAF
