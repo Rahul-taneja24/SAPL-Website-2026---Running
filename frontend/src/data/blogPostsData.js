@@ -4402,6 +4402,262 @@ export const BLOG_POSTS_DATA = [
       "refractory-mortars",
     ],
   },
+
+  // ─────────────────────────────────────────────────────────────
+  // 38. EAF Refractories: Green Steel Transition
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 38,
+    slug: "eaf-refractories-green-steel-transition",
+    title: "EAF Refractories: What the Green Steel Transition Means for Your Lining Specification",
+    metaTitle: "EAF Refractories for Green Steel: MgO-C, Monolithics & DRI-Ready Linings",
+    metaDescription: "Steel's green transition is driving EAF refractory demand while BF-BOF products decline. Guide to MgO-C brick grades, monolithic linings and DRI-ready specifications for EAF and scrap-based steelmaking.",
+    category: "Industry Trends",
+    tags: ["EAF refractories", "green steel", "electric arc furnace", "MgO-C bricks", "DRI", "steel transition", "carbon neutral steel", "scrap-based steelmaking"],
+    readTime: "9 min",
+    publishDate: "2026-07-02",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1615219023549-5c9abdb7df9a?w=1200&q=80",
+    keyTakeaways: [
+      "EAF steelmaking is the primary route for green/low-carbon steel; global EAF share is projected to reach 50%+ by 2035.",
+      "DRI (direct reduced iron) in the EAF charge increases slag basicity and imposes higher thermal loads — lining specifications must adapt.",
+      "MgO-C bricks remain the workhorse for EAF hot spots; low-carbon and graphite-free grades reduce CO₂ from the lining itself.",
+      "Monolithic gunning masses are essential for hot-spot repair between heats — extending campaign life without full relining.",
+      "India is expanding EAF capacity rapidly; domestic steelmakers are now specifying DRI-ready refractory systems.",
+    ],
+    faqs: [
+      { question: "What refractories are used in an electric arc furnace?", answer: "EAF refractories include MgO-C bricks for the sidewalls and hot spots (slag line, tap hole, door area), basic gunning mass for hot-spot repair between heats, magnesia ramming mass for the hearth, and high-alumina castables or basic castables for the roof delta section. The slag line sees the most aggressive wear and typically uses 70–80% MgO, 10–20% C bricks." },
+      { question: "How does DRI in the EAF charge affect refractory wear?", answer: "DRI (direct reduced iron) is charged cold and contains gangue (silica, alumina) that forms a more fluid, more corrosive slag at higher temperature than scrap-based practice. This accelerates slag-line erosion on MgO-C bricks and increases thermal shock on the hearth. Bricks with higher MgO purity (>90%) and optimised carbon content (12–16%) with antioxidants are recommended for high-DRI EAF operations." },
+      { question: "What is a low-carbon MgO-C brick and why is it relevant for green steel?", answer: "Standard MgO-C bricks contain 12–20% carbon (graphite) that contributes to CO₂ emissions during steelmaking. Low-carbon MgO-C grades (4–8% C) reduce these process emissions while maintaining thermal conductivity and erosion resistance through advanced antioxidant systems. They are increasingly specified by steelmakers with decarbonisation commitments." },
+      { question: "Can monolithic linings replace bricks in an EAF?", answer: "A full monolithic EAF lining is feasible for the hearth (magnesia ramming mass) and roof (castable), but the sidewalls and slag line typically still use MgO-C bricks because of the extreme erosion rates in those zones. Monolithic gunning masses are essential for hot-spot maintenance — they extend campaign life by 20–40% by patching worn zones without shutting down." },
+    ],
+    excerpt: "The steel industry's green transition is the single biggest structural shift in refractory demand in decades. EAF capacity is expanding globally while blast furnace routes decline — and with it, the refractory specifications are changing. This guide covers what EAF and DRI-based steelmaking demand from your lining, which MgO-C and monolithic products are relevant, and why India is at the centre of this shift.",
+    content: `<h2>Why Green Steel Is the Refractory Industry's Biggest Story</h2>
+<p>Steel accounts for roughly 7–8% of global CO₂ emissions. The conventional blast furnace–basic oxygen furnace (BF-BOF) route that produces most of the world's steel is carbon-intensive by design. The green steel transition — moving production to electric arc furnaces (EAF) fed by scrap and direct reduced iron (DRI) — is the industry's primary decarbonisation lever.</p>
+<p>This is not a distant scenario. Global EAF steelmaking already accounts for around 30% of production and is projected to exceed 50% by 2035 as carbon pricing, ESG commitments, and green-steel premiums from automotive and construction buyers reshape investment decisions. The refractory consequence is structural: <strong>EAF refractory demand will grow while BF-BOF product lines decline</strong>. Steelmakers and refractory specifiers who understand this now are better positioned than those who adapt later.</p>
+
+<h2>What Makes EAF Lining Duty Different</h2>
+<p>An electric arc furnace creates a more chemically aggressive environment than a BOF in several ways:</p>
+<ul>
+  <li><strong>Higher peak temperatures:</strong> EAF arc zones reach 3,000 degC locally, far above BOF peak temperatures, creating severe hot spots on sidewall bricks.</li>
+  <li><strong>Slag variability:</strong> Scrap-based EAF slags vary widely in basicity and iron oxide content depending on scrap grade and charge chemistry, imposing unpredictable chemical attack on the lining.</li>
+  <li><strong>DRI charge effects:</strong> When DRI replaces scrap, gangue components (SiO₂, Al₂O₃) enter the slag, reducing its basicity and increasing fluidity — which accelerates erosion at the slag line.</li>
+  <li><strong>Thermal cycling:</strong> EAF campaigns involve more frequent tapping than BOF, and batch charging causes repeated thermal shock.</li>
+</ul>
+
+<h2>MgO-C Bricks: Still the EAF Workhorse</h2>
+<p>Magnesia-carbon (MgO-C) bricks remain the dominant lining material for EAF sidewalls, slag lines, tap holes, and door surrounds. The combination of high-purity magnesia (MgO &gt;85%) and graphite (C 10–20%) gives them the thermal conductivity to survive arc zone temperatures, the chemical resistance to basic slag attack, and the mechanical strength to withstand charging impacts.</p>
+<p>For DRI-ready EAF operations — where slag chemistry is more acidic and temperatures are higher — the specification shifts:</p>
+<ul>
+  <li>MgO purity 90–95% (versus 85–88% for standard scrap-based EAF)</li>
+  <li>Carbon content 12–16% with metallic antioxidants (Al, Si, MgAl) to suppress oxidation</li>
+  <li>Finer graphite flake size for better distribution and erosion resistance</li>
+  <li>High-pressure pressing to maximise bulk density and minimise open porosity</li>
+</ul>
+<p>For steelmakers with decarbonisation targets, <strong>low-carbon MgO-C grades</strong> (4–8% C) are gaining traction. These reduce CO₂ process emissions from the lining material itself. Advanced antioxidant systems compensate for the lower graphite content on thermal conductivity and erosion performance.</p>
+
+<h2>Monolithic Refractories in the EAF: Hearth, Repair, and Beyond</h2>
+<p>Monolithic refractories — poured, gunned, or rammed rather than built as shaped bricks — play three critical roles in EAF operations:</p>
+<ol>
+  <li><strong>Hearth lining:</strong> Magnesia ramming mass (MgO &gt;85%) forms the EAF bottom. It is rammed in layers and sintered during the first few heats to form a dense, erosion-resistant bottom lining that handles heel practice and oxygen lancing.</li>
+  <li><strong>Hot-spot maintenance (gunning):</strong> Basic gunning mass is the most important day-to-day EAF consumable after bricks. After each campaign or during short shutdowns, worn sidewall zones are gunned with semi-dry or wet-gun masses to rebuild thickness. Effective gunning programmes extend campaign life by 20–40% and are the primary way EAF operators defer full relining.</li>
+  <li><strong>Roof and delta:</strong> High-alumina or basic castables form the EAF roof delta sections. These are cast, cured, and dried in place, offering complex shape capability and faster installation than equivalent brick assemblies.</li>
+</ol>
+<p>SAPL supplies MgO-C bricks and basic gunning masses for EAF maintenance — both are stocked for same-week despatch from Delhi NCR to domestic steel plants and available CIF to export destinations in the GCC and ASEAN.</p>
+
+<h2>India's EAF Expansion: The Numbers</h2>
+<p>India is the standout EAF growth market. The Indian steel industry is expanding at approximately 4–5% CAGR, with announced greenfield and brownfield EAF capacity additions exceeding 20 million tonnes by 2030. The government's decarbonisation roadmap for steel explicitly identifies EAF-DRI as the preferred route for new capacity — particularly for sponge iron-rich states like Odisha, Jharkhand, and Chhattisgarh where DRI feedstock is locally available.</p>
+<p>Asia-Pacific already accounts for over 60% of global refractory demand, and India's trajectory within that figure is accelerating faster than any other major economy. Steelmakers investing in EAF capacity today are making 20–30 year decisions on refractory specification — getting the DRI-ready lining design right at commissioning is significantly cheaper than re-engineering it after the first few campaigns.</p>
+
+<h2>Specifying Refractories for Green Steel: Practical Starting Points</h2>
+<p>If you are specifying an EAF or reviewing your existing lining for DRI integration, these are the parameters to review first:</p>
+<ul>
+  <li><strong>MgO purity in slag-line bricks:</strong> upgrade from 85% to 90%+ if DRI proportion exceeds 30% of charge</li>
+  <li><strong>Carbon content:</strong> consider low-carbon grades (6–8%) if you have an emissions reporting obligation</li>
+  <li><strong>Gunning mass supply:</strong> ensure you have a reliable hot-repair supply chain — stock-outs during campaign mean unplanned relining</li>
+  <li><strong>Hearth design:</strong> consult on rammed MgO bottom thickness and heel depth for your furnace size and tapping frequency</li>
+</ul>
+<p>To discuss EAF refractory specification for new or existing furnaces, contact Shanker Agencies at <a href="/contact">info@shankeragencies.com</a> with your furnace capacity (tonnes), charge mix (% DRI / scrap), and current lining campaign life.</p>`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: [
+      "magnesia-carbon-bricks",
+      "basic-gunning-mass",
+      "high-alumina-bricks",
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 39. Monolithic vs Brick Steel Ladle Lining
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 39,
+    slug: "monolithic-vs-brick-steel-ladle-lining",
+    title: "Monolithic vs Brick Steel Ladle Lining: Why More Steelmakers Are Making the Switch",
+    metaTitle: "Monolithic vs Brick Steel Ladle Lining: Installation Speed, Cost & Campaign Life",
+    metaDescription: "Compare monolithic castable linings vs brick construction for steel ladles. Installation time, campaign life, relining cost, and when to choose each — practical guide for steel plant engineers.",
+    category: "Technical Guide",
+    tags: ["monolithic lining", "steel ladle", "castable refractory", "ladle lining", "brick lining", "LCC castable", "refractory installation", "unshaped refractories"],
+    readTime: "8 min",
+    publishDate: "2026-07-02",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
+    keyTakeaways: [
+      "Monolithic castable linings reduce ladle relining time by 30–50% versus brick construction, cutting downtime cost directly.",
+      "Low cement castables (LCC) and ultra-low cement castables (ULCC) now match brick in erosion resistance at 1,600–1,700°C.",
+      "Brick linings remain preferred for permanent/safety linings and for ladles with complex shapes requiring precise dimensional control.",
+      "Hybrid construction — brick permanent lining + castable working lining — is the most common approach in modern steel plants.",
+      "Monolithic repair by gunning extends working lining campaigns without full reline shutdowns.",
+    ],
+    faqs: [
+      { question: "Is monolithic lining better than brick for steel ladles?", answer: "It depends on the application zone. Monolithic castables are faster to install, eliminate the need for skilled bricklayers, and allow complex shapes — making them preferred for working linings and repairs. Bricks are still used for permanent safety linings and slag-line zones requiring maximum erosion resistance. Most modern steel ladles use a hybrid: brick permanent lining with castable working lining." },
+      { question: "What castable grades are used for steel ladle working linings?", answer: "Low cement castables (LCC) with Al₂O₃ 70–85% are the standard for steel ladle working linings. Ultra-low cement castables (ULCC) are used in demanding secondary metallurgy applications. Both achieve dense, low-porosity linings after curing and drying that approach or match brick performance in erosion and slag resistance at 1,600–1,700°C." },
+      { question: "How much faster is monolithic lining installation compared to bricks?", answer: "Monolithic castable installation for a steel ladle working lining typically takes 4–8 hours versus 16–24 hours for equivalent brick construction. Drying and curing add 8–24 hours in both cases. The net result is 30–50% faster turnaround, which reduces the number of spare ladles a plant must maintain in rotation." },
+      { question: "Can a worn ladle lining be repaired by gunning?", answer: "Yes. Gunning with a suitable castable or gunning mass can rebuild worn zones of a monolithic working lining between campaigns without full reline. This is one of the key advantages of monolithic linings — spot repair is faster and cheaper than brick-by-brick replacement. Effective gunning programmes extend working lining life by 15–30%." },
+    ],
+    excerpt: "Monolithic castable linings are gaining ground over traditional brick construction in steel ladles — and the main reason is time. Faster installation, simpler repair, and consistent quality with less skilled labour are driving the shift. This guide compares the two approaches across the metrics that matter: installation speed, campaign life, relining cost, and the specific zones where each remains the better choice.",
+    content: `<h2>The Shift Toward Monolithics in Steel Ladle Lining</h2>
+<p>Brick construction has been the default for steel ladle lining since the beginning of steelmaking. But over the past decade, monolithic refractories — castables, gunning masses, and ramming mixes installed as a single poured or gunned mass rather than individual shaped bricks — have taken a growing share of ladle working lining construction. In many modern steel plants, the monolithic working lining is now standard practice, with bricks retained only for the permanent and safety lining layers.</p>
+<p>The shift is driven by three practical factors: <strong>installation speed, labour skill requirements, and repairability</strong>. Understanding when each approach is the right choice requires looking at every zone of the ladle separately.</p>
+
+<h2>Steel Ladle Lining Zones: What Goes Where</h2>
+<p>A steel ladle lining is built in distinct layers, each with different thermal and chemical duties:</p>
+<ul>
+  <li><strong>Steel shell:</strong> the structural outer vessel</li>
+  <li><strong>Permanent / safety lining:</strong> 65–115 mm of dense fireclay or high-alumina brick, bonded to the shell. This lining is replaced every 3–5 years, not every campaign. Its purpose is to protect the shell if the working lining is penetrated.</li>
+  <li><strong>Working lining:</strong> 100–180 mm of MgO-C, alumina-magnesia, or high-alumina refractory that contacts the molten steel. This lining is replaced every 80–300 heats depending on steel grade and practice.</li>
+  <li><strong>Slag line:</strong> the zone at maximum liquid steel level, subject to the most severe chemical attack. Usually built with MgO-C or alumina-magnesia-carbon bricks regardless of whether the rest of the working lining is monolithic.</li>
+  <li><strong>Bottom:</strong> flat base of the ladle, subject to erosion from tapping and porous plug installation.</li>
+</ul>
+
+<h2>Brick Lining: Where It Still Wins</h2>
+<p>Brick construction retains clear advantages in specific zones and conditions:</p>
+<ul>
+  <li><strong>Permanent / safety lining:</strong> Dense fireclay or high-alumina bricks laid with refractory mortar create a mechanically robust permanent lining with very long campaign life. This application is rarely challenged by monolithics.</li>
+  <li><strong>Slag line:</strong> MgO-C bricks at the slag line offer maximum erosion resistance at the zone of highest attack. While slag-line castables exist, bricks still provide the best campaign life here for most steel grades.</li>
+  <li><strong>Dimensional precision:</strong> When a ladle has precise dimensional requirements for flow-control equipment fit-up, brick construction is easier to hold to tolerance.</li>
+</ul>
+
+<h2>Monolithic Castables: Where the Advantage Compounds</h2>
+<p>For the main body working lining, bottom, and repairs, monolithic castables now offer a compelling case:</p>
+
+<h3>Installation Speed</h3>
+<p>Monolithic castable installation for a steel ladle working lining (excluding slag line) typically takes <strong>4–8 hours</strong> of pour time using vibration casting. Equivalent brick construction takes 16–24 hours. Both require drying and curing, but the net relining turnaround is 30–50% faster with monolithics. For a plant running 8–12 ladles in rotation, faster relining means fewer ladles in the rotation fleet — a capital cost saving as well as a downtime saving.</p>
+
+<h3>Labour Skill Requirements</h3>
+<p>Brick lining a steel ladle correctly requires skilled masons with experience in refractory laying, staggered joints, and corner construction. Finding and retaining this skill is increasingly difficult. Monolithic castable installation requires fewer specialised skills — the material does the work once it is properly mixed and poured.</p>
+
+<h3>LCC and ULCC Performance</h3>
+<p>The historical objection to castable working linings — that they could not match brick erosion resistance — has been addressed by low cement castables (LCC) and ultra-low cement castables (ULCC). By reducing CaO content to &lt;1%, these materials achieve:</p>
+<ul>
+  <li>Bulk density 3.0–3.15 g/cm³ after firing (approaching brick density)</li>
+  <li>Cold crushing strength &gt;80 MPa</li>
+  <li>Erosion resistance comparable to high-alumina bricks at 1,600–1,700°C service</li>
+  <li>Lower porosity than conventional castables, reducing slag penetration</li>
+</ul>
+<p>Al₂O₃ content of 70–85% is standard for steel ladle working linings. Spinel-forming grades (alumina-magnesia) are used where slag basicity demands superior chemical resistance.</p>
+
+<h3>Repairability by Gunning</h3>
+<p>One of the most significant operational advantages of a monolithic working lining is that worn zones can be repaired by <strong>gunning</strong> without a full reline shutdown. After inspection, worn areas are built back up with gunning mass applied semi-dry or wet. Effective gunning programmes routinely extend working lining campaigns by 15–30%, compounding the relining frequency savings.</p>
+
+<h2>Hybrid Construction: The Practical Standard</h2>
+<p>The most common approach in modern steel plants is hybrid construction: <strong>brick permanent lining + castable working lining</strong>. This gives you the long-life safety provided by well-bonded permanent bricks alongside the speed and repairability of a monolithic working lining. The slag line is typically still built with MgO-C bricks, integrated into the monolithic working lining body.</p>
+
+<h2>SAPL's Monolithic Supply for Steel Ladles</h2>
+<p>SAPL stocks LCC and ULCC castables from CUMI, Calderys, and TRL Krosaki for steel ladle working linings. We supply complete working lining packages including slag-line MgO-C bricks, castable for the main lining body, and gunning masses for in-campaign repair. Material test certificates and technical datasheets are available for all products.</p>
+<p>To discuss monolithic lining specification for your steel ladle size and steel grade, contact us at <a href="/contact">info@shankeragencies.com</a> with ladle capacity, number of ladles in rotation, and current working lining material.</p>`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: [
+      "lcc-castable",
+      "ulcc-castable",
+      "magnesia-carbon-bricks",
+      "basic-gunning-mass",
+    ],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 40. Alternative Fuels in Cement Kilns: Refractory Guide
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 40,
+    slug: "alternative-fuels-cement-kiln-refractory-guide",
+    title: "Alternative Fuels in Cement Kilns: Choosing Alkali-Resistant Refractories for AF Conversion",
+    metaTitle: "Alternative Fuels Cement Kiln Refractories: Alkali Attack, Grades & Campaign Life",
+    metaDescription: "Cement kilns switching to alternative fuels face more aggressive alkali attack on refractories. Guide to alkali-resistant brick grades, coating behaviour, and lining strategies for AF-fired kilns.",
+    category: "Industry Guide",
+    tags: ["alternative fuels", "cement kiln", "alkali resistant refractory", "cement refractory", "kiln lining", "AF cement", "thermal substitution rate", "magnesia spinel"],
+    readTime: "8 min",
+    publishDate: "2026-07-02",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1667328931918-b6362ed95c1e?w=1200&q=80",
+    keyTakeaways: [
+      "Alternative fuels (tyres, biomass, RDF, waste solvents) increase alkali, chloride and sulphur inputs to the kiln — all of which attack refractories more aggressively than coal.",
+      "Alkali vapours condense in the 900–1,100°C zone, penetrating brick pores and causing sub-surface spalling — the primary lining failure mode in AF kilns.",
+      "Magnesia-spinel bricks with dense microstructure and low open porosity are the preferred burning zone solution for high thermal substitution rate (TSR) kilns.",
+      "Chloride bypass systems reduce alkali recirculation but do not eliminate refractory attack — lining selection must still account for elevated alkali input.",
+      "Campaign life in the burning zone can drop 20–40% when TSR increases from 20% to 60%+ without changing the refractory specification.",
+    ],
+    faqs: [
+      { question: "Why do alternative fuels cause more refractory wear in cement kilns?", answer: "Alternative fuels (tyres, RDF, biomass, waste solvents) contain higher levels of chlorides, sulphates, and alkalis (K₂O, Na₂O) than coal. These form aggressive vapour-phase compounds that penetrate refractory pores, react with the brick microstructure, and cause sub-surface spalling and coating instability. The effect is most pronounced in the transition zone (900–1,100°C) where these compounds condense." },
+      { question: "What refractory bricks are recommended for high-TSR cement kilns?", answer: "Magnesia-spinel bricks are the preferred burning zone solution for high thermal substitution rate (TSR) kilns. They offer superior coating adhesion (critical when coating behaviour becomes erratic with AF), excellent thermal shock resistance, and better alkali resistance than standard doloma bricks. Dense, low-porosity grades (&lt;17% apparent porosity) are specified to slow alkali penetration." },
+      { question: "What is alkali attack on cement kiln refractories?", answer: "Alkali attack occurs when potassium (K₂O) and sodium (Na₂O) compounds in kiln gases condense in brick pores (typically in the 900–1,100°C zone) and react with the refractory silica and alumina content to form low-melting phases. These reactions expand the sub-surface zone, causing cracks and spalling. The result is lining loss without the visible surface erosion pattern of normal wear." },
+      { question: "Does a chloride bypass system protect cement kiln refractories from AF attack?", answer: "A chloride bypass system reduces the circulation of chloride, sulphate and alkali compounds by extracting gas at the kiln inlet. This reduces alkali input to the burning zone and can improve coating stability. However, bypass systems do not eliminate alkali attack completely — they reduce it. Refractory selection for AF kilns must still account for elevated alkali exposure relative to coal-fired operation." },
+    ],
+    excerpt: "Cement plants across India and internationally are increasing alternative fuel use to cut costs and carbon intensity. But shifting from coal to tyres, RDF, biomass, or waste solvents brings a more chemically aggressive kiln environment — specifically higher alkali, chloride, and sulphur inputs that attack refractories harder and faster than coal combustion gases. This guide explains the mechanisms, the at-risk kiln zones, and the refractory specifications that protect campaign life as thermal substitution rates increase.",
+    content: `<h2>Why Alternative Fuels Change the Refractory Equation</h2>
+<p>Cement producers are under simultaneous pressure to reduce energy costs and cut carbon emissions. Alternative fuels — including shredded tyres, refuse-derived fuel (RDF), biomass, sewage sludge, and waste solvents — address both: they are typically cheaper than coal on an energy basis, and biomass and waste-derived fuels count toward renewable energy targets under most accounting frameworks.</p>
+<p>Global thermal substitution rates (TSR — the proportion of fuel energy from alternatives) are rising sharply. In Europe, several cement plants now exceed 80% TSR. India's major cement companies are targeting 25–40% TSR by 2030 as part of their climate commitments. Every percentage point of TSR increase has a refractory consequence, and at high substitution rates, the lining specification that worked for coal will no longer deliver the same campaign life.</p>
+
+<h2>The Chemistry: Why Alternative Fuels Are Harder on Linings</h2>
+<p>Coal combustion is relatively clean in terms of refractory-damaging species. Alternative fuels introduce three additional chemical threats:</p>
+
+<h3>Alkalis (K₂O, Na₂O)</h3>
+<p>Tyres, biomass, municipal waste, and agricultural residues are rich in potassium and sodium compounds. In the kiln atmosphere, these form volatile sulphates and chlorides that circulate and condense in the cooler parts of the kiln system — primarily the <strong>transition zone (900–1,100°C)</strong>. When alkali vapours condense inside brick pores, they react with SiO₂ and Al₂O₃ in the refractory to form leucite, kalsilite, and other low-melting phases. The volume changes associated with these phase transformations cause <strong>sub-surface cracking and spalling</strong> — the brick loses thickness from the inside out rather than the surface in.</p>
+
+<h3>Chlorides</h3>
+<p>PVC in RDF and waste streams introduces chloride to the kiln gas. Chloride compounds aggressively attack brick bonds and form chloroapatites that weaken the refractory matrix. High-chloride inputs also destabilise the coating — the protective clinker coating that forms on the burning zone lining — leading to coating collapse events that suddenly expose the lining to full thermal load.</p>
+
+<h3>Sulphur</h3>
+<p>Tyres and some industrial waste fuels have high sulphur content. Sulphur combines with alkalis to form alkali sulphates that join the recirculating compound cycle. Sulphation of magnesia-based bricks is a known degradation pathway, particularly in the burning zone and transition zone.</p>
+
+<h2>The At-Risk Kiln Zones</h2>
+<p>Alternative fuels affect different kiln zones differently:</p>
+<ul>
+  <li><strong>Transition zone (inlet side, 900–1,100°C):</strong> Highest risk. This is where alkali, sulphur, and chloride compounds condense. Sub-surface spalling and ring formation are the primary failure modes. High-density, low-porosity bricks with alkali-resistant chemistry are essential here.</li>
+  <li><strong>Burning zone (1,300–1,450°C):</strong> Affected mainly through coating instability. AF fuels alter flame characteristics and can cause erratic coating build-up and loss cycles. Each coating collapse exposes bricks to thermal shock. Magnesia-spinel bricks with superior thermal shock resistance are the preferred solution for high-TSR operations.</li>
+  <li><strong>Calcining zone (preheater/precalciner):</strong> High-alumina castables and anchor systems used here face increased alkali condensation as TSR rises. Alkali-resistant high-alumina castables (with lower SiO₂ content) are recommended when TSR exceeds 30%.</li>
+</ul>
+
+<h2>Refractory Grades for AF-Fired Kilns</h2>
+
+<h3>Burning Zone: Magnesia-Spinel Bricks</h3>
+<p>Magnesia-spinel bricks (MgO 70–80%, in-situ or pre-formed spinel) are now the standard recommendation for burning zones in kilns operating above 30% TSR. Compared to doloma (MgO-CaO) bricks, magnesia-spinel offers:</p>
+<ul>
+  <li>Better coating adhesion — critical when AF fuels cause coating fluctuation</li>
+  <li>Superior thermal shock resistance from the spinel network</li>
+  <li>Greater alkali resistance than doloma, which is particularly susceptible to sulphate attack</li>
+</ul>
+<p>Specify grades with apparent porosity &lt;17% to slow alkali vapour penetration into the brick body.</p>
+
+<h3>Transition Zone: Low-Porosity High-Alumina or Spinel Bricks</h3>
+<p>For the transition zone (upper and lower), switch from standard high-alumina bricks to dense, low-porosity grades with reduced SiO₂ content (&lt;8%). Lower silica content reduces the reactive surface area for alkali attack. Spinel bricks extended into the transition zone offer additional protection at higher cost.</p>
+
+<h3>Preheater and Calciner: Alkali-Resistant Castables</h3>
+<p>Preheater cyclone linings and calciner castables exposed to high-alkali gas streams should specify alkali-resistant high-alumina grades with mullite or spinel additions. Avoid conventional 40–50% alumina castables in these zones when TSR is elevated — their higher silica content makes them susceptible.</p>
+
+<h2>Campaign Life Impact: What to Expect</h2>
+<p>Field experience from European and South Asian cement plants shows that increasing TSR from 20% to 60%+ without changing the refractory specification typically reduces burning zone campaign life by 20–40%. With an appropriate magnesia-spinel specification and optimised brick geometry, campaign life can be recovered to within 10–15% of the coal-fired baseline.</p>
+<p>The economics almost always favour the upgrade: a magnesia-spinel burning zone brick costs 25–40% more than doloma per tonne, but the campaign life improvement reduces annual relining costs. Factor in the reduced downtime cost (a major kiln reline typically costs 5–7 days of lost production) and the upgrade typically pays back in one or two campaigns.</p>
+
+<h2>SAPL Supply for AF-Converted Cement Kilns</h2>
+<p>SAPL supplies magnesia-spinel bricks, alkali-resistant high-alumina bricks, and castables for cement kiln linings from TRL Krosaki, CUMI, and Calderys. We provide material selection support for TSR conversion projects — send us your current kiln zone layout, TSR target, and current lining campaign life data and we will recommend a grade upgrade plan.</p>
+<p>Contact us at <a href="/contact">info@shankeragencies.com</a> or call +91-9899957888 to discuss your cement kiln refractory programme.</p>`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: [
+      "high-alumina-bricks",
+      "lcc-castable",
+      "basic-gunning-mass",
+    ],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
