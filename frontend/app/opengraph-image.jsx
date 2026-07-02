@@ -154,7 +154,7 @@ export default async function Image() {
             >
               <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F97316', display: 'flex' }} />
               <span style={{ color: '#FDBA74', fontSize: '13px', fontWeight: 600, letterSpacing: '0.18em' }}>
-                SINCE 1980 \u00B7 ISO 9001:2015 \u00B7 50+ COUNTRIES
+                SINCE 1980 · ISO 9001:2015 · 50+ COUNTRIES
               </span>
             </div>
 
@@ -167,7 +167,7 @@ export default async function Image() {
                 letterSpacing: '-0.02em',
               }}
             >
-              India\u2019s Leading
+              India’s Leading
             </span>
             <span
               style={{
@@ -191,7 +191,7 @@ export default async function Image() {
                 marginTop: '8px',
               }}
             >
-              Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool \u00B7
+              Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool ·
               Supply partner for Calderys, TRL Krosaki, Mahakoshal & Saint-Gobain
             </span>
           </div>

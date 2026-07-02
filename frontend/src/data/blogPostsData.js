@@ -469,9 +469,8 @@ export const BLOG_POSTS_DATA = [
     id: 4,
     slug: "ceramic-fiber-blanket-vs-insulating-fire-brick",
     title: "Ceramic Fiber Blanket vs Insulating Fire Brick: Which to Choose?",
-    metaTitle:
-      "Ceramic Fiber Blanket vs Insulating Fire Brick Comparison | SAPL",
-    metaDescription: "Detailed comparison of ceramic fiber blanket and insulating fire brick (IFB). Compare thermal performance, cost, installation, and applications.",
+    metaTitle: "Ceramic Fiber Blanket vs IFB: Temperature Limits, Cost & When to Switch",
+    metaDescription: "Ceramic fiber blanket vs insulating fire brick (IFB): max service temperature, heat storage, installation time, and cost comparison. Switch criteria for furnace engineers.",
     category: "Comparison",
     tags: [
       "ceramic fiber blanket",
@@ -590,9 +589,8 @@ export const BLOG_POSTS_DATA = [
     slug: "steel-ladle-refractory-lining-material-selection-campaign-life",
     title:
       "Steel Ladle Refractory Lining: Material Selection & Campaign Life Optimization",
-    metaTitle:
-      "Steel Ladle Refractory Lining Guide | Material Selection | SAPL",
-    metaDescription: "Complete guide to steel ladle refractory lining design. Working lining, safety lining, bottom design, and flow control.",
+    metaTitle: "Steel Ladle Refractory Lining: Material Selection Guide for Campaign Life",
+    metaDescription: "Steel ladle lining design: working lining grades, safety lining, bottom brick selection, and flow control. Practical guide to extending campaign life and reducing relining costs.",
     category: "Technical Guide",
     tags: [
       "steel ladle",
@@ -839,9 +837,8 @@ export const BLOG_POSTS_DATA = [
     id: 7,
     slug: "acid-proof-brick-lining-chemical-plants-guide",
     title: "Acid Proof Brick Lining for Chemical Plants: Complete Guide",
-    metaTitle:
-      "Acid Proof Brick Lining for Chemical Plants | Installation Guide | SAPL",
-    metaDescription: "Complete guide to acid proof brick lining for chemical industry. Selection, installation, jointing materials, acid resistance testing, and failure.",
+    metaTitle: "Acid Proof Brick Lining in Chemical Plants: Step-by-Step Installation Guide",
+    metaDescription: "How to specify and install acid proof brick lining for chemical plants. Brick grade selection, jointing materials, acid resistance testing, and common failure causes with fixes.",
     category: "Industry Guide",
     tags: [
       "acid proof bricks",
@@ -2746,8 +2743,8 @@ export const BLOG_POSTS_DATA = [
     id: 22,
     slug: "gunning-vs-casting-when-to-use",
     title: "Gunning vs Casting Refractories: When to Use Which Method",
-    metaTitle: "Gunning vs Casting Refractories: Installation Method Comparison Guide",
-    metaDescription: "Compare gunning and casting refractory installation methods. Application techniques, rebound loss, material properties, cost implications, and a decision.",
+    metaTitle: "Gunning vs Casting Refractory: Which Method Saves More Downtime?",
+    metaDescription: "Gunning vs casting refractories: when to use each, rebound loss, material compatibility, and cost per tonne of steel. Decision matrix for maintenance engineers.",
     category: "How-To Guide",
     tags: ["gunning refractory", "casting refractory", "hot repair", "refractory installation", "gunning mix", "refractory maintenance"],
     readTime: "5 min",
