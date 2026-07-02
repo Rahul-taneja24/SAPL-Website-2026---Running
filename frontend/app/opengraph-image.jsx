@@ -1,15 +1,57 @@
 import { ImageResponse } from 'next/og';
 
 export const alt =
-  'Shanker Agencies | India\u2019s Refractory Engineering Partner Since 1980 \u2014 CUMI, TRL Krosaki, Calderys, Mahakoshal';
+  'Shanker Agencies | India\'s Refractory Engineering Partner Since 1980 — CUMI, TRL Krosaki, Calderys, Mahakoshal';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-// Homepage / default OpenGraph image.
-// Per-route overrides (blog, products, brands, locations) live alongside their page.jsx.
-// Constraints: next/og ImageResponse supports only a narrow CSS subset — flat backgroundColor,
-// flex layout, borders, border-radius, opacity, and absolute positioning. No CSS gradients,
-// no external images, no inline SVG. Visual depth is built by layering flat coloured divs.
+// Homepage OpenGraph image — 2-column layout: What We Supply · Industries We Serve
+// Constraints: next/og supports only flat backgroundColor, flex layout, borders,
+// border-radius, opacity, absolute positioning — no CSS gradients, no external images, no SVG.
+
+const COL_LABEL = {
+  color: '#F97316',
+  fontSize: '11px',
+  fontWeight: 700,
+  letterSpacing: '0.22em',
+  marginBottom: '16px',
+  display: 'flex',
+};
+
+const ROW_ITEM = {
+  display: 'flex',
+  alignItems: 'center',
+  gap: '12px',
+  marginBottom: '13px',
+};
+
+const DOT = (color) => ({
+  width: '8px',
+  height: '8px',
+  borderRadius: '50%',
+  backgroundColor: color,
+  flexShrink: 0,
+  display: 'flex',
+});
+
+const ITEM_TEXT = {
+  color: 'rgba(255,255,255,0.88)',
+  fontSize: '17px',
+  fontWeight: 500,
+  display: 'flex',
+};
+
+const BRAND_CHIP = {
+  backgroundColor: 'rgba(255,255,255,0.07)',
+  border: '1px solid rgba(255,255,255,0.14)',
+  color: 'rgba(255,255,255,0.7)',
+  fontSize: '13px',
+  fontWeight: 600,
+  padding: '6px 14px',
+  borderRadius: '6px',
+  display: 'flex',
+};
+
 export default async function Image() {
   return new ImageResponse(
     (
@@ -22,213 +64,141 @@ export default async function Image() {
           flexDirection: 'column',
           backgroundColor: '#0B1628',
           fontFamily: 'system-ui, -apple-system, sans-serif',
+          overflow: 'hidden',
         }}
       >
-        {/* Diagonal orange accent — upper-right corner */}
-        <div
-          style={{
-            position: 'absolute',
-            top: '-120px',
-            right: '-120px',
-            width: '420px',
-            height: '420px',
-            backgroundColor: '#F97316',
-            opacity: 0.12,
-            transform: 'rotate(45deg)',
-            display: 'flex',
-          }}
-        />
-        <div
-          style={{
-            position: 'absolute',
-            top: '-80px',
-            right: '-80px',
-            width: '260px',
-            height: '260px',
-            backgroundColor: '#EA580C',
-            opacity: 0.18,
-            transform: 'rotate(45deg)',
-            display: 'flex',
-          }}
-        />
+        {/* ── decorative shapes ── */}
+        <div style={{ position: 'absolute', top: '-100px', right: '-100px', width: '320px', height: '320px', backgroundColor: '#F97316', opacity: 0.07, transform: 'rotate(45deg)', display: 'flex' }} />
+        <div style={{ position: 'absolute', bottom: '-60px', right: '80px', width: '220px', height: '220px', backgroundColor: '#1D4ED8', opacity: 0.1, borderRadius: '50%', display: 'flex' }} />
+        <div style={{ position: 'absolute', top: '200px', left: '440px', width: '120px', height: '120px', backgroundColor: '#F97316', opacity: 0.04, borderRadius: '50%', display: 'flex' }} />
 
-        {/* Soft blue halo — lower-left */}
+        {/* ── left orange rail ── */}
+        <div style={{ position: 'absolute', left: 0, top: 0, bottom: 0, width: '6px', backgroundColor: '#F97316', display: 'flex' }} />
+
+        {/* ── HEADER ── */}
         <div
           style={{
-            position: 'absolute',
-            bottom: '-180px',
-            left: '-120px',
-            width: '440px',
-            height: '440px',
-            borderRadius: '50%',
-            backgroundColor: '#1E40AF',
-            opacity: 0.25,
             display: 'flex',
-          }}
-        />
-
-        {/* Left orange rail */}
-        <div
-          style={{
-            position: 'absolute',
-            left: 0,
-            top: 0,
-            bottom: 0,
-            width: '8px',
-            backgroundColor: '#F97316',
-            display: 'flex',
-          }}
-        />
-
-        {/* Subtle grid overlay — dots on diagonal */}
-        {Array.from({ length: 18 }).map((_, i) => (
-          <div
-            key={`dot-${i}`}
-            style={{
-              position: 'absolute',
-              top: `${30 + i * 32}px`,
-              left: `${60 + i * 64}px`,
-              width: '4px',
-              height: '4px',
-              borderRadius: '50%',
-              backgroundColor: '#F97316',
-              opacity: 0.15,
-              display: 'flex',
-            }}
-          />
-        ))}
-
-        {/* Content wrapper */}
-        <div
-          style={{
-            position: 'relative',
-            display: 'flex',
-            flexDirection: 'column',
+            alignItems: 'center',
             justifyContent: 'space-between',
-            height: '630px',
-            padding: '64px 80px',
+            padding: '40px 64px 32px 76px',
+            borderBottom: '1px solid rgba(255,255,255,0.08)',
           }}
         >
-          {/* HEADER — brand lockup */}
+          {/* logo mark + name */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
+            {/* Orange square logo mark */}
             <div
               style={{
-                width: '64px',
-                height: '64px',
+                width: '58px',
+                height: '58px',
                 borderRadius: '14px',
                 backgroundColor: '#F97316',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: '0 0 0 4px rgba(249,115,22,0.18)',
+                flexShrink: 0,
               }}
             >
-              <span style={{ color: '#0B1628', fontSize: '30px', fontWeight: 900, letterSpacing: '-0.02em' }}>
-                S
-              </span>
+              <span style={{ color: '#0B1628', fontSize: '28px', fontWeight: 900, letterSpacing: '-0.02em' }}>S</span>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column' }}>
-              <span style={{ color: '#FFFFFF', fontSize: '26px', fontWeight: 800, letterSpacing: '0.01em' }}>
+
+            {/* company name block */}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <span style={{ color: '#FFFFFF', fontSize: '22px', fontWeight: 800, letterSpacing: '0.04em', display: 'flex' }}>
                 SHANKER AGENCIES PVT. LTD.
               </span>
-              <span style={{ color: '#F97316', fontSize: '13px', fontWeight: 600, letterSpacing: '0.22em', marginTop: '4px' }}>
+              <span style={{ color: '#F97316', fontSize: '11px', fontWeight: 700, letterSpacing: '0.24em', display: 'flex' }}>
                 REFRACTORY ENGINEERING SOLUTIONS
               </span>
             </div>
           </div>
 
-          {/* MIDDLE — headline */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '900px' }}>
-            {/* Eyebrow badge */}
-            <div
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-                backgroundColor: 'rgba(249,115,22,0.12)',
-                border: '1px solid rgba(249,115,22,0.35)',
-                borderRadius: '999px',
-                padding: '8px 18px',
-                alignSelf: 'flex-start',
-              }}
-            >
-              <div style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: '#F97316', display: 'flex' }} />
-              <span style={{ color: '#FDBA74', fontSize: '13px', fontWeight: 600, letterSpacing: '0.18em' }}>
-                SINCE 1980 · ISO 9001:2015 · 50+ COUNTRIES
-              </span>
-            </div>
-
-            <span
-              style={{
-                color: '#FFFFFF',
-                fontSize: '60px',
-                fontWeight: 900,
-                lineHeight: 1.05,
-                letterSpacing: '-0.02em',
-              }}
-            >
-              India’s Leading
-            </span>
-            <span
-              style={{
-                color: '#F97316',
-                fontSize: '60px',
-                fontWeight: 900,
-                lineHeight: 1.05,
-                letterSpacing: '-0.02em',
-                marginTop: '-22px',
-              }}
-            >
-              Refractory Engineering Partner
-            </span>
-
-            <span
-              style={{
-                color: 'rgba(255,255,255,0.72)',
-                fontSize: '20px',
-                fontWeight: 500,
-                lineHeight: 1.4,
-                marginTop: '8px',
-              }}
-            >
-              Authorised dealer of CUMI, Crown Ceramics & Divine Cerawool ·
-              Supply partner for Calderys, TRL Krosaki, Mahakoshal & Saint-Gobain
-            </span>
-          </div>
-
-          {/* FOOTER — partner chips + url */}
+          {/* since badge — clean, no ISO clutter */}
           <div
             style={{
               display: 'flex',
-              justifyContent: 'space-between',
               alignItems: 'center',
-              borderTop: '1px solid rgba(255,255,255,0.12)',
-              paddingTop: '20px',
+              gap: '8px',
+              backgroundColor: 'rgba(249,115,22,0.1)',
+              border: '1px solid rgba(249,115,22,0.28)',
+              borderRadius: '999px',
+              padding: '9px 20px',
             }}
           >
-            <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-              {['CUMI', 'Calderys', 'TRL Krosaki', 'Mahakoshal', 'Crown Ceramics'].map((tag) => (
-                <div
-                  key={tag}
-                  style={{
-                    backgroundColor: 'rgba(255,255,255,0.08)',
-                    border: '1px solid rgba(255,255,255,0.18)',
-                    color: '#FFFFFF',
-                    fontSize: '14px',
-                    fontWeight: 600,
-                    padding: '8px 16px',
-                    borderRadius: '8px',
-                    display: 'flex',
-                  }}
-                >
-                  {tag}
-                </div>
-              ))}
-            </div>
-            <span style={{ color: 'rgba(255,255,255,0.55)', fontSize: '16px', fontWeight: 600, letterSpacing: '0.05em' }}>
-              shankeragencies.com
+            <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#F97316', display: 'flex' }} />
+            <span style={{ color: '#FDBA74', fontSize: '12px', fontWeight: 700, letterSpacing: '0.22em', display: 'flex' }}>
+              REFRACTORY ENGINEERING SOLUTIONS
             </span>
           </div>
+        </div>
+
+        {/* ── BODY — 2 columns ── */}
+        <div
+          style={{
+            display: 'flex',
+            flex: 1,
+            padding: '36px 76px 0 76px',
+          }}
+        >
+          {/* COL 1 — WHAT WE SUPPLY */}
+          <div style={{ display: 'flex', flexDirection: 'column', flex: 1, paddingRight: '48px' }}>
+            <span style={COL_LABEL}>WHAT WE SUPPLY</span>
+            {[
+              'Shaped Refractories',
+              'Monolithic Castables',
+              'Flow Control Systems',
+              'Thermal Insulation',
+              'Acid Proofing',
+            ].map((label) => (
+              <div key={label} style={ROW_ITEM}>
+                <div style={DOT('#F97316')} />
+                <span style={ITEM_TEXT}>{label}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* vertical divider */}
+          <div style={{ width: '1px', backgroundColor: 'rgba(255,255,255,0.08)', display: 'flex', flexShrink: 0 }} />
+
+          {/* COL 2 — INDUSTRIES */}
+          <div style={{ display: 'flex', flexDirection: 'column', flex: 1, paddingLeft: '48px' }}>
+            <span style={{ ...COL_LABEL, color: '#34D399' }}>INDUSTRIES WE SERVE</span>
+            {[
+              'Iron & Steel',
+              'Cement & Lime',
+              'Aluminum & Foundry',
+              'Glass & Ceramic',
+              'Power & Petrochem',
+            ].map((label) => (
+              <div key={label} style={ROW_ITEM}>
+                <div style={DOT('#34D399')} />
+                <span style={ITEM_TEXT}>{label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ── FOOTER — brand strip ── */}
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '18px 76px',
+            borderTop: '1px solid rgba(255,255,255,0.08)',
+            backgroundColor: 'rgba(255,255,255,0.02)',
+            marginTop: '28px',
+          }}
+        >
+          <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+            {['CUMI', 'Calderys', 'TRL Krosaki', 'Mahakoshal', 'Crown Ceramics', 'Divine Cerawool'].map((b) => (
+              <div key={b} style={BRAND_CHIP}>{b}</div>
+            ))}
+          </div>
+          <span style={{ color: 'rgba(255,255,255,0.38)', fontSize: '14px', fontWeight: 600, letterSpacing: '0.06em', display: 'flex' }}>
+            shankeragencies.com
+          </span>
         </div>
       </div>
     ),
