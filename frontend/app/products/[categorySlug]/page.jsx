@@ -207,6 +207,29 @@ export default async function ProductCategoryPage({ params }) {
     ],
   };
 
+  // Category-specific FAQ content, only populated where we have a genuinely
+  // distinct question for that category (avoids generic filler FAQs).
+  const CATEGORY_FAQS = {
+    insulation: [
+      {
+        q: 'Can you help improve the energy efficiency of our industrial furnaces?',
+        a: 'Yes. We provide specialized thermal insulation solutions, including ceramic fiber modules, blankets and calcium silicate boards, engineered to minimize heat loss and maximize energy savings in high-temperature environments. Correct insulation selection directly reduces fuel consumption and shell temperatures.',
+      },
+    ],
+  };
+  const categoryFaqs = CATEGORY_FAQS[categorySlug] || [];
+  const faqSchema = categoryFaqs.length
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: categoryFaqs.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      }
+    : null;
+
   return (
     <>
       {itemListSchema && (
@@ -219,6 +242,12 @@ export default async function ProductCategoryPage({ params }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <Products />
 
       {/* ──────────────────────────────────────────────────────────────
@@ -266,6 +295,40 @@ export default async function ProductCategoryPage({ params }) {
                 Talk to a refractory engineer →
               </a>
             </p>
+          </div>
+        </section>
+      )}
+
+      {categoryFaqs.length > 0 && (
+        <section className="py-16 md:py-20 bg-gray-50 border-t border-gray-100">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <span className="inline-block px-4 py-1.5 rounded-full bg-orange-50 text-[#F97316] text-xs font-semibold tracking-widest uppercase mb-3">
+                Common Questions
+              </span>
+              <h2 className="font-oswald text-2xl md:text-3xl font-bold text-[#1E3A5F]">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div className="space-y-3">
+              {categoryFaqs.map((faq, i) => (
+                <details
+                  key={i}
+                  className="group bg-white rounded-2xl border border-gray-100 overflow-hidden"
+                  {...(i === 0 ? { open: true } : {})}
+                >
+                  <summary className="flex items-start gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                    <span className="w-5 h-5 flex-shrink-0 mt-0.5 text-[#F97316] font-bold text-lg leading-none">›</span>
+                    <h3 className="font-oswald text-base md:text-lg font-semibold text-[#1E3A5F] pr-4">
+                      {faq.q}
+                    </h3>
+                  </summary>
+                  <div className="px-5 pb-5 ml-8">
+                    <p className="text-gray-600 leading-relaxed text-sm md:text-base">{faq.a}</p>
+                  </div>
+                </details>
+              ))}
+            </div>
           </div>
         </section>
       )}
