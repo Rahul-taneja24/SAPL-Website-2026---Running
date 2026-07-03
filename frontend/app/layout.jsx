@@ -62,14 +62,11 @@ export const metadata = {
     siteName: 'Shanker Agencies',
     title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
     description: "India's premier refractory engineering partner since 1980. Authorised dealer of CUMI, Crown Ceramics, Divine Cerawool. Supply partner for Calderys, TRL Krosaki, Mahakoshal and Saint-Gobain. Serving steel, cement, aluminium, glass, power and petrochemical plants.",
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980' }],
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980' }],
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Shanker Agencies | Refractory Dealer in Delhi NCR Since 1980',
-    description: "India's premier refractory engineering partner since 1980. CUMI, Crown, Mahakoshal, TRL Krosaki and Calderys.",
-    images: ['/opengraph-image'],
-  },
+  // No twitter: block — X/Twitter falls back to the openGraph tags above.
+  // We don't have a Twitter/X presence yet; a dedicated card can be added
+  // once that profile exists rather than shipping stale/mismatched copy.
   robots: {
     index: true,
     follow: true,
@@ -157,7 +154,7 @@ export default function RootLayout({ children }) {
                   alternateName: ['SAPL', 'Shanker Agencies'],
                   url: 'https://www.shankeragencies.com',
                   email: 'info@shankeragencies.com',
-                  image: 'https://www.shankeragencies.com/opengraph-image',
+                  image: 'https://www.shankeragencies.com/opengraph-image.jpg',
                   logo: {
                     '@type': 'ImageObject',
                     url: 'https://www.shankeragencies.com/images/sapl-logo.png',

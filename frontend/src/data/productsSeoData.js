@@ -71,8 +71,8 @@ export const PRODUCT_SEO = [
     categorySlug: "flow-control",
     productId: "slide-gate-plates",
     name: "Slide Gate Plates",
-    metaTitle: "Slide Gate Plates for Steel Ladles | Al₂O₃-C, Al₂O₃-ZrO₂-C, MgO-C | Shanker Agencies",
-    metaDescription: "Slide gate plates for steel ladle flow control. Al₂O₃-C, Al₂O₃-ZrO₂-C & MgO-C grades. Compatible with major flow-control systems. Price on enquiry.",
+    metaTitle: "Slide Gate Plates for Steel Ladles | Shanker Agencies",
+    metaDescription: "Slide gate plates for steel ladle flow control in Al₂O₃-C, Al₂O₃-ZrO₂-C & MgO-C grades. Compatible with major flow-control systems.",
   },
   {
     categorySlug: "flow-control",

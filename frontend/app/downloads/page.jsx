@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Technical Datasheets & Downloads | Shanker Agencies',
     description: 'Download technical datasheets, installation guides and heat-up schedules for high alumina bricks, LCC castables, ceramic fiber, ramming mass and slide gate plates.',
     url: 'https://www.shankeragencies.com/downloads',
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Technical Downloads' }],
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Technical Downloads' }],
   },
 };
 

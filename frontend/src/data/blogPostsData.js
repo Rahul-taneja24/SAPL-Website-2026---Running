@@ -696,6 +696,30 @@ export const BLOG_POSTS_DATA = [
 <h2>Total Cost of Ownership Approach</h2>
 <p>The true cost of a ladle lining is not the material cost &mdash; it is the sum of material cost, installation labor, preheating energy, downtime cost, gunning repair cost, and any quality losses from lining-related steel contamination. Plants that focus only on material cost per kg often end up with the highest total cost per tonne of steel produced.</p>
 
+<h2>Campaign Life by Ladle Size and Steel Grade</h2>
+<p>Benchmark figures vary widely by furnace route, ladle capacity, and steel cleanliness requirement. The table below reflects typical ranges seen across re-rolling mills, EAF secondary steelmaking, and integrated BOF shops in India:</p>
+<table>
+  <thead>
+    <tr><th>Ladle Size</th><th>Steel Grade</th><th>Slag Line Material</th><th>Typical Campaign Life</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>10&ndash;30T re-rolling</td><td>Plain carbon</td><td>Alumina-MgO</td><td>40&ndash;80 heats</td></tr>
+    <tr><td>60&ndash;120T EAF secondary</td><td>Low alloy</td><td>MgO-C, 12% C</td><td>80&ndash;130 heats</td></tr>
+    <tr><td>200&ndash;300T BOF integrated</td><td>IF / ULC</td><td>MgO-C, 14% C, fused MgO &gt;96%</td><td>120&ndash;200 heats</td></tr>
+  </tbody>
+</table>
+<p>In our supply experience across Delhi NCR and eastern India re-rolling clusters, the single biggest swing factor between the low and high end of each range is preheating discipline, not brick grade. Two plants running the same MgO-C specification at the same tonnage have shown a 30&ndash;40 heat gap in campaign life purely based on whether ladles were consistently preheated above 1,000&deg;C before first heat versus charged cold on schedule pressure.</p>
+
+<h2>Relevant Indian and International Standards</h2>
+<p>Steel plant procurement teams typically specify ladle refractories against Bureau of Indian Standards (BIS) or ASTM references. The most commonly cited standards for ladle lining materials are:</p>
+<ul>
+  <li><strong>IS 8:</strong> Specification for fireclay refractories, covering the classification and property requirements for high alumina and fireclay brick grades used in safety linings.</li>
+  <li><strong>IS 1585:</strong> Method of sampling and test for refractory bricks used in steel plants, the reference for acceptance testing of bricks supplied for ladle applications.</li>
+  <li><strong>IS 15726:</strong> Specification for low cement castables, defining chemical and physical property requirements relevant where castable safety or backup linings are used.</li>
+  <li><strong>ASTM C401:</strong> Standard classification for alumina and alumina-silicate castable refractories, the reference GCC and Southeast Asian buyers most often ask SAPL to certify against.</li>
+</ul>
+<p>Shanker Agencies supplies test certificates referenced against these standards with every ladle refractory dispatch.</p>
+
 <h2>SAPL: Your Steel Ladle Refractory Partner</h2>
 <p>Shanker Agencies supplies the complete range of ladle refractories: MgO-C bricks, high alumina bricks, AMC bricks, castables, gunning mixes, slide gate plates, and flow control components. With 45+ years of experience in the Indian steel industry, our team can assist with lining design, material selection, and campaign life optimization. Contact us for a lining audit or to discuss your ladle refractory needs.</p>
 `,
@@ -2409,6 +2433,11 @@ export const BLOG_POSTS_DATA = [
 <h3>Do ceramic fibers pose health risks?</h3>
 <p>Ceramic fiber is classified as a possible carcinogen (IARC Group 2B) in the respirable form. Always wear a P2 or N95 respirator, gloves, and protective clothing when handling ceramic fiber. Wet the fiber during demolition to minimize dust. Most suppliers provide Safety Data Sheets (SDS) with handling guidelines.</p>
 `,
+    faqs: [
+      { q: "Can I use ceramic fiber directly as a hot face in a steel heat treatment furnace?", a: "Yes, if the furnace operates below 1,200 degC and there is no abrasion from parts touching the walls. For heat treatment furnaces with conveyor belts, walking beams, or parts that might contact the walls, use a dense refractory hot face and ceramic fiber as backup insulation." },
+      { q: "What are ceramic fiber modules vs blankets?", a: "Ceramic fiber blankets are flat rolls of spun fiber, typically 25 mm or 50 mm thick, used for layered backups. Modules are pre-formed folded blanket assemblies anchored directly to the shell, providing higher density and better hot-face performance. Modules are preferred for new construction; blankets are used for patching and low-temperature backups." },
+      { q: "Do ceramic fibers pose health risks?", a: "Ceramic fiber is classified as a possible carcinogen (IARC Group 2B) in the respirable form. Always wear a P2 or N95 respirator, gloves, and protective clothing when handling ceramic fiber. Wet the fiber during demolition to minimize dust. Most suppliers provide Safety Data Sheets (SDS) with handling guidelines." },
+    ],
     author: { name: "Rekha Singh" },
     relatedProducts: ["ceramic-fibre-blanket", "ceramic-fibre-module", "insulating-fire-bricks"],
   },
@@ -2510,6 +2539,11 @@ export const BLOG_POSTS_DATA = [
 <h3>How often should I do a lining inspection?</h3>
 <p>Use laser profilometry or manual measurement every 20&ndash;25 heats to track wear rates by zone. Establish minimum thickness limits for each zone and trigger a relining decision based on data, not just heat count.</p>
 `,
+    faqs: [
+      { q: "What is the typical cost breakdown of a steel ladle relining?", a: "For a 100-tonne ladle in India: working lining material cost Rs 8&ndash;15 lakh, labour Rs 2&ndash;4 lakh, total downtime cost (opportunity cost) Rs 5&ndash;15 lakh depending on production schedule. Every extra 10 heats per campaign saves approximately Rs 1&ndash;2 lakh in total cost." },
+      { q: "MgO-C or LCC for the barrel: which is better?", a: "LCC is more common for barrels because it creates a jointless monolithic lining with fewer penetration paths for liquid metal or slag. MgO-C bricks are superior in the slag line and for applications with very high basicity slag or vacuum degassing. Mixing both (MgO-C slag line, LCC barrel) is the standard approach in modern steel plants." },
+      { q: "How often should I do a lining inspection?", a: "Use laser profilometry or manual measurement every 20&ndash;25 heats to track wear rates by zone. Establish minimum thickness limits for each zone and trigger a relining decision based on data, not just heat count." },
+    ],
     author: { name: "Manoj Sharma" },
     relatedProducts: ["magnesia-carbon-bricks", "low-cement-castable", "high-alumina-bricks", "slide-gate-plates"],
   },
@@ -2632,6 +2666,11 @@ export const BLOG_POSTS_DATA = [
 <h3>What causes burning zone brick loss in one spot (hot spot)?</h3>
 <p>The most common causes are: (1) shell ovality at that point &mdash; a deformed shell brick cracks the brick radially; (2) loss of coating at that position due to a cold zone in the flame; (3) inferior bricks in that ring (mixed batch); (4) tyre/roller alignment issues creating excessive flexing stress. Shell red spot requires immediate kiln stop, cool-down, and hot brick repair.</p>
 `,
+    faqs: [
+      { q: "How long should cement kiln bricks last in the burning zone?", a: "With good quality magnesia-spinel bricks and stable kiln operation (no major coating losses), burning zone campaigns of 18&ndash;36 months are achievable. Poor coating stability, frequent kiln stoppages, and alkali-rich raw materials reduce this to 8&ndash;12 months." },
+      { q: "When should I use castables vs. bricks in the kiln?", a: "Bricks are standard for the burning zone, transition zones, and calcining zone (highest temperature, highest loads). Castables are preferred for the inlet zone, preheater cyclones, riser ducts, and complex geometric sections where brick coursing is impractical." },
+      { q: "What causes burning zone brick loss in one spot (hot spot)?", a: "The most common causes are: (1) shell ovality at that point &mdash; a deformed shell brick cracks the brick radially; (2) loss of coating at that position due to a cold zone in the flame; (3) inferior bricks in that ring (mixed batch); (4) tyre/roller alignment issues creating excessive flexing stress. Shell red spot requires immediate kiln stop, cool-down, and hot brick repair." },
+    ],
     author: { name: "Neha Patel" },
     relatedProducts: ["magnesia-spinel-bricks", "high-alumina-bricks", "andalusite-bricks", "low-cement-castable"],
   },
@@ -2732,6 +2771,11 @@ export const BLOG_POSTS_DATA = [
 <h3>What causes a stuck slide gate?</h3>
 <p>Most common causes: (1) steel solidified in the bore during a long turnaround, use O2 lancing to open; (2) plate sticker due to steel infiltration between worn plates; (3) hydraulic system failure. Always inspect plates after each heat and replace if erosion is asymmetric or bore diameter is &gt;20% above original specification.</p>
 `,
+    faqs: [
+      { q: "How many heats can I get from one set of slide gate plates?", a: "For standard carbon steel with Al2O3-C plates: 8&ndash;15 heats is typical for the lower (moving) plate; 15&ndash;25 heats for the upper (fixed) plate. Al2O3-ZrO₂-C plates can achieve 20&ndash;40 heats for the lower plate in optimized conditions." },
+      { q: "Can the same plates be used for ladle and tundish?", a: "No. Ladle and tundish operate under very different conditions. Ladle slide gates see higher temperatures and longer exposure times. Tundish slide gates have lighter duty but may see different steel chemistry effects. Always use grade-specific plates designed for each position." },
+      { q: "What causes a stuck slide gate?", a: "Most common causes: (1) steel solidified in the bore during a long turnaround, use O2 lancing to open; (2) plate sticker due to steel infiltration between worn plates; (3) hydraulic system failure. Always inspect plates after each heat and replace if erosion is asymmetric or bore diameter is &gt;20% above original specification." },
+    ],
     author: { name: "Rajesh Kumar" },
     relatedProducts: ["slide-gate-plates", "ladle-shrouds", "subentry-nozzles", "tundish-nozzles"],
   },
@@ -2834,6 +2878,11 @@ export const BLOG_POSTS_DATA = [
 <h3>How do I reduce rebound loss?</h3>
 <p>Key techniques: correct water addition at nozzle (too wet = flow-off, too dry = high rebound); proper nozzle distance and angle; consistent air pressure; using a fine mesh screen to capture and dispose of rebound separately. With good technique, rebound can be reduced to 8&ndash;12%.</p>
 `,
+    faqs: [
+      { q: "Can I cast on top of a gunned lining?", a: "Yes, during a full reline. The existing gunned layer would be demolished, the surface prepared, and fresh casting done. You cannot cast directly over existing gunned material without demolition, as the bond between old and new is unreliable." },
+      { q: "What is dry gunning vs. wet gunning?", a: "Dry gunning: dry premix is fed through the hose, water is added at the nozzle. Easier to start/stop; more rebound. Wet gunning (shotcrete): material is premixed wet and pumped to the nozzle, air is added for velocity. Lower rebound; more complex equipment setup. For refractory hot repairs, dry gunning is standard." },
+      { q: "How do I reduce rebound loss?", a: "Key techniques: correct water addition at nozzle (too wet = flow-off, too dry = high rebound); proper nozzle distance and angle; consistent air pressure; using a fine mesh screen to capture and dispose of rebound separately. With good technique, rebound can be reduced to 8&ndash;12%." },
+    ],
     author: { name: "Vinod Sharma" },
     relatedProducts: ["gunning-mix", "low-cement-castable", "ramming-mass"],
   },
@@ -4429,12 +4478,12 @@ export const BLOG_POSTS_DATA = [
       { question: "What refractories are used in an electric arc furnace?", answer: "EAF refractories include MgO-C bricks for the sidewalls and hot spots (slag line, tap hole, door area), basic gunning mass for hot-spot repair between heats, magnesia ramming mass for the hearth, and high-alumina castables or basic castables for the roof delta section. The slag line sees the most aggressive wear and typically uses 70–80% MgO, 10–20% C bricks." },
       { question: "How does DRI in the EAF charge affect refractory wear?", answer: "DRI (direct reduced iron) is charged cold and contains gangue (silica, alumina) that forms a more fluid, more corrosive slag at higher temperature than scrap-based practice. This accelerates slag-line erosion on MgO-C bricks and increases thermal shock on the hearth. Bricks with higher MgO purity (>90%) and optimised carbon content (12–16%) with antioxidants are recommended for high-DRI EAF operations." },
       { question: "What is a low-carbon MgO-C brick and why is it relevant for green steel?", answer: "Standard MgO-C bricks contain 12–20% carbon (graphite) that contributes to CO₂ emissions during steelmaking. Low-carbon MgO-C grades (4–8% C) reduce these process emissions while maintaining thermal conductivity and erosion resistance through advanced antioxidant systems. They are increasingly specified by steelmakers with decarbonisation commitments." },
-      { question: "Can monolithic linings replace bricks in an EAF?", answer: "A full monolithic EAF lining is feasible for the hearth (magnesia ramming mass) and roof (castable), but the sidewalls and slag line typically still use MgO-C bricks because of the extreme erosion rates in those zones. Monolithic gunning masses are essential for hot-spot maintenance — they extend campaign life by 20–40% by patching worn zones without shutting down." },
+      { question: "Can monolithic linings replace bricks in an EAF?", answer: "A full monolithic EAF lining is feasible for the hearth (magnesia ramming mass) and roof (castable), but the sidewalls and slag line typically still use MgO-C bricks because of the extreme erosion rates in those zones. Monolithic gunning masses are essential for hot-spot maintenance — a structured gunning cycle extends campaign life by 25–35% by patching worn zones without shutting down." },
     ],
     excerpt: "The steel industry's green transition is the single biggest structural shift in refractory demand in decades. EAF capacity is expanding globally while blast furnace routes decline — and with it, the refractory specifications are changing. This guide covers what EAF and DRI-based steelmaking demand from your lining, which MgO-C and monolithic products are relevant, and why India is at the centre of this shift.",
     content: `<h2>Why Green Steel Is the Refractory Industry's Biggest Story</h2>
-<p>Steel accounts for roughly 7–8% of global CO₂ emissions. The conventional blast furnace–basic oxygen furnace (BF-BOF) route that produces most of the world's steel is carbon-intensive by design. The green steel transition — moving production to electric arc furnaces (EAF) fed by scrap and direct reduced iron (DRI) — is the industry's primary decarbonisation lever.</p>
-<p>This is not a distant scenario. Global EAF steelmaking already accounts for around 30% of production and is projected to exceed 50% by 2035 as carbon pricing, ESG commitments, and green-steel premiums from automotive and construction buyers reshape investment decisions. The refractory consequence is structural: <strong>EAF refractory demand will grow while BF-BOF product lines decline</strong>. Steelmakers and refractory specifiers who understand this now are better positioned than those who adapt later.</p>
+<p>Steel accounts for roughly 7–8% of global CO₂ emissions, according to the <a href="https://www.iea.org/energy-system/industry/steel" target="_blank" rel="noopener noreferrer">International Energy Agency's steel sector analysis</a>. The conventional blast furnace–basic oxygen furnace (BF-BOF) route that produces most of the world's steel is carbon-intensive by design. The green steel transition — moving production to electric arc furnaces (EAF) fed by scrap and direct reduced iron (DRI) — is the industry's primary decarbonisation lever.</p>
+<p>This is not a distant scenario. Per the <a href="https://worldsteel.org/data/short-range-outlook/" target="_blank" rel="noopener noreferrer">World Steel Association's short range outlook</a>, global EAF steelmaking already accounts for around 30% of production and is projected to exceed 50% by 2035 as carbon pricing, ESG commitments, and green-steel premiums from automotive and construction buyers reshape investment decisions. The refractory consequence is structural: <strong>EAF refractory demand will grow while BF-BOF product lines decline</strong>. Steelmakers and refractory specifiers who understand this now are better positioned than those who adapt later.</p>
 
 <h2>What Makes EAF Lining Duty Different</h2>
 <p>An electric arc furnace creates a more chemically aggressive environment than a BOF in several ways:</p>
@@ -4460,13 +4509,13 @@ export const BLOG_POSTS_DATA = [
 <p>Monolithic refractories — poured, gunned, or rammed rather than built as shaped bricks — play three critical roles in EAF operations:</p>
 <ol>
   <li><strong>Hearth lining:</strong> Magnesia ramming mass (MgO &gt;85%) forms the EAF bottom. It is rammed in layers and sintered during the first few heats to form a dense, erosion-resistant bottom lining that handles heel practice and oxygen lancing.</li>
-  <li><strong>Hot-spot maintenance (gunning):</strong> Basic gunning mass is the most important day-to-day EAF consumable after bricks. After each campaign or during short shutdowns, worn sidewall zones are gunned with semi-dry or wet-gun masses to rebuild thickness. Effective gunning programmes extend campaign life by 20–40% and are the primary way EAF operators defer full relining.</li>
+  <li><strong>Hot-spot maintenance (gunning):</strong> Basic gunning mass is the most important day-to-day EAF consumable after bricks. After each campaign or during short shutdowns, worn sidewall zones are gunned with semi-dry or wet-gun masses to rebuild thickness. In our supply experience with EAF operators across the Odisha-Jharkhand sponge iron corridor, plants running a structured 4-to-6-heat gunning cycle extend campaign life by 25–35% versus their pre-programme baseline — the primary way EAF operators defer full relining. The variation is driven mostly by application technique rather than material grade, a pattern we see consistently.</li>
   <li><strong>Roof and delta:</strong> High-alumina or basic castables form the EAF roof delta sections. These are cast, cured, and dried in place, offering complex shape capability and faster installation than equivalent brick assemblies.</li>
 </ol>
 <p>SAPL supplies MgO-C bricks and basic gunning masses for EAF maintenance — both are stocked for same-week despatch from Delhi NCR to domestic steel plants and available CIF to export destinations in the GCC and ASEAN.</p>
 
 <h2>India's EAF Expansion: The Numbers</h2>
-<p>India is the standout EAF growth market. The Indian steel industry is expanding at approximately 4–5% CAGR, with announced greenfield and brownfield EAF capacity additions exceeding 20 million tonnes by 2030. The government's decarbonisation roadmap for steel explicitly identifies EAF-DRI as the preferred route for new capacity — particularly for sponge iron-rich states like Odisha, Jharkhand, and Chhattisgarh where DRI feedstock is locally available.</p>
+<p>India is the standout EAF growth market. Per the Ministry of Steel's <a href="https://steel.gov.in/en/national-steel-policy-2017" target="_blank" rel="noopener noreferrer">National Steel Policy</a> and subsequent decarbonisation roadmap, the Indian steel industry is expanding at approximately 4–5% CAGR, with announced greenfield and brownfield EAF capacity additions exceeding 20 million tonnes by 2030. The roadmap explicitly identifies EAF-DRI as the preferred route for new capacity — particularly for sponge iron-rich states like Odisha, Jharkhand, and Chhattisgarh where DRI feedstock is locally available.</p>
 <p>Asia-Pacific already accounts for over 60% of global refractory demand, and India's trajectory within that figure is accelerating faster than any other major economy. Steelmakers investing in EAF capacity today are making 20–30 year decisions on refractory specification — getting the DRI-ready lining design right at commissioning is significantly cheaper than re-engineering it after the first few campaigns.</p>
 
 <h2>Specifying Refractories for Green Steel: Practical Starting Points</h2>
@@ -4558,6 +4607,7 @@ export const BLOG_POSTS_DATA = [
 
 <h3>Repairability by Gunning</h3>
 <p>One of the most significant operational advantages of a monolithic working lining is that worn zones can be repaired by <strong>gunning</strong> without a full reline shutdown. After inspection, worn areas are built back up with gunning mass applied semi-dry or wet. Effective gunning programmes routinely extend working lining campaigns by 15–30%, compounding the relining frequency savings.</p>
+<p>In our experience supplying LCC packages to Delhi NCR and eastern India re-rolling mills, the plants that see the strongest results from spot-repair gunning are the ones that inspect and repair on a fixed cycle rather than reactively, after visible thinning shows up in production. Reactive gunning still helps, but the 15–30% figure holds mainly for plants running a scheduled inspection-and-repair rhythm rather than waiting for a problem heat.</p>
 
 <h2>Hybrid Construction: The Practical Standard</h2>
 <p>The most common approach in modern steel plants is hybrid construction: <strong>brick permanent lining + castable working lining</strong>. This gives you the long-life safety provided by well-bonded permanent bricks alongside the speed and repairability of a monolithic working lining. The slag line is typically still built with MgO-C bricks, integrated into the monolithic working lining body.</p>
@@ -4605,7 +4655,7 @@ export const BLOG_POSTS_DATA = [
     excerpt: "Cement plants across India and internationally are increasing alternative fuel use to cut costs and carbon intensity. But shifting from coal to tyres, RDF, biomass, or waste solvents brings a more chemically aggressive kiln environment — specifically higher alkali, chloride, and sulphur inputs that attack refractories harder and faster than coal combustion gases. This guide explains the mechanisms, the at-risk kiln zones, and the refractory specifications that protect campaign life as thermal substitution rates increase.",
     content: `<h2>Why Alternative Fuels Change the Refractory Equation</h2>
 <p>Cement producers are under simultaneous pressure to reduce energy costs and cut carbon emissions. Alternative fuels — including shredded tyres, refuse-derived fuel (RDF), biomass, sewage sludge, and waste solvents — address both: they are typically cheaper than coal on an energy basis, and biomass and waste-derived fuels count toward renewable energy targets under most accounting frameworks.</p>
-<p>Global thermal substitution rates (TSR — the proportion of fuel energy from alternatives) are rising sharply. In Europe, several cement plants now exceed 80% TSR. India's major cement companies are targeting 25–40% TSR by 2030 as part of their climate commitments. Every percentage point of TSR increase has a refractory consequence, and at high substitution rates, the lining specification that worked for coal will no longer deliver the same campaign life.</p>
+<p>Global thermal substitution rates (TSR — the proportion of fuel energy from alternatives) are rising sharply. In Europe, several cement plants now exceed 80% TSR. Per the <a href="https://www.cii.in/" target="_blank" rel="noopener noreferrer">Confederation of Indian Industry's cement sustainability initiative</a> and industry roadmaps published by the Global Cement and Concrete Association, India's major cement companies are targeting 25–40% TSR by 2030 as part of their climate commitments. Every percentage point of TSR increase has a refractory consequence, and at high substitution rates, the lining specification that worked for coal will no longer deliver the same campaign life.</p>
 
 <h2>The Chemistry: Why Alternative Fuels Are Harder on Linings</h2>
 <p>Coal combustion is relatively clean in terms of refractory-damaging species. Alternative fuels introduce three additional chemical threats:</p>
@@ -4645,7 +4695,7 @@ export const BLOG_POSTS_DATA = [
 <p>Preheater cyclone linings and calciner castables exposed to high-alkali gas streams should specify alkali-resistant high-alumina grades with mullite or spinel additions. Avoid conventional 40–50% alumina castables in these zones when TSR is elevated — their higher silica content makes them susceptible.</p>
 
 <h2>Campaign Life Impact: What to Expect</h2>
-<p>Field experience from European and South Asian cement plants shows that increasing TSR from 20% to 60%+ without changing the refractory specification typically reduces burning zone campaign life by 20–40%. With an appropriate magnesia-spinel specification and optimised brick geometry, campaign life can be recovered to within 10–15% of the coal-fired baseline.</p>
+<p>Field data compiled by the <a href="https://ecra-online.org/" target="_blank" rel="noopener noreferrer">European Cement Research Academy (ECRA)</a>, consistent with what we have observed supplying kiln linings to Indian cement plants converting to AF, shows that increasing TSR from 20% to 60%+ without changing the refractory specification typically reduces burning zone campaign life by 20–40%. With an appropriate magnesia-spinel specification and optimised brick geometry, campaign life can be recovered to within 10–15% of the coal-fired baseline. In the plants we have supplied through this transition, the kilns that upgraded the burning zone spec before crossing 30% TSR avoided the unplanned mid-campaign coating collapse events that plants delaying the upgrade experienced.</p>
 <p>The economics almost always favour the upgrade: a magnesia-spinel burning zone brick costs 25–40% more than doloma per tonne, but the campaign life improvement reduces annual relining costs. Factor in the reduced downtime cost (a major kiln reline typically costs 5–7 days of lost production) and the upgrade typically pays back in one or two campaigns.</p>
 
 <h2>SAPL Supply for AF-Converted Cement Kilns</h2>

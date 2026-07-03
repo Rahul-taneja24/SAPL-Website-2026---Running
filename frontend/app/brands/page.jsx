@@ -8,7 +8,7 @@ export const metadata = {
     title: 'Authorized Refractory Brands | Shanker Agencies',
     description: "Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. Supply partner for Calderys, TRL Krosaki & Mahakoshal. Genuine products and technical support since 1980.",
     url: 'https://www.shankeragencies.com/brands',
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Refractory Brands' }],
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Refractory Brands' }],
   },
 };
 

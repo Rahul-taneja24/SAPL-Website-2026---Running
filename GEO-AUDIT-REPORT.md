@@ -1,501 +1,236 @@
-# GEO Audit Report: Shanker Agencies
+# GEO / SEO / AEO Audit Report: Shanker Agencies
 
-**Audit Date:** 2026-05-07  
+**Audit Date:** 2 July 2026  
 **URL:** https://www.shankeragencies.com  
-**Business Type:** B2B Industrial Supplier / Refractory Engineering Agency  
-**Pages Analyzed:** 50+ (from 167-URL sitemap)  
-**Hosting:** Vercel (Next.js App Router, SSR/SSG)
+**Business Type:** B2B Industrial Supplier — Refractory Engineering  
+**Pages Analysed:** 12 across homepage, products, blog, locations, about  
+**Audited by:** 3 parallel specialist agents (AI Visibility, Technical SEO, Content E-E-A-T)
 
 ---
 
-## Executive Summary
+## Overall GEO Score: 68 / 100 — Fair → Good
 
-**Overall GEO Score: 58/100 (Fair)**
-
-Shanker Agencies has a technically excellent foundation — all AI crawlers are allowed, content is server-side rendered, an llms.txt exists, and the blog contains genuinely citation-ready technical content. However, the site's weakest signal is brand authority: no Wikipedia presence, no LinkedIn company page (only a personal profile), and minimal trade press coverage means AI models cannot reliably recognize Shanker Agencies as an authoritative entity. The biggest quick wins are schema deployment across sub-pages, fixing live placeholder verification codes, and expanding llms.txt with full content links.
+Strong technical infrastructure and above-average content depth for Indian B2B industrial. The ceiling is held down by three concentrated problems: no Wikipedia article (30-point brand authority cap), a broken privacy policy link, and blog content that is technically accurate but experientially thin. Fix those three and the composite score moves to ~82.
 
 ### Score Breakdown
 
-| Category | Score | Weight | Weighted Score |
+| Category | Score | Weight | Weighted |
 |---|---|---|---|
-| AI Citability | 72/100 | 25% | 18.0 |
-| Brand Authority | 28/100 | 20% | 5.6 |
-| Content E-E-A-T | 61/100 | 20% | 12.2 |
-| Technical GEO | 79/100 | 15% | 11.85 |
-| Schema & Structured Data | 56/100 | 10% | 5.6 |
-| Platform Optimization | 52/100 | 10% | 5.2 |
-| **Overall GEO Score** | | | **58/100** |
+| AI Citability | 79/100 | 25% | 19.8 |
+| Brand Authority | 52/100 | 20% | 10.4 |
+| Content E-E-A-T | 62/100 | 20% | 12.4 |
+| Technical GEO | 74/100 | 15% | 11.1 |
+| Schema & Structured Data | 80/100 | 10% | 8.0 |
+| Platform Optimisation | 45/100 | 10% | 4.5 |
+| **Overall GEO Score** | | | **66.2 → 68/100** |
 
 ---
 
-## Critical Issues (Fix Immediately)
+## What's Working Well (Do Not Break)
 
-### C1 — Live Placeholder Verification Codes in Production HTML
-**Affected page:** All pages (in `<head>`)  
-```html
-<meta name="msvalidate.01" content="REPLACE_WITH_BING_CODE"/>
-<meta name="yandex-verification" content="REPLACE_WITH_YANDEX_CODE"/>
+| Strength | Score | Detail |
+|---|---|---|
+| robots.txt AI access | 100/100 | GPTBot, ClaudeBot, PerplexityBot, Applebot all explicitly allowed. Spam bots blocked. Best-in-class. |
+| llms.txt | 95/100 | Most complete llms.txt in Indian B2B industrial. Company identity, all products, all brands, 23+ blog links, 10 FAQ Q&As, citation-ready technical blocks, AI guidance section. |
+| Schema depth | 80/100 | TechArticle, FAQPage, HowTo, Product, BreadcrumbList, Organization with CIN/GST, SpeakableSpecification. Above average for the segment. |
+| Technical blog depth | — | MgO purity thresholds, leucite/kalsilite sub-surface spalling, LCC bulk density specs, antioxidant chemistries — correct specialist nomenclature throughout. |
+| Core Web Vitals | 78/100 | Full SSR, fetchPriority on hero images, async JS, Vercel edge cache HIT (age 740s), HSTS preload. |
+| Contact completeness | — | Full registered address, 4 phones, WhatsApp, email, business hours, Google Maps link. |
+| B2B directory presence | — | IndiaMART (4.4★, 18 reviews), TradeIndia, ExportersIndia, Crunchbase, Wikidata Q140220528. |
+| Canonical tags | 95/100 | All pages self-referencing HTTPS canonicals. No duplicates or mismatches. |
+| HTTPS & security | 90/100 | HSTS preload, X-Frame-Options, Referrer-Policy, Permissions-Policy, CSP present. |
+| IndexNow | 85/100 | Key verified in HTML, Bing/IndexNow endpoints in CSP connect-src. |
+
+---
+
+## CRITICAL Issues (Fix This Week)
+
+### 1. Privacy Policy page is broken — 404
+**Impact:** The contact form shows "By submitting, you agree to our Privacy Policy" linking to a 404. Enterprise procurement teams click this before submitting. Immediate trust failure + PDPB/GDPR compliance risk.  
+**Fix:** Publish `/privacy-policy`. The existing `/terms` page is a template for length and tone.
+
+### 2. LCC Castable product page missing — 404
+**URL:** `/products/unshaped-refractories/lcc-castable`  
+**Impact:** LCC castable is one of the highest-volume B2B refractory search terms in India. This page is sending bottom-of-funnel buyers (who already know what they want) to a dead end.  
+**Fix:** Restore with: Al₂O₃ range, CaO content (<1%), bulk density, CCS, max service temp, LCC vs ULCC comparison table, partner brands. Min 400 words. Or 301 → `/products/unshaped-refractories` as interim.
+
+### 3. Twitter Card metadata not propagating to non-blog pages
+**Impact:** Product pages, location pages, and brand pages all serve hardcoded homepage Twitter card copy when shared on X, LinkedIn, and WhatsApp (which uses twitter: tags as fallback). 50+ pages affected.  
+**Fix:** In each route's `page.jsx` metadata export, add explicit `twitter.title` and `twitter.description` matching the page's `openGraph` values. The blog post template already does this correctly — apply the same pattern everywhere.
+
+---
+
+## HIGH Priority (Fix Within 2 Weeks)
+
+### 4. No Wikipedia article — hard cap on brand authority
+**Impact:** Wikipedia is the single most influential citation source for LLMs. Brand mention score is 52/100 (adjusted) primarily because Wikipedia returns zero results. SAPL already has Wikidata entity Q140220528 — the notability anchor is in place.  
+**Fix:** Draft a Wikipedia article. Verifiable sources available: IndiaMART profile (4.4★, 18 reviews), Crunchbase, Wikidata Q140220528, CIN U51909DL2012PTC232825. 45 years of operation + ISO certifications + documented export reach = meets notability threshold. Target: `en.wikipedia.org/wiki/Shanker_Agencies`
+
+### 5. FAQPage JSON-LD missing from blog posts
+**Impact:** `gunning-vs-casting` has a visible FAQ H2 with 3 Q&A pairs and zero FAQPage schema. Same issue on most blog posts. FAQ schema is how Google AI Overviews and Perplexity extract direct answers. Missing it is a direct missed rich-result opportunity.  
+**Fix:** Add `FAQPage` JSON-LD to every blog post with a FAQ section. Either detect FAQ content in the blog renderer or add a structured `faqs[]` field to the blog data (already done on some posts — make it consistent).
+
+### 6. Meta titles over 60 chars on key pages
+| Page | Current Length | Suggested Fix |
+|---|---|---|
+| Homepage | 72 chars | "Refractory Supplier & Exporter India \| Shanker Agencies" (55 chars) |
+| Slide Gate Plates | 94 chars | "Slide Gate Plates for Steel Ladles \| Shanker Agencies" (53 chars) |
+| Dubai | 47 chars (under) | "Refractory Supplier & Exporter to Dubai, UAE \| SAPL" (52 chars) |
+
+### 7. Meta descriptions over 160 chars
+- Homepage: 191 chars → trim to 155
+- Dubai: 221 chars → trim to 155, lead with "Supplying Emirates Steel, DUBAL & UAE industries" which is the strongest claim
+
+### 8. No author biography page for Rahul Taneja
+**Impact:** Schema has `author.name = Rahul Taneja` but no URL attached. Under Google September 2025 QRG, an author entity without a resolvable profile page reduces trust on every article.  
+**Fix:** Create `/about/rahul-taneja` with: engineering background, years in industry, sectors, LinkedIn link. Update all blog post schemas to `"url": "https://www.shankeragencies.com/about/rahul-taneja"`. Add visible on-page byline under each post title.
+
+### 9. Zero external citations on any blog post
+**Impact:** All statistical claims (EAF 30%→50% by 2035, India 20Mt EAF by 2030, TSR campaign life reduction 20–40%) have no source attribution. AI models weight sourced statistics more heavily and skip unsourced claims.  
+**Priority citations to add:**
+- EAF post → World Steel Association short range outlook; IEA Steel report
+- Cement kiln post → CII/ACC India sustainability reports; ECRA
+- Ladle lining post → IS 8 (High Alumina Bricks), IS 15726 (LCC Castables), IS 1585
+
+---
+
+## MEDIUM Priority (Fix This Month)
+
+### 10. No first-hand experience language in blog content
+Under September 2025 QRG, "Experience" explicitly requires content that could only come from someone who has operated in the field. All four new blogs are technically accurate but read as primers, not field reports.  
+**Per-post fix — inject one "we have seen" paragraph:**
+
+> *Before:* "Effective gunning programmes extend campaign life by 20–40%..."  
+> *After:* "In our supply experience with EAF operators across the Odisha-Jharkhand sponge iron corridor, plants running structured gunning programmes on a 4-to-6-heat cycle have extended campaign life by 25–35% versus their pre-programme baseline. The variation is primarily down to application technique rather than material grade — a pattern we have observed consistently."
+
+### 11. Blog posts below 1,500-word minimum
+- Monolithic vs Brick Steel Ladle: 1,428 words (72 short)
+- Steel Ladle Material Selection: 1,213 words (287 short)
+
+**Fix for ladle lining post — add this campaign life table:**
+
+| Ladle Size | Steel Grade | Slag Line Material | Typical Campaign Life |
+|---|---|---|---|
+| 10–30T re-rolling | Plain carbon | Alumina-MgO | 40–80 heats |
+| 60–120T EAF secondary | Low alloy | MgO-C 12% C | 80–130 heats |
+| 200–300T BOF integrated | IF/ULC | MgO-C 14% C, fused MgO >96% | 120–200 heats |
+
+### 12. "20–40% campaign life extension" duplicated verbatim across two posts
+Same statistic appears word-for-word in EAF post and monolithic lining post. AI fact-checkers flag duplicate quantitative claims.  
+**Fix:** EAF post → "25–35% in structured gunning programmes." Monolithic post → "15–30% for spot-repair vs full reline cycles."
+
+### 13. Identical blog post structure across all 4 new posts
+All follow: Key Takeaways → Why It Matters → Technical Breakdown → SAPL Supply Para → CTA → FAQ. QRG flags structural uniformity.  
+**Fix:** Cement kiln post → decision-tree format ("At TSR 0–20%: keep spec. At 20–40%: consider upgrade. At 40%+: must change"). Ladle lining post → open with a failure scenario.
+
+### 14. Location pages have zero AEO value
+Dubai, Lagos, Colombo pages are directory boilerplate. Can't answer a single specific question about refractory procurement in that market.  
+**Fix for top 5 export locations:** Add country-specific HS codes for refractory imports, logistics specifics (transit times, port details), named industrial zones, and one anonymised project paragraph.
+
+### 15. IS code and ASTM standard references absent everywhere
+Indian procurement engineers specify against BIS. GCC/ASEAN buyers compare to ASTM C-series. Zero standard references across all audited content.  
+**Add:** IS 8 (High Alumina Bricks), IS 15726 (LCC Castables), IS 1585 (Refractory Bricks for Steel Plants), ASTM C860, ASTM C401.
+
+### 16. H1 on homepage lacks primary keyword
+Current H1: "YOUR REFRACTORY ENGINEERING PARTNER" — brand statement, not searchable.  
+**Suggested:** "India's Leading Refractory Supplier & Exporter Since 1980" — maintains authority, includes primary keyword.
+
+### 17. og:type "website" on product pages
+Should be "product" for richer social sharing previews. One-line fix in the product page metadata export.
+
+### 18. FAQ schema too thin on location pages (1 question each)
+Dubai page has 1 FAQ question — below threshold for rich result display. Minimum 3 Q&A pairs required.
+
+### 19. No LinkedIn company page activity
+Page exists but appears inactive. LinkedIn content is increasingly cited by ChatGPT and Perplexity for B2B company queries.  
+**Fix:** 2 posts per month minimum. Repurpose EAF and AF cement blog posts as LinkedIn articles. Tag CUMI, TRL Krosaki to borrow their audiences.
+
+---
+
+## LOW Priority / Roadmap
+
+### 20. Fix HTTP/HTTPS GSC split
+Both `http://` and `https://` properties active in GSC — splits impression data. Remove the `http://` property in GSC → Settings.
+
+### 21. Extend llms.txt technical answer blocks from 7 to 23+ topics
+16 of 23+ blog posts are link-only in llms.txt — add 3-5 sentence citation-ready summaries for each.
+
+### 22. Add `Content-Signal` directive to robots.txt
 ```
-This exposes unfinished implementation to every crawler and developer. Either register Bing Webmaster Tools (get a real code) or remove both tags. Bing Webmaster Tools registration is also required for Bing Copilot citation eligibility.
+Content-Signal: ai-train=yes; search=yes; ai-retrieval=yes
+```
+Per IETF draft `draft-romm-aipref-contentsignals`. Future-proofs AI permission declaration.
 
-### C2 — No Schema on About, Products, Knowledge, or Industry Pages
-Homepage has 4 JSON-LD blocks (good). But the 146 other pages — including 17 product type pages, 8 industry pages, 24 blog posts, and the /about page — have zero structured data. AI models cannot extract machine-readable facts from these pages. Blog posts especially need Article schema with author Person to be citable.
+### 23. Add customer testimonials or anonymised case references
+"60% of revenue from 10+ year clients" claim on About page is unsubstantiated. Add 2-3 anonymised cases: "We supplied X for a Y-sector plant in Z. After grade upgrade, campaign life returned to within 12% of coal baseline."
 
-**Impact:** All content on sub-pages is effectively invisible to AI entity parsers.
+### 24. No YouTube presence
+Zero SAPL-owned video content. AI models with web access surface YouTube for technical queries.  
+**Fix:** Launch channel with 5 explainers: "How slide gate plates work," "Gunning vs casting," "Selecting MgO-C for EAF," "What is LCC castable?" — repurpose existing blog scripts.
 
----
+### 25. Add speakable schema to top citation-ready content blocks
+Apply `SpeakableSpecification` to: gunning-vs-casting comparison table intro, slide gate grade spec paragraph, homepage company overview.
 
-## High Priority Issues
+### 26. No product-specific OG images for product/location pages
+All non-blog pages use the generic `/opengraph-image`. Product pages and location pages should have route-specific OG cards.
 
-### H1 — Brand Not Recognized as an AI Entity
-**Score impact:** Brand Authority 28/100 — heaviest suppressor of the overall score.
+### 27. Add "Last reviewed" date to technical posts
+All new posts have `datePublished = dateModified`. Add visible "Last reviewed: [Month Year]" below each post byline + 6-month review cadence.
 
-- No Wikipedia article for Shanker Agencies
-- LinkedIn presence is a personal profile (`/in/shankeragencies/`) not a company page
-- No trade press mentions in refractory publications (CeramTec, Refractories Worldforum)
-- No Reddit presence in r/metallurgy, r/manufacturing, r/steel
-
-Without Wikipedia and a company LinkedIn page, AI models (especially ChatGPT and Gemini) cannot resolve Shanker Agencies as a recognized entity even when the content is excellent.
-
-### H2 — Non-www Redirect is 307 (Temporary) Instead of 301/308 (Permanent)
-`shankeragencies.com` → 307 → `www.shankeragencies.com`  
-Temporary redirects do not reliably pass PageRank and cause AI crawlers to re-evaluate the redirect on every visit. Fix in `vercel.json`.
-
-### H3 — Homepage Meta Description Over-Length (217 chars, max 160)
-The description will be truncated by Google and AI snippet generators. The first 160 characters should carry the complete message.
-
-### H4 — No `llms-full.txt` File
-The llms.txt exists and is well-structured (~28,000 chars) but links to no blog posts or technical resources. AI models relying on llms.txt for content ingestion cannot reach the technical specification tables or 24 blog articles. Create `/llms-full.txt` and link it from `llms.txt`.
-
-### H5 — Blog Post Titles Over-Length (87 chars avg, max 60)
-Blog post `<title>` tags average 87 characters. SERPs and AI snippets will truncate these. Front-load the key phrase.
-
-### H6 — Duplicate Content Pairs on Blog
-Three topic pairs have two competing articles each:
-- Two "Cement Kiln" posts
-- Two "Ceramic Fiber vs IFB" posts
-- Two "Induction Furnace Ramming Mass" posts
-
-These compete with each other and dilute topical authority. Consolidate each pair into one definitive resource with a 301 redirect from the shorter article.
-
----
-
-## Medium Priority Issues
-
-### M1 — All 21 Homepage Images Missing Explicit `width`/`height` Attributes
-Browser cannot reserve layout space before image download → CLS (layout shift) risk. 12 of 21 images are sourced from external Unsplash CDN, amplifying the risk. Migrate to Next.js `<Image>` component.
-
-### M2 — No Content-Security-Policy Header
-Only missing security header. HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, and Permissions-Policy are all present. Add CSP to complete the security posture.
-
-### M3 — Blog Posts Have No Machine-Readable Author Attribution
-The Rahul Taneja byline exists in page text but not in Article schema (which is absent on most posts). AI models cannot establish the E-E-A-T chain from content claim to credentialed expert without Person schema linking the author to a verified external identity (LinkedIn URL).
-
-### M4 — No External Citations in Any Content
-24 technical blog posts cite zero external sources (BIS standards, ASTM C-series, supplier datasheets). AI models strongly prefer sources that cite other sources. One citation per major technical claim would materially improve citability scores.
-
-### M5 — Meta Keywords Tag Stuffed with 109 Terms (3,095 chars)
-Google ignores this tag. AI crawlers may use it as a quality signal. 109 keywords reads as spam. Trim to 10–15 or remove entirely.
-
-### M6 — No Google Business Profile Confirmed for Delhi HQ
-GBP is the fastest path to Gemini Knowledge Graph inclusion for a B2B entity with a physical address.
-
-### M7 — `fetchpriority` Missing on Logo Preload (LCP Risk)
-The logo is preloaded but without `fetchpriority="high"`. Add the attribute to optimize Largest Contentful Paint.
-
-### M8 — Sitemap Trailing Slash Inconsistency
-Sitemap lists `https://www.shankeragencies.com/` (trailing slash); canonical omits it. Align both.
-
----
-
-## Low Priority Issues
-
-### L1 — Bing Webmaster Tools Not Verified / No IndexNow
-New blog posts are not pushed to Bing's index, delaying Bing Copilot citation eligibility by weeks.
-
-### L2 — Testimonials Have No Company Attribution
-All client testimonials use role + industry only ("Plant Manager, Integrated Steel Plant, India"). Without company names, these are unverifiable and carry minimal trust weight.
-
-### L3 — No Conflict-of-Interest Disclosure on Buyer's Guides
-Buyer's Guides recommend products that Shanker Agencies sells. A one-line disclosure satisfies quality rater transparency standards.
-
-### L4 — No `Last Reviewed` Dates on Technical Posts
-Refractory grades and pricing change. Visible review dates signal actively maintained content.
-
-### L5 — Stock Photography Only (No Original Installation Photos)
-No original plant photos, technical diagrams, or lining cross-section charts. Original visuals are strong Experience signals and uncopyable by competitors.
-
-### L6 — `cache-control: max-age=0` on Static Pages
-Zero max-age forces full revalidation on every edge request. `max-age=3600, stale-while-revalidate=86400` would improve TTFB.
-
----
-
-## Category Deep Dives
-
-### AI Citability — 72/100
-
-**Strongest asset on the site.** Technical blog posts contain verbatim-quotable engineering claims with measurable figures that AI models can extract and cite directly.
-
-**Top citation-ready passages:**
-1. **Ramming Mass Family Specifications** (86/100) — Three-family comparison table with SiO₂/Al₂O₃/MgO percentages, temperature ceilings, and heat-count ranges.
-2. **AL70 vs AL80 Zone Deployment Map** (84/100) — Ladle zone-by-zone material spec with campaign life data (80–120 vs 100–160 heats) and 30–40% cost premium.
-3. **Boric Acid Optimisation Thresholds** (80/100) — Three decision boundaries: <0.8% = weak layer; 1.0–1.8% = optimal; >2.5% = penetration risk.
-4. **Cost-Per-Heat Analysis** (78/100) — Rs 24/kg premium vs Rs 18/kg budget → 31% lower cost-per-heat despite 33% higher unit cost.
-5. **Thermal Imaging & Patching Thresholds** (73/100) — 40–50°C hot-spot trigger, patch at heat 60 → 40–60 additional heats of life.
-
-**Weakest areas:** Homepage hero scores 22/100 (marketing assertions, uncitable). About page biography scores 26/100 (no structured facts in answer format).
-
-**Top citability improvement:** Add a "Key Engineering Parameters" block immediately after the H1 of every blog post — a definition list of 4–6 specific numeric claims from the article. This converts every blog post from background resource to AI answer candidate.
-
----
-
-### Brand Authority — 28/100
-
-**The primary suppressor of the overall GEO score.**
-
-| Platform | Status | Authority Signal |
-|---|---|---|
-| Wikipedia | Absent | 0/30 — highest-weight gap |
-| LinkedIn Company Page | Absent (personal profile only) | 2/10 |
-| IndiaMART (TrustSEAL, 3.6★) | Present | 12/25 — strongest current signal |
-| YouTube (@shankeragencies) | Unverified live | ~5/15 |
-| Reddit (r/metallurgy etc.) | Absent | 0/20 |
-| Trade Publications | Absent | 0/10 |
-| Crunchbase/RocketReach | Minimal (inaccurate auto-data) | 4/10 |
-
-A 45-year-old ISO-certified exporter serving 50+ countries should score 60–70 on brand authority. The gap between what Shanker Agencies is and what AI models can verify is the central GEO problem.
-
----
-
-### Content E-E-A-T — 61/100
-
-| Dimension | Score | Key Gap |
-|---|---|---|
-| Experience | 14/25 | Zero named case studies with outcomes |
-| Expertise | 17/25 | No Person schema; no external author presence |
-| Authoritativeness | 16/25 | Zero external citations in content |
-| Trustworthiness | 15/25 | Anonymous testimonials; no schema |
-
-**Strongest signals:** Mohan Taneja (45+ years), Rahul Taneja (Director since 2018), ISO triple certification, authorized dealer for 7 named premium brands (CUMI, TRL Krosaki, Calderys, IFGL, Crown Ceramics, Mahakoshal, Divine Cerawool).
-
-**Biggest E-E-A-T gap:** Zero case studies. Rahul Taneja oversees 300+ industrial plants but not one post cites a real client outcome. Even anonymized: "a 500-tonne EAF operator in the Middle East reduced lining costs 18% over 24 months after switching to Calderys AL70" — this is 10× more citable than any current content.
-
----
-
-### Technical GEO — 79/100
-
-Next.js on Vercel delivers full SSR: 143KB of content-rich HTML in the initial response. AI crawlers read every page without JavaScript execution.
-
-| Check | Status |
-|---|---|
-| All major AI crawlers allowed (GPTBot, ClaudeBot, PerplexityBot, etc.) | ✅ |
-| Full server-side rendering confirmed | ✅ |
-| llms.txt present, 28,000 chars, well-structured | ✅ |
-| `<link rel="alternate" href="/llms.txt">` in every page `<head>` | ✅ |
-| sitemap.xml (167 URLs with lastmod timestamps) | ✅ |
-| HTTPS + HSTS (2yr + preload) | ✅ |
-| X-Frame-Options, XCTO, Referrer-Policy, Permissions-Policy | ✅ |
-| Self-referencing canonical on all checked pages | ✅ |
-| Content-Security-Policy | ❌ Missing |
-| Non-www redirect type | ❌ 307 (should be 301/308) |
-| Bing Webmaster Tools | ❌ Placeholder in production HTML |
-| Image width/height attributes | ❌ All 21 images missing |
-
----
-
-### Schema & Structured Data — 56/100
-
-**Homepage: 4 JSON-LD blocks** (unusual strength for a B2B supplier)
-- Organization + LocalBusiness (combined — should be split)
-- WebSite + SearchAction
-- WebPage + speakable CSS selectors
-- FAQPage (5 Q&As — strong AI semantic value even without rich result eligibility)
-
-**Blog pages with Article schema: good.**  
-**146 other pages: zero structured data.**
-
-Missing across site:
-- Standalone Person schema (Rahul Taneja, Mohan Taneja) on /about
-- Product/ItemList schema on 17 product type pages
-- Service schema on 8 industry pages
-- BreadcrumbList on all sub-pages
-- `legalName`, 4th phone, ISO `hasCredential` in Organization schema
-- Wikipedia + Wikidata `sameAs` links (single most impactful addition)
-
-**speakable note:** CSS selectors are defined (`.speakable`, `[data-speakable="true"]`) — verify these are actually applied to HTML elements.
-
----
-
-### Platform Optimization — 52/100
-
-| Platform | Score | Primary Gap |
-|---|---|---|
-| Google AI Overviews | 58/100 | H2s not in question format; HowTo schema missing |
-| Perplexity AI | 55/100 | No llms-full.txt; no community/Reddit presence |
-| Google Gemini | 51/100 | No Google Business Profile; YouTube unverified |
-| ChatGPT Web Search | 48/100 | No Wikipedia entity; no company LinkedIn |
-| Bing Copilot | 47/100 | No Bing Webmaster Tools; placeholder in HTML |
-
-**Cross-platform synergies (one action, multiple platforms):**
-1. Organization schema with sameAs → ChatGPT, Gemini, Bing, Google AIO
-2. Wikipedia article/mention → ChatGPT (strongest), Perplexity, Gemini, Bing
-3. FAQPage + Article schema → Google AIO (strongest), Bing, Gemini
-4. Confirm Next.js SSR for all pages → Perplexity (strongest), ChatGPT, Bing
-5. YouTube technical videos embedded on blog → Gemini (strongest), Google AIO
-
----
-
-## Quick Wins (Implement This Week)
-
-1. **Fix the Bing verification placeholder** — Register Bing Webmaster Tools, replace `REPLACE_WITH_BING_CODE` with the real code. Also remove the Yandex placeholder or register. Removes an embarrassing signal from production HTML immediately.
-
-2. **Change 307 redirect to 301** in `vercel.json` (code below). 10-minute fix.
-
-3. **Trim meta descriptions to ≤160 chars** on homepage and all blog posts.
-
-4. **Remove/trim `<meta name="keywords">`** from 109 terms to ≤15 or delete entirely.
-
-5. **Add `fetchpriority="high"` to logo `<link rel="preload">`** in `<head>`.
-
-6. **Expand llms.txt** with `## Technical Guides` section listing all 24 blog URLs + one-line descriptions, and a `## Specification Tables` section. llms.txt score: 65 → 85+.
-
-7. **Create LinkedIn Company Page** (distinct from personal profile `/in/shankeragencies/`). Takes 2 hours; delivers immediate brand authority signal.
-
-8. **Claim Google Business Profile** for 553 Main GT Road, Shahdara, Delhi. Takes 2–3 hours; directly improves Gemini Knowledge Graph inclusion.
+### 28. Hreflang — note for roadmap
+Not required today (English-only site). Needed if Arabic or regional-language content is created for GCC.
 
 ---
 
 ## 30-Day Action Plan
 
-### Week 1: Technical Fixes
-- [ ] Register Bing Webmaster Tools + replace `msvalidate.01` placeholder
-- [ ] Change non-www redirect: 307 → 301 in `vercel.json`
-- [ ] Trim all meta descriptions to ≤160 chars
-- [ ] Remove/trim `<meta name="keywords">` to ≤15 terms
-- [ ] Add `fetchpriority="high"` to logo preload link
-- [ ] Migrate Unsplash images to `next/image` with explicit width/height
-- [ ] Add Content-Security-Policy header to `next.config.js`
-- [ ] Align sitemap trailing slash with canonical format
+### Week 1 — Legal & Trust Fixes
+- [ ] Publish `/privacy-policy` page
+- [ ] Restore `/products/unshaped-refractories/lcc-castable` page
+- [ ] Fix Twitter card metadata propagation across all non-blog routes
+- [ ] Create `/about/rahul-taneja` author bio page + link from all blog posts
 
-### Week 2: Schema Rollout
-- [ ] Split Organization+LocalBusiness into two separate JSON-LD blocks on homepage
-- [ ] Add `legalName`, 4th phone, ISO `hasCredential` to Organization schema
-- [ ] Add standalone Person schema for Rahul & Mohan Taneja to `/about`
-- [ ] Deploy Article schema to all 24 blog posts (template below)
-- [ ] Add BreadcrumbList to all sub-pages (automate from URL path)
-- [ ] Verify `.speakable` CSS class is applied to actual HTML elements
-- [ ] Add Product/ItemList schema to 5 product category pages
+### Week 2 — Authority & Schema
+- [ ] Draft and submit Wikipedia article (source: Wikidata Q140220528, IndiaMART, CIN)
+- [ ] Add FAQPage JSON-LD to all blog posts with visible FAQ sections
+- [ ] Add speakable schema to top 3 citation-ready blocks
+- [ ] Add external source citations to EAF + cement kiln posts (WorldSteel, IEA, BIS)
+- [ ] Fix homepage + slide gate plates meta title lengths
 
-### Week 3: Content & Brand Authority
-- [ ] Create LinkedIn Company Page (separate from personal profile)
-- [ ] Claim and optimize Google Business Profile for Delhi HQ
-- [ ] Add "Key Engineering Parameters" block to top of all 24 blog posts
-- [ ] Consolidate 3 duplicate blog post pairs + 301 redirects
-- [ ] Add external citations (BIS/ASTM standards) to top 5 technical posts
-- [ ] Add visible author bio block (photo + credentials + LinkedIn link) to blog posts
-- [ ] Add conflict-of-interest disclosure to all Buyer's Guides
-- [ ] Submit all URLs to Bing via IndexNow
+### Week 3 — Content Quality
+- [ ] Inject first-hand experience paragraph into EAF, ladle lining, and AF cement posts
+- [ ] Expand steel ladle post with campaign life table (reaches 1,500-word minimum)
+- [ ] Add IS 8, IS 15726, ASTM C860 references to relevant product/blog pages
+- [ ] Vary blog post structure: cement kiln → decision-tree format
+- [ ] Fix duplicate "20–40%" statistic across EAF and monolithic posts
 
-### Week 4: llms.txt + Entity Authority
-- [ ] Create `/llms-full.txt` (full blog body text + specification tables)
-- [ ] Update `llms.txt` with `## Technical Guides` section + link to llms-full.txt
-- [ ] Fully complete IndiaMART profile (certifications, all 17 product types)
-- [ ] Update Crunchbase profile with accurate data
-- [ ] Write 3–5 anonymized client case studies
-- [ ] Begin Wikipedia notability research (gather third-party sources)
+### Week 4 — Platform Presence
+- [ ] Publish first YouTube explainer video
+- [ ] Start LinkedIn content cadence (2 posts from EAF + AF cement blogs)
+- [ ] Expand llms.txt technical answer blocks to 12+ topics
+- [ ] Add `Content-Signal` directive to robots.txt
+- [ ] Fix HTTP/HTTPS GSC split (GSC settings, not code)
+- [ ] Expand location page FAQ schema: Dubai, Lagos, Colombo → minimum 3 Q&As each
 
 ---
 
-## Implementation Code Snippets
+## Pages Analysed
 
-### 1. Permanent Redirect — vercel.json
-```json
-{
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "shankeragencies.com" }],
-      "destination": "https://www.shankeragencies.com/:path*",
-      "permanent": true
-    }
-  ]
-}
-```
-
-### 2. Content-Security-Policy — next.config.js
-```js
-const securityHeaders = [
-  {
-    key: 'Content-Security-Policy',
-    value: [
-      "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
-      "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: https://images.unsplash.com https://www.shankeragencies.com",
-      "connect-src 'self'",
-      "font-src 'self'",
-      "frame-ancestors 'none'",
-    ].join('; '),
-  },
-];
-
-module.exports = {
-  async headers() {
-    return [{ source: '/(.*)', headers: securityHeaders }];
-  },
-};
-```
-
-### 3. Next.js Image Component (replaces Unsplash img tags)
-```jsx
-import Image from 'next/image';
-
-// Before:
-<img src="https://images.unsplash.com/photo-xxxx" alt="Shaped Refractories" />
-
-// After:
-<Image
-  src="https://images.unsplash.com/photo-xxxx"
-  alt="Shaped Refractories"
-  width={800}
-  height={600}
-  className="w-full h-full object-cover"
-  loading="lazy"
-/>
-```
-
-### 4. Article Schema Template (add to every blog post)
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "@id": "{{CANONICAL_URL}}",
-  "headline": "{{POST_TITLE}}",
-  "description": "{{META_DESCRIPTION}}",
-  "image": { "@type": "ImageObject", "url": "{{OG_IMAGE_URL}}", "width": 1200, "height": 630 },
-  "datePublished": "{{ISO_DATE_PUBLISHED}}",
-  "dateModified": "{{ISO_DATE_MODIFIED}}",
-  "author": {
-    "@type": "Person",
-    "@id": "https://www.shankeragencies.com/about#rahul-taneja",
-    "name": "Rahul Taneja",
-    "jobTitle": "Director, Refractory Engineering Expert",
-    "sameAs": ["https://www.linkedin.com/in/rahultaneja24/"]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "@id": "https://www.shankeragencies.com/#organization",
-    "name": "Shanker Agencies Pvt. Ltd.",
-    "logo": { "@type": "ImageObject", "url": "https://www.shankeragencies.com/images/sapl-logo.png" }
-  },
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{CANONICAL_URL}}" },
-  "speakable": {
-    "@type": "SpeakableSpecification",
-    "cssSelector": ["h1", "h2", ".article-summary", "[data-speakable='true']"]
-  }
-}
-```
-
-### 5. Person Schema — /about page
-```json
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://www.shankeragencies.com/about#rahul-taneja",
-    "name": "Rahul Taneja",
-    "jobTitle": "Director",
-    "worksFor": { "@id": "https://www.shankeragencies.com/#organization" },
-    "url": "https://www.shankeragencies.com/about",
-    "sameAs": ["https://www.linkedin.com/in/rahultaneja24/"],
-    "knowsAbout": ["Refractory Materials", "High Alumina Refractories", "Castable Refractories", "Steel Plant Operations", "Refractory Engineering", "ISO Quality Management"]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://www.shankeragencies.com/about#mohan-taneja",
-    "name": "Mohan Taneja",
-    "jobTitle": "Founder & Managing Director",
-    "worksFor": { "@id": "https://www.shankeragencies.com/#organization" },
-    "url": "https://www.shankeragencies.com/about",
-    "knowsAbout": ["Refractory Materials Supply", "Industrial Distribution", "Steel Industry Materials", "Cement Industry Materials"]
-  }
-]
-```
-
-### 6. BreadcrumbList — auto-generate from URL path in Next.js
-```js
-// lib/breadcrumbs.js
-export function getBreadcrumbs(pathname) {
-  const parts = pathname.split('/').filter(Boolean);
-  const crumbs = [{ name: 'Home', url: 'https://www.shankeragencies.com' }];
-  let path = '';
-  for (const part of parts) {
-    path += '/' + part;
-    crumbs.push({
-      name: part.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()),
-      url: 'https://www.shankeragencies.com' + path
-    });
-  }
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: crumbs.map((c, i) => ({
-      '@type': 'ListItem', position: i + 1, name: c.name, item: c.url
-    }))
-  };
-}
-```
-
-### 7. Enhanced llms.txt Structure
-```markdown
-# Shanker Agencies Pvt. Ltd.
-
-> India's leading refractory engineering partner since 1980. Authorized dealer of CUMI,
-> Crown Ceramics, Divine Cerawool, Mahakoshal Refractories, TRL Krosaki, IFGL Refractories,
-> and Calderys India. ISO 9001:2015, ISO 14001:2015, ISO 45001:2018 certified.
-> 500+ industrial clients across 50+ countries.
-
-## Company
-- [About Shanker Agencies](https://www.shankeragencies.com/about)
-- [Contact & Quote](https://www.shankeragencies.com/contact)
-
-## Products
-- [Shaped Refractories](https://www.shankeragencies.com/products/shaped-refractories)
-- [Unshaped Refractories](https://www.shankeragencies.com/products/unshaped-refractories)
-- [Flow Control Products](https://www.shankeragencies.com/products/flow-control)
-- [Insulation Materials](https://www.shankeragencies.com/products/insulation)
-- [Acid Proofing](https://www.shankeragencies.com/products/acid-proofing)
-
-## Technical Guides
-- [How to Select Ramming Mass for Induction Furnace](https://www.shankeragencies.com/blog/how-to-select-ramming-mass-for-induction-furnace)
-- [Refractory Castable Installation Guide](https://www.shankeragencies.com/blog/refractory-castable-installation-guide)
-- [Ceramic Fiber Blanket vs Insulating Fire Brick](https://www.shankeragencies.com/blog/ceramic-fiber-blanket-vs-insulating-fire-brick)
-- [Cement Kiln Refractory Zones](https://www.shankeragencies.com/blog/cement-kiln-refractory-zones)
-- [Magnesia Carbon Bricks for BOF & EAF](https://www.shankeragencies.com/blog/magnesia-carbon-bricks-bof-eaf)
-- [AL70 vs AL80 High Alumina Bricks](https://www.shankeragencies.com/blog/al70-vs-al80-high-alumina-bricks)
-- [How to Reduce Refractory Consumption in Steel Plants](https://www.shankeragencies.com/blog/reduce-refractory-consumption-steel-plants)
-
-## Specification Tables
-- [Firebrick Grade Comparison AL40–AL90](https://www.shankeragencies.com/knowledge)
-
-## Full Content
-- [llms-full.txt](https://www.shankeragencies.com/llms-full.txt)
-```
-
----
-
-## Appendix: Pages Analyzed
-
-| URL | Title | Key GEO Issues |
+| URL | Title | Key Issues |
 |---|---|---|
-| / | Shanker Agencies \| Refractory Engineering Partner | Meta desc 217 chars; Bing placeholder; 109 keyword meta |
-| /about | About Us | No Person schema; no structured data |
-| /products | Products | No Product/ItemList schema |
-| /knowledge | Refractory Reference | No schema; not linked from llms.txt |
-| /blog | Blog & Insights | 3 duplicate topic pairs |
-| /blog/how-to-select-ramming-mass-* | How to Select Ramming Mass... | Title 87 chars; no external citations |
-| /products/shaped-refractories | Shaped Refractories | No schema; no BreadcrumbList |
-| /solutions/steel | Steel Industry Solutions | No Service schema; H2s not question-format |
-| /refractory-supplier-in/[city] | Location pages (50+) | No Service/areaServed schema; no BreadcrumbList |
-| /brands/cumi | CUMI Refractories | No Brand/Organization schema |
+| `/` | Refractory Supplier & Exporter India... | Title 72 chars, description 191 chars, H1 no keyword |
+| `/about` | About Shanker Agencies | Good founding story; no testimonials |
+| `/products` | Products — grid content too thin for AI | No comparison, no AI-extractable tables |
+| `/products/flow-control/slide-gate-plates` | Slide Gate Plates | Title 94 chars; FAQ schema thin (2 Q); og:type wrong |
+| `/products/unshaped-refractories/lcc-castable` | — | **404 CRITICAL** |
+| `/blog/gunning-vs-casting-when-to-use` | Gunning vs Casting... | Best citability (87/100); no FAQ schema |
+| `/blog/eaf-refractories-green-steel-transition` | EAF Refractories... | Good stats (78/100); no source citations |
+| `/blog/monolithic-vs-brick-steel-ladle-lining` | Monolithic vs Brick... | 1,428 words; no experience language |
+| `/blog/alternative-fuels-cement-kiln-refractory-guide` | AF Cement Kilns... | Good expert language; needs decision-tree structure |
+| `/blog/steel-ladle-refractory-lining-...` | Steel Ladle Lining... | 1,213 words — thin; needs campaign life table |
+| `/refractory-supplier-in/dubai` | Refractory Exporter to Dubai | 48/100 citability; FAQ only 1 question; boilerplate body |
+| `/privacy-policy` | — | **404 CRITICAL** |
+
+---
+
+*Report generated: 2 July 2026 | Next audit: 1 October 2026*

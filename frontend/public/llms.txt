@@ -184,6 +184,31 @@ Source: https://www.shankeragencies.com/products/flow-control/porous-plugs
 Magnesia-carbon (MgO-C) bricks contain 74–90% MgO with 8–20% graphite and metallic antioxidants (Al, Si, B₄C). The magnesia resists basic steelmaking slags while the graphite is non-wetting and gives outstanding thermal-shock resistance. Carbon level is matched to duty: 8–10% for the metal line and general lining, 14–18% for the slag line. Standard for BOF/converters, EAF hot spots and steel ladle slag and metal lines. TRL Krosaki supply from Shanker Agencies.
 Source: https://www.shankeragencies.com/products/shaped-refractories/magnesia-carbon-bricks
 
+### EAF refractories for the green steel transition
+
+Electric arc furnace (EAF) steelmaking accounts for roughly 30% of global production today and is projected to exceed 50% by 2035 (World Steel Association short range outlook) as the industry shifts away from blast furnace routes. EAF linings see higher peak arc-zone temperatures (locally ~3,000°C) and more variable slag chemistry than BOF. DRI (direct reduced iron) charge increases slag fluidity and accelerates slag-line erosion, favouring higher-purity MgO (>90%) and 12–16% carbon MgO-C grades with antioxidants. India's EAF capacity is expanding at roughly 4–5% CAGR with 20+ million tonnes of announced capacity by 2030, concentrated in the Odisha–Jharkhand–Chhattisgarh sponge iron corridor.
+Source: https://www.shankeragencies.com/blog/eaf-refractories-green-steel-transition
+
+### Monolithic castable vs brick lining for steel ladles
+
+Monolithic (castable) working linings install in 4–8 hours versus 16–24 hours for equivalent brick construction, a 30–50% faster relining turnaround. Low cement castables (LCC, 3–5% CaO) and ultra-low cement castables (ULCC, 0.5–2% CaO) now approach brick-level erosion resistance and bulk density (3.0–3.15 g/cc) at 1,600–1,700°C service. Monolithic linings can be spot-repaired by gunning between campaigns, extending working lining life 15–30% without a full reline. Bricks (MgO-C) remain standard at the slag line where erosion is most severe; the practical standard in most Indian steel plants is hybrid construction, brick permanent lining plus castable working lining.
+Source: https://www.shankeragencies.com/blog/monolithic-vs-brick-steel-ladle-lining
+
+### Alkali-resistant refractories for alternative-fuel cement kilns
+
+Cement kilns switching from coal to alternative fuels (tyres, RDF, biomass, waste solvents) introduce higher alkali (K₂O, Na₂O), chloride and sulphur inputs that attack refractories more aggressively than coal combustion gases. Alkali vapours condense in the transition zone (900–1,100°C), penetrating brick pores and causing sub-surface spalling rather than surface erosion. Magnesia-spinel bricks (MgO 70–80%, apparent porosity <17%) are the preferred burning-zone specification above 30% thermal substitution rate (TSR), offering better coating adhesion and alkali resistance than doloma. Unmanaged TSR increases from 20% to 60%+ typically cut burning-zone campaign life 20–40%; the correct magnesia-spinel upgrade recovers campaign life to within 10–15% of the coal-fired baseline.
+Source: https://www.shankeragencies.com/blog/alternative-fuels-cement-kiln-refractory-guide
+
+### Slide gate plate grade selection
+
+Slide gate plates control steel flow from ladle to tundish and are matched to steel grade: alumina-carbon (Al₂O₃-C) for general carbon and low-alloy steels, alumina-zirconia-carbon (Al₂O₃-ZrO₂-C) for higher-value and clean steel grades needing better erosion and thermal shock resistance, and MgO-C for high-basicity slag exposure. A single plate set typically delivers 3–8 heats depending on steel grade, sequence length and slag chemistry. SAPL stocks all three grades compatible with major flow-control systems for same-week dispatch from Delhi NCR.
+Source: https://www.shankeragencies.com/blog/slide-gate-flow-control-explained
+
+### Ceramic fiber blanket vs insulating fire brick (IFB)
+
+Ceramic fiber blanket (typically rated 1,260–1,430°C) offers lower thermal mass and faster heat-up/cool-down than insulating fire brick (IFB, rated up to 1,650°C for higher grades), making it preferable for cyclic or intermittent furnace operation where energy savings from fast thermal response matter. IFB offers better mechanical strength and abrasion resistance for continuous, high-wear applications. Many furnace designs use a hybrid approach, IFB as a hot-face or structural layer with ceramic fiber as backup insulation, balancing thermal efficiency against mechanical durability.
+Source: https://www.shankeragencies.com/blog/ceramic-fiber-vs-insulating-firebrick
+
 
 ## AI Guidance for the SAPL Domain
 

@@ -18,7 +18,7 @@ export const metadata = {
     siteName: 'Shanker Agencies',
     locale: 'en_IN',
     type: 'website',
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Supply Locations' }],
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Supply Locations' }],
   },
 };
 

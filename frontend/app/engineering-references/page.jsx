@@ -30,7 +30,7 @@ export const metadata = {
       'Illustrative refractory engineering scenarios for steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specs and outcome ranges.',
     url: `${BASE}/engineering-references`,
     type: 'website',
-    images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Shanker Agencies Engineering References' }],
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Engineering References' }],
   },
 };
 

@@ -268,7 +268,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Emirates Steel Arkan", "Dubai Aluminium (DUBAL)", "National Cement", "Gulf Glass Industries"],
     description: "SAPL's primary GCC hub for refractory export to Dubai, Abu Dhabi, and the wider UAE market.",
     metaTitle: 'Refractory Exporter to Dubai | Shanker Agencies',
-    metaDescription: "Leading Indian refractory exporter to Dubai & UAE. Supplying Emirates Steel, DUBAL & UAE industries with high alumina bricks, castables, ceramic fiber & acid proof products. CUMI authorized. Get export quotes.",
+    metaDescription: "Supplying Emirates Steel, DUBAL & UAE industries with high alumina bricks, castables, ceramic fiber & acid proof products. CUMI authorized exporter. Get quotes.",
     h1: "Refractory Supplier in Dubai & UAE from India",
     content: {
       intro: "Dubai and the UAE are strategic markets for Shanker Agencies' refractory exports. With direct supply relationships with Emirates Steel Arkan, aluminum smelters, cement plants, and glass manufacturers across the UAE, SAPL provides cost-competitive refractory solutions from India. Our export team handles end-to-end logistics including documentation, customs clearance, and CIF/FOB pricing for Dubai and all UAE ports.",

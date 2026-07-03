@@ -32,9 +32,8 @@ export async function generateMetadata({ params }) {
       modifiedTime: post.lastModified || post.publishDate,
       authors: [post.author?.name ? `${post.author.name}, Shanker Agencies` : 'Shanker Agencies Engineering Team'],
       tags: post.tags,
-      images: [{ url: post.coverImage || '/opengraph-image', width: 1200, height: 630, alt: post.title }],
+      images: [{ url: post.coverImage || '/opengraph-image.jpg', width: 1200, height: 630, alt: post.title }],
     },
-    twitter: { card: 'summary_large_image', title: post.metaTitle, description: post.metaDescription, creator: '@shankeragencies' },
   };
 }
 
@@ -60,7 +59,7 @@ export default async function BlogArticlePage({ params }) {
     description: post.metaDescription,
     datePublished: post.publishDate,
     dateModified: post.lastModified || post.publishDate,
-    image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
+    image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image.jpg',
     author: {
       '@type': 'Person',
       name: post.author?.name || 'Shanker Agencies Engineering Team',
@@ -180,9 +179,14 @@ export default async function BlogArticlePage({ params }) {
             </span>
           </div>
 
-          <h1 className="font-oswald text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+          <h1 className="font-oswald text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
             {post.title}
           </h1>
+          {post.author?.name && (
+            <p className="text-sm text-white/60 mb-6">
+              By <span className="font-semibold text-white/80">{post.author.name}</span>, Shanker Agencies
+            </p>
+          )}
           <p className="text-lg text-white/75 leading-relaxed mb-8 max-w-3xl">{post.excerpt}</p>
 
 

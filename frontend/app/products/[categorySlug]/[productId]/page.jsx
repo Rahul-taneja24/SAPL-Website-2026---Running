@@ -44,7 +44,7 @@ export async function generateMetadata({ params }) {
       siteName: 'Shanker Agencies',
       locale: 'en_IN',
       type: 'website',
-      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: seo.name }],
+      images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: seo.name }],
     },
     keywords: seo.name,
   };
@@ -79,7 +79,7 @@ export default async function ProductDetailPage({ params }) {
   const productImage =
     catalogEntry?.images?.[0] ||
     product?.image ||
-    'https://www.shankeragencies.com/opengraph-image';
+    'https://www.shankeragencies.com/opengraph-image.jpg';
 
   // ─── Enriched Product schema ────────────────────────────────────────────
   // Pulls every per-grade spec row from the catalog into additionalProperty

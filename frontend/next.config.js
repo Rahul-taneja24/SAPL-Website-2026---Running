@@ -140,6 +140,11 @@ const nextConfig = {
         destination: '/products/unshaped-refractories/gunning-materials',
         permanent: true,
       },
+      {
+        source: '/products/unshaped-refractories/lcc-castable',
+        destination: '/products/unshaped-refractories/low-cement-castables',
+        permanent: true,
+      },
     ];
   },
 };

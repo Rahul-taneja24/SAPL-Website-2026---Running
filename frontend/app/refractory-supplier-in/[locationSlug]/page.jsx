@@ -41,7 +41,7 @@ export async function generateMetadata({ params }) {
       siteName: 'Shanker Agencies',
       locale: 'en_IN',
       type: 'website',
-      images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: `Refractory Supplier in ${location.city} | Shanker Agencies` }],
+      images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: `Refractory Supplier in ${location.city} | Shanker Agencies` }],
     },
   };
 }
