@@ -9,11 +9,11 @@ import { BlogListSkeleton } from "../components/LoadingSkeleton";
 // Fallback data in case CMS is unavailable
 const fallbackPlantsList = [
   { id: "steel", name: "Iron & Steel Plant", image: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=800&q=80", temp: "1800°C" },
-  { id: "cement", name: "Cement Plant", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80", temp: "1450°C" },
-  { id: "aluminum", name: "Aluminum Smelter", image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", temp: "1200°C" },
-  { id: "petrochemical", name: "Petrochemical", image: "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=800&q=80", temp: "1100°C" },
-  { id: "glass", name: "Glass Plant", image: "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?w=800&q=80", temp: "1600°C" },
-  { id: "power", name: "Power Plant", image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80", temp: "1400°C" }
+  { id: "cement", name: "Cement Plant", image: "https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg", temp: "1450°C" },
+  { id: "aluminum", name: "Aluminum Smelter", image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80", temp: "1200°C" },
+  { id: "petrochemical", name: "Petrochemical", image: "https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=800&q=80", temp: "1100°C" },
+  { id: "glass", name: "Glass Plant", image: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=800&q=80", temp: "1600°C" },
+  { id: "power", name: "Power Plant", image: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=800&q=80", temp: "1400°C" }
 ];
 
 const Solutions = () => {

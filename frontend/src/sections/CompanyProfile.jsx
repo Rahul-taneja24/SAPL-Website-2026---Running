@@ -12,7 +12,7 @@ const IMAGES = {
   hero: "https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=1200&q=80",
   steel: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80",
   cement: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=600&q=80",
-  industrial: "https://images.unsplash.com/photo-1678717167554-f1619f3400d5?w=600&q=80",
+  industrial: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80",
 };
 
 async function loadPdfLibs() {

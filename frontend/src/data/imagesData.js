@@ -9,9 +9,9 @@ export const IMAGES = {
   heroes: {
     home: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80&fm=webp", // Steel furnace / rolling mill
     about: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=1920&q=80&fm=webp", // Industrial warehouse
-    products: "https://images.unsplash.com/photo-1590725140246-1271f2868ff1?w=1920&q=80&fm=webp", // Stacked Bricks
+    products: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg", // Stacked Bricks
     contact: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&fm=webp", // Modern office
-    blog: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80&fm=webp", // Factory
+    blog: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80", // Factory
   },
 
   // Industry-Specific Hero Images
@@ -21,40 +21,40 @@ export const IMAGES = {
     aluminum: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1920&q=80&fm=webp",
     petrochemical: "https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=1920&q=80&fm=webp",
     glass: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=1920&q=80&fm=webp",
-    power: "https://images.unsplash.com/photo-1747345341772-7516f6b54958?w=1920&q=80&fm=webp",
+    power: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=800&q=80",
   },
 
   // Product Category Images
   categories: {
-    shaped: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80&fm=webp", // Industrial kiln / bricks
-    unshaped: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80&fm=webp", // Powder/castable
+    shaped: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg", // Industrial kiln / bricks
+    unshaped: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg", // Powder/castable
     flowControl: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=800&q=80&fm=webp", // Steel casting
     insulation: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=800&q=80&fm=webp", // Ceramic fiber
-    acidProofing: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80&fm=webp", // Chemical resistant
-    specialGrades: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80&fm=webp", // Special applications
+    acidProofing: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80", // Chemical resistant
+    specialGrades: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Zircon-and-Zirconia-Mullite-1.jpg", // Special applications
   },
 
   // Product Images
   products: {
-    fireclay: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fm=webp",
-    highAlumina: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fm=webp",
+    fireclay: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
+    highAlumina: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
     ifb: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80&fm=webp",
-    basicBricks: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fm=webp",
-    sicBricks: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fm=webp",
-    lcc: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80&fm=webp",
-    ulcc: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80&fm=webp",
-    ramming: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80&fm=webp",
-    gunning: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=600&q=80&fm=webp",
+    basicBricks: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=800&q=80",
+    sicBricks: "https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=800&q=80",
+    lcc: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
+    ulcc: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
+    ramming: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80",
+    gunning: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg",
     slideGate: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80&fm=webp",
     shrouds: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80&fm=webp",
     ceramicFiber: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80&fm=webp",
-    acidProof: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&fm=webp",
+    acidProof: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80",
   },
 
   // Blog/Article Images
   blog: {
-    technical: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80&fm=webp",
-    howTo: "https://images.unsplash.com/photo-1611078713171-460e408ec92a?w=600&q=80&fm=webp",
+    technical: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80",
+    howTo: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&q=80",
     comparison: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=600&q=80&fm=webp",
     guide: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=600&q=80&fm=webp",
   }

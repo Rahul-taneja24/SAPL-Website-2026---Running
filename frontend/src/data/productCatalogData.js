@@ -27,35 +27,35 @@
 export const IMG = {
   /* ── category heroes, sector-relevant industrial shots ── */
   shapedHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg',
-  unshapedHero: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
+  unshapedHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
   flowHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladel-Well-Block-new.png',
   insulHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
-  acidHero: 'https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=1600&q=90',
+  acidHero: 'https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=800&q=80',
 
   /* ── shaped refractory product images ── */
   highAlumina1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg',
   highAlumina2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/11/01_0004_Layer-1-1-e1762597034449.jpg',
   highAlumina3: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90',
   fireclay1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete-2.jpg',
-  fireclay2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/Fireclay-High-Alumina-Mortar-1.png',
+  fireclay2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
   ifb1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
-  ifb2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/insulating-bricks.png',
+  ifb2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
   basicBricks1: 'https://ifglgroup.com/wp-content/uploads/2025/08/magnesia-carbon-alumina-magnesia-carbon-refractory-bricks-1.webp',
   basicBricks2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg',
   sic1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Zircon-and-Zirconia-Mullite-1.jpg',
 
   /* ── unshaped refractory product images ── */
   lcc1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
-  lcc2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
+  lcc2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
   ulcc1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg',
   ramming1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiplascast-1-1.jpg',
-  rammingMass1: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=900&q=90',
+  rammingMass1: 'https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80',
   gunning1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg',
   gunning2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
   // New products (Mahakoshal authorised dealer line)
-  mortars1: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/Fireclay-High-Alumina-Mortar-1.png',
+  mortars1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
   mortars2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
-  conventional1: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/High-Alumina-Castables.png',
+  conventional1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
   conventional2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete.jpg',
 
   /* ── flow control product images ── */
@@ -71,10 +71,10 @@ export const IMG = {
   calciumSil1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
 
   /* ── acid proofing product images ── */
-  acidBrick1: 'https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=900&q=90',
+  acidBrick1: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80',
   acidBrick2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
-  acidTile1: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=90',
-  acidTile2: 'https://images.unsplash.com/photo-1565191999001-a2ae3190b9c0?w=900&q=90',
+  acidTile1: 'https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=800&q=80',
+  acidTile2: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80',
 
   /* ── industry reference images ── */
   steel: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=700&q=85',
@@ -82,7 +82,7 @@ export const IMG = {
   aluminum: 'https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=700&q=85',
   glass: 'https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=700&q=85',
   petro: 'https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=700&q=85',
-  power: 'https://images.unsplash.com/photo-1747345341772-7516f6b54958?w=700&q=85',
+  power: 'https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=800&q=80',
 };
 
 /* ─── PRODUCT DATA ──────────────────────────────────────────────────────── */

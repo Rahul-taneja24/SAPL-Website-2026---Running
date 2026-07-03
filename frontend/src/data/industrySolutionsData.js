@@ -43,7 +43,7 @@ export const industrySolutions = [
         name: "Induction Furnace",
         description: "Crucible lining, spout, cover",
         products: ["Silica Ramming Mass", "Alumina Ramming Mass", "Magnesia Ramming Mass"],
-        image: "https://images.unsplash.com/photo-1678717167554-f1619f3400d5?w=600&q=80"
+        image: "https://images.unsplash.com/photo-1682587627351-b40273a5d11b?w=800&q=80"
       }
     ],
     keyBenefits: [
@@ -181,7 +181,7 @@ export const industrySolutions = [
         name: "Regenerator",
         description: "Checker bricks, rider arches, crown",
         products: ["Magnesia Bricks", "Silica Bricks", "High Alumina"],
-        image: "https://images.unsplash.com/photo-1678717167554-f1619f3400d5?w=600&q=80"
+        image: "https://images.unsplash.com/photo-1767725185080-5e8bffbfaee9?w=800&q=80"
       },
       {
         name: "Superstructure",
@@ -254,7 +254,7 @@ export const industrySolutions = [
     name: "Power Industry Solutions",
     slug: "power",
     tagline: "Durable Refractories for Boilers & Incinerators",
-    heroImage: "https://images.unsplash.com/photo-1747345341772-7516f6b54958?w=1200&q=80",
+    heroImage: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=800&q=80",
     description: "Robust refractory solutions for thermal power plants, waste-to-energy facilities, and industrial boilers. Our products withstand high temperatures, erosion, and corrosive atmospheres.",
     stats: [
       { value: "80+", label: "Power Plants" },
@@ -267,7 +267,7 @@ export const industrySolutions = [
         name: "Boiler Linings",
         description: "Furnace walls, floor, burner quarls",
         products: ["Dense Castables", "Plastic Refractories", "Anchoring Systems"],
-        image: "https://images.unsplash.com/photo-1747345341772-7516f6b54958?w=600&q=80"
+        image: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=800&q=80"
       },
       {
         name: "FBC Systems",

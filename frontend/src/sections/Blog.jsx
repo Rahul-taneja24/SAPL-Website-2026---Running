@@ -15,7 +15,7 @@ const blogPosts = [
     category: "Technical",
     date: "Jan 15, 2026",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80",
     tags: ["High Alumina", "Steel Ladle", "Product Selection"],
     featured: true,
   },
@@ -27,7 +27,7 @@ const blogPosts = [
     category: "How-To",
     date: "Jan 10, 2026",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80",
+    image: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
     tags: ["LCC Castable", "Installation", "Steel Ladle"],
   },
   {
@@ -71,7 +71,7 @@ const blogPosts = [
     category: "Technical",
     date: "Dec 15, 2025",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=800&q=80",
     tags: ["Flow Control", "Slide Gate", "Continuous Casting"],
   },
   {
@@ -82,7 +82,7 @@ const blogPosts = [
     category: "How-To",
     date: "Dec 10, 2025",
     readTime: "5 min read",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80",
     tags: ["Gunning", "Casting", "Installation Methods"],
   },
   {
@@ -93,7 +93,7 @@ const blogPosts = [
     category: "Technical",
     date: "Dec 5, 2025",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=800&q=80",
+    image: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
     tags: ["Ramming Mass", "Induction Furnace", "Silica", "Alumina"],
   },
 ];

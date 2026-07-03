@@ -28,7 +28,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-15",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1682587627351-b40273a5d11b?w=1200&q=80",
     keyTakeaways: [
       "Silica ramming mass suits grey iron and mild steel; alumina suits stainless and tool steel; magnesia suits manganese steel.",
       "Evaluate cost per heat, not cost per kg, to find the truly economical choice for your furnace.",
@@ -198,7 +198,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-10",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1200&q=80",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
     excerpt:
       "High alumina bricks are the workhorses of the refractory world, used in everything from cement kilns to steel ladles. This guide breaks down every grade from AL45 to AL90 with specifications, properties, and application guidance so you can specify the right brick every time.",
     content: `
@@ -333,7 +333,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-08",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1562408590-e32931084e23?w=1200&q=80",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
     excerpt:
       "Refractory castables offer design flexibility and monolithic construction, but their performance depends entirely on correct installation. This guide covers the differences between conventional, LCC, and ULCC castables and walks you through mixing, placing, curing, and heat-up best practices.",
     content: `
@@ -484,7 +484,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-05",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg",
     excerpt:
       "Ceramic fiber blanket and insulating fire brick both serve as thermal insulation in high-temperature equipment, but they work differently and suit different applications. This comparison covers performance, cost, and a decision matrix to help you choose.",
     content: `
@@ -755,7 +755,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-02-20",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
+    coverImage: "https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg",
     excerpt:
       "A cement rotary kiln is divided into distinct refractory zones, each with unique thermal, chemical, and mechanical demands. This guide provides a zone-by-zone breakdown of material selection with specifications and optimization strategies.",
     content: `
@@ -875,7 +875,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-02-15",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=1200&q=80",
     excerpt:
       "Acid proof brick linings protect chemical plant equipment from corrosive acids and chemicals. This guide covers material selection, installation best practices, jointing materials, and testing procedures for reliable chemical resistance.",
     content: `
@@ -1010,7 +1010,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-02-10",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1530538987395-032d1800fdd4?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=1200&q=80",
     excerpt:
       "Glass melting furnaces require specialized refractories that can withstand temperatures above 1,500 degC while resisting attack from highly corrosive molten glass. This guide covers material selection for every furnace zone from the glass contact sidewalls to the crown and regenerator.",
     content: `
@@ -1128,7 +1128,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-02-05",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=1200&q=80",
     excerpt:
       "Slide gate plates are precision refractory components that control the flow of molten steel from ladles to tundish. Selecting the right type, material, and bore diameter is critical for clean steel production and safety. This guide covers everything you need to know.",
     content: `
@@ -1255,7 +1255,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-28",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1565118531796-763e5082d113?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1200&q=80",
     excerpt:
       "Refractory consumption is a major cost driver in steel plants, typically Rs 500-1,500 per tonne of steel produced. This guide presents a systematic approach to reducing refractory costs through material optimization, operational improvements, and total cost of ownership thinking.",
     content: `
@@ -1533,7 +1533,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-15",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
     excerpt:
       "Magnesia-carbon bricks are the backbone of BOF and EAF lining systems. This guide explains how carbon content, magnesia purity, antioxidant selection, and operational factors influence performance. Make informed decisions to optimize campaign life and reduce total cost.",
     content: `
@@ -1788,7 +1788,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-05",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1200&q=80",
     excerpt:
       "Induction furnace lining failures are costly and dangerous. Understanding the failure modes, their root causes, and prevention strategies can save lakhs in downtime and material costs. This guide analyzes the most common failure types with real-world insights from decades of field experience.",
     content: `
@@ -1968,7 +1968,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2025-12-28",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80",
     excerpt:
       "Refractory anchors are the hidden heroes of monolithic lining systems. They hold castable, gunning, and plastic refractories in place against gravity, vibration, and thermal cycling. This guide covers all major anchor types, selection criteria, spacing guidelines, and installation best practices.",
     content: `
@@ -2113,7 +2113,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-15",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
     keyTakeaways: [
       "AL70 (68–72% Al₂O₃, CCS 60–70 MPa) is the standard choice for general steel ladle working linings with carbon and low-alloy steel.",
       "AL80 (78–82% Al₂O₃, CCS 70–85 MPa) is required for slag lines, safety linings, and ladles processing stainless or high-alloy steel.",
@@ -2229,7 +2229,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-10",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete.jpg",
     keyTakeaways: [
       "Water addition for LCC must be 4–6% by weight, even 1% extra drastically reduces strength and increases spalling risk.",
       "Mix LCC for a minimum of 3–5 minutes in a forced-action mixer after all water is added.",
@@ -2350,7 +2350,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-05",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1200&q=80",
     excerpt: "Ceramic fiber offers 30–40% energy savings with lower thermal mass, ideal for cyclic operations. IFB provides better abrasion resistance for permanent hot-face linings. We compare thermal conductivity, maximum service temperatures, installation costs, and 5-year TCO.",
     content: `
 <h2>The Insulation Dilemma: Two Different Engineering Philosophies</h2>
@@ -2457,7 +2457,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2025-12-28",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
     excerpt: "Comprehensive guide covering working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specifications, bottom design considerations, purging plug selection, and achieving 100+ heat campaigns with zone-specific recommendations based on ladle capacity.",
     content: `
 <h2>The Steel Ladle: A Refractory Engineering Challenge</h2>
@@ -2563,7 +2563,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2025-12-20",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=1200&q=80",
     excerpt: "Rotary kiln refractory selection varies dramatically by zone. The burning zone demands magnesia spinel or MgO-Chrome bricks; transition zones need high-alumina or andalusite; upper cyclone preheaters use castables. This guide maps thermal, chemical, and mechanical requirements to material solutions.",
     content: `
 <h2>Why the Cement Kiln Is a Refractory Engineer's Most Complex Challenge</h2>
@@ -2690,7 +2690,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2025-12-15",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
     excerpt: "Modern continuous casting demands precise flow control. This article covers slide gate plate materials (Al₂O₃-C, Al₂O₃-ZrO₂-C, MgO-C), nozzle selection criteria, anti-clogging strategies with argon purging, and practical tips for achieving longer sequence casting without interruption.",
     content: `
 <h2>What Is Slide Gate Flow Control and Why Does It Matter?</h2>
@@ -2795,7 +2795,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2025-12-10",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1200&q=80",
     excerpt: "Gunning offers rapid installation and hot repair capability with minimal downtime, while casting provides denser, stronger linings for new construction. This guide compares application methods, rebound loss, material properties, cost implications, and provides a decision framework for plant engineers.",
     content: `
 <h2>Two Different Tools for Two Different Jobs</h2>
@@ -2902,7 +2902,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2025-12-05",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1587293852726-70cdb56c2866?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1200&q=80",
     excerpt: "Silica, alumina, and magnesia ramming masses each serve different metallurgical requirements. This guide covers material selection based on melt type (iron, steel, copper), lining life expectations, sintering schedules and temperatures, and troubleshooting the most common failure modes.",
     content: `
 <h2>The Ramming Mass Decision: Getting It Right From the Start</h2>
@@ -3016,7 +3016,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-04-20",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1200&q=80",
     excerpt: "If you run a steel re-rolling mill in Wazirpur, an aluminium die-casting shop in Manesar or a foundry in Sahibabad, choosing the right refractory dealer is as important as choosing the right material. This guide walks through what to look for in a Delhi NCR refractory supplier in 2026, the trade-offs between authorised dealers, traders and factory agents, and a practical checklist you can use before placing your next order.",
     content: `
 <h2>Why This Comparison Exists</h2>
@@ -3138,7 +3138,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-04-18",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&q=80",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete.jpg",
     excerpt: "Castable refractory cement is the workhorse lining for boilers, reheating furnaces, kiln hoods, transfer chutes and shaped anchors across Delhi NCR plants. This buyer's guide explains the differences between conventional, low cement and ultra low cement castables, how to pick the right alumina content, what curing and dry-out look like in practice, and how castable pricing works in 2026.",
     content: `
 <h2>What Is a Castable Refractory Cement?</h2>
@@ -3348,7 +3348,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-06-14",
     lastModified: "2026-06-14",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1615219023549-5c9abdb7df9a?w=1200&q=80",
     excerpt: "The difference between a 250-heat ladle campaign and a 140-heat campaign is rarely the grade of brick, it is whether the maintenance schedule was followed. This guide gives you the exact inspection intervals, patching triggers, shutdown timelines and reline decision criteria for steel ladles, induction furnaces, cement kilns, boilers and aluminium melting furnaces.",
     keyTakeaways: [
       "Maintenance scheduling is the single biggest lever on refractory campaign life, more than brand or grade.",
@@ -3549,7 +3549,7 @@ export const BLOG_POSTS_DATA = [
     lastModified: "2026-06-20",
     category: "Refractory Products",
     tags: ["gunning castable", "gunite refractory", "guniting", "dense gunning", "insulating gunning", "refractory repair", "gunning materials"],
-    coverImage: "https://www.shankeragencies.com/opengraph-image",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg",
     content: `
 <p>Gunning castable, also called gunite, guniting material, or gunning mix, is a monolithic refractory applied pneumatically through a hose and nozzle, without formwork, making it the preferred method for hot repairs and difficult-access applications. Dense gunning mixes contain 40 to 70% Al<sub>2</sub>O<sub>3</sub> and achieve service temperatures up to 1700&deg;C; they are specified for hot repair of BOF vessels, EAF patches, blast furnace taphole areas, rotary kiln shell repairs, and steel ladle sidewall rebuilds. Insulating gunning mixes use lightweight aggregates such as perlite or vermiculite and achieve bulk densities of 0.8 to 1.4 g/cm3; they are used for boiler insulation linings and heat-conservation layers. Key selection parameters are operating temperature, chemical attack type (acid slag, basic slag, or cement clinker alkali), lining thickness, and whether the repair is hot-face or cold-face. Rebound loss in dry-process gunning is 15 to 25%; wet-process reduces this to 5 to 10% and improves bond strength. Shanker Agencies supplies Calderys and Mahakoshal gunning grades from Delhi NCR with same-week dispatch and CIF export to GCC and ASEAN.</p>
 
@@ -3623,7 +3623,7 @@ export const BLOG_POSTS_DATA = [
     lastModified: "2026-06-20",
     category: "Flow Control",
     tags: ["porous plug", "argon purging", "steel ladle", "flow control", "argon bubbling", "ladle bottom"],
-    coverImage: "https://www.shankeragencies.com/opengraph-image",
+    coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
     content: `
 <p>A porous plug is a gas-permeable refractory element installed in the bottom of a steel ladle, used to inject argon gas upward through molten steel, a process called argon purging or argon bubbling. The rising argon bubbles homogenise steel temperature and chemical composition, float non-metallic inclusions to the slag surface, and reduce total oxygen content before continuous casting. Porous plugs are manufactured from corundum (Al<sub>2</sub>O<sub>3</sub> greater than 90%) or magnesia (MgO greater than 90%) refractory with engineered porosity of 20 to 28%, providing consistent gas flow at purging rates from 0.1 to 5 Nl/min per tonne of liquid steel. Correct porous plug selection and argon flow control reduce non-metallic inclusion content in finished steel by 40 to 60%, improve desulphurisation efficiency by 10 to 30%, and extend ladle lining campaign life by reducing thermal gradient fluctuations at the ladle bottom. Shanker Agencies supplies porous plugs from leading flow-control manufacturers with full material test certificates for domestic delivery and CIF export to GCC and ASEAN markets.</p>
 
@@ -3687,6 +3687,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 28,
     slug: "acid-proofing",
+    coverImage: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1200&q=80",
     title: "Acid Proofing: Acid-Resistant Brick Lining Systems Explained",
     excerpt: "Acid proofing protects plant floors and tanks from corrosion. Learn the acid-resistant brick lining build-up, mortars, and how to select the right system.",
     metaTitle: "Acid Proofing: Acid-Resistant Brick Lining Systems Explained",
@@ -3793,6 +3794,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 29,
     slug: "best-refractory-suppliers-in-india",
+    coverImage: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=1200&q=80",
     title: "Best Refractory Suppliers in India: How to Choose (2026 Guide)",
     excerpt: "How to choose the best refractory supplier in India: selection criteria, supplier types, and the products and engineering support a full-range partner should offer.",
     metaTitle: "Best Refractory Suppliers in India: How to Choose (2026 Guide)",
@@ -3872,6 +3874,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 30,
     slug: "what-is-ramming-mass-types-uses-guide",
+    coverImage: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1200&q=80",
     title: "What is Ramming Mass? Types, Uses and Selection Guide",
     excerpt: "Ramming mass is a dry refractory for induction furnace linings. Learn the silica, neutral and basic types and how to select the right grade.",
     metaTitle: "What is Ramming Mass? Types, Uses & Selection | Shanker Agencies",
@@ -3880,12 +3883,12 @@ export const BLOG_POSTS_DATA = [
     tags: ["ramming mass", "silica ramming mass", "neutral ramming mass", "induction furnace", "refractory lining"],
     publishDate: "2026-06-28",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=900&q=80",
     content: `<p><strong>Ramming mass is a dry, granular refractory material used to form the monolithic lining of induction furnaces, ladle bottoms and similar metal-melting vessels. It is rammed (compacted) in place around a former, then sintered by the heat of the first melt to form a dense, crack-resistant working lining.</strong> Unlike bricks, it has no joints, which is why it is preferred for the high thermal and mechanical stress of coreless induction furnaces.</p>
 
 <p>This guide explains the main types of ramming mass, where each is used, how it sinters, and how to select the correct grade for your furnace and metal.</p>
 
-<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=900&q=80&auto=format&fit=crop" alt="Molten metal in an induction melting furnace lined with ramming mass" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Ramming mass forms the jointless lining of an induction melting furnace.</figcaption></figure>
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=900&q=80" alt="Molten metal in an induction melting furnace lined with ramming mass" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Ramming mass forms the jointless lining of an induction melting furnace.</figcaption></figure>
 
 <h2>What is ramming mass used for?</h2>
 <p>Ramming mass is used to line the crucible of coreless induction furnaces that melt steel, iron, copper, aluminium and other metals. It is also used for furnace spouts, ladle bottoms, and patch repairs. Because it is installed as a single jointless mass, it resists the electromagnetic stirring, thermal cycling and metal penetration that crack a brick lining.</p>
@@ -3946,6 +3949,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 31,
     slug: "what-is-castable-refractory-complete-guide",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg",
     title: "What is Castable Refractory? A Complete Guide",
     excerpt: "Castable refractory is a refractory concrete mixed with water and cast into shape. Learn the types, uses and how to choose the right grade.",
     metaTitle: "What is Castable Refractory? Types & Uses | Shanker Agencies",
@@ -4020,6 +4024,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 32,
     slug: "why-uae-imports-magnesia-carbon-bricks-from-india",
+    coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
     title: "Why the UAE Imports Magnesia Carbon Bricks from India",
     excerpt: "UAE steel plants import magnesia carbon (MgO-C) bricks from India for cost, quality and short transit. Here is why India is the preferred source.",
     metaTitle: "Why UAE Imports Magnesia Carbon Bricks from India | Shanker Agencies",
@@ -4028,7 +4033,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["magnesia carbon bricks", "MgO-C bricks", "refractory export UAE", "India refractory exporter", "steel refractories"],
     publishDate: "2026-06-28",
     readTime: "6 min read",
-    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=900&q=80",
     content: `<p><strong>UAE steel plants import magnesia carbon (MgO-C) bricks from India because Indian suppliers offer the same metallurgical quality as Western producers at lower cost, with short sea transit of 4 to 6 days from Mundra to Jebel Ali and reliable, well-documented supply.</strong> For converter (BOF), electric arc furnace (EAF) and ladle slag-line linings, this combination of price, quality and proximity makes India the preferred source for the Gulf.</p>
 
 <p>This article explains why magnesia carbon bricks are critical to steel making, and why UAE and wider GCC buyers increasingly source them from India.</p>
@@ -4088,6 +4093,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 33,
     slug: "why-gcc-steel-plants-source-refractories-from-india",
+    coverImage: "https://images.unsplash.com/photo-1682587627351-b40273a5d11b?w=1200&q=80",
     title: "Why GCC Steel Plants Source Refractories from India",
     excerpt: "GCC steel and cement plants source refractories from India for cost, full-range supply and short Gulf transit. Here is the buyer's case for India.",
     metaTitle: "Why GCC Steel Plants Source Refractories from India | Shanker Agencies",
@@ -4161,6 +4167,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 34,
     slug: "refractory-for-aluminium-smelters-gcc-india",
+    coverImage: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1200&q=80",
     title: "Refractory Materials for Aluminium Smelters and Remelt Plants: GCC & India",
     excerpt: "A guide to refractory selection for aluminium smelters and remelt furnaces, with the GCC and India expansion context driving demand in 2026.",
     metaTitle: "Refractory for Aluminium Smelters: GCC & India Guide | Shanker Agencies",
@@ -4169,7 +4176,7 @@ export const BLOG_POSTS_DATA = [
     tags: ["aluminium smelter refractory", "non-wetting castable", "aluminium furnace lining", "GCC aluminium", "refractory export"],
     publishDate: "2026-06-29",
     readTime: "7 min read",
-    image: "https://images.unsplash.com/photo-1535813547-99c456a41d4a?w=800&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=900&q=80",
     content: `<p><strong>Aluminium smelters and remelt plants need refractories that resist molten aluminium penetration and corrosion: non-wetting castables for melting and holding furnaces, high alumina and silicon carbide bricks for hot zones, and ceramic fibre and calcium silicate for back-up insulation.</strong> As the Gulf and India add primary smelting, recycling and downstream capacity through 2026, plant owners are sourcing these linings from Indian suppliers for cost, quality and short transit.</p>
 
 <p>This guide covers the refractory system an aluminium plant needs, why non-wetting performance matters, and how the current GCC and India expansion is shaping supply.</p>
@@ -4232,6 +4239,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 35,
     slug: "refractory-for-new-gcc-steel-plants-eaf-ladle-casting",
+    coverImage: "https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=1200&q=80",
     title: "Refractory for New GCC Steel Plants: EAF, Ladle and Continuous Casting",
     excerpt: "New GCC steel plants need EAF, ladle and continuous-casting refractories. A guide to the lining system and why India is the preferred source in 2026.",
     metaTitle: "Refractory for New GCC Steel Plants: EAF & Ladle | Shanker Agencies",
@@ -4299,6 +4307,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 36,
     slug: "alternatives-to-fire-bricks-castables-ceramic-fibre-guide",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg",
     title: "Alternatives to Fire Bricks: Castables, Ceramic Fibre and When to Switch",
     excerpt: "Castables, ceramic fibre and insulating bricks are the main alternatives to fire bricks. Compare cost, install speed and temperature, and when to switch.",
     metaTitle: "Alternatives to Fire Bricks: Castable & Ceramic Fibre | Shanker Agencies",
@@ -4383,6 +4392,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 37,
     slug: "bottom-pouring-set-refractory-components-guide",
+    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg",
     title: "Bottom Pouring Set: Refractory Components, Selection and Supply",
     excerpt: "A bottom pouring set is the refractory assembly used to teem steel ingots from below. Learn the components, grades and how to source from India.",
     metaTitle: "Bottom Pouring Set: Refractory Components & Supply | Shanker Agencies",
@@ -4549,7 +4559,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "8 min",
     publishDate: "2026-07-02",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=1200&q=80",
     keyTakeaways: [
       "Monolithic castable linings reduce ladle relining time by 30–50% versus brick construction, cutting downtime cost directly.",
       "Low cement castables (LCC) and ultra-low cement castables (ULCC) now match brick in erosion resistance at 1,600–1,700°C.",
@@ -4638,7 +4648,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "8 min",
     publishDate: "2026-07-02",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1667328931918-b6362ed95c1e?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1603211770215-abb8b9583950?w=1200&q=80",
     keyTakeaways: [
       "Alternative fuels (tyres, biomass, RDF, waste solvents) increase alkali, chloride and sulphur inputs to the kiln — all of which attack refractories more aggressively than coal.",
       "Alkali vapours condense in the 900–1,100°C zone, penetrating brick pores and causing sub-surface spalling — the primary lining failure mode in AF kilns.",
@@ -4708,6 +4718,83 @@ export const BLOG_POSTS_DATA = [
       "basic-gunning-mass",
     ],
   },
+  // ─────────────────────────────────────────────────────────────
+  // 41. Refractory Supplier for Nigeria & West Africa (export intent)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 41,
+    slug: "refractory-supplier-nigeria-west-africa-import-guide",
+    title: "Refractory Supplier for Nigeria & West Africa: The Complete Import Guide from India",
+    metaTitle: "Refractory Supplier Nigeria & West Africa | Import from India Guide",
+    metaDescription: "How Nigerian and West African steel, cement and glass plants import refractories from India: documentation, shipping routes, lead times, HS codes and supplier checks.",
+    category: "Export Guide",
+    tags: ["refractory supplier Nigeria", "West Africa refractories", "import refractories from India", "Lagos refractory", "cement plant Nigeria", "steel plant West Africa", "refractory export"],
+    readTime: "9 min",
+    publishDate: "2026-07-03",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
+    keyTakeaways: [
+      "West Africa has almost no domestic refractory manufacturing — nearly all refractory bricks, castables and ceramic fibre used in the region are imported, with India and China the two dominant sources.",
+      "Nigerian cement capacity (Dangote, BUA, Lafarge Africa) and the Lagos steel re-rolling cluster are the region's largest refractory consumers.",
+      "Typical sea transit from Indian west-coast ports to Lagos (Apapa / Tin Can / Lekki) is 25–40 days — plan refractory procurement one full campaign ahead.",
+      "Refractory bricks ship under HS 6902, unshaped products (castables, mortars, ramming mass) under HS 3816 — correct classification avoids clearance delays.",
+      "Indian suppliers are preferred for English-language documentation, BIS/ASTM-referenced test certificates, and engineering support that Chinese trading companies rarely provide.",
+    ],
+    faqs: [
+      { question: "Why do Nigerian plants import refractories from India?", answer: "West Africa has minimal domestic refractory production, so plants must import. India offers a strong combination for the region: manufacturing quality aligned to IS and ASTM standards, English-language technical documentation, engineering support for material selection, and freight economics from Indian west-coast ports to Lagos that are competitive with Chinese supply once documentation and rework risk are priced in." },
+      { question: "How long does refractory shipping from India to Nigeria take?", answer: "Sea freight from Nhava Sheva or Mundra to Lagos ports (Apapa, Tin Can Island or Lekki Deep Sea Port) typically takes 25–40 days depending on routing and transshipment. Add time for customs clearance and inland transport. A safe planning figure for door-to-door delivery is 6–8 weeks, which means refractory orders should be placed at least one lining campaign ahead of the planned shutdown." },
+      { question: "What HS codes apply to refractory imports in West Africa?", answer: "Refractory bricks and shapes are classified under HS 6902 (refractory bricks, blocks, tiles) and HS 6903 (other refractory ceramic goods such as crucibles and nozzles). Unshaped refractories — castables, mortars, gunning mixes and ramming masses — fall under HS 3816. Ceramic fibre products are typically classified under HS 6806. Confirm the applicable national tariff line with your clearing agent before opening import documentation." },
+      { question: "What documents are needed to import refractories into Nigeria?", answer: "A typical Nigerian refractory import requires: commercial invoice and packing list, bill of lading, certificate of origin, manufacturer test certificates, Form M opened through an authorised dealer bank, and a Pre-Arrival Assessment Report (PAAR). Confirm whether your specific product category requires SONCAP certification with the Standards Organisation of Nigeria. An experienced Indian exporter prepares this document set as standard practice." },
+    ],
+    excerpt: "West Africa's cement, steel and glass industries run almost entirely on imported refractories — and India has become the region's preferred source. This guide covers what Nigerian and West African plants should know when sourcing from India: shipping routes and lead times, HS codes and documentation, quality verification, and how to structure procurement around lining campaigns.",
+    content: `<h2>West Africa Runs on Imported Refractories</h2>
+<p>Nigeria, Ghana, Senegal and their neighbours have built serious heavy industry over the past two decades — led by cement. Nigerian producers including Dangote Cement, BUA Cement and Lafarge Africa operate some of the largest kiln lines on the continent, and cement plants are refractory-hungry by design: every rotary kiln, preheater, cooler and calciner needs a full engineered lining, replaced campaign after campaign.</p>
+<p>Alongside cement sits the Lagos-area steel re-rolling and foundry cluster, glass container production, and aluminium remelting. What the region almost entirely lacks is domestic refractory manufacturing. Practically every refractory brick, castable bag and ceramic fibre roll installed in West Africa arrives by sea — overwhelmingly from India or China.</p>
+
+<h2>Why India Has Become the Preferred Source</h2>
+<p>In our export supply experience, West African buyers who switch from opportunistic trading-company purchases to a structured Indian supply relationship cite the same reasons:</p>
+<ul>
+  <li><strong>Standards-referenced quality:</strong> Indian manufacturers produce against IS specifications (IS 8 for high alumina, IS 15726 for low cement castables) that map cleanly to the ASTM references most international plant engineers specify.</li>
+  <li><strong>English-language documentation:</strong> test certificates, material safety data and installation instructions arrive usable, without translation risk in a technical specification.</li>
+  <li><strong>Engineering support:</strong> serious Indian suppliers help with zone-by-zone material selection and dry-out schedules rather than simply shipping whatever was ordered — which matters when the nearest refractory engineer may be a continent away.</li>
+  <li><strong>Freight economics:</strong> sailing from Nhava Sheva or Mundra to Lagos is competitive, and consolidated mixed-product containers (bricks + castables + fibre in one box) reduce per-tonne landed cost for smaller plants.</li>
+</ul>
+
+<h2>Shipping Routes and Lead Times</h2>
+<p>Refractories for West Africa ship from India's west-coast ports — Nhava Sheva (JNPT) and Mundra primarily — to Lagos (Apapa, Tin Can Island, or the newer Lekki Deep Sea Port), Tema in Ghana, or Dakar in Senegal. Typical sea transit is <strong>25–40 days</strong> depending on carrier and transshipment. With customs clearance and inland movement, a realistic door-to-door planning figure is 6–8 weeks.</p>
+<p>The practical consequence: <strong>refractory procurement must run one full campaign ahead of consumption</strong>. Plants that order against an already-scheduled shutdown routinely end up airfreighting small critical items at many times the sea rate, or postponing maintenance. The plants we supply most successfully hold a rolling forecast: the next campaign's lining is on the water while the current one is in service.</p>
+
+<h2>HS Codes and Documentation</h2>
+<table>
+  <thead><tr><th>Product Group</th><th>HS Code</th><th>Examples</th></tr></thead>
+  <tbody>
+    <tr><td>Refractory bricks &amp; shapes</td><td>6902</td><td>High alumina, fireclay, magnesia bricks</td></tr>
+    <tr><td>Other refractory ceramic goods</td><td>6903</td><td>Crucibles, nozzles, sleeves, tubes</td></tr>
+    <tr><td>Unshaped refractories</td><td>3816</td><td>Castables, mortars, gunning mix, ramming mass</td></tr>
+    <tr><td>Ceramic fibre products</td><td>6806</td><td>Blankets, modules, boards</td></tr>
+  </tbody>
+</table>
+<p>For Nigeria specifically, the standard import document set includes the commercial invoice, packing list, bill of lading, certificate of origin, manufacturer test certificates, <strong>Form M</strong> opened through an authorised dealer bank, and the <strong>Pre-Arrival Assessment Report (PAAR)</strong>. Whether SONCAP certification applies should be confirmed for your specific product category with your clearing agent — an experienced exporter will flag this at quotation stage, not at the port.</p>
+
+<h2>Quality Verification Before You Ship</h2>
+<p>The most expensive refractory failure is the one discovered after a 35-day sail. Before committing to a supplier, West African buyers should insist on:</p>
+<ol>
+  <li><strong>Manufacturer test certificates per batch</strong> — chemical analysis, bulk density, cold crushing strength, and refractoriness, referenced to IS or ASTM methods.</li>
+  <li><strong>Brand traceability</strong> — knowing whether you are receiving CUMI, TRL Krosaki, Calderys or an unbranded equivalent, in original marked packaging.</li>
+  <li><strong>Pre-shipment inspection rights</strong> — third-party or buyer-nominated inspection at the packing warehouse.</li>
+  <li><strong>Application data</strong> — water addition ranges, dry-out schedules and storage life for every castable product, in the box with the material.</li>
+</ol>
+
+<h2>Structuring Procurement Around Campaigns</h2>
+<p>For a Nigerian cement line or a Lagos re-rolling mill, the refractory calendar should look like this: audit lining condition mid-campaign, freeze the next campaign's material list with your supplier 3–4 months before shutdown, ship 8–10 weeks before, and hold the landed material in covered, dry storage (castables degrade in humid storage — first-in-first-out with a 6-month rotation is standard practice in coastal West Africa's climate).</p>
+
+<h2>SAPL Supply for West Africa</h2>
+<p>Shanker Agencies exports complete refractory packages from India to Nigeria, Ghana and the wider West African market — high alumina and magnesia bricks, low cement castables, ramming masses, ceramic fibre and flow control refractories, consolidated into mixed containers with full export documentation. See our <a href="/refractory-supplier-in/lagos">Lagos supply page</a> for market-specific detail, or our <a href="/blog/importing-refractories-from-india-buyers-guide">complete import guide</a> for the general process. To discuss a campaign supply plan, contact us with your plant type, current lining materials and next shutdown window.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "low-cement-castables", "ceramic-fiber-blanket"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────

@@ -215,7 +215,7 @@ const Contact = () => {
       <section
         className="relative py-28 px-4 overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(15,30,70,0.96) 0%, rgba(30,58,138,0.90) 100%), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80')`,
+          backgroundImage: `linear-gradient(135deg, rgba(15,30,70,0.96) 0%, rgba(30,58,138,0.90) 100%), url('https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
