@@ -1,7 +1,7 @@
 // Simple industry list
 export const INDUSTRIES_LIST = [
   { id: "steel", name: "Iron & Steel", image: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80", clients: "200+", temp: "1800°C" },
-  { id: "cement", name: "Cement", image: "https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg", clients: "100+", temp: "1450°C" },
+  { id: "cement", name: "Cement", image: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=900&q=80", clients: "100+", temp: "1450°C" },
   { id: "aluminum", name: "Aluminum", image: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1200&q=80", clients: "50+", temp: "1200°C" },
   { id: "petrochemical", name: "Petrochemical", image: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1200&q=80", clients: "45+", temp: "1100°C" },
   { id: "glass", name: "Glass", image: "https://images.unsplash.com/photo-1767725185080-5e8bffbfaee9?w=1200&q=80", clients: "30+", temp: "1600°C" },
@@ -29,7 +29,7 @@ const descriptions = {
 
 const heroImages = {
   steel: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=1920&q=80",
-  cement: "https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg",
+  cement: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=900&q=80",
   aluminum: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1920&q=80",
   petrochemical: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1920&q=80",
   glass: "https://images.unsplash.com/photo-1767725185080-5e8bffbfaee9?w=1920&q=80",
@@ -54,7 +54,7 @@ const steelEquipment = [
 ];
 
 const cementEquipment = [
-  { name: "Burning Zone", image: "https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg", desc: "Basic brick solutions for highest temp.", conditions: "1350-1450°C", products: "MgO Spinel, Dolomite" },
+  { name: "Burning Zone", image: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=900&q=80", desc: "Basic brick solutions for highest temp.", conditions: "1350-1450°C", products: "MgO Spinel, Dolomite" },
   { name: "Transition Zone", image: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=600&q=80", desc: "High alumina for chemical attack.", conditions: "1200-1350°C", products: "High Alumina, LC Castables" },
   { name: "Preheater", image: "https://images.unsplash.com/photo-1603211770215-abb8b9583950?w=600&q=80", desc: "Abrasion resistant castables.", conditions: "850-1100°C", products: "AR Castables, Anchors" },
   { name: "Cooler", image: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=600&q=80", desc: "Wear-resistant tiles and castables.", conditions: "Up to 1200°C", products: "SiC Tiles, AR Castables" }

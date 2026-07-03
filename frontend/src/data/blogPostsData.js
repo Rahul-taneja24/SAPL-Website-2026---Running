@@ -198,7 +198,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-10",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
+    coverImage: "/images/products/refractory-brick-lining-installation.jpg",
     excerpt:
       "High alumina bricks are the workhorses of the refractory world, used in everything from cement kilns to steel ladles. This guide breaks down every grade from AL45 to AL90 with specifications, properties, and application guidance so you can specify the right brick every time.",
     content: `
@@ -333,7 +333,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-08",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
+    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
     excerpt:
       "Refractory castables offer design flexibility and monolithic construction, but their performance depends entirely on correct installation. This guide covers the differences between conventional, LCC, and ULCC castables and walks you through mixing, placing, curing, and heat-up best practices.",
     content: `
@@ -484,7 +484,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-05",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg",
+    coverImage: "/images/products/insulation-wool-rolls.jpg",
     excerpt:
       "Ceramic fiber blanket and insulating fire brick both serve as thermal insulation in high-temperature equipment, but they work differently and suit different applications. This comparison covers performance, cost, and a decision matrix to help you choose.",
     content: `
@@ -755,7 +755,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-02-20",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg",
+    coverImage: "https://mahakoshalrefractories.com/wp-content/uploads/2025/11/01_0004_Layer-1-1-e1762597034449.jpg",
     excerpt:
       "A cement rotary kiln is divided into distinct refractory zones, each with unique thermal, chemical, and mechanical demands. This guide provides a zone-by-zone breakdown of material selection with specifications and optimization strategies.",
     content: `
@@ -2113,7 +2113,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-15",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
+    coverImage: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=1200&q=80",
     keyTakeaways: [
       "AL70 (68–72% Al₂O₃, CCS 60–70 MPa) is the standard choice for general steel ladle working linings with carbon and low-alloy steel.",
       "AL80 (78–82% Al₂O₃, CCS 70–85 MPa) is required for slag lines, safety linings, and ladles processing stainless or high-alloy steel.",
@@ -2229,7 +2229,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-10",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete.jpg",
+    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
     keyTakeaways: [
       "Water addition for LCC must be 4–6% by weight, even 1% extra drastically reduces strength and increases spalling risk.",
       "Mix LCC for a minimum of 3–5 minutes in a forced-action mixer after all water is added.",
@@ -3138,7 +3138,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-04-18",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete.jpg",
+    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
     excerpt: "Castable refractory cement is the workhorse lining for boilers, reheating furnaces, kiln hoods, transfer chutes and shaped anchors across Delhi NCR plants. This buyer's guide explains the differences between conventional, low cement and ultra low cement castables, how to pick the right alumina content, what curing and dry-out look like in practice, and how castable pricing works in 2026.",
     content: `
 <h2>What Is a Castable Refractory Cement?</h2>
@@ -3549,7 +3549,7 @@ export const BLOG_POSTS_DATA = [
     lastModified: "2026-06-20",
     category: "Refractory Products",
     tags: ["gunning castable", "gunite refractory", "guniting", "dense gunning", "insulating gunning", "refractory repair", "gunning materials"],
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg",
+    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
     content: `
 <p>Gunning castable, also called gunite, guniting material, or gunning mix, is a monolithic refractory applied pneumatically through a hose and nozzle, without formwork, making it the preferred method for hot repairs and difficult-access applications. Dense gunning mixes contain 40 to 70% Al<sub>2</sub>O<sub>3</sub> and achieve service temperatures up to 1700&deg;C; they are specified for hot repair of BOF vessels, EAF patches, blast furnace taphole areas, rotary kiln shell repairs, and steel ladle sidewall rebuilds. Insulating gunning mixes use lightweight aggregates such as perlite or vermiculite and achieve bulk densities of 0.8 to 1.4 g/cm3; they are used for boiler insulation linings and heat-conservation layers. Key selection parameters are operating temperature, chemical attack type (acid slag, basic slag, or cement clinker alkali), lining thickness, and whether the repair is hot-face or cold-face. Rebound loss in dry-process gunning is 15 to 25%; wet-process reduces this to 5 to 10% and improves bond strength. Shanker Agencies supplies Calderys and Mahakoshal gunning grades from Delhi NCR with same-week dispatch and CIF export to GCC and ASEAN.</p>
 
@@ -3949,7 +3949,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 31,
     slug: "what-is-castable-refractory-complete-guide",
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg",
+    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/neutral-ramming-mass-1.png",
     title: "What is Castable Refractory? A Complete Guide",
     excerpt: "Castable refractory is a refractory concrete mixed with water and cast into shape. Learn the types, uses and how to choose the right grade.",
     metaTitle: "What is Castable Refractory? Types & Uses | Shanker Agencies",
@@ -4307,7 +4307,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 36,
     slug: "alternatives-to-fire-bricks-castables-ceramic-fibre-guide",
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg",
+    coverImage: "/images/products/insulation-wool-rolls.jpg",
     title: "Alternatives to Fire Bricks: Castables, Ceramic Fibre and When to Switch",
     excerpt: "Castables, ceramic fibre and insulating bricks are the main alternatives to fire bricks. Compare cost, install speed and temperature, and when to switch.",
     metaTitle: "Alternatives to Fire Bricks: Castable & Ceramic Fibre | Shanker Agencies",
@@ -4392,7 +4392,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 37,
     slug: "bottom-pouring-set-refractory-components-guide",
-    coverImage: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg",
+    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png",
     title: "Bottom Pouring Set: Refractory Components, Selection and Supply",
     excerpt: "A bottom pouring set is the refractory assembly used to teem steel ingots from below. Learn the components, grades and how to source from India.",
     metaTitle: "Bottom Pouring Set: Refractory Components & Supply | Shanker Agencies",

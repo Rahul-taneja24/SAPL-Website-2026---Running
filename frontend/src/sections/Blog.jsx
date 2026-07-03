@@ -27,7 +27,7 @@ const blogPosts = [
     category: "How-To",
     date: "Jan 10, 2026",
     readTime: "7 min read",
-    image: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
+    image: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
     tags: ["LCC Castable", "Installation", "Steel Ladle"],
   },
   {
@@ -93,7 +93,7 @@ const blogPosts = [
     category: "Technical",
     date: "Dec 5, 2025",
     readTime: "7 min read",
-    image: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
+    image: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
     tags: ["Ramming Mass", "Induction Furnace", "Silica", "Alumina"],
   },
 ];

@@ -9,7 +9,7 @@ import { BlogListSkeleton } from "../components/LoadingSkeleton";
 // Fallback data in case CMS is unavailable
 const fallbackPlantsList = [
   { id: "steel", name: "Iron & Steel Plant", image: "https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=800&q=80", temp: "1800°C" },
-  { id: "cement", name: "Cement Plant", image: "https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg", temp: "1450°C" },
+  { id: "cement", name: "Cement Plant", image: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=900&q=80", temp: "1450°C" },
   { id: "aluminum", name: "Aluminum Smelter", image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80", temp: "1200°C" },
   { id: "petrochemical", name: "Petrochemical", image: "https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=800&q=80", temp: "1100°C" },
   { id: "glass", name: "Glass Plant", image: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=800&q=80", temp: "1600°C" },

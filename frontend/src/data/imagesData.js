@@ -9,7 +9,7 @@ export const IMAGES = {
   heroes: {
     home: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80&fm=webp", // Steel furnace / rolling mill
     about: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=1920&q=80&fm=webp", // Industrial warehouse
-    products: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg", // Stacked Bricks
+    products: "/images/products/refractory-brick-lining-installation.jpg", // Stacked Bricks
     contact: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&fm=webp", // Modern office
     blog: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80", // Factory
   },
@@ -26,25 +26,25 @@ export const IMAGES = {
 
   // Product Category Images
   categories: {
-    shaped: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg", // Industrial kiln / bricks
-    unshaped: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg", // Powder/castable
+    shaped: "/images/products/refractory-brick-lining-installation.jpg", // Industrial kiln / bricks
+    unshaped: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg", // Powder/castable
     flowControl: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=800&q=80&fm=webp", // Steel casting
     insulation: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=800&q=80&fm=webp", // Ceramic fiber
     acidProofing: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80", // Chemical resistant
-    specialGrades: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Zircon-and-Zirconia-Mullite-1.jpg", // Special applications
+    specialGrades: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=900&q=80", // Special applications
   },
 
   // Product Images
   products: {
-    fireclay: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
-    highAlumina: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg",
+    fireclay: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=600&q=80",
+    highAlumina: "/images/products/refractory-brick-lining-installation.jpg",
     ifb: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80&fm=webp",
     basicBricks: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=800&q=80",
     sicBricks: "https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=800&q=80",
-    lcc: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
-    ulcc: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg",
+    lcc: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
+    ulcc: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
     ramming: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80",
-    gunning: "https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg",
+    gunning: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
     slideGate: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80&fm=webp",
     shrouds: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80&fm=webp",
     ceramicFiber: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80&fm=webp",

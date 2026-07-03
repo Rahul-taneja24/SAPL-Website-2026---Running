@@ -26,59 +26,59 @@
  */
 export const IMG = {
   /* ── category heroes, sector-relevant industrial shots ── */
-  shapedHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg',
-  unshapedHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
-  flowHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladel-Well-Block-new.png',
-  insulHero: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
+  shapedHero: '/images/products/refractory-brick-lining-installation.jpg',
+  unshapedHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
+  flowHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png',
+  insulHero: '/images/products/insulation-wool-rolls.jpg',
   acidHero: 'https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=800&q=80',
 
   /* ── shaped refractory product images ── */
-  highAlumina1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/High-Alumina-Refractories-2.jpg',
-  highAlumina2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/11/01_0004_Layer-1-1-e1762597034449.jpg',
+  highAlumina1: '/images/products/refractory-brick-lining-installation.jpg',
+  highAlumina2: '/images/products/torpedo-ladle-brick-lining.jpg',
   highAlumina3: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90',
-  fireclay1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete-2.jpg',
-  fireclay2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
-  ifb1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
-  ifb2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
+  fireclay1: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=900&q=80',
+  fireclay2: '/images/products/refractory-brick-lining-installation.jpg',
+  ifb1: '/images/products/insulation-wool-rolls.jpg',
+  ifb2: '/images/products/insulation-wool-rolls.jpg',
   basicBricks1: 'https://ifglgroup.com/wp-content/uploads/2025/08/magnesia-carbon-alumina-magnesia-carbon-refractory-bricks-1.webp',
-  basicBricks2: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg',
-  sic1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Zircon-and-Zirconia-Mullite-1.jpg',
+  basicBricks2: '/images/products/torpedo-ladle-brick-lining.jpg',
+  sic1: 'https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=900&q=80',
 
   /* ── unshaped refractory product images ── */
-  lcc1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
-  lcc2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
-  ulcc1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiflow-1.jpg',
-  ramming1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumiplascast-1-1.jpg',
+  lcc1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
+  lcc2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
+  ulcc1: 'https://ifglgroup.com/wp-content/uploads/2025/03/neutral-ramming-mass-1.png',
+  ramming1: 'https://ifglgroup.com/wp-content/uploads/2025/03/neutral-ramming-mass-1.png',
   rammingMass1: 'https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80',
-  gunning1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumigun.jpg',
+  gunning1: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
   gunning2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
   // New products (Mahakoshal authorised dealer line)
-  mortars1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
-  mortars2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
-  conventional1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumihicast-1.jpg',
-  conventional2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumicrete.jpg',
+  mortars1: '/images/products/refractory-brick-lining-installation.jpg',
+  mortars2: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
+  conventional1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
+  conventional2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
 
   /* ── flow control product images ── */
-  slideGate1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladel-Well-Block-new.png',
-  slideGate2: 'https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=900&q=90',
-  shroud1: 'https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=900&q=90',
-  porous1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumira-1.jpg',
+  slideGate1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladle-Slide-Gate-Mechanism-2.png',
+  slideGate2: 'https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png',
+  shroud1: 'https://ifglgroup.com/wp-content/uploads/2025/03/TUndish-Nozzle-1.png',
+  porous1: 'https://ifglgroup.com/wp-content/uploads/2025/03/TUndish-Nozzle-1.png',
   porous2: 'https://ifglgroup.com/wp-content/uploads/2025/03/Housing_Block_Plug_new-1-1.png',
 
   /* ── insulation product images ── */
   ceramicFiber1: 'https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=900&q=90',
   ceramicFiber2: 'https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=900&q=90',
-  calciumSil1: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/Insulation-Refractories-2.jpg',
+  calciumSil1: '/images/products/insulation-wool-rolls.jpg',
 
   /* ── acid proofing product images ── */
   acidBrick1: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80',
-  acidBrick2: 'https://www.cumi-murugappa.com/refractories/wp-content/uploads/2021/12/cumibond-1.jpg',
+  acidBrick2: '/images/products/refractory-brick-lining-installation.jpg',
   acidTile1: 'https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=800&q=80',
   acidTile2: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80',
 
   /* ── industry reference images ── */
   steel: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=700&q=85',
-  cement: 'https://mahakoshalrefractories.com/wp-content/uploads/2025/10/ROTARY-KILN.jpg',
+  cement: 'https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=900&q=80',
   aluminum: 'https://images.unsplash.com/photo-1727504172743-08f14448fab8?w=700&q=85',
   glass: 'https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=700&q=85',
   petro: 'https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=700&q=85',
