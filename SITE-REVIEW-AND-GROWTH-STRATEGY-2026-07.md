@@ -20,6 +20,43 @@
 
 ---
 
+## Part 1b — LIVE Google Search Console Data (retrieved 3 July 2026, last 28-30 days)
+
+Connector re-activated on the `https://www.shankeragencies.com/` property. Headline numbers:
+
+| Metric | Last 30 days |
+|---|---|
+| Clicks | 173 |
+| Impressions | 8,309 |
+| Avg CTR | 2.08% |
+| Avg Position | 12.1 |
+| Trend | Rising — best days (11-13 clicks) all in the final week of June |
+| June 2026 spam update (Jun 24-26) | No negative impact; clicks rose after it |
+
+### What's actually working: the location-page template
+Location pages are the site's best-performing asset — ~50 clicks/28 days across the cluster with CTRs far above site average: Bangkok 9 clicks (5.6% CTR), Manama 6, Dubai 5, Riyadh 5, Muscat 4, **Hyderabad 4 (13.3% CTR)**, Bellary, Lagos, Singapore, Colombo, Doha, Durgapur, Jeddah, Ludhiana, Raipur all clicking. This validates doubling down on the geo cluster (the Nigeria/West-Africa post shipped this week is exactly this play).
+
+### Striking-distance opportunities (high impressions, page 1-2 boundary)
+| Page / Query | Impressions | Position | Action |
+|---|---|---|---|
+| `/brands` | 545 | 22.5 | Biggest untapped pool after homepage. Rewrite title/intro for "refractory brands India" intent, add internal links from blog posts |
+| Steel ladle lining post | 438 | 11.3 | Expanded to 1,500+ words this week — monitor; add internal links from location pages |
+| Ceramic fiber vs IFB post | 388 | 8.4 | Page 1 but 1.03% CTR — title/description not compelling enough |
+| Maintenance scheduling post | 210 | 19.3 | Page 2 — needs internal links + content refresh |
+| "castable & guniting" | 37 | 11.8 | One nudge from page 1; gunning cluster already strong |
+| "acid proofing" (clicked, pos 13) + ~50 impressions across acid-proof variants | ~90 | 8-60 | Acid cluster is quietly in demand — strengthen /products/acid-proofing page, interlink the 2 acid blog posts |
+| "bottom pouring set" family | ~30 | 58-63 | New page (Jun 29) still settling — add internal links from ladle/flow-control posts |
+| "boiler refractory maintenance" | 29 | 64.5 | **Content gap: no boiler-specific post exists.** Write one — 29 impressions on a single query with zero targeting |
+| "calcium silicate" cluster | ~13 | 50-69 | Product page too thin to rank — enrich with specs table |
+
+### Geography
+India 76 clicks (3.05% CTR) dominates; GCC healthy (Saudi 7, Bahrain 4, UAE 3 + 182 impressions); surprising interest from China (10 clicks, 12.7% CTR) and Hong Kong. **USA anomaly: 2,781 impressions but 0.25% CTR** — mostly name-collision noise ("shanker joshi", scraper-style queries) plus research queries; not a real market signal, ignore.
+
+### Data limits
+Free connector tier: 30-day window, 100 rows, no GA4. For 16-month history and query-page pairs, either upgrade the connector or export from GSC directly.
+
+---
+
 ## Part 2 — Image Audit (the big finding) ✅ FIXED
 
 Every one of the site's 52 unique stock images was downloaded and visually inspected, plus all partner-hosted and self-hosted images. This was the single worst quality problem on the site.
