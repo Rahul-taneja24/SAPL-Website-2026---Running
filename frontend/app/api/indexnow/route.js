@@ -49,6 +49,9 @@ function buildAllUrls() {
     '/company-profile',
     '/refractory-supplier-in',
     '/downloads',
+    '/rfq',
+    '/ar',
+    '/ar/rfq',
   ].forEach((p) => urls.add(`${BASE}${p}`));
 
   // Product categories
@@ -73,13 +76,19 @@ function buildAllUrls() {
     });
 
   // Brands
-  ['cumi', 'calderys', 'trl-krosaki', 'mahakoshal', 'divine-cerawool', 'crown-ceramics']
+  ['cumi', 'calderys', 'trl-krosaki', 'mahakoshal', 'divine-cerawool', 'crown-ceramics', 'saint-gobain']
     .forEach((slug) => urls.add(`${BASE}/brands/${slug}`));
 
   // Geo locations (50+)
   LOCATIONS_DATA.forEach((loc) => {
     urls.add(`${BASE}/refractory-supplier-in/${loc.slug}`);
   });
+
+  // Arabic (GCC) mini-site
+  ['dubai', 'abu-dhabi', 'riyadh', 'jeddah', 'doha', 'muscat', 'kuwait-city', 'manama']
+    .forEach((slug) => urls.add(`${BASE}/ar/refractory-supplier-in/${slug}`));
+  ['shaped-refractories', 'unshaped-refractories', 'flow-control', 'insulation', 'acid-proofing']
+    .forEach((slug) => urls.add(`${BASE}/ar/products/${slug}`));
 
   // Blog posts
   BLOG_POSTS_DATA.forEach((post) => {
