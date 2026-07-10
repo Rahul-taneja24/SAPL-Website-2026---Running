@@ -2799,7 +2799,7 @@ export const BLOG_POSTS_DATA = [
     excerpt: "Gunning offers rapid installation and hot repair capability with minimal downtime, while casting provides denser, stronger linings for new construction. This guide compares application methods, rebound loss, material properties, cost implications, and provides a decision framework for plant engineers.",
     content: `
 <h2>Two Different Tools for Two Different Jobs</h2>
-<p>Gunning and casting are both methods of installing monolithic (unshaped) refractories, but they are optimised for fundamentally different scenarios. Treating them as interchangeable leads to poor lining performance and unnecessary cost. Understanding when to use each, and why, is a core skill for any refractory engineer or plant maintenance manager.</p>
+<p>Gunning and casting are both methods of <em>installing</em> monolithic (unshaped) refractories, but they are optimised for fundamentally different scenarios. Treating them as interchangeable leads to poor lining performance and unnecessary cost. Understanding when to use each, and why, is a core skill for any refractory engineer or plant maintenance manager. This guide focuses specifically on choosing the installation method; for a full breakdown of gunning castable grades, chemistry and applications, see our <a href="/blog/gunning-castable-complete-guide">gunning castable grade selection guide</a>.</p>
 
 <h2>Casting: For New Construction and Highest-Quality Linings</h2>
 <p>Casting (or vibration-cast installation) involves mixing a wet, flowable castable and placing it into a formed void using a mould or formwork, then consolidating it by vibration. The result is a dense, homogeneous monolithic lining with properties approaching the theoretical maximum of the material.</p>
@@ -3543,6 +3543,7 @@ export const BLOG_POSTS_DATA = [
     id: 26,
     slug: "gunning-castable-complete-guide",
     title: "Gunning Castable: Complete Guide to Grades, Applications and Selection",
+    metaTitle: "Gunning Castable Guide: Grades, Applications & Selection | SAPL",
     excerpt: "Technical guide to gunning castable (gunite) refractory covering dense vs insulating grades, full application matrix for steel, cement and power sectors, rebound loss data, and how to choose the right grade.",
     metaDescription: "Technical guide to gunning castable (gunite) refractory — dense vs insulating grades, application matrix for steel, cement and power, rebound loss data.",
     publishDate: "2026-06-20",
@@ -3617,6 +3618,7 @@ export const BLOG_POSTS_DATA = [
     id: 27,
     slug: "porous-plug-refractory-selection-guide",
     title: "Porous Plug Refractory: How It Works, Types and Selection Guide",
+    metaTitle: "Porous Plug Refractory: How It Works & Selection Guide | SAPL",
     excerpt: "A porous plug is the gas-permeable refractory element in a steel ladle used for argon purging. This guide explains how it works, corundum vs magnesia grade selection, purging rates, replacement frequency, and steel quality benefits.",
     metaDescription: "What is a porous plug? How argon purging works in steel ladles, corundum vs magnesia grade selection, purging rates, replacement cycles, and selection guide.",
     publishDate: "2026-06-20",
@@ -4525,7 +4527,7 @@ export const BLOG_POSTS_DATA = [
 <p>SAPL supplies MgO-C bricks and basic gunning masses for EAF maintenance — both are stocked for same-week despatch from Delhi NCR to domestic steel plants and available CIF to export destinations in the GCC and ASEAN.</p>
 
 <h2>India's EAF Expansion: The Numbers</h2>
-<p>India is the standout EAF growth market. Per the Ministry of Steel's <a href="https://steel.gov.in/en/national-steel-policy-2017" target="_blank" rel="noopener noreferrer">National Steel Policy</a> and subsequent decarbonisation roadmap, the Indian steel industry is expanding at approximately 4–5% CAGR, with announced greenfield and brownfield EAF capacity additions exceeding 20 million tonnes by 2030. The roadmap explicitly identifies EAF-DRI as the preferred route for new capacity — particularly for sponge iron-rich states like Odisha, Jharkhand, and Chhattisgarh where DRI feedstock is locally available.</p>
+<p>India is the standout EAF growth market. Per the Ministry of Steel's <a href="https://steel.gov.in/national-steel-policy-nsp-2017" target="_blank" rel="noopener noreferrer">National Steel Policy</a> and subsequent decarbonisation roadmap, the Indian steel industry is expanding at approximately 4–5% CAGR, with announced greenfield and brownfield EAF capacity additions exceeding 20 million tonnes by 2030. The roadmap explicitly identifies EAF-DRI as the preferred route for new capacity — particularly for sponge iron-rich states like Odisha, Jharkhand, and Chhattisgarh where DRI feedstock is locally available.</p>
 <p>Asia-Pacific already accounts for over 60% of global refractory demand, and India's trajectory within that figure is accelerating faster than any other major economy. Steelmakers investing in EAF capacity today are making 20–30 year decisions on refractory specification — getting the DRI-ready lining design right at commissioning is significantly cheaper than re-engineering it after the first few campaigns.</p>
 
 <h2>Specifying Refractories for Green Steel: Practical Starting Points</h2>
@@ -4793,6 +4795,180 @@ export const BLOG_POSTS_DATA = [
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["high-alumina-bricks", "low-cement-castables", "ceramic-fiber-blanket"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 42. What Is a Refractory Material? (definitional pillar, AI-citation layer)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 42,
+    slug: "what-is-refractory-material",
+    title: "What Is a Refractory Material? Types, Properties and Applications Explained",
+    metaTitle: "What Is a Refractory Material? Types, Properties & Uses",
+    metaDescription: "A refractory material is a heat-resistant ceramic that retains strength and shape above 1,000°C. Complete guide to acidic, basic and neutral refractories, properties, and industrial applications.",
+    category: "Technical Guide",
+    tags: ["refractory material", "what is refractory", "types of refractories", "acidic refractories", "basic refractories", "refractory properties", "refractory applications"],
+    readTime: "10 min",
+    publishDate: "2026-07-10",
+    featured: true,
+    coverImage: "/images/products/refractory-brick-lining-installation.jpg",
+    keyTakeaways: [
+      "A refractory material is an inorganic, non-metallic material that retains its strength, shape and chemical stability at temperatures above 1,000°C.",
+      "Refractories are classified into three chemical classes: acidic (silica-based), basic (magnesia-based) and neutral (alumina, chromite, carbon).",
+      "They are supplied in two physical forms: shaped (fired bricks and precast shapes) and unshaped/monolithic (castables, ramming masses, gunning mixes, mortars).",
+      "Steel production consumes roughly 60–70% of the world's refractories; cement, glass, aluminium, petrochemical and power industries account for most of the rest.",
+      "Selection depends on operating temperature, chemical environment (slag or atmosphere), thermal cycling, and mechanical load — no single refractory suits every application.",
+    ],
+    faqs: [
+      { question: "What is a refractory material in simple words?", answer: "A refractory material is a heat-resistant ceramic used to line the inside of furnaces, kilns, ladles and boilers. It keeps its strength and shape at temperatures above 1,000°C where ordinary materials like steel or concrete would melt, deform or crumble, protecting the equipment shell and containing the heat inside the process." },
+      { question: "What are the 12 refractory metals?", answer: "Refractory metals are a different family from refractory ceramics. The five classic refractory metals are tungsten, molybdenum, niobium, tantalum and rhenium; the broader definition adds titanium, vanadium, chromium, zirconium, hafnium, ruthenium and osmium to make twelve. These are metals with melting points above roughly 2,000°C used in aerospace and electronics — not the ceramic bricks and castables used to line industrial furnaces, which this guide covers." },
+      { question: "Is cement a refractory material?", answer: "Ordinary Portland cement is not a refractory — it loses structural strength above roughly 300°C as its hydrate bonds break down. However, calcium aluminate cement (high-alumina cement) is refractory and serves as the binder in refractory castables, which withstand service temperatures up to 1,850°C depending on grade." },
+      { question: "What is the difference between refractory and concrete?", answer: "Ordinary concrete uses Portland cement and standard aggregates, and fails above ~300°C. Refractory castable (refractory concrete) uses calcium aluminate cement with refractory aggregates such as calcined bauxite or fireclay grog, allowing continuous service at 1,200–1,850°C. They install similarly — mixed with water and cast — but are completely different materials chemically." },
+      { question: "What are basic refractories?", answer: "Basic refractories are made from oxides that resist basic (alkaline) slags — mainly magnesia (MgO), doloma (CaO-MgO) and magnesia-carbon compositions. They are essential in basic oxygen furnaces, electric arc furnaces, steel ladle slag lines and cement kiln burning zones, where acidic refractories would be chemically attacked by lime-rich slags." },
+      { question: "What is the lifespan of refractory material?", answer: "Refractory life is measured in campaign terms and varies enormously by application: a steel ladle working lining lasts 40–200 heats, a cement kiln burning zone lining 6–18 months, a glass furnace 8–15 years, and a blast furnace hearth 10–20 years. Operating practice — preheating discipline, thermal cycling, slag chemistry control — often affects life as much as material selection." },
+    ],
+    excerpt: "A refractory material is a heat-resistant ceramic that retains its strength, shape and chemical stability above 1,000°C. This guide explains the three chemical classes, shaped and monolithic forms, key properties, and how each major industry — steel, cement, glass, aluminium — uses them.",
+    content: `<p><strong>A refractory material is an inorganic, non-metallic material that retains its physical strength, shape and chemical stability at temperatures above 1,000°C.</strong> Refractories line the inside of furnaces, kilns, ladles, boilers and reactors in the steel, cement, glass, aluminium, petrochemical and power industries, protecting equipment shells from heat, molten metal, slag and corrosive gases. Without them, no modern high-temperature industrial process could run.</p>
+
+<h2>The 4 Properties Every Refractory Must Have</h2>
+<ol>
+  <li><strong>Refractoriness:</strong> the ability to withstand high temperature without melting or deforming. Measured by the Pyrometric Cone Equivalent (PCE); industrial refractories range from roughly SK 28 (1,630°C) to SK 40+ (1,885°C+).</li>
+  <li><strong>Chemical resistance:</strong> inertness against molten metals, slags and process gases. A refractory chemically mismatched to its slag dissolves rapidly — the single most common cause of premature lining failure.</li>
+  <li><strong>Thermal shock resistance:</strong> the ability to survive rapid heating and cooling cycles without cracking or spalling.</li>
+  <li><strong>Hot mechanical strength:</strong> load-bearing capacity at operating temperature, measured as hot modulus of rupture (HMOR) and refractoriness under load (RUL).</li>
+</ol>
+
+<h2>The 3 Chemical Classes of Refractories</h2>
+<table>
+  <thead><tr><th>Class</th><th>Main Chemistry</th><th>Typical Materials</th><th>Resists</th><th>Attacked By</th></tr></thead>
+  <tbody>
+    <tr><td>Acidic</td><td>SiO₂-based</td><td>Silica bricks, semi-silica, fireclay (low alumina)</td><td>Acidic slags</td><td>Basic (lime-rich) slags</td></tr>
+    <tr><td>Basic</td><td>MgO / CaO-based</td><td>Magnesia, magnesia-carbon (MgO-C), doloma, magnesia-spinel</td><td>Basic slags</td><td>Acidic slags, hydration in storage</td></tr>
+    <tr><td>Neutral</td><td>Al₂O₃, Cr₂O₃, C</td><td>High alumina, mullite, chromite, carbon, silicon carbide</td><td>Both slag types (moderately)</td><td>Specific chemistries vary by material</td></tr>
+  </tbody>
+</table>
+<p>Matching refractory chemistry to slag chemistry is the first rule of selection: basic steelmaking slags demand basic linings (this is why <a href="/products/shaped-refractories/magnesia-carbon-bricks">MgO-C bricks</a> dominate BOF and EAF vessels), while glass tanks and coke ovens run on acidic silica.</p>
+
+<h2>Shaped vs Unshaped: The 2 Physical Forms</h2>
+<h3>Shaped refractories (bricks and precast shapes)</h3>
+<p>Fired or chemically bonded units manufactured to fixed dimensions — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, fireclay bricks, magnesia bricks, insulating fire bricks and fused-cast AZS blocks. They offer the most consistent fired properties and the longest campaign lives in stable, high-wear zones.</p>
+<h3>Unshaped / monolithic refractories</h3>
+<p>Delivered as dry mixes and formed in place: <a href="/products/unshaped-refractories/low-cement-castables">castables</a> (poured or pumped), ramming masses, <a href="/blog/gunning-castable-complete-guide">gunning mixes</a> (sprayed), plastic refractories and mortars. Monolithics now account for roughly half of world refractory consumption because they install 30–50% faster than brickwork and can be spot-repaired without full demolition.</p>
+
+<h2>Refractory Materials by Type: Comparison Table</h2>
+<table>
+  <thead><tr><th>Material</th><th>Key Chemistry</th><th>Max Service Temp</th><th>Typical Applications</th><th>Primary Industries</th></tr></thead>
+  <tbody>
+    <tr><td>Fireclay brick</td><td>25–45% Al₂O₃</td><td>1,400°C</td><td>Backup linings, boiler settings</td><td>General, power</td></tr>
+    <tr><td>High alumina brick</td><td>45–99% Al₂O₃</td><td>1,850°C</td><td>Ladles, kilns, blast furnace</td><td>Steel, cement, glass</td></tr>
+    <tr><td>Silica brick</td><td>&gt;93% SiO₂</td><td>1,650°C</td><td>Coke ovens, glass tank crowns</td><td>Steel, glass</td></tr>
+    <tr><td>Magnesia / MgO-C brick</td><td>80–98% MgO (+C)</td><td>1,800°C</td><td>BOF, EAF, ladle slag lines</td><td>Steel</td></tr>
+    <tr><td>Magnesia-spinel brick</td><td>MgO + MgAl₂O₄</td><td>1,750°C</td><td>Cement kiln burning zone</td><td>Cement, lime</td></tr>
+    <tr><td>Low cement castable (LCC)</td><td>50–90% Al₂O₃</td><td>1,750°C</td><td>Ladle working linings, launders</td><td>Steel, foundry</td></tr>
+    <tr><td>Silicon carbide</td><td>SiC</td><td>1,650°C</td><td>Kiln furniture, incinerators, boilers</td><td>Ceramic, power, non-ferrous</td></tr>
+    <tr><td>Fused-cast AZS</td><td>Al₂O₃-ZrO₂-SiO₂</td><td>1,700°C</td><td>Glass melting tank contact blocks</td><td>Glass</td></tr>
+    <tr><td>Ceramic fiber</td><td>Alumino-silicate fiber</td><td>1,430°C</td><td>Backup insulation, furnace seals</td><td>All industries</td></tr>
+    <tr><td>Insulating fire brick (IFB)</td><td>Porous alumino-silicate</td><td>1,650°C</td><td>Hot-face insulation, heat-treatment furnaces</td><td>All industries</td></tr>
+  </tbody>
+</table>
+
+<h2>Where Each Industry Uses Refractories</h2>
+<ul>
+  <li><strong>Iron &amp; steel (60–70% of world demand):</strong> blast furnaces, BOF/EAF vessels, <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladles</a>, tundishes, torpedo cars, reheating furnaces.</li>
+  <li><strong>Cement &amp; lime:</strong> <a href="/blog/cement-kiln-refractory-zones-material-selection-guide">rotary kiln zones</a>, preheaters, calciners, coolers.</li>
+  <li><strong>Glass:</strong> melting tanks (fused-cast AZS), regenerators, forehearths, crowns.</li>
+  <li><strong>Aluminium &amp; non-ferrous:</strong> melting and holding furnaces, launders, pot linings — non-wetting castables resist molten aluminium penetration.</li>
+  <li><strong>Petrochemical &amp; power:</strong> fired heaters, reformers, FCC units, CFBC boilers, incinerators — abrasion-resistant and insulating grades dominate.</li>
+</ul>
+
+<h2>How to Select a Refractory: 5 Questions</h2>
+<ol>
+  <li><strong>What is the continuous operating temperature</strong> — and the peak excursion temperature?</li>
+  <li><strong>What touches the lining</strong> — molten metal, slag (acidic or basic?), alkali vapours, abrasive ash?</li>
+  <li><strong>How often does it thermally cycle</strong> — continuous operation or batch heating and cooling?</li>
+  <li><strong>What mechanical loads apply</strong> — impact from charging, rotation stress in a kiln, erosion from moving material?</li>
+  <li><strong>What is the true cost target</strong> — cheapest per tonne of material, or lowest cost per tonne of product over the full campaign?</li>
+</ol>
+<p>In our supply experience across Indian and export markets, the fifth question separates plants with stable refractory budgets from plants with recurring emergency shutdowns: the cheapest lining that fails mid-campaign always costs more than the correctly specified one.</p>
+
+<h2>Sourcing Refractories from India</h2>
+<p>India is one of the world's largest refractory-producing countries, with manufacturers including CUMI, TRL Krosaki, Calderys India and Mahakoshal producing to IS and ASTM specifications at globally competitive cost. Shanker Agencies supplies the complete range — shaped bricks, monolithics, ceramic fiber, flow control and acid-proof products — across India and exports to 50+ countries in the GCC, ASEAN and Africa with full test certification. For import documentation, HS codes and shipping lead times, see our <a href="/blog/importing-refractories-from-india-buyers-guide">refractory import guide</a>.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "magnesia-carbon-bricks", "low-cement-castables"],
+  },
+  // ─────────────────────────────────────────────────────────────
+  // 43. Refractory Consumption per Tonne of Steel (data/benchmark asset)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 43,
+    slug: "refractory-consumption-per-tonne-of-steel",
+    title: "Refractory Consumption per Tonne of Steel: Benchmarks and What Drives Them",
+    metaTitle: "Refractory Consumption per Tonne of Steel: 2026 Benchmarks",
+    metaDescription: "Modern steel plants consume roughly 8–15 kg of refractories per tonne of steel. Benchmark table by region and vessel, why the ladle dominates consumption, and how plants reduce specific consumption.",
+    category: "Industry Data",
+    tags: ["refractory consumption", "refractory per ton of steel", "specific refractory consumption", "steel plant benchmarks", "refractory cost", "steel industry data"],
+    readTime: "7 min",
+    publishDate: "2026-07-10",
+    featured: false,
+    coverImage: "/images/products/torpedo-ladle-brick-lining.jpg",
+    keyTakeaways: [
+      "Modern, well-run steel plants consume roughly 8–15 kg of refractories per tonne of crude steel; world-class integrated plants in Japan and Europe operate at the 8–10 kg/t end.",
+      "Indian plants have cut specific consumption dramatically — from ~25–30 kg/t in the 1980s–90s to roughly 10–15 kg/t at efficient operations today.",
+      "The steel ladle is typically the single largest refractory consumer in a plant, accounting for roughly a third of total consumption.",
+      "Lower specific consumption is driven by longer campaign lives, better preheating discipline, gunning/repair programmes and slag chemistry control — not just cheaper materials.",
+      "Specific consumption is a cost-per-tonne-of-steel lever: every kg/t saved compounds across annual production.",
+    ],
+    faqs: [
+      { question: "What is the refractory consumption per ton of steel?", answer: "Published industry reviews put modern specific refractory consumption at roughly 8–15 kg per tonne of crude steel, depending on route and operating practice. World-class integrated plants operate near 8–10 kg/t, while older or less-optimised operations can exceed 15–20 kg/t. The figure has fallen steadily for four decades as refractory quality and maintenance practice improved." },
+      { question: "Which part of a steel plant consumes the most refractories?", answer: "The steel ladle is typically the largest single consumer — roughly a third of a plant's total refractory consumption — because ladle working linings are replaced every 40–200 heats. The BOF or EAF vessel, tundish, blast furnace cast house and reheating furnaces account for most of the remainder." },
+      { question: "How does India compare on refractory consumption per tonne of steel?", answer: "Indian specific consumption has improved from roughly 25–30 kg/t in the 1980s–90s to about 10–15 kg/t at efficient plants today, converging toward global benchmarks. The gap that remains is driven more by operating practice — ladle preheating discipline, slag control, structured gunning programmes — than by refractory quality, since Indian manufacturers now produce to the same IS/ASTM specifications used worldwide." },
+      { question: "How do steel plants reduce refractory consumption?", answer: "The proven levers are: extending campaign life through correct zone-wise material selection, disciplined ladle preheating (above 1,000°C before first heat), slag splashing and coating practices, structured mid-campaign gunning repair instead of reactive patching, and laser thickness monitoring to reline on condition rather than on schedule. Together these typically cut specific consumption 20–40% versus unmanaged practice." },
+    ],
+    excerpt: "How many kilograms of refractories does it take to make a tonne of steel? Modern benchmarks sit around 8–15 kg/t — but the range between plants is enormous, and the gap is operating practice, not material quality. Benchmark tables by region and vessel, and the levers that move the number.",
+    content: `<p><strong>Modern steel plants consume roughly 8–15 kg of refractories per tonne of crude steel produced</strong>, a figure the industry calls specific refractory consumption. World-class integrated plants operate near the 8–10 kg/t mark, while older or poorly-optimised operations can run above 15–20 kg/t. Because steel accounts for roughly 60–70% of world refractory demand, this single ratio drives the economics of the entire refractory industry — and it is one of the most direct cost levers a steel plant controls.</p>
+
+<h2>Benchmarks by Region and Era</h2>
+<table>
+  <thead><tr><th>Region / Era</th><th>Typical Specific Consumption</th><th>Context</th></tr></thead>
+  <tbody>
+    <tr><td>Japan / world-class integrated (today)</td><td>~8–10 kg/t</td><td>Decades of campaign-life optimisation, rigorous maintenance practice</td></tr>
+    <tr><td>Europe / North America (today)</td><td>~10–12 kg/t</td><td>Mature BOF/EAF fleets, high monolithic share</td></tr>
+    <tr><td>India — efficient plants (today)</td><td>~10–15 kg/t</td><td>Converged rapidly toward global benchmarks</td></tr>
+    <tr><td>India (1980s–1990s)</td><td>~25–30 kg/t</td><td>Historic baseline before modern grades and practices</td></tr>
+    <tr><td>Older / unoptimised operations</td><td>15–25+ kg/t</td><td>Reactive maintenance, poor preheating, mismatched grades</td></tr>
+  </tbody>
+</table>
+<p>Figures are typical ranges from published industry reviews; individual plants vary with steel grade mix, route (BOF vs EAF) and campaign practice. The trend line matters more than any single number: specific consumption has roughly halved every two decades since the 1970s as refractory quality and maintenance discipline improved.</p>
+
+<h2>Where the Kilograms Go: Consumption by Vessel</h2>
+<table>
+  <thead><tr><th>Vessel / Area</th><th>Approx. Share of Plant Consumption</th><th>Dominant Materials</th></tr></thead>
+  <tbody>
+    <tr><td>Steel ladles</td><td>~30–40%</td><td>MgO-C slag line, alumina/AMC barrel, <a href="/products/unshaped-refractories/low-cement-castables">LCC castables</a></td></tr>
+    <tr><td>BOF / EAF vessel</td><td>~15–20%</td><td>MgO-C bricks, gunning mass, ramming mass</td></tr>
+    <tr><td>Blast furnace &amp; cast house</td><td>~10–15%</td><td>Carbon blocks, trough castables, taphole clay</td></tr>
+    <tr><td>Tundish</td><td>~10%</td><td>Spray mass, boards, <a href="/products/flow-control/porous-plugs">flow control refractories</a></td></tr>
+    <tr><td>Reheating furnaces &amp; others</td><td>~15–25%</td><td>High alumina bricks, insulating castables, ceramic fiber</td></tr>
+  </tbody>
+</table>
+<p>The ladle dominates because its working lining cycles fastest — replaced every 40–200 heats depending on practice, versus years for a blast furnace lining. This is why ladle campaign life is the highest-leverage single metric in most plants' refractory budgets; our <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladle lining guide</a> covers the zone-by-zone selection logic.</p>
+
+<h2>What Actually Moves the Number</h2>
+<ol>
+  <li><strong>Campaign life extension</strong> — correct zone-wise grade selection is the foundation; a slag line matched to actual slag chemistry outlasts a mismatched one by 30–50%.</li>
+  <li><strong>Preheating discipline</strong> — in our supply experience across Indian re-rolling and EAF plants, consistent ladle preheating above 1,000°C is the single biggest gap between the low and high end of identical-material campaign lives.</li>
+  <li><strong>Structured gunning programmes</strong> — scheduled mid-campaign <a href="/blog/gunning-castable-complete-guide">gunning repair</a> extends working linings 15–35% versus reactive patching.</li>
+  <li><strong>Slag management</strong> — slag splashing in BOFs and slag conditioning in EAFs builds a protective layer that consumes slag, not bricks.</li>
+  <li><strong>Condition-based relining</strong> — laser thickness scanning replaces calendar-based relining, eliminating the waste of discarding serviceable lining material.</li>
+</ol>
+<p>For the full playbook, see <a href="/blog/how-to-reduce-refractory-consumption-steel-plants">how to reduce refractory consumption in steel plants</a> — this benchmark article and that how-to guide are companion pieces.</p>
+
+<h2>Why This Number Matters to Buyers Outside India</h2>
+<p>For steel producers in the GCC, Africa and ASEAN importing refractories, specific consumption converts directly into procurement planning: a 1 Mt/y EAF plant at 12 kg/t consumes roughly 12,000 tonnes of refractories annually, of which a third is ladle material on a repeating cycle. Planning that recurring tonnage one campaign ahead — rather than ordering against shutdowns — is what separates plants that airfreight emergency material from plants that sea-freight on schedule. Shanker Agencies supplies complete campaign packages from India with CIF pricing and full test documentation to 50+ countries; see our <a href="/blog/importing-refractories-from-india-buyers-guide">import guide</a> for documentation and lead times.</p>
+`,
+    author: { name: "Mohit Gupta" },
+    relatedProducts: ["magnesia-carbon-bricks", "low-cement-castables", "high-alumina-bricks"],
   },
 
 ];
