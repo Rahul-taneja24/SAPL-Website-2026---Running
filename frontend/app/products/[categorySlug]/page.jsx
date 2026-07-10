@@ -39,7 +39,14 @@ export async function generateMetadata({ params }) {
   return {
     title: { absolute: `${title} | Refractory Products | Shanker Agencies` },
     description: `Explore our range of ${title.toLowerCase()} refractory products. Authorized distributor across India, GCC & ASEAN.`,
-    alternates: { canonical: `/products/${categorySlug}` },
+    alternates: {
+      canonical: `/products/${categorySlug}`,
+      languages: {
+        en: `https://www.shankeragencies.com/products/${categorySlug}`,
+        ar: `https://www.shankeragencies.com/ar/products/${categorySlug}`,
+        'x-default': `https://www.shankeragencies.com/products/${categorySlug}`,
+      },
+    },
     openGraph: {
       title: `${title} | Refractory Products | Shanker Agencies`,
       description: `Explore our range of ${title.toLowerCase()} refractory products. Authorized distributor across India, GCC & ASEAN.`,

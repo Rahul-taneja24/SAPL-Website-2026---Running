@@ -31,6 +31,10 @@ export async function generateMetadata({ params }) {
       canonical: `/refractory-supplier-in/${location.slug}`,
       languages: {
         'en-IN': `https://www.shankeragencies.com/refractory-supplier-in/${location.slug}`,
+        // GCC locations have hand-written Arabic counterparts under /ar
+        ...(['dubai', 'abu-dhabi', 'riyadh', 'jeddah', 'doha', 'muscat', 'kuwait-city', 'manama'].includes(location.slug)
+          ? { ar: `https://www.shankeragencies.com/ar/refractory-supplier-in/${location.slug}` }
+          : {}),
         'x-default': `https://www.shankeragencies.com/refractory-supplier-in/${location.slug}`,
       },
     },

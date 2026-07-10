@@ -23,3 +23,14 @@
 .dark {
   color-scheme: dark;
 }
+/* Homepage hero background — responsive variants so phones don't pull the
+   1920px image (measured 6.6s LCP on mobile). URL mirrors IMAGES.heroes.home
+   in src/data/imagesData.js; keep in sync if that changes. */
+.hero-home-bg {
+  background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=828&q=75&fm=webp');
+}
+@media (min-width: 768px) {
+  .hero-home-bg {
+    background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80&fm=webp');
+  }
+}

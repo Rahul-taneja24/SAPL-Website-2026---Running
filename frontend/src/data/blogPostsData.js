@@ -469,8 +469,8 @@ export const BLOG_POSTS_DATA = [
     id: 4,
     slug: "ceramic-fiber-blanket-vs-insulating-fire-brick",
     title: "Ceramic Fiber Blanket vs Insulating Fire Brick: Which to Choose?",
-    metaTitle: "Ceramic Fiber Blanket vs IFB: Temperature Limits, Cost & When to Switch",
-    metaDescription: "Ceramic fiber blanket vs insulating fire brick (IFB): max service temperature, heat storage, installation time, and cost comparison. Switch criteria for furnace engineers.",
+    metaTitle: "Ceramic Fiber vs Insulating Fire Brick: Which Saves More Fuel?",
+    metaDescription: "Ceramic fiber stores 90% less heat than IFB — but IFB survives abrasion fiber can't. Side-by-side comparison: temperature limits, fuel savings, cost, and exactly when to switch.",
     category: "Comparison",
     tags: [
       "ceramic fiber blanket",
@@ -4969,6 +4969,245 @@ export const BLOG_POSTS_DATA = [
 `,
     author: { name: "Mohit Gupta" },
     relatedProducts: ["magnesia-carbon-bricks", "low-cement-castables", "high-alumina-bricks"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 44. Sri Lanka / Colombo import guide (geo cluster)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 44,
+    slug: "refractory-supplier-sri-lanka-colombo-import-guide",
+    title: "Refractory Supplier for Sri Lanka: The Complete Import Guide from India",
+    metaTitle: "Refractory Supplier Sri Lanka | Import from India via Colombo",
+    metaDescription: "How Sri Lankan steel, cement and glass plants import refractories from India: 3–7 day transit to Colombo, HS codes, documentation, LC terms and campaign-based ordering.",
+    category: "Export Guide",
+    tags: ["refractory supplier sri lanka", "colombo refractory import", "import refractories from india", "sri lanka steel plants", "cement plant refractory sri lanka", "refractory export"],
+    readTime: "7 min",
+    publishDate: "2026-07-10",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=1200&q=80",
+    keyTakeaways: [
+      "Sri Lanka has no significant domestic refractory manufacturing — steel re-rolling mills, cement grinding plants and glass producers import virtually all refractory materials.",
+      "India is the natural supply base: sea transit from Chennai or Tuticorin to Colombo is only 3–7 days, the shortest lead time of any major refractory-producing country.",
+      "Refractory bricks ship under HS 6902, unshaped products (castables, mortars, ramming mass) under HS 3816, ceramic fibre under HS 6806.",
+      "Short transit means Sri Lankan plants can run leaner refractory inventory than African or GCC importers — but reliable scheduling matters more, since there is less buffer to absorb supplier delays.",
+      "Indian test certificates against IS/ASTM standards are accepted by Sri Lankan industrial buyers; confirm any SLSI requirements for your specific product with your clearing agent.",
+    ],
+    faqs: [
+      { question: "Why do Sri Lankan plants import refractories from India?", answer: "Sri Lanka has no significant domestic refractory production, so steel re-rolling mills, cement plants and glass producers must import. India is the closest major refractory manufacturer: sea transit from Chennai or Tuticorin to Colombo takes only 3–7 days, versus several weeks from China or Europe, and Indian products are certified against the same IS and ASTM standards Sri Lankan engineers already specify." },
+      { question: "How long does refractory shipping from India to Sri Lanka take?", answer: "Sea freight from Indian east-coast ports (Chennai, Tuticorin) to Colombo typically takes 3–7 days — the shortest refractory import route available to Sri Lankan buyers. Door-to-door including customs clearance, a realistic planning window is 2–3 weeks, which allows far leaner inventory than the 6–8 weeks African importers must plan for." },
+      { question: "What HS codes apply to refractory imports in Sri Lanka?", answer: "Refractory bricks and shapes fall under HS 6902, other refractory ceramic goods (crucibles, nozzles) under HS 6903, unshaped refractories such as castables, mortars and ramming mass under HS 3816, and ceramic fibre products under HS 6806. Confirm the applicable national tariff line and any SLSI conformity requirements with your clearing agent." },
+      { question: "Which industries in Sri Lanka buy imported refractories?", answer: "The main consumers are steel re-rolling and induction furnace operations, cement grinding and clinker operations, glass container manufacturing, and boiler operators in power and process industries. Each imports the full range: fireclay and high alumina bricks, induction furnace ramming mass, castables, and ceramic fibre insulation." },
+    ],
+    excerpt: "Sri Lanka imports virtually all of its refractories, and India is the natural source — Colombo is only 3–7 sailing days from Indian ports. This guide covers HS codes, documentation, LC terms, and how Sri Lankan plants should structure refractory ordering around that short supply line.",
+    content: `<p><strong>Sri Lanka imports virtually all of its industrial refractories, and India is the closest major supplier — sea transit from Chennai or Tuticorin to Colombo takes just 3–7 days.</strong> For the island's steel re-rolling mills, induction furnace operators, cement plants and glass producers, that short supply line is a structural advantage no other refractory-producing country can match.</p>
+
+<h2>Who Buys Refractories in Sri Lanka</h2>
+<ul>
+  <li><strong>Steel re-rolling and induction furnaces:</strong> the largest consumer group — silica and alumina <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming masses</a>, fireclay and high alumina bricks, ladle refractories.</li>
+  <li><strong>Cement operations:</strong> kiln and grinding plants consuming basic bricks, castables and insulation on maintenance cycles.</li>
+  <li><strong>Glass manufacturing:</strong> container glass production requiring tank blocks, regenerator refractories and sealing materials.</li>
+  <li><strong>Boilers and process industries:</strong> refractory castables, insulating bricks and ceramic fibre for power and manufacturing plants.</li>
+</ul>
+
+<h2>The 3–7 Day Advantage — and Its Catch</h2>
+<p>Because Colombo is days, not weeks, from Indian ports, Sri Lankan plants can operate with leaner refractory inventory than importers in Africa (25–40 days transit) or even the GCC (7–14 days). The catch: a short pipeline leaves less buffer for supplier failure. A missed shipment that an African plant's 8-week planning cycle absorbs quietly becomes an emergency in Colombo. The suppliers worth keeping are the ones whose dispatch dates hold.</p>
+
+<h2>HS Codes and Documentation</h2>
+<table>
+  <thead><tr><th>Product Group</th><th>HS Code</th><th>Examples</th></tr></thead>
+  <tbody>
+    <tr><td>Refractory bricks &amp; shapes</td><td>6902</td><td>High alumina, fireclay, magnesia bricks</td></tr>
+    <tr><td>Other refractory ceramic goods</td><td>6903</td><td>Crucibles, nozzles, sleeves</td></tr>
+    <tr><td>Unshaped refractories</td><td>3816</td><td>Castables, mortars, ramming mass, gunning mix</td></tr>
+    <tr><td>Ceramic fibre products</td><td>6806</td><td>Blankets, modules, boards</td></tr>
+  </tbody>
+</table>
+<p>The standard document set — commercial invoice, packing list, bill of lading, certificate of origin and manufacturer test certificates — travels with every shipment. Letter-of-credit terms are common for Sri Lankan industrial imports; we also work on advance and mixed terms with established buyers. Confirm SLSI conformity requirements for your specific product category with your clearing agent before opening the LC.</p>
+
+<h2>Ordering Around Campaigns, Not Emergencies</h2>
+<p>Even with a short supply line, the plants that get the best pricing order on campaign cycles: freeze the material list with the supplier 4–6 weeks before a planned shutdown, ship 2–3 weeks ahead, and hold a small strategic stock of fast-wearing items (ramming mass, gunning mix, ladle consumables). Emergency air-freight from India is feasible in 2–3 days but costs several times the sea rate — a planning failure, not a strategy.</p>
+
+<h2>SAPL Supply for Sri Lanka</h2>
+<p>Shanker Agencies exports complete refractory packages to Sri Lanka — bricks, castables, ramming masses, ceramic fibre and flow control products from CUMI, Calderys, TRL Krosaki and our other partner brands, consolidated into mixed containers with full export documentation and manufacturer test certificates. See our <a href="/refractory-supplier-in/colombo">Colombo supply page</a> for market detail, the general <a href="/blog/importing-refractories-from-india-buyers-guide">import guide</a> for process, or <a href="/rfq">submit an RFQ</a> with your product, quantity and target date.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "low-cement-castables", "ceramic-fiber-blanket"],
+  },
+  // ─────────────────────────────────────────────────────────────
+  // 45. Durgapur-Asansol steel belt (geo cluster)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 45,
+    slug: "refractory-supplier-durgapur-asansol-steel-belt",
+    title: "Refractory Supply for the Durgapur–Asansol Steel Belt: A Procurement Guide",
+    metaTitle: "Refractory Supplier Durgapur & Asansol | Steel Belt Guide",
+    metaDescription: "Refractory procurement for the Durgapur-Asansol industrial belt: what integrated plants, sponge iron units and induction furnaces consume, and how to structure supply from Delhi NCR stock.",
+    category: "Industry Guide",
+    tags: ["refractory supplier durgapur", "asansol steel belt", "durgapur steel plant refractory", "induction furnace refractory west bengal", "sponge iron refractory", "ramming mass durgapur"],
+    readTime: "6 min",
+    publishDate: "2026-07-10",
+    featured: false,
+    coverImage: "/images/products/torpedo-ladle-brick-lining.jpg",
+    keyTakeaways: [
+      "The Durgapur–Asansol belt is one of eastern India's densest steel clusters: integrated plants, alloy steel, sponge iron units, induction furnaces and casting foundries within a 60 km corridor.",
+      "The cluster's refractory demand splits into two very different profiles: engineered packages for the large integrated plants, and fast-turnaround consumables (ramming mass, gunning mix, ladle refractories) for the induction furnace and foundry units.",
+      "For the smaller units, supply reliability beats unit price: an induction furnace waiting for ramming mass loses more in a day's downtime than it saves in a year of cheaper material.",
+      "Standard consumables reach Durgapur from Delhi NCR stock in 2–4 days by road; campaign items should be ordered 3–4 weeks ahead of planned relines.",
+    ],
+    faqs: [
+      { question: "What refractories does the Durgapur-Asansol belt consume most?", answer: "The induction furnace and foundry units consume silica ramming mass, ladle refractories and fireclay/high alumina bricks on fast cycles; sponge iron (DRI) kilns consume castables, gunning mixes and kiln bricks; and the large integrated and alloy steel plants consume engineered packages across BOF, ladle, tundish and casting applications. Ramming mass is the single fastest-moving item in the cluster." },
+      { question: "How quickly can refractories be delivered to Durgapur or Asansol?", answer: "Standard stocked items — ramming mass, common brick grades, gunning mixes, ceramic fibre — typically reach the Durgapur-Asansol belt in 2–4 days by road from Delhi NCR stock. Campaign-specific or indent items from manufacturer plants take 2–6 weeks, so reline material should be frozen 3–4 weeks before a planned shutdown." },
+      { question: "Which industries around Durgapur use refractories besides steel?", answer: "Beyond the steel plants themselves, the belt's refractory consumers include sponge iron rotary kilns, ferro-alloy producers, cement grinding units, and the casting and forging foundries that serve eastern India's engineering industry — all running high-temperature furnaces that need lining maintenance on regular cycles." },
+    ],
+    excerpt: "The Durgapur-Asansol corridor concentrates integrated steel, alloy steel, sponge iron and hundreds of induction furnace and foundry units into 60 km. This guide maps the cluster's two distinct refractory demand profiles and how to structure procurement for each.",
+    content: `<p><strong>The Durgapur–Asansol corridor in West Bengal is one of eastern India's densest steel clusters — integrated steel, alloy steel, sponge iron kilns, and hundreds of induction furnace and foundry units within roughly 60 km.</strong> Its refractory demand splits into two profiles that need completely different procurement approaches.</p>
+
+<h2>Profile 1: The Large Plants — Engineered Packages</h2>
+<p>The belt's integrated and alloy steel operations consume refractories the way all large plants do: zone-engineered packages for BOF vessels, <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladles</a>, tundishes and reheating furnaces, procured on campaign cycles through tender processes. For these buyers the levers are campaign life data, manufacturer test certificates, and suppliers who can support tender documentation — covered in our <a href="/blog/refractory-supplier-selection-10-things-to-check">supplier selection checklist</a>.</p>
+
+<h2>Profile 2: The Induction Furnace &amp; Foundry Cluster — Speed Wins</h2>
+<p>The hundreds of smaller melting and casting units around Durgapur, Asansol and Raniganj run on a different clock. An induction furnace reline consumes <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming mass</a> every few weeks; ladle linings, nozzles and gunning repairs cycle even faster. For these plants:</p>
+<ul>
+  <li><strong>Availability beats price.</strong> A day of melting downtime waiting for material costs more than a year's savings from a marginally cheaper mass.</li>
+  <li><strong>Grade consistency matters.</strong> Sintering behaviour changes between ramming mass batches show up directly in lining life — stick to certified, single-source grades rather than spot-market material.</li>
+  <li><strong>Sponge iron kilns</strong> in the corridor add steady demand for DRI kiln castables, <a href="/blog/gunning-castable-complete-guide">gunning mixes</a> and kiln bricks on annual maintenance cycles.</li>
+</ul>
+
+<h2>Practical Logistics</h2>
+<p>Standard stocked consumables reach the belt in 2–4 days by road from Delhi NCR. Campaign and indent items (special shapes, basic bricks, engineered flow control) run 2–6 weeks from manufacturer plants — freeze reline lists 3–4 weeks before shutdown. In our supply experience with eastern India re-rolling and foundry clusters, the plants with the most stable refractory costs hold a two-week strategic stock of their fastest-moving mass and order replenishment on consumption, not on crisis.</p>
+
+<h2>SAPL Supply for the Durgapur Belt</h2>
+<p>Shanker Agencies supplies the full cluster profile — CUMI and Mahakoshal ramming masses, high alumina and fireclay bricks, Calderys castables and gunning mixes, ladle and flow control refractories — from Delhi NCR stock with manufacturer test certificates. See the <a href="/refractory-supplier-in/durgapur">Durgapur supply page</a> or <a href="/rfq">submit an RFQ</a> with your furnace type and monthly consumption.</p>
+`,
+    author: { name: "Mohit Gupta" },
+    relatedProducts: ["silica-ramming-mass", "high-alumina-bricks", "gunning-materials"],
+  },
+  // ─────────────────────────────────────────────────────────────
+  // 46. Bellary-Hospet sponge iron & induction cluster (geo cluster)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 46,
+    slug: "refractory-supplier-bellary-hospet-induction-furnace",
+    title: "Induction Furnace Refractories for the Bellary–Hospet Steel Cluster",
+    metaTitle: "Refractory Supplier Bellary-Hospet | Induction Furnace Guide",
+    metaDescription: "Refractory supply for Karnataka's Bellary-Hospet iron and steel cluster: ramming mass selection for high-utilisation induction furnaces, sponge iron kiln refractories, and procurement logistics.",
+    category: "Industry Guide",
+    tags: ["refractory supplier bellary", "bellary hospet steel", "induction furnace refractory karnataka", "ramming mass bellary", "sponge iron kiln refractory", "jindal vijayanagar refractory"],
+    readTime: "6 min",
+    publishDate: "2026-07-10",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1200&q=80",
+    keyTakeaways: [
+      "The Bellary–Hospet region is Karnataka's iron and steel heartland — anchored by mega-scale integrated capacity and surrounded by sponge iron kilns, induction furnaces and re-rolling mills feeding on local iron ore.",
+      "Induction furnaces melting sponge-iron-heavy charges see harder lining duty than scrap-based melting: higher slag volumes and more erosive charge chemistry shorten ramming mass life.",
+      "Silica ramming mass grade selection — purity, granulometry and sintering behaviour matched to the actual charge mix — is the single biggest refractory cost lever for the cluster's melt shops.",
+      "Standard consumables reach Bellary in 3–5 days by road; the cluster's high furnace utilisation makes consumption-based replenishment safer than order-on-empty.",
+    ],
+    faqs: [
+      { question: "What refractories does the Bellary-Hospet cluster consume?", answer: "The cluster's induction furnaces and re-rolling mills consume silica ramming mass, ladle refractories, fireclay and high alumina bricks on fast cycles; the sponge iron (DRI) rotary kilns consume castables, gunning mixes and kiln lining bricks; and the integrated steel operations consume full engineered packages. Ramming mass for induction melting is the fastest-moving category." },
+      { question: "Why do induction furnace linings wear faster with sponge iron charges?", answer: "DRI/sponge iron carries gangue (silica, alumina) and lower metallic yield than clean scrap, producing more slag at higher erosiveness. The slag attacks the sintered ramming mass lining chemically while unmelted sponge iron fines abrade it mechanically. Plants melting high-DRI charges typically need higher-purity silica mass with optimised granulometry, and stricter sintering schedules, to hold lining life." },
+      { question: "How fast can refractories be delivered to Bellary?", answer: "Standard stocked items — ramming mass, brick grades, gunning mixes — typically reach the Bellary-Hospet belt within 3–5 days by road. Given the cluster's high furnace utilisation, most melt shops hold a two-to-three-week buffer of their proven mass grade and replenish on consumption rather than ordering when stock runs out." },
+    ],
+    excerpt: "Bellary-Hospet is Karnataka's iron and steel heartland: mega-scale integrated capacity, sponge iron kilns and a dense induction furnace cluster running on local ore. This guide covers the ramming mass selection problem DRI-heavy charges create, and how the cluster's melt shops keep lining costs stable.",
+    content: `<p><strong>The Bellary–Hospet region is Karnataka's iron and steel heartland — anchored by mega-scale integrated steel capacity and surrounded by sponge iron kilns, induction furnace melt shops and re-rolling mills running on the district's iron ore.</strong> For its refractory buyers, one problem dominates: induction furnace lining life under sponge-iron-heavy charge mixes.</p>
+
+<h2>The DRI Charge Problem</h2>
+<p>Induction furnaces in this cluster typically melt a high proportion of locally produced sponge iron (DRI) rather than clean scrap. That charge chemistry is harder on the silica ramming mass lining in two ways:</p>
+<ol>
+  <li><strong>Chemical attack:</strong> DRI gangue (silica, alumina, unreduced iron oxides) generates more slag, and more erosive slag, than scrap melting — attacking the sintered working face faster.</li>
+  <li><strong>Mechanical wear:</strong> sponge iron fines and lump charge abrade the lining during charging and melting.</li>
+</ol>
+<p>The result: the same mass grade that gives a scrap-melting shop comfortable lining life can underperform badly on a high-DRI charge. Grade selection — purity, boron oxide content, granulometry, and a sintering schedule matched to the actual charge mix — is the cluster's biggest refractory cost lever. Our <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming mass selection guide</a> and <a href="/blog/induction-furnace-lining-failure-causes-prevention">lining failure guide</a> cover the technical detail.</p>
+
+<h2>Beyond the Melt Shops</h2>
+<ul>
+  <li><strong>Sponge iron rotary kilns:</strong> steady demand for DRI kiln castables, <a href="/blog/gunning-castable-complete-guide">gunning repair mixes</a> and kiln bricks on annual campaigns.</li>
+  <li><strong>Re-rolling and reheating furnaces:</strong> high alumina and fireclay bricks, insulating linings and ceramic fibre.</li>
+  <li><strong>Integrated operations:</strong> engineered refractory packages across the full converter-ladle-caster route, procured on tender cycles.</li>
+</ul>
+
+<h2>Procurement Logistics for the Cluster</h2>
+<p>Standard stocked consumables reach Bellary in 3–5 days by road. Because the cluster runs furnaces at high utilisation, the melt shops with the most stable costs replenish proven mass grades on consumption — holding a two-to-three-week buffer — rather than re-opening grade selection with every spot purchase. Switching mass grades to save marginally per tonne, without re-validating sintering behaviour on your actual charge, is the most common self-inflicted lining failure we see.</p>
+
+<h2>SAPL Supply for Bellary–Hospet</h2>
+<p>Shanker Agencies supplies CUMI and Mahakoshal ramming masses, bricks, castables and ladle refractories to the Bellary belt with manufacturer test certificates and grade-selection support for DRI-heavy charge mixes. See the <a href="/refractory-supplier-in/bellary">Bellary supply page</a> or <a href="/rfq">submit an RFQ</a> with your furnace capacity and charge mix.</p>
+`,
+    author: { name: "Sandeep Kulkarni" },
+    relatedProducts: ["silica-ramming-mass", "high-alumina-bricks", "gunning-materials"],
+  },
+  // ─────────────────────────────────────────────────────────────
+  // 47. Boiler refractory maintenance (GSC gap: 29 impressions, zero content)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 47,
+    slug: "boiler-refractory-maintenance-guide",
+    title: "Boiler Refractory Maintenance: Inspection, Repair and Material Selection",
+    metaTitle: "Boiler Refractory Maintenance: Inspection & Repair Guide",
+    metaDescription: "Practical boiler refractory maintenance guide: what fails in CFBC/AFBC and grate-fired boilers, inspection checklists, repair methods (patching vs gunning vs reline), and material selection.",
+    category: "How-To Guide",
+    tags: ["boiler refractory maintenance", "boiler refractory material", "CFBC boiler refractory", "boiler refractory repair", "refractory castable boiler", "power plant refractory"],
+    readTime: "8 min",
+    publishDate: "2026-07-10",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=1200&q=80",
+    keyTakeaways: [
+      "Boiler refractory failure is dominated by three mechanisms: abrasion (especially in CFBC/AFBC fluidised beds), thermal cycling cracks, and chemical attack from ash and combustion products.",
+      "The highest-wear zones — bed coil areas, cyclone targets, seal pots and burner throats — need abrasion-resistant castables (often SiC-containing); general walls run on conventional or low cement castables.",
+      "Small localised damage is patched; distributed thinning across a zone is gunned; damage past roughly a third of lining thickness in structural zones means planned reline.",
+      "Annual-outage inspection with thickness mapping converts refractory from an emergency cost into a planned budget line.",
+    ],
+    faqs: [
+      { question: "How often should boiler refractory be inspected?", answer: "At minimum every planned annual outage, with a full visual survey plus thickness measurement of the known high-wear zones (bed area, cyclone, seal pot, burner throats). Plants running CFBC boilers at high load, or firing high-ash fuels, benefit from an additional mid-year check of the highest-abrasion zones during any opportunity shutdown." },
+      { question: "What refractory materials are used in boilers?", answer: "Abrasion-resistant dense castables — frequently silicon-carbide-containing — line the high-wear zones of fluidised bed boilers; conventional and low cement castables handle general walls and floors; insulating castables and ceramic fibre back up the hot face to control shell temperature; and plastic refractories or ramming mixes fill burner throats and complex geometry. Grade selection follows the wear mechanism in each zone, not one material for the whole boiler." },
+      { question: "When should boiler refractory be repaired versus fully relined?", answer: "As a working rule: isolated damage smaller than roughly half a square metre is patch-repaired; distributed thinning across a zone is rebuilt by gunning; and once structural zones have lost about a third of their original thickness — or anchor systems are exposed — a planned reline of that zone beats repeated patching on both cost and risk." },
+      { question: "Why does CFBC boiler refractory wear so fast?", answer: "A circulating fluidised bed keeps abrasive bed material (sand, ash, fuel particles) in constant high-velocity motion against the lining — the mechanical equivalent of continuous sandblasting, at temperature. That is why CFBC bed zones, cyclone inlets and return legs specify dense abrasion-resistant castables, often with silicon carbide, rather than the conventional castables that survive perfectly well in static boiler walls." },
+    ],
+    excerpt: "Boiler refractory fails from abrasion, thermal cycling and ash attack — and each failure mode has a different fix. A practical maintenance guide: zone-by-zone inspection checklist, when to patch vs gun vs reline, and the material selection logic for CFBC, AFBC and grate-fired boilers.",
+    content: `<p><strong>Boiler refractory maintenance comes down to managing three failure mechanisms — abrasion, thermal cycling and chemical attack — each concentrated in predictable zones.</strong> Plants that inspect those zones on a schedule and repair by mechanism keep refractory as a planned budget line; plants that wait for hot spots pay for the same work as emergency downtime.</p>
+
+<h2>The 3 Ways Boiler Refractory Fails</h2>
+<ol>
+  <li><strong>Abrasion:</strong> the dominant mechanism in CFBC and AFBC boilers, where fluidised bed material scrubs the lining continuously. Concentrated at bed coil areas, cyclone inlets and target zones, return legs and seal pots.</li>
+  <li><strong>Thermal cycling:</strong> start-stop operation opens cracks in rigid linings — worst in peaking plants and boilers with frequent trips. Shows as crack networks and spalled patches at zone transitions.</li>
+  <li><strong>Chemical attack:</strong> ash chemistry (alkalis, vanadium in oil-fired units, chlorides with some biomass and waste fuels) reacts with the lining hot face — the same alkali mechanism covered in our <a href="/blog/alternative-fuels-cement-kiln-refractory-guide">alternative fuels guide</a> for cement kilns.</li>
+</ol>
+
+<h2>Zone-by-Zone: Where to Look and What Belongs There</h2>
+<table>
+  <thead><tr><th>Zone</th><th>Dominant Wear</th><th>Typical Material</th></tr></thead>
+  <tbody>
+    <tr><td>Bed area / bed coils (CFBC-AFBC)</td><td>Severe abrasion</td><td>Dense abrasion-resistant castable, often SiC-containing</td></tr>
+    <tr><td>Cyclone inlet &amp; target zone</td><td>Abrasion + erosion</td><td>AR castable / SiC tiles</td></tr>
+    <tr><td>Seal pot / loop seal / return leg</td><td>Abrasion + thermal cycling</td><td>AR castable with dense anchoring</td></tr>
+    <tr><td>Burner throats &amp; openings</td><td>Thermal cycling + flame impingement</td><td>Plastic refractory / precast shapes</td></tr>
+    <tr><td>Furnace walls &amp; floor</td><td>Moderate, ash attack</td><td>Conventional / <a href="/products/unshaped-refractories/low-cement-castables">low cement castable</a></td></tr>
+    <tr><td>Backup / shell side</td><td>Heat loss control</td><td>Insulating castable, ceramic fibre, calcium silicate</td></tr>
+  </tbody>
+</table>
+
+<h2>Patch, Gun, or Reline? The Decision Rule</h2>
+<ul>
+  <li><strong>Patch</strong> when damage is isolated — under roughly half a square metre — and the surrounding lining is sound. Prepare edges square, key into sound material, use a compatible patching castable.</li>
+  <li><strong>Gun</strong> when a whole zone has thinned but remains structurally attached: <a href="/blog/gunning-castable-complete-guide">gunning castable</a> rebuilds thickness across large areas fast, including hot repairs during short outages.</li>
+  <li><strong>Reline</strong> the zone when a third or more of original thickness is gone in structural areas, anchors are exposed, or the patch-and-gun record shows the same zone recurring every outage — repeated repair of a spent lining costs more than replacing it once, the same total-cost logic covered in our <a href="/blog/refractory-lining-maintenance-scheduling-guide">maintenance scheduling guide</a>.</li>
+</ul>
+
+<h2>The Annual Outage Checklist</h2>
+<ol>
+  <li>Full visual survey, photographed zone by zone against last year's record.</li>
+  <li>Thickness measurement at fixed reference points in every high-wear zone.</li>
+  <li>Check anchor integrity anywhere the hot face is lost — exposed or oxidised anchors mean the zone is structurally due, whatever the average thickness says.</li>
+  <li>Hammer-sound suspect areas for drummy (debonded) lining that looks intact.</li>
+  <li>Match each finding to mechanism — abrasion, cycling, chemistry — and repair with the matching material, not whatever castable is in the store.</li>
+  <li>Record everything: the trend line across outages is what converts refractory into a predictable budget.</li>
+</ol>
+
+<h2>SAPL Supply for Boiler Maintenance</h2>
+<p>Shanker Agencies supplies the full boiler maintenance range — abrasion-resistant and SiC castables, conventional and low cement castables, gunning mixes, plastic refractories, insulating castables and ceramic fibre — from Calderys, CUMI and our partner brands, with manufacturer test certificates and zone-wise selection support. <a href="/rfq">Submit an RFQ</a> with your boiler type and outage date, or see our <a href="/solutions/power">power industry solutions</a>.</p>
+`,
+    author: { name: "Vinod Sharma" },
+    relatedProducts: ["gunning-materials", "low-cement-castables", "ceramic-fiber-blanket"],
   },
 
 ];

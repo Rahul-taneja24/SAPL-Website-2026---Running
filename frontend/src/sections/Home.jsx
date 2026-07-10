@@ -166,11 +166,11 @@ const Home = () => {
         data-testid="hero-section"
         aria-label="Hero"
       >
-        {/* Ken Burns background image */}
+        {/* Ken Burns background image — URL supplied by .hero-home-bg in App.css
+            (media-queried: 828px on phones, 1920px on md+) for mobile LCP */}
         <div
-          className="absolute inset-0 hero-bg-zoom"
+          className="absolute inset-0 hero-bg-zoom hero-home-bg"
           style={{
-            backgroundImage: `url('${IMAGES.heroes.home}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}

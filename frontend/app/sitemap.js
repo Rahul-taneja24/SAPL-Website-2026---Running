@@ -113,6 +113,18 @@ export default async function sitemap() {
   // won't index them and they waste crawl budget. They are served and referenced
   // in robots.js + layout metadata instead.
 
+  // RFQ page + Arabic (GCC) mini-site — Arabic pages are hand-written
+  // counterparts hreflang-paired to their English versions.
+  const GCC_AR_SLUGS = ['dubai', 'abu-dhabi', 'riyadh', 'jeddah', 'doha', 'muscat', 'kuwait-city', 'manama'];
+  const rfqAndArabicPages = [
+    { url: `${BASE}/rfq`,    lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/ar`,     lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/ar/rfq`, lastModified: STRUCTURAL_LASTMOD },
+    ...GCC_AR_SLUGS.map((slug) => ({ url: `${BASE}/ar/refractory-supplier-in/${slug}`, lastModified: STRUCTURAL_LASTMOD })),
+    ...['shaped-refractories', 'unshaped-refractories', 'flow-control', 'insulation', 'acid-proofing']
+      .map((slug) => ({ url: `${BASE}/ar/products/${slug}`, lastModified: STRUCTURAL_LASTMOD })),
+  ];
+
   return [
     ...mainPages,
     ...categoryPages,
@@ -124,5 +136,6 @@ export default async function sitemap() {
     ...engineeringReferencePages,
     ...staticBlogPages,
     ...apiBlogPages,
+    ...rfqAndArabicPages,
   ];
 }
