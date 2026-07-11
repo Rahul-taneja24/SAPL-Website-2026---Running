@@ -296,7 +296,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["SABIC", "Saudi Steel", "Yamama Cement", "Saudi Aramco (downstream)", "Riyadh Cement Company"],
     description: "Refractory export to Riyadh and Saudi Arabia's massive industrial sector.",
     metaTitle: 'Refractory Exporter to Riyadh | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Riyadh & Saudi Arabia. Supplying SABIC, Saudi Steel & cement plants with bricks, castables, insulation. CUMI authorized. Competitive CIF pricing. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to Riyadh & Saudi Arabia. Supplying SABIC, Saudi Steel & cement plants with bricks, castables & insulation. CUMI authorized.",
     h1: "Refractory Supplier for Riyadh & Saudi Arabia",
     content: {
       intro: "Saudi Arabia's industrial expansion under Vision 2030 has driven strong demand for refractory products across steel, cement, petrochemical and glass sectors. Shanker Agencies has been exporting Indian-made refractories to Riyadh, Jeddah, Dammam and Jubail for years, backed by CUMI's manufacturing quality and our own engineering support for GCC customers.",
@@ -317,7 +317,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Qatar Steel", "Qatar Petroleum", "Qatar National Cement", "Qatalum"],
     description: "Refractory export to Qatar's steel, petrochemical, and infrastructure sectors.",
     metaTitle: 'Refractory Exporter to Doha Qatar | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Doha & Qatar. Supplying Qatar Steel, Qatalum & industrial plants with bricks, castables, ceramic fiber & insulation. Competitive pricing. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to Doha & Qatar. Supplying Qatar Steel, Qatalum & industrial plants with bricks, castables & insulation.",
     h1: "Refractory Supplier for Doha & Qatar Industries",
     content: {
       intro: "Qatar's industrial sector is led by Qatar Steel, Qatalum and the large oil and gas processing complex at Ras Laffan and Mesaieed. These plants need high-performance refractory materials for hot-face and insulating linings. Shanker Agencies exports Indian-origin refractories to Doha with container shipments via Hamad Port, offering competitive pricing and engineering support from Delhi.",
@@ -338,7 +338,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Jindal Shadeed Iron & Steel", "Oman Cement", "Sohar Aluminium", "Oman Oil Refineries"],
     description: "Refractory supply to Oman's steel, cement, and aluminum industries at Sohar and Muscat.",
     metaTitle: 'Refractory Exporter to Muscat Oman | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Muscat & Oman. Supplying Jindal Shadeed, Sohar Aluminium & Oman industries with bricks, castables, insulation. CUMI authorized. Get export quotes from SAPL.",
+    metaDescription: "Indian refractory exporter to Muscat & Oman. Supplying Jindal Shadeed, Sohar Aluminium & Oman industries with bricks, castables & insulation.",
     h1: "Refractory Supplier for Muscat & Oman Industrial Zone",
     content: {
       intro: "Oman's industrial sector at Sohar, Salalah, and the greater Muscat region offers growing opportunities for refractory supply. Shanker Agencies exports refractory products to Oman, serving Jindal Shadeed Iron & Steel, Sohar Aluminium, Oman Cement, and refinery operations with high-quality materials manufactured by our authorized brand partners in India.",
@@ -1103,7 +1103,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["CPC (Ceylon Petroleum Corporation)", "Peliyagoda industrial zone", "Ekala industrial zone"],
     description: "Sri Lanka has a growing industrial sector with CPC's Sapugaskanda refinery, significant ceramic tile and glass manufacturing, and industrial boilers across tea processing, textile, and food industries. India's proximity makes SAPL a cost-effective refractory supplier.",
     metaTitle: 'Refractory Exporter to Sri Lanka | Shanker Agencies',
-    metaDescription: "Refractory materials exporter to Sri Lanka. High alumina bricks, castables & insulation for ceramics, glass, petrochemical & industrial applications. CIF Colombo Port. Fast dispatch from India.",
+    metaDescription: "Refractory materials exporter to Sri Lanka. High alumina bricks, castables & insulation for ceramics, glass & petrochemical plants. CIF Colombo Port.",
     h1: "Refractory Materials Exporter to Sri Lanka",
     content: {
       intro: "Sri Lanka's industrial refractory demand spans CPC's Sapugaskanda refinery, the substantial ceramic tile industry (Lanka Ceramics, Rocell, Noritake), glass manufacturing, tea processing boilers, and textile dyeing furnaces. India's proximity (Colombo is just 300 km from Chennai by sea) makes SAPL's refractory exports highly competitive on delivery time and freight cost.",

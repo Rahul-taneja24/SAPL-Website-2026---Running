@@ -13,7 +13,7 @@ export const BLOG_POSTS_DATA = [
     slug: "how-to-select-ramming-mass-for-induction-furnace",
     title: "How to Select Ramming Mass for Induction Furnace: Complete Guide",
     metaTitle:
-      "How to Select Ramming Mass for Induction Furnace | Expert Guide 2026",
+      "How to Select Ramming Mass for Induction Furnace",
     metaDescription: "Learn how to choose the right ramming mass for your induction furnace. Compare silica, alumina & magnesia types.",
     category: "Technical Guide",
     tags: [
@@ -318,7 +318,7 @@ export const BLOG_POSTS_DATA = [
     title:
       "Refractory Castable Installation Guide: LCC vs ULCC vs Conventional",
     metaTitle:
-      "Refractory Castable Installation Guide LCC ULCC Conventional | SAPL",
+      "Refractory Castable Installation: LCC, ULCC & Conventional",
     metaDescription: "Step-by-step guide to installing refractory castables. Compare LCC, ULCC & conventional types.",
     category: "How-To",
     tags: [
@@ -861,7 +861,7 @@ export const BLOG_POSTS_DATA = [
     id: 7,
     slug: "acid-proof-brick-lining-chemical-plants-guide",
     title: "Acid Proof Brick Lining for Chemical Plants: Complete Guide",
-    metaTitle: "Acid Proof Brick Lining in Chemical Plants: Step-by-Step Installation Guide",
+    metaTitle: "Acid Proof Brick Lining for Chemical Plants | Guide",
     metaDescription: "How to specify and install acid proof brick lining for chemical plants. Brick grade selection, jointing materials, acid resistance testing, and common failure causes with fixes.",
     category: "Industry Guide",
     tags: [
@@ -1953,7 +1953,7 @@ export const BLOG_POSTS_DATA = [
     title:
       "Refractory Anchors & Fastening Systems: Types, Selection & Installation",
     metaTitle:
-      "Refractory Anchors & Fastening Systems Guide | Types Selection | SAPL",
+      "Refractory Anchors & Fastening Systems Guide | SAPL",
     metaDescription: "Complete guide to refractory anchoring systems. V anchors, Y anchors, ceramic anchors, bullhorn tips.",
     category: "Technical Guide",
     tags: [
@@ -2449,7 +2449,7 @@ export const BLOG_POSTS_DATA = [
     id: 19,
     slug: "steel-ladle-refractory-selection-guide",
     title: "Steel Ladle Refractory Selection: Complete Guide to Working Lining Best Practices",
-    metaTitle: "Steel Ladle Refractory Lining Selection Guide | Working Lining Best Practices",
+    metaTitle: "Steel Ladle Refractory Selection Guide | SAPL",
     metaDescription: "Comprehensive guide to steel ladle refractory selection: working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specs, bottom design, purging.",
     category: "Technical Guide",
     tags: ["steel ladle lining", "working lining", "MgO-C bricks", "LCC castable", "purging plug", "campaign life", "ladle refractory"],
@@ -2555,7 +2555,7 @@ export const BLOG_POSTS_DATA = [
     id: 20,
     slug: "cement-kiln-zone-refractory-selection",
     title: "Cement Kiln Refractory Zones: Material Selection Zone by Zone",
-    metaTitle: "Cement Kiln Refractory Selection Zone by Zone | Complete Guide",
+    metaTitle: "Cement Kiln Refractory Selection Zone by Zone",
     metaDescription: "Zone-by-zone cement kiln refractory selection guide. Burning zone, transition zones, nose ring, cooler, inlet zone, and cyclone preheater material.",
     category: "Industry Guide",
     tags: ["cement kiln", "rotary kiln refractory", "burning zone", "magnesia spinel", "kiln refractory", "cement plant"],
@@ -2894,7 +2894,7 @@ export const BLOG_POSTS_DATA = [
     id: 23,
     slug: "induction-furnace-ramming-mass-selection",
     title: "Induction Furnace Lining: Ramming Mass Selection & Installation Guide",
-    metaTitle: "Induction Furnace Ramming Mass Selection & Sintering Guide | SAPL",
+    metaTitle: "Induction Furnace Ramming Mass Selection Guide | SAPL",
     metaDescription: "Complete guide to induction furnace lining with ramming mass. Compare silica, alumina, and magnesia types by melt chemistry.",
     category: "Technical Guide",
     tags: ["induction furnace lining", "ramming mass", "silica ramming mass", "sintering schedule", "foundry refractory", "lining failure"],

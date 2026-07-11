@@ -72,7 +72,7 @@ export async function generateMetadata({ params }) {
   const brand = VALID_BRANDS.find((b) => b.slug === brandSlug);
   if (!brand) {
     return {
-      title: 'Brand Not Found | Shanker Agencies',
+      title: { absolute: 'Brand Not Found | Shanker Agencies' },
       description: 'The requested brand page was not found.',
     };
   }
@@ -80,7 +80,7 @@ export async function generateMetadata({ params }) {
   const title = `${brand.name} ${brand.partnerOnly ? 'Supplier' : 'Dealer'} in India | Shanker Agencies`;
   const description = `Shanker Agencies is ${relationship} for ${brand.name} in India. ${brand.desc} Plant-side support and Pan-India delivery since 1980.`;
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/brands/${brandSlug}`,

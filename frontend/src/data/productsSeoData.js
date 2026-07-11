@@ -8,7 +8,7 @@ export const PRODUCT_SEO = [
     categorySlug: "shaped-refractories",
     productId: "high-alumina-bricks",
     name: "High Alumina Bricks (AL45–AL90)",
-    metaTitle: "High Alumina Bricks AL45 to AL90 | Refractory Bricks for Steel, Cement & Glass | Shanker Agencies",
+    metaTitle: "High Alumina Bricks AL45 to AL90 | Shanker Agencies",
     metaDescription: "High alumina bricks (AL45–AL90, 45–90% Al₂O₃) for steel, cement & glass furnaces. Alumina refractory bricks from an authorized CUMI dealer.",
   },
   {
@@ -29,7 +29,7 @@ export const PRODUCT_SEO = [
     categorySlug: "shaped-refractories",
     productId: "basic-bricks",
     name: "Basic Bricks (Magnesite, MgO-Chrome, Magnesia Spinel, MgO-C)",
-    metaTitle: "Basic Refractory Bricks: Magnesite, MgO-C, Magnesia Spinel | TRL Krosaki | Shanker Agencies",
+    metaTitle: "Basic Refractory Bricks: Magnesite & MgO-C | SAPL",
     metaDescription: "Full range of basic refractory bricks: magnesite, MgO-Chrome, magnesia spinel, and MgO-C for cement kilns, steel converters & copper smelters.",
   },
   {
@@ -64,7 +64,7 @@ export const PRODUCT_SEO = [
     categorySlug: "unshaped-refractories",
     productId: "gunning-materials",
     name: "Gunning Mass / Gunning Mix",
-    metaTitle: "Gunning Castable, Gunning Mass & Cement Gunning Material | Shanker Agencies",
+    metaTitle: "Gunning Castable & Gunning Mass Materials | SAPL",
     metaDescription: "Gunning castable, gunning mass and cement gunning material for hot refractory repairs and guniting. Rapid in-situ application without shutdown.",
   },
   {
@@ -78,7 +78,7 @@ export const PRODUCT_SEO = [
     categorySlug: "flow-control",
     productId: "ladle-shrouds",
     name: "Ladle Shrouds",
-    metaTitle: "Ladle Shrouds for Continuous Casting | Reoxidation Prevention | Shanker Agencies",
+    metaTitle: "Ladle Shrouds for Continuous Casting | SAPL",
     metaDescription: "Ladle shrouds (Al₂O₃-C) for continuous casting, prevent steel reoxidation during transfer. Standard ISO sizes stocked. Price on enquiry.",
   },
   {
