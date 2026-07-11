@@ -5214,6 +5214,256 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["gunning-materials", "low-cement-castables", "ceramic-fiber-blanket"],
   },
 
+  // 48. Kenya / East Africa export guide — geo cluster
+  {
+    id: 48,
+    slug: "refractory-supplier-kenya-east-africa-import-guide",
+    title: "Refractory Supplier for Kenya & East Africa: Import Guide from India",
+    metaTitle: "Refractory Supplier Kenya | Import from India Guide",
+    metaDescription: "How Kenyan and East African steel and cement plants import refractories from India: Mombasa transit times, HS codes, LC terms, and campaign-based ordering for clinker lines and induction furnaces.",
+    category: "Export Guide",
+    tags: ["refractory supplier kenya", "mombasa refractory import", "import refractories from india", "kenya cement plants", "east africa steel plants", "refractory export africa"],
+    readTime: "7 min",
+    publishDate: "2026-07-11",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&q=80",
+    keyTakeaways: [
+      "Kenya and East Africa have no significant domestic refractory manufacturing — cement clinker lines, steel mills and lime kilns import virtually all refractory materials.",
+      "India is the dominant supply base: sea transit from Mundra or Nhava Sheva to Mombasa is typically 12–18 days, far shorter than Europe and with test certificates against the IS/ASTM standards East African engineers already use.",
+      "Kenya's cement industry is integrating fast — new clinker capacity (rather than just grinding imported clinker) means rotary kiln refractory demand, the most technically demanding refractory application, is growing.",
+      "Refractory bricks ship under HS 6902, unshaped products (castables, mortars, ramming mass) under HS 3816, ceramic fibre under HS 6806.",
+      "Because door-to-door lead time is realistically 4–6 weeks, East African plants should order refractories campaign-wise with a 15–20% contingency quantity, not shutdown-wise.",
+    ],
+    faqs: [
+      {
+        question: "Why do Kenyan plants import refractories from India?",
+        answer: "East Africa has no significant domestic refractory production, so cement, steel and lime plants must import. India is the closest major refractory manufacturing base with direct Mombasa sailings, prices well below European suppliers, and products certified against the IS and ASTM standards Kenyan engineers already specify.",
+      },
+      {
+        question: "How long does refractory shipping from India to Kenya take?",
+        answer: "Sea freight from Indian west-coast ports (Mundra, Nhava Sheva) to Mombasa typically takes 12–18 days. Door-to-door including customs clearance and inland transport to plants around Nairobi, Athi River or Kajiado, plan on 4–6 weeks — which is why campaign-based ordering with a contingency quantity is standard practice.",
+      },
+      {
+        question: "Which industries in East Africa buy imported refractories?",
+        answer: "Cement is the largest consumer — Kenya's integrated clinker lines need basic (magnesia-spinel) brick for burning zones plus high alumina brick and castables for preheaters, coolers and nose rings. Steel re-rolling and induction furnace mills need ramming mass, high alumina brick and ladle refractories. Lime kilns, foundries and boiler operators make up the rest.",
+      },
+      {
+        question: "What HS codes apply to refractory imports in Kenya?",
+        answer: "Refractory bricks and shapes fall under HS 6902, other refractory ceramic goods under HS 6903, unshaped refractories such as castables, mortars and ramming mass under HS 3816, and ceramic fibre products under HS 6806. Confirm the applicable EAC Common External Tariff line and any KEBS conformity (PVoC) requirements with your clearing agent before shipment.",
+      },
+      {
+        question: "Does SAPL supply refractories to Kenya?",
+        answer: "Yes. Shanker Agencies exports the full refractory range — high alumina and basic bricks, castables, ramming mass, ceramic fibre and flow control products — from Indian manufacturer partners with CIF Mombasa pricing, full export documentation and manufacturer test certificates.",
+      },
+    ],
+    excerpt: "East Africa imports virtually all of its refractories, and Kenya's shift from clinker grinding to integrated clinker production is raising the technical bar. This guide covers Mombasa transit times, HS codes, KEBS/PVoC conformity and how to structure campaign-based refractory ordering from India.",
+    content: `
+<h2>East Africa's Refractory Demand Is Growing — and It Is All Imported</h2>
+<p><strong>Kenya and its East African neighbours import virtually 100% of their refractory materials, and India is the dominant, lowest-lead-time supply base: 12–18 days sea transit from Mundra or Nhava Sheva to Mombasa, versus 4–6 weeks from Europe.</strong> Demand is rising because the region's cement industry is integrating: Kenya's producers have moved beyond grinding imported clinker into full clinker manufacture — National Cement's clinker plant in Kajiado and the Devki Group's integrated steel operations in Kwale are the visible examples — and clinker kilns consume the most technically demanding refractories in the industry: magnesia-spinel burning-zone brick, high alumina transition-zone brick and abrasion-resistant castables. For plants engineering their first campaigns, supplier selection matters as much as price.</p>
+
+<h2>Who Buys Refractories in East Africa</h2>
+<table>
+  <thead><tr><th>Segment</th><th>Typical refractory needs</th></tr></thead>
+  <tbody>
+    <tr><td>Integrated cement plants (clinker lines)</td><td>Magnesia-spinel and high alumina kiln brick, castables for preheater/cooler, nose ring precast shapes</td></tr>
+    <tr><td>Cement grinding plants</td><td>Minimal — mainly hot-gas generator linings</td></tr>
+    <tr><td>Steel re-rolling & induction furnaces</td><td>Silica ramming mass, high alumina brick, ladle castables and nozzles</td></tr>
+    <tr><td>Lime kilns</td><td>High alumina and fireclay brick, insulating brick backup</td></tr>
+    <tr><td>Boilers, foundries, incinerators</td><td>Conventional and low cement castables, ceramic fibre, plastic refractories</td></tr>
+  </tbody>
+</table>
+
+<h2>The Import Route: India to Mombasa</h2>
+<p>Refractories move by sea from Indian west-coast ports. Realistic planning numbers:</p>
+<ul>
+  <li><strong>Port-to-port:</strong> 12–18 days Mundra/Nhava Sheva → Mombasa</li>
+  <li><strong>Door-to-door:</strong> 4–6 weeks including customs clearance and inland transport to Nairobi, Athi River or Kajiado</li>
+  <li><strong>HS codes:</strong> bricks and shapes HS 6902, other refractory ceramic goods HS 6903, castables/mortars/ramming mass HS 3816, ceramic fibre HS 6806</li>
+  <li><strong>Conformity:</strong> Kenya applies pre-export verification of conformity (PVoC) for many product lines — confirm KEBS requirements with your clearing agent before the supplier ships</li>
+</ul>
+
+<h2>Order Campaign-Wise, Not Shutdown-Wise</h2>
+<p>With a 4–6 week supply line, ordering refractories when a shutdown is already scheduled is too late. The pattern that works for East African plants: forecast the full campaign requirement (kiln reline, ladle campaign, furnace lining cycle), order the complete set with a 15–20% contingency quantity, and hold the contingency as strategic stock. The cost of carrying extra brick is trivial next to the cost of a kiln standing cold waiting for a delayed container.</p>
+
+<h2>What to Demand From an Indian Supplier</h2>
+<ol>
+  <li><strong>Manufacturer test certificates</strong> for every batch — chemistry, density, CCS, refractoriness — against IS or ASTM standards</li>
+  <li><strong>Zone-wise selection support:</strong> a supplier who asks for your kiln diameter, fuel mix and clinker chemistry before quoting, not after</li>
+  <li><strong>Complete export documentation:</strong> commercial invoice, packing list, certificate of origin, and PVoC coordination where applicable</li>
+  <li><strong>CIF Mombasa pricing</strong> so freight and insurance risk stay with the supplier until the port</li>
+  <li><strong>Installation guidance:</strong> heat-up schedules and lining drawings, since specialist refractory installers are scarce in the region</li>
+</ol>
+
+<h2>SAPL Supply for Kenya & East Africa</h2>
+<p>Shanker Agencies exports the complete refractory range to East Africa — magnesia-spinel and high alumina kiln brick, low cement and conventional castables, silica ramming mass, ceramic fibre and flow control products — from CUMI, Calderys and our partner brands, with manufacturer test certificates, CIF Mombasa pricing and campaign-planning support. <a href="/rfq">Submit an RFQ</a> with your plant type and destination, or see our <a href="/refractory-supplier-in/nairobi">Nairobi supply page</a> and <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "low-cement-castables", "ramming-masses"],
+  },
+
+  // 49. Indonesia export guide — nickel smelter + steel angle
+  {
+    id: 49,
+    slug: "why-indonesia-imports-refractories-from-india",
+    title: "Why Indonesia Imports Refractories from India: Smelters, Steel and Cement",
+    metaTitle: "Why Indonesia Imports Refractories from India | SAPL",
+    metaDescription: "Indonesia's refractory market is ~USD 197M and growing 4.1% CAGR, driven by nickel smelters, steel and cement. Why Indian refractories win on lead time, standards and price — an import guide.",
+    category: "Export Guide",
+    tags: ["refractory supplier indonesia", "indonesia refractory import", "nickel smelter refractory", "import refractories from india", "jakarta refractory", "refractory export asean"],
+    readTime: "7 min",
+    publishDate: "2026-07-11",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80",
+    keyTakeaways: [
+      "Indonesia's refractory materials market was estimated at USD 197 million in 2025 and is projected to reach USD 261 million by 2032 (4.1% CAGR, 6Wresearch) — driven by nickel smelting, steel and cement.",
+      "Indonesia's nickel processing build-out created one of the world's densest concentrations of RKEF smelting furnaces — a heavy, continuous consumer of high-temperature refractories that domestic production cannot fully supply.",
+      "Sea transit from Chennai to Jakarta (Tanjung Priok) runs roughly 10–14 days, and Indian refractories are certified against the same ISO/ASTM test methods Indonesian engineers specify.",
+      "Refractory bricks ship under HS 6902, unshaped products under HS 3816, ceramic fibre under HS 6806; most industrial raw material imports face low or zero MFN duty, but confirm current tariff lines and SNI requirements per product.",
+      "The economics favour India over Europe on price and over local stock on range: specialised grades (SiC-bearing castables, magnesia-carbon brick, high-purity ramming mass) are rarely stocked domestically.",
+    ],
+    faqs: [
+      {
+        question: "How big is Indonesia's refractory market?",
+        answer: "The Indonesia refractory material market was estimated at USD 197 million in 2025 and is projected to reach USD 261 million by 2032, growing at roughly 4.1% CAGR (6Wresearch). Demand comes primarily from nickel smelting, steel, cement and glass.",
+      },
+      {
+        question: "Why do Indonesian smelters and steel plants import refractories from India?",
+        answer: "Domestic refractory production covers only part of the demand and a narrow grade range. India offers the full spectrum — magnesia-carbon brick, SiC-bearing abrasion castables, high alumina brick, ramming mass — at 10–14 day sea transit from Chennai to Tanjung Priok, with manufacturer test certificates against the ISO/ASTM methods Indonesian engineers specify, at prices well below European or Japanese suppliers.",
+      },
+      {
+        question: "What refractories do nickel smelters use?",
+        answer: "RKEF (rotary kiln–electric furnace) nickel lines consume refractories at two points: the rotary kilns calcining laterite ore (high alumina and fireclay brick, abrasion-resistant castables) and the electric smelting furnaces (magnesia and magnesia-chrome brick, carbon-based hearth linings, taphole refractories). The continuous, high-temperature duty makes refractory supply reliability critical to smelter uptime.",
+      },
+      {
+        question: "How long does refractory shipping from India to Indonesia take?",
+        answer: "Sea freight from Chennai or Visakhapatnam to Tanjung Priok (Jakarta) or Surabaya typically takes 10–14 days port-to-port. Door-to-door including clearance, plan 3–5 weeks — comfortably inside a planned maintenance calendar when orders are placed campaign-wise.",
+      },
+      {
+        question: "What HS codes and standards apply to refractory imports in Indonesia?",
+        answer: "Refractory bricks and shapes fall under HS 6902, unshaped refractories (castables, mortars, ramming mass) under HS 3816, and ceramic fibre under HS 6806. Confirm the current Indonesian tariff book (BTKI) line and whether any SNI conformity requirement applies to your specific product with your customs broker.",
+      },
+    ],
+    excerpt: "Indonesia's refractory demand — USD 197M in 2025, growing 4.1% a year — is powered by the world's biggest nickel smelting build-out plus steel and cement. Here's why Indonesian plants source from India, and how the import route works.",
+    content: `
+<h2>Indonesia's Refractory Demand Is Structurally Rising</h2>
+<p><strong>Indonesia's refractory materials market was estimated at USD 197 million in 2025 and is projected to reach USD 261 million by 2032 — a 4.1% CAGR (6Wresearch) — and a large share of that demand is met by imports, with India the fastest supply base at 10–14 days sea transit from Chennai to Tanjung Priok.</strong> Three industries drive the growth: the nickel processing build-out (dozens of RKEF smelting lines commissioned since the 2020 ore-export ban), a steel industry restructuring around electric furnaces, and a cement sector serving Southeast Asia's largest construction market. All three are continuous, high-temperature refractory consumers, and the specialised grades they need — magnesia-carbon brick, SiC-bearing castables, high-purity ramming mass — are rarely stocked domestically.</p>
+
+<h2>Where the Demand Sits</h2>
+<table>
+  <thead><tr><th>Industry</th><th>Refractory demand profile</th></tr></thead>
+  <tbody>
+    <tr><td>Nickel smelting (RKEF lines)</td><td>Rotary kiln brick and abrasion castables; magnesia/magnesia-chrome furnace linings; taphole and launder refractories — continuous consumption tied to smelter uptime</td></tr>
+    <tr><td>Steel (EAF and induction furnace)</td><td>Magnesia-carbon brick, ladle castables, silica ramming mass, slide gate and flow control refractories</td></tr>
+    <tr><td>Cement</td><td>Basic and high alumina kiln brick, preheater and cooler castables</td></tr>
+    <tr><td>Glass, pulp & paper, power boilers</td><td>Silica and AZS blocks, conventional castables, ceramic fibre insulation</td></tr>
+  </tbody>
+</table>
+
+<h2>Why India Wins the Supply Decision</h2>
+<ol>
+  <li><strong>Lead time:</strong> 10–14 days Chennai/Visakhapatnam → Tanjung Priok or Surabaya, versus 4+ weeks from Europe. Door-to-door, 3–5 weeks.</li>
+  <li><strong>Range:</strong> India manufactures the full spectrum from fireclay brick to magnesia-carbon and SiC-bearing specialities — one consolidated shipment instead of multiple origins.</li>
+  <li><strong>Standards:</strong> Indian manufacturer test certificates report against the same ISO/ASTM test methods Indonesian plant engineers already specify.</li>
+  <li><strong>Price:</strong> Indian pricing is typically well below European, Japanese or Korean equivalents at comparable grade chemistry.</li>
+</ol>
+
+<h2>The Import Mechanics</h2>
+<ul>
+  <li><strong>HS codes:</strong> bricks and shapes HS 6902, other refractory ceramic goods HS 6903, castables/mortars/ramming mass HS 3816, ceramic fibre HS 6806</li>
+  <li><strong>Tariffs & conformity:</strong> most industrial refractory lines face low MFN duty; confirm the current BTKI tariff line and any SNI requirement for your product with your customs broker</li>
+  <li><strong>Documentation:</strong> commercial invoice, packing list, certificate of origin (India–ASEAN FTA may apply), manufacturer test certificates per batch</li>
+  <li><strong>Ordering pattern:</strong> campaign-wise with contingency stock — smelters especially cannot afford a lining delay measured against furnace downtime</li>
+</ul>
+
+<h2>SAPL Supply for Indonesia</h2>
+<p>Shanker Agencies exports the full refractory range to Indonesia — magnesia-carbon and high alumina brick, low cement and SiC-bearing castables, silica ramming mass, ceramic fibre and flow control products — from CUMI, Calderys and our partner brands, with manufacturer test certificates, CIF Tanjung Priok/Surabaya pricing and full export documentation. <a href="/rfq">Submit an RFQ</a> with your furnace type and destination port, or see our <a href="/refractory-supplier-in/jakarta">Jakarta supply page</a> and <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["basic-bricks", "low-cement-castables", "ramming-masses"],
+  },
+
+  // 50. Malaysia export guide
+  {
+    id: 50,
+    slug: "refractory-supplier-malaysia-import-guide",
+    title: "Refractory Supplier for Malaysia: Import Guide from India for Steel & Cement",
+    metaTitle: "Refractory Supplier Malaysia | Import from India Guide",
+    metaDescription: "How Malaysian steel mills, cement plants and boiler operators import refractories from India: Port Klang transit, HS codes, blast furnace and EAF refractory selection, and campaign ordering.",
+    category: "Export Guide",
+    tags: ["refractory supplier malaysia", "port klang refractory import", "import refractories from india", "malaysia steel plants", "blast furnace refractory", "refractory export asean"],
+    readTime: "7 min",
+    publishDate: "2026-07-11",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80",
+    keyTakeaways: [
+      "Malaysia's steel industry runs a full technology mix — blast furnaces (Ann Joo's hybrid BF in Penang, Alliance Steel and Eastern Steel integrated works), EAFs and induction furnaces — each with a distinct refractory consumption profile.",
+      "Eastern Steel's announced expansion toward 2.7 million tonnes annual capacity and Alliance Steel's integrated complex in Kuantan anchor long-term refractory demand growth on the east coast.",
+      "Malaysia has limited domestic refractory manufacturing; specialised grades — magnesia-carbon brick, blast furnace trough castables, purging plugs — are imported.",
+      "Sea transit from Chennai to Port Klang is roughly 7–12 days, one of the shortest major refractory supply routes into ASEAN.",
+      "Refractory bricks ship under HS 6902, unshaped products under HS 3816, ceramic fibre under HS 6806; the India–ASEAN FTA can reduce duty with a valid certificate of origin.",
+    ],
+    faqs: [
+      {
+        question: "Why do Malaysian plants import refractories from India?",
+        answer: "Malaysia has limited domestic refractory manufacturing, and its steel industry's technology mix — blast furnaces, EAFs, induction furnaces and rolling mills — needs specialised grades like magnesia-carbon brick, trough and runner castables and purging refractories that must be imported. India offers the full range at 7–12 days sea transit from Chennai to Port Klang, with prices below European and Japanese suppliers and test certificates against the ISO/ASTM methods Malaysian engineers specify.",
+      },
+      {
+        question: "How long does refractory shipping from India to Malaysia take?",
+        answer: "Sea freight from Chennai or Visakhapatnam to Port Klang or Penang typically takes 7–12 days port-to-port. Door-to-door including customs clearance, plan 3–4 weeks — among the shortest refractory import lead times in ASEAN.",
+      },
+      {
+        question: "Which Malaysian industries consume imported refractories?",
+        answer: "Steel is the largest: blast furnace operations (Ann Joo Penang, Alliance Steel Kuantan, Eastern Steel Kemaman) need taphole clay, trough castables and BF brick, while EAF and induction furnace mills need magnesia-carbon brick, ladle refractories and ramming mass. Cement plants, glass producers, oleochemical and power boiler operators make up the balance.",
+      },
+      {
+        question: "What HS codes apply to refractory imports in Malaysia?",
+        answer: "Refractory bricks and shapes fall under HS 6902, other refractory ceramic goods under HS 6903, unshaped refractories such as castables, mortars and ramming mass under HS 3816, and ceramic fibre products under HS 6806. With a valid India–ASEAN FTA certificate of origin (Form AI), preferential duty rates can apply — confirm current PDK tariff lines with your forwarding agent.",
+      },
+      {
+        question: "Does SAPL supply refractories to Malaysia?",
+        answer: "Yes. Shanker Agencies exports the complete range — magnesia-carbon and high alumina brick, blast furnace castables, ramming mass, ceramic fibre and flow control products — with CIF Port Klang/Penang pricing, manufacturer test certificates and full export documentation including FTA certificates of origin.",
+      },
+    ],
+    excerpt: "Malaysia runs blast furnaces, EAFs and induction furnaces side by side — a refractory demand profile few ASEAN markets match — while domestic refractory manufacturing stays limited. This guide covers the India–Port Klang route, HS codes, FTA duty benefits and technology-wise refractory selection.",
+    content: `
+<h2>Malaysia's Steel Technology Mix Drives a Broad Refractory Demand</h2>
+<p><strong>Malaysia is one of the few ASEAN markets running blast furnaces, electric arc furnaces and induction furnaces side by side — and with limited domestic refractory manufacturing, the specialised grades each technology needs are imported, with India supplying at 7–12 days sea transit from Chennai to Port Klang.</strong> Ann Joo operates a hybrid blast furnace route in Penang; Alliance Steel runs an integrated complex in Kuantan; Eastern Steel in Kemaman has announced expansion plans toward 2.7 million tonnes of annual capacity. Each route consumes a different refractory basket — BF taphole clay and trough castables on one side, EAF magnesia-carbon brick and ladle systems on the other — which is why Malaysian buyers value a supplier who can consolidate the full range in one shipment.</p>
+
+<h2>Refractory Demand by Technology</h2>
+<table>
+  <thead><tr><th>Route</th><th>Key refractory consumption</th></tr></thead>
+  <tbody>
+    <tr><td>Blast furnace (Ann Joo, Alliance, Eastern)</td><td>Taphole clay, trough and runner castables, BF stack brick, hot blast stove checkers</td></tr>
+    <tr><td>EAF / induction furnace mills</td><td>Magnesia-carbon brick, silica ramming mass, ladle castables, slide gates and purging plugs</td></tr>
+    <tr><td>Cement plants</td><td>Basic and high alumina kiln brick, preheater/cooler castables</td></tr>
+    <tr><td>Boilers, oleochemical, glass</td><td>Conventional castables, insulating brick, ceramic fibre, acid-proof linings</td></tr>
+  </tbody>
+</table>
+
+<h2>The Import Route: India to Port Klang</h2>
+<ul>
+  <li><strong>Port-to-port:</strong> 7–12 days Chennai/Visakhapatnam → Port Klang or Penang</li>
+  <li><strong>Door-to-door:</strong> 3–4 weeks including clearance — comfortably inside a planned outage calendar</li>
+  <li><strong>HS codes:</strong> bricks HS 6902, other refractory ceramic goods HS 6903, castables/mortars/ramming mass HS 3816, ceramic fibre HS 6806</li>
+  <li><strong>Duty advantage:</strong> the India–ASEAN FTA (Form AI certificate of origin) can reduce or eliminate duty on many refractory lines — always ask your Indian supplier for FTA documentation</li>
+</ul>
+
+<h2>What Malaysian Buyers Should Demand</h2>
+<ol>
+  <li><strong>Technology-matched selection:</strong> a supplier who quotes trough castable by iron throughput and slag chemistry, not by generic grade name</li>
+  <li><strong>Manufacturer test certificates</strong> per batch against ISO/ASTM methods</li>
+  <li><strong>FTA certificate of origin</strong> included in the document set as standard, not on request</li>
+  <li><strong>CIF Port Klang/Penang pricing</strong> so freight risk stays with the supplier</li>
+  <li><strong>Campaign-wise consolidation:</strong> one container mixing brick, castables and fibre beats three part-shipments on freight cost and clearance effort</li>
+</ol>
+
+<h2>SAPL Supply for Malaysia</h2>
+<p>Shanker Agencies exports the complete refractory range to Malaysia — magnesia-carbon and high alumina brick, blast furnace and low cement castables, silica ramming mass, ceramic fibre and flow control products — from CUMI, Calderys and our partner brands, with manufacturer test certificates, India–ASEAN FTA documentation and CIF Port Klang pricing. <a href="/rfq">Submit an RFQ</a> with your furnace route and destination port, or see our <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["basic-bricks", "low-cement-castables", "ramming-masses"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
