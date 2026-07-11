@@ -11,11 +11,25 @@ export function AppProvider({ children }) {
   const [region, setRegion] = useState('international');
   const [showQuoteModal, setShowQuoteModal] = useState(false);
   const [adminToken, setAdminToken] = useState(null);
+  const [geoBanner, setGeoBanner] = useState(null); // 'india' | 'international' | null
 
   useEffect(() => {
     try {
       const stored = localStorage.getItem('shanker_region');
-      if (stored) setRegion(stored);
+      const bannerDismissed = localStorage.getItem('shanker_geo_banner_dismissed');
+      const hintMatch = document.cookie.match(/(?:^|; )shanker_geo_hint=([^;]+)/);
+      const hint = hintMatch ? decodeURIComponent(hintMatch[1]) : null;
+
+      if (stored) {
+        // Visitor already made an explicit choice, respect it, no banner.
+        setRegion(stored);
+      } else if (hint) {
+        // No explicit choice yet, silently default to the geo-detected
+        // region and show a small dismissible confirmation banner.
+        setRegion(hint);
+        if (!bannerDismissed) setGeoBanner(hint);
+      }
+
       const token = localStorage.getItem('adminToken');
       if (token) setAdminToken(token);
     } catch (e) {}
@@ -23,7 +37,16 @@ export function AppProvider({ children }) {
 
   const handleRegionChange = (r) => {
     setRegion(r);
-    try { localStorage.setItem('shanker_region', r); } catch (e) {}
+    setGeoBanner(null);
+    try {
+      localStorage.setItem('shanker_region', r);
+      localStorage.setItem('shanker_geo_banner_dismissed', '1');
+    } catch (e) {}
+  };
+
+  const dismissGeoBanner = () => {
+    setGeoBanner(null);
+    try { localStorage.setItem('shanker_geo_banner_dismissed', '1'); } catch (e) {}
   };
 
   const handleAdminLogin = (t) => {
@@ -39,6 +62,7 @@ export function AppProvider({ children }) {
   return (
     <AppContext.Provider value={{
       region, handleRegionChange,
+      geoBanner, dismissGeoBanner,
       showQuoteModal, setShowQuoteModal,
       adminToken, handleAdminLogin, handleAdminLogout,
     }}>

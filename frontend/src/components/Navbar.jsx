@@ -103,7 +103,7 @@ function toEnglishPath(pathname) {
 const Navbar = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const { region, handleRegionChange, setShowQuoteModal } = useApp();
+  const { region, handleRegionChange, geoBanner, dismissGeoBanner, setShowQuoteModal } = useApp();
   const onRegionChange = handleRegionChange;
   const onQuoteClick = () => setShowQuoteModal(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -246,6 +246,33 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* ── GEO-DETECTED REGION BANNER ─────────────────── */}
+      {geoBanner && (
+        <div className="bg-amber-50 border-b border-amber-200 px-4 py-2 text-xs text-amber-900">
+          <div className="max-w-7xl mx-auto flex items-center justify-between gap-3 flex-wrap">
+            <span>
+              {geoBanner === "india"
+                ? "We've set your view to 🇮🇳 India based on your location."
+                : "We've set your view to 🌍 International based on your location."}
+              {" "}
+              <button
+                onClick={() => handleRegionChange(geoBanner === "india" ? "international" : "india")}
+                className="underline font-semibold hover:text-amber-700"
+              >
+                Switch to {geoBanner === "india" ? "International" : "India"}
+              </button>
+            </span>
+            <button
+              onClick={dismissGeoBanner}
+              aria-label="Dismiss"
+              className="text-amber-700 hover:text-amber-900 font-bold px-1"
+            >
+              ×
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* ── MAIN NAV ─────────────────────────────────── */}
       <nav
