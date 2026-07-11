@@ -188,7 +188,6 @@ export default function RootLayout({ children }) {
                     longitude: 77.29598125527387,
                   },
                   hasMap: 'https://share.google/Cz2EJCPRFsQtAvvOE',
-                  additionalType: 'https://www.wikidata.org/wiki/Q11642428',
                   telephone: ['+91-9899957888', '+91-9810205154', '+91-9811909394'],
                   openingHoursSpecification: [
                     {
