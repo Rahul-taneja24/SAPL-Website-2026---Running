@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useApp } from '@/context/AppContext';
 import { Menu, X, ChevronDown, Globe, Phone, Mail, Zap, Languages, ArrowRight, Flame, Layers, Wrench, Package, FileText } from "lucide-react";
 
@@ -79,8 +79,30 @@ const languages = [
 
 // ─── COMPONENT ────────────────────────────────────────────────────────────────
 
+const GCC_AR_SLUGS = ['dubai', 'abu-dhabi', 'riyadh', 'jeddah', 'doha', 'muscat', 'kuwait-city', 'manama'];
+const AR_PRODUCT_CATEGORIES = ['shaped-refractories', 'unshaped-refractories', 'flow-control', 'insulation', 'acid-proofing'];
+
+// Maps a live English path to its hand-built Arabic counterpart, falling
+// back to the /ar homepage when there's no dedicated Arabic page for it.
+function toArabicPath(pathname) {
+  if (pathname === '/') return '/ar';
+  if (pathname === '/rfq') return '/ar/rfq';
+  const locMatch = pathname.match(/^\/refractory-supplier-in\/([^/]+)$/);
+  if (locMatch && GCC_AR_SLUGS.includes(locMatch[1])) return `/ar/refractory-supplier-in/${locMatch[1]}`;
+  const prodMatch = pathname.match(/^\/products\/([^/]+)$/);
+  if (prodMatch && AR_PRODUCT_CATEGORIES.includes(prodMatch[1])) return `/ar/products/${prodMatch[1]}`;
+  return '/ar';
+}
+
+// Reverse of toArabicPath, used when switching back to English from an /ar page.
+function toEnglishPath(pathname) {
+  if (pathname === '/ar') return '/';
+  return pathname.replace(/^\/ar/, '') || '/';
+}
+
 const Navbar = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const { region, handleRegionChange, setShowQuoteModal } = useApp();
   const onRegionChange = handleRegionChange;
   const onQuoteClick = () => setShowQuoteModal(true);
@@ -88,7 +110,7 @@ const Navbar = () => {
   const [activeMega, setActiveMega] = useState(null);
   const [mobileExpanded, setMobileExpanded] = useState(null);
   const [showLangMenu, setShowLangMenu] = useState(false);
-  const [currentLang, setCurrentLang] = useState("en");
+  const [currentLang, setCurrentLang] = useState(() => (pathname.startsWith("/ar") ? "ar" : "en"));
   const [scrolled, setScrolled] = useState(false);
   const megaRef = useRef(null);
   
@@ -118,8 +140,19 @@ const Navbar = () => {
   }, []);
 
   const translatePage = (langCode) => {
-    setCurrentLang(langCode);
     setShowLangMenu(false);
+    if (langCode === "ar") {
+      // Route to the real hand-built Arabic site instead of running it
+      // through the generic Google Translate cookie hack.
+      setCurrentLang(langCode);
+      router.push(toArabicPath(pathname));
+      return;
+    }
+    setCurrentLang(langCode);
+    if (langCode === "en" && pathname.startsWith("/ar")) {
+      router.push(toEnglishPath(pathname));
+      return;
+    }
     if (langCode !== "en") {
       document.cookie = `googtrans=/en/${langCode}; path=/`;
       window.location.reload();
@@ -249,7 +282,7 @@ const Navbar = () => {
                 <span className="sm:hidden font-oswald text-[9px] font-bold text-[#1E3A5F] tracking-[0.28em] uppercase leading-tight">
                   PRIVATE LIMITED
                 </span>
-                <span className="text-[8px] sm:text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase mt-0.5">
+                <span className="hidden sm:block text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase mt-0.5">
                   Refractory Engineering Solutions
                 </span>
               </div>
