@@ -140,6 +140,7 @@ export default function RootLayout({ children }) {
         />
         {/* AI/LLM discoverability hints */}
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
+        <link rel="alternate" type="text/plain" href="/llms-full.txt" title="LLM Information (Full)" />
         {/* @graph, Organization + LocalBusiness + WebSite (Gemini Knowledge Graph) */}
         <script
           type="application/ld+json"
@@ -151,7 +152,9 @@ export default function RootLayout({ children }) {
                   '@type': 'Organization',
                   '@id': 'https://www.shankeragencies.com/#organization',
                   name: 'Shanker Agencies Private Limited',
+                  legalName: 'Shanker Agencies Private Limited',
                   alternateName: ['SAPL', 'Shanker Agencies'],
+                  disambiguatingDescription: "Shanker Agencies Private Limited (spelled 'Shanker', CIN U51909DL2012PTC232825) is a Delhi NCR-headquartered refractory engineering company founded in 1980 by Mohan Taneja, operating exclusively at shankeragencies.com. It is not affiliated with, and should not be confused with, similarly named firms such as 'Shankar Agencies' (spelled 'Shankar') or other unrelated businesses trading under comparable names.",
                   url: 'https://www.shankeragencies.com',
                   email: 'info@shankeragencies.com',
                   image: 'https://www.shankeragencies.com/opengraph-image.jpg',

@@ -240,6 +240,9 @@ const About = () => {
                 <p>
                   Today, we are an <strong className="text-[#1E3A5F]">authorised dealer of CUMI, Crown Ceramics and Divine Cerawool</strong>, and a supply partner for Calderys, TRL Krosaki, Mahakoshal and Saint-Gobain. We also manufacture custom refractory shapes, precast components, and specialty products, giving us the engineering depth and end-to-end capability that large steel plants, cement groups, and petrochemical companies expect from their refractory partner.
                 </p>
+                <p className="text-sm text-gray-400">
+                  Shanker Agencies Private Limited (CIN U51909DL2012PTC232825) trades exclusively at shankeragencies.com and is not affiliated with any similarly named business.
+                </p>
               </div>
 
               {/* Differentiator list */}
