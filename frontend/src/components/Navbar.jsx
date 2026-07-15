@@ -309,6 +309,10 @@ const Navbar = () => {
                 <span className="sm:hidden font-oswald text-[9px] font-bold text-[#1E3A5F] tracking-[0.28em] uppercase leading-tight">
                   PRIVATE LIMITED
                 </span>
+                {/* Mobile tagline: tighter tracking + smaller size so it fits the two-line logo block */}
+                <span className="sm:hidden text-[6.5px] text-[#F97316] font-semibold tracking-[0.09em] uppercase leading-tight mt-0.5 whitespace-nowrap">
+                  Refractory Engineering Solutions
+                </span>
                 <span className="hidden sm:block text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase mt-0.5">
                   Refractory Engineering Solutions
                 </span>
