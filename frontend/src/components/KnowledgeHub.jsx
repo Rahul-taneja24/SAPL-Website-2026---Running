@@ -9,10 +9,10 @@ import {
 import { getHubItems, HUB_TYPES } from '@/data/knowledgeHubIndex';
 
 const TYPE_META = {
-  guide: { icon: BookOpen, color: 'text-[#3B82F6]' },
-  news: { icon: Newspaper, color: 'text-[#F97316]' },
-  reference: { icon: FlaskConical, color: 'text-emerald-600' },
-  datasheet: { icon: FileText, color: 'text-stone-500' },
+  guide: { icon: BookOpen, color: 'text-[#3B82F6]', badge: 'bg-blue-50 text-blue-700 border-blue-200', tile: 'from-[#1E3A5F] to-[#3B82F6]' },
+  news: { icon: Newspaper, color: 'text-[#F97316]', badge: 'bg-orange-50 text-[#F97316] border-orange-200', tile: 'from-[#F97316] to-[#EA580C]' },
+  reference: { icon: FlaskConical, color: 'text-emerald-600', badge: 'bg-emerald-50 text-emerald-700 border-emerald-200', tile: 'from-emerald-600 to-emerald-800' },
+  datasheet: { icon: FileText, color: 'text-stone-600', badge: 'bg-stone-100 text-stone-600 border-stone-200', tile: 'from-stone-500 to-stone-700' },
 };
 
 function formatDate(d) {
@@ -20,49 +20,55 @@ function formatDate(d) {
   return new Date(d).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
-// One calm, text-forward row. No per-type background wash — just an icon,
-// a label, and clean typography, matching the /news headline-list pattern.
-function ResultRow({ item }) {
+// Visual card: real cover image when we have one (most blog guides), else a
+// colored icon-tile in the type's accent so the grid still reads as
+// imagery, not text rows.
+function ItemCard({ item }) {
   const meta = TYPE_META[item.type];
   const Icon = meta.icon;
   return (
-    <Link href={item.href} className="group flex items-start gap-4 py-5 border-b border-gray-100 last:border-0">
-      <Icon className={`w-4 h-4 mt-1 flex-shrink-0 ${meta.color}`} />
-      <div className="min-w-0 flex-1">
-        <div className="flex items-baseline justify-between gap-4 mb-1">
-          <span className={`text-[10px] font-bold tracking-[0.15em] uppercase ${meta.color}`}>
-            {HUB_TYPES[item.type].label}
-          </span>
-          {item.date && <span className="text-xs text-gray-400 whitespace-nowrap">{formatDate(item.date)}</span>}
-        </div>
-        <h3 className="font-oswald text-base md:text-lg font-bold text-[#1E3A5F] leading-snug group-hover:text-[#F97316] transition-colors">
+    <Link href={item.href} className="group flex flex-col rounded-2xl overflow-hidden border border-gray-100 bg-white hover:shadow-lg hover:-translate-y-0.5 transition-all">
+      <div className="relative h-36 w-full overflow-hidden flex-shrink-0">
+        {item.coverImage ? (
+          <img src={item.coverImage} alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+        ) : (
+          <div className={`w-full h-full bg-gradient-to-br ${meta.tile} flex items-center justify-center`}>
+            <Icon className="w-10 h-10 text-white/40" />
+          </div>
+        )}
+        <span className={`absolute top-3 left-3 inline-flex items-center gap-1 text-[10px] font-bold tracking-wide uppercase px-2.5 py-1 rounded-full border ${meta.badge} bg-white/95 backdrop-blur-sm`}>
+          <Icon className="w-3 h-3" />
+          {HUB_TYPES[item.type].label}
+        </span>
+      </div>
+      <div className="flex flex-col flex-1 p-4">
+        <h3 className="font-oswald text-base font-bold text-[#1E3A5F] leading-snug mb-1.5 group-hover:text-[#F97316] transition-colors line-clamp-2">
           {item.title}
         </h3>
         {item.excerpt && (
-          <p className="text-gray-500 text-sm leading-relaxed line-clamp-2 mt-1 max-w-2xl">{item.excerpt}</p>
+          <p className="text-gray-500 text-xs leading-relaxed line-clamp-2 mb-3 flex-1">{item.excerpt}</p>
         )}
-        {item.readTime && (
-          <span className="inline-flex items-center gap-1 text-xs text-gray-400 mt-1.5">
-            <Clock className="w-3 h-3" />{item.readTime}
-          </span>
-        )}
+        <div className="flex items-center justify-between mt-auto pt-2 border-t border-gray-50">
+          <div className="flex items-center gap-2 text-[11px] text-gray-400">
+            {item.date && <span>{formatDate(item.date)}</span>}
+            {item.date && item.readTime && <span>&middot;</span>}
+            {item.readTime && <span className="flex items-center gap-1"><Clock className="w-3 h-3" />{item.readTime}</span>}
+          </div>
+          <ArrowRight className={`w-4 h-4 ${meta.color} opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all`} />
+        </div>
       </div>
-      <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-[#F97316] group-hover:translate-x-0.5 transition-all flex-shrink-0 mt-1" />
     </Link>
   );
 }
 
-// A compact preview section for the default (no search) browse view: a
-// heading, up to `limit` rows, and a "View all" link that jumps into
-// filtered mode instead of showing everything at once.
-function PreviewSection({ type, items, onViewAll, limit = 4 }) {
+function PreviewSection({ type, items, onViewAll, limit = 3 }) {
   const meta = TYPE_META[type];
   const Icon = meta.icon;
   const shown = items.slice(0, limit);
   if (shown.length === 0) return null;
   return (
     <div className="mb-12">
-      <div className="flex items-center justify-between mb-1 pb-3 border-b-2 border-[#0B1628]">
+      <div className="flex items-center justify-between mb-4 pb-3 border-b-2 border-[#0B1628]">
         <div className="flex items-center gap-2">
           <Icon className={`w-4 h-4 ${meta.color}`} />
           <h2 className="font-oswald text-sm font-bold text-[#0B1628] tracking-widest uppercase">
@@ -76,8 +82,8 @@ function PreviewSection({ type, items, onViewAll, limit = 4 }) {
           </button>
         )}
       </div>
-      <div>
-        {shown.map((item) => <ResultRow key={`${item.type}-${item.slug}`} item={item} />)}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {shown.map((item) => <ItemCard key={`${item.type}-${item.slug}`} item={item} />)}
       </div>
     </div>
   );
@@ -126,7 +132,14 @@ export default function KnowledgeHub() {
         className="relative py-14 md:py-16 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)' }}
       >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div
+          className="absolute inset-0 opacity-[0.04]"
+          style={{
+            backgroundImage: 'linear-gradient(rgba(249,115,22,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(249,115,22,0.8) 1px, transparent 1px)',
+            backgroundSize: '60px 60px',
+          }}
+        />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <nav className="flex items-center gap-1.5 text-sm text-white/50 mb-5 flex-wrap">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
@@ -160,10 +173,10 @@ export default function KnowledgeHub() {
       </section>
 
       <div className="bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
 
           {/* Type tabs, the only filter control, always visible */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          <div className="flex flex-wrap gap-2 mb-10">
             <button
               onClick={() => setActiveType('all')}
               className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
@@ -186,18 +199,15 @@ export default function KnowledgeHub() {
           </div>
 
           {isBrowsing ? (
-            // Default browse: sectioned by type, a short preview of each with
-            // a "View all" jump, so the page opens calm instead of a 73-item wall.
             <>
               <PreviewSection type="news" items={byType.news} onViewAll={() => setActiveType('news')} limit={3} />
-              <PreviewSection type="guide" items={byType.guide} onViewAll={() => setActiveType('guide')} limit={5} />
+              <PreviewSection type="guide" items={byType.guide} onViewAll={() => setActiveType('guide')} limit={6} />
               <PreviewSection type="reference" items={byType.reference} onViewAll={() => setActiveType('reference')} limit={3} />
               <PreviewSection type="datasheet" items={byType.datasheet} onViewAll={() => setActiveType('datasheet')} limit={4} />
             </>
           ) : (
-            // Search or single-type mode: one clean filtered list.
             <>
-              <p className="text-sm text-gray-500 mb-2" aria-live="polite">
+              <p className="text-sm text-gray-500 mb-6" aria-live="polite">
                 {filtered.length} resource{filtered.length !== 1 ? 's' : ''}
                 {query && <> matching &quot;{query}&quot;</>}
               </p>
@@ -209,15 +219,15 @@ export default function KnowledgeHub() {
                   </button>
                 </div>
               ) : (
-                <div>
-                  {filtered.map((item) => <ResultRow key={`${item.type}-${item.slug}`} item={item} />)}
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {filtered.map((item) => <ItemCard key={`${item.type}-${item.slug}`} item={item} />)}
                 </div>
               )}
             </>
           )}
 
           {/* CTA */}
-          <div className="mt-14 rounded-2xl overflow-hidden border border-[#F97316]/20 shadow-sm">
+          <div className="mt-16 rounded-2xl overflow-hidden border border-[#F97316]/20 shadow-sm">
             <div className="bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF] p-6 text-white">
               <h3 className="font-oswald text-xl font-bold mb-1">Can&apos;t Find What You Need?</h3>
               <p className="text-white/80 text-sm">Our refractory engineers answer technical questions directly, no obligation.</p>
