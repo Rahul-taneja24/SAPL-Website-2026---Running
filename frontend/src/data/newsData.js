@@ -351,4 +351,110 @@ export const NEWS_ARTICLES = [
 <p>Expect EPC and refractory-package tendering for the kiln, precalciner, cooler and WHR ducting to progress over the next 12–18 months ahead of the Q3 FY28 commissioning date. If Dalmia Bharat's southern-India push continues — building on other announced regional investment — refractory and insulation suppliers should track this as one signal among a growing pool of southern-India cement capacity additions, not an isolated event. Plants already running similar clinker lines in the region are a useful reference point for lining life and reline scheduling as this project moves from foundation stone to detailed engineering.</p>
 `,
   },
+  {
+    id: 4,
+    slug: "jsw-cement-60-mtpa-expansion-2026",
+    title: "JSW Cement's 60 MTPA Roadmap: What It Means for Kiln Refractories",
+    metaTitle: "JSW Cement 60 MTPA Plan & Kiln Refractory Demand",
+    metaDescription:
+      "JSW Cement targets 35.25 MTPA by 2028 and a 60 MTPA long-term vision, up from 24.1 MTPA today. What the capacity roadmap means for kiln refractory demand.",
+    category: "Cement",
+    tags: [
+      "JSW Cement",
+      "cement capacity expansion",
+      "clinker capacity",
+      "kiln refractory demand",
+      "cement plant capex",
+      "India cement industry",
+    ],
+    readTime: "6 min",
+    publishDate: "2026-07-16",
+    lastModified: "2026-07-16",
+    featured: false,
+    coverImage: "",
+    imagePrompt:
+      "Realistic industrial photo: a cement plant control room overlooking a rotary kiln and clinker cooler, construction cranes visible in the background for a new production line, no logos or text.",
+    sources: [
+      {
+        title: "JSW Cement eyes 60 MTPA capacity as it targets top-five position in India",
+        publisher: "ETInfra (PTI)",
+        url: "https://infra.economictimes.indiatimes.com/news/construction/jsw-cement-eyes-60-mtpa-capacity-as-it-targets-top-five-position-in-india/132323829",
+        date: "2026-07-11",
+      },
+      {
+        title: "JSW Cement eyes 60 MTPA capacity as it targets top-five position in India",
+        publisher: "The Economic Times (PTI)",
+        url: "https://m.economictimes.com/industry/indl-goods/svs/cement/jsw-cement-eyes-60-mtpa-capacity-as-it-targets-top-five-position-in-india/articleshow/132315064.cms",
+        date: "2026-07-11",
+      },
+    ],
+    keyTakeaways: [
+      "JSW Cement plans to grow installed capacity from 24.1 MTPA today to 35.25 MTPA by 2028, then 46 MTPA, with a 60 MTPA long-term vision.",
+      "Current clinker capacity (9.74 MTPA) covers only about 40% of grinding capacity (24.1 MTPA) — a gap only new kilns can close.",
+      "Brownfield grinding-only additions do not add kiln refractory demand; only greenfield integrated capacity with a new kiln train does.",
+      "FY26 capex was ₹1,947 crore, with FY26–27 spend focused on large integrated projects and brownfield additions.",
+    ],
+    excerpt:
+      "JSW Cement has laid out a path from 24.1 MTPA installed capacity today to 35.25 MTPA by 2028, 46 MTPA soon after, and a long-term vision of 60 MTPA to break into India's top five cement producers. Not all of that growth means new kiln refractory demand: JSW Cement's clinker capacity already covers only about 40% of its grinding capacity, so the mix of brownfield versus greenfield additions — not the headline MTPA figure — is what determines new kiln lining work.",
+    faqs: [
+      {
+        q: "What did JSW Cement announce?",
+        a: "In its maiden annual report as a listed company, JSW Cement said it is advancing toward 35.25 MTPA of installed capacity by 2028 through brownfield expansion and greenfield capacity additions, with an ambition of 46 MTPA soon after and a long-term vision of 60 MTPA to become one of India's top five cement companies. Current installed capacity stands at 24.1 MTPA, backed by 9.74 MTPA of clinker capacity, with FY26 capex of ₹1,947 crore (ETInfra, The Economic Times, both citing PTI).",
+      },
+      {
+        q: "Why does a cement capacity target matter for refractory demand?",
+        a: "Cement kiln refractories — basic brick in the burning zone, high-alumina brick and castable in the transition and calcining zones — are consumed at the kiln, precalciner and clinker cooler, which together set clinker capacity, not the cement grinding mills that set the headline 'installed capacity' figure most press coverage quotes. A company can add grinding capacity with no new kiln at all, so the refractory-relevant question is how much of the announced growth is genuinely new pyroprocessing capacity.",
+      },
+      {
+        q: "Who is affected by this expansion plan?",
+        a: "Directly, JSW Cement's EPC contractors and refractory suppliers for whichever brownfield and greenfield sites are finalised. More broadly, this signals continued capex appetite among large Indian cement groups, following Dalmia Bharat's Kadapa expansion and other announced projects — refractory and insulation suppliers serving the cement sector should read these as a cluster of demand signals, not isolated events.",
+      },
+      {
+        q: "Does more cement capacity always mean more kiln refractory demand?",
+        a: "No. JSW Cement's own numbers show why: 24.1 MTPA of installed (grinding) capacity is backed by only 9.74 MTPA of clinker capacity, a ratio of about 40%. That gap is normal for a group that has grown partly through grinding units near urban demand centres and imported or bought-in clinker. Closing that gap requires new integrated kiln capacity; simply adding grinding units at existing sites does not. Buyers and suppliers should track clinker-capacity announcements specifically, not just the total MTPA headline.",
+      },
+      {
+        q: "What should refractory suppliers and procurement teams do now?",
+        a: "Watch for JSW Cement's site-specific announcements as the 35.25 MTPA plan firms up — a new integrated line means kiln, precalciner and cooler refractory packages that get specified during detailed engineering, well before commissioning. Until specific greenfield sites are confirmed, this is a signal to stay engaged with JSW Cement's project pipeline rather than an immediate tender. The same applies to any large Indian cement group flagging expansion: the clinker-capacity figure, not the grinding-capacity figure, is the one to track.",
+      },
+      {
+        q: "What could happen next?",
+        a: "Expect JSW Cement to disclose specific brownfield and greenfield sites as the 35.25 MTPA target approaches 2028, likely concentrated in northern, central and eastern India per the company's stated market focus. If achieved, the subsequent 46 MTPA and 60 MTPA milestones would each require further integrated kiln capacity, extending the refractory demand signal well past 2028 rather than concentrating it in one build cycle.",
+      },
+    ],
+    relatedProducts: [
+      { label: "Basic Bricks (Magnesia/MgO-C)", href: "/products/shaped-refractories/basic-bricks" },
+      { label: "High Alumina Bricks", href: "/products/shaped-refractories/high-alumina-bricks" },
+      { label: "Cement Plant Solutions", href: "/solutions/cement" },
+    ],
+    content: `
+<h2>What happened</h2>
+<p>JSW Cement, part of the $23 billion JSW Group, used its maiden annual report as a listed company to lay out a long-term capacity roadmap. Chairman Seshagiri Rao MVS said the company is "currently operating at an installed capacity of 24.1 MTPA and progressing towards 35.25 MTPA by 2028 through brownfield expansion and greenfield capacity additions," with an ambition to reach <strong>46 MTPA</strong> soon after via stronger presence in northern, central and eastern India. The company's stated long-term vision is <strong>60 MTPA</strong>, positioning it among India's top five cement companies (<a href="https://infra.economictimes.indiatimes.com/news/construction/jsw-cement-eyes-60-mtpa-capacity-as-it-targets-top-five-position-in-india/132323829" target="_blank" rel="noopener noreferrer">ETInfra</a>, <a href="https://m.economictimes.com/industry/indl-goods/svs/cement/jsw-cement-eyes-60-mtpa-capacity-as-it-targets-top-five-position-in-india/articleshow/132315064.cms" target="_blank" rel="noopener noreferrer">The Economic Times</a>, both citing PTI). Current installed capacity is backed by <strong>9.74 MTPA of clinker capacity</strong>, and FY26 capex was <strong>₹1,947 crore</strong>. Consolidated sales grew 10.1% to 13.51 MTPA in the same period — roughly 56% utilisation of installed capacity.</p>
+
+<h2>Why it matters</h2>
+<p>The headline MTPA figures describe cement (grinding) capacity, not kiln (clinker) capacity — and only new kiln capacity creates new refractory lining demand. JSW Cement's own numbers show a clinker-to-grinding ratio of about 40% (9.74 of 24.1 MTPA), meaning a meaningful share of its output already depends on grinding clinker sourced or produced elsewhere rather than firing it on-site. Whether the path to 35.25 MTPA closes that gap with new kilns, or simply adds more grinding-only capacity, determines whether this is a refractory demand story or a cement-market-share story.</p>
+
+<h2>Industry impact</h2>
+<p>This lands most directly on JSW Cement's own EPC and refractory contractors as brownfield and greenfield sites are finalised. It also adds to a broader pattern of Indian cement capex: JSW Cement's roadmap follows <a href="/news/dalmia-bharat-kadapa-cement-expansion-2026">Dalmia Bharat's ₹3,100-crore Kadapa kiln expansion</a> announced days earlier, suggesting refractory and insulation suppliers to the cement sector should expect overlapping project pipelines across multiple large groups rather than a single isolated tender.</p>
+
+<h2>How this affects refractory users</h2>
+<p>A cement kiln system is lined by zone regardless of which company builds it: basic (magnesia-spinel) brick in the burning zone, high-alumina brick and low-cement castable through the transition and calcining zones, and wear-resistant castable in the clinker cooler. That lining scope is tied to clinker capacity — the kiln, precalciner and cooler train — not to the grinding mills that make up most of the "installed capacity" figure in general business coverage of this story. For a group like JSW Cement that already runs grinding capacity well ahead of clinker capacity, the practical question for refractory planning is simple: how many of the announced MTPA are greenfield integrated plants (new kiln, new lining) versus brownfield grinding additions (no new kiln, no new lining).</p>
+
+<h2>Procurement &amp; maintenance implications</h2>
+<p>JSW Cement has not yet named specific sites for the 35.25 MTPA milestone, so this is a pipeline signal to track rather than an active tender. Refractory and EPC suppliers should watch for site-specific greenfield announcements over the next 12–24 months, since kiln, precalciner and cooler refractory packages are typically specified during detailed engineering, well before civil work is visible. Given the group's stated focus on northern, central and eastern India for the 46 MTPA phase, suppliers with distribution strength in those regions are better placed to engage early once locations are confirmed.</p>
+
+<h2>SAPL perspective</h2>
+<p>From decades supplying Indian cement plants, the clinker-versus-grinding distinction is one general business coverage of capacity announcements routinely misses, and it is the first question our engineers ask when a capex headline lands. SAPL supplies the full zone-by-zone lining scope for new and existing kiln lines — <a href="/products/shaped-refractories/basic-bricks">basic (magnesia-spinel) bricks</a> for the burning zone and <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a> for the transition and calcining zones — and our <a href="/solutions/cement">cement plant solutions</a> and zone-by-zone guides (<a href="/blog/cement-kiln-refractory-zones-material-selection-guide">material selection by zone</a>, <a href="/blog/cement-kiln-zone-refractory-selection">cost and campaign-life planning by zone</a>) cover the engineering detail behind these choices. This is a read on a public capex announcement, not a pitch tied to JSW Cement specifically.</p>
+
+<h2>Supporting statistics</h2>
+<ul>
+  <li>Installed (cement) capacity: 24.1 MTPA today → 35.25 MTPA target by 2028 → 46 MTPA ambition → 60 MTPA long-term vision — <a href="https://infra.economictimes.indiatimes.com/news/construction/jsw-cement-eyes-60-mtpa-capacity-as-it-targets-top-five-position-in-india/132323829" target="_blank" rel="noopener noreferrer">ETInfra</a>.</li>
+  <li>Clinker capacity: 9.74 MTPA (about 40% of current installed cement capacity) — <a href="https://infra.economictimes.indiatimes.com/news/construction/jsw-cement-eyes-60-mtpa-capacity-as-it-targets-top-five-position-in-india/132323829" target="_blank" rel="noopener noreferrer">ETInfra</a>.</li>
+  <li>FY26 capex: ₹1,947 crore; consolidated sales grew 10.1% to 13.51 MTPA — <a href="https://m.economictimes.com/industry/indl-goods/svs/cement/jsw-cement-eyes-60-mtpa-capacity-as-it-targets-top-five-position-in-india/articleshow/132315064.cms" target="_blank" rel="noopener noreferrer">The Economic Times</a>.</li>
+</ul>
+
+<h2>What could happen next</h2>
+<p>Expect JSW Cement to name specific brownfield and greenfield sites as the 35.25 MTPA target approaches 2028, likely weighted toward northern, central and eastern India per its stated market focus. Each confirmed greenfield site will trigger its own kiln, precalciner and cooler refractory specification cycle; brownfield-only additions will not. If the subsequent 46 MTPA and 60 MTPA milestones follow the same mixed pattern, refractory demand from this single group's growth will arrive in waves tied to specific site announcements rather than a single build-out, extending well past 2028.</p>
+`,
+  },
 ];
