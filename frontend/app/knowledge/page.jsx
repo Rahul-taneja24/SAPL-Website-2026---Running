@@ -1,8 +1,9 @@
-import KnowledgeBase from '@/sections/KnowledgeBase';
+import KnowledgeHub from '@/components/KnowledgeHub';
+import { getHubItems } from '@/data/knowledgeHubIndex';
 
 export const metadata = {
   title: 'Knowledge Base | Refractory Engineering Resources',
-  description: 'Technical guides, installation tips, and engineering resources for refractory professionals. Learn about castables, bricks, mortars and lining systems.',
+  description: 'Technical guides, industry news, engineering references and datasheets for refractory professionals, searchable in one place. Learn about castables, bricks, mortars and lining systems.',
   alternates: { canonical: '/knowledge' },
 };
 
@@ -50,12 +51,30 @@ const breadcrumbSchema = {
 };
 
 export default function KnowledgePage() {
+  // ItemList schema: surface the full indexed set (blog + news + references +
+  // datasheets) as one machine-readable list, the GEO payoff of unifying them.
+  const items = getHubItems();
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    '@id': 'https://www.shankeragencies.com/knowledge/#itemlist',
+    name: 'SAPL Refractory Engineering Knowledge Base',
+    numberOfItems: items.length,
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: `https://www.shankeragencies.com${item.href}`,
+      name: item.title,
+    })),
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(authorSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <KnowledgeBase />
+      <KnowledgeHub />
     </>
   );
 }
