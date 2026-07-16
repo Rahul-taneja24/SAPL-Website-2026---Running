@@ -237,4 +237,118 @@ export const NEWS_ARTICLES = [
 <p>Furnaces commissioned through 2026 will each run multi-year campaigns and then need relining, so refractory demand extends well past commissioning. Expect India's refractory consumption to stay structurally elevated for several years, with periodic tightening around clustered install and reline windows. Buyers who map supply to that calendar will ride the wave; those buying spot will feel the lead-time squeeze.</p>
 `,
   },
+  {
+    id: 3,
+    slug: "dalmia-bharat-kadapa-cement-expansion-2026",
+    title: "Dalmia Bharat's ₹3,100-Crore Kadapa Expansion: What It Means for Refractories",
+    metaTitle: "Dalmia Bharat Kadapa Expansion & Kiln Refractory Demand",
+    metaDescription:
+      "Dalmia Bharat's ₹3,100-crore Kadapa Line-2 more than doubles clinker capacity to 6.1 MTPA. What the new kiln train means for refractory and insulation planning.",
+    category: "Cement",
+    tags: [
+      "cement plant",
+      "kiln refractories",
+      "Dalmia Bharat",
+      "Andhra Pradesh",
+      "castables",
+      "waste heat recovery",
+    ],
+    readTime: "6 min",
+    publishDate: "2026-07-16",
+    lastModified: "2026-07-16",
+    featured: false,
+    coverImage: "",
+    imagePrompt:
+      "Realistic industrial photo: a cement plant rotary kiln and precalciner tower under construction, refractory brick lining visible at the kiln inlet, no logos or text.",
+    sources: [
+      {
+        title: "Dalmia Bharat lays foundation stone for ₹3,100 crore cement plant in Andhra Pradesh",
+        publisher: "ETManufacturing",
+        url: "https://manufacturing.economictimes.indiatimes.com/news/industry/dalmia-bharat-lays-foundation-stone-for-3100-crore-cement-plant-in-andhra-pradesh/132412995",
+        date: "2026-07-15",
+      },
+      {
+        title: "AP Minister Lokesh lays stone for Rs 3,100 crore cement unit in Kadapa",
+        publisher: "The New Indian Express",
+        url: "https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa",
+        date: "2026-07-16",
+      },
+    ],
+    keyTakeaways: [
+      "Dalmia Bharat's Kadapa Line-2 raises clinker capacity from 2.5 to 6.1 MTPA and cement capacity from 3.6 to 9.6 MTPA.",
+      "The ₹3,100-crore project targets commissioning by Q3 FY28, making it Dalmia Bharat's largest integrated plant in southern India.",
+      "A clinker-capacity jump this size means a new kiln, precalciner and cooler train — not a grinding-only add-on.",
+      "The plant specs over 80% renewable power and Waste Heat Recovery, adding insulation scope beyond the kiln itself.",
+    ],
+    excerpt:
+      "Dalmia Bharat has broken ground on a ₹3,100-crore Line-2 at Kadapa, Andhra Pradesh, more than doubling clinker capacity to 6.1 MTPA with commissioning targeted for Q3 FY28. For refractory and insulation suppliers, a new kiln train of this size is a multi-year demand signal that starts well before the plant is commissioned.",
+    faqs: [
+      {
+        q: "What did Dalmia Bharat announce at Kadapa?",
+        a: "On 15 July 2026, Dalmia Bharat laid the foundation stone for a Line-2 expansion at its existing Kadapa, Andhra Pradesh site. The ₹3,100-crore project raises clinker capacity from 2.5 to 6.1 MTPA and cement capacity from 3.6 to 9.6 MTPA, with commissioning targeted for Q3 FY28 (The New Indian Express, ETManufacturing).",
+      },
+      {
+        q: "Why does a clinker-capacity increase matter for refractories?",
+        a: "Clinker capacity is set by the kiln, precalciner and clinker cooler train — the pyroprocessing line, not the grinding mills. More than doubling clinker capacity (2.5 to 6.1 MTPA) means a new kiln system with its own full refractory lining: basic brick in the burning zone, high-alumina and insulating castables through the transition and calciner zones, and wear-resistant linings in the cooler.",
+      },
+      {
+        q: "Who is affected by this expansion?",
+        a: "Directly: Dalmia Bharat and its EPC and refractory contractors for the Kadapa project. More broadly, it signals continued southern-India cement capex — the New Indian Express and ETManufacturing reports both frame it as part of a wider push into Andhra Pradesh's cement demand, which draws on the same regional pool of kiln-refractory and insulation suppliers as other plants in the pipeline.",
+      },
+      {
+        q: "What should refractory and insulation suppliers do now?",
+        a: "Start supplier qualification and grade selection early. Commissioning is targeted for Q3 FY28 — over two years out — but kiln-lining specification, precalciner refractory selection and insulation scope for the stated Waste Heat Recovery (WHR) system typically get locked well before civil and mechanical work finishes. Waiting until closer to commissioning risks lead-time pressure on high-alumina and insulating castable grades.",
+      },
+      {
+        q: "What alternatives or substitutes exist for the specified lining zones?",
+        a: "Cement kiln linings are chosen by zone duty rather than a single material: basic (magnesia-spinel) brick for the burning zone, high-alumina and low-cement castables for the transition and precalciner, and insulating fibre or lightweight castable for backup and WHR ducting. The choice is a specification decision for Dalmia Bharat's project engineers, not an open substitution — but it defines which supplier categories should be engaging now.",
+      },
+      {
+        q: "What could happen next?",
+        a: "Expect EPC and refractory-package tendering for the kiln, precalciner, cooler and WHR ducting to progress over the next 12–18 months ahead of the Q3 FY28 commissioning date. If Dalmia Bharat's southern-India expansion continues at this pace, it adds to a broader regional demand pool for kiln-grade refractories and insulation that suppliers should track alongside other announced cement capacity.",
+      },
+    ],
+    relatedProducts: [
+      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castable" },
+      { label: "Ceramic Fibre Blanket", href: "/products/insulation/ceramic-fibre-blanket" },
+      { label: "Cement Plant Solutions", href: "/solutions/cement" },
+    ],
+    content: `
+<h2>What happened</h2>
+<p>Dalmia Bharat laid the foundation stone on 15 July 2026 for a Line-2 expansion at its existing Kadapa, Andhra Pradesh plant, in the presence of state IT Minister Nara Lokesh and Dalmia Bharat MD &amp; CEO Puneet Dalmia (<a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>). The <strong>₹3,100-crore</strong> project raises the site's clinker capacity from 2.5 to <strong>6.1 MTPA</strong> and cement capacity from 3.6 to <strong>9.6 MTPA</strong>, with commissioning targeted for <strong>Q3 FY28</strong> (<a href="https://manufacturing.economictimes.indiatimes.com/news/industry/dalmia-bharat-lays-foundation-stone-for-3100-crore-cement-plant-in-andhra-pradesh/132412995" target="_blank" rel="noopener noreferrer">ETManufacturing</a>). Once commissioned, Kadapa becomes Dalmia Bharat's largest integrated cement manufacturing site in southern India.</p>
+
+<h2>Why it matters</h2>
+<p>A clinker-capacity increase of this scale is a pyroprocessing-line expansion, not a grinding add-on. More than doubling clinker output means a new kiln, precalciner and clinker cooler train — each requiring a full refractory and insulation lining scope that has to be specified and sourced well before mechanical completion.</p>
+
+<h2>Industry impact</h2>
+<p>The direct impact is on Dalmia Bharat's EPC and refractory contractors for Kadapa. The wider signal is regional: both source reports frame the project as part of continued southern-India cement capex tied to rising demand, which means the same pool of kiln-refractory, insulation and installation contractors will likely see overlapping project timelines across the region rather than a single isolated tender.</p>
+
+<h2>How this affects refractory users</h2>
+<p>Cement kiln systems are lined by zone, and each zone has a different material logic:</p>
+<ul>
+  <li><strong>Burning zone:</strong> basic (magnesia-spinel) brick, engineered for clinker chemistry and rotary-kiln thermal cycling.</li>
+  <li><strong>Transition and precalciner zones:</strong> high-alumina brick and low-cement/ultra-low-cement castables, resisting alkali and sulfate attack alongside thermal load.</li>
+  <li><strong>Clinker cooler:</strong> wear- and abrasion-resistant castables handling hot clinker impact and airflow.</li>
+  <li><strong>Backup and insulation:</strong> insulating firebrick or ceramic fibre systems reducing shell heat loss — directly relevant here given the plant's stated Waste Heat Recovery (WHR) system, which adds insulated ducting scope beyond the kiln proper.</li>
+</ul>
+<p>A greenfield-scale kiln line like this consumes a full lining set at commissioning, then follows the normal reline cycle for each zone thereafter — the transition zone and cooler typically turning over faster than the basic-brick burning zone. Alumina-based castable costs for the transition and precalciner zones track the bauxite/alumina raw-material trend covered in our <a href="/news/bauxite-eases-china-magnesia-grip-2026">recent bauxite and magnesia price analysis</a>, which is worth reviewing alongside any kiln-lining budget for this project.</p>
+
+<h2>Procurement &amp; maintenance implications</h2>
+<p>With commissioning targeted for Q3 FY28, this is a plan-ahead signal rather than an immediate order. Kiln and precalciner refractory specification, along with insulation scope for the WHR system, typically gets locked during detailed engineering — well before civil and mechanical work is complete. Suppliers and EPC-side procurement teams should begin grade qualification and lead-time planning now rather than waiting for tender close closer to commissioning, particularly for high-alumina and insulating castable grades where demand can cluster across multiple regional projects on similar timelines. Maintenance teams inheriting the new line should also plan first-reline budgets around the burning-zone brick from day one of commissioning, since basic-brick campaigns in a new kiln are harder to forecast than in an established, already-characterized line.</p>
+
+<h2>SAPL perspective</h2>
+<p>From decades supplying Indian cement plants, capacity expansions of this scale follow a predictable engineering sequence: kiln and precalciner lining specification comes early, well ahead of the commissioning date that makes headlines. SAPL supplies the recurring side of that scope — <a href="/products/unshaped-refractories/low-cement-castable">LCC/ULCC castables</a> for transition and precalciner zones and <a href="/products/insulation/ceramic-fibre-blanket">ceramic fibre insulation</a> for backup and duct lining — and our <a href="/solutions/cement">cement plant solutions</a> map how these zones interact with kiln design. This is engineering context on a public capex announcement, not a pitch tied to this specific project.</p>
+
+<h2>Supporting statistics</h2>
+<ul>
+  <li>Investment: ₹3,100 crore — <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
+  <li>Clinker capacity: 2.5 MTPA → 6.1 MTPA — <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
+  <li>Cement capacity: 3.6 MTPA → 9.6 MTPA — <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
+  <li>Commissioning target: Q3 FY28; over 80% renewable power plus Waste Heat Recovery specified — <a href="https://manufacturing.economictimes.indiatimes.com/news/industry/dalmia-bharat-lays-foundation-stone-for-3100-crore-cement-plant-in-andhra-pradesh/132412995" target="_blank" rel="noopener noreferrer">ETManufacturing</a>.</li>
+</ul>
+
+<h2>What could happen next</h2>
+<p>Expect EPC and refractory-package tendering for the kiln, precalciner, cooler and WHR ducting to progress over the next 12–18 months ahead of the Q3 FY28 commissioning date. If Dalmia Bharat's southern-India push continues — building on other announced regional investment — refractory and insulation suppliers should track this as one signal among a growing pool of southern-India cement capacity additions, not an isolated event. Plants already running similar clinker lines in the region are a useful reference point for lining life and reline scheduling as this project moves from foundation stone to detailed engineering.</p>
+`,
+  },
 ];
