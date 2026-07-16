@@ -1,12 +1,14 @@
 """
 Dashboard stats endpoint
 """
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Depends
 from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime, timedelta
 import os
+from auth import require_admin
 
-router = APIRouter()
+# Dashboard stats expose aggregate business data (lead counts, etc.) — admin only.
+router = APIRouter(dependencies=[Depends(require_admin)])
 
 # MongoDB connection
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/")

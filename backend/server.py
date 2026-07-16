@@ -1,4 +1,4 @@
-from fastapi import FastAPI, APIRouter, HTTPException, BackgroundTasks
+from fastapi import FastAPI, APIRouter, HTTPException, BackgroundTasks, Depends
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -342,7 +342,7 @@ async def submit_quote_request(input: QuoteRequestInput, background_tasks: Backg
         raise HTTPException(status_code=500, detail="Failed to submit quote request")
 
 # Get All Leads (Admin)
-@api_router.get("/leads", response_model=List[LeadResponse])
+@api_router.get("/leads", response_model=List[LeadResponse], dependencies=[Depends(require_admin)])
 async def get_leads(status: Optional[str] = None, source: Optional[str] = None, limit: int = 100):
     """Get all leads with optional filtering"""
     try:
@@ -359,7 +359,7 @@ async def get_leads(status: Optional[str] = None, source: Optional[str] = None, 
         raise HTTPException(status_code=500, detail="Failed to fetch leads")
 
 # Get Single Lead
-@api_router.get("/leads/{lead_id}", response_model=LeadResponse)
+@api_router.get("/leads/{lead_id}", response_model=LeadResponse, dependencies=[Depends(require_admin)])
 async def get_lead(lead_id: str):
     """Get a single lead by ID"""
     try:
@@ -374,7 +374,7 @@ async def get_lead(lead_id: str):
         raise HTTPException(status_code=500, detail="Failed to fetch lead")
 
 # Update Lead
-@api_router.patch("/leads/{lead_id}", response_model=dict)
+@api_router.patch("/leads/{lead_id}", response_model=dict, dependencies=[Depends(require_admin)])
 async def update_lead(lead_id: str, update: LeadUpdate):
     """Update lead status or notes"""
     try:
@@ -401,7 +401,7 @@ async def update_lead(lead_id: str, update: LeadUpdate):
         raise HTTPException(status_code=500, detail="Failed to update lead")
 
 # Delete Lead
-@api_router.delete("/leads/{lead_id}", response_model=dict)
+@api_router.delete("/leads/{lead_id}", response_model=dict, dependencies=[Depends(require_admin)])
 async def delete_lead(lead_id: str):
     """Delete a lead"""
     try:
@@ -418,7 +418,7 @@ async def delete_lead(lead_id: str):
         raise HTTPException(status_code=500, detail="Failed to delete lead")
 
 # Lead Statistics
-@api_router.get("/leads/stats/summary", response_model=dict)
+@api_router.get("/leads/stats/summary", response_model=dict, dependencies=[Depends(require_admin)])
 async def get_lead_stats():
     """Get lead statistics summary"""
     try:
@@ -481,6 +481,7 @@ from dashboard_routes import router as dashboard_router
 app.include_router(dashboard_router)
 
 # Admin CRUD routes
+from auth import require_admin
 from admin_routes import router as admin_router
 app.include_router(admin_router)
 
@@ -490,12 +491,19 @@ os.makedirs("uploads", exist_ok=True)
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 # CORS middleware
+# Explicit origin allowlist from env (comma-separated). Defaults to the
+# production site origins only. A wildcard "*" combined with credentials is
+# both invalid per the CORS spec and a security risk, so it is not used.
+_default_cors = "https://www.shankeragencies.com,https://shankeragencies.com"
+_cors_origins = [
+    o.strip() for o in os.environ.get("CORS_ORIGINS", _default_cors).split(",") if o.strip()
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=_cors_origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type"],
 )
 
 if __name__ == "__main__":

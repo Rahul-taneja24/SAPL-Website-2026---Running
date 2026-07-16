@@ -2,7 +2,7 @@
 Admin CRUD API Routes
 Complete management endpoints for blog posts, products, industries, media, and leads
 """
-from fastapi import APIRouter, HTTPException, UploadFile, File, Form
+from fastapi import APIRouter, HTTPException, UploadFile, File, Form, Depends
 from motor.motor_asyncio import AsyncIOMotorClient
 from datetime import datetime
 from typing import List, Optional
@@ -15,8 +15,11 @@ from models import (
     IndustryCreate, IndustryUpdate,
     LeadUpdate
 )
+from auth import require_admin
 
-router = APIRouter(prefix="/api/admin", tags=["admin"])
+# Every admin route is guarded by require_admin at the router level, so all
+# CRUD, media, and lead (PII) endpoints require a valid admin bearer token.
+router = APIRouter(prefix="/api/admin", tags=["admin"], dependencies=[Depends(require_admin)])
 
 # MongoDB connection
 MONGO_URL = os.getenv("MONGO_URL", "mongodb://localhost:27017/")
@@ -248,30 +251,57 @@ async def delete_industry(industry_id: str):
 # ==================== MEDIA ====================
 
 ALLOWED_EXTENSIONS = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".pdf"}
+MAX_UPLOAD_BYTES = 5 * 1024 * 1024  # 5 MB
+# Map allowed extensions to the MIME types python-magic must confirm from the
+# actual file bytes (defence against a .png that is really an executable/script).
+ALLOWED_MIME = {
+    ".jpg": {"image/jpeg"}, ".jpeg": {"image/jpeg"}, ".png": {"image/png"},
+    ".gif": {"image/gif"}, ".webp": {"image/webp"},
+    ".svg": {"image/svg+xml", "text/plain", "text/xml", "application/xml"},
+    ".pdf": {"application/pdf"},
+}
 
 @router.post("/media/upload")
 async def upload_media(file: UploadFile = File(...)):
-    """Upload image or file"""
+    """Upload image or file (admin only; validated by extension, size and content)."""
     # Validate file extension
-    file_ext = Path(file.filename).suffix.lower()
+    file_ext = Path(file.filename or "").suffix.lower()
     if file_ext not in ALLOWED_EXTENSIONS:
         raise HTTPException(
             status_code=400,
             detail=f"File type not allowed. Allowed: {', '.join(ALLOWED_EXTENSIONS)}"
         )
-    
+
+    # Read with a hard size cap (reject oversized payloads).
+    contents = await file.read()
+    if len(contents) > MAX_UPLOAD_BYTES:
+        raise HTTPException(status_code=413, detail="File too large (max 5 MB).")
+
+    # Verify the real content type from the file bytes, not the client-supplied
+    # Content-Type header. SVG is exempt from magic sniffing (it is text/XML).
+    if file_ext != ".svg":
+        try:
+            import magic
+            detected = magic.from_buffer(contents, mime=True)
+        except Exception:
+            detected = None
+        if detected is not None and detected not in ALLOWED_MIME[file_ext]:
+            raise HTTPException(
+                status_code=400,
+                detail="File content does not match its extension.",
+            )
+
     # Generate unique filename
     unique_filename = f"{uuid.uuid4()}{file_ext}"
     file_path = UPLOAD_DIR / unique_filename
-    
+
     # Save file
     try:
-        contents = await file.read()
         with open(file_path, "wb") as f:
             f.write(contents)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to save file: {str(e)}")
-    
+
     # Store metadata in database
     media_doc = {
         "_id": str(uuid.uuid4()),

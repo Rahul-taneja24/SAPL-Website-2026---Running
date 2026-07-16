@@ -6,7 +6,10 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import httpx
 from bson import ObjectId
+from auth import require_admin
 
+# NOTE: IndexNow key is a public submission key by design (it is also hosted at
+# /<key>.txt on the site for verification), so it is not a secret.
 INDEXNOW_KEY = "68c9e978104b40548276dada2151c101"
 SITE_HOST = "www.shankeragencies.com"
 SITE_BASE = f"https://{SITE_HOST}"
@@ -141,7 +144,7 @@ async def get_blog_post(slug: str, language: str = "en"):
     await db.blog_posts.update_one({"slug": slug}, {"$inc": {"views": 1}})
     return post
 
-@cms_router.post("/blog/posts", status_code=status.HTTP_201_CREATED)
+@cms_router.post("/blog/posts", status_code=status.HTTP_201_CREATED, dependencies=[Depends(require_admin)])
 async def create_blog_post(post: BlogPost):
     existing = await db.blog_posts.find_one({"slug": post.slug})
     if existing: raise HTTPException(status_code=400, detail="Slug already exists")
@@ -150,7 +153,7 @@ async def create_blog_post(post: BlogPost):
         await _submit_indexnow([f"{SITE_BASE}/blog/{post.slug}"])
     return {"message": "Blog post created", "id": str(result.inserted_id), "slug": post.slug}
 
-@cms_router.put("/blog/posts/{post_id}")
+@cms_router.put("/blog/posts/{post_id}", dependencies=[Depends(require_admin)])
 async def update_blog_post(post_id: str, post: BlogPost):
     try: object_id = ObjectId(post_id)
     except: raise HTTPException(status_code=400, detail="Invalid ID")
@@ -162,7 +165,7 @@ async def update_blog_post(post_id: str, post: BlogPost):
         await _submit_indexnow([f"{SITE_BASE}/blog/{post.slug}"])
     return {"message": "Blog post updated"}
 
-@cms_router.delete("/blog/posts/{post_id}")
+@cms_router.delete("/blog/posts/{post_id}", dependencies=[Depends(require_admin)])
 async def delete_blog_post(post_id: str):
     try: object_id = ObjectId(post_id)
     except: raise HTTPException(status_code=400, detail="Invalid ID")
@@ -187,14 +190,14 @@ async def get_product(slug: str, language: str = "en"):
     product["_id"] = str(product["_id"])
     return product
 
-@cms_router.post("/products", status_code=status.HTTP_201_CREATED)
+@cms_router.post("/products", status_code=status.HTTP_201_CREATED, dependencies=[Depends(require_admin)])
 async def create_product(product: Product):
     existing = await db.products.find_one({"slug": product.slug})
     if existing: raise HTTPException(status_code=400, detail="Slug already exists")
     result = await db.products.insert_one(product.dict())
     return {"message": "Product created", "id": str(result.inserted_id), "slug": product.slug}
 
-@cms_router.put("/products/{product_id}")
+@cms_router.put("/products/{product_id}", dependencies=[Depends(require_admin)])
 async def update_product(product_id: str, product: Product):
     try: object_id = ObjectId(product_id)
     except: raise HTTPException(status_code=400, detail="Invalid ID")
@@ -204,7 +207,7 @@ async def update_product(product_id: str, product: Product):
     if result.matched_count == 0: raise HTTPException(status_code=404, detail="Product not found")
     return {"message": "Product updated"}
 
-@cms_router.delete("/products/{product_id}")
+@cms_router.delete("/products/{product_id}", dependencies=[Depends(require_admin)])
 async def delete_product(product_id: str):
     try: object_id = ObjectId(product_id)
     except: raise HTTPException(status_code=400, detail="Invalid ID")
@@ -220,14 +223,14 @@ async def get_industries(language: str = "en"):
     for i in industries: i["_id"] = str(i["_id"])
     return industries
 
-@cms_router.post("/industries", status_code=status.HTTP_201_CREATED)
+@cms_router.post("/industries", status_code=status.HTTP_201_CREATED, dependencies=[Depends(require_admin)])
 async def create_industry(industry: IndustryPage):
     existing = await db.industries.find_one({"slug": industry.slug})
     if existing: raise HTTPException(status_code=400, detail="Slug already exists")
     result = await db.industries.insert_one(industry.dict())
     return {"message": "Industry created", "id": str(result.inserted_id)}
 
-@cms_router.put("/industries/{industry_id}")
+@cms_router.put("/industries/{industry_id}", dependencies=[Depends(require_admin)])
 async def update_industry(industry_id: str, industry: IndustryPage):
     try: object_id = ObjectId(industry_id)
     except: raise HTTPException(status_code=400, detail="Invalid ID")
@@ -243,14 +246,14 @@ async def get_case_studies(language: str = "en", limit: int = 50):
     for s in studies: s["_id"] = str(s["_id"])
     return studies
 
-@cms_router.post("/case-studies", status_code=status.HTTP_201_CREATED)
+@cms_router.post("/case-studies", status_code=status.HTTP_201_CREATED, dependencies=[Depends(require_admin)])
 async def create_case_study(study: CaseStudy):
     existing = await db.case_studies.find_one({"slug": study.slug})
     if existing: raise HTTPException(status_code=400, detail="Slug already exists")
     result = await db.case_studies.insert_one(study.dict())
     return {"message": "Case study created", "id": str(result.inserted_id)}
 
-@cms_router.put("/case-studies/{study_id}")
+@cms_router.put("/case-studies/{study_id}", dependencies=[Depends(require_admin)])
 async def update_case_study(study_id: str, study: CaseStudy):
     try: object_id = ObjectId(study_id)
     except: raise HTTPException(status_code=400, detail="Invalid ID")
@@ -259,26 +262,61 @@ async def update_case_study(study_id: str, study: CaseStudy):
     return {"message": "Case study updated"}
 
 # Media Routes
-@cms_router.post("/media/upload")
+@cms_router.post("/media/upload", dependencies=[Depends(require_admin)])
 async def upload_media(file: UploadFile = File(...), folder: str = Form("general"), alt_text: Optional[str] = Form(None)):
+    import re
+    import uuid as _uuid
+
+    _ALLOWED_EXT = {".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg", ".pdf"}
+    _MAX_BYTES = 5 * 1024 * 1024  # 5 MB
+    _ALLOWED_MIME = {
+        ".jpg": {"image/jpeg"}, ".jpeg": {"image/jpeg"}, ".png": {"image/png"},
+        ".gif": {"image/gif"}, ".webp": {"image/webp"},
+        ".svg": {"image/svg+xml", "text/plain", "text/xml", "application/xml"},
+        ".pdf": {"application/pdf"},
+    }
+
+    # Sanitise folder to a single safe path segment (prevents ../ traversal).
+    safe_folder = re.sub(r"[^A-Za-z0-9_-]", "", folder or "general") or "general"
+
+    # Validate extension from the client filename, but never trust the filename
+    # itself for the stored path — generate a uuid name.
+    ext = os.path.splitext(file.filename or "")[1].lower()
+    if ext not in _ALLOWED_EXT:
+        raise HTTPException(status_code=400, detail=f"File type not allowed. Allowed: {', '.join(sorted(_ALLOWED_EXT))}")
+
+    content = await file.read()
+    if len(content) > _MAX_BYTES:
+        raise HTTPException(status_code=413, detail="File too large (max 5 MB).")
+
+    # Verify real content type from the bytes (SVG exempt — it is text/XML).
+    if ext != ".svg":
+        try:
+            import magic
+            detected = magic.from_buffer(content, mime=True)
+        except Exception:
+            detected = None
+        if detected is not None and detected not in _ALLOWED_MIME[ext]:
+            raise HTTPException(status_code=400, detail="File content does not match its extension.")
+
     try:
-        upload_dir = f"uploads/{folder}"
+        upload_dir = f"uploads/{safe_folder}"
         os.makedirs(upload_dir, exist_ok=True)
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"{timestamp}_{file.filename}"
+        filename = f"{_uuid.uuid4()}{ext}"
         file_path = f"{upload_dir}/{filename}"
-        
+
         with open(file_path, "wb") as buffer:
-            content = await file.read()
             buffer.write(content)
-            
+
         media_file = MediaFile(
             filename=filename, original_name=file.filename, path=file_path,
-            url=f"/uploads/{folder}/{filename}", mime_type=file.content_type,
-            size=len(content), alt_text=alt_text, folder=folder, uploaded_by="admin"
+            url=f"/uploads/{safe_folder}/{filename}", mime_type=file.content_type,
+            size=len(content), alt_text=alt_text, folder=safe_folder, uploaded_by="admin"
         )
         result = await db.media_files.insert_one(media_file.dict())
         return {"message": "File uploaded", "url": media_file.url, "id": str(result.inserted_id)}
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Upload failed: {str(e)}")
 
@@ -291,7 +329,7 @@ async def get_media_files(folder: Optional[str] = None, limit: int = 100):
     for f in files: f["_id"] = str(f["_id"])
     return files
 
-@cms_router.delete("/media/{file_id}")
+@cms_router.delete("/media/{file_id}", dependencies=[Depends(require_admin)])
 async def delete_media(file_id: str):
     try: object_id = ObjectId(file_id)
     except: raise HTTPException(status_code=400, detail="Invalid ID")
@@ -311,7 +349,7 @@ async def get_translations(language: str):
     trans["_id"] = str(trans["_id"])
     return trans
 
-@cms_router.post("/translations/{language}")
+@cms_router.post("/translations/{language}", dependencies=[Depends(require_admin)])
 async def update_translations(language: str, translations: Dict[str, str]):
     await db.translations.update_one(
         {"language": language},
