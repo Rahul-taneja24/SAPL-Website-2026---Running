@@ -6,13 +6,13 @@ import {
   Search, X, BookOpen, Newspaper, FlaskConical, FileText,
   Clock, ArrowRight, ChevronRight, Phone, MessageCircle,
 } from 'lucide-react';
-import { getHubItems, getHubCategories, HUB_TYPES } from '@/data/knowledgeHubIndex';
+import { getHubItems, HUB_TYPES } from '@/data/knowledgeHubIndex';
 
 const TYPE_META = {
-  guide: { icon: BookOpen, color: 'text-[#3B82F6]', bg: 'bg-blue-50', border: 'border-[#3B82F6]/20' },
-  news: { icon: Newspaper, color: 'text-[#F97316]', bg: 'bg-orange-50', border: 'border-[#F97316]/20' },
-  reference: { icon: FlaskConical, color: 'text-emerald-600', bg: 'bg-emerald-50', border: 'border-emerald-200' },
-  datasheet: { icon: FileText, color: 'text-stone-600', bg: 'bg-stone-50', border: 'border-stone-200' },
+  guide: { icon: BookOpen, color: 'text-[#3B82F6]' },
+  news: { icon: Newspaper, color: 'text-[#F97316]' },
+  reference: { icon: FlaskConical, color: 'text-emerald-600' },
+  datasheet: { icon: FileText, color: 'text-stone-500' },
 };
 
 function formatDate(d) {
@@ -20,24 +20,84 @@ function formatDate(d) {
   return new Date(d).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
+// One calm, text-forward row. No per-type background wash — just an icon,
+// a label, and clean typography, matching the /news headline-list pattern.
+function ResultRow({ item }) {
+  const meta = TYPE_META[item.type];
+  const Icon = meta.icon;
+  return (
+    <Link href={item.href} className="group flex items-start gap-4 py-5 border-b border-gray-100 last:border-0">
+      <Icon className={`w-4 h-4 mt-1 flex-shrink-0 ${meta.color}`} />
+      <div className="min-w-0 flex-1">
+        <div className="flex items-baseline justify-between gap-4 mb-1">
+          <span className={`text-[10px] font-bold tracking-[0.15em] uppercase ${meta.color}`}>
+            {HUB_TYPES[item.type].label}
+          </span>
+          {item.date && <span className="text-xs text-gray-400 whitespace-nowrap">{formatDate(item.date)}</span>}
+        </div>
+        <h3 className="font-oswald text-base md:text-lg font-bold text-[#1E3A5F] leading-snug group-hover:text-[#F97316] transition-colors">
+          {item.title}
+        </h3>
+        {item.excerpt && (
+          <p className="text-gray-500 text-sm leading-relaxed line-clamp-2 mt-1 max-w-2xl">{item.excerpt}</p>
+        )}
+        {item.readTime && (
+          <span className="inline-flex items-center gap-1 text-xs text-gray-400 mt-1.5">
+            <Clock className="w-3 h-3" />{item.readTime}
+          </span>
+        )}
+      </div>
+      <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-[#F97316] group-hover:translate-x-0.5 transition-all flex-shrink-0 mt-1" />
+    </Link>
+  );
+}
+
+// A compact preview section for the default (no search) browse view: a
+// heading, up to `limit` rows, and a "View all" link that jumps into
+// filtered mode instead of showing everything at once.
+function PreviewSection({ type, items, onViewAll, limit = 4 }) {
+  const meta = TYPE_META[type];
+  const Icon = meta.icon;
+  const shown = items.slice(0, limit);
+  if (shown.length === 0) return null;
+  return (
+    <div className="mb-12">
+      <div className="flex items-center justify-between mb-1 pb-3 border-b-2 border-[#0B1628]">
+        <div className="flex items-center gap-2">
+          <Icon className={`w-4 h-4 ${meta.color}`} />
+          <h2 className="font-oswald text-sm font-bold text-[#0B1628] tracking-widest uppercase">
+            {HUB_TYPES[type].plural}
+          </h2>
+          <span className="text-xs text-gray-400">({items.length})</span>
+        </div>
+        {items.length > limit && (
+          <button onClick={onViewAll} className="text-xs font-semibold text-[#3B82F6] hover:underline whitespace-nowrap">
+            View all &rarr;
+          </button>
+        )}
+      </div>
+      <div>
+        {shown.map((item) => <ResultRow key={`${item.type}-${item.slug}`} item={item} />)}
+      </div>
+    </div>
+  );
+}
+
 export default function KnowledgeHub() {
   const allItems = useMemo(() => getHubItems(), []);
-  const categories = useMemo(() => getHubCategories(allItems), [allItems]);
 
   const [query, setQuery] = useState('');
   const [activeType, setActiveType] = useState('all');
-  const [activeCategory, setActiveCategory] = useState('all');
+
+  const isBrowsing = !query.trim() && activeType === 'all';
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return allItems.filter((item) => {
       if (activeType !== 'all' && item.type !== activeType) return false;
-      if (activeCategory !== 'all' && item.category !== activeCategory) return false;
       if (!q) return true;
       const haystack = [item.title, item.excerpt, item.category, ...(item.tags || [])]
-        .filter(Boolean)
-        .join(' ')
-        .toLowerCase();
+        .filter(Boolean).join(' ').toLowerCase();
       return haystack.includes(q);
     }).sort((a, b) => {
       if (a.date && b.date) return new Date(b.date) - new Date(a.date);
@@ -45,60 +105,53 @@ export default function KnowledgeHub() {
       if (b.date) return 1;
       return 0;
     });
-  }, [allItems, query, activeType, activeCategory]);
+  }, [allItems, query, activeType]);
+
+  const byType = useMemo(() => {
+    const grouped = {};
+    for (const t of Object.keys(HUB_TYPES)) grouped[t] = allItems.filter((i) => i.type === t);
+    return grouped;
+  }, [allItems]);
 
   const typeCounts = useMemo(() => {
     const counts = { all: allItems.length };
-    for (const t of Object.keys(HUB_TYPES)) counts[t] = allItems.filter((i) => i.type === t).length;
+    for (const t of Object.keys(HUB_TYPES)) counts[t] = byType[t].length;
     return counts;
-  }, [allItems]);
+  }, [allItems, byType]);
 
   return (
     <>
       {/* HERO */}
       <section
-        className="relative py-16 md:py-20 overflow-hidden"
+        className="relative py-14 md:py-16 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)' }}
       >
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage: 'linear-gradient(rgba(249,115,22,0.8) 1px, transparent 1px), linear-gradient(90deg, rgba(249,115,22,0.8) 1px, transparent 1px)',
-            backgroundSize: '60px 60px',
-          }}
-        />
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <nav className="flex items-center gap-1.5 text-sm text-white/50 mb-6 flex-wrap">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <nav className="flex items-center gap-1.5 text-sm text-white/50 mb-5 flex-wrap">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
             <span className="text-white/80">Knowledge Base</span>
           </nav>
-          <h1 className="font-oswald text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+          <h1 className="font-oswald text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight mb-3">
             One Place for Every Technical Resource
           </h1>
-          <p className="text-lg text-white/75 leading-relaxed max-w-3xl mb-8">
-            {allItems.length}+ technical guides, industry news, engineering references and
-            datasheets from 45+ years of refractory engineering. Search across everything, or
-            browse by type.
+          <p className="text-white/70 text-sm md:text-base leading-relaxed mb-7 max-w-2xl">
+            {allItems.length}+ guides, news, engineering references and datasheets. Search for
+            what you need, or browse below.
           </p>
 
-          {/* Search */}
-          <div className="relative max-w-2xl">
+          <div className="relative max-w-xl">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search guides, news, references, datasheets… e.g. &quot;LCC castable&quot;, &quot;blast furnace&quot;"
-              className="w-full pl-12 pr-12 py-4 rounded-xl bg-white text-[#1E3A5F] placeholder:text-gray-400 text-sm md:text-base shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F97316]"
+              placeholder='Search e.g. "LCC castable", "blast furnace"…'
+              className="w-full pl-12 pr-12 py-3.5 rounded-xl bg-white text-[#1E3A5F] placeholder:text-gray-400 text-sm shadow-xl focus:outline-none focus:ring-2 focus:ring-[#F97316]"
               aria-label="Search knowledge base"
             />
             {query && (
-              <button
-                onClick={() => setQuery('')}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600"
-                aria-label="Clear search"
-              >
+              <button onClick={() => setQuery('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600" aria-label="Clear search">
                 <X className="w-5 h-5" />
               </button>
             )}
@@ -106,15 +159,14 @@ export default function KnowledgeHub() {
         </div>
       </section>
 
-      {/* FILTERS + RESULTS */}
       <div className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-14">
 
-          {/* Type filter tabs */}
-          <div className="flex flex-wrap gap-2 mb-4">
+          {/* Type tabs, the only filter control, always visible */}
+          <div className="flex flex-wrap gap-2 mb-8">
             <button
               onClick={() => setActiveType('all')}
-              className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+              className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                 activeType === 'all' ? 'bg-[#1E3A5F] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
@@ -123,8 +175,8 @@ export default function KnowledgeHub() {
             {Object.entries(HUB_TYPES).map(([type, meta]) => (
               <button
                 key={type}
-                onClick={() => setActiveType(type)}
-                className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
+                onClick={() => setActiveType(activeType === type ? 'all' : type)}
+                className={`px-4 py-1.5 rounded-full text-sm font-semibold transition-colors ${
                   activeType === type ? 'bg-[#1E3A5F] text-white' : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
                 }`}
               >
@@ -133,90 +185,39 @@ export default function KnowledgeHub() {
             ))}
           </div>
 
-          {/* Category filter chips */}
-          {categories.length > 0 && (
-            <div className="flex flex-wrap gap-2 mb-8 pb-6 border-b border-gray-100">
-              <button
-                onClick={() => setActiveCategory('all')}
-                className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
-                  activeCategory === 'all' ? 'bg-[#F97316]/10 text-[#F97316] border border-[#F97316]/30' : 'text-gray-500 hover:text-gray-700 border border-transparent'
-                }`}
-              >
-                All Topics
-              </button>
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${
-                    activeCategory === cat ? 'bg-[#F97316]/10 text-[#F97316] border border-[#F97316]/30' : 'text-gray-500 hover:text-gray-700 border border-transparent'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          )}
-
-          {/* Result count */}
-          <p className="text-sm text-gray-500 mb-6" aria-live="polite">
-            {filtered.length} resource{filtered.length !== 1 ? 's' : ''}
-            {query && <> matching &quot;{query}&quot;</>}
-          </p>
-
-          {/* Grid */}
-          {filtered.length === 0 ? (
-            <div className="text-center py-16">
-              <p className="text-gray-500 mb-4">No resources match your search.</p>
-              <button
-                onClick={() => { setQuery(''); setActiveType('all'); setActiveCategory('all'); }}
-                className="text-[#3B82F6] font-medium hover:underline"
-              >
-                Clear filters
-              </button>
-            </div>
+          {isBrowsing ? (
+            // Default browse: sectioned by type, a short preview of each with
+            // a "View all" jump, so the page opens calm instead of a 73-item wall.
+            <>
+              <PreviewSection type="news" items={byType.news} onViewAll={() => setActiveType('news')} limit={3} />
+              <PreviewSection type="guide" items={byType.guide} onViewAll={() => setActiveType('guide')} limit={5} />
+              <PreviewSection type="reference" items={byType.reference} onViewAll={() => setActiveType('reference')} limit={3} />
+              <PreviewSection type="datasheet" items={byType.datasheet} onViewAll={() => setActiveType('datasheet')} limit={4} />
+            </>
           ) : (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {filtered.map((item) => {
-                const meta = TYPE_META[item.type];
-                const Icon = meta.icon;
-                return (
-                  <Link
-                    key={`${item.type}-${item.slug}`}
-                    href={item.href}
-                    className={`group flex flex-col rounded-2xl border ${meta.border} ${meta.bg} p-5 hover:shadow-md transition-all`}
-                  >
-                    <div className="flex items-center justify-between mb-3">
-                      <span className={`inline-flex items-center gap-1.5 text-[10px] font-bold tracking-widest uppercase ${meta.color}`}>
-                        <Icon className="w-3.5 h-3.5" />
-                        {HUB_TYPES[item.type].label}
-                      </span>
-                      {item.date && <span className="text-[11px] text-gray-400">{formatDate(item.date)}</span>}
-                    </div>
-                    <h3 className="font-oswald text-base font-bold text-[#1E3A5F] leading-snug mb-2 group-hover:text-[#F97316] transition-colors line-clamp-3">
-                      {item.title}
-                    </h3>
-                    {item.excerpt && (
-                      <p className="text-gray-600 text-xs leading-relaxed line-clamp-3 mb-3 flex-1">{item.excerpt}</p>
-                    )}
-                    <div className="flex items-center justify-between mt-auto pt-2">
-                      {item.readTime ? (
-                        <span className="flex items-center gap-1 text-[11px] text-gray-400">
-                          <Clock className="w-3 h-3" />{item.readTime}
-                        </span>
-                      ) : <span />}
-                      <span className={`inline-flex items-center gap-1 text-xs font-semibold ${meta.color} group-hover:gap-2 transition-all`}>
-                        View <ArrowRight className="w-3.5 h-3.5" />
-                      </span>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
+            // Search or single-type mode: one clean filtered list.
+            <>
+              <p className="text-sm text-gray-500 mb-2" aria-live="polite">
+                {filtered.length} resource{filtered.length !== 1 ? 's' : ''}
+                {query && <> matching &quot;{query}&quot;</>}
+              </p>
+              {filtered.length === 0 ? (
+                <div className="text-center py-16">
+                  <p className="text-gray-500 mb-4">No resources match your search.</p>
+                  <button onClick={() => { setQuery(''); setActiveType('all'); }} className="text-[#3B82F6] font-medium hover:underline">
+                    Clear filters
+                  </button>
+                </div>
+              ) : (
+                <div>
+                  {filtered.map((item) => <ResultRow key={`${item.type}-${item.slug}`} item={item} />)}
+                </div>
+              )}
+            </>
           )}
 
           {/* CTA */}
-          <div className="mt-16 rounded-2xl overflow-hidden border border-[#F97316]/20 shadow-sm">
+          <div className="mt-14 rounded-2xl overflow-hidden border border-[#F97316]/20 shadow-sm">
             <div className="bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF] p-6 text-white">
               <h3 className="font-oswald text-xl font-bold mb-1">Can&apos;t Find What You Need?</h3>
               <p className="text-white/80 text-sm">Our refractory engineers answer technical questions directly, no obligation.</p>
