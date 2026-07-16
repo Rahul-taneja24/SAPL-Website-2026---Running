@@ -5,6 +5,7 @@
 // build-time timestamp across every URL, which is a known credibility red flag.
 import { LOCATIONS_DATA } from '@/data/locationsData';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { NEWS_ARTICLES } from '@/data/newsData';
 import { PRODUCT_SEO } from '@/data/productsSeoData';
 import { CASE_STUDIES } from '@/data/caseStudiesData';
 
@@ -33,6 +34,7 @@ export default async function sitemap() {
     { url: `${BASE}/solutions`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/knowledge`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/blog`,                      lastModified: STRUCTURAL_LASTMOD },
+    { url: `${BASE}/news`,                      lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/engineering-references`,    lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/contact`,                   lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/company-profile`,           lastModified: STRUCTURAL_LASTMOD },
@@ -125,6 +127,13 @@ export default async function sitemap() {
       .map((slug) => ({ url: `${BASE}/ar/products/${slug}`, lastModified: STRUCTURAL_LASTMOD })),
   ];
 
+  const newsPages = NEWS_ARTICLES.map((a) => ({
+    url: `${BASE}/news/${a.slug}`,
+    lastModified: a.lastModified || a.publishDate
+      ? new Date(a.lastModified || a.publishDate).toISOString()
+      : STRUCTURAL_LASTMOD,
+  }));
+
   return [
     ...mainPages,
     ...categoryPages,
@@ -136,6 +145,7 @@ export default async function sitemap() {
     ...engineeringReferencePages,
     ...staticBlogPages,
     ...apiBlogPages,
+    ...newsPages,
     ...rfqAndArabicPages,
   ];
 }
