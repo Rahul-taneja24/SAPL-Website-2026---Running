@@ -351,4 +351,117 @@ export const NEWS_ARTICLES = [
 <p>Expect EPC and refractory-package tendering for the kiln, precalciner, cooler and WHR ducting to progress over the next 12–18 months ahead of the Q3 FY28 commissioning date. If Dalmia Bharat's southern-India push continues — building on other announced regional investment — refractory and insulation suppliers should track this as one signal among a growing pool of southern-India cement capacity additions, not an isolated event. Plants already running similar clinker lines in the region are a useful reference point for lining life and reline scheduling as this project moves from foundation stone to detailed engineering.</p>
 `,
   },
+  {
+    id: 4,
+    slug: "india-ccts-steel-carbon-targets-2026",
+    title: "India Sets CO2 Intensity Targets for 255 Steel Plants",
+    metaTitle: "India CCTS Steel Draft: 255 Plants, FY2026-27",
+    metaDescription:
+      "India's environment ministry has drafted CO2 intensity targets for 255 steel plants under CCTS from FY2026-27, covering 358.6 MtCO2e — what it means for furnaces.",
+    category: "Policy",
+    tags: [
+      "CCTS",
+      "steel decarbonization",
+      "green steel",
+      "emission intensity",
+      "furnace efficiency",
+      "India steel policy",
+    ],
+    readTime: "7 min",
+    publishDate: "2026-07-16",
+    lastModified: "2026-07-16",
+    featured: false,
+    coverImage: "",
+    imagePrompt:
+      "Realistic industrial photo: steel plant control room, engineer reviewing an emissions dashboard on a monitor, blast furnace glow visible through a window in the background, no logos or text.",
+    sources: [
+      {
+        title:
+          "India's iron and steel sector moves closer to CCTS compliance: Will larger decarbonisation follow?",
+        publisher: "Down To Earth",
+        url: "https://www.downtoearth.org.in/economy/indias-iron-and-steel-sector-moves-closer-to-ccts-compliance-will-larger-decarbonisation-follow",
+        date: "2026-07-14",
+      },
+      {
+        title: "Govt issues draft notification to bring iron, steel sectors under CCTS",
+        publisher: "Hindustan Times",
+        url: "https://www.hindustantimes.com/india-news/govt-issues-draft-notification-to-bring-iron-steel-sectors-under-ccts-101783505322132.html",
+        date: "2026-07-08",
+      },
+      {
+        title: "India's Green Steel Taxonomy",
+        publisher: "Press Information Bureau, Ministry of Steel",
+        url: "https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2083839",
+        date: "2024-12",
+      },
+    ],
+    keyTakeaways: [
+      "India has drafted CO2-intensity targets for 255 steel plants under CCTS, effective FY2026-27, open for 60 days of public comment from June 26, 2026.",
+      "The 255 units carry a combined baseline of 358.6 MtCO2e; India's average intensity (2.54 tCO2/t crude steel) sits well above the global average (1.9 t) and the 2030 goal of 2.2 t.",
+      "Required cuts range 2.1–9.3% per entity (median ~5.5%), with steeper reductions assigned to higher-emitting plants.",
+      "Analysts flag energy efficiency — not new process routes — as the first compliance lever, which puts furnace lining and insulation performance directly in scope.",
+      "India's coal-heavy BF-BOF capacity pipeline (258 MTPA under development, per Global Energy Monitor) risks locking in high emission intensity for decades unless efficiency gains start now.",
+    ],
+    excerpt:
+      "India's environment ministry has drafted CO2-intensity reduction targets for 255 iron and steel plants under the Carbon Credit Trading Scheme, starting FY2026-27. The 255 units carry a combined baseline of 358.6 MtCO2e, and required cuts range from 2.1% to 9.3% depending on each plant's starting intensity. For refractory and insulation buyers, the near-term compliance lever is energy efficiency — which starts at the furnace lining.",
+    faqs: [
+      {
+        q: "What did India's government actually notify?",
+        a: "The Union environment ministry issued a draft notification under the Environment (Protection) Act, 1986, dated June 26, 2026, assigning plant-specific GHG emission-intensity reduction targets to 255 iron and steel units under the Carbon Credit Trading Scheme (CCTS). It is open for 60 days of public comment before being finalized, per Hindustan Times and Down To Earth.",
+      },
+      {
+        q: "Why 255 plants and why now?",
+        a: "CCTS already covers aluminium, cement, pulp and paper, petroleum refining, petrochemicals and textiles; steel was drafted into scope in June 2025 but excluded from the January 2026 final notification, then re-issued in this June 2026 draft — skipping FY2025-26 as a compliance year entirely. The 255 entities include three additions and one removal versus the 2025 draft list, per Down To Earth.",
+      },
+      {
+        q: "Who is most exposed to steep reduction targets?",
+        a: "Plants with baseline emission intensity above roughly 3 tCO2e per tonne of product face the steepest percentage cuts (up to 9.3%), consistent with the scheme's benchmarking approach. Down To Earth notes 75 sites already sit at or below the 2.2 tCO2e/tonne threshold, together accounting for about 27% of production covered by the mechanism — those plants face comparatively lighter targets.",
+      },
+      {
+        q: "What can a steel plant do before FY2026-27 to cut emission intensity?",
+        a: "A Centre for Science and Environment analyst quoted by Hindustan Times expects the first compliance cycle to be met mainly through energy efficiency and other relatively low-cost operational measures, not new capital-intensive process routes. Furnace shell-heat loss, insulation backup behind working linings, and lining campaign life all sit directly inside that lever — each degree of heat retained in the furnace is fuel not burned and CO2 not emitted per tonne of steel.",
+      },
+      {
+        q: "What could happen next?",
+        a: "Once the 60-day comment window closes, expect a finalized rule broadly close to this draft, given it is already a revision of a June 2025 draft. Longer term, Down To Earth flags a structural risk: India has about 258 MTPA of new steelmaking capacity under development (Global Energy Monitor), over two-thirds of it BF-BOF and coal-based, which could lock in higher emission intensity for decades unless efficiency measures are designed in from the start.",
+      },
+    ],
+    relatedProducts: [
+      { label: "Ceramic Fibre Blanket Insulation", href: "/products/insulation/ceramic-fibre-blanket" },
+      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castable" },
+      { label: "Steel Plant Solutions", href: "/solutions/steel" },
+    ],
+    content: `
+<h2>What happened</h2>
+<p>India's Union environment ministry has issued a draft notification, dated <strong>June 26, 2026</strong>, assigning plant-specific greenhouse-gas emission-intensity reduction targets to <strong>255 iron and steel units</strong> under the Carbon Credit Trading Scheme (CCTS), starting compliance year <strong>FY2026-27</strong> (<a href="https://www.hindustantimes.com/india-news/govt-issues-draft-notification-to-bring-iron-steel-sectors-under-ccts-101783505322132.html" target="_blank" rel="noopener noreferrer">Hindustan Times</a>). The draft is open for 60 days of public comment before it is finalized. The 255 units carry a combined baseline of <strong>358.6 million tonnes of CO2 equivalent (MtCO2e)</strong>, making steel the largest sector yet brought under India's carbon market (<a href="https://www.downtoearth.org.in/economy/indias-iron-and-steel-sector-moves-closer-to-ccts-compliance-will-larger-decarbonisation-follow" target="_blank" rel="noopener noreferrer">Down To Earth</a>).</p>
+
+<h2>Why it matters</h2>
+<p>The direct consequence for industrial buyers: 255 named steel plants now have a compliance clock running, and analysts expect the first response to be operational — not a wholesale shift to new process routes. That makes furnace efficiency, insulation and lining performance a near-term compliance lever, not a someday concern.</p>
+
+<h2>Industry impact</h2>
+<p>India's steel sector is the world's second-largest by output (~151 million tonnes crude steel in FY2024-25) and contributes 10-12% of the country's total CO2 emissions (Down To Earth). As of 2023-24, India's average emission intensity was <strong>2.54 tCO2 per tonne</strong> of crude steel, against a <strong>global average of 1.9 tCO2/tonne</strong> and the Ministry of Steel's own <strong>2030 goal of 2.2 tCO2/tonne</strong> under its Green Steel Taxonomy (<a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2083839" target="_blank" rel="noopener noreferrer">PIB</a>). Required intensity cuts across the 255 entities range from <strong>2.1% to 9.3%</strong>, with a median around 5.5% — plants running hotter than roughly 3 tCO2e/tonne draw the steepest cuts, consistent with the scheme's benchmarking design.</p>
+
+<h2>How this affects refractory users</h2>
+<p>Emission intensity per tonne of steel is, in large part, a function of fuel and power burned per tonne — and furnace heat loss through the shell, roof and duct work is fuel that never reaches the product. Down To Earth reports that 75 of the 255 sites already sit at or below the 2.2 tCO2e/tonne threshold, together accounting for roughly 27% of production covered by the mechanism; the remaining plants are the ones under the most pressure to close that gap quickly. A Centre for Science and Environment analyst quoted by Hindustan Times expects the first compliance cycle to be met mainly through "energy efficiency and other relatively low-cost operational measures" rather than new capital-intensive routes — which is precisely the territory of lining selection, insulation backup and reline scheduling rather than furnace rebuilds.</p>
+
+<h2>Procurement &amp; maintenance implications</h2>
+<p>Plants approaching their first CCTS compliance year should treat furnace audits — shell temperature surveys, insulation backup condition, lining campaign data — as a near-term action item rather than something to defer to the next major shutdown. Reheating furnaces, ladle preheaters and rotary/tunnel kiln sections are the highest-leverage targets, since backup insulation behind the working lining directly reduces shell losses without touching production rate. Procurement teams should also flag that India's BF-BOF fleet is relatively young and approaching its first relining cycle (Down To Earth, citing Global Energy Monitor); a reline is also a one-time opportunity to specify better-insulated designs rather than a like-for-like replacement.</p>
+
+<h2>SAPL perspective</h2>
+<p>From decades supplying Indian steel plants, this reads as a compliance-driven version of a maintenance conversation SAPL already has with customers: shell-heat loss and lining life both trace back to how the furnace is insulated and lined, not just what it is lined with. Where a plant is reviewing furnace efficiency ahead of its FY2026-27 baseline, <a href="/products/insulation/ceramic-fibre-blanket">ceramic fibre insulation</a> for backup and duct lining and <a href="/products/unshaped-refractories/low-cement-castable">insulating LCC/ULCC castables</a> for furnace walls are the components most directly tied to reducing shell losses. Our <a href="/solutions/steel">steel plant solutions</a> page maps how these zones interact with furnace design. This is engineering context on a public regulatory draft, not a pitch tied to any named plant on the list.</p>
+
+<h2>Supporting statistics</h2>
+<ul>
+  <li>255 iron and steel units covered; combined baseline 358.6 MtCO2e — <a href="https://www.downtoearth.org.in/economy/indias-iron-and-steel-sector-moves-closer-to-ccts-compliance-will-larger-decarbonisation-follow" target="_blank" rel="noopener noreferrer">Down To Earth</a>.</li>
+  <li>India average emission intensity 2.54 tCO2/tonne crude steel (2023-24) vs global average 1.9 tCO2/tonne — <a href="https://www.downtoearth.org.in/economy/indias-iron-and-steel-sector-moves-closer-to-ccts-compliance-will-larger-decarbonisation-follow" target="_blank" rel="noopener noreferrer">Down To Earth</a>.</li>
+  <li>Ministry of Steel 2030 target: 2.2 tCO2/tonne crude steel — <a href="https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2083839" target="_blank" rel="noopener noreferrer">PIB</a>.</li>
+  <li>Required intensity cuts: 2.1-9.3% per entity, median ~5.5% — <a href="https://www.downtoearth.org.in/economy/indias-iron-and-steel-sector-moves-closer-to-ccts-compliance-will-larger-decarbonisation-follow" target="_blank" rel="noopener noreferrer">Down To Earth</a>.</li>
+  <li>75 sites already at/below 2.2 tCO2e/tonne, ~27% of covered production — <a href="https://www.downtoearth.org.in/economy/indias-iron-and-steel-sector-moves-closer-to-ccts-compliance-will-larger-decarbonisation-follow" target="_blank" rel="noopener noreferrer">Down To Earth</a>.</li>
+  <li>Draft issued June 26, 2026; 60-day public comment window; compliance from FY2026-27 with FY2023-24 baseline — <a href="https://www.hindustantimes.com/india-news/govt-issues-draft-notification-to-bring-iron-steel-sectors-under-ccts-101783505322132.html" target="_blank" rel="noopener noreferrer">Hindustan Times</a>.</li>
+</ul>
+
+<h2>What could happen next</h2>
+<p>Expect the draft to move toward finalization broadly in its current shape once the 60-day comment window closes, since it is already a revision of a June 2025 draft. The longer-term question is whether compliance cycles beyond the first one start shaping investment decisions rather than just operational tweaks: Down To Earth flags that India has roughly 258 MTPA of new steelmaking capacity under development, over two-thirds of it coal-based BF-BOF, which risks locking the sector into higher emission intensity for another two to three decades unless efficiency is designed in now — starting with how furnaces are lined and insulated.</p>
+`,
+  },
 ];
