@@ -302,8 +302,10 @@ function CompanyProfile() {
             <img src={IMAGES.hero} alt="Steel plant" className="w-full h-full object-cover animate-ken-burns" crossOrigin="anonymous" />
             <div className="absolute inset-0 flex items-center" style={{ background: "linear-gradient(90deg, rgba(30,58,95,0.92) 0%, rgba(30,58,95,0.5) 60%, transparent 100%)" }}>
               <div className="p-6 text-white">
-                <p className="font-oswald text-base sm:text-xl font-bold mb-1">YOUR TRUSTED</p>
-                <p className="font-oswald text-2xl sm:text-4xl font-bold text-shimmer">REFRACTORY PARTNER</p>
+                <h1 className="font-oswald leading-tight">
+                  <span className="block text-base sm:text-xl font-bold mb-1">YOUR TRUSTED</span>
+                  <span className="block text-2xl sm:text-4xl font-bold text-shimmer">REFRACTORY PARTNER</span>
+                </h1>
                 <p className="text-xs sm:text-sm mt-2 opacity-85">45+ Years · 500+ Clients · 50+ Countries</p>
               </div>
             </div>

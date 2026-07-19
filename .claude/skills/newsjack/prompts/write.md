@@ -31,5 +31,5 @@ CTA to /news), an X thread (4–6 posts), and a 60–90 word newsletter blurb. N
 
 ## Anti-AI-tell reminder
 Ban: "in today's fast-paced world", "it's important/worth noting", "in conclusion", "delve",
-"landscape", "game-changer", "unlock", "leverage" (as filler), padded em-dashes, rhetorical
+"landscape", "game-changer", "unlock", "leverage" (as filler), em dashes of any kind (use commas, colons or periods instead), rhetorical
 question openers. Prefer concrete numbers, part names, temperatures, standards, and shop-floor cause→effect.

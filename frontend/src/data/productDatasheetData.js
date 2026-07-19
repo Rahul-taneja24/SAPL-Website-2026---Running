@@ -16,6 +16,20 @@
 
 export const PRODUCT_DATASHEETS = {
   'high-alumina-bricks': {
+    gradeTable: {
+      title: 'Grade-Wise Typical Specifications (IS 8 / ASTM C401 classes)',
+      note: 'Typical values compiled from published Indian manufacturer datasheets. Confirm the grade datasheet before ordering.',
+      columns: ['Grade', 'Al\u2082O\u2083 (min)', 'Bulk Density', 'App. Porosity', 'CCS', 'Refractoriness', 'Max Service Temp'],
+      rows: [
+        ['AL-45', '45%', '2.15 \u2013 2.30 g/cc', '22 \u2013 24%', '35 \u2013 45 MPa', 'SK 35\u201336', '1500\u00b0C'],
+        ['AL-50', '50%', '2.20 \u2013 2.35 g/cc', '22 \u2013 24%', '40 \u2013 50 MPa', 'SK 36', '1550\u00b0C'],
+        ['AL-60', '60%', '2.35 \u2013 2.50 g/cc', '21 \u2013 23%', '44 \u2013 55 MPa', 'SK 37', '1650\u00b0C'],
+        ['AL-70', '70%', '2.55 \u2013 2.65 g/cc', '20 \u2013 23%', '49 \u2013 60 MPa', 'SK 37\u201338 (RUL ~1450\u00b0C)', '1700\u00b0C'],
+        ['AL-80', '80%', '2.65 \u2013 2.90 g/cc', '19 \u2013 24%', '50 \u2013 70 MPa', 'SK 38', '1750\u00b0C'],
+        ['AL-90', '90%', '2.90 \u2013 3.10 g/cc', '16 \u2013 20%', '60 \u2013 90 MPa', 'SK 38+', '1790\u00b0C'],
+      ],
+    },
+
     chemicalAnalysis: [
       { property: 'Al₂O₃', typical: '45 – 90%', test: 'IS 1527 / ASTM C573' },
       { property: 'Fe₂O₃', typical: '1.0 – 2.5%', test: 'IS 1527' },
@@ -77,6 +91,17 @@ export const PRODUCT_DATASHEETS = {
     packaging: 'Checker, straight and special shapes to stove/kiln ring drawings; palletised.',
   },
   'magnesia-carbon-bricks': {
+    gradeTable: {
+      title: 'Grade-Wise Typical Specifications by Carbon Level',
+      note: 'Typical values compiled from published Indian manufacturer datasheets. Carbon level is matched to lining zone duty.',
+      columns: ['Grade Class', 'MgO', 'Fixed Carbon', 'Bulk Density', 'CCS', 'Typical Zone'],
+      rows: [
+        ['MgO-C 8\u201310%C', '94 \u2013 98%', '8 \u2013 10%', '2.95 \u2013 3.05 g/cc', '35 \u2013 45 MPa', 'Ladle metal line, general lining'],
+        ['MgO-C 12\u201314%C', '94 \u2013 96%', '12 \u2013 14%', '2.90 \u2013 3.00 g/cc', '30 \u2013 40 MPa', 'Ladle slag line, BOF barrel'],
+        ['MgO-C 14\u201316%C', '94 \u2013 96%', '14 \u2013 16%', '2.85 \u2013 2.95 g/cc', '29 \u2013 38 MPa', 'EAF hot spot, severe slag zones'],
+      ],
+    },
+
     chemicalAnalysis: [
       { property: 'MgO', typical: '74 – 90%', test: 'IS 1527 / ASTM C572' },
       { property: 'Fixed Carbon', typical: '8 – 20%', test: 'IS 1528 / ASTM C831' },
@@ -91,6 +116,19 @@ export const PRODUCT_DATASHEETS = {
     packaging: 'Resin-bonded, tempered. BOF/EAF/ladle shapes to drawing; palletised, moisture-protected.',
   },
   'low-cement-castables': {
+    gradeTable: {
+      title: 'Grade-Wise Typical Specifications (LC Series)',
+      note: 'Typical values compiled from published Indian manufacturer datasheets; CCS after 110\u00b0C/24h drying unless noted.',
+      columns: ['Grade', 'Al\u2082O\u2083 (min)', 'Bulk Density', 'CCS (dried)', 'CCS (1000\u00b0C fired)', 'Max Service Temp'],
+      rows: [
+        ['LC-45', '45%', '2.30 \u2013 2.45 g/cc', '60 \u2013 80 MPa', '45 \u2013 60 MPa', '1500\u00b0C'],
+        ['LC-60', '60%', '2.45 \u2013 2.60 g/cc', '70 \u2013 90 MPa', '50 \u2013 80 MPa', '1600\u00b0C'],
+        ['LC-70', '70%', '2.60 \u2013 2.75 g/cc', '75 \u2013 95 MPa', '55 \u2013 85 MPa', '1650\u00b0C'],
+        ['LC-80', '80%', '2.75 \u2013 2.95 g/cc', '80 \u2013 100 MPa', '65 \u2013 95 MPa', '1700\u00b0C'],
+        ['LC-90', '90%', '2.95 \u2013 3.05 g/cc', '85 \u2013 100 MPa', '70 \u2013 95 MPa', '1750\u00b0C'],
+      ],
+    },
+
     chemicalAnalysis: [
       { property: 'Al₂O₃', typical: '60 – 90%', test: 'IS 1527' },
       { property: 'CaO', typical: '4 – 8%', test: 'IS 1527' },
@@ -121,6 +159,17 @@ export const PRODUCT_DATASHEETS = {
     packaging: '25 kg moisture-resistant bags on pallets; conservative dry-out schedule supplied with each lot.',
   },
   'ramming-masses': {
+    gradeTable: {
+      title: 'Family-Wise Typical Specifications',
+      note: 'Typical values compiled from published Indian manufacturer datasheets. Granulometry for silica mass: 0\u20135 mm graded (coarse/medium/fine) for maximum packing density.',
+      columns: ['Family', 'Key Chemistry', 'Service Temp', 'Melt Types', 'Typical Lining Life'],
+      rows: [
+        ['Silica (Acidic)', 'SiO\u2082 \u2265 98%, Fe\u2082O\u2083 \u2264 0.2%, CaO \u2264 0.1%', 'Up to 1700\u00b0C', 'Grey iron, SG iron, mild steel', '150 \u2013 350 heats'],
+        ['Alumina (Neutral)', 'Al\u2082O\u2083 80 \u2013 95%', 'Up to 1750\u00b0C', 'Stainless, tool steel, Cu alloys', '80 \u2013 200 heats'],
+        ['Magnesia (Basic)', 'MgO \u2265 85%', 'Up to 1800\u00b0C', 'Mn steel, basic-slag alloys', '40 \u2013 100 heats'],
+      ],
+    },
+
     chemicalAnalysis: [
       { property: 'SiO₂ (silica grade)', typical: '98.5%+ min', test: 'IS 1527' },
       { property: 'Al₂O₃ (alumina grade)', typical: '85 – 95%', test: 'IS 1527' },
@@ -135,6 +184,17 @@ export const PRODUCT_DATASHEETS = {
     packaging: '25 / 50 kg HDPE-lined bags. Silica, alumina and magnesia grades by melt type; sintering schedule supplied.',
   },
   'ceramic-fiber-products': {
+    gradeTable: {
+      title: 'Grade-Wise Typical Specifications (Blanket)',
+      note: 'Typical values compiled from published manufacturer datasheets. Densities of 96 / 128 / 160 kg/m\u00b3 are standard across grades.',
+      columns: ['Grade', 'Classification Temp', 'Chemistry', 'Density Options', 'Thermal Conductivity (500\u00b0C mean)', 'Shrinkage'],
+      rows: [
+        ['1260 Grade (RT)', '1260\u00b0C', 'Alumina-silica', '96 / 128 / 160 kg/m\u00b3', '~0.12 W/m\u00b7K (128 kg/m\u00b3)', '< 3% at rated temp'],
+        ['1260 Grade (HP)', '1260\u00b0C', 'High-purity alumina-silica', '96 / 128 / 160 kg/m\u00b3', '~0.12 W/m\u00b7K (128 kg/m\u00b3)', '< 2.5% at rated temp'],
+        ['1430 Grade (Zr)', '1430\u00b0C', 'Alumina-silica-zirconia', '96 / 128 / 160 kg/m\u00b3', '~0.13 W/m\u00b7K (128 kg/m\u00b3)', '< 3% at rated temp'],
+      ],
+    },
+
     chemicalAnalysis: [
       { property: 'Al₂O₃', typical: '45 – 50%', test: 'XRF' },
       { property: 'SiO₂', typical: '50 – 55%', test: 'XRF' },

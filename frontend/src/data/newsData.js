@@ -1,6 +1,6 @@
 /**
  * News Articles for Shanker Agencies Pvt. Ltd. (SAPL)
- * Industrial "newsjacking" content — fresh, cited, AI-citable analysis of
+ * Industrial "newsjacking" content, fresh, cited, AI-citable analysis of
  * refractory / steel / raw-material developments, published under /news
  * (kept separate from the evergreen /blog knowledge base).
  *
@@ -34,19 +34,19 @@ export const NEWS_ARTICLES = [
       "Realistic industrial photo: bauxite ore and magnesia lumps side by side on a steel plant floor, warm furnace glow in background, no logos or text.",
     sources: [
       {
-        title: "Bauxite Price Trend 2026 — Index, Chart & Forecast",
+        title: "Bauxite Price Trend 2026, Index, Chart & Forecast",
         publisher: "Procurement Resource",
         url: "https://www.procurementresource.com/resource-center/bauxite-price-trends",
         date: "2026",
       },
       {
-        title: "Bauxite Prices, Trend, Chart, Index — News and Forecast 2026",
+        title: "Bauxite Prices, Trend, Chart, Index, News and Forecast 2026",
         publisher: "IMARC Group",
         url: "https://www.imarcgroup.com/bauxite-pricing-report",
         date: "2026",
       },
       {
-        title: "India's Bauxite Market Report 2026 — Prices, Size, Forecast",
+        title: "India's Bauxite Market Report 2026, Prices, Size, Forecast",
         publisher: "IndexBox",
         url: "https://www.indexbox.io/store/india-bauxite-market-analysis-forecast-size-trends-and-insights/",
         date: "2026",
@@ -60,7 +60,7 @@ export const NEWS_ARTICLES = [
     ],
     keyTakeaways: [
       "Bauxite prices in India eased from about USD 78/MT in Q1 2026 to roughly USD 68.5/DMT by May 2026.",
-      "Fused magnesia rose about 22% in 2024 after China — near 70% of global supply — tightened exports.",
+      "Fused magnesia rose about 22% in 2024 after China, near 70% of global supply, tightened exports.",
       "Alumina-based linings get cheaper input relief; magnesia-based steel linings stay exposed to China policy.",
       "Buyers should re-baseline cost-per-heat now, not just cost-per-kg, while alumina input costs are soft.",
     ],
@@ -73,7 +73,7 @@ export const NEWS_ARTICLES = [
       },
       {
         q: "Who controls the magnesia price?",
-        a: "China dominates magnesia, accounting for close to 70% of global consumption and the bulk of fused-magnesia supply. When China tightened exports, fused magnesia rose roughly 22% in 2024. That concentration means magnesia — and the MgO-C bricks that line steel ladles and converters — remains exposed to Chinese policy regardless of local demand.",
+        a: "China dominates magnesia, accounting for close to 70% of global consumption and the bulk of fused-magnesia supply. When China tightened exports, fused magnesia rose roughly 22% in 2024. That concentration means magnesia, and the MgO-C bricks that line steel ladles and converters, remains exposed to Chinese policy regardless of local demand.",
       },
       {
         q: "How does this affect refractory buyers in India?",
@@ -85,7 +85,7 @@ export const NEWS_ARTICLES = [
       },
       {
         q: "What could happen next?",
-        a: "If bauxite stays soft, expect continued relief on alumina-based linings into late 2026. Magnesia is harder to call — any further Chinese export tightening or energy-cost move would firm prices quickly, so steel plants should plan for volatility on basic refractories over the next 6–18 months.",
+        a: "If bauxite stays soft, expect continued relief on alumina-based linings into late 2026. Magnesia is harder to call, any further Chinese export tightening or energy-cost move would firm prices quickly, so steel plants should plan for volatility on basic refractories over the next 6–18 months.",
       },
     ],
     relatedProducts: [
@@ -98,35 +98,35 @@ export const NEWS_ARTICLES = [
 <p>Bauxite prices softened through the first half of 2026. Reported series put India bauxite at about <strong>USD 78/MT in Q1 2026</strong>, easing to roughly <strong>USD 68.5/DMT by May 2026</strong>, with China near <strong>USD 60/DMT</strong> in the same month (<a href="https://www.procurementresource.com/resource-center/bauxite-price-trends" target="_blank" rel="noopener noreferrer">Procurement Resource</a>, <a href="https://www.imarcgroup.com/bauxite-pricing-report" target="_blank" rel="noopener noreferrer">IMARC</a>). Magnesia has moved the other way: after China tightened exports, fused magnesia rose about <strong>22% in 2024</strong>, and China still accounts for close to <strong>70% of global magnesia consumption</strong> (<a href="https://www.marketgrowthreports.com/market-reports/refractory-material-market-113462" target="_blank" rel="noopener noreferrer">Market Growth Reports</a>).</p>
 
 <h2>Why it matters</h2>
-<p>Refractory input costs are not moving as one. Alumina-based products get relief while magnesia-based products stay firm — so a single "raw materials are up/down" assumption will misprice a plant's refractory budget.</p>
+<p>Refractory input costs are not moving as one. Alumina-based products get relief while magnesia-based products stay firm, so a single "raw materials are up/down" assumption will misprice a plant's refractory budget.</p>
 
 <h2>Industry impact</h2>
-<p>Cement, aluminium and general kiln operators — heavy users of high-alumina brick and castable — see the softer bauxite trend flow through to lining costs. Steelmakers feel the opposite: the basic refractories that line ladles, BOF converters and EAFs depend on magnesia, where China's export posture sets the floor.</p>
+<p>Cement, aluminium and general kiln operators, heavy users of high-alumina brick and castable, see the softer bauxite trend flow through to lining costs. Steelmakers feel the opposite: the basic refractories that line ladles, BOF converters and EAFs depend on magnesia, where China's export posture sets the floor.</p>
 
 <h2>How this affects refractory users</h2>
 <p>High-alumina bricks and low-cement castables draw on the bauxite/alumina chain, so softer bauxite is genuine input relief for those grades. Magnesia-carbon (MgO-C) bricks depend on fused/dead-burned magnesia and graphite; that supply is concentrated in China, which is why price and availability there matter more than local demand. The practical takeaway: judge each lining by its own material chain, not a blended index.</p>
 
 <h2>Procurement &amp; maintenance implications</h2>
-<p>Where alumina-based requirements are predictable, this is a reasonable window to commit volume while input costs are soft. Treat magnesia as a policy risk, not just a price: qualify a second source on critical MgO-C grades, keep safety stock on the grades tied to unplanned relines, and watch Chinese export notifications. Evaluate offers on delivered <strong>cost-per-heat and lining life</strong> — a cheaper brick that shortens a campaign is more expensive per tonne of steel.</p>
+<p>Where alumina-based requirements are predictable, this is a reasonable window to commit volume while input costs are soft. Treat magnesia as a policy risk, not just a price: qualify a second source on critical MgO-C grades, keep safety stock on the grades tied to unplanned relines, and watch Chinese export notifications. Evaluate offers on delivered <strong>cost-per-heat and lining life</strong>, a cheaper brick that shortens a campaign is more expensive per tonne of steel.</p>
 
 <h2>SAPL perspective</h2>
-<p>From 45+ years supplying Indian plants, the pattern is familiar: raw-material swings reward buyers who plan by lining type rather than by headline index. For alumina-based needs — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> and kiln linings — a soft bauxite market is a good moment to firm up requirements. For foundry and induction-melting operations, <a href="/products/unshaped-refractories/ramming-masses">ramming mass</a> selection is driven more by melt chemistry than by these price moves. The right response is a sourcing plan matched to each furnace, which our engineers can review against your heat data.</p>
+<p>From 45+ years supplying Indian plants, the pattern is familiar: raw-material swings reward buyers who plan by lining type rather than by headline index. For alumina-based needs, <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> and kiln linings, a soft bauxite market is a good moment to firm up requirements. For foundry and induction-melting operations, <a href="/products/unshaped-refractories/ramming-masses">ramming mass</a> selection is driven more by melt chemistry than by these price moves. The right response is a sourcing plan matched to each furnace, which our engineers can review against your heat data.</p>
 
 <h2>Supporting statistics</h2>
 <ul>
-  <li>India bauxite: ~USD 78/MT (Q1 2026) → ~USD 68.5/DMT (May 2026) — <a href="https://www.procurementresource.com/resource-center/bauxite-price-trends" target="_blank" rel="noopener noreferrer">Procurement Resource</a>.</li>
-  <li>China bauxite ~USD 60/DMT (May 2026) — <a href="https://www.imarcgroup.com/bauxite-pricing-report" target="_blank" rel="noopener noreferrer">IMARC</a>.</li>
-  <li>Fused magnesia +~22% in 2024 on China export restrictions; China ~70% of global magnesia consumption — <a href="https://www.marketgrowthreports.com/market-reports/refractory-material-market-113462" target="_blank" rel="noopener noreferrer">Market Growth Reports</a>.</li>
+  <li>India bauxite: ~USD 78/MT (Q1 2026) → ~USD 68.5/DMT (May 2026), <a href="https://www.procurementresource.com/resource-center/bauxite-price-trends" target="_blank" rel="noopener noreferrer">Procurement Resource</a>.</li>
+  <li>China bauxite ~USD 60/DMT (May 2026), <a href="https://www.imarcgroup.com/bauxite-pricing-report" target="_blank" rel="noopener noreferrer">IMARC</a>.</li>
+  <li>Fused magnesia +~22% in 2024 on China export restrictions; China ~70% of global magnesia consumption, <a href="https://www.marketgrowthreports.com/market-reports/refractory-material-market-113462" target="_blank" rel="noopener noreferrer">Market Growth Reports</a>.</li>
 </ul>
 
 <h2>What could happen next</h2>
-<p>If bauxite stays soft, alumina-based linings should keep seeing relief into late 2026. Magnesia is the wildcard — any further Chinese export tightening or an energy-cost move would firm prices quickly. Steel plants in particular should budget for volatility on basic refractories over the next 6–18 months and keep sourcing optionality open.</p>
+<p>If bauxite stays soft, alumina-based linings should keep seeing relief into late 2026. Magnesia is the wildcard, any further Chinese export tightening or an energy-cost move would firm prices quickly. Steel plants in particular should budget for volatility on basic refractories over the next 6–18 months and keep sourcing optionality open.</p>
 `,
   },
   {
     id: 2,
     slug: "india-blast-furnace-wave-2026-refractory-demand",
-    title: "India Is Building Most of the World's New Blast Furnaces — What It Means for Refractories",
+    title: "India Is Building Most of the World's New Blast Furnaces, What It Means for Refractories",
     metaTitle: "India's 2026 Blast Furnace Wave & Refractory Demand",
     metaDescription:
       "India accounts for over 60% of new global blast furnace capacity. What the 2026 build-out at Tata, JSW, AMNS and Jindal means for refractory demand.",
@@ -148,7 +148,7 @@ export const NEWS_ARTICLES = [
       "Realistic industrial photo: a large modern blast furnace under construction at an Indian integrated steel plant, refractory brick lining visible in the hearth, no logos or text.",
     sources: [
       {
-        title: "India accounts for over 60% of new blast furnace capacity worldwide — GEM",
+        title: "India accounts for over 60% of new blast furnace capacity worldwide, GEM",
         publisher: "GMK Center",
         url: "https://gmk.center/en/news/india-accounts-for-over-60-of-new-blast-furnace-capacity-worldwide-gem/amp/",
         date: "2026",
@@ -169,11 +169,11 @@ export const NEWS_ARTICLES = [
     keyTakeaways: [
       "India accounts for over 60% of new blast furnace capacity being built worldwide, per Global Energy Monitor.",
       "Major 2026 additions include Tata Kalinganagar (3→8 MTPA), JSW Dolvi and AMNS Hazira.",
-      "Each new furnace is a one-time lining install plus a recurring reline cycle — sustained refractory demand.",
+      "Each new furnace is a one-time lining install plus a recurring reline cycle, sustained refractory demand.",
       "Buyers should plan high-alumina, castable and monolithic supply against install and reline schedules, not spot orders.",
     ],
     excerpt:
-      "India is building the majority of the world's new blast furnace capacity, with major additions at Tata, JSW, AMNS and Jindal landing through 2026. Every new furnace is a large, recurring consumer of refractories — from hearth and trough to stack and stoves. For refractory buyers and suppliers, this is a multi-year demand signal, not a one-off.",
+      "India is building the majority of the world's new blast furnace capacity, with major additions at Tata, JSW, AMNS and Jindal landing through 2026. Every new furnace is a large, recurring consumer of refractories, from hearth and trough to stack and stoves. For refractory buyers and suppliers, this is a multi-year demand signal, not a one-off.",
     faqs: [
       {
         q: "How much new blast furnace capacity is India building?",
@@ -181,7 +181,7 @@ export const NEWS_ARTICLES = [
       },
       {
         q: "Why does new blast furnace capacity drive refractory demand?",
-        a: "A blast furnace is lined throughout with refractories: carbon and ceramic in the hearth and taphole, high-alumina and silicon-carbide brick through the bosh, belly and stack, castable and SiC systems in the cast-house troughs and runners, and checker refractories in the hot-blast stoves. Commissioning a furnace consumes a full lining, and every campaign ends in a reline — so new capacity creates both an install spike and a recurring replacement cycle.",
+        a: "A blast furnace is lined throughout with refractories: carbon and ceramic in the hearth and taphole, high-alumina and silicon-carbide brick through the bosh, belly and stack, castable and SiC systems in the cast-house troughs and runners, and checker refractories in the hot-blast stoves. Commissioning a furnace consumes a full lining, and every campaign ends in a reline, so new capacity creates both an install spike and a recurring replacement cycle.",
       },
       {
         q: "Which refractories does a blast furnace complex use most?",
@@ -203,10 +203,10 @@ export const NEWS_ARTICLES = [
     ],
     content: `
 <h2>What happened</h2>
-<p>India is building the majority of the world's new blast furnace capacity. Global Energy Monitor data, reported by <a href="https://gmk.center/en/news/india-accounts-for-over-60-of-new-blast-furnace-capacity-worldwide-gem/amp/" target="_blank" rel="noopener noreferrer">GMK Center</a>, puts India at <strong>over 60% of new blast furnace capacity under development worldwide</strong>. Named 2026 additions include Tata Steel's Kalinganagar expansion — <a href="https://www.tatasteel.com/newsroom/press-releases/india/2024/tata-steel-commissions-india-s-largest-blast-furnace-at-kalinganagar/" target="_blank" rel="noopener noreferrer">raising that site from 3 to 8 MTPA</a> — plus new furnaces at <a href="https://gmk.center/en/news/jsw-steel-to-launch-new-blast-furnace-at-dolva-steel-plant-in-2016/" target="_blank" rel="noopener noreferrer">JSW Dolvi</a>, ArcelorMittal Nippon Steel's Hazira, and Jindal's Angul.</p>
+<p>India is building the majority of the world's new blast furnace capacity. Global Energy Monitor data, reported by <a href="https://gmk.center/en/news/india-accounts-for-over-60-of-new-blast-furnace-capacity-worldwide-gem/amp/" target="_blank" rel="noopener noreferrer">GMK Center</a>, puts India at <strong>over 60% of new blast furnace capacity under development worldwide</strong>. Named 2026 additions include Tata Steel's Kalinganagar expansion, <a href="https://www.tatasteel.com/newsroom/press-releases/india/2024/tata-steel-commissions-india-s-largest-blast-furnace-at-kalinganagar/" target="_blank" rel="noopener noreferrer">raising that site from 3 to 8 MTPA</a>, plus new furnaces at <a href="https://gmk.center/en/news/jsw-steel-to-launch-new-blast-furnace-at-dolva-steel-plant-in-2016/" target="_blank" rel="noopener noreferrer">JSW Dolvi</a>, ArcelorMittal Nippon Steel's Hazira, and Jindal's Angul.</p>
 
 <h2>Why it matters</h2>
-<p>Every new blast furnace is a large, multi-year consumer of refractories — first a full lining at commissioning, then a recurring reline cycle. A build-out of this scale is a structural demand signal for refractory buyers and suppliers, not a one-off order.</p>
+<p>Every new blast furnace is a large, multi-year consumer of refractories, first a full lining at commissioning, then a recurring reline cycle. A build-out of this scale is a structural demand signal for refractory buyers and suppliers, not a one-off order.</p>
 
 <h2>Industry impact</h2>
 <p>The direct effect lands on integrated steel producers and their refractory supply chains. But the pull is broader: raw-material suppliers, monolithic and brick makers, and installation contractors all see sustained work. Because India holds the majority of global new-build capacity, this concentrates a meaningful share of world refractory demand in one country's project pipeline.</p>
@@ -214,23 +214,23 @@ export const NEWS_ARTICLES = [
 <h2>How this affects refractory users</h2>
 <p>A blast furnace is lined throughout, and each zone has its own refractory logic and replacement rhythm:</p>
 <ul>
-  <li><strong>Hearth &amp; taphole:</strong> carbon blocks and ceramic cup, backed by high-alumina — long-life, replaced at major relines.</li>
+  <li><strong>Hearth &amp; taphole:</strong> carbon blocks and ceramic cup, backed by high-alumina, long-life, replaced at major relines.</li>
   <li><strong>Bosh, belly &amp; stack:</strong> high-alumina and silicon-carbide brick against thermal and chemical attack.</li>
-  <li><strong>Cast-house troughs &amp; runners:</strong> alumina and SiC-based castables and monolithics — replaced frequently, so they drive steady between-reline demand.</li>
+  <li><strong>Cast-house troughs &amp; runners:</strong> alumina and SiC-based castables and monolithics, replaced frequently, so they drive steady between-reline demand.</li>
   <li><strong>Hot-blast stoves:</strong> high-alumina and silica checker refractories.</li>
 </ul>
-<p>The practical point: commissioning consumes a full lining, and the cast-house and stove refractories are consumed far faster than the hearth — so a new furnace generates both an install spike and a long tail of recurring monolithic and brick demand.</p>
+<p>The practical point: commissioning consumes a full lining, and the cast-house and stove refractories are consumed far faster than the hearth, so a new furnace generates both an install spike and a long tail of recurring monolithic and brick demand.</p>
 
 <h2>Procurement &amp; maintenance implications</h2>
-<p>Plan supply against each furnace's install and reline calendar rather than spot orders. Qualify suppliers early for the recurring grades — high-alumina brick, alumina and SiC castables, and stove and trough monolithics — and hold buffer stock for planned cast-house and stove maintenance. A demand wave this size can tighten lead times, so lock critical grades ahead of scheduled outages. Evaluate on installed performance and campaign life, not headline price per tonne: a trough castable that lasts more casts lowers cost per tonne of hot metal even at a higher unit price.</p>
+<p>Plan supply against each furnace's install and reline calendar rather than spot orders. Qualify suppliers early for the recurring grades, high-alumina brick, alumina and SiC castables, and stove and trough monolithics, and hold buffer stock for planned cast-house and stove maintenance. A demand wave this size can tighten lead times, so lock critical grades ahead of scheduled outages. Evaluate on installed performance and campaign life, not headline price per tonne: a trough castable that lasts more casts lowers cost per tonne of hot metal even at a higher unit price.</p>
 
 <h2>SAPL perspective</h2>
-<p>From 45+ years serving Indian steel plants, a capacity wave rewards buyers who treat refractories as a planned, calendar-driven spend. SAPL supplies the recurring high-volume side of this demand — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> and monolithics used across cast-house, stove and back-up linings — and works with plants on grade selection matched to each zone's duty. Our <a href="/solutions/steel">steel plant solutions</a> outline how the lining zones map to material choices. The engineering aim is longer campaigns and predictable maintenance, not the lowest unit price.</p>
+<p>From 45+ years serving Indian steel plants, a capacity wave rewards buyers who treat refractories as a planned, calendar-driven spend. SAPL supplies the recurring high-volume side of this demand, <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> and monolithics used across cast-house, stove and back-up linings, and works with plants on grade selection matched to each zone's duty. Our <a href="/solutions/steel">steel plant solutions</a> outline how the lining zones map to material choices. The engineering aim is longer campaigns and predictable maintenance, not the lowest unit price.</p>
 
 <h2>Supporting statistics</h2>
 <ul>
-  <li>India: &gt;60% of new blast furnace capacity under development worldwide — <a href="https://gmk.center/en/news/india-accounts-for-over-60-of-new-blast-furnace-capacity-worldwide-gem/amp/" target="_blank" rel="noopener noreferrer">GEM via GMK Center</a>.</li>
-  <li>Tata Steel Kalinganagar: expansion from 3 to 8 MTPA — <a href="https://www.tatasteel.com/newsroom/press-releases/india/2024/tata-steel-commissions-india-s-largest-blast-furnace-at-kalinganagar/" target="_blank" rel="noopener noreferrer">Tata Steel</a>.</li>
+  <li>India: &gt;60% of new blast furnace capacity under development worldwide, <a href="https://gmk.center/en/news/india-accounts-for-over-60-of-new-blast-furnace-capacity-worldwide-gem/amp/" target="_blank" rel="noopener noreferrer">GEM via GMK Center</a>.</li>
+  <li>Tata Steel Kalinganagar: expansion from 3 to 8 MTPA, <a href="https://www.tatasteel.com/newsroom/press-releases/india/2024/tata-steel-commissions-india-s-largest-blast-furnace-at-kalinganagar/" target="_blank" rel="noopener noreferrer">Tata Steel</a>.</li>
 </ul>
 
 <h2>What could happen next</h2>
@@ -277,7 +277,7 @@ export const NEWS_ARTICLES = [
     keyTakeaways: [
       "Dalmia Bharat's Kadapa Line-2 raises clinker capacity from 2.5 to 6.1 MTPA and cement capacity from 3.6 to 9.6 MTPA.",
       "The ₹3,100-crore project targets commissioning by Q3 FY28, making it Dalmia Bharat's largest integrated plant in southern India.",
-      "A clinker-capacity jump this size means a new kiln, precalciner and cooler train — not a grinding-only add-on.",
+      "A clinker-capacity jump this size means a new kiln, precalciner and cooler train, not a grinding-only add-on.",
       "The plant specs over 80% renewable power and Waste Heat Recovery, adding insulation scope beyond the kiln itself.",
     ],
     excerpt:
@@ -289,19 +289,19 @@ export const NEWS_ARTICLES = [
       },
       {
         q: "Why does a clinker-capacity increase matter for refractories?",
-        a: "Clinker capacity is set by the kiln, precalciner and clinker cooler train — the pyroprocessing line, not the grinding mills. More than doubling clinker capacity (2.5 to 6.1 MTPA) means a new kiln system with its own full refractory lining: basic brick in the burning zone, high-alumina and insulating castables through the transition and calciner zones, and wear-resistant linings in the cooler.",
+        a: "Clinker capacity is set by the kiln, precalciner and clinker cooler train, the pyroprocessing line, not the grinding mills. More than doubling clinker capacity (2.5 to 6.1 MTPA) means a new kiln system with its own full refractory lining: basic brick in the burning zone, high-alumina and insulating castables through the transition and calciner zones, and wear-resistant linings in the cooler.",
       },
       {
         q: "Who is affected by this expansion?",
-        a: "Directly: Dalmia Bharat and its EPC and refractory contractors for the Kadapa project. More broadly, it signals continued southern-India cement capex — the New Indian Express and ETManufacturing reports both frame it as part of a wider push into Andhra Pradesh's cement demand, which draws on the same regional pool of kiln-refractory and insulation suppliers as other plants in the pipeline.",
+        a: "Directly: Dalmia Bharat and its EPC and refractory contractors for the Kadapa project. More broadly, it signals continued southern-India cement capex, the New Indian Express and ETManufacturing reports both frame it as part of a wider push into Andhra Pradesh's cement demand, which draws on the same regional pool of kiln-refractory and insulation suppliers as other plants in the pipeline.",
       },
       {
         q: "What should refractory and insulation suppliers do now?",
-        a: "Start supplier qualification and grade selection early. Commissioning is targeted for Q3 FY28 — over two years out — but kiln-lining specification, precalciner refractory selection and insulation scope for the stated Waste Heat Recovery (WHR) system typically get locked well before civil and mechanical work finishes. Waiting until closer to commissioning risks lead-time pressure on high-alumina and insulating castable grades.",
+        a: "Start supplier qualification and grade selection early. Commissioning is targeted for Q3 FY28, over two years out, but kiln-lining specification, precalciner refractory selection and insulation scope for the stated Waste Heat Recovery (WHR) system typically get locked well before civil and mechanical work finishes. Waiting until closer to commissioning risks lead-time pressure on high-alumina and insulating castable grades.",
       },
       {
         q: "What alternatives or substitutes exist for the specified lining zones?",
-        a: "Cement kiln linings are chosen by zone duty rather than a single material: basic (magnesia-spinel) brick for the burning zone, high-alumina and low-cement castables for the transition and precalciner, and insulating fibre or lightweight castable for backup and WHR ducting. The choice is a specification decision for Dalmia Bharat's project engineers, not an open substitution — but it defines which supplier categories should be engaging now.",
+        a: "Cement kiln linings are chosen by zone duty rather than a single material: basic (magnesia-spinel) brick for the burning zone, high-alumina and low-cement castables for the transition and precalciner, and insulating fibre or lightweight castable for backup and WHR ducting. The choice is a specification decision for Dalmia Bharat's project engineers, not an open substitution, but it defines which supplier categories should be engaging now.",
       },
       {
         q: "What could happen next?",
@@ -318,7 +318,7 @@ export const NEWS_ARTICLES = [
 <p>Dalmia Bharat laid the foundation stone on 15 July 2026 for a Line-2 expansion at its existing Kadapa, Andhra Pradesh plant, in the presence of state IT Minister Nara Lokesh and Dalmia Bharat MD &amp; CEO Puneet Dalmia (<a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>). The <strong>₹3,100-crore</strong> project raises the site's clinker capacity from 2.5 to <strong>6.1 MTPA</strong> and cement capacity from 3.6 to <strong>9.6 MTPA</strong>, with commissioning targeted for <strong>Q3 FY28</strong> (<a href="https://manufacturing.economictimes.indiatimes.com/news/industry/dalmia-bharat-lays-foundation-stone-for-3100-crore-cement-plant-in-andhra-pradesh/132412995" target="_blank" rel="noopener noreferrer">ETManufacturing</a>). Once commissioned, Kadapa becomes Dalmia Bharat's largest integrated cement manufacturing site in southern India.</p>
 
 <h2>Why it matters</h2>
-<p>A clinker-capacity increase of this scale is a pyroprocessing-line expansion, not a grinding add-on. More than doubling clinker output means a new kiln, precalciner and clinker cooler train — each requiring a full refractory and insulation lining scope that has to be specified and sourced well before mechanical completion.</p>
+<p>A clinker-capacity increase of this scale is a pyroprocessing-line expansion, not a grinding add-on. More than doubling clinker output means a new kiln, precalciner and clinker cooler train, each requiring a full refractory and insulation lining scope that has to be specified and sourced well before mechanical completion.</p>
 
 <h2>Industry impact</h2>
 <p>The direct impact is on Dalmia Bharat's EPC and refractory contractors for Kadapa. The wider signal is regional: both source reports frame the project as part of continued southern-India cement capex tied to rising demand, which means the same pool of kiln-refractory, insulation and installation contractors will likely see overlapping project timelines across the region rather than a single isolated tender.</p>
@@ -329,26 +329,26 @@ export const NEWS_ARTICLES = [
   <li><strong>Burning zone:</strong> basic (magnesia-spinel) brick, engineered for clinker chemistry and rotary-kiln thermal cycling.</li>
   <li><strong>Transition and precalciner zones:</strong> high-alumina brick and low-cement/ultra-low-cement castables, resisting alkali and sulfate attack alongside thermal load.</li>
   <li><strong>Clinker cooler:</strong> wear- and abrasion-resistant castables handling hot clinker impact and airflow.</li>
-  <li><strong>Backup and insulation:</strong> insulating firebrick or ceramic fibre systems reducing shell heat loss — directly relevant here given the plant's stated Waste Heat Recovery (WHR) system, which adds insulated ducting scope beyond the kiln proper.</li>
+  <li><strong>Backup and insulation:</strong> insulating firebrick or ceramic fibre systems reducing shell heat loss, directly relevant here given the plant's stated Waste Heat Recovery (WHR) system, which adds insulated ducting scope beyond the kiln proper.</li>
 </ul>
-<p>A greenfield-scale kiln line like this consumes a full lining set at commissioning, then follows the normal reline cycle for each zone thereafter — the transition zone and cooler typically turning over faster than the basic-brick burning zone. Alumina-based castable costs for the transition and precalciner zones track the bauxite/alumina raw-material trend covered in our <a href="/news/bauxite-eases-china-magnesia-grip-2026">recent bauxite and magnesia price analysis</a>, which is worth reviewing alongside any kiln-lining budget for this project.</p>
+<p>A greenfield-scale kiln line like this consumes a full lining set at commissioning, then follows the normal reline cycle for each zone thereafter, the transition zone and cooler typically turning over faster than the basic-brick burning zone. Alumina-based castable costs for the transition and precalciner zones track the bauxite/alumina raw-material trend covered in our <a href="/news/bauxite-eases-china-magnesia-grip-2026">recent bauxite and magnesia price analysis</a>, which is worth reviewing alongside any kiln-lining budget for this project.</p>
 
 <h2>Procurement &amp; maintenance implications</h2>
-<p>With commissioning targeted for Q3 FY28, this is a plan-ahead signal rather than an immediate order. Kiln and precalciner refractory specification, along with insulation scope for the WHR system, typically gets locked during detailed engineering — well before civil and mechanical work is complete. Suppliers and EPC-side procurement teams should begin grade qualification and lead-time planning now rather than waiting for tender close closer to commissioning, particularly for high-alumina and insulating castable grades where demand can cluster across multiple regional projects on similar timelines. Maintenance teams inheriting the new line should also plan first-reline budgets around the burning-zone brick from day one of commissioning, since basic-brick campaigns in a new kiln are harder to forecast than in an established, already-characterized line.</p>
+<p>With commissioning targeted for Q3 FY28, this is a plan-ahead signal rather than an immediate order. Kiln and precalciner refractory specification, along with insulation scope for the WHR system, typically gets locked during detailed engineering, well before civil and mechanical work is complete. Suppliers and EPC-side procurement teams should begin grade qualification and lead-time planning now rather than waiting for tender close closer to commissioning, particularly for high-alumina and insulating castable grades where demand can cluster across multiple regional projects on similar timelines. Maintenance teams inheriting the new line should also plan first-reline budgets around the burning-zone brick from day one of commissioning, since basic-brick campaigns in a new kiln are harder to forecast than in an established, already-characterized line.</p>
 
 <h2>SAPL perspective</h2>
-<p>From decades supplying Indian cement plants, capacity expansions of this scale follow a predictable engineering sequence: kiln and precalciner lining specification comes early, well ahead of the commissioning date that makes headlines. SAPL supplies the recurring side of that scope — <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> for transition and precalciner zones and <a href="/products/insulation/ceramic-fiber-products">ceramic fibre insulation</a> for backup and duct lining — and our <a href="/solutions/cement">cement plant solutions</a> map how these zones interact with kiln design. This is engineering context on a public capex announcement, not a pitch tied to this specific project.</p>
+<p>From decades supplying Indian cement plants, capacity expansions of this scale follow a predictable engineering sequence: kiln and precalciner lining specification comes early, well ahead of the commissioning date that makes headlines. SAPL supplies the recurring side of that scope, <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> for transition and precalciner zones and <a href="/products/insulation/ceramic-fiber-products">ceramic fibre insulation</a> for backup and duct lining, and our <a href="/solutions/cement">cement plant solutions</a> map how these zones interact with kiln design. This is engineering context on a public capex announcement, not a pitch tied to this specific project.</p>
 
 <h2>Supporting statistics</h2>
 <ul>
-  <li>Investment: ₹3,100 crore — <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
-  <li>Clinker capacity: 2.5 MTPA → 6.1 MTPA — <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
-  <li>Cement capacity: 3.6 MTPA → 9.6 MTPA — <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
-  <li>Commissioning target: Q3 FY28; over 80% renewable power plus Waste Heat Recovery specified — <a href="https://manufacturing.economictimes.indiatimes.com/news/industry/dalmia-bharat-lays-foundation-stone-for-3100-crore-cement-plant-in-andhra-pradesh/132412995" target="_blank" rel="noopener noreferrer">ETManufacturing</a>.</li>
+  <li>Investment: ₹3,100 crore, <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
+  <li>Clinker capacity: 2.5 MTPA → 6.1 MTPA, <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
+  <li>Cement capacity: 3.6 MTPA → 9.6 MTPA, <a href="https://www.newindianexpress.com/states/andhra-pradesh/2026/Jul/16/ap-minister-lokesh-lays-stone-for-rs-3100-crore-cement-unit-in-kadapa" target="_blank" rel="noopener noreferrer">The New Indian Express</a>.</li>
+  <li>Commissioning target: Q3 FY28; over 80% renewable power plus Waste Heat Recovery specified, <a href="https://manufacturing.economictimes.indiatimes.com/news/industry/dalmia-bharat-lays-foundation-stone-for-3100-crore-cement-plant-in-andhra-pradesh/132412995" target="_blank" rel="noopener noreferrer">ETManufacturing</a>.</li>
 </ul>
 
 <h2>What could happen next</h2>
-<p>Expect EPC and refractory-package tendering for the kiln, precalciner, cooler and WHR ducting to progress over the next 12–18 months ahead of the Q3 FY28 commissioning date. If Dalmia Bharat's southern-India push continues — building on other announced regional investment — refractory and insulation suppliers should track this as one signal among a growing pool of southern-India cement capacity additions, not an isolated event. Plants already running similar clinker lines in the region are a useful reference point for lining life and reline scheduling as this project moves from foundation stone to detailed engineering.</p>
+<p>Expect EPC and refractory-package tendering for the kiln, precalciner, cooler and WHR ducting to progress over the next 12–18 months ahead of the Q3 FY28 commissioning date. If Dalmia Bharat's southern-India push continues, building on other announced regional investment, refractory and insulation suppliers should track this as one signal among a growing pool of southern-India cement capacity additions, not an isolated event. Plants already running similar clinker lines in the region are a useful reference point for lining life and reline scheduling as this project moves from foundation stone to detailed engineering.</p>
 `,
   },
 ];

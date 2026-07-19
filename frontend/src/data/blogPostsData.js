@@ -470,7 +470,7 @@ export const BLOG_POSTS_DATA = [
     slug: "ceramic-fiber-blanket-vs-insulating-fire-brick",
     title: "Ceramic Fiber Blanket vs Insulating Fire Brick: Which to Choose?",
     metaTitle: "Ceramic Fiber vs Insulating Fire Brick: Which Saves More Fuel?",
-    metaDescription: "Ceramic fiber stores 90% less heat than IFB — but IFB survives abrasion fiber can't. Side-by-side comparison: temperature limits, fuel savings, cost, and exactly when to switch.",
+    metaDescription: "Ceramic fiber stores 90% less heat than IFB, but IFB survives abrasion fiber can't. Side-by-side comparison: temperature limits, fuel savings, cost, and exactly when to switch.",
     category: "Comparison",
     tags: [
       "ceramic fiber blanket",
@@ -2569,7 +2569,7 @@ export const BLOG_POSTS_DATA = [
     coverImage: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=1200&q=80",
     excerpt: "Cement kiln refractory is only 3-5% of production cost, but the wrong procurement plan turns a scheduled reline into an unplanned multi-day stoppage. This guide covers realistic campaign life by zone, brick-vs-castable cost tradeoffs, and how to plan shutdowns and sourcing so the kiln never waits on a container.",
     content: `
-<p><strong>Cement kiln refractory typically costs only 3-5% of total production cost, but the burning zone alone can need relining every 8-18 months, and an unplanned stoppage waiting on refractory can cost a plant more in a single day than a full year's relining budget.</strong> The plants that keep this cost predictable don't budget the kiln as one line item — they track campaign life and cost separately by zone, because the burning zone, transition zones and preheater wear on completely different clocks. This guide covers realistic campaign life and cost drivers by zone, brick-vs-castable tradeoffs, and how to plan procurement so a shutdown is never waiting on a container. (For the underlying material-selection criteria zone by zone, see our <a href="/blog/cement-kiln-refractory-zones-material-selection-guide">zone-by-zone material selection guide</a>.)</p>
+<p><strong>Cement kiln refractory typically costs only 3-5% of total production cost, but the burning zone alone can need relining every 8-18 months, and an unplanned stoppage waiting on refractory can cost a plant more in a single day than a full year's relining budget.</strong> The plants that keep this cost predictable don't budget the kiln as one line item, they track campaign life and cost separately by zone, because the burning zone, transition zones and preheater wear on completely different clocks. This guide covers realistic campaign life and cost drivers by zone, brick-vs-castable tradeoffs, and how to plan procurement so a shutdown is never waiting on a container. (For the underlying material-selection criteria zone by zone, see our <a href="/blog/cement-kiln-refractory-zones-material-selection-guide">zone-by-zone material selection guide</a>.)</p>
 
 <h2>Cement Kiln Zones: Overview</h2>
 <p>A typical 5-stage preheater dry process kiln is divided into the following refractory zones (from outlet to inlet), each with its own wear rate and reline budget:</p>
@@ -2672,7 +2672,7 @@ export const BLOG_POSTS_DATA = [
     <tr><td>Preheater / riser duct (castable)</td><td>2&ndash;5 years</td><td>Lowest cost per relining event, but complex geometry adds installation labour</td></tr>
   </tbody>
 </table>
-<p>As a planning benchmark, well-managed kilns run 0.3&ndash;0.8 kg of refractory consumption per tonne of clinker. Track this figure plant-wide as a KPI — a rising trend flags an operational issue (shell ovality, unstable firing) before it becomes an unplanned stoppage.</p>
+<p>As a planning benchmark, well-managed kilns run 0.3&ndash;0.8 kg of refractory consumption per tonne of clinker. Track this figure plant-wide as a KPI, a rising trend flags an operational issue (shell ovality, unstable firing) before it becomes an unplanned stoppage.</p>
 
 <h2>Brick vs. Castable: The Procurement Tradeoff</h2>
 <p>Bricks cost more per tonne installed but hold up better under the highest mechanical and chemical loads (burning and transition zones). Castables cost less and install faster in complex geometries (preheater, riser duct, inlet), but need longer cure and heat-up schedules before the kiln can restart. The procurement implication: bricks for the burning and transition zones should be ordered against a fixed shutdown date with lead time built in, while castable zones have more flexibility to batch with other maintenance work.</p>
@@ -2681,7 +2681,7 @@ export const BLOG_POSTS_DATA = [
 <ul>
   <li><strong>Order against the campaign, not the calendar:</strong> track actual wear (shell scanning, thickness measurement) rather than relining strictly on a fixed schedule, but always have brick on hand before the campaign is projected to end.</li>
   <li><strong>Separate budgets by zone:</strong> a single "kiln refractory" budget line hides the fact that the burning zone needs 3-4x more frequent capital than the preheater.</li>
-  <li><strong>Build in supplier lead time:</strong> magnesia-spinel brick for the burning zone is a longer manufacturing lead item than standard castables — confirm production slots before the shutdown is locked.</li>
+  <li><strong>Build in supplier lead time:</strong> magnesia-spinel brick for the burning zone is a longer manufacturing lead item than standard castables, confirm production slots before the shutdown is locked.</li>
   <li><strong>Keep a contingency stock</strong> of the fastest-wearing zone's material so an unexpected hot spot doesn't turn into extended downtime waiting for a fresh order.</li>
 </ul>
 
@@ -2696,7 +2696,7 @@ export const BLOG_POSTS_DATA = [
 <p>For magnesia-spinel burning-zone brick, confirm supplier production slots 8&ndash;12 weeks ahead of the shutdown date. Castable zones (preheater, riser duct) can typically be ordered with 3&ndash;4 weeks' lead time. Building in this lead time, rather than ordering once the shutdown is already scheduled, is what keeps a planned reline from slipping into unplanned downtime.</p>
 
 <h2>SAPL: Refractory Procurement Support for Cement Plants</h2>
-<p>Shanker Agencies supplies the full range of cement kiln refractories from Delhi NCR stock — magnesia-spinel bricks for the burning zone, high alumina and andalusite bricks for transition zones, and castables for preheater and riser duct sections — with manufacturer test certificates on every batch and campaign-based supply planning support. For the material-selection criteria behind these recommendations, see our <a href="/blog/cement-kiln-refractory-zones-material-selection-guide">zone-by-zone material selection guide</a>. <a href="/rfq">Submit an RFQ</a> with your kiln capacity and shutdown timeline for a procurement plan.</p>
+<p>Shanker Agencies supplies the full range of cement kiln refractories from Delhi NCR stock, magnesia-spinel bricks for the burning zone, high alumina and andalusite bricks for transition zones, and castables for preheater and riser duct sections, with manufacturer test certificates on every batch and campaign-based supply planning support. For the material-selection criteria behind these recommendations, see our <a href="/blog/cement-kiln-refractory-zones-material-selection-guide">zone-by-zone material selection guide</a>. <a href="/rfq">Submit an RFQ</a> with your kiln capacity and shutdown timeline for a procurement plan.</p>
 `,
     faqs: [
       { q: "How long should cement kiln bricks last in the burning zone?", a: "With good quality magnesia-spinel bricks and stable kiln operation (no major coating losses), burning zone campaigns of 18&ndash;36 months are achievable. Poor coating stability, frequent kiln stoppages, and alkali-rich raw materials reduce this to 8&ndash;12 months." },
@@ -3579,7 +3579,7 @@ export const BLOG_POSTS_DATA = [
     title: "Gunning Castable: Complete Guide to Grades, Applications and Selection",
     metaTitle: "Gunning Castable Guide: Grades, Applications & Selection | SAPL",
     excerpt: "Technical guide to gunning castable (gunite) refractory covering dense vs insulating grades, full application matrix for steel, cement and power sectors, rebound loss data, and how to choose the right grade.",
-    metaDescription: "Technical guide to gunning castable (gunite) refractory — dense vs insulating grades, application matrix for steel, cement and power, rebound loss data.",
+    metaDescription: "Technical guide to gunning castable (gunite) refractory, dense vs insulating grades, application matrix for steel, cement and power, rebound loss data.",
     publishDate: "2026-06-20",
     lastModified: "2026-06-20",
     category: "Refractory Products",
@@ -3738,14 +3738,14 @@ export const BLOG_POSTS_DATA = [
 <p>Shanker Agencies engineers and supplies complete acid-proofing systems for industrial plants across India and export markets. This guide explains what acid proofing involves, the materials used, how the lining is built up, and how to choose the right system for your duty.</p>
 
 <h2>What is acid proofing?</h2>
-<p>Acid proofing is the application of corrosion-resistant materials to floors, tanks, trenches, drains, pump bases, and structures that are exposed to acids, alkalis, and aggressive chemicals. A correctly designed system stops the chemical from ever reaching the concrete or steel substrate. It is used wherever acids are stored, handled, processed, or spilled — chemical and petrochemical plants, fertilizer units, pharmaceutical facilities, battery rooms, electroplating shops, and steel pickling lines.</p>
+<p>Acid proofing is the application of corrosion-resistant materials to floors, tanks, trenches, drains, pump bases, and structures that are exposed to acids, alkalis, and aggressive chemicals. A correctly designed system stops the chemical from ever reaching the concrete or steel substrate. It is used wherever acids are stored, handled, processed, or spilled, chemical and petrochemical plants, fertilizer units, pharmaceutical facilities, battery rooms, electroplating shops, and steel pickling lines.</p>
 
 <h2>The acid-resistant lining build-up</h2>
 <p>An acid-proof lining is a layered system. Each layer has a job, and skipping one is the most common cause of premature failure.</p>
 <ul>
 <li><strong>Substrate preparation:</strong> The concrete or steel is cleaned, made sound, and given a slope to drains. Surface laitance is removed so the membrane can bond.</li>
-<li><strong>Membrane / barrier layer:</strong> A bitumen, asphalt, or polymer membrane forms the impervious barrier. This is the true line of defence — if acid penetrates the brick joints, the membrane stops it reaching the substrate.</li>
-<li><strong>Bedding and jointing mortar:</strong> Acid-resistant bricks or tiles are laid in a chemical-resistant mortar — silicate, sulphur, furane, phenolic, or epoxy based, chosen to match the chemical.</li>
+<li><strong>Membrane / barrier layer:</strong> A bitumen, asphalt, or polymer membrane forms the impervious barrier. This is the true line of defence, if acid penetrates the brick joints, the membrane stops it reaching the substrate.</li>
+<li><strong>Bedding and jointing mortar:</strong> Acid-resistant bricks or tiles are laid in a chemical-resistant mortar, silicate, sulphur, furane, phenolic, or epoxy based, chosen to match the chemical.</li>
 <li><strong>Acid-resistant brick or tile course:</strong> The wearing surface that takes mechanical and thermal load while resisting chemical attack.</li>
 </ul>
 
@@ -3756,7 +3756,7 @@ export const BLOG_POSTS_DATA = [
 <h3>Chemical-resistant mortars</h3>
 <ul>
 <li><strong>Silicate mortars:</strong> Excellent resistance to most acids and high temperature; not suited to alkalis or hydrofluoric acid.</li>
-<li><strong>Furane and phenolic mortars:</strong> Resist acids, alkalis, and solvents — the best all-round choice for mixed chemical exposure.</li>
+<li><strong>Furane and phenolic mortars:</strong> Resist acids, alkalis, and solvents, the best all-round choice for mixed chemical exposure.</li>
 <li><strong>Sulphur mortars:</strong> Fast setting and impervious, good for non-oxidising acids.</li>
 <li><strong>Epoxy mortars:</strong> Strong bond and resistance to dilute acids and alkalis where temperatures are moderate.</li>
 </ul>
@@ -3765,7 +3765,7 @@ export const BLOG_POSTS_DATA = [
 <p>Bitumen and polymer membranes sit beneath the brickwork as the impervious barrier. For severe immersion duty, FRP or rubber-lining systems are used in place of, or alongside, brick linings.</p>
 
 <h2>How to select the right acid-proofing system</h2>
-<p>The right system depends on the specific duty. Engineering the lining to the actual exposure — rather than fitting a generic "acid-proof floor" — is what determines service life. Key questions to answer:</p>
+<p>The right system depends on the specific duty. Engineering the lining to the actual exposure, rather than fitting a generic "acid-proof floor", is what determines service life. Key questions to answer:</p>
 <ul>
 <li><strong>Which chemicals, and at what concentration?</strong> Hydrofluoric acid, strong alkalis, and oxidising acids each rule out certain mortars.</li>
 <li><strong>Operating temperature and thermal shock?</strong> Hot acid and steam cleaning demand silicate or furane systems and tighter brick selection.</li>
@@ -3800,12 +3800,12 @@ export const BLOG_POSTS_DATA = [
 <p>A correctly engineered and installed acid-resistant brick lining commonly lasts 15 to 25 years, depending on chemical severity, temperature, and traffic. Failures are almost always design or workmanship issues, not material wear.</p>
 
 <h3>Can acid-resistant brick handle hydrofluoric acid?</h3>
-<p>No. Standard acid-resistant brick and silicate mortars are attacked by hydrofluoric acid. HF service requires specialised carbon, graphite, or polymer linings — specify the acid clearly at the design stage.</p>
+<p>No. Standard acid-resistant brick and silicate mortars are attacked by hydrofluoric acid. HF service requires specialised carbon, graphite, or polymer linings, specify the acid clearly at the design stage.</p>
 
 <h3>What is the difference between acid proofing and acid-resistant brick lining?</h3>
-<p>Acid-resistant brick lining is one component. Acid proofing is the complete engineered system — substrate preparation, membrane barrier, chemical-resistant mortar, and the brick or tile wearing course working together.</p>
+<p>Acid-resistant brick lining is one component. Acid proofing is the complete engineered system, substrate preparation, membrane barrier, chemical-resistant mortar, and the brick or tile wearing course working together.</p>
 
-<p>Need an acid-proofing system specified for your plant? Shanker Agencies can engineer and supply the complete lining to your chemical and thermal duty — <a href="https://www.shankeragencies.com/contact">talk to our refractory engineering team</a>.</p>`,
+<p>Need an acid-proofing system specified for your plant? Shanker Agencies can engineer and supply the complete lining to your chemical and thermal duty, <a href="https://www.shankeragencies.com/contact">talk to our refractory engineering team</a>.</p>`,
     faqs: [
       {
         question: "How long does an acid-proof lining last?",
@@ -3813,11 +3813,11 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "Can acid-resistant brick handle hydrofluoric acid?",
-        answer: "No. Standard acid-resistant brick and silicate mortars are attacked by hydrofluoric acid. HF service requires specialised carbon, graphite, or polymer linings — specify the acid clearly at the design stage."
+        answer: "No. Standard acid-resistant brick and silicate mortars are attacked by hydrofluoric acid. HF service requires specialised carbon, graphite, or polymer linings, specify the acid clearly at the design stage."
       },
       {
         question: "What is the difference between acid proofing and acid-resistant brick lining?",
-        answer: "Acid-resistant brick lining is one component. Acid proofing is the complete engineered system — substrate preparation, membrane barrier, chemical-resistant mortar, and the brick or tile wearing course working together."
+        answer: "Acid-resistant brick lining is one component. Acid proofing is the complete engineered system, substrate preparation, membrane barrier, chemical-resistant mortar, and the brick or tile wearing course working together."
       }
     ],
     author: { name: "Anjali Verma" },
@@ -3840,13 +3840,13 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-06-25",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop",
-    content: `<p>Choosing a refractory supplier is a high-stakes decision. The wrong lining means unplanned shutdowns, lost production, and safety risk on furnaces and kilns running above 1,000°C. India has a deep refractory industry — from large integrated manufacturers to specialist engineering partners — so the real question is not just <em>who is biggest</em>, but <em>who fits your duty</em>. This guide explains how to evaluate a refractory supplier in India and what separates a genuine engineering partner from a trading desk.</p>
+    content: `<p>Choosing a refractory supplier is a high-stakes decision. The wrong lining means unplanned shutdowns, lost production, and safety risk on furnaces and kilns running above 1,000°C. India has a deep refractory industry, from large integrated manufacturers to specialist engineering partners, so the real question is not just <em>who is biggest</em>, but <em>who fits your duty</em>. This guide explains how to evaluate a refractory supplier in India and what separates a genuine engineering partner from a trading desk.</p>
 
 <h2>What to look for in a refractory supplier</h2>
 <p>Before comparing names, fix your selection criteria. A supplier that scores well on these is far more likely to keep your furnace running:</p>
 <ul>
-<li><strong>Engineering capability, not just stock:</strong> Can they specify the right refractory for your thermal, chemical, and mechanical duty — or do they only sell from a catalogue?</li>
-<li><strong>Product breadth:</strong> Fire clay and high-alumina bricks, insulating bricks, castables, ramming masses, ceramic fibre, acid-resistant materials, and flow-control products — ideally from one partner.</li>
+<li><strong>Engineering capability, not just stock:</strong> Can they specify the right refractory for your thermal, chemical, and mechanical duty, or do they only sell from a catalogue?</li>
+<li><strong>Product breadth:</strong> Fire clay and high-alumina bricks, insulating bricks, castables, ramming masses, ceramic fibre, acid-resistant materials, and flow-control products, ideally from one partner.</li>
 <li><strong>Brand access:</strong> Authorised dealership or partnership with established manufacturers gives you genuine product and consistent quality.</li>
 <li><strong>Installation and after-sales support:</strong> Technical documentation, installation guidance, and campaign-life support matter as much as the material.</li>
 <li><strong>Export and logistics reach:</strong> For plants in the GCC, ASEAN, Africa, and Europe, on-time delivery with full documentation is decisive.</li>
@@ -3858,13 +3858,13 @@ export const BLOG_POSTS_DATA = [
 <p>Large manufacturers produce refractories at scale and serve high-volume contracts. They are strong on standard products but may be less flexible on customised engineering and smaller, time-critical orders.</p>
 
 <h3>2. Refractory engineering partners</h3>
-<p>Engineering-led suppliers combine manufacturing and sourcing with design support. They specify, supply, and support the complete lining — the better fit when you need a solution engineered to your furnace rather than an off-the-shelf product.</p>
+<p>Engineering-led suppliers combine manufacturing and sourcing with design support. They specify, supply, and support the complete lining, the better fit when you need a solution engineered to your furnace rather than an off-the-shelf product.</p>
 
 <h3>3. Traders and stockists</h3>
 <p>Traders move material quickly but typically offer little engineering input. Fine for repeat commodity purchases; risky for a new or problem lining.</p>
 
 <h2>Shanker Agencies: a refractory engineering partner</h2>
-<p>Shanker Agencies Private Limited (SAPL) is an Indian manufacturer, supplier, and engineering partner serving steel, cement, aluminium, glass, petrochemical, and power plants. Its scope covers the full refractory range — fire clay and high-alumina bricks, insulating bricks, castables and guniting materials, ramming masses, ceramic fibre products, acid-resistant materials, and flow-control products — backed by engineering support and full technical documentation. As an authorised partner for leading refractory brands, SAPL supplies across India and exports to the GCC, ASEAN, Africa, the UK, and Europe with installation guidance.</p>
+<p>Shanker Agencies Private Limited (SAPL) is an Indian manufacturer, supplier, and engineering partner serving steel, cement, aluminium, glass, petrochemical, and power plants. Its scope covers the full refractory range, fire clay and high-alumina bricks, insulating bricks, castables and guniting materials, ramming masses, ceramic fibre products, acid-resistant materials, and flow-control products, backed by engineering support and full technical documentation. As an authorised partner for leading refractory brands, SAPL supplies across India and exports to the GCC, ASEAN, Africa, the UK, and Europe with installation guidance.</p>
 
 <h2>How to shortlist and decide</h2>
 <ol>
@@ -4515,20 +4515,20 @@ export const BLOG_POSTS_DATA = [
     coverImage: "https://images.unsplash.com/photo-1615219023549-5c9abdb7df9a?w=1200&q=80",
     keyTakeaways: [
       "EAF steelmaking is the primary route for green/low-carbon steel; global EAF share is projected to reach 50%+ by 2035.",
-      "DRI (direct reduced iron) in the EAF charge increases slag basicity and imposes higher thermal loads — lining specifications must adapt.",
+      "DRI (direct reduced iron) in the EAF charge increases slag basicity and imposes higher thermal loads, lining specifications must adapt.",
       "MgO-C bricks remain the workhorse for EAF hot spots; low-carbon and graphite-free grades reduce CO₂ from the lining itself.",
-      "Monolithic gunning masses are essential for hot-spot repair between heats — extending campaign life without full relining.",
+      "Monolithic gunning masses are essential for hot-spot repair between heats, extending campaign life without full relining.",
       "India is expanding EAF capacity rapidly; domestic steelmakers are now specifying DRI-ready refractory systems.",
     ],
     faqs: [
       { question: "What refractories are used in an electric arc furnace?", answer: "EAF refractories include MgO-C bricks for the sidewalls and hot spots (slag line, tap hole, door area), basic gunning mass for hot-spot repair between heats, magnesia ramming mass for the hearth, and high-alumina castables or basic castables for the roof delta section. The slag line sees the most aggressive wear and typically uses 70–80% MgO, 10–20% C bricks." },
       { question: "How does DRI in the EAF charge affect refractory wear?", answer: "DRI (direct reduced iron) is charged cold and contains gangue (silica, alumina) that forms a more fluid, more corrosive slag at higher temperature than scrap-based practice. This accelerates slag-line erosion on MgO-C bricks and increases thermal shock on the hearth. Bricks with higher MgO purity (>90%) and optimised carbon content (12–16%) with antioxidants are recommended for high-DRI EAF operations." },
       { question: "What is a low-carbon MgO-C brick and why is it relevant for green steel?", answer: "Standard MgO-C bricks contain 12–20% carbon (graphite) that contributes to CO₂ emissions during steelmaking. Low-carbon MgO-C grades (4–8% C) reduce these process emissions while maintaining thermal conductivity and erosion resistance through advanced antioxidant systems. They are increasingly specified by steelmakers with decarbonisation commitments." },
-      { question: "Can monolithic linings replace bricks in an EAF?", answer: "A full monolithic EAF lining is feasible for the hearth (magnesia ramming mass) and roof (castable), but the sidewalls and slag line typically still use MgO-C bricks because of the extreme erosion rates in those zones. Monolithic gunning masses are essential for hot-spot maintenance — a structured gunning cycle extends campaign life by 25–35% by patching worn zones without shutting down." },
+      { question: "Can monolithic linings replace bricks in an EAF?", answer: "A full monolithic EAF lining is feasible for the hearth (magnesia ramming mass) and roof (castable), but the sidewalls and slag line typically still use MgO-C bricks because of the extreme erosion rates in those zones. Monolithic gunning masses are essential for hot-spot maintenance, a structured gunning cycle extends campaign life by 25–35% by patching worn zones without shutting down." },
     ],
-    excerpt: "The steel industry's green transition is the single biggest structural shift in refractory demand in decades. EAF capacity is expanding globally while blast furnace routes decline — and with it, the refractory specifications are changing. This guide covers what EAF and DRI-based steelmaking demand from your lining, which MgO-C and monolithic products are relevant, and why India is at the centre of this shift.",
+    excerpt: "The steel industry's green transition is the single biggest structural shift in refractory demand in decades. EAF capacity is expanding globally while blast furnace routes decline, and with it, the refractory specifications are changing. This guide covers what EAF and DRI-based steelmaking demand from your lining, which MgO-C and monolithic products are relevant, and why India is at the centre of this shift.",
     content: `<h2>Why Green Steel Is the Refractory Industry's Biggest Story</h2>
-<p>Steel accounts for roughly 7–8% of global CO₂ emissions, according to the <a href="https://www.iea.org/energy-system/industry/steel" target="_blank" rel="noopener noreferrer">International Energy Agency's steel sector analysis</a>. The conventional blast furnace–basic oxygen furnace (BF-BOF) route that produces most of the world's steel is carbon-intensive by design. The green steel transition — moving production to electric arc furnaces (EAF) fed by scrap and direct reduced iron (DRI) — is the industry's primary decarbonisation lever.</p>
+<p>Steel accounts for roughly 7–8% of global CO₂ emissions, according to the <a href="https://www.iea.org/energy-system/industry/steel" target="_blank" rel="noopener noreferrer">International Energy Agency's steel sector analysis</a>. The conventional blast furnace–basic oxygen furnace (BF-BOF) route that produces most of the world's steel is carbon-intensive by design. The green steel transition, moving production to electric arc furnaces (EAF) fed by scrap and direct reduced iron (DRI), is the industry's primary decarbonisation lever.</p>
 <p>This is not a distant scenario. Per the <a href="https://worldsteel.org/data/short-range-outlook/" target="_blank" rel="noopener noreferrer">World Steel Association's short range outlook</a>, global EAF steelmaking already accounts for around 30% of production and is projected to exceed 50% by 2035 as carbon pricing, ESG commitments, and green-steel premiums from automotive and construction buyers reshape investment decisions. The refractory consequence is structural: <strong>EAF refractory demand will grow while BF-BOF product lines decline</strong>. Steelmakers and refractory specifiers who understand this now are better positioned than those who adapt later.</p>
 
 <h2>What Makes EAF Lining Duty Different</h2>
@@ -4536,13 +4536,13 @@ export const BLOG_POSTS_DATA = [
 <ul>
   <li><strong>Higher peak temperatures:</strong> EAF arc zones reach 3,000 degC locally, far above BOF peak temperatures, creating severe hot spots on sidewall bricks.</li>
   <li><strong>Slag variability:</strong> Scrap-based EAF slags vary widely in basicity and iron oxide content depending on scrap grade and charge chemistry, imposing unpredictable chemical attack on the lining.</li>
-  <li><strong>DRI charge effects:</strong> When DRI replaces scrap, gangue components (SiO₂, Al₂O₃) enter the slag, reducing its basicity and increasing fluidity — which accelerates erosion at the slag line.</li>
+  <li><strong>DRI charge effects:</strong> When DRI replaces scrap, gangue components (SiO₂, Al₂O₃) enter the slag, reducing its basicity and increasing fluidity, which accelerates erosion at the slag line.</li>
   <li><strong>Thermal cycling:</strong> EAF campaigns involve more frequent tapping than BOF, and batch charging causes repeated thermal shock.</li>
 </ul>
 
 <h2>MgO-C Bricks: Still the EAF Workhorse</h2>
 <p>Magnesia-carbon (MgO-C) bricks remain the dominant lining material for EAF sidewalls, slag lines, tap holes, and door surrounds. The combination of high-purity magnesia (MgO &gt;85%) and graphite (C 10–20%) gives them the thermal conductivity to survive arc zone temperatures, the chemical resistance to basic slag attack, and the mechanical strength to withstand charging impacts.</p>
-<p>For DRI-ready EAF operations — where slag chemistry is more acidic and temperatures are higher — the specification shifts:</p>
+<p>For DRI-ready EAF operations, where slag chemistry is more acidic and temperatures are higher, the specification shifts:</p>
 <ul>
   <li>MgO purity 90–95% (versus 85–88% for standard scrap-based EAF)</li>
   <li>Carbon content 12–16% with metallic antioxidants (Al, Si, MgAl) to suppress oxidation</li>
@@ -4552,24 +4552,24 @@ export const BLOG_POSTS_DATA = [
 <p>For steelmakers with decarbonisation targets, <strong>low-carbon MgO-C grades</strong> (4–8% C) are gaining traction. These reduce CO₂ process emissions from the lining material itself. Advanced antioxidant systems compensate for the lower graphite content on thermal conductivity and erosion performance.</p>
 
 <h2>Monolithic Refractories in the EAF: Hearth, Repair, and Beyond</h2>
-<p>Monolithic refractories — poured, gunned, or rammed rather than built as shaped bricks — play three critical roles in EAF operations:</p>
+<p>Monolithic refractories, poured, gunned, or rammed rather than built as shaped bricks, play three critical roles in EAF operations:</p>
 <ol>
   <li><strong>Hearth lining:</strong> Magnesia ramming mass (MgO &gt;85%) forms the EAF bottom. It is rammed in layers and sintered during the first few heats to form a dense, erosion-resistant bottom lining that handles heel practice and oxygen lancing.</li>
-  <li><strong>Hot-spot maintenance (gunning):</strong> Basic gunning mass is the most important day-to-day EAF consumable after bricks. After each campaign or during short shutdowns, worn sidewall zones are gunned with semi-dry or wet-gun masses to rebuild thickness. In our supply experience with EAF operators across the Odisha-Jharkhand sponge iron corridor, plants running a structured 4-to-6-heat gunning cycle extend campaign life by 25–35% versus their pre-programme baseline — the primary way EAF operators defer full relining. The variation is driven mostly by application technique rather than material grade, a pattern we see consistently.</li>
+  <li><strong>Hot-spot maintenance (gunning):</strong> Basic gunning mass is the most important day-to-day EAF consumable after bricks. After each campaign or during short shutdowns, worn sidewall zones are gunned with semi-dry or wet-gun masses to rebuild thickness. In our supply experience with EAF operators across the Odisha-Jharkhand sponge iron corridor, plants running a structured 4-to-6-heat gunning cycle extend campaign life by 25–35% versus their pre-programme baseline, the primary way EAF operators defer full relining. The variation is driven mostly by application technique rather than material grade, a pattern we see consistently.</li>
   <li><strong>Roof and delta:</strong> High-alumina or basic castables form the EAF roof delta sections. These are cast, cured, and dried in place, offering complex shape capability and faster installation than equivalent brick assemblies.</li>
 </ol>
-<p>SAPL supplies MgO-C bricks and basic gunning masses for EAF maintenance — both are stocked for same-week despatch from Delhi NCR to domestic steel plants and available CIF to export destinations in the GCC and ASEAN.</p>
+<p>SAPL supplies MgO-C bricks and basic gunning masses for EAF maintenance, both are stocked for same-week despatch from Delhi NCR to domestic steel plants and available CIF to export destinations in the GCC and ASEAN.</p>
 
 <h2>India's EAF Expansion: The Numbers</h2>
-<p>India is the standout EAF growth market. Per the Ministry of Steel's <a href="https://steel.gov.in/national-steel-policy-nsp-2017" target="_blank" rel="noopener noreferrer">National Steel Policy</a> and subsequent decarbonisation roadmap, the Indian steel industry is expanding at approximately 4–5% CAGR, with announced greenfield and brownfield EAF capacity additions exceeding 20 million tonnes by 2030. The roadmap explicitly identifies EAF-DRI as the preferred route for new capacity — particularly for sponge iron-rich states like Odisha, Jharkhand, and Chhattisgarh where DRI feedstock is locally available.</p>
-<p>Asia-Pacific already accounts for over 60% of global refractory demand, and India's trajectory within that figure is accelerating faster than any other major economy. Steelmakers investing in EAF capacity today are making 20–30 year decisions on refractory specification — getting the DRI-ready lining design right at commissioning is significantly cheaper than re-engineering it after the first few campaigns.</p>
+<p>India is the standout EAF growth market. Per the Ministry of Steel's <a href="https://steel.gov.in/national-steel-policy-nsp-2017" target="_blank" rel="noopener noreferrer">National Steel Policy</a> and subsequent decarbonisation roadmap, the Indian steel industry is expanding at approximately 4–5% CAGR, with announced greenfield and brownfield EAF capacity additions exceeding 20 million tonnes by 2030. The roadmap explicitly identifies EAF-DRI as the preferred route for new capacity, particularly for sponge iron-rich states like Odisha, Jharkhand, and Chhattisgarh where DRI feedstock is locally available.</p>
+<p>Asia-Pacific already accounts for over 60% of global refractory demand, and India's trajectory within that figure is accelerating faster than any other major economy. Steelmakers investing in EAF capacity today are making 20–30 year decisions on refractory specification, getting the DRI-ready lining design right at commissioning is significantly cheaper than re-engineering it after the first few campaigns.</p>
 
 <h2>Specifying Refractories for Green Steel: Practical Starting Points</h2>
 <p>If you are specifying an EAF or reviewing your existing lining for DRI integration, these are the parameters to review first:</p>
 <ul>
   <li><strong>MgO purity in slag-line bricks:</strong> upgrade from 85% to 90%+ if DRI proportion exceeds 30% of charge</li>
   <li><strong>Carbon content:</strong> consider low-carbon grades (6–8%) if you have an emissions reporting obligation</li>
-  <li><strong>Gunning mass supply:</strong> ensure you have a reliable hot-repair supply chain — stock-outs during campaign mean unplanned relining</li>
+  <li><strong>Gunning mass supply:</strong> ensure you have a reliable hot-repair supply chain, stock-outs during campaign mean unplanned relining</li>
   <li><strong>Hearth design:</strong> consult on rammed MgO bottom thickness and heel depth for your furnace size and tapping frequency</li>
 </ul>
 <p>To discuss EAF refractory specification for new or existing furnaces, contact Shanker Agencies at <a href="/contact">info@shankeragencies.com</a> with your furnace capacity (tonnes), charge mix (% DRI / scrap), and current lining campaign life.</p>`,
@@ -4589,7 +4589,7 @@ export const BLOG_POSTS_DATA = [
     slug: "monolithic-vs-brick-steel-ladle-lining",
     title: "Monolithic vs Brick Steel Ladle Lining: Why More Steelmakers Are Making the Switch",
     metaTitle: "Monolithic vs Brick Steel Ladle Lining: Installation Speed, Cost & Campaign Life",
-    metaDescription: "Compare monolithic castable linings vs brick construction for steel ladles. Installation time, campaign life, relining cost, and when to choose each — practical guide for steel plant engineers.",
+    metaDescription: "Compare monolithic castable linings vs brick construction for steel ladles. Installation time, campaign life, relining cost, and when to choose each, practical guide for steel plant engineers.",
     category: "Technical Guide",
     tags: ["monolithic lining", "steel ladle", "castable refractory", "ladle lining", "brick lining", "LCC castable", "refractory installation", "unshaped refractories"],
     readTime: "8 min",
@@ -4600,18 +4600,18 @@ export const BLOG_POSTS_DATA = [
       "Monolithic castable linings reduce ladle relining time by 30–50% versus brick construction, cutting downtime cost directly.",
       "Low cement castables (LCC) and ultra-low cement castables (ULCC) now match brick in erosion resistance at 1,600–1,700°C.",
       "Brick linings remain preferred for permanent/safety linings and for ladles with complex shapes requiring precise dimensional control.",
-      "Hybrid construction — brick permanent lining + castable working lining — is the most common approach in modern steel plants.",
+      "Hybrid construction, brick permanent lining + castable working lining, is the most common approach in modern steel plants.",
       "Monolithic repair by gunning extends working lining campaigns without full reline shutdowns.",
     ],
     faqs: [
-      { question: "Is monolithic lining better than brick for steel ladles?", answer: "It depends on the application zone. Monolithic castables are faster to install, eliminate the need for skilled bricklayers, and allow complex shapes — making them preferred for working linings and repairs. Bricks are still used for permanent safety linings and slag-line zones requiring maximum erosion resistance. Most modern steel ladles use a hybrid: brick permanent lining with castable working lining." },
+      { question: "Is monolithic lining better than brick for steel ladles?", answer: "It depends on the application zone. Monolithic castables are faster to install, eliminate the need for skilled bricklayers, and allow complex shapes, making them preferred for working linings and repairs. Bricks are still used for permanent safety linings and slag-line zones requiring maximum erosion resistance. Most modern steel ladles use a hybrid: brick permanent lining with castable working lining." },
       { question: "What castable grades are used for steel ladle working linings?", answer: "Low cement castables (LCC) with Al₂O₃ 70–85% are the standard for steel ladle working linings. Ultra-low cement castables (ULCC) are used in demanding secondary metallurgy applications. Both achieve dense, low-porosity linings after curing and drying that approach or match brick performance in erosion and slag resistance at 1,600–1,700°C." },
       { question: "How much faster is monolithic lining installation compared to bricks?", answer: "Monolithic castable installation for a steel ladle working lining typically takes 4–8 hours versus 16–24 hours for equivalent brick construction. Drying and curing add 8–24 hours in both cases. The net result is 30–50% faster turnaround, which reduces the number of spare ladles a plant must maintain in rotation." },
-      { question: "Can a worn ladle lining be repaired by gunning?", answer: "Yes. Gunning with a suitable castable or gunning mass can rebuild worn zones of a monolithic working lining between campaigns without full reline. This is one of the key advantages of monolithic linings — spot repair is faster and cheaper than brick-by-brick replacement. Effective gunning programmes extend working lining life by 15–30%." },
+      { question: "Can a worn ladle lining be repaired by gunning?", answer: "Yes. Gunning with a suitable castable or gunning mass can rebuild worn zones of a monolithic working lining between campaigns without full reline. This is one of the key advantages of monolithic linings, spot repair is faster and cheaper than brick-by-brick replacement. Effective gunning programmes extend working lining life by 15–30%." },
     ],
-    excerpt: "Monolithic castable linings are gaining ground over traditional brick construction in steel ladles — and the main reason is time. Faster installation, simpler repair, and consistent quality with less skilled labour are driving the shift. This guide compares the two approaches across the metrics that matter: installation speed, campaign life, relining cost, and the specific zones where each remains the better choice.",
+    excerpt: "Monolithic castable linings are gaining ground over traditional brick construction in steel ladles, and the main reason is time. Faster installation, simpler repair, and consistent quality with less skilled labour are driving the shift. This guide compares the two approaches across the metrics that matter: installation speed, campaign life, relining cost, and the specific zones where each remains the better choice.",
     content: `<h2>The Shift Toward Monolithics in Steel Ladle Lining</h2>
-<p>Brick construction has been the default for steel ladle lining since the beginning of steelmaking. But over the past decade, monolithic refractories — castables, gunning masses, and ramming mixes installed as a single poured or gunned mass rather than individual shaped bricks — have taken a growing share of ladle working lining construction. In many modern steel plants, the monolithic working lining is now standard practice, with bricks retained only for the permanent and safety lining layers.</p>
+<p>Brick construction has been the default for steel ladle lining since the beginning of steelmaking. But over the past decade, monolithic refractories, castables, gunning masses, and ramming mixes installed as a single poured or gunned mass rather than individual shaped bricks, have taken a growing share of ladle working lining construction. In many modern steel plants, the monolithic working lining is now standard practice, with bricks retained only for the permanent and safety lining layers.</p>
 <p>The shift is driven by three practical factors: <strong>installation speed, labour skill requirements, and repairability</strong>. Understanding when each approach is the right choice requires looking at every zone of the ladle separately.</p>
 
 <h2>Steel Ladle Lining Zones: What Goes Where</h2>
@@ -4636,13 +4636,13 @@ export const BLOG_POSTS_DATA = [
 <p>For the main body working lining, bottom, and repairs, monolithic castables now offer a compelling case:</p>
 
 <h3>Installation Speed</h3>
-<p>Monolithic castable installation for a steel ladle working lining (excluding slag line) typically takes <strong>4–8 hours</strong> of pour time using vibration casting. Equivalent brick construction takes 16–24 hours. Both require drying and curing, but the net relining turnaround is 30–50% faster with monolithics. For a plant running 8–12 ladles in rotation, faster relining means fewer ladles in the rotation fleet — a capital cost saving as well as a downtime saving.</p>
+<p>Monolithic castable installation for a steel ladle working lining (excluding slag line) typically takes <strong>4–8 hours</strong> of pour time using vibration casting. Equivalent brick construction takes 16–24 hours. Both require drying and curing, but the net relining turnaround is 30–50% faster with monolithics. For a plant running 8–12 ladles in rotation, faster relining means fewer ladles in the rotation fleet, a capital cost saving as well as a downtime saving.</p>
 
 <h3>Labour Skill Requirements</h3>
-<p>Brick lining a steel ladle correctly requires skilled masons with experience in refractory laying, staggered joints, and corner construction. Finding and retaining this skill is increasingly difficult. Monolithic castable installation requires fewer specialised skills — the material does the work once it is properly mixed and poured.</p>
+<p>Brick lining a steel ladle correctly requires skilled masons with experience in refractory laying, staggered joints, and corner construction. Finding and retaining this skill is increasingly difficult. Monolithic castable installation requires fewer specialised skills, the material does the work once it is properly mixed and poured.</p>
 
 <h3>LCC and ULCC Performance</h3>
-<p>The historical objection to castable working linings — that they could not match brick erosion resistance — has been addressed by low cement castables (LCC) and ultra-low cement castables (ULCC). By reducing CaO content to &lt;1%, these materials achieve:</p>
+<p>The historical objection to castable working linings, that they could not match brick erosion resistance, has been addressed by low cement castables (LCC) and ultra-low cement castables (ULCC). By reducing CaO content to &lt;1%, these materials achieve:</p>
 <ul>
   <li>Bulk density 3.0–3.15 g/cm³ after firing (approaching brick density)</li>
   <li>Cold crushing strength &gt;80 MPa</li>
@@ -4686,31 +4686,31 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1603211770215-abb8b9583950?w=1200&q=80",
     keyTakeaways: [
-      "Alternative fuels (tyres, biomass, RDF, waste solvents) increase alkali, chloride and sulphur inputs to the kiln — all of which attack refractories more aggressively than coal.",
-      "Alkali vapours condense in the 900–1,100°C zone, penetrating brick pores and causing sub-surface spalling — the primary lining failure mode in AF kilns.",
+      "Alternative fuels (tyres, biomass, RDF, waste solvents) increase alkali, chloride and sulphur inputs to the kiln, all of which attack refractories more aggressively than coal.",
+      "Alkali vapours condense in the 900–1,100°C zone, penetrating brick pores and causing sub-surface spalling, the primary lining failure mode in AF kilns.",
       "Magnesia-spinel bricks with dense microstructure and low open porosity are the preferred burning zone solution for high thermal substitution rate (TSR) kilns.",
-      "Chloride bypass systems reduce alkali recirculation but do not eliminate refractory attack — lining selection must still account for elevated alkali input.",
+      "Chloride bypass systems reduce alkali recirculation but do not eliminate refractory attack, lining selection must still account for elevated alkali input.",
       "Campaign life in the burning zone can drop 20–40% when TSR increases from 20% to 60%+ without changing the refractory specification.",
     ],
     faqs: [
       { question: "Why do alternative fuels cause more refractory wear in cement kilns?", answer: "Alternative fuels (tyres, RDF, biomass, waste solvents) contain higher levels of chlorides, sulphates, and alkalis (K₂O, Na₂O) than coal. These form aggressive vapour-phase compounds that penetrate refractory pores, react with the brick microstructure, and cause sub-surface spalling and coating instability. The effect is most pronounced in the transition zone (900–1,100°C) where these compounds condense." },
       { question: "What refractory bricks are recommended for high-TSR cement kilns?", answer: "Magnesia-spinel bricks are the preferred burning zone solution for high thermal substitution rate (TSR) kilns. They offer superior coating adhesion (critical when coating behaviour becomes erratic with AF), excellent thermal shock resistance, and better alkali resistance than standard doloma bricks. Dense, low-porosity grades (&lt;17% apparent porosity) are specified to slow alkali penetration." },
       { question: "What is alkali attack on cement kiln refractories?", answer: "Alkali attack occurs when potassium (K₂O) and sodium (Na₂O) compounds in kiln gases condense in brick pores (typically in the 900–1,100°C zone) and react with the refractory silica and alumina content to form low-melting phases. These reactions expand the sub-surface zone, causing cracks and spalling. The result is lining loss without the visible surface erosion pattern of normal wear." },
-      { question: "Does a chloride bypass system protect cement kiln refractories from AF attack?", answer: "A chloride bypass system reduces the circulation of chloride, sulphate and alkali compounds by extracting gas at the kiln inlet. This reduces alkali input to the burning zone and can improve coating stability. However, bypass systems do not eliminate alkali attack completely — they reduce it. Refractory selection for AF kilns must still account for elevated alkali exposure relative to coal-fired operation." },
+      { question: "Does a chloride bypass system protect cement kiln refractories from AF attack?", answer: "A chloride bypass system reduces the circulation of chloride, sulphate and alkali compounds by extracting gas at the kiln inlet. This reduces alkali input to the burning zone and can improve coating stability. However, bypass systems do not eliminate alkali attack completely, they reduce it. Refractory selection for AF kilns must still account for elevated alkali exposure relative to coal-fired operation." },
     ],
-    excerpt: "Cement plants across India and internationally are increasing alternative fuel use to cut costs and carbon intensity. But shifting from coal to tyres, RDF, biomass, or waste solvents brings a more chemically aggressive kiln environment — specifically higher alkali, chloride, and sulphur inputs that attack refractories harder and faster than coal combustion gases. This guide explains the mechanisms, the at-risk kiln zones, and the refractory specifications that protect campaign life as thermal substitution rates increase.",
+    excerpt: "Cement plants across India and internationally are increasing alternative fuel use to cut costs and carbon intensity. But shifting from coal to tyres, RDF, biomass, or waste solvents brings a more chemically aggressive kiln environment, specifically higher alkali, chloride, and sulphur inputs that attack refractories harder and faster than coal combustion gases. This guide explains the mechanisms, the at-risk kiln zones, and the refractory specifications that protect campaign life as thermal substitution rates increase.",
     content: `<h2>Why Alternative Fuels Change the Refractory Equation</h2>
-<p>Cement producers are under simultaneous pressure to reduce energy costs and cut carbon emissions. Alternative fuels — including shredded tyres, refuse-derived fuel (RDF), biomass, sewage sludge, and waste solvents — address both: they are typically cheaper than coal on an energy basis, and biomass and waste-derived fuels count toward renewable energy targets under most accounting frameworks.</p>
-<p>Global thermal substitution rates (TSR — the proportion of fuel energy from alternatives) are rising sharply. In Europe, several cement plants now exceed 80% TSR. Per the <a href="https://www.cii.in/" target="_blank" rel="noopener noreferrer">Confederation of Indian Industry's cement sustainability initiative</a> and industry roadmaps published by the Global Cement and Concrete Association, India's major cement companies are targeting 25–40% TSR by 2030 as part of their climate commitments. Every percentage point of TSR increase has a refractory consequence, and at high substitution rates, the lining specification that worked for coal will no longer deliver the same campaign life.</p>
+<p>Cement producers are under simultaneous pressure to reduce energy costs and cut carbon emissions. Alternative fuels, including shredded tyres, refuse-derived fuel (RDF), biomass, sewage sludge, and waste solvents, address both: they are typically cheaper than coal on an energy basis, and biomass and waste-derived fuels count toward renewable energy targets under most accounting frameworks.</p>
+<p>Global thermal substitution rates (TSR, the proportion of fuel energy from alternatives) are rising sharply. In Europe, several cement plants now exceed 80% TSR. Per the <a href="https://www.cii.in/" target="_blank" rel="noopener noreferrer">Confederation of Indian Industry's cement sustainability initiative</a> and industry roadmaps published by the Global Cement and Concrete Association, India's major cement companies are targeting 25–40% TSR by 2030 as part of their climate commitments. Every percentage point of TSR increase has a refractory consequence, and at high substitution rates, the lining specification that worked for coal will no longer deliver the same campaign life.</p>
 
 <h2>The Chemistry: Why Alternative Fuels Are Harder on Linings</h2>
 <p>Coal combustion is relatively clean in terms of refractory-damaging species. Alternative fuels introduce three additional chemical threats:</p>
 
 <h3>Alkalis (K₂O, Na₂O)</h3>
-<p>Tyres, biomass, municipal waste, and agricultural residues are rich in potassium and sodium compounds. In the kiln atmosphere, these form volatile sulphates and chlorides that circulate and condense in the cooler parts of the kiln system — primarily the <strong>transition zone (900–1,100°C)</strong>. When alkali vapours condense inside brick pores, they react with SiO₂ and Al₂O₃ in the refractory to form leucite, kalsilite, and other low-melting phases. The volume changes associated with these phase transformations cause <strong>sub-surface cracking and spalling</strong> — the brick loses thickness from the inside out rather than the surface in.</p>
+<p>Tyres, biomass, municipal waste, and agricultural residues are rich in potassium and sodium compounds. In the kiln atmosphere, these form volatile sulphates and chlorides that circulate and condense in the cooler parts of the kiln system, primarily the <strong>transition zone (900–1,100°C)</strong>. When alkali vapours condense inside brick pores, they react with SiO₂ and Al₂O₃ in the refractory to form leucite, kalsilite, and other low-melting phases. The volume changes associated with these phase transformations cause <strong>sub-surface cracking and spalling</strong>, the brick loses thickness from the inside out rather than the surface in.</p>
 
 <h3>Chlorides</h3>
-<p>PVC in RDF and waste streams introduces chloride to the kiln gas. Chloride compounds aggressively attack brick bonds and form chloroapatites that weaken the refractory matrix. High-chloride inputs also destabilise the coating — the protective clinker coating that forms on the burning zone lining — leading to coating collapse events that suddenly expose the lining to full thermal load.</p>
+<p>PVC in RDF and waste streams introduces chloride to the kiln gas. Chloride compounds aggressively attack brick bonds and form chloroapatites that weaken the refractory matrix. High-chloride inputs also destabilise the coating, the protective clinker coating that forms on the burning zone lining, leading to coating collapse events that suddenly expose the lining to full thermal load.</p>
 
 <h3>Sulphur</h3>
 <p>Tyres and some industrial waste fuels have high sulphur content. Sulphur combines with alkalis to form alkali sulphates that join the recirculating compound cycle. Sulphation of magnesia-based bricks is a known degradation pathway, particularly in the burning zone and transition zone.</p>
@@ -4728,7 +4728,7 @@ export const BLOG_POSTS_DATA = [
 <h3>Burning Zone: Magnesia-Spinel Bricks</h3>
 <p>Magnesia-spinel bricks (MgO 70–80%, in-situ or pre-formed spinel) are now the standard recommendation for burning zones in kilns operating above 30% TSR. Compared to doloma (MgO-CaO) bricks, magnesia-spinel offers:</p>
 <ul>
-  <li>Better coating adhesion — critical when AF fuels cause coating fluctuation</li>
+  <li>Better coating adhesion, critical when AF fuels cause coating fluctuation</li>
   <li>Superior thermal shock resistance from the spinel network</li>
   <li>Greater alkali resistance than doloma, which is particularly susceptible to sulphate attack</li>
 </ul>
@@ -4738,14 +4738,14 @@ export const BLOG_POSTS_DATA = [
 <p>For the transition zone (upper and lower), switch from standard high-alumina bricks to dense, low-porosity grades with reduced SiO₂ content (&lt;8%). Lower silica content reduces the reactive surface area for alkali attack. Spinel bricks extended into the transition zone offer additional protection at higher cost.</p>
 
 <h3>Preheater and Calciner: Alkali-Resistant Castables</h3>
-<p>Preheater cyclone linings and calciner castables exposed to high-alkali gas streams should specify alkali-resistant high-alumina grades with mullite or spinel additions. Avoid conventional 40–50% alumina castables in these zones when TSR is elevated — their higher silica content makes them susceptible.</p>
+<p>Preheater cyclone linings and calciner castables exposed to high-alkali gas streams should specify alkali-resistant high-alumina grades with mullite or spinel additions. Avoid conventional 40–50% alumina castables in these zones when TSR is elevated, their higher silica content makes them susceptible.</p>
 
 <h2>Campaign Life Impact: What to Expect</h2>
 <p>Field data compiled by the <a href="https://ecra-online.org/" target="_blank" rel="noopener noreferrer">European Cement Research Academy (ECRA)</a>, consistent with what we have observed supplying kiln linings to Indian cement plants converting to AF, shows that increasing TSR from 20% to 60%+ without changing the refractory specification typically reduces burning zone campaign life by 20–40%. With an appropriate magnesia-spinel specification and optimised brick geometry, campaign life can be recovered to within 10–15% of the coal-fired baseline. In the plants we have supplied through this transition, the kilns that upgraded the burning zone spec before crossing 30% TSR avoided the unplanned mid-campaign coating collapse events that plants delaying the upgrade experienced.</p>
 <p>The economics almost always favour the upgrade: a magnesia-spinel burning zone brick costs 25–40% more than doloma per tonne, but the campaign life improvement reduces annual relining costs. Factor in the reduced downtime cost (a major kiln reline typically costs 5–7 days of lost production) and the upgrade typically pays back in one or two campaigns.</p>
 
 <h2>SAPL Supply for AF-Converted Cement Kilns</h2>
-<p>SAPL supplies magnesia-spinel bricks, alkali-resistant high-alumina bricks, and castables for cement kiln linings from TRL Krosaki, CUMI, and Calderys. We provide material selection support for TSR conversion projects — send us your current kiln zone layout, TSR target, and current lining campaign life data and we will recommend a grade upgrade plan.</p>
+<p>SAPL supplies magnesia-spinel bricks, alkali-resistant high-alumina bricks, and castables for cement kiln linings from TRL Krosaki, CUMI, and Calderys. We provide material selection support for TSR conversion projects, send us your current kiln zone layout, TSR target, and current lining campaign life data and we will recommend a grade upgrade plan.</p>
 <p>Contact us at <a href="/contact">info@shankeragencies.com</a> or call +91-9899957888 to discuss your cement kiln refractory programme.</p>`,
     author: { name: "Rahul Taneja" },
     relatedProducts: [
@@ -4770,34 +4770,34 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
     keyTakeaways: [
-      "West Africa has almost no domestic refractory manufacturing — nearly all refractory bricks, castables and ceramic fibre used in the region are imported, with India and China the two dominant sources.",
+      "West Africa has almost no domestic refractory manufacturing, nearly all refractory bricks, castables and ceramic fibre used in the region are imported, with India and China the two dominant sources.",
       "Nigerian cement capacity (Dangote, BUA, Lafarge Africa) and the Lagos steel re-rolling cluster are the region's largest refractory consumers.",
-      "Typical sea transit from Indian west-coast ports to Lagos (Apapa / Tin Can / Lekki) is 25–40 days — plan refractory procurement one full campaign ahead.",
-      "Refractory bricks ship under HS 6902, unshaped products (castables, mortars, ramming mass) under HS 3816 — correct classification avoids clearance delays.",
+      "Typical sea transit from Indian west-coast ports to Lagos (Apapa / Tin Can / Lekki) is 25–40 days, plan refractory procurement one full campaign ahead.",
+      "Refractory bricks ship under HS 6902, unshaped products (castables, mortars, ramming mass) under HS 3816, correct classification avoids clearance delays.",
       "Indian suppliers are preferred for English-language documentation, BIS/ASTM-referenced test certificates, and engineering support that Chinese trading companies rarely provide.",
     ],
     faqs: [
       { question: "Why do Nigerian plants import refractories from India?", answer: "West Africa has minimal domestic refractory production, so plants must import. India offers a strong combination for the region: manufacturing quality aligned to IS and ASTM standards, English-language technical documentation, engineering support for material selection, and freight economics from Indian west-coast ports to Lagos that are competitive with Chinese supply once documentation and rework risk are priced in." },
       { question: "How long does refractory shipping from India to Nigeria take?", answer: "Sea freight from Nhava Sheva or Mundra to Lagos ports (Apapa, Tin Can Island or Lekki Deep Sea Port) typically takes 25–40 days depending on routing and transshipment. Add time for customs clearance and inland transport. A safe planning figure for door-to-door delivery is 6–8 weeks, which means refractory orders should be placed at least one lining campaign ahead of the planned shutdown." },
-      { question: "What HS codes apply to refractory imports in West Africa?", answer: "Refractory bricks and shapes are classified under HS 6902 (refractory bricks, blocks, tiles) and HS 6903 (other refractory ceramic goods such as crucibles and nozzles). Unshaped refractories — castables, mortars, gunning mixes and ramming masses — fall under HS 3816. Ceramic fibre products are typically classified under HS 6806. Confirm the applicable national tariff line with your clearing agent before opening import documentation." },
+      { question: "What HS codes apply to refractory imports in West Africa?", answer: "Refractory bricks and shapes are classified under HS 6902 (refractory bricks, blocks, tiles) and HS 6903 (other refractory ceramic goods such as crucibles and nozzles). Unshaped refractories, castables, mortars, gunning mixes and ramming masses, fall under HS 3816. Ceramic fibre products are typically classified under HS 6806. Confirm the applicable national tariff line with your clearing agent before opening import documentation." },
       { question: "What documents are needed to import refractories into Nigeria?", answer: "A typical Nigerian refractory import requires: commercial invoice and packing list, bill of lading, certificate of origin, manufacturer test certificates, Form M opened through an authorised dealer bank, and a Pre-Arrival Assessment Report (PAAR). Confirm whether your specific product category requires SONCAP certification with the Standards Organisation of Nigeria. An experienced Indian exporter prepares this document set as standard practice." },
     ],
-    excerpt: "West Africa's cement, steel and glass industries run almost entirely on imported refractories — and India has become the region's preferred source. This guide covers what Nigerian and West African plants should know when sourcing from India: shipping routes and lead times, HS codes and documentation, quality verification, and how to structure procurement around lining campaigns.",
+    excerpt: "West Africa's cement, steel and glass industries run almost entirely on imported refractories, and India has become the region's preferred source. This guide covers what Nigerian and West African plants should know when sourcing from India: shipping routes and lead times, HS codes and documentation, quality verification, and how to structure procurement around lining campaigns.",
     content: `<h2>West Africa Runs on Imported Refractories</h2>
-<p>Nigeria, Ghana, Senegal and their neighbours have built serious heavy industry over the past two decades — led by cement. Nigerian producers including Dangote Cement, BUA Cement and Lafarge Africa operate some of the largest kiln lines on the continent, and cement plants are refractory-hungry by design: every rotary kiln, preheater, cooler and calciner needs a full engineered lining, replaced campaign after campaign.</p>
-<p>Alongside cement sits the Lagos-area steel re-rolling and foundry cluster, glass container production, and aluminium remelting. What the region almost entirely lacks is domestic refractory manufacturing. Practically every refractory brick, castable bag and ceramic fibre roll installed in West Africa arrives by sea — overwhelmingly from India or China.</p>
+<p>Nigeria, Ghana, Senegal and their neighbours have built serious heavy industry over the past two decades, led by cement. Nigerian producers including Dangote Cement, BUA Cement and Lafarge Africa operate some of the largest kiln lines on the continent, and cement plants are refractory-hungry by design: every rotary kiln, preheater, cooler and calciner needs a full engineered lining, replaced campaign after campaign.</p>
+<p>Alongside cement sits the Lagos-area steel re-rolling and foundry cluster, glass container production, and aluminium remelting. What the region almost entirely lacks is domestic refractory manufacturing. Practically every refractory brick, castable bag and ceramic fibre roll installed in West Africa arrives by sea, overwhelmingly from India or China.</p>
 
 <h2>Why India Has Become the Preferred Source</h2>
 <p>In our export supply experience, West African buyers who switch from opportunistic trading-company purchases to a structured Indian supply relationship cite the same reasons:</p>
 <ul>
   <li><strong>Standards-referenced quality:</strong> Indian manufacturers produce against IS specifications (IS 8 for high alumina, IS 15726 for low cement castables) that map cleanly to the ASTM references most international plant engineers specify.</li>
   <li><strong>English-language documentation:</strong> test certificates, material safety data and installation instructions arrive usable, without translation risk in a technical specification.</li>
-  <li><strong>Engineering support:</strong> serious Indian suppliers help with zone-by-zone material selection and dry-out schedules rather than simply shipping whatever was ordered — which matters when the nearest refractory engineer may be a continent away.</li>
+  <li><strong>Engineering support:</strong> serious Indian suppliers help with zone-by-zone material selection and dry-out schedules rather than simply shipping whatever was ordered, which matters when the nearest refractory engineer may be a continent away.</li>
   <li><strong>Freight economics:</strong> sailing from Nhava Sheva or Mundra to Lagos is competitive, and consolidated mixed-product containers (bricks + castables + fibre in one box) reduce per-tonne landed cost for smaller plants.</li>
 </ul>
 
 <h2>Shipping Routes and Lead Times</h2>
-<p>Refractories for West Africa ship from India's west-coast ports — Nhava Sheva (JNPT) and Mundra primarily — to Lagos (Apapa, Tin Can Island, or the newer Lekki Deep Sea Port), Tema in Ghana, or Dakar in Senegal. Typical sea transit is <strong>25–40 days</strong> depending on carrier and transshipment. With customs clearance and inland movement, a realistic door-to-door planning figure is 6–8 weeks.</p>
+<p>Refractories for West Africa ship from India's west-coast ports, Nhava Sheva (JNPT) and Mundra primarily, to Lagos (Apapa, Tin Can Island, or the newer Lekki Deep Sea Port), Tema in Ghana, or Dakar in Senegal. Typical sea transit is <strong>25–40 days</strong> depending on carrier and transshipment. With customs clearance and inland movement, a realistic door-to-door planning figure is 6–8 weeks.</p>
 <p>The practical consequence: <strong>refractory procurement must run one full campaign ahead of consumption</strong>. Plants that order against an already-scheduled shutdown routinely end up airfreighting small critical items at many times the sea rate, or postponing maintenance. The plants we supply most successfully hold a rolling forecast: the next campaign's lining is on the water while the current one is in service.</p>
 
 <h2>HS Codes and Documentation</h2>
@@ -4810,22 +4810,22 @@ export const BLOG_POSTS_DATA = [
     <tr><td>Ceramic fibre products</td><td>6806</td><td>Blankets, modules, boards</td></tr>
   </tbody>
 </table>
-<p>For Nigeria specifically, the standard import document set includes the commercial invoice, packing list, bill of lading, certificate of origin, manufacturer test certificates, <strong>Form M</strong> opened through an authorised dealer bank, and the <strong>Pre-Arrival Assessment Report (PAAR)</strong>. Whether SONCAP certification applies should be confirmed for your specific product category with your clearing agent — an experienced exporter will flag this at quotation stage, not at the port.</p>
+<p>For Nigeria specifically, the standard import document set includes the commercial invoice, packing list, bill of lading, certificate of origin, manufacturer test certificates, <strong>Form M</strong> opened through an authorised dealer bank, and the <strong>Pre-Arrival Assessment Report (PAAR)</strong>. Whether SONCAP certification applies should be confirmed for your specific product category with your clearing agent, an experienced exporter will flag this at quotation stage, not at the port.</p>
 
 <h2>Quality Verification Before You Ship</h2>
 <p>The most expensive refractory failure is the one discovered after a 35-day sail. Before committing to a supplier, West African buyers should insist on:</p>
 <ol>
-  <li><strong>Manufacturer test certificates per batch</strong> — chemical analysis, bulk density, cold crushing strength, and refractoriness, referenced to IS or ASTM methods.</li>
-  <li><strong>Brand traceability</strong> — knowing whether you are receiving CUMI, TRL Krosaki, Calderys or an unbranded equivalent, in original marked packaging.</li>
-  <li><strong>Pre-shipment inspection rights</strong> — third-party or buyer-nominated inspection at the packing warehouse.</li>
-  <li><strong>Application data</strong> — water addition ranges, dry-out schedules and storage life for every castable product, in the box with the material.</li>
+  <li><strong>Manufacturer test certificates per batch</strong>, chemical analysis, bulk density, cold crushing strength, and refractoriness, referenced to IS or ASTM methods.</li>
+  <li><strong>Brand traceability</strong>, knowing whether you are receiving CUMI, TRL Krosaki, Calderys or an unbranded equivalent, in original marked packaging.</li>
+  <li><strong>Pre-shipment inspection rights</strong>, third-party or buyer-nominated inspection at the packing warehouse.</li>
+  <li><strong>Application data</strong>, water addition ranges, dry-out schedules and storage life for every castable product, in the box with the material.</li>
 </ol>
 
 <h2>Structuring Procurement Around Campaigns</h2>
-<p>For a Nigerian cement line or a Lagos re-rolling mill, the refractory calendar should look like this: audit lining condition mid-campaign, freeze the next campaign's material list with your supplier 3–4 months before shutdown, ship 8–10 weeks before, and hold the landed material in covered, dry storage (castables degrade in humid storage — first-in-first-out with a 6-month rotation is standard practice in coastal West Africa's climate).</p>
+<p>For a Nigerian cement line or a Lagos re-rolling mill, the refractory calendar should look like this: audit lining condition mid-campaign, freeze the next campaign's material list with your supplier 3–4 months before shutdown, ship 8–10 weeks before, and hold the landed material in covered, dry storage (castables degrade in humid storage, first-in-first-out with a 6-month rotation is standard practice in coastal West Africa's climate).</p>
 
 <h2>SAPL Supply for West Africa</h2>
-<p>Shanker Agencies exports complete refractory packages from India to Nigeria, Ghana and the wider West African market — high alumina and magnesia bricks, low cement castables, ramming masses, ceramic fibre and flow control refractories, consolidated into mixed containers with full export documentation. See our <a href="/refractory-supplier-in/lagos">Lagos supply page</a> for market-specific detail, or our <a href="/blog/importing-refractories-from-india-buyers-guide">complete import guide</a> for the general process. To discuss a campaign supply plan, contact us with your plant type, current lining materials and next shutdown window.</p>
+<p>Shanker Agencies exports complete refractory packages from India to Nigeria, Ghana and the wider West African market, high alumina and magnesia bricks, low cement castables, ramming masses, ceramic fibre and flow control refractories, consolidated into mixed containers with full export documentation. See our <a href="/refractory-supplier-in/lagos">Lagos supply page</a> for market-specific detail, or our <a href="/blog/importing-refractories-from-india-buyers-guide">complete import guide</a> for the general process. To discuss a campaign supply plan, contact us with your plant type, current lining materials and next shutdown window.</p>
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["high-alumina-bricks", "low-cement-castables", "ceramic-fiber-blanket"],
@@ -4851,23 +4851,23 @@ export const BLOG_POSTS_DATA = [
       "Refractories are classified into three chemical classes: acidic (silica-based), basic (magnesia-based) and neutral (alumina, chromite, carbon).",
       "They are supplied in two physical forms: shaped (fired bricks and precast shapes) and unshaped/monolithic (castables, ramming masses, gunning mixes, mortars).",
       "Steel production consumes roughly 60–70% of the world's refractories; cement, glass, aluminium, petrochemical and power industries account for most of the rest.",
-      "Selection depends on operating temperature, chemical environment (slag or atmosphere), thermal cycling, and mechanical load — no single refractory suits every application.",
+      "Selection depends on operating temperature, chemical environment (slag or atmosphere), thermal cycling, and mechanical load, no single refractory suits every application.",
     ],
     faqs: [
       { question: "What is a refractory material in simple words?", answer: "A refractory material is a heat-resistant ceramic used to line the inside of furnaces, kilns, ladles and boilers. It keeps its strength and shape at temperatures above 1,000°C where ordinary materials like steel or concrete would melt, deform or crumble, protecting the equipment shell and containing the heat inside the process." },
-      { question: "What are the 12 refractory metals?", answer: "Refractory metals are a different family from refractory ceramics. The five classic refractory metals are tungsten, molybdenum, niobium, tantalum and rhenium; the broader definition adds titanium, vanadium, chromium, zirconium, hafnium, ruthenium and osmium to make twelve. These are metals with melting points above roughly 2,000°C used in aerospace and electronics — not the ceramic bricks and castables used to line industrial furnaces, which this guide covers." },
-      { question: "Is cement a refractory material?", answer: "Ordinary Portland cement is not a refractory — it loses structural strength above roughly 300°C as its hydrate bonds break down. However, calcium aluminate cement (high-alumina cement) is refractory and serves as the binder in refractory castables, which withstand service temperatures up to 1,850°C depending on grade." },
-      { question: "What is the difference between refractory and concrete?", answer: "Ordinary concrete uses Portland cement and standard aggregates, and fails above ~300°C. Refractory castable (refractory concrete) uses calcium aluminate cement with refractory aggregates such as calcined bauxite or fireclay grog, allowing continuous service at 1,200–1,850°C. They install similarly — mixed with water and cast — but are completely different materials chemically." },
-      { question: "What are basic refractories?", answer: "Basic refractories are made from oxides that resist basic (alkaline) slags — mainly magnesia (MgO), doloma (CaO-MgO) and magnesia-carbon compositions. They are essential in basic oxygen furnaces, electric arc furnaces, steel ladle slag lines and cement kiln burning zones, where acidic refractories would be chemically attacked by lime-rich slags." },
-      { question: "What is the lifespan of refractory material?", answer: "Refractory life is measured in campaign terms and varies enormously by application: a steel ladle working lining lasts 40–200 heats, a cement kiln burning zone lining 6–18 months, a glass furnace 8–15 years, and a blast furnace hearth 10–20 years. Operating practice — preheating discipline, thermal cycling, slag chemistry control — often affects life as much as material selection." },
+      { question: "What are the 12 refractory metals?", answer: "Refractory metals are a different family from refractory ceramics. The five classic refractory metals are tungsten, molybdenum, niobium, tantalum and rhenium; the broader definition adds titanium, vanadium, chromium, zirconium, hafnium, ruthenium and osmium to make twelve. These are metals with melting points above roughly 2,000°C used in aerospace and electronics, not the ceramic bricks and castables used to line industrial furnaces, which this guide covers." },
+      { question: "Is cement a refractory material?", answer: "Ordinary Portland cement is not a refractory, it loses structural strength above roughly 300°C as its hydrate bonds break down. However, calcium aluminate cement (high-alumina cement) is refractory and serves as the binder in refractory castables, which withstand service temperatures up to 1,850°C depending on grade." },
+      { question: "What is the difference between refractory and concrete?", answer: "Ordinary concrete uses Portland cement and standard aggregates, and fails above ~300°C. Refractory castable (refractory concrete) uses calcium aluminate cement with refractory aggregates such as calcined bauxite or fireclay grog, allowing continuous service at 1,200–1,850°C. They install similarly, mixed with water and cast, but are completely different materials chemically." },
+      { question: "What are basic refractories?", answer: "Basic refractories are made from oxides that resist basic (alkaline) slags, mainly magnesia (MgO), doloma (CaO-MgO) and magnesia-carbon compositions. They are essential in basic oxygen furnaces, electric arc furnaces, steel ladle slag lines and cement kiln burning zones, where acidic refractories would be chemically attacked by lime-rich slags." },
+      { question: "What is the lifespan of refractory material?", answer: "Refractory life is measured in campaign terms and varies enormously by application: a steel ladle working lining lasts 40–200 heats, a cement kiln burning zone lining 6–18 months, a glass furnace 8–15 years, and a blast furnace hearth 10–20 years. Operating practice, preheating discipline, thermal cycling, slag chemistry control, often affects life as much as material selection." },
     ],
-    excerpt: "A refractory material is a heat-resistant ceramic that retains its strength, shape and chemical stability above 1,000°C. This guide explains the three chemical classes, shaped and monolithic forms, key properties, and how each major industry — steel, cement, glass, aluminium — uses them.",
+    excerpt: "A refractory material is a heat-resistant ceramic that retains its strength, shape and chemical stability above 1,000°C. This guide explains the three chemical classes, shaped and monolithic forms, key properties, and how each major industry, steel, cement, glass, aluminium, uses them.",
     content: `<p><strong>A refractory material is an inorganic, non-metallic material that retains its physical strength, shape and chemical stability at temperatures above 1,000°C.</strong> Refractories line the inside of furnaces, kilns, ladles, boilers and reactors in the steel, cement, glass, aluminium, petrochemical and power industries, protecting equipment shells from heat, molten metal, slag and corrosive gases. Without them, no modern high-temperature industrial process could run.</p>
 
 <h2>The 4 Properties Every Refractory Must Have</h2>
 <ol>
   <li><strong>Refractoriness:</strong> the ability to withstand high temperature without melting or deforming. Measured by the Pyrometric Cone Equivalent (PCE); industrial refractories range from roughly SK 28 (1,630°C) to SK 40+ (1,885°C+).</li>
-  <li><strong>Chemical resistance:</strong> inertness against molten metals, slags and process gases. A refractory chemically mismatched to its slag dissolves rapidly — the single most common cause of premature lining failure.</li>
+  <li><strong>Chemical resistance:</strong> inertness against molten metals, slags and process gases. A refractory chemically mismatched to its slag dissolves rapidly, the single most common cause of premature lining failure.</li>
   <li><strong>Thermal shock resistance:</strong> the ability to survive rapid heating and cooling cycles without cracking or spalling.</li>
   <li><strong>Hot mechanical strength:</strong> load-bearing capacity at operating temperature, measured as hot modulus of rupture (HMOR) and refractoriness under load (RUL).</li>
 </ol>
@@ -4885,7 +4885,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>Shaped vs Unshaped: The 2 Physical Forms</h2>
 <h3>Shaped refractories (bricks and precast shapes)</h3>
-<p>Fired or chemically bonded units manufactured to fixed dimensions — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, fireclay bricks, magnesia bricks, insulating fire bricks and fused-cast AZS blocks. They offer the most consistent fired properties and the longest campaign lives in stable, high-wear zones.</p>
+<p>Fired or chemically bonded units manufactured to fixed dimensions, <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, fireclay bricks, magnesia bricks, insulating fire bricks and fused-cast AZS blocks. They offer the most consistent fired properties and the longest campaign lives in stable, high-wear zones.</p>
 <h3>Unshaped / monolithic refractories</h3>
 <p>Delivered as dry mixes and formed in place: <a href="/products/unshaped-refractories/low-cement-castables">castables</a> (poured or pumped), ramming masses, <a href="/blog/gunning-castable-complete-guide">gunning mixes</a> (sprayed), plastic refractories and mortars. Monolithics now account for roughly half of world refractory consumption because they install 30–50% faster than brickwork and can be spot-repaired without full demolition.</p>
 
@@ -4911,22 +4911,22 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Iron &amp; steel (60–70% of world demand):</strong> blast furnaces, BOF/EAF vessels, <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladles</a>, tundishes, torpedo cars, reheating furnaces.</li>
   <li><strong>Cement &amp; lime:</strong> <a href="/blog/cement-kiln-refractory-zones-material-selection-guide">rotary kiln zones</a>, preheaters, calciners, coolers.</li>
   <li><strong>Glass:</strong> melting tanks (fused-cast AZS), regenerators, forehearths, crowns.</li>
-  <li><strong>Aluminium &amp; non-ferrous:</strong> melting and holding furnaces, launders, pot linings — non-wetting castables resist molten aluminium penetration.</li>
-  <li><strong>Petrochemical &amp; power:</strong> fired heaters, reformers, FCC units, CFBC boilers, incinerators — abrasion-resistant and insulating grades dominate.</li>
+  <li><strong>Aluminium &amp; non-ferrous:</strong> melting and holding furnaces, launders, pot linings, non-wetting castables resist molten aluminium penetration.</li>
+  <li><strong>Petrochemical &amp; power:</strong> fired heaters, reformers, FCC units, CFBC boilers, incinerators, abrasion-resistant and insulating grades dominate.</li>
 </ul>
 
 <h2>How to Select a Refractory: 5 Questions</h2>
 <ol>
-  <li><strong>What is the continuous operating temperature</strong> — and the peak excursion temperature?</li>
-  <li><strong>What touches the lining</strong> — molten metal, slag (acidic or basic?), alkali vapours, abrasive ash?</li>
-  <li><strong>How often does it thermally cycle</strong> — continuous operation or batch heating and cooling?</li>
-  <li><strong>What mechanical loads apply</strong> — impact from charging, rotation stress in a kiln, erosion from moving material?</li>
-  <li><strong>What is the true cost target</strong> — cheapest per tonne of material, or lowest cost per tonne of product over the full campaign?</li>
+  <li><strong>What is the continuous operating temperature</strong>, and the peak excursion temperature?</li>
+  <li><strong>What touches the lining</strong>, molten metal, slag (acidic or basic?), alkali vapours, abrasive ash?</li>
+  <li><strong>How often does it thermally cycle</strong>, continuous operation or batch heating and cooling?</li>
+  <li><strong>What mechanical loads apply</strong>, impact from charging, rotation stress in a kiln, erosion from moving material?</li>
+  <li><strong>What is the true cost target</strong>, cheapest per tonne of material, or lowest cost per tonne of product over the full campaign?</li>
 </ol>
 <p>In our supply experience across Indian and export markets, the fifth question separates plants with stable refractory budgets from plants with recurring emergency shutdowns: the cheapest lining that fails mid-campaign always costs more than the correctly specified one.</p>
 
 <h2>Sourcing Refractories from India</h2>
-<p>India is one of the world's largest refractory-producing countries, with manufacturers including CUMI, TRL Krosaki, Calderys India and Mahakoshal producing to IS and ASTM specifications at globally competitive cost. Shanker Agencies supplies the complete range — shaped bricks, monolithics, ceramic fiber, flow control and acid-proof products — across India and exports to 50+ countries in the GCC, ASEAN and Africa with full test certification. For import documentation, HS codes and shipping lead times, see our <a href="/blog/importing-refractories-from-india-buyers-guide">refractory import guide</a>.</p>
+<p>India is one of the world's largest refractory-producing countries, with manufacturers including CUMI, TRL Krosaki, Calderys India and Mahakoshal producing to IS and ASTM specifications at globally competitive cost. Shanker Agencies supplies the complete range, shaped bricks, monolithics, ceramic fiber, flow control and acid-proof products, across India and exports to 50+ countries in the GCC, ASEAN and Africa with full test certification. For import documentation, HS codes and shipping lead times, see our <a href="/blog/importing-refractories-from-india-buyers-guide">refractory import guide</a>.</p>
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["high-alumina-bricks", "magnesia-carbon-bricks", "low-cement-castables"],
@@ -4948,19 +4948,19 @@ export const BLOG_POSTS_DATA = [
     coverImage: "/images/products/torpedo-ladle-brick-lining.jpg",
     keyTakeaways: [
       "Modern, well-run steel plants consume roughly 8–15 kg of refractories per tonne of crude steel; world-class integrated plants in Japan and Europe operate at the 8–10 kg/t end.",
-      "Indian plants have cut specific consumption dramatically — from ~25–30 kg/t in the 1980s–90s to roughly 10–15 kg/t at efficient operations today.",
+      "Indian plants have cut specific consumption dramatically, from ~25–30 kg/t in the 1980s–90s to roughly 10–15 kg/t at efficient operations today.",
       "The steel ladle is typically the single largest refractory consumer in a plant, accounting for roughly a third of total consumption.",
-      "Lower specific consumption is driven by longer campaign lives, better preheating discipline, gunning/repair programmes and slag chemistry control — not just cheaper materials.",
+      "Lower specific consumption is driven by longer campaign lives, better preheating discipline, gunning/repair programmes and slag chemistry control, not just cheaper materials.",
       "Specific consumption is a cost-per-tonne-of-steel lever: every kg/t saved compounds across annual production.",
     ],
     faqs: [
       { question: "What is the refractory consumption per ton of steel?", answer: "Published industry reviews put modern specific refractory consumption at roughly 8–15 kg per tonne of crude steel, depending on route and operating practice. World-class integrated plants operate near 8–10 kg/t, while older or less-optimised operations can exceed 15–20 kg/t. The figure has fallen steadily for four decades as refractory quality and maintenance practice improved." },
-      { question: "Which part of a steel plant consumes the most refractories?", answer: "The steel ladle is typically the largest single consumer — roughly a third of a plant's total refractory consumption — because ladle working linings are replaced every 40–200 heats. The BOF or EAF vessel, tundish, blast furnace cast house and reheating furnaces account for most of the remainder." },
-      { question: "How does India compare on refractory consumption per tonne of steel?", answer: "Indian specific consumption has improved from roughly 25–30 kg/t in the 1980s–90s to about 10–15 kg/t at efficient plants today, converging toward global benchmarks. The gap that remains is driven more by operating practice — ladle preheating discipline, slag control, structured gunning programmes — than by refractory quality, since Indian manufacturers now produce to the same IS/ASTM specifications used worldwide." },
+      { question: "Which part of a steel plant consumes the most refractories?", answer: "The steel ladle is typically the largest single consumer, roughly a third of a plant's total refractory consumption, because ladle working linings are replaced every 40–200 heats. The BOF or EAF vessel, tundish, blast furnace cast house and reheating furnaces account for most of the remainder." },
+      { question: "How does India compare on refractory consumption per tonne of steel?", answer: "Indian specific consumption has improved from roughly 25–30 kg/t in the 1980s–90s to about 10–15 kg/t at efficient plants today, converging toward global benchmarks. The gap that remains is driven more by operating practice, ladle preheating discipline, slag control, structured gunning programmes, than by refractory quality, since Indian manufacturers now produce to the same IS/ASTM specifications used worldwide." },
       { question: "How do steel plants reduce refractory consumption?", answer: "The proven levers are: extending campaign life through correct zone-wise material selection, disciplined ladle preheating (above 1,000°C before first heat), slag splashing and coating practices, structured mid-campaign gunning repair instead of reactive patching, and laser thickness monitoring to reline on condition rather than on schedule. Together these typically cut specific consumption 20–40% versus unmanaged practice." },
     ],
-    excerpt: "How many kilograms of refractories does it take to make a tonne of steel? Modern benchmarks sit around 8–15 kg/t — but the range between plants is enormous, and the gap is operating practice, not material quality. Benchmark tables by region and vessel, and the levers that move the number.",
-    content: `<p><strong>Modern steel plants consume roughly 8–15 kg of refractories per tonne of crude steel produced</strong>, a figure the industry calls specific refractory consumption. World-class integrated plants operate near the 8–10 kg/t mark, while older or poorly-optimised operations can run above 15–20 kg/t. Because steel accounts for roughly 60–70% of world refractory demand, this single ratio drives the economics of the entire refractory industry — and it is one of the most direct cost levers a steel plant controls.</p>
+    excerpt: "How many kilograms of refractories does it take to make a tonne of steel? Modern benchmarks sit around 8–15 kg/t, but the range between plants is enormous, and the gap is operating practice, not material quality. Benchmark tables by region and vessel, and the levers that move the number.",
+    content: `<p><strong>Modern steel plants consume roughly 8–15 kg of refractories per tonne of crude steel produced</strong>, a figure the industry calls specific refractory consumption. World-class integrated plants operate near the 8–10 kg/t mark, while older or poorly-optimised operations can run above 15–20 kg/t. Because steel accounts for roughly 60–70% of world refractory demand, this single ratio drives the economics of the entire refractory industry, and it is one of the most direct cost levers a steel plant controls.</p>
 
 <h2>Benchmarks by Region and Era</h2>
 <table>
@@ -4968,7 +4968,7 @@ export const BLOG_POSTS_DATA = [
   <tbody>
     <tr><td>Japan / world-class integrated (today)</td><td>~8–10 kg/t</td><td>Decades of campaign-life optimisation, rigorous maintenance practice</td></tr>
     <tr><td>Europe / North America (today)</td><td>~10–12 kg/t</td><td>Mature BOF/EAF fleets, high monolithic share</td></tr>
-    <tr><td>India — efficient plants (today)</td><td>~10–15 kg/t</td><td>Converged rapidly toward global benchmarks</td></tr>
+    <tr><td>India, efficient plants (today)</td><td>~10–15 kg/t</td><td>Converged rapidly toward global benchmarks</td></tr>
     <tr><td>India (1980s–1990s)</td><td>~25–30 kg/t</td><td>Historic baseline before modern grades and practices</td></tr>
     <tr><td>Older / unoptimised operations</td><td>15–25+ kg/t</td><td>Reactive maintenance, poor preheating, mismatched grades</td></tr>
   </tbody>
@@ -4986,20 +4986,20 @@ export const BLOG_POSTS_DATA = [
     <tr><td>Reheating furnaces &amp; others</td><td>~15–25%</td><td>High alumina bricks, insulating castables, ceramic fiber</td></tr>
   </tbody>
 </table>
-<p>The ladle dominates because its working lining cycles fastest — replaced every 40–200 heats depending on practice, versus years for a blast furnace lining. This is why ladle campaign life is the highest-leverage single metric in most plants' refractory budgets; our <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladle lining guide</a> covers the zone-by-zone selection logic.</p>
+<p>The ladle dominates because its working lining cycles fastest, replaced every 40–200 heats depending on practice, versus years for a blast furnace lining. This is why ladle campaign life is the highest-leverage single metric in most plants' refractory budgets; our <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladle lining guide</a> covers the zone-by-zone selection logic.</p>
 
 <h2>What Actually Moves the Number</h2>
 <ol>
-  <li><strong>Campaign life extension</strong> — correct zone-wise grade selection is the foundation; a slag line matched to actual slag chemistry outlasts a mismatched one by 30–50%.</li>
-  <li><strong>Preheating discipline</strong> — in our supply experience across Indian re-rolling and EAF plants, consistent ladle preheating above 1,000°C is the single biggest gap between the low and high end of identical-material campaign lives.</li>
-  <li><strong>Structured gunning programmes</strong> — scheduled mid-campaign <a href="/blog/gunning-castable-complete-guide">gunning repair</a> extends working linings 15–35% versus reactive patching.</li>
-  <li><strong>Slag management</strong> — slag splashing in BOFs and slag conditioning in EAFs builds a protective layer that consumes slag, not bricks.</li>
-  <li><strong>Condition-based relining</strong> — laser thickness scanning replaces calendar-based relining, eliminating the waste of discarding serviceable lining material.</li>
+  <li><strong>Campaign life extension</strong>, correct zone-wise grade selection is the foundation; a slag line matched to actual slag chemistry outlasts a mismatched one by 30–50%.</li>
+  <li><strong>Preheating discipline</strong>, in our supply experience across Indian re-rolling and EAF plants, consistent ladle preheating above 1,000°C is the single biggest gap between the low and high end of identical-material campaign lives.</li>
+  <li><strong>Structured gunning programmes</strong>, scheduled mid-campaign <a href="/blog/gunning-castable-complete-guide">gunning repair</a> extends working linings 15–35% versus reactive patching.</li>
+  <li><strong>Slag management</strong>, slag splashing in BOFs and slag conditioning in EAFs builds a protective layer that consumes slag, not bricks.</li>
+  <li><strong>Condition-based relining</strong>, laser thickness scanning replaces calendar-based relining, eliminating the waste of discarding serviceable lining material.</li>
 </ol>
-<p>For the full playbook, see <a href="/blog/how-to-reduce-refractory-consumption-steel-plants">how to reduce refractory consumption in steel plants</a> — this benchmark article and that how-to guide are companion pieces.</p>
+<p>For the full playbook, see <a href="/blog/how-to-reduce-refractory-consumption-steel-plants">how to reduce refractory consumption in steel plants</a>, this benchmark article and that how-to guide are companion pieces.</p>
 
 <h2>Why This Number Matters to Buyers Outside India</h2>
-<p>For steel producers in the GCC, Africa and ASEAN importing refractories, specific consumption converts directly into procurement planning: a 1 Mt/y EAF plant at 12 kg/t consumes roughly 12,000 tonnes of refractories annually, of which a third is ladle material on a repeating cycle. Planning that recurring tonnage one campaign ahead — rather than ordering against shutdowns — is what separates plants that airfreight emergency material from plants that sea-freight on schedule. Shanker Agencies supplies complete campaign packages from India with CIF pricing and full test documentation to 50+ countries; see our <a href="/blog/importing-refractories-from-india-buyers-guide">import guide</a> for documentation and lead times.</p>
+<p>For steel producers in the GCC, Africa and ASEAN importing refractories, specific consumption converts directly into procurement planning: a 1 Mt/y EAF plant at 12 kg/t consumes roughly 12,000 tonnes of refractories annually, of which a third is ladle material on a repeating cycle. Planning that recurring tonnage one campaign ahead, rather than ordering against shutdowns, is what separates plants that airfreight emergency material from plants that sea-freight on schedule. Shanker Agencies supplies complete campaign packages from India with CIF pricing and full test documentation to 50+ countries; see our <a href="/blog/importing-refractories-from-india-buyers-guide">import guide</a> for documentation and lead times.</p>
 `,
     author: { name: "Mohit Gupta" },
     relatedProducts: ["magnesia-carbon-bricks", "low-cement-castables", "high-alumina-bricks"],
@@ -5021,30 +5021,30 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=1200&q=80",
     keyTakeaways: [
-      "Sri Lanka has no significant domestic refractory manufacturing — steel re-rolling mills, cement grinding plants and glass producers import virtually all refractory materials.",
+      "Sri Lanka has no significant domestic refractory manufacturing, steel re-rolling mills, cement grinding plants and glass producers import virtually all refractory materials.",
       "India is the natural supply base: sea transit from Chennai or Tuticorin to Colombo is only 3–7 days, the shortest lead time of any major refractory-producing country.",
       "Refractory bricks ship under HS 6902, unshaped products (castables, mortars, ramming mass) under HS 3816, ceramic fibre under HS 6806.",
-      "Short transit means Sri Lankan plants can run leaner refractory inventory than African or GCC importers — but reliable scheduling matters more, since there is less buffer to absorb supplier delays.",
+      "Short transit means Sri Lankan plants can run leaner refractory inventory than African or GCC importers, but reliable scheduling matters more, since there is less buffer to absorb supplier delays.",
       "Indian test certificates against IS/ASTM standards are accepted by Sri Lankan industrial buyers; confirm any SLSI requirements for your specific product with your clearing agent.",
     ],
     faqs: [
       { question: "Why do Sri Lankan plants import refractories from India?", answer: "Sri Lanka has no significant domestic refractory production, so steel re-rolling mills, cement plants and glass producers must import. India is the closest major refractory manufacturer: sea transit from Chennai or Tuticorin to Colombo takes only 3–7 days, versus several weeks from China or Europe, and Indian products are certified against the same IS and ASTM standards Sri Lankan engineers already specify." },
-      { question: "How long does refractory shipping from India to Sri Lanka take?", answer: "Sea freight from Indian east-coast ports (Chennai, Tuticorin) to Colombo typically takes 3–7 days — the shortest refractory import route available to Sri Lankan buyers. Door-to-door including customs clearance, a realistic planning window is 2–3 weeks, which allows far leaner inventory than the 6–8 weeks African importers must plan for." },
+      { question: "How long does refractory shipping from India to Sri Lanka take?", answer: "Sea freight from Indian east-coast ports (Chennai, Tuticorin) to Colombo typically takes 3–7 days, the shortest refractory import route available to Sri Lankan buyers. Door-to-door including customs clearance, a realistic planning window is 2–3 weeks, which allows far leaner inventory than the 6–8 weeks African importers must plan for." },
       { question: "What HS codes apply to refractory imports in Sri Lanka?", answer: "Refractory bricks and shapes fall under HS 6902, other refractory ceramic goods (crucibles, nozzles) under HS 6903, unshaped refractories such as castables, mortars and ramming mass under HS 3816, and ceramic fibre products under HS 6806. Confirm the applicable national tariff line and any SLSI conformity requirements with your clearing agent." },
       { question: "Which industries in Sri Lanka buy imported refractories?", answer: "The main consumers are steel re-rolling and induction furnace operations, cement grinding and clinker operations, glass container manufacturing, and boiler operators in power and process industries. Each imports the full range: fireclay and high alumina bricks, induction furnace ramming mass, castables, and ceramic fibre insulation." },
     ],
-    excerpt: "Sri Lanka imports virtually all of its refractories, and India is the natural source — Colombo is only 3–7 sailing days from Indian ports. This guide covers HS codes, documentation, LC terms, and how Sri Lankan plants should structure refractory ordering around that short supply line.",
-    content: `<p><strong>Sri Lanka imports virtually all of its industrial refractories, and India is the closest major supplier — sea transit from Chennai or Tuticorin to Colombo takes just 3–7 days.</strong> For the island's steel re-rolling mills, induction furnace operators, cement plants and glass producers, that short supply line is a structural advantage no other refractory-producing country can match.</p>
+    excerpt: "Sri Lanka imports virtually all of its refractories, and India is the natural source, Colombo is only 3–7 sailing days from Indian ports. This guide covers HS codes, documentation, LC terms, and how Sri Lankan plants should structure refractory ordering around that short supply line.",
+    content: `<p><strong>Sri Lanka imports virtually all of its industrial refractories, and India is the closest major supplier, sea transit from Chennai or Tuticorin to Colombo takes just 3–7 days.</strong> For the island's steel re-rolling mills, induction furnace operators, cement plants and glass producers, that short supply line is a structural advantage no other refractory-producing country can match.</p>
 
 <h2>Who Buys Refractories in Sri Lanka</h2>
 <ul>
-  <li><strong>Steel re-rolling and induction furnaces:</strong> the largest consumer group — silica and alumina <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming masses</a>, fireclay and high alumina bricks, ladle refractories.</li>
+  <li><strong>Steel re-rolling and induction furnaces:</strong> the largest consumer group, silica and alumina <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming masses</a>, fireclay and high alumina bricks, ladle refractories.</li>
   <li><strong>Cement operations:</strong> kiln and grinding plants consuming basic bricks, castables and insulation on maintenance cycles.</li>
   <li><strong>Glass manufacturing:</strong> container glass production requiring tank blocks, regenerator refractories and sealing materials.</li>
   <li><strong>Boilers and process industries:</strong> refractory castables, insulating bricks and ceramic fibre for power and manufacturing plants.</li>
 </ul>
 
-<h2>The 3–7 Day Advantage — and Its Catch</h2>
+<h2>The 3–7 Day Advantage, and Its Catch</h2>
 <p>Because Colombo is days, not weeks, from Indian ports, Sri Lankan plants can operate with leaner refractory inventory than importers in Africa (25–40 days transit) or even the GCC (7–14 days). The catch: a short pipeline leaves less buffer for supplier failure. A missed shipment that an African plant's 8-week planning cycle absorbs quietly becomes an emergency in Colombo. The suppliers worth keeping are the ones whose dispatch dates hold.</p>
 
 <h2>HS Codes and Documentation</h2>
@@ -5057,13 +5057,13 @@ export const BLOG_POSTS_DATA = [
     <tr><td>Ceramic fibre products</td><td>6806</td><td>Blankets, modules, boards</td></tr>
   </tbody>
 </table>
-<p>The standard document set — commercial invoice, packing list, bill of lading, certificate of origin and manufacturer test certificates — travels with every shipment. Letter-of-credit terms are common for Sri Lankan industrial imports; we also work on advance and mixed terms with established buyers. Confirm SLSI conformity requirements for your specific product category with your clearing agent before opening the LC.</p>
+<p>The standard document set, commercial invoice, packing list, bill of lading, certificate of origin and manufacturer test certificates, travels with every shipment. Letter-of-credit terms are common for Sri Lankan industrial imports; we also work on advance and mixed terms with established buyers. Confirm SLSI conformity requirements for your specific product category with your clearing agent before opening the LC.</p>
 
 <h2>Ordering Around Campaigns, Not Emergencies</h2>
-<p>Even with a short supply line, the plants that get the best pricing order on campaign cycles: freeze the material list with the supplier 4–6 weeks before a planned shutdown, ship 2–3 weeks ahead, and hold a small strategic stock of fast-wearing items (ramming mass, gunning mix, ladle consumables). Emergency air-freight from India is feasible in 2–3 days but costs several times the sea rate — a planning failure, not a strategy.</p>
+<p>Even with a short supply line, the plants that get the best pricing order on campaign cycles: freeze the material list with the supplier 4–6 weeks before a planned shutdown, ship 2–3 weeks ahead, and hold a small strategic stock of fast-wearing items (ramming mass, gunning mix, ladle consumables). Emergency air-freight from India is feasible in 2–3 days but costs several times the sea rate, a planning failure, not a strategy.</p>
 
 <h2>SAPL Supply for Sri Lanka</h2>
-<p>Shanker Agencies exports complete refractory packages to Sri Lanka — bricks, castables, ramming masses, ceramic fibre and flow control products from CUMI, Calderys, TRL Krosaki and our other partner brands, consolidated into mixed containers with full export documentation and manufacturer test certificates. See our <a href="/refractory-supplier-in/colombo">Colombo supply page</a> for market detail, the general <a href="/blog/importing-refractories-from-india-buyers-guide">import guide</a> for process, or <a href="/rfq">submit an RFQ</a> with your product, quantity and target date.</p>
+<p>Shanker Agencies exports complete refractory packages to Sri Lanka, bricks, castables, ramming masses, ceramic fibre and flow control products from CUMI, Calderys, TRL Krosaki and our other partner brands, consolidated into mixed containers with full export documentation and manufacturer test certificates. See our <a href="/refractory-supplier-in/colombo">Colombo supply page</a> for market detail, the general <a href="/blog/importing-refractories-from-india-buyers-guide">import guide</a> for process, or <a href="/rfq">submit an RFQ</a> with your product, quantity and target date.</p>
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["high-alumina-bricks", "low-cement-castables", "ceramic-fiber-blanket"],
@@ -5091,28 +5091,28 @@ export const BLOG_POSTS_DATA = [
     ],
     faqs: [
       { question: "What refractories does the Durgapur-Asansol belt consume most?", answer: "The induction furnace and foundry units consume silica ramming mass, ladle refractories and fireclay/high alumina bricks on fast cycles; sponge iron (DRI) kilns consume castables, gunning mixes and kiln bricks; and the large integrated and alloy steel plants consume engineered packages across BOF, ladle, tundish and casting applications. Ramming mass is the single fastest-moving item in the cluster." },
-      { question: "How quickly can refractories be delivered to Durgapur or Asansol?", answer: "Standard stocked items — ramming mass, common brick grades, gunning mixes, ceramic fibre — typically reach the Durgapur-Asansol belt in 2–4 days by road from Delhi NCR stock. Campaign-specific or indent items from manufacturer plants take 2–6 weeks, so reline material should be frozen 3–4 weeks before a planned shutdown." },
-      { question: "Which industries around Durgapur use refractories besides steel?", answer: "Beyond the steel plants themselves, the belt's refractory consumers include sponge iron rotary kilns, ferro-alloy producers, cement grinding units, and the casting and forging foundries that serve eastern India's engineering industry — all running high-temperature furnaces that need lining maintenance on regular cycles." },
+      { question: "How quickly can refractories be delivered to Durgapur or Asansol?", answer: "Standard stocked items, ramming mass, common brick grades, gunning mixes, ceramic fibre, typically reach the Durgapur-Asansol belt in 2–4 days by road from Delhi NCR stock. Campaign-specific or indent items from manufacturer plants take 2–6 weeks, so reline material should be frozen 3–4 weeks before a planned shutdown." },
+      { question: "Which industries around Durgapur use refractories besides steel?", answer: "Beyond the steel plants themselves, the belt's refractory consumers include sponge iron rotary kilns, ferro-alloy producers, cement grinding units, and the casting and forging foundries that serve eastern India's engineering industry, all running high-temperature furnaces that need lining maintenance on regular cycles." },
     ],
     excerpt: "The Durgapur-Asansol corridor concentrates integrated steel, alloy steel, sponge iron and hundreds of induction furnace and foundry units into 60 km. This guide maps the cluster's two distinct refractory demand profiles and how to structure procurement for each.",
-    content: `<p><strong>The Durgapur–Asansol corridor in West Bengal is one of eastern India's densest steel clusters — integrated steel, alloy steel, sponge iron kilns, and hundreds of induction furnace and foundry units within roughly 60 km.</strong> Its refractory demand splits into two profiles that need completely different procurement approaches.</p>
+    content: `<p><strong>The Durgapur–Asansol corridor in West Bengal is one of eastern India's densest steel clusters, integrated steel, alloy steel, sponge iron kilns, and hundreds of induction furnace and foundry units within roughly 60 km.</strong> Its refractory demand splits into two profiles that need completely different procurement approaches.</p>
 
-<h2>Profile 1: The Large Plants — Engineered Packages</h2>
-<p>The belt's integrated and alloy steel operations consume refractories the way all large plants do: zone-engineered packages for BOF vessels, <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladles</a>, tundishes and reheating furnaces, procured on campaign cycles through tender processes. For these buyers the levers are campaign life data, manufacturer test certificates, and suppliers who can support tender documentation — covered in our <a href="/blog/refractory-supplier-selection-10-things-to-check">supplier selection checklist</a>.</p>
+<h2>Profile 1: The Large Plants, Engineered Packages</h2>
+<p>The belt's integrated and alloy steel operations consume refractories the way all large plants do: zone-engineered packages for BOF vessels, <a href="/blog/steel-ladle-refractory-lining-material-selection-campaign-life">steel ladles</a>, tundishes and reheating furnaces, procured on campaign cycles through tender processes. For these buyers the levers are campaign life data, manufacturer test certificates, and suppliers who can support tender documentation, covered in our <a href="/blog/refractory-supplier-selection-10-things-to-check">supplier selection checklist</a>.</p>
 
-<h2>Profile 2: The Induction Furnace &amp; Foundry Cluster — Speed Wins</h2>
+<h2>Profile 2: The Induction Furnace &amp; Foundry Cluster, Speed Wins</h2>
 <p>The hundreds of smaller melting and casting units around Durgapur, Asansol and Raniganj run on a different clock. An induction furnace reline consumes <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming mass</a> every few weeks; ladle linings, nozzles and gunning repairs cycle even faster. For these plants:</p>
 <ul>
   <li><strong>Availability beats price.</strong> A day of melting downtime waiting for material costs more than a year's savings from a marginally cheaper mass.</li>
-  <li><strong>Grade consistency matters.</strong> Sintering behaviour changes between ramming mass batches show up directly in lining life — stick to certified, single-source grades rather than spot-market material.</li>
+  <li><strong>Grade consistency matters.</strong> Sintering behaviour changes between ramming mass batches show up directly in lining life, stick to certified, single-source grades rather than spot-market material.</li>
   <li><strong>Sponge iron kilns</strong> in the corridor add steady demand for DRI kiln castables, <a href="/blog/gunning-castable-complete-guide">gunning mixes</a> and kiln bricks on annual maintenance cycles.</li>
 </ul>
 
 <h2>Practical Logistics</h2>
-<p>Standard stocked consumables reach the belt in 2–4 days by road from Delhi NCR. Campaign and indent items (special shapes, basic bricks, engineered flow control) run 2–6 weeks from manufacturer plants — freeze reline lists 3–4 weeks before shutdown. In our supply experience with eastern India re-rolling and foundry clusters, the plants with the most stable refractory costs hold a two-week strategic stock of their fastest-moving mass and order replenishment on consumption, not on crisis.</p>
+<p>Standard stocked consumables reach the belt in 2–4 days by road from Delhi NCR. Campaign and indent items (special shapes, basic bricks, engineered flow control) run 2–6 weeks from manufacturer plants, freeze reline lists 3–4 weeks before shutdown. In our supply experience with eastern India re-rolling and foundry clusters, the plants with the most stable refractory costs hold a two-week strategic stock of their fastest-moving mass and order replenishment on consumption, not on crisis.</p>
 
 <h2>SAPL Supply for the Durgapur Belt</h2>
-<p>Shanker Agencies supplies the full cluster profile — CUMI and Mahakoshal ramming masses, high alumina and fireclay bricks, Calderys castables and gunning mixes, ladle and flow control refractories — from Delhi NCR stock with manufacturer test certificates. See the <a href="/refractory-supplier-in/durgapur">Durgapur supply page</a> or <a href="/rfq">submit an RFQ</a> with your furnace type and monthly consumption.</p>
+<p>Shanker Agencies supplies the full cluster profile, CUMI and Mahakoshal ramming masses, high alumina and fireclay bricks, Calderys castables and gunning mixes, ladle and flow control refractories, from Delhi NCR stock with manufacturer test certificates. See the <a href="/refractory-supplier-in/durgapur">Durgapur supply page</a> or <a href="/rfq">submit an RFQ</a> with your furnace type and monthly consumption.</p>
 `,
     author: { name: "Mohit Gupta" },
     relatedProducts: ["silica-ramming-mass", "high-alumina-bricks", "gunning-materials"],
@@ -5133,26 +5133,26 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1200&q=80",
     keyTakeaways: [
-      "The Bellary–Hospet region is Karnataka's iron and steel heartland — anchored by mega-scale integrated capacity and surrounded by sponge iron kilns, induction furnaces and re-rolling mills feeding on local iron ore.",
+      "The Bellary–Hospet region is Karnataka's iron and steel heartland, anchored by mega-scale integrated capacity and surrounded by sponge iron kilns, induction furnaces and re-rolling mills feeding on local iron ore.",
       "Induction furnaces melting sponge-iron-heavy charges see harder lining duty than scrap-based melting: higher slag volumes and more erosive charge chemistry shorten ramming mass life.",
-      "Silica ramming mass grade selection — purity, granulometry and sintering behaviour matched to the actual charge mix — is the single biggest refractory cost lever for the cluster's melt shops.",
+      "Silica ramming mass grade selection, purity, granulometry and sintering behaviour matched to the actual charge mix, is the single biggest refractory cost lever for the cluster's melt shops.",
       "Standard consumables reach Bellary in 3–5 days by road; the cluster's high furnace utilisation makes consumption-based replenishment safer than order-on-empty.",
     ],
     faqs: [
       { question: "What refractories does the Bellary-Hospet cluster consume?", answer: "The cluster's induction furnaces and re-rolling mills consume silica ramming mass, ladle refractories, fireclay and high alumina bricks on fast cycles; the sponge iron (DRI) rotary kilns consume castables, gunning mixes and kiln lining bricks; and the integrated steel operations consume full engineered packages. Ramming mass for induction melting is the fastest-moving category." },
       { question: "Why do induction furnace linings wear faster with sponge iron charges?", answer: "DRI/sponge iron carries gangue (silica, alumina) and lower metallic yield than clean scrap, producing more slag at higher erosiveness. The slag attacks the sintered ramming mass lining chemically while unmelted sponge iron fines abrade it mechanically. Plants melting high-DRI charges typically need higher-purity silica mass with optimised granulometry, and stricter sintering schedules, to hold lining life." },
-      { question: "How fast can refractories be delivered to Bellary?", answer: "Standard stocked items — ramming mass, brick grades, gunning mixes — typically reach the Bellary-Hospet belt within 3–5 days by road. Given the cluster's high furnace utilisation, most melt shops hold a two-to-three-week buffer of their proven mass grade and replenish on consumption rather than ordering when stock runs out." },
+      { question: "How fast can refractories be delivered to Bellary?", answer: "Standard stocked items, ramming mass, brick grades, gunning mixes, typically reach the Bellary-Hospet belt within 3–5 days by road. Given the cluster's high furnace utilisation, most melt shops hold a two-to-three-week buffer of their proven mass grade and replenish on consumption rather than ordering when stock runs out." },
     ],
     excerpt: "Bellary-Hospet is Karnataka's iron and steel heartland: mega-scale integrated capacity, sponge iron kilns and a dense induction furnace cluster running on local ore. This guide covers the ramming mass selection problem DRI-heavy charges create, and how the cluster's melt shops keep lining costs stable.",
-    content: `<p><strong>The Bellary–Hospet region is Karnataka's iron and steel heartland — anchored by mega-scale integrated steel capacity and surrounded by sponge iron kilns, induction furnace melt shops and re-rolling mills running on the district's iron ore.</strong> For its refractory buyers, one problem dominates: induction furnace lining life under sponge-iron-heavy charge mixes.</p>
+    content: `<p><strong>The Bellary–Hospet region is Karnataka's iron and steel heartland, anchored by mega-scale integrated steel capacity and surrounded by sponge iron kilns, induction furnace melt shops and re-rolling mills running on the district's iron ore.</strong> For its refractory buyers, one problem dominates: induction furnace lining life under sponge-iron-heavy charge mixes.</p>
 
 <h2>The DRI Charge Problem</h2>
 <p>Induction furnaces in this cluster typically melt a high proportion of locally produced sponge iron (DRI) rather than clean scrap. That charge chemistry is harder on the silica ramming mass lining in two ways:</p>
 <ol>
-  <li><strong>Chemical attack:</strong> DRI gangue (silica, alumina, unreduced iron oxides) generates more slag, and more erosive slag, than scrap melting — attacking the sintered working face faster.</li>
+  <li><strong>Chemical attack:</strong> DRI gangue (silica, alumina, unreduced iron oxides) generates more slag, and more erosive slag, than scrap melting, attacking the sintered working face faster.</li>
   <li><strong>Mechanical wear:</strong> sponge iron fines and lump charge abrade the lining during charging and melting.</li>
 </ol>
-<p>The result: the same mass grade that gives a scrap-melting shop comfortable lining life can underperform badly on a high-DRI charge. Grade selection — purity, boron oxide content, granulometry, and a sintering schedule matched to the actual charge mix — is the cluster's biggest refractory cost lever. Our <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming mass selection guide</a> and <a href="/blog/induction-furnace-lining-failure-causes-prevention">lining failure guide</a> cover the technical detail.</p>
+<p>The result: the same mass grade that gives a scrap-melting shop comfortable lining life can underperform badly on a high-DRI charge. Grade selection, purity, boron oxide content, granulometry, and a sintering schedule matched to the actual charge mix, is the cluster's biggest refractory cost lever. Our <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">ramming mass selection guide</a> and <a href="/blog/induction-furnace-lining-failure-causes-prevention">lining failure guide</a> cover the technical detail.</p>
 
 <h2>Beyond the Melt Shops</h2>
 <ul>
@@ -5162,7 +5162,7 @@ export const BLOG_POSTS_DATA = [
 </ul>
 
 <h2>Procurement Logistics for the Cluster</h2>
-<p>Standard stocked consumables reach Bellary in 3–5 days by road. Because the cluster runs furnaces at high utilisation, the melt shops with the most stable costs replenish proven mass grades on consumption — holding a two-to-three-week buffer — rather than re-opening grade selection with every spot purchase. Switching mass grades to save marginally per tonne, without re-validating sintering behaviour on your actual charge, is the most common self-inflicted lining failure we see.</p>
+<p>Standard stocked consumables reach Bellary in 3–5 days by road. Because the cluster runs furnaces at high utilisation, the melt shops with the most stable costs replenish proven mass grades on consumption, holding a two-to-three-week buffer, rather than re-opening grade selection with every spot purchase. Switching mass grades to save marginally per tonne, without re-validating sintering behaviour on your actual charge, is the most common self-inflicted lining failure we see.</p>
 
 <h2>SAPL Supply for Bellary–Hospet</h2>
 <p>Shanker Agencies supplies CUMI and Mahakoshal ramming masses, bricks, castables and ladle refractories to the Bellary belt with manufacturer test certificates and grade-selection support for DRI-heavy charge mixes. See the <a href="/refractory-supplier-in/bellary">Bellary supply page</a> or <a href="/rfq">submit an RFQ</a> with your furnace capacity and charge mix.</p>
@@ -5187,24 +5187,24 @@ export const BLOG_POSTS_DATA = [
     coverImage: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=1200&q=80",
     keyTakeaways: [
       "Boiler refractory failure is dominated by three mechanisms: abrasion (especially in CFBC/AFBC fluidised beds), thermal cycling cracks, and chemical attack from ash and combustion products.",
-      "The highest-wear zones — bed coil areas, cyclone targets, seal pots and burner throats — need abrasion-resistant castables (often SiC-containing); general walls run on conventional or low cement castables.",
+      "The highest-wear zones, bed coil areas, cyclone targets, seal pots and burner throats, need abrasion-resistant castables (often SiC-containing); general walls run on conventional or low cement castables.",
       "Small localised damage is patched; distributed thinning across a zone is gunned; damage past roughly a third of lining thickness in structural zones means planned reline.",
       "Annual-outage inspection with thickness mapping converts refractory from an emergency cost into a planned budget line.",
     ],
     faqs: [
       { question: "How often should boiler refractory be inspected?", answer: "At minimum every planned annual outage, with a full visual survey plus thickness measurement of the known high-wear zones (bed area, cyclone, seal pot, burner throats). Plants running CFBC boilers at high load, or firing high-ash fuels, benefit from an additional mid-year check of the highest-abrasion zones during any opportunity shutdown." },
-      { question: "What refractory materials are used in boilers?", answer: "Abrasion-resistant dense castables — frequently silicon-carbide-containing — line the high-wear zones of fluidised bed boilers; conventional and low cement castables handle general walls and floors; insulating castables and ceramic fibre back up the hot face to control shell temperature; and plastic refractories or ramming mixes fill burner throats and complex geometry. Grade selection follows the wear mechanism in each zone, not one material for the whole boiler." },
-      { question: "When should boiler refractory be repaired versus fully relined?", answer: "As a working rule: isolated damage smaller than roughly half a square metre is patch-repaired; distributed thinning across a zone is rebuilt by gunning; and once structural zones have lost about a third of their original thickness — or anchor systems are exposed — a planned reline of that zone beats repeated patching on both cost and risk." },
-      { question: "Why does CFBC boiler refractory wear so fast?", answer: "A circulating fluidised bed keeps abrasive bed material (sand, ash, fuel particles) in constant high-velocity motion against the lining — the mechanical equivalent of continuous sandblasting, at temperature. That is why CFBC bed zones, cyclone inlets and return legs specify dense abrasion-resistant castables, often with silicon carbide, rather than the conventional castables that survive perfectly well in static boiler walls." },
+      { question: "What refractory materials are used in boilers?", answer: "Abrasion-resistant dense castables, frequently silicon-carbide-containing, line the high-wear zones of fluidised bed boilers; conventional and low cement castables handle general walls and floors; insulating castables and ceramic fibre back up the hot face to control shell temperature; and plastic refractories or ramming mixes fill burner throats and complex geometry. Grade selection follows the wear mechanism in each zone, not one material for the whole boiler." },
+      { question: "When should boiler refractory be repaired versus fully relined?", answer: "As a working rule: isolated damage smaller than roughly half a square metre is patch-repaired; distributed thinning across a zone is rebuilt by gunning; and once structural zones have lost about a third of their original thickness, or anchor systems are exposed, a planned reline of that zone beats repeated patching on both cost and risk." },
+      { question: "Why does CFBC boiler refractory wear so fast?", answer: "A circulating fluidised bed keeps abrasive bed material (sand, ash, fuel particles) in constant high-velocity motion against the lining, the mechanical equivalent of continuous sandblasting, at temperature. That is why CFBC bed zones, cyclone inlets and return legs specify dense abrasion-resistant castables, often with silicon carbide, rather than the conventional castables that survive perfectly well in static boiler walls." },
     ],
-    excerpt: "Boiler refractory fails from abrasion, thermal cycling and ash attack — and each failure mode has a different fix. A practical maintenance guide: zone-by-zone inspection checklist, when to patch vs gun vs reline, and the material selection logic for CFBC, AFBC and grate-fired boilers.",
-    content: `<p><strong>Boiler refractory maintenance comes down to managing three failure mechanisms — abrasion, thermal cycling and chemical attack — each concentrated in predictable zones.</strong> Plants that inspect those zones on a schedule and repair by mechanism keep refractory as a planned budget line; plants that wait for hot spots pay for the same work as emergency downtime.</p>
+    excerpt: "Boiler refractory fails from abrasion, thermal cycling and ash attack, and each failure mode has a different fix. A practical maintenance guide: zone-by-zone inspection checklist, when to patch vs gun vs reline, and the material selection logic for CFBC, AFBC and grate-fired boilers.",
+    content: `<p><strong>Boiler refractory maintenance comes down to managing three failure mechanisms, abrasion, thermal cycling and chemical attack, each concentrated in predictable zones.</strong> Plants that inspect those zones on a schedule and repair by mechanism keep refractory as a planned budget line; plants that wait for hot spots pay for the same work as emergency downtime.</p>
 
 <h2>The 3 Ways Boiler Refractory Fails</h2>
 <ol>
   <li><strong>Abrasion:</strong> the dominant mechanism in CFBC and AFBC boilers, where fluidised bed material scrubs the lining continuously. Concentrated at bed coil areas, cyclone inlets and target zones, return legs and seal pots.</li>
-  <li><strong>Thermal cycling:</strong> start-stop operation opens cracks in rigid linings — worst in peaking plants and boilers with frequent trips. Shows as crack networks and spalled patches at zone transitions.</li>
-  <li><strong>Chemical attack:</strong> ash chemistry (alkalis, vanadium in oil-fired units, chlorides with some biomass and waste fuels) reacts with the lining hot face — the same alkali mechanism covered in our <a href="/blog/alternative-fuels-cement-kiln-refractory-guide">alternative fuels guide</a> for cement kilns.</li>
+  <li><strong>Thermal cycling:</strong> start-stop operation opens cracks in rigid linings, worst in peaking plants and boilers with frequent trips. Shows as crack networks and spalled patches at zone transitions.</li>
+  <li><strong>Chemical attack:</strong> ash chemistry (alkalis, vanadium in oil-fired units, chlorides with some biomass and waste fuels) reacts with the lining hot face, the same alkali mechanism covered in our <a href="/blog/alternative-fuels-cement-kiln-refractory-guide">alternative fuels guide</a> for cement kilns.</li>
 </ol>
 
 <h2>Zone-by-Zone: Where to Look and What Belongs There</h2>
@@ -5222,29 +5222,29 @@ export const BLOG_POSTS_DATA = [
 
 <h2>Patch, Gun, or Reline? The Decision Rule</h2>
 <ul>
-  <li><strong>Patch</strong> when damage is isolated — under roughly half a square metre — and the surrounding lining is sound. Prepare edges square, key into sound material, use a compatible patching castable.</li>
+  <li><strong>Patch</strong> when damage is isolated, under roughly half a square metre, and the surrounding lining is sound. Prepare edges square, key into sound material, use a compatible patching castable.</li>
   <li><strong>Gun</strong> when a whole zone has thinned but remains structurally attached: <a href="/blog/gunning-castable-complete-guide">gunning castable</a> rebuilds thickness across large areas fast, including hot repairs during short outages.</li>
-  <li><strong>Reline</strong> the zone when a third or more of original thickness is gone in structural areas, anchors are exposed, or the patch-and-gun record shows the same zone recurring every outage — repeated repair of a spent lining costs more than replacing it once, the same total-cost logic covered in our <a href="/blog/refractory-lining-maintenance-scheduling-guide">maintenance scheduling guide</a>.</li>
+  <li><strong>Reline</strong> the zone when a third or more of original thickness is gone in structural areas, anchors are exposed, or the patch-and-gun record shows the same zone recurring every outage, repeated repair of a spent lining costs more than replacing it once, the same total-cost logic covered in our <a href="/blog/refractory-lining-maintenance-scheduling-guide">maintenance scheduling guide</a>.</li>
 </ul>
 
 <h2>The Annual Outage Checklist</h2>
 <ol>
   <li>Full visual survey, photographed zone by zone against last year's record.</li>
   <li>Thickness measurement at fixed reference points in every high-wear zone.</li>
-  <li>Check anchor integrity anywhere the hot face is lost — exposed or oxidised anchors mean the zone is structurally due, whatever the average thickness says.</li>
+  <li>Check anchor integrity anywhere the hot face is lost, exposed or oxidised anchors mean the zone is structurally due, whatever the average thickness says.</li>
   <li>Hammer-sound suspect areas for drummy (debonded) lining that looks intact.</li>
-  <li>Match each finding to mechanism — abrasion, cycling, chemistry — and repair with the matching material, not whatever castable is in the store.</li>
+  <li>Match each finding to mechanism, abrasion, cycling, chemistry, and repair with the matching material, not whatever castable is in the store.</li>
   <li>Record everything: the trend line across outages is what converts refractory into a predictable budget.</li>
 </ol>
 
 <h2>SAPL Supply for Boiler Maintenance</h2>
-<p>Shanker Agencies supplies the full boiler maintenance range — abrasion-resistant and SiC castables, conventional and low cement castables, gunning mixes, plastic refractories, insulating castables and ceramic fibre — from Calderys, CUMI and our partner brands, with manufacturer test certificates and zone-wise selection support. <a href="/rfq">Submit an RFQ</a> with your boiler type and outage date, or see our <a href="/solutions/power">power industry solutions</a>.</p>
+<p>Shanker Agencies supplies the full boiler maintenance range, abrasion-resistant and SiC castables, conventional and low cement castables, gunning mixes, plastic refractories, insulating castables and ceramic fibre, from Calderys, CUMI and our partner brands, with manufacturer test certificates and zone-wise selection support. <a href="/rfq">Submit an RFQ</a> with your boiler type and outage date, or see our <a href="/solutions/power">power industry solutions</a>.</p>
 `,
     author: { name: "Vinod Sharma" },
     relatedProducts: ["gunning-materials", "low-cement-castables", "ceramic-fiber-blanket"],
   },
 
-  // 48. Kenya / East Africa export guide — geo cluster
+  // 48. Kenya / East Africa export guide, geo cluster
   {
     id: 48,
     slug: "refractory-supplier-kenya-east-africa-import-guide",
@@ -5258,9 +5258,9 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=1200&q=80",
     keyTakeaways: [
-      "Kenya and East Africa have no significant domestic refractory manufacturing — cement clinker lines, steel mills and lime kilns import virtually all refractory materials.",
+      "Kenya and East Africa have no significant domestic refractory manufacturing, cement clinker lines, steel mills and lime kilns import virtually all refractory materials.",
       "India is the dominant supply base: sea transit from Mundra or Nhava Sheva to Mombasa is typically 12–18 days, far shorter than Europe and with test certificates against the IS/ASTM standards East African engineers already use.",
-      "Kenya's cement industry is integrating fast — new clinker capacity (rather than just grinding imported clinker) means rotary kiln refractory demand, the most technically demanding refractory application, is growing.",
+      "Kenya's cement industry is integrating fast, new clinker capacity (rather than just grinding imported clinker) means rotary kiln refractory demand, the most technically demanding refractory application, is growing.",
       "Refractory bricks ship under HS 6902, unshaped products (castables, mortars, ramming mass) under HS 3816, ceramic fibre under HS 6806.",
       "Because door-to-door lead time is realistically 4–6 weeks, East African plants should order refractories campaign-wise with a 15–20% contingency quantity, not shutdown-wise.",
     ],
@@ -5271,11 +5271,11 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "How long does refractory shipping from India to Kenya take?",
-        answer: "Sea freight from Indian west-coast ports (Mundra, Nhava Sheva) to Mombasa typically takes 12–18 days. Door-to-door including customs clearance and inland transport to plants around Nairobi, Athi River or Kajiado, plan on 4–6 weeks — which is why campaign-based ordering with a contingency quantity is standard practice.",
+        answer: "Sea freight from Indian west-coast ports (Mundra, Nhava Sheva) to Mombasa typically takes 12–18 days. Door-to-door including customs clearance and inland transport to plants around Nairobi, Athi River or Kajiado, plan on 4–6 weeks, which is why campaign-based ordering with a contingency quantity is standard practice.",
       },
       {
         question: "Which industries in East Africa buy imported refractories?",
-        answer: "Cement is the largest consumer — Kenya's integrated clinker lines need basic (magnesia-spinel) brick for burning zones plus high alumina brick and castables for preheaters, coolers and nose rings. Steel re-rolling and induction furnace mills need ramming mass, high alumina brick and ladle refractories. Lime kilns, foundries and boiler operators make up the rest.",
+        answer: "Cement is the largest consumer, Kenya's integrated clinker lines need basic (magnesia-spinel) brick for burning zones plus high alumina brick and castables for preheaters, coolers and nose rings. Steel re-rolling and induction furnace mills need ramming mass, high alumina brick and ladle refractories. Lime kilns, foundries and boiler operators make up the rest.",
       },
       {
         question: "What HS codes apply to refractory imports in Kenya?",
@@ -5283,20 +5283,20 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "Does SAPL supply refractories to Kenya?",
-        answer: "Yes. Shanker Agencies exports the full refractory range — high alumina and basic bricks, castables, ramming mass, ceramic fibre and flow control products — from Indian manufacturer partners with CIF Mombasa pricing, full export documentation and manufacturer test certificates.",
+        answer: "Yes. Shanker Agencies exports the full refractory range, high alumina and basic bricks, castables, ramming mass, ceramic fibre and flow control products, from Indian manufacturer partners with CIF Mombasa pricing, full export documentation and manufacturer test certificates.",
       },
     ],
     excerpt: "East Africa imports virtually all of its refractories, and Kenya's shift from clinker grinding to integrated clinker production is raising the technical bar. This guide covers Mombasa transit times, HS codes, KEBS/PVoC conformity and how to structure campaign-based refractory ordering from India.",
     content: `
-<h2>East Africa's Refractory Demand Is Growing — and It Is All Imported</h2>
-<p><strong>Kenya and its East African neighbours import virtually 100% of their refractory materials, and India is the dominant, lowest-lead-time supply base: 12–18 days sea transit from Mundra or Nhava Sheva to Mombasa, versus 4–6 weeks from Europe.</strong> Demand is rising because the region's cement industry is integrating: Kenya's producers have moved beyond grinding imported clinker into full clinker manufacture — National Cement's clinker plant in Kajiado and the Devki Group's integrated steel operations in Kwale are the visible examples — and clinker kilns consume the most technically demanding refractories in the industry: magnesia-spinel burning-zone brick, high alumina transition-zone brick and abrasion-resistant castables. For plants engineering their first campaigns, supplier selection matters as much as price.</p>
+<h2>East Africa's Refractory Demand Is Growing, and It Is All Imported</h2>
+<p><strong>Kenya and its East African neighbours import virtually 100% of their refractory materials, and India is the dominant, lowest-lead-time supply base: 12–18 days sea transit from Mundra or Nhava Sheva to Mombasa, versus 4–6 weeks from Europe.</strong> Demand is rising because the region's cement industry is integrating: Kenya's producers have moved beyond grinding imported clinker into full clinker manufacture, National Cement's clinker plant in Kajiado and the Devki Group's integrated steel operations in Kwale are the visible examples, and clinker kilns consume the most technically demanding refractories in the industry: magnesia-spinel burning-zone brick, high alumina transition-zone brick and abrasion-resistant castables. For plants engineering their first campaigns, supplier selection matters as much as price.</p>
 
 <h2>Who Buys Refractories in East Africa</h2>
 <table>
   <thead><tr><th>Segment</th><th>Typical refractory needs</th></tr></thead>
   <tbody>
     <tr><td>Integrated cement plants (clinker lines)</td><td>Magnesia-spinel and high alumina kiln brick, castables for preheater/cooler, nose ring precast shapes</td></tr>
-    <tr><td>Cement grinding plants</td><td>Minimal — mainly hot-gas generator linings</td></tr>
+    <tr><td>Cement grinding plants</td><td>Minimal, mainly hot-gas generator linings</td></tr>
     <tr><td>Steel re-rolling & induction furnaces</td><td>Silica ramming mass, high alumina brick, ladle castables and nozzles</td></tr>
     <tr><td>Lime kilns</td><td>High alumina and fireclay brick, insulating brick backup</td></tr>
     <tr><td>Boilers, foundries, incinerators</td><td>Conventional and low cement castables, ceramic fibre, plastic refractories</td></tr>
@@ -5309,7 +5309,7 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Port-to-port:</strong> 12–18 days Mundra/Nhava Sheva → Mombasa</li>
   <li><strong>Door-to-door:</strong> 4–6 weeks including customs clearance and inland transport to Nairobi, Athi River or Kajiado</li>
   <li><strong>HS codes:</strong> bricks and shapes HS 6902, other refractory ceramic goods HS 6903, castables/mortars/ramming mass HS 3816, ceramic fibre HS 6806</li>
-  <li><strong>Conformity:</strong> Kenya applies pre-export verification of conformity (PVoC) for many product lines — confirm KEBS requirements with your clearing agent before the supplier ships</li>
+  <li><strong>Conformity:</strong> Kenya applies pre-export verification of conformity (PVoC) for many product lines, confirm KEBS requirements with your clearing agent before the supplier ships</li>
 </ul>
 
 <h2>Order Campaign-Wise, Not Shutdown-Wise</h2>
@@ -5317,7 +5317,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>What to Demand From an Indian Supplier</h2>
 <ol>
-  <li><strong>Manufacturer test certificates</strong> for every batch — chemistry, density, CCS, refractoriness — against IS or ASTM standards</li>
+  <li><strong>Manufacturer test certificates</strong> for every batch, chemistry, density, CCS, refractoriness, against IS or ASTM standards</li>
   <li><strong>Zone-wise selection support:</strong> a supplier who asks for your kiln diameter, fuel mix and clinker chemistry before quoting, not after</li>
   <li><strong>Complete export documentation:</strong> commercial invoice, packing list, certificate of origin, and PVoC coordination where applicable</li>
   <li><strong>CIF Mombasa pricing</strong> so freight and insurance risk stay with the supplier until the port</li>
@@ -5325,19 +5325,19 @@ export const BLOG_POSTS_DATA = [
 </ol>
 
 <h2>SAPL Supply for Kenya & East Africa</h2>
-<p>Shanker Agencies exports the complete refractory range to East Africa — magnesia-spinel and high alumina kiln brick, low cement and conventional castables, silica ramming mass, ceramic fibre and flow control products — from CUMI, Calderys and our partner brands, with manufacturer test certificates, CIF Mombasa pricing and campaign-planning support. <a href="/rfq">Submit an RFQ</a> with your plant type and destination, or see our <a href="/refractory-supplier-in/nairobi">Nairobi supply page</a> and <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
+<p>Shanker Agencies exports the complete refractory range to East Africa, magnesia-spinel and high alumina kiln brick, low cement and conventional castables, silica ramming mass, ceramic fibre and flow control products, from CUMI, Calderys and our partner brands, with manufacturer test certificates, CIF Mombasa pricing and campaign-planning support. <a href="/rfq">Submit an RFQ</a> with your plant type and destination, or see our <a href="/refractory-supplier-in/nairobi">Nairobi supply page</a> and <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["high-alumina-bricks", "low-cement-castables", "ramming-masses"],
   },
 
-  // 49. Indonesia export guide — nickel smelter + steel angle
+  // 49. Indonesia export guide, nickel smelter + steel angle
   {
     id: 49,
     slug: "why-indonesia-imports-refractories-from-india",
     title: "Why Indonesia Imports Refractories from India: Smelters, Steel and Cement",
     metaTitle: "Why Indonesia Imports Refractories from India | SAPL",
-    metaDescription: "Indonesia's refractory market is ~USD 197M and growing 4.1% CAGR, driven by nickel smelters, steel and cement. Why Indian refractories win on lead time, standards and price — an import guide.",
+    metaDescription: "Indonesia's refractory market is ~USD 197M and growing 4.1% CAGR, driven by nickel smelters, steel and cement. Why Indian refractories win on lead time, standards and price, an import guide.",
     category: "Export Guide",
     tags: ["refractory supplier indonesia", "indonesia refractory import", "nickel smelter refractory", "import refractories from india", "jakarta refractory", "refractory export asean"],
     readTime: "7 min",
@@ -5345,8 +5345,8 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80",
     keyTakeaways: [
-      "Indonesia's refractory materials market was estimated at USD 197 million in 2025 and is projected to reach USD 261 million by 2032 (4.1% CAGR, 6Wresearch) — driven by nickel smelting, steel and cement.",
-      "Indonesia's nickel processing build-out created one of the world's densest concentrations of RKEF smelting furnaces — a heavy, continuous consumer of high-temperature refractories that domestic production cannot fully supply.",
+      "Indonesia's refractory materials market was estimated at USD 197 million in 2025 and is projected to reach USD 261 million by 2032 (4.1% CAGR, 6Wresearch), driven by nickel smelting, steel and cement.",
+      "Indonesia's nickel processing build-out created one of the world's densest concentrations of RKEF smelting furnaces, a heavy, continuous consumer of high-temperature refractories that domestic production cannot fully supply.",
       "Sea transit from Chennai to Jakarta (Tanjung Priok) runs roughly 10–14 days, and Indian refractories are certified against the same ISO/ASTM test methods Indonesian engineers specify.",
       "Refractory bricks ship under HS 6902, unshaped products under HS 3816, ceramic fibre under HS 6806; most industrial raw material imports face low or zero MFN duty, but confirm current tariff lines and SNI requirements per product.",
       "The economics favour India over Europe on price and over local stock on range: specialised grades (SiC-bearing castables, magnesia-carbon brick, high-purity ramming mass) are rarely stocked domestically.",
@@ -5358,7 +5358,7 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "Why do Indonesian smelters and steel plants import refractories from India?",
-        answer: "Domestic refractory production covers only part of the demand and a narrow grade range. India offers the full spectrum — magnesia-carbon brick, SiC-bearing abrasion castables, high alumina brick, ramming mass — at 10–14 day sea transit from Chennai to Tanjung Priok, with manufacturer test certificates against the ISO/ASTM methods Indonesian engineers specify, at prices well below European or Japanese suppliers.",
+        answer: "Domestic refractory production covers only part of the demand and a narrow grade range. India offers the full spectrum, magnesia-carbon brick, SiC-bearing abrasion castables, high alumina brick, ramming mass, at 10–14 day sea transit from Chennai to Tanjung Priok, with manufacturer test certificates against the ISO/ASTM methods Indonesian engineers specify, at prices well below European or Japanese suppliers.",
       },
       {
         question: "What refractories do nickel smelters use?",
@@ -5366,23 +5366,23 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "How long does refractory shipping from India to Indonesia take?",
-        answer: "Sea freight from Chennai or Visakhapatnam to Tanjung Priok (Jakarta) or Surabaya typically takes 10–14 days port-to-port. Door-to-door including clearance, plan 3–5 weeks — comfortably inside a planned maintenance calendar when orders are placed campaign-wise.",
+        answer: "Sea freight from Chennai or Visakhapatnam to Tanjung Priok (Jakarta) or Surabaya typically takes 10–14 days port-to-port. Door-to-door including clearance, plan 3–5 weeks, comfortably inside a planned maintenance calendar when orders are placed campaign-wise.",
       },
       {
         question: "What HS codes and standards apply to refractory imports in Indonesia?",
         answer: "Refractory bricks and shapes fall under HS 6902, unshaped refractories (castables, mortars, ramming mass) under HS 3816, and ceramic fibre under HS 6806. Confirm the current Indonesian tariff book (BTKI) line and whether any SNI conformity requirement applies to your specific product with your customs broker.",
       },
     ],
-    excerpt: "Indonesia's refractory demand — USD 197M in 2025, growing 4.1% a year — is powered by the world's biggest nickel smelting build-out plus steel and cement. Here's why Indonesian plants source from India, and how the import route works.",
+    excerpt: "Indonesia's refractory demand, USD 197M in 2025, growing 4.1% a year, is powered by the world's biggest nickel smelting build-out plus steel and cement. Here's why Indonesian plants source from India, and how the import route works.",
     content: `
 <h2>Indonesia's Refractory Demand Is Structurally Rising</h2>
-<p><strong>Indonesia's refractory materials market was estimated at USD 197 million in 2025 and is projected to reach USD 261 million by 2032 — a 4.1% CAGR (6Wresearch) — and a large share of that demand is met by imports, with India the fastest supply base at 10–14 days sea transit from Chennai to Tanjung Priok.</strong> Three industries drive the growth: the nickel processing build-out (dozens of RKEF smelting lines commissioned since the 2020 ore-export ban), a steel industry restructuring around electric furnaces, and a cement sector serving Southeast Asia's largest construction market. All three are continuous, high-temperature refractory consumers, and the specialised grades they need — magnesia-carbon brick, SiC-bearing castables, high-purity ramming mass — are rarely stocked domestically.</p>
+<p><strong>Indonesia's refractory materials market was estimated at USD 197 million in 2025 and is projected to reach USD 261 million by 2032, a 4.1% CAGR (6Wresearch), and a large share of that demand is met by imports, with India the fastest supply base at 10–14 days sea transit from Chennai to Tanjung Priok.</strong> Three industries drive the growth: the nickel processing build-out (dozens of RKEF smelting lines commissioned since the 2020 ore-export ban), a steel industry restructuring around electric furnaces, and a cement sector serving Southeast Asia's largest construction market. All three are continuous, high-temperature refractory consumers, and the specialised grades they need, magnesia-carbon brick, SiC-bearing castables, high-purity ramming mass, are rarely stocked domestically.</p>
 
 <h2>Where the Demand Sits</h2>
 <table>
   <thead><tr><th>Industry</th><th>Refractory demand profile</th></tr></thead>
   <tbody>
-    <tr><td>Nickel smelting (RKEF lines)</td><td>Rotary kiln brick and abrasion castables; magnesia/magnesia-chrome furnace linings; taphole and launder refractories — continuous consumption tied to smelter uptime</td></tr>
+    <tr><td>Nickel smelting (RKEF lines)</td><td>Rotary kiln brick and abrasion castables; magnesia/magnesia-chrome furnace linings; taphole and launder refractories, continuous consumption tied to smelter uptime</td></tr>
     <tr><td>Steel (EAF and induction furnace)</td><td>Magnesia-carbon brick, ladle castables, silica ramming mass, slide gate and flow control refractories</td></tr>
     <tr><td>Cement</td><td>Basic and high alumina kiln brick, preheater and cooler castables</td></tr>
     <tr><td>Glass, pulp & paper, power boilers</td><td>Silica and AZS blocks, conventional castables, ceramic fibre insulation</td></tr>
@@ -5392,7 +5392,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Why India Wins the Supply Decision</h2>
 <ol>
   <li><strong>Lead time:</strong> 10–14 days Chennai/Visakhapatnam → Tanjung Priok or Surabaya, versus 4+ weeks from Europe. Door-to-door, 3–5 weeks.</li>
-  <li><strong>Range:</strong> India manufactures the full spectrum from fireclay brick to magnesia-carbon and SiC-bearing specialities — one consolidated shipment instead of multiple origins.</li>
+  <li><strong>Range:</strong> India manufactures the full spectrum from fireclay brick to magnesia-carbon and SiC-bearing specialities, one consolidated shipment instead of multiple origins.</li>
   <li><strong>Standards:</strong> Indian manufacturer test certificates report against the same ISO/ASTM test methods Indonesian plant engineers already specify.</li>
   <li><strong>Price:</strong> Indian pricing is typically well below European, Japanese or Korean equivalents at comparable grade chemistry.</li>
 </ol>
@@ -5402,11 +5402,11 @@ export const BLOG_POSTS_DATA = [
   <li><strong>HS codes:</strong> bricks and shapes HS 6902, other refractory ceramic goods HS 6903, castables/mortars/ramming mass HS 3816, ceramic fibre HS 6806</li>
   <li><strong>Tariffs & conformity:</strong> most industrial refractory lines face low MFN duty; confirm the current BTKI tariff line and any SNI requirement for your product with your customs broker</li>
   <li><strong>Documentation:</strong> commercial invoice, packing list, certificate of origin (India–ASEAN FTA may apply), manufacturer test certificates per batch</li>
-  <li><strong>Ordering pattern:</strong> campaign-wise with contingency stock — smelters especially cannot afford a lining delay measured against furnace downtime</li>
+  <li><strong>Ordering pattern:</strong> campaign-wise with contingency stock, smelters especially cannot afford a lining delay measured against furnace downtime</li>
 </ul>
 
 <h2>SAPL Supply for Indonesia</h2>
-<p>Shanker Agencies exports the full refractory range to Indonesia — magnesia-carbon and high alumina brick, low cement and SiC-bearing castables, silica ramming mass, ceramic fibre and flow control products — from CUMI, Calderys and our partner brands, with manufacturer test certificates, CIF Tanjung Priok/Surabaya pricing and full export documentation. <a href="/rfq">Submit an RFQ</a> with your furnace type and destination port, or see our <a href="/refractory-supplier-in/jakarta">Jakarta supply page</a> and <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
+<p>Shanker Agencies exports the full refractory range to Indonesia, magnesia-carbon and high alumina brick, low cement and SiC-bearing castables, silica ramming mass, ceramic fibre and flow control products, from CUMI, Calderys and our partner brands, with manufacturer test certificates, CIF Tanjung Priok/Surabaya pricing and full export documentation. <a href="/rfq">Submit an RFQ</a> with your furnace type and destination port, or see our <a href="/refractory-supplier-in/jakarta">Jakarta supply page</a> and <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["basic-bricks", "low-cement-castables", "ramming-masses"],
@@ -5426,20 +5426,20 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1200&q=80",
     keyTakeaways: [
-      "Malaysia's steel industry runs a full technology mix — blast furnaces (Ann Joo's hybrid BF in Penang, Alliance Steel and Eastern Steel integrated works), EAFs and induction furnaces — each with a distinct refractory consumption profile.",
+      "Malaysia's steel industry runs a full technology mix, blast furnaces (Ann Joo's hybrid BF in Penang, Alliance Steel and Eastern Steel integrated works), EAFs and induction furnaces, each with a distinct refractory consumption profile.",
       "Eastern Steel's announced expansion toward 2.7 million tonnes annual capacity and Alliance Steel's integrated complex in Kuantan anchor long-term refractory demand growth on the east coast.",
-      "Malaysia has limited domestic refractory manufacturing; specialised grades — magnesia-carbon brick, blast furnace trough castables, purging plugs — are imported.",
+      "Malaysia has limited domestic refractory manufacturing; specialised grades, magnesia-carbon brick, blast furnace trough castables, purging plugs, are imported.",
       "Sea transit from Chennai to Port Klang is roughly 7–12 days, one of the shortest major refractory supply routes into ASEAN.",
       "Refractory bricks ship under HS 6902, unshaped products under HS 3816, ceramic fibre under HS 6806; the India–ASEAN FTA can reduce duty with a valid certificate of origin.",
     ],
     faqs: [
       {
         question: "Why do Malaysian plants import refractories from India?",
-        answer: "Malaysia has limited domestic refractory manufacturing, and its steel industry's technology mix — blast furnaces, EAFs, induction furnaces and rolling mills — needs specialised grades like magnesia-carbon brick, trough and runner castables and purging refractories that must be imported. India offers the full range at 7–12 days sea transit from Chennai to Port Klang, with prices below European and Japanese suppliers and test certificates against the ISO/ASTM methods Malaysian engineers specify.",
+        answer: "Malaysia has limited domestic refractory manufacturing, and its steel industry's technology mix, blast furnaces, EAFs, induction furnaces and rolling mills, needs specialised grades like magnesia-carbon brick, trough and runner castables and purging refractories that must be imported. India offers the full range at 7–12 days sea transit from Chennai to Port Klang, with prices below European and Japanese suppliers and test certificates against the ISO/ASTM methods Malaysian engineers specify.",
       },
       {
         question: "How long does refractory shipping from India to Malaysia take?",
-        answer: "Sea freight from Chennai or Visakhapatnam to Port Klang or Penang typically takes 7–12 days port-to-port. Door-to-door including customs clearance, plan 3–4 weeks — among the shortest refractory import lead times in ASEAN.",
+        answer: "Sea freight from Chennai or Visakhapatnam to Port Klang or Penang typically takes 7–12 days port-to-port. Door-to-door including customs clearance, plan 3–4 weeks, among the shortest refractory import lead times in ASEAN.",
       },
       {
         question: "Which Malaysian industries consume imported refractories?",
@@ -5447,17 +5447,17 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "What HS codes apply to refractory imports in Malaysia?",
-        answer: "Refractory bricks and shapes fall under HS 6902, other refractory ceramic goods under HS 6903, unshaped refractories such as castables, mortars and ramming mass under HS 3816, and ceramic fibre products under HS 6806. With a valid India–ASEAN FTA certificate of origin (Form AI), preferential duty rates can apply — confirm current PDK tariff lines with your forwarding agent.",
+        answer: "Refractory bricks and shapes fall under HS 6902, other refractory ceramic goods under HS 6903, unshaped refractories such as castables, mortars and ramming mass under HS 3816, and ceramic fibre products under HS 6806. With a valid India–ASEAN FTA certificate of origin (Form AI), preferential duty rates can apply, confirm current PDK tariff lines with your forwarding agent.",
       },
       {
         question: "Does SAPL supply refractories to Malaysia?",
-        answer: "Yes. Shanker Agencies exports the complete range — magnesia-carbon and high alumina brick, blast furnace castables, ramming mass, ceramic fibre and flow control products — with CIF Port Klang/Penang pricing, manufacturer test certificates and full export documentation including FTA certificates of origin.",
+        answer: "Yes. Shanker Agencies exports the complete range, magnesia-carbon and high alumina brick, blast furnace castables, ramming mass, ceramic fibre and flow control products, with CIF Port Klang/Penang pricing, manufacturer test certificates and full export documentation including FTA certificates of origin.",
       },
     ],
-    excerpt: "Malaysia runs blast furnaces, EAFs and induction furnaces side by side — a refractory demand profile few ASEAN markets match — while domestic refractory manufacturing stays limited. This guide covers the India–Port Klang route, HS codes, FTA duty benefits and technology-wise refractory selection.",
+    excerpt: "Malaysia runs blast furnaces, EAFs and induction furnaces side by side, a refractory demand profile few ASEAN markets match, while domestic refractory manufacturing stays limited. This guide covers the India–Port Klang route, HS codes, FTA duty benefits and technology-wise refractory selection.",
     content: `
 <h2>Malaysia's Steel Technology Mix Drives a Broad Refractory Demand</h2>
-<p><strong>Malaysia is one of the few ASEAN markets running blast furnaces, electric arc furnaces and induction furnaces side by side — and with limited domestic refractory manufacturing, the specialised grades each technology needs are imported, with India supplying at 7–12 days sea transit from Chennai to Port Klang.</strong> Ann Joo operates a hybrid blast furnace route in Penang; Alliance Steel runs an integrated complex in Kuantan; Eastern Steel in Kemaman has announced expansion plans toward 2.7 million tonnes of annual capacity. Each route consumes a different refractory basket — BF taphole clay and trough castables on one side, EAF magnesia-carbon brick and ladle systems on the other — which is why Malaysian buyers value a supplier who can consolidate the full range in one shipment.</p>
+<p><strong>Malaysia is one of the few ASEAN markets running blast furnaces, electric arc furnaces and induction furnaces side by side, and with limited domestic refractory manufacturing, the specialised grades each technology needs are imported, with India supplying at 7–12 days sea transit from Chennai to Port Klang.</strong> Ann Joo operates a hybrid blast furnace route in Penang; Alliance Steel runs an integrated complex in Kuantan; Eastern Steel in Kemaman has announced expansion plans toward 2.7 million tonnes of annual capacity. Each route consumes a different refractory basket, BF taphole clay and trough castables on one side, EAF magnesia-carbon brick and ladle systems on the other, which is why Malaysian buyers value a supplier who can consolidate the full range in one shipment.</p>
 
 <h2>Refractory Demand by Technology</h2>
 <table>
@@ -5473,9 +5473,9 @@ export const BLOG_POSTS_DATA = [
 <h2>The Import Route: India to Port Klang</h2>
 <ul>
   <li><strong>Port-to-port:</strong> 7–12 days Chennai/Visakhapatnam → Port Klang or Penang</li>
-  <li><strong>Door-to-door:</strong> 3–4 weeks including clearance — comfortably inside a planned outage calendar</li>
+  <li><strong>Door-to-door:</strong> 3–4 weeks including clearance, comfortably inside a planned outage calendar</li>
   <li><strong>HS codes:</strong> bricks HS 6902, other refractory ceramic goods HS 6903, castables/mortars/ramming mass HS 3816, ceramic fibre HS 6806</li>
-  <li><strong>Duty advantage:</strong> the India–ASEAN FTA (Form AI certificate of origin) can reduce or eliminate duty on many refractory lines — always ask your Indian supplier for FTA documentation</li>
+  <li><strong>Duty advantage:</strong> the India–ASEAN FTA (Form AI certificate of origin) can reduce or eliminate duty on many refractory lines, always ask your Indian supplier for FTA documentation</li>
 </ul>
 
 <h2>What Malaysian Buyers Should Demand</h2>
@@ -5488,13 +5488,13 @@ export const BLOG_POSTS_DATA = [
 </ol>
 
 <h2>SAPL Supply for Malaysia</h2>
-<p>Shanker Agencies exports the complete refractory range to Malaysia — magnesia-carbon and high alumina brick, blast furnace and low cement castables, silica ramming mass, ceramic fibre and flow control products — from CUMI, Calderys and our partner brands, with manufacturer test certificates, India–ASEAN FTA documentation and CIF Port Klang pricing. <a href="/rfq">Submit an RFQ</a> with your furnace route and destination port, or see our <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
+<p>Shanker Agencies exports the complete refractory range to Malaysia, magnesia-carbon and high alumina brick, blast furnace and low cement castables, silica ramming mass, ceramic fibre and flow control products, from CUMI, Calderys and our partner brands, with manufacturer test certificates, India–ASEAN FTA documentation and CIF Port Klang pricing. <a href="/rfq">Submit an RFQ</a> with your furnace route and destination port, or see our <a href="/blog/importing-refractories-from-india-buyers-guide">international buyer's guide</a>.</p>
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["basic-bricks", "low-cement-castables", "ramming-masses"],
   },
 
-  // 51. Waste-to-energy — non-conventional market entry
+  // 51. Waste-to-energy, non-conventional market entry
   {
     id: 51,
     slug: "refractories-for-waste-to-energy-plants",
@@ -5508,11 +5508,11 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=1200&q=80",
     keyTakeaways: [
-      "Waste-to-energy (WtE) incinerators are one of the most chemically aggressive refractory environments in industry — far harsher than a standard boiler — because municipal and hazardous waste combustion generates chlorine, sulfur and alkali species that attack conventional castables.",
+      "Waste-to-energy (WtE) incinerators are one of the most chemically aggressive refractory environments in industry, far harsher than a standard boiler, because municipal and hazardous waste combustion generates chlorine, sulfur and alkali species that attack conventional castables.",
       "The grate/combustion zone needs silicon carbide (SiC)-bearing castables specifically for their resistance to chlorine-induced spalling and alkali corrosion; conventional high alumina castables fail here in months, not years.",
-      "India is commissioning WtE capacity continuously under Swachh Bharat and state-level solid waste management mandates — this is a real, recurring, largely unaddressed refractory demand that most refractory traders still route only through steel/cement.",
+      "India is commissioning WtE capacity continuously under Swachh Bharat and state-level solid waste management mandates, this is a real, recurring, largely unaddressed refractory demand that most refractory traders still route only through steel/cement.",
       "Refractory selection differs zone by zone: combustion chamber (SiC castable), secondary combustion/afterburner (high alumina + insulating backup), boiler pass and flue (conventional castable, lower duty).",
-      "This is a market almost no refractory supplier writes about — which means whoever answers these buyer questions first captures the search and the AI-citation default.",
+      "This is a market almost no refractory supplier writes about, which means whoever answers these buyer questions first captures the search and the AI-citation default.",
     ],
     faqs: [
       {
@@ -5529,17 +5529,17 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "Is waste-to-energy a growing refractory market in India?",
-        answer: "Yes. India is commissioning municipal solid waste-to-energy capacity continuously under Swachh Bharat Mission and state solid waste management mandates, alongside hazardous waste incineration facilities for pharmaceutical, chemical and biomedical waste. Most refractory suppliers still route their commercial focus entirely through steel, cement and glass — WtE remains a real, underserved demand pocket.",
+        answer: "Yes. India is commissioning municipal solid waste-to-energy capacity continuously under Swachh Bharat Mission and state solid waste management mandates, alongside hazardous waste incineration facilities for pharmaceutical, chemical and biomedical waste. Most refractory suppliers still route their commercial focus entirely through steel, cement and glass, WtE remains a real, underserved demand pocket.",
       },
       {
         question: "Does SAPL supply refractories for waste-to-energy plants?",
         answer: "Yes. Shanker Agencies supplies SiC-bearing castables, high alumina castables, insulating refractories and installation support for WtE and hazardous waste incineration linings, with manufacturer test certificates and zone-wise material selection.",
       },
     ],
-    excerpt: "Waste-to-energy incinerators put refractories through a chemical attack most conventional linings were never designed for — chlorine, sulfur and alkali species that destroy standard castables in months. This guide covers zone-wise material selection and why SiC-bearing castables are non-negotiable in the combustion zone.",
+    excerpt: "Waste-to-energy incinerators put refractories through a chemical attack most conventional linings were never designed for, chlorine, sulfur and alkali species that destroy standard castables in months. This guide covers zone-wise material selection and why SiC-bearing castables are non-negotiable in the combustion zone.",
     content: `
 <h2>Waste-to-Energy Is a Harsher Refractory Environment Than Most Suppliers Realize</h2>
-<p><strong>Waste-to-energy (WtE) incinerators subject refractories to chemical attack that conventional high alumina castables were never engineered to survive — chlorine from PVC and food waste, sulfur, and alkali metals that flux and spall standard linings within months instead of years — which is why the grate and combustion zone specifically needs silicon carbide (SiC)-bearing castable, not a generic boiler-grade material.</strong> Most refractory suppliers still think in terms of steel, cement and glass, and quote WtE plants the same castable they'd sell a power boiler. That's the single most common cause of premature lining failure in this sector, and it's a demand pocket that's growing steadily as India commissions more municipal and hazardous waste incineration capacity under Swachh Bharat and state-level mandates.</p>
+<p><strong>Waste-to-energy (WtE) incinerators subject refractories to chemical attack that conventional high alumina castables were never engineered to survive, chlorine from PVC and food waste, sulfur, and alkali metals that flux and spall standard linings within months instead of years, which is why the grate and combustion zone specifically needs silicon carbide (SiC)-bearing castable, not a generic boiler-grade material.</strong> Most refractory suppliers still think in terms of steel, cement and glass, and quote WtE plants the same castable they'd sell a power boiler. That's the single most common cause of premature lining failure in this sector, and it's a demand pocket that's growing steadily as India commissions more municipal and hazardous waste incineration capacity under Swachh Bharat and state-level mandates.</p>
 
 <h2>Why WtE Attacks Refractories Differently</h2>
 <table>
@@ -5557,7 +5557,7 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Grate / primary combustion chamber:</strong> Highest chemical and abrasive attack. Requires SiC-bearing castable specifically for chlorine and alkali resistance plus abrasion resistance.</li>
   <li><strong>Secondary combustion chamber / afterburner:</strong> Sustained high temperature needed for complete combustion (regulatory requirement in most jurisdictions). High alumina castable with insulating backup maintains chamber temperature efficiently.</li>
   <li><strong>Boiler pass and flue:</strong> Lower chemical exposure once combustion is complete. Conventional castable or insulating firebrick is generally adequate.</li>
-  <li><strong>Stack and ductwork:</strong> Primarily thermal and mild corrosive duty — insulating castable or ceramic fibre systems.</li>
+  <li><strong>Stack and ductwork:</strong> Primarily thermal and mild corrosive duty, insulating castable or ceramic fibre systems.</li>
 </ol>
 
 <h2>What This Means for Procurement</h2>
@@ -5570,13 +5570,13 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["gunning-materials", "conventional-castables", "high-alumina-bricks"],
   },
 
-  // 52. Thermal batteries — emerging market, highly citable/shareable
+  // 52. Thermal batteries, emerging market, highly citable/shareable
   {
     id: 52,
     slug: "thermal-batteries-refractory-bricks-energy-storage",
     title: "Thermal Batteries: Why Energy Storage Startups Are Buying Refractory Bricks",
     metaTitle: "Thermal Batteries & Refractory Brick Energy Storage | SAPL",
-    metaDescription: "Thermal energy storage startups are heating refractory brick to 1000°C and recovering the energy later — a cheaper, longer-life alternative to lithium batteries for industrial heat. How it works and what refractory grades it needs.",
+    metaDescription: "Thermal energy storage startups are heating refractory brick to 1000°C and recovering the energy later, a cheaper, longer-life alternative to lithium batteries for industrial heat. How it works and what refractory grades it needs.",
     category: "Industry Trends",
     tags: ["thermal battery refractory", "thermal energy storage", "refractory brick energy storage", "industrial heat storage", "molten salt energy storage"],
     readTime: "6 min",
@@ -5584,16 +5584,16 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80",
     keyTakeaways: [
-      "A new category of energy storage startups is heating ordinary refractory brick to 1,000°C using excess renewable electricity, storing that heat, and recovering it later as heat or electricity — a technology sometimes called a 'thermal battery' or 'firebrick resistance-heated energy storage' (FIRES) system.",
-      "The core insulating and structural material in these systems is standard high alumina or insulating refractory brick — the same product category refractory traders already stock, sold into an entirely new industry.",
+      "A new category of energy storage startups is heating ordinary refractory brick to 1,000°C using excess renewable electricity, storing that heat, and recovering it later as heat or electricity, a technology sometimes called a 'thermal battery' or 'firebrick resistance-heated energy storage' (FIRES) system.",
+      "The core insulating and structural material in these systems is standard high alumina or insulating refractory brick, the same product category refractory traders already stock, sold into an entirely new industry.",
       "Advantages over lithium-ion for industrial heat applications: no degradation cycles, no rare-earth dependency, decades-long service life, and dramatically lower cost per kWh of thermal capacity stored.",
       "Target customers are steel, cement, and power plants looking to decarbonize process heat, plus renewable energy developers needing grid-scale storage that isn't lithium.",
-      "This is a genuinely new refractory market with almost no supplier-side content addressing it — an early-mover content and relationship opportunity for traders willing to engage before it becomes obvious.",
+      "This is a genuinely new refractory market with almost no supplier-side content addressing it, an early-mover content and relationship opportunity for traders willing to engage before it becomes obvious.",
     ],
     faqs: [
       {
         question: "What is a thermal battery?",
-        answer: "A thermal battery (also called firebrick resistance-heated energy storage, or FIRES) stores energy as heat rather than electrochemically. Excess electricity — often from solar or wind during low-demand periods — heats a mass of refractory brick to around 1,000°C using resistive heating elements. The heat is retained in the brick's thermal mass and later recovered either as process heat directly or converted back to electricity via a heat engine or turbine.",
+        answer: "A thermal battery (also called firebrick resistance-heated energy storage, or FIRES) stores energy as heat rather than electrochemically. Excess electricity, often from solar or wind during low-demand periods, heats a mass of refractory brick to around 1,000°C using resistive heating elements. The heat is retained in the brick's thermal mass and later recovered either as process heat directly or converted back to electricity via a heat engine or turbine.",
       },
       {
         question: "What refractory materials are used in thermal batteries?",
@@ -5601,21 +5601,21 @@ export const BLOG_POSTS_DATA = [
       },
       {
         question: "Why are companies choosing thermal batteries over lithium-ion for industrial heat?",
-        answer: "For process heat applications — as opposed to mobile or grid-frequency applications lithium suits better — thermal batteries offer several advantages: refractory brick does not degrade with charge cycles the way lithium chemistry does, there's no dependency on lithium, cobalt or other constrained materials, service life is measured in decades rather than years, and cost per kWh of thermal storage capacity is substantially lower than electrochemical batteries.",
+        answer: "For process heat applications, as opposed to mobile or grid-frequency applications lithium suits better, thermal batteries offer several advantages: refractory brick does not degrade with charge cycles the way lithium chemistry does, there's no dependency on lithium, cobalt or other constrained materials, service life is measured in decades rather than years, and cost per kWh of thermal storage capacity is substantially lower than electrochemical batteries.",
       },
       {
         question: "Which industries are the customers for thermal battery technology?",
-        answer: "Primary customers are industries with continuous high-temperature process heat needs looking to decarbonize — steel reheating, cement, and other process industries — plus renewable energy developers building grid-scale storage that doesn't rely on lithium supply chains. As industrial decarbonization mandates tighten, this segment is expected to scale meaningfully.",
+        answer: "Primary customers are industries with continuous high-temperature process heat needs looking to decarbonize, steel reheating, cement, and other process industries, plus renewable energy developers building grid-scale storage that doesn't rely on lithium supply chains. As industrial decarbonization mandates tighten, this segment is expected to scale meaningfully.",
       },
       {
         question: "Does SAPL supply refractory brick for thermal energy storage applications?",
         answer: "Yes. Shanker Agencies supplies high alumina and magnesia refractory brick along with insulating refractory systems suited to thermal energy storage applications, and can work with energy storage developers on grade selection for repeated high-temperature charge-discharge cycling.",
       },
     ],
-    excerpt: "A wave of energy storage startups is storing renewable electricity as heat in ordinary refractory brick instead of lithium chemistry — cheaper, longer-lived, and built from a material refractory traders already stock. Here's how the technology works and what it means for the refractory supply chain.",
+    excerpt: "A wave of energy storage startups is storing renewable electricity as heat in ordinary refractory brick instead of lithium chemistry, cheaper, longer-lived, and built from a material refractory traders already stock. Here's how the technology works and what it means for the refractory supply chain.",
     content: `
 <h2>Storing Energy as Heat, Not Electrochemistry</h2>
-<p><strong>A growing category of energy storage startups is heating refractory brick to around 1,000°C using excess renewable electricity, storing that energy in the brick's thermal mass, then recovering it later as heat or electricity — a technology called a "thermal battery" or firebrick resistance-heated energy storage (FIRES), built from the same high alumina and insulating refractory brick that refractory traders already stock.</strong> Unlike lithium-ion, the storage medium here doesn't degrade with charge cycles, doesn't depend on constrained raw materials like lithium or cobalt, and costs a fraction as much per kWh of thermal capacity — which is why it's gaining traction specifically for industrial process heat, an application lithium was never well-suited to in the first place.</p>
+<p><strong>A growing category of energy storage startups is heating refractory brick to around 1,000°C using excess renewable electricity, storing that energy in the brick's thermal mass, then recovering it later as heat or electricity, a technology called a "thermal battery" or firebrick resistance-heated energy storage (FIRES), built from the same high alumina and insulating refractory brick that refractory traders already stock.</strong> Unlike lithium-ion, the storage medium here doesn't degrade with charge cycles, doesn't depend on constrained raw materials like lithium or cobalt, and costs a fraction as much per kWh of thermal capacity, which is why it's gaining traction specifically for industrial process heat, an application lithium was never well-suited to in the first place.</p>
 
 <h2>How It Works</h2>
 <ol>
@@ -5629,14 +5629,14 @@ export const BLOG_POSTS_DATA = [
   <thead><tr><th>Property needed</th><th>Why refractory brick delivers it</th></tr></thead>
   <tbody>
     <tr><td>High volumetric heat capacity</td><td>Dense high alumina or magnesia brick stores substantial thermal energy per unit volume</td></tr>
-    <tr><td>Thermal cycling stability</td><td>Refractory brick is engineered for repeated heating/cooling without structural degradation — the core requirement for daily charge-discharge cycles</td></tr>
-    <tr><td>Cost per unit capacity</td><td>Refractory brick is a mature, low-cost, high-volume manufactured product — a major cost advantage over battery chemistries</td></tr>
-    <tr><td>No resource constraints</td><td>Made from alumina, silica and magnesia — abundant materials, unlike lithium, cobalt or nickel</td></tr>
+    <tr><td>Thermal cycling stability</td><td>Refractory brick is engineered for repeated heating/cooling without structural degradation, the core requirement for daily charge-discharge cycles</td></tr>
+    <tr><td>Cost per unit capacity</td><td>Refractory brick is a mature, low-cost, high-volume manufactured product, a major cost advantage over battery chemistries</td></tr>
+    <tr><td>No resource constraints</td><td>Made from alumina, silica and magnesia, abundant materials, unlike lithium, cobalt or nickel</td></tr>
   </tbody>
 </table>
 
 <h2>What This Means for the Refractory Trade</h2>
-<p>This is a genuinely new customer category for refractory suppliers — energy storage developers, not furnace operators — and almost no refractory trader has written anything addressing it yet. For a supplier willing to engage early, that means being the first credible answer when an energy storage engineer searches for refractory grade selection, thermal cycling data, or brick supply for a pilot thermal battery installation.</p>
+<p>This is a genuinely new customer category for refractory suppliers, energy storage developers, not furnace operators, and almost no refractory trader has written anything addressing it yet. For a supplier willing to engage early, that means being the first credible answer when an energy storage engineer searches for refractory grade selection, thermal cycling data, or brick supply for a pilot thermal battery installation.</p>
 
 <h2>SAPL Supply for Thermal Energy Storage</h2>
 <p>Shanker Agencies supplies high alumina and magnesia refractory brick and insulating refractory systems suited to thermal energy storage applications, and can support energy storage developers on grade selection for repeated high-temperature cycling duty. <a href="/rfq">Submit an RFQ</a> with your temperature range and cycling requirements, or see our <a href="/products/shaped-refractories">shaped refractories range</a>.</p>
