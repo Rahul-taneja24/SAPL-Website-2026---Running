@@ -356,9 +356,9 @@ export default async function BlogArticlePage({ params }) {
                 <div className="space-y-2">
                   {[
                     { label: 'High Alumina Bricks', href: '/products/shaped-refractories/high-alumina-bricks' },
-                    { label: 'LCC / ULCC Castables', href: '/products/unshaped-refractories/low-cement-castable' },
-                    { label: 'Ceramic Fiber Blankets', href: '/products/insulation/ceramic-fibre-blanket' },
-                    { label: 'Ramming Mass', href: '/products/unshaped-refractories/ramming-mass' },
+                    { label: 'LCC / ULCC Castables', href: '/products/unshaped-refractories/low-cement-castables' },
+                    { label: 'Ceramic Fiber Blankets', href: '/products/insulation/ceramic-fiber-products' },
+                    { label: 'Ramming Mass', href: '/products/unshaped-refractories/ramming-masses' },
                     { label: 'Slide Gate Plates', href: '/products/flow-control/slide-gate-plates' },
                     { label: 'Acid Proof Bricks', href: '/products/acid-proofing/acid-proof-bricks' },
                     { label: 'MgO-C Bricks', href: '/products' },

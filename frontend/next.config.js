@@ -90,6 +90,19 @@ const nextConfig = {
         destination: 'https://www.shankeragencies.com/:path*',
         statusCode: 301,
       },
+      // /industries/[slug] pages duplicated /solutions/[slug] and had zero
+      // internal links (orphans in the 18-Jul-2026 crawl audit). Consolidate
+      // the duplicate route onto /solutions permanently.
+      {
+        source: '/industries',
+        destination: '/solutions',
+        permanent: true,
+      },
+      {
+        source: '/industries/:slug',
+        destination: '/solutions/:slug',
+        permanent: true,
+      },
       // /brands/ifgl was removed — redirect to flow-control category
       {
         source: '/brands/ifgl',

@@ -90,8 +90,8 @@ export const NEWS_ARTICLES = [
     ],
     relatedProducts: [
       { label: "High Alumina Bricks", href: "/products/shaped-refractories/high-alumina-bricks" },
-      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castable" },
-      { label: "Ramming Mass", href: "/products/unshaped-refractories/ramming-mass" },
+      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castables" },
+      { label: "Ramming Mass", href: "/products/unshaped-refractories/ramming-masses" },
     ],
     content: `
 <h2>What happened</h2>
@@ -110,7 +110,7 @@ export const NEWS_ARTICLES = [
 <p>Where alumina-based requirements are predictable, this is a reasonable window to commit volume while input costs are soft. Treat magnesia as a policy risk, not just a price: qualify a second source on critical MgO-C grades, keep safety stock on the grades tied to unplanned relines, and watch Chinese export notifications. Evaluate offers on delivered <strong>cost-per-heat and lining life</strong> — a cheaper brick that shortens a campaign is more expensive per tonne of steel.</p>
 
 <h2>SAPL perspective</h2>
-<p>From 45+ years supplying Indian plants, the pattern is familiar: raw-material swings reward buyers who plan by lining type rather than by headline index. For alumina-based needs — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castable">LCC/ULCC castables</a> and kiln linings — a soft bauxite market is a good moment to firm up requirements. For foundry and induction-melting operations, <a href="/products/unshaped-refractories/ramming-mass">ramming mass</a> selection is driven more by melt chemistry than by these price moves. The right response is a sourcing plan matched to each furnace, which our engineers can review against your heat data.</p>
+<p>From 45+ years supplying Indian plants, the pattern is familiar: raw-material swings reward buyers who plan by lining type rather than by headline index. For alumina-based needs — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> and kiln linings — a soft bauxite market is a good moment to firm up requirements. For foundry and induction-melting operations, <a href="/products/unshaped-refractories/ramming-masses">ramming mass</a> selection is driven more by melt chemistry than by these price moves. The right response is a sourcing plan matched to each furnace, which our engineers can review against your heat data.</p>
 
 <h2>Supporting statistics</h2>
 <ul>
@@ -198,7 +198,7 @@ export const NEWS_ARTICLES = [
     ],
     relatedProducts: [
       { label: "High Alumina Bricks", href: "/products/shaped-refractories/high-alumina-bricks" },
-      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castable" },
+      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castables" },
       { label: "Steel Plant Solutions", href: "/solutions/steel" },
     ],
     content: `
@@ -225,7 +225,7 @@ export const NEWS_ARTICLES = [
 <p>Plan supply against each furnace's install and reline calendar rather than spot orders. Qualify suppliers early for the recurring grades — high-alumina brick, alumina and SiC castables, and stove and trough monolithics — and hold buffer stock for planned cast-house and stove maintenance. A demand wave this size can tighten lead times, so lock critical grades ahead of scheduled outages. Evaluate on installed performance and campaign life, not headline price per tonne: a trough castable that lasts more casts lowers cost per tonne of hot metal even at a higher unit price.</p>
 
 <h2>SAPL perspective</h2>
-<p>From 45+ years serving Indian steel plants, a capacity wave rewards buyers who treat refractories as a planned, calendar-driven spend. SAPL supplies the recurring high-volume side of this demand — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castable">LCC/ULCC castables</a> and monolithics used across cast-house, stove and back-up linings — and works with plants on grade selection matched to each zone's duty. Our <a href="/solutions/steel">steel plant solutions</a> outline how the lining zones map to material choices. The engineering aim is longer campaigns and predictable maintenance, not the lowest unit price.</p>
+<p>From 45+ years serving Indian steel plants, a capacity wave rewards buyers who treat refractories as a planned, calendar-driven spend. SAPL supplies the recurring high-volume side of this demand — <a href="/products/shaped-refractories/high-alumina-bricks">high alumina bricks</a>, <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> and monolithics used across cast-house, stove and back-up linings — and works with plants on grade selection matched to each zone's duty. Our <a href="/solutions/steel">steel plant solutions</a> outline how the lining zones map to material choices. The engineering aim is longer campaigns and predictable maintenance, not the lowest unit price.</p>
 
 <h2>Supporting statistics</h2>
 <ul>
@@ -309,8 +309,8 @@ export const NEWS_ARTICLES = [
       },
     ],
     relatedProducts: [
-      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castable" },
-      { label: "Ceramic Fibre Blanket", href: "/products/insulation/ceramic-fibre-blanket" },
+      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castables" },
+      { label: "Ceramic Fibre Blanket", href: "/products/insulation/ceramic-fiber-products" },
       { label: "Cement Plant Solutions", href: "/solutions/cement" },
     ],
     content: `
@@ -337,7 +337,7 @@ export const NEWS_ARTICLES = [
 <p>With commissioning targeted for Q3 FY28, this is a plan-ahead signal rather than an immediate order. Kiln and precalciner refractory specification, along with insulation scope for the WHR system, typically gets locked during detailed engineering — well before civil and mechanical work is complete. Suppliers and EPC-side procurement teams should begin grade qualification and lead-time planning now rather than waiting for tender close closer to commissioning, particularly for high-alumina and insulating castable grades where demand can cluster across multiple regional projects on similar timelines. Maintenance teams inheriting the new line should also plan first-reline budgets around the burning-zone brick from day one of commissioning, since basic-brick campaigns in a new kiln are harder to forecast than in an established, already-characterized line.</p>
 
 <h2>SAPL perspective</h2>
-<p>From decades supplying Indian cement plants, capacity expansions of this scale follow a predictable engineering sequence: kiln and precalciner lining specification comes early, well ahead of the commissioning date that makes headlines. SAPL supplies the recurring side of that scope — <a href="/products/unshaped-refractories/low-cement-castable">LCC/ULCC castables</a> for transition and precalciner zones and <a href="/products/insulation/ceramic-fibre-blanket">ceramic fibre insulation</a> for backup and duct lining — and our <a href="/solutions/cement">cement plant solutions</a> map how these zones interact with kiln design. This is engineering context on a public capex announcement, not a pitch tied to this specific project.</p>
+<p>From decades supplying Indian cement plants, capacity expansions of this scale follow a predictable engineering sequence: kiln and precalciner lining specification comes early, well ahead of the commissioning date that makes headlines. SAPL supplies the recurring side of that scope — <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> for transition and precalciner zones and <a href="/products/insulation/ceramic-fiber-products">ceramic fibre insulation</a> for backup and duct lining — and our <a href="/solutions/cement">cement plant solutions</a> map how these zones interact with kiln design. This is engineering context on a public capex announcement, not a pitch tied to this specific project.</p>
 
 <h2>Supporting statistics</h2>
 <ul>

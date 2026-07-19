@@ -125,7 +125,7 @@ export const PRODUCT_CATEGORIES = [
     shortDesc: "Custom and specialized refractory solutions",
     productCount: "Variable",
     image: IMAGES.categories.specialGrades,
-    path: "/products/special-grades"
+    path: "/products"
   }
 ];
 

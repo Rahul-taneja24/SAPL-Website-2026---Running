@@ -7,9 +7,9 @@ story's material/sector to the relevant cluster below and link naturally in-body
 | Cluster | Primary URL | Link when the story touches… |
 |---|---|---|
 | High Alumina Bricks | `/products/shaped-refractories/high-alumina-bricks` | bauxite, alumina, kiln/furnace lining, cement |
-| Castables (LCC/ULCC) | `/products/unshaped-refractories/low-cement-castable` | monolithics, boiler, petrochem, repairs |
-| Ramming Mass | `/products/unshaped-refractories/ramming-mass` | induction furnace, foundry, steel melting |
-| Ceramic Fibre Blanket | `/products/insulation/ceramic-fibre-blanket` | insulation, heat recovery, energy efficiency |
+| Castables (LCC/ULCC) | `/products/unshaped-refractories/low-cement-castables` | monolithics, boiler, petrochem, repairs |
+| Ramming Mass | `/products/unshaped-refractories/ramming-masses` | induction furnace, foundry, steel melting |
+| Ceramic Fibre Blanket | `/products/insulation/ceramic-fiber-products` | insulation, heat recovery, energy efficiency |
 | Slide Gate Plates | `/products/flow-control/slide-gate-plates` | continuous casting, steel flow control |
 | Acid Proof Bricks | `/products/acid-proofing/acid-proof-bricks` | corrosion, chemical, FGD, petrochem |
 | MgO-C Bricks | `/products` | magnesia, chrome ore, steel ladle/BOF, EAF |

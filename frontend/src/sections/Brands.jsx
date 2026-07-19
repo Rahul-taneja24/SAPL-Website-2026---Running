@@ -188,11 +188,16 @@ function BrandCard({ brand, onClick }) {
           <span className="px-2.5 py-1 bg-blue-50 text-[#3B82F6] text-xs rounded-full">{brand.industries.slice(0, 2).join(", ")}{brand.industries.length > 2 ? ` +${brand.industries.length - 2}` : ""}</span>
         </div>
 
-        {/* CTA */}
+        {/* CTA — a real href so /brands/[slug] pages are crawlable (they were
+            orphans when this was click-state only) */}
         <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-          <span className="text-sm font-semibold text-[#F97316] flex items-center gap-1.5 group-hover:gap-2.5 transition-all">
+          <Link
+            href={`/brands/${{ crown: 'crown-ceramics', divine: 'divine-cerawool' }[brand.id] || brand.id}`}
+            onClick={(e) => e.stopPropagation()}
+            className="text-sm font-semibold text-[#F97316] flex items-center gap-1.5 group-hover:gap-2.5 transition-all"
+          >
             View Details <ArrowRight size={14} aria-hidden="true" />
-          </span>
+          </Link>
           {brand.website && (
             <a
               href={brand.website}
@@ -377,7 +382,12 @@ function BrandDetail({ brand, onBack }) {
 
 function Brands() {
   const { brandSlug } = useParams();
-  const [selectedBrand, setSelectedBrand] = useState(brandSlug || null);
+  // Route slugs differ from two internal ids (crown-ceramics→crown,
+  // divine-cerawool→divine); without this map those /brands/* URLs rendered
+  // the index grid instead of the brand detail.
+  const ROUTE_TO_ID = { 'crown-ceramics': 'crown', 'divine-cerawool': 'divine' };
+  const initialId = brandSlug ? (ROUTE_TO_ID[brandSlug] || brandSlug) : null;
+  const [selectedBrand, setSelectedBrand] = useState(initialId);
   const [filterIndustry, setFilterIndustry] = useState("All");
 
   const brand = selectedBrand ? brandsData.find((b) => b.id === selectedBrand) : null;

@@ -30,7 +30,6 @@ export default async function sitemap() {
     { url: `${BASE}/about`,                     lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/products`,                  lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/brands`,                    lastModified: STRUCTURAL_LASTMOD },
-    { url: `${BASE}/industries`,                lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/solutions`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/knowledge`,                 lastModified: STRUCTURAL_LASTMOD },
     { url: `${BASE}/blog`,                      lastModified: STRUCTURAL_LASTMOD },
@@ -54,9 +53,7 @@ export default async function sitemap() {
     lastModified: STRUCTURAL_LASTMOD,
   }));
 
-  const industryPages = [
-    'steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic',
-  ].map((slug) => ({ url: `${BASE}/industries/${slug}`, lastModified: STRUCTURAL_LASTMOD }));
+  // /industries/* now 301s to /solutions/* (crawl-audit consolidation) — not in sitemap.
 
   const solutionPages = [
     'steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic',
@@ -138,7 +135,6 @@ export default async function sitemap() {
     ...mainPages,
     ...categoryPages,
     ...productPages,
-    ...industryPages,
     ...solutionPages,
     ...brandPages,
     ...locationPages,

@@ -308,7 +308,14 @@ export default async function LocationPage({ params }) {
   };
 
   const industryLabel = (id) =>
-    ({ steel: 'Iron & Steel', cement: 'Cement', aluminum: 'Aluminum', petrochemical: 'Petrochemical', power: 'Power Generation', glass: 'Glass' })[id] || id;
+    ({ steel: 'Iron & Steel', cement: 'Cement', aluminum: 'Aluminum', petrochemical: 'Petrochemical', power: 'Power Generation', glass: 'Glass', foundry: 'Foundry', ceramic: 'Ceramics' })[id] || id;
+
+  // Only these slugs have real /solutions/* pages. Location data lists extra
+  // sectors (textile, pharma, mining, …) for prose; linking them 404s.
+  // "aluminium" is a recurring data typo for the "aluminum" route.
+  const SOLUTION_SLUGS = new Set(['steel', 'cement', 'aluminum', 'glass', 'petrochemical', 'power', 'foundry', 'ceramic']);
+  const linkableIndustries = [...new Set(industries.map((i) => (i === 'aluminium' ? 'aluminum' : i)))]
+    .filter((i) => SOLUTION_SLUGS.has(i));
 
   return (
     <>
@@ -491,7 +498,7 @@ export default async function LocationPage({ params }) {
           <p className="text-gray-600 mb-10 max-w-3xl">{content.industries}</p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-            {industries.map((ind) => (
+            {linkableIndustries.map((ind) => (
               <Link
                 key={ind}
                 href={`/solutions/${ind}`}

@@ -101,8 +101,11 @@ function PostCard({ post, featured = false }) {
 }
 
 export default function BlogPage() {
+  // Only ONE post gets the featured hero slot; every other post (including
+  // additional featured:true posts — there are several) must still render in
+  // the grid, or they become orphan pages with zero internal links.
   const featuredPost = BLOG_POSTS_DATA.find((p) => p.featured);
-  const otherPosts = BLOG_POSTS_DATA.filter((p) => !p.featured);
+  const otherPosts = BLOG_POSTS_DATA.filter((p) => p.slug !== featuredPost?.slug);
 
   const webPageSchema = {
     '@context': 'https://schema.org',
