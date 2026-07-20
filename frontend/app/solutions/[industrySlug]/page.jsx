@@ -58,7 +58,7 @@ export async function generateMetadata({ params }) {
   const title = `${name} Refractory Solutions | Shanker Agencies`;
   const description = `Lining design, grade selection and installation support for ${name.toLowerCase()} plants. Plant-side engineering help from Shanker Agencies since 1980, partnered with CUMI, TRL Krosaki, Calderys and Mahakoshal.`;
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/solutions/${industrySlug}`,

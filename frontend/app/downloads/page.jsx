@@ -1,7 +1,7 @@
 import Downloads from '@/sections/Downloads';
 
 export const metadata = {
-  title: 'Technical Datasheets & Downloads | Shanker Agencies',
+  title: { absolute: 'Technical Datasheets & Downloads | Shanker Agencies' },
   description: 'Download technical datasheets, installation guides and heat-up schedules for high alumina bricks, LCC castables, ceramic fiber, ramming mass and slide gate plates.',
   alternates: { canonical: '/downloads' },
   openGraph: {

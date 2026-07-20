@@ -18,8 +18,11 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: `/ar/refractory-supplier-in/${locationSlug}`,
       languages: {
-        en: `https://www.shankeragencies.com/refractory-supplier-in/${locationSlug}`,
+        // Must match the EN page's own self-referencing code (en-IN) exactly
+        // for the hreflang pair to be reciprocal.
+        'en-IN': `https://www.shankeragencies.com/refractory-supplier-in/${locationSlug}`,
         ar: `https://www.shankeragencies.com/ar/refractory-supplier-in/${locationSlug}`,
+        'x-default': `https://www.shankeragencies.com/refractory-supplier-in/${locationSlug}`,
       },
     },
     openGraph: {

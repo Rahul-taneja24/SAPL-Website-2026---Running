@@ -27,7 +27,7 @@ export async function generateMetadata({ params }) {
       .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
       .join(' ');
     return {
-      title: `${name} | Refractory Products | Shanker Agencies`,
+      title: { absolute: `${name} | Refractory Products | Shanker Agencies` },
       description: `${name}, premium refractory product from Shanker Agencies Pvt. Ltd. 45+ years of refractory engineering expertise. Supply across India, GCC & ASEAN.`,
       alternates: { canonical: `/products/${categorySlug}/${productId}` },
     };

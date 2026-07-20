@@ -124,6 +124,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // NOTE: /ar/* pages ideally want lang="ar" dir="rtl" on this <html> tag
+  // (flagged by hreflang audits as a mismatch). That requires reading the
+  // request path here, but any dynamic API (headers(), cookies()) in the
+  // root layout opts the ENTIRE site out of static rendering — a much
+  // larger regression than the mismatch itself. Left as "en" site-wide;
+  // app/ar/layout.jsx's <div lang="ar" dir="rtl"> wrapper covers the actual
+  // Arabic content, and the hreflang <link> tags (the primary signal Google
+  // uses) are correctly reciprocal. Revisit only via a route-groups
+  // restructure (separate root layouts per locale), not a quick fix here.
   return (
     <html lang="en" suppressHydrationWarning className={`${oswald.variable} ${inter.variable}`}>
       <head>

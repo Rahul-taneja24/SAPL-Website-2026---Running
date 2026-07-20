@@ -6,7 +6,7 @@ import {
 import { LOCATIONS_DATA, getAllRegions, getLocationsByRegion } from '@/data/locationsData';
 
 export const metadata = {
-  title: 'Refractory Supplier Locations | Shanker Agencies',
+  title: { absolute: 'Refractory Supplier Locations | Shanker Agencies' },
   description:
     'Shanker Agencies supplies refractory bricks, castables, insulation and acid proof materials across India and 50+ countries. CUMI, Crown Ceramics & Divine Cerawool dealer.',
   alternates: { canonical: '/refractory-supplier-in' },

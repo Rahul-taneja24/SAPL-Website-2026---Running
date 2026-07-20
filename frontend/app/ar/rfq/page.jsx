@@ -8,7 +8,11 @@ export const metadata = {
     'أرسل طلب عرض سعر منظّم للمواد الحرارية: المنتج والدرجة والكمية وميناء الوصول وشروط الشحن. توريد بالجملة من الهند إلى دول الخليج مع شهادات اختبار المصنع.',
   alternates: {
     canonical: '/ar/rfq',
-    languages: { en: 'https://www.shankeragencies.com/rfq', ar: 'https://www.shankeragencies.com/ar/rfq' },
+    languages: {
+      en: 'https://www.shankeragencies.com/rfq',
+      ar: 'https://www.shankeragencies.com/ar/rfq',
+      'x-default': 'https://www.shankeragencies.com/rfq',
+    },
   },
   openGraph: {
     title: 'اطلب عرض سعر للمواد الحرارية | شانكر أجنسيز',

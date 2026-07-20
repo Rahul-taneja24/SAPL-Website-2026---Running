@@ -3,7 +3,7 @@ import { Calendar, Clock, ArrowRight, BookOpen, Tag, ChevronRight } from 'lucide
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 
 export const metadata = {
-  title: 'Refractory Engineering Blog | Shanker Agencies',
+  title: { absolute: 'Refractory Engineering Blog | Shanker Agencies' },
   description: 'Technical guides on refractory selection, installation and performance. High alumina bricks, castables, ramming mass, ceramic fiber, steel ladle and kiln linings.',
   alternates: { canonical: '/blog' },
   openGraph: {

@@ -7,7 +7,11 @@ export const metadata = {
     'شانكر أجنسيز — مورّد المواد الحرارية من الهند إلى دول الخليج منذ 1980. طوب حراري، خرسانات، ألياف سيراميكية وحراريات التحكم في التدفق مع شهادات اختبار المصنع وتسعير CIF.',
   alternates: {
     canonical: '/ar',
-    languages: { en: 'https://www.shankeragencies.com', ar: 'https://www.shankeragencies.com/ar' },
+    languages: {
+      en: 'https://www.shankeragencies.com',
+      ar: 'https://www.shankeragencies.com/ar',
+      'x-default': 'https://www.shankeragencies.com',
+    },
   },
   openGraph: {
     title: 'مورّد المواد الحرارية من الهند إلى الخليج | شانكر أجنسيز',

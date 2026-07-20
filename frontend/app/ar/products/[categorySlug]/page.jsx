@@ -20,6 +20,7 @@ export async function generateMetadata({ params }) {
       languages: {
         en: `https://www.shankeragencies.com/products/${categorySlug}`,
         ar: `https://www.shankeragencies.com/ar/products/${categorySlug}`,
+        'x-default': `https://www.shankeragencies.com/products/${categorySlug}`,
       },
     },
     openGraph: {

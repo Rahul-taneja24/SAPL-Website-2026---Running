@@ -20,7 +20,7 @@ import {
 const BASE = 'https://www.shankeragencies.com';
 
 export const metadata = {
-  title: 'Engineering Reference Scenarios | Shanker Agencies',
+  title: { absolute: 'Engineering Reference Scenarios | Shanker Agencies' },
   description:
     'Illustrative refractory engineering scenarios for steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specs and outcome ranges.',
   alternates: { canonical: '/engineering-references' },
