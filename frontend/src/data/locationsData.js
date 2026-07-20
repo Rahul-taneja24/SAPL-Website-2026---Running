@@ -1207,12 +1207,23 @@ export function getRelatedLocations(slug, limit = 4) {
   const sameRegion = LOCATIONS_DATA.filter(
     (loc) => loc.region === current.region && loc.slug !== slug
   );
-  // If not enough in same region, add from other regions
-  if (sameRegion.length >= limit) return sameRegion.slice(0, limit);
+  // Rotate the starting point based on the current page's own index instead
+  // of always slicing from the front, otherwise every page in a region
+  // (e.g. all 12 India cities) shows the identical first N siblings, so only
+  // those few ever receive a reciprocal inlink and the rest sit at 1 inlink
+  // site-wide (Ahrefs audit N3). Wrapping the window per-page spreads links
+  // across the whole region instead of funneling them into one fixed hub.
+  const pickWindow = (pool, count) => {
+    if (pool.length <= count) return pool;
+    const startIndex = LOCATIONS_DATA.findIndex((loc) => loc.slug === slug);
+    const start = ((startIndex % pool.length) + pool.length) % pool.length;
+    return Array.from({ length: count }, (_, i) => pool[(start + i) % pool.length]);
+  };
+  if (sameRegion.length >= limit) return pickWindow(sameRegion, limit);
   const others = LOCATIONS_DATA.filter(
     (loc) => loc.region !== current.region && loc.slug !== slug
   );
-  return [...sameRegion, ...others].slice(0, limit);
+  return [...sameRegion, ...pickWindow(others, limit - sameRegion.length)];
 }
 
 /**
