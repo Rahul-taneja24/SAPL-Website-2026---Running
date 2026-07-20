@@ -185,7 +185,12 @@ export default function RootLayout({ children }) {
                   },
                   description: "India's premier refractory engineering partner and exporter since 1980. Authorized dealer of CUMI Super Refractories, Crown Ceramics and Divine Cerawool. Supplier of high alumina bricks, LCC/ULCC castables, gunning materials, ceramic fiber insulation, porous plugs, slide gates and acid proof products to steel, cement, aluminum and petrochemical industries across GCC, ASEAN, Africa and Europe.",
                   slogan: "India's premier refractory engineering partner since 1980",
-                  priceRange: '₹₹',
+                  // NOTE: geo/hasMap/openingHoursSpecification/priceRange are
+                  // schema.org properties scoped to Place/LocalBusiness, not
+                  // Organization — having them here was flagged as a schema.org
+                  // validation error on every page (this block is site-wide).
+                  // The LocalBusiness node below (a valid Place subtype) already
+                  // carries the equivalent data correctly.
                   address: {
                     '@type': 'PostalAddress',
                     streetAddress: '553, Main Grand Trunk Road, East Ram Nagar',
@@ -194,21 +199,7 @@ export default function RootLayout({ children }) {
                     postalCode: '110032',
                     addressCountry: 'IN',
                   },
-                  geo: {
-                    '@type': 'GeoCoordinates',
-                    latitude: 28.676098255212455,
-                    longitude: 77.29598125527387,
-                  },
-                  hasMap: 'https://share.google/Cz2EJCPRFsQtAvvOE',
                   telephone: ['+91-9899957888', '+91-9810205154', '+91-9811909394'],
-                  openingHoursSpecification: [
-                    {
-                      '@type': 'OpeningHoursSpecification',
-                      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-                      opens: '09:00',
-                      closes: '18:00',
-                    },
-                  ],
                   contactPoint: [
                     {
                       '@type': 'ContactPoint',
@@ -331,6 +322,7 @@ export default function RootLayout({ children }) {
                     latitude: 28.676098255212455,
                     longitude: 77.29598125527387,
                   },
+                  hasMap: 'https://share.google/Cz2EJCPRFsQtAvvOE',
                   openingHoursSpecification: {
                     '@type': 'OpeningHoursSpecification',
                     dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
