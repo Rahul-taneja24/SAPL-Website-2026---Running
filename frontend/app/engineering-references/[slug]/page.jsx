@@ -58,6 +58,10 @@ export default async function EngineeringReferencePage({ params }) {
 
   const url = `${BASE}/engineering-references/${slug}`;
   const dateModified = new Date('2026-05-08T00:00:00.000Z').toISOString();
+  // Same year-based convention already used for these pages in sitemap.js.
+  const datePublished = cs.year
+    ? new Date(`${cs.year}-12-31T00:00:00.000Z`).toISOString()
+    : dateModified;
 
   // ─── TechArticle schema ──────────────────────────────────────────────
   // Using TechArticle (not Article), this is reference material describing a
@@ -71,11 +75,24 @@ export default async function EngineeringReferencePage({ params }) {
     headline: cs.title,
     name: cs.title,
     url,
+    image: `${BASE}/opengraph-image.jpg`,
+    datePublished,
     dateModified,
     inLanguage: 'en-IN',
     isPartOf: { '@id': `${BASE}/#website` },
-    publisher: { '@id': `${BASE}/#organization` },
-    author: { '@id': `${BASE}/#organization` },
+    // Google's Article rich-result parser doesn't reliably resolve @id
+    // references across separate <script> blocks, so publisher/author carry
+    // inline @type + name here (in addition to @id for the site-wide graph).
+    publisher: {
+      '@id': `${BASE}/#organization`,
+      '@type': 'Organization',
+      name: 'Shanker Agencies Pvt. Ltd.',
+    },
+    author: {
+      '@id': `${BASE}/#organization`,
+      '@type': 'Organization',
+      name: 'Shanker Agencies Pvt. Ltd.',
+    },
     description: cs.keyTakeaway || cs.problem.slice(0, 200),
     articleSection: `${cs.industry}, Refractory Application Reference`,
     proficiencyLevel: 'Expert',

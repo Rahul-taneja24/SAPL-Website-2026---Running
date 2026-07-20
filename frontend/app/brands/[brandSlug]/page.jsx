@@ -110,7 +110,10 @@ function buildBrandJsonLd(brand) {
       alternateName: brand.shortName,
       description: brand.desc,
       url,
-      parentOrganization: brand.parent,
+      // parentOrganization requires an Organization object, not plain text —
+      // a bare string here was an invalid-type schema.org error on all 7
+      // brand pages (Ahrefs audit N4/N1).
+      parentOrganization: { '@type': 'Organization', name: brand.parent },
     },
     {
       '@context': 'https://schema.org',
