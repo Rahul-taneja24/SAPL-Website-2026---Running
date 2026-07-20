@@ -2,7 +2,7 @@ import Brands from '@/sections/Brands';
 
 export const metadata = {
   title: 'Refractory Brands We Supply | CUMI, Calderys, TRL Krosaki',
-  description: "Shanker Agencies is an authorized dealer and supply partner for 7 leading refractory manufacturers in India, including CUMI, Calderys, TRL Krosaki, Saint-Gobain, Crown Ceramics, Divine Cerawool and Mahakoshal. Genuine products, manufacturer test certificates, technical support since 1980.",
+  description: "Shanker Agencies is an authorized dealer and supply partner for 7 leading refractory manufacturers in India. Genuine products, technical support since 1980.",
   alternates: { canonical: '/brands' },
   openGraph: {
     title: 'Refractory Brands We Supply in India | Shanker Agencies',

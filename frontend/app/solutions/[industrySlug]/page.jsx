@@ -56,7 +56,7 @@ export async function generateMetadata({ params }) {
   const data = SOLUTION_DATA[industrySlug];
   const name = data?.name || industrySlug;
   const title = `${name} Refractory Solutions | Shanker Agencies`;
-  const description = `Lining design, grade selection and installation support for ${name.toLowerCase()} plants. Plant-side engineering help from Shanker Agencies since 1980, partnered with CUMI, TRL Krosaki, Calderys and Mahakoshal.`;
+  const description = `Lining design, grade selection and installation support for ${name.toLowerCase()} plants from Shanker Agencies, refractory partner since 1980.`;
   return {
     title: { absolute: title },
     description,

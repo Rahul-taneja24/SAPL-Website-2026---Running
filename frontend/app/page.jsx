@@ -2,7 +2,7 @@ import Home from '@/sections/Home';
 
 export const metadata = {
   title: { absolute: "Refractory Supplier & Exporter India, CUMI Dealer | Shanker Agencies" },
-  description: "Shanker Agencies, India's premier refractory exporter since 1980. Authorized CUMI dealer. High alumina bricks, LCC/ULCC castables, porous plugs, ceramic fiber. CIF to GCC, ASEAN, Africa.",
+  description: "Shanker Agencies, India's premier refractory exporter since 1980. High alumina bricks, LCC/ULCC castables, ceramic fiber. CIF to GCC, ASEAN, Africa.",
   alternates: {
     canonical: '/',
     languages: {
@@ -13,7 +13,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Refractory Supplier & Exporter India, CUMI Dealer | Shanker Agencies",
-    description: "Shanker Agencies, India's premier refractory exporter since 1980. Authorized CUMI dealer. High alumina bricks, LCC/ULCC castables, porous plugs, ceramic fiber. CIF to GCC, ASEAN, Africa.",
+    description: "Shanker Agencies, India's premier refractory exporter since 1980. High alumina bricks, LCC/ULCC castables, ceramic fiber. CIF to GCC, ASEAN, Africa.",
     url: 'https://www.shankeragencies.com',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',

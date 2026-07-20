@@ -8,12 +8,12 @@ import { LOCATIONS_DATA, getAllRegions, getLocationsByRegion } from '@/data/loca
 export const metadata = {
   title: { absolute: 'Refractory Supplier Locations | Shanker Agencies' },
   description:
-    'Shanker Agencies supplies refractory bricks, castables, insulation and acid proof materials across India and 50+ countries. CUMI, Crown Ceramics & Divine Cerawool dealer.',
+    'Shanker Agencies supplies refractory bricks, castables and insulation across India and 50+ countries. CUMI, Crown Ceramics dealer.',
   alternates: { canonical: '/refractory-supplier-in' },
   openGraph: {
     title: 'Refractory Supplier Locations | Shanker Agencies',
     description:
-      'Shanker Agencies supplies refractory bricks, castables, insulation and acid proof materials across India and 50+ countries. CUMI, Crown Ceramics & Divine Cerawool dealer.',
+      'Shanker Agencies supplies refractory bricks, castables and insulation across India and 50+ countries. CUMI, Crown Ceramics dealer.',
     url: 'https://www.shankeragencies.com/refractory-supplier-in',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',

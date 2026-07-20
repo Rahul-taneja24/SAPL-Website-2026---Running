@@ -4,11 +4,11 @@ import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 
 export const metadata = {
   title: { absolute: 'Refractory Engineering Blog | Shanker Agencies' },
-  description: 'Technical guides on refractory selection, installation and performance. High alumina bricks, castables, ramming mass, ceramic fiber, steel ladle and kiln linings.',
+  description: 'Technical guides on refractory selection, installation and performance. Bricks, castables, ramming mass, ceramic fiber, kiln linings.',
   alternates: { canonical: '/blog' },
   openGraph: {
     title: 'Refractory Engineering Blog | Shanker Agencies',
-    description: 'Technical guides on refractory selection, installation and performance. High alumina bricks, castables, ramming mass, ceramic fiber, steel ladle and kiln linings.',
+    description: 'Technical guides on refractory selection, installation and performance. Bricks, castables, ramming mass, ceramic fiber, kiln linings.',
     url: 'https://www.shankeragencies.com/blog',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',

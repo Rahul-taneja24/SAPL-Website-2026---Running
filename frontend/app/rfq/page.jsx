@@ -4,7 +4,7 @@ import { Globe, FileCheck, Package } from 'lucide-react';
 export const metadata = {
   title: 'Request a Quote (RFQ) | Bulk Refractory Supply & Export',
   description:
-    'Submit a structured RFQ for refractory bricks, castables, ceramic fiber and flow control products. Bulk supply across India and CIF/FOB export to 50+ countries with manufacturer test certificates.',
+    'Submit a structured RFQ for refractory bricks, castables, ceramic fiber and flow control products. Bulk supply and CIF/FOB export to 50+ countries.',
   alternates: {
     canonical: '/rfq',
     languages: {

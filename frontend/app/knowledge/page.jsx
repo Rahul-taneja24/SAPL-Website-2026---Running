@@ -3,7 +3,7 @@ import { getHubItems } from '@/data/knowledgeHubIndex';
 
 export const metadata = {
   title: 'Knowledge Base | Refractory Engineering Resources',
-  description: 'Technical guides, industry news, engineering references and datasheets for refractory professionals, searchable in one place. Learn about castables, bricks, mortars and lining systems.',
+  description: 'Technical guides, industry news, engineering references and datasheets for refractory professionals, searchable in one place.',
   alternates: { canonical: '/knowledge' },
 };
 

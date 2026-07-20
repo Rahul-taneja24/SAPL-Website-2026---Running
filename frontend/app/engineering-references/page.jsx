@@ -22,12 +22,12 @@ const BASE = 'https://www.shankeragencies.com';
 export const metadata = {
   title: { absolute: 'Engineering Reference Scenarios | Shanker Agencies' },
   description:
-    'Illustrative refractory engineering scenarios for steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specs and outcome ranges.',
+    'Illustrative refractory engineering scenarios for steel ladles, furnaces, cement kilns and boilers. Typical specs and outcome ranges.',
   alternates: { canonical: '/engineering-references' },
   openGraph: {
     title: 'Engineering Reference Scenarios | Shanker Agencies',
     description:
-      'Illustrative refractory engineering scenarios for steel ladles, induction furnaces, cement kilns, CFBC boilers, aluminium and glass tanks. Typical specs and outcome ranges.',
+      'Illustrative refractory engineering scenarios for steel ladles, furnaces, cement kilns and boilers. Typical specs and outcome ranges.',
     url: `${BASE}/engineering-references`,
     type: 'website',
     images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Engineering References' }],

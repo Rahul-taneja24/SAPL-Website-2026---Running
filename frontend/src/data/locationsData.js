@@ -15,7 +15,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["NTPC Badarpur", "Indraprastha Power Station", "Pragati Power Corporation", "Delhi Glass Works", "Hindalco Industries NCR", "Hero MotoCorp Dharuhera", "Maruti Suzuki Manesar", "Indian Oil Mathura Refinery"],
     description: "SAPL headquarters in Delhi, serving the National Capital Region with comprehensive refractory solutions for steel, aluminum, power, glass, cement, and petrochemical industries since 1980.",
     metaTitle: "Refractory Supplier in Delhi NCR | Shanker Agencies",
-    metaDescription: "Leading refractory supplier in Delhi NCR since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool. High alumina bricks, castables, ceramic fiber & more for steel, aluminium, power, glass & petrochemical industries. Same-day dispatch.",
+    metaDescription: "Leading refractory supplier in Delhi NCR since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool.",
     h1: "Trusted Refractory Supplier in Delhi NCR Since 1980",
     content: {
       intro: "Shanker Agencies Pvt. Ltd. (SAPL), headquartered at 553 Main G.T. Road, Shahdara, Delhi, has been India's trusted refractory engineering partner since 1980. With over 45 years of experience, we serve the entire Delhi-NCR industrial corridor, covering steel re-rolling mills, aluminium die-casting units, copper wire drawing plants, power stations, glass manufacturers, cement plants, and petrochemical refineries. Our strategically located warehouse ensures same-day dispatch for urgent requirements across Delhi, Noida, Gurgaon, Faridabad, and Ghaziabad.",
@@ -36,7 +36,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Tata Steel", "Tata Metaliks", "Usha Martin", "Adhunik Metaliks", "Tata Steel BSL (Gamharia)"],
     description: "Key refractory supply hub for Jamshedpur's massive steel industry cluster, anchored by Tata Steel and supporting foundries.",
     metaTitle: 'Refractory Supplier in Jamshedpur | Shanker Agencies',
-    metaDescription: "Premium refractory supplier in Jamshedpur for Tata Steel & steel plants. High alumina bricks, MgO-C bricks, castables, slide gate plates & ceramic fiber. Authorized CUMI dealer. Fast delivery across Jharkhand.",
+    metaDescription: "Premium refractory supplier in Jamshedpur for Tata Steel & steel plants. High alumina bricks, MgO-C bricks, castables, slide gate plates & ceramic fiber.",
     h1: "Refractory Supplier in Jamshedpur for Steel & Heavy Industries",
     content: {
       intro: "Jamshedpur, India's original steel city, runs furnaces that need reliable refractory materials around the clock. Shanker Agencies has supplied refractories to Jamshedpur's industrial ecosystem for decades, covering shaped refractories, monolithics, insulation and flow control products for integrated steel plants and downstream processors.",
@@ -57,7 +57,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["SAIL Rourkela Steel Plant", "Vedanta Jharsuguda", "Bhushan Power & Steel", "OCL India (Dalmia)"],
     description: "Serving Rourkela's SAIL steel plant and Odisha's growing industrial corridor with reliable refractory supply.",
     metaTitle: 'Refractory Supplier in Rourkela | Shanker Agencies',
-    metaDescription: "Trusted refractory supplier in Rourkela serving SAIL RSP and Odisha's steel & cement industries. High alumina bricks, castables, ramming mass & insulation. Get competitive quotes from SAPL.",
+    metaDescription: "Trusted refractory supplier in Rourkela serving SAIL RSP and Odisha's steel & cement industries. High alumina bricks, castables, ramming mass & insulation.",
     h1: "Refractory Supplier in Rourkela & Odisha Industrial Belt",
     content: {
       intro: "Rourkela, home to the prestigious SAIL Rourkela Steel Plant, is a critical hub for India's steel industry in eastern India. Shanker Agencies provides comprehensive refractory solutions to the Rourkela-Jharsuguda-Angul industrial corridor in Odisha, ensuring that steel plants, cement factories, and sponge iron units have access to premium refractory materials with reliable delivery timelines.",
@@ -78,7 +78,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["SAIL Bhilai Steel Plant", "BALCO Korba", "ACC Jamul Cement", "Lafarge Holcim", "Godawari Power & Ispat"],
     description: "Serving Bhilai's iconic SAIL steel plant and Chhattisgarh's expanding steel, cement, and aluminum industries.",
     metaTitle: 'Refractory Supplier in Bhilai | Shanker Agencies',
-    metaDescription: "Reliable refractory supplier in Bhilai for SAIL BSP and Chhattisgarh industries. MgO-C bricks, high alumina, castables, slide gate plates & ceramic fiber insulation. Call SAPL for quotes.",
+    metaDescription: "Reliable refractory supplier in Bhilai for SAIL BSP and Chhattisgarh industries. MgO-C bricks, high alumina, castables, slide gate plates & ceramic fiber…",
     h1: "Refractory Supplier in Bhilai & Chhattisgarh Industrial Region",
     content: {
       intro: "Bhilai, the steel capital of central India, houses one of SAIL's largest integrated steel plants along with a thriving cluster of cement, aluminum, and sponge iron industries across Chhattisgarh. Shanker Agencies is a preferred refractory supply partner for this region, delivering high-performance refractory materials that meet the demanding operating conditions of Bhilai's heavy industries.",
@@ -99,7 +99,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Rashtriya Ispat Nigam (RINL)", "HPCL Vizag Refinery", "Coromandel International", "Dalmia Cement", "NTPC Simhadri"],
     description: "Strategic refractory supply point for Visakhapatnam's steel, refinery, and port-based industrial complex.",
     metaTitle: 'Refractory Supplier in Visakhapatnam | Shanker Agencies',
-    metaDescription: "Trusted refractory supplier in Visakhapatnam for RINL Vizag Steel, HPCL refinery & industries. High alumina bricks, castables, insulation & acid proof products. Contact SAPL for competitive pricing.",
+    metaDescription: "Trusted refractory supplier in Visakhapatnam for RINL Vizag Steel, HPCL refinery & industries. High alumina bricks, castables, insulation & acid proof products.",
     h1: "Refractory Supplier in Visakhapatnam (Vizag) for Steel & Refinery",
     content: {
       intro: "Visakhapatnam (Vizag), Andhra Pradesh's main industrial centre, is home to Rashtriya Ispat Nigam Limited (RINL Vizag Steel Plant), HPCL's petroleum refinery and a growing cluster of cement, fertilizer and port-based industries. Shanker Agencies supplies the full range of refractories to Vizag's heavy industries, with transport handled from our Delhi warehouse and factory-direct dispatch where that is more economical.",
@@ -120,7 +120,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["BPCL Mumbai Refinery", "HPCL Mumbai Refinery", "Tata Power Trombay", "Reliance Industries", "JSW Steel (Dolvi)"],
     description: "Refractory solutions for Mumbai's refinery, power, and manufacturing sectors with fast urban delivery.",
     metaTitle: 'Refractory Supplier in Mumbai | Shanker Agencies',
-    metaDescription: "Leading refractory supplier in Mumbai for refineries, power plants & steel industries. Authorized CUMI, Crown Ceramics & Divine Cerawool dealer. Castables, insulation, acid proof bricks. Get quotes from SAPL.",
+    metaDescription: "Leading refractory supplier in Mumbai for refineries, power plants & steel industries. Authorized CUMI, Crown Ceramics & Divine Cerawool dealer.",
     h1: "Refractory Supplier in Mumbai & Maharashtra Industrial Belt",
     content: {
       intro: "Mumbai and the greater Maharashtra industrial region represent one of India's largest markets for refractory products. From BPCL and HPCL petroleum refineries to JSW Steel's Dolvi plant, Shanker Agencies provides engineered refractory solutions across the full spectrum of industries operating in Mumbai, Thane, Navi Mumbai, Pune, and the MIDC industrial areas of Maharashtra.",
@@ -141,7 +141,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["IOCL Gujarat Refinery", "Nayara Energy Jamnagar", "UltraTech Cement", "Gujarat Fluorochemicals", "Adani Power Mundra"],
     description: "Serving Gujarat's massive industrial corridor from Ahmedabad to the Jamnagar refinery complex.",
     metaTitle: "Refractory Supplier in Ahmedabad | Gujarat Industries - SAPL",
-    metaDescription: "Trusted refractory supplier in Ahmedabad & Gujarat. Serving refineries, cement plants, glass units & steel industries. CUMI authorized dealer. Bricks, castables, insulation, acid proof. Call SAPL.",
+    metaDescription: "Trusted refractory supplier in Ahmedabad & Gujarat. Serving refineries, cement plants, glass units & steel industries. CUMI authorized dealer.",
     h1: "Refractory Supplier in Ahmedabad & Gujarat Industrial Corridor",
     content: {
       intro: "Gujarat's industrial might is well-known, and Ahmedabad sits at its heart. From the world's largest refinery complex in Jamnagar to cement plants, ceramic and glass clusters in Morbi, and chemical processing across the GIDC estates, Shanker Agencies provides comprehensive refractory solutions to Gujarat's diverse industries. Our supply reach extends across Ahmedabad, Vadodara, Surat, Rajkot, Jamnagar, and Kutch.",
@@ -162,7 +162,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Chennai Petroleum Corporation (CPCL)", "Dalmia Cement", "India Cements", "SAIL Salem Steel", "Manali Petrochemical"],
     description: "Key refractory supply partner for Chennai and Tamil Nadu's cement, refinery, and manufacturing sectors.",
     metaTitle: 'Refractory Supplier in Chennai | Shanker Agencies',
-    metaDescription: "Reliable refractory supplier in Chennai for CPCL refinery, cement plants & steel industries in Tamil Nadu. CUMI authorized dealer. Bricks, castables, insulation & acid proof products. Contact SAPL.",
+    metaDescription: "Reliable refractory supplier in Chennai for CPCL refinery, cement plants & steel industries in Tamil Nadu. CUMI authorized dealer.",
     h1: "Refractory Supplier in Chennai & Tamil Nadu Industrial Region",
     content: {
       intro: "Chennai and Tamil Nadu form a critical market for refractory products, with a diverse industrial base spanning petroleum refining, cement manufacturing, steel production, and heavy engineering. Shanker Agencies serves this region with the full range of refractory, insulation, and acid-proofing solutions, ensuring Tamil Nadu's industries have access to premium materials from authorized brand partners.",
@@ -183,7 +183,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["IISCO Burnpur", "Durgapur Steel Plant", "CESC Power", "Haldia Petrochemicals", "Damodar Valley Corporation"],
     description: "Gateway to Eastern India's steel belt, serving Kolkata and the Durgapur-Asansol industrial corridor.",
     metaTitle: 'Refractory Exporter to Kolkata | Shanker Agencies',
-    metaDescription: "Leading refractory supplier in Kolkata serving eastern India's steel belt. IISCO, Durgapur Steel & more. High alumina bricks, castables, slide gate plates. Authorized CUMI dealer. Contact SAPL.",
+    metaDescription: "Leading refractory supplier in Kolkata serving eastern India's steel belt. IISCO, Durgapur Steel & more. High alumina bricks, castables, slide gate plates.",
     h1: "Refractory Supplier in Kolkata & Eastern India Steel Belt",
     content: {
       intro: "Kolkata and the Durgapur-Asansol-Burnpur industrial corridor form the backbone of Eastern India's heavy industry. Shanker Agencies serves this critical region with comprehensive refractory solutions for integrated steel plants, sponge iron units, thermal power stations, and petrochemical facilities. Our established supply chain ensures reliable delivery across West Bengal and neighboring eastern states.",
@@ -204,7 +204,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["HPCL Visakh Refinery", "UltraTech Cement", "Deccan Cements", "Telangana State Power", "Nizam Steel"],
     description: "Refractory supply for Hyderabad and Telangana's cement, steel, and process industries.",
     metaTitle: 'Refractory Supplier in Hyderabad | Shanker Agencies',
-    metaDescription: "Trusted refractory supplier in Hyderabad for cement, steel & process industries in Telangana. High alumina bricks, castables, insulation & acid proof products. Authorized CUMI dealer. Get SAPL quotes.",
+    metaDescription: "Trusted refractory supplier in Hyderabad for cement, steel & process industries in Telangana. High alumina bricks, castables, insulation & acid proof products.",
     h1: "Refractory Supplier in Hyderabad & Telangana Region",
     content: {
       intro: "Hyderabad and Telangana have emerged as a significant industrial hub in southern India, with growing cement production, steel manufacturing, and process industries requiring high-quality refractory materials. Shanker Agencies brings its 45+ years of refractory expertise to serve Hyderabad's industries with authorized products from CUMI, Crown Ceramics, and Divine Cerawool.",
@@ -225,7 +225,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["JSW Steel Vijayanagar", "MSPL Baldota Group", "Kalyani Steels", "ACC Kudithini", "Kirloskar Ferrous"],
     description: "Serving Bellary's booming steel cluster led by JSW Steel Vijayanagar, India's largest single-location steel plant.",
     metaTitle: 'Refractory Supplier in Bellary | Shanker Agencies',
-    metaDescription: "Premium refractory supplier in Bellary for JSW Vijayanagar & Karnataka steel industries. MgO-C bricks, castables, slide gate plates, insulation. Authorized CUMI dealer. Contact SAPL for quotes.",
+    metaDescription: "Premium refractory supplier in Bellary for JSW Vijayanagar & Karnataka steel industries. MgO-C bricks, castables, slide gate plates, insulation.",
     h1: "Refractory Supplier in Bellary for Steel & Mining Industries",
     content: {
       intro: "Bellary (Ballari) in Karnataka is one of India's fastest-growing steel hubs, anchored by JSW Steel's Vijayanagar plant, the country's largest single-location steel facility. Shanker Agencies supplies the Bellary-Hospet-Sandur mining and steel corridor with refractory products for blast furnaces, converters, ladles and continuous casters.",
@@ -246,7 +246,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["SAIL Bokaro Steel Plant", "Bokaro Power Supply Company", "Usha Martin Jamshedpur", "DVC Chandrapura"],
     description: "Dedicated refractory supply to SAIL Bokaro Steel Plant and surrounding industrial units.",
     metaTitle: 'Refractory Supplier in Bokaro | Shanker Agencies',
-    metaDescription: "Trusted refractory supplier in Bokaro for SAIL Bokaro Steel Plant. High alumina bricks, MgO-C bricks, castables, flow control & insulation products. Authorized CUMI dealer. Contact SAPL.",
+    metaDescription: "Trusted refractory supplier in Bokaro for SAIL Bokaro Steel Plant. High alumina bricks, MgO-C bricks, castables, flow control & insulation products.",
     h1: "Refractory Supplier in Bokaro Steel City",
     content: {
       intro: "Bokaro Steel City, built around SAIL's Bokaro Steel Plant, is one of India's most important steel towns. Shanker Agencies has been a reliable refractory supply partner to Bokaro's steel operations, providing the entire range of shaped refractories, monolithics, flow control, and insulation products required for integrated steelmaking.",
@@ -360,7 +360,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["ExxonMobil Jurong", "Shell Pulau Bukom", "Singapore Refining Company", "NSL OilChem"],
     description: "Refractory export hub for Singapore and Southeast Asian petrochemical and steel industries.",
     metaTitle: 'Refractory Exporter to Singapore | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Singapore. Supplying petrochemical plants, refineries & industries with bricks, castables, ceramic fiber & insulation. CUMI authorized. Get competitive quotes from SAPL.",
+    metaDescription: "Indian refractory exporter to Singapore. Supplying petrochemical plants, refineries & industries with bricks, castables, ceramic fiber & insulation.",
     h1: "Refractory Supplier for Singapore Petrochemical & Process Industries",
     content: {
       intro: "Singapore is the petrochemical hub of Southeast Asia, with large refineries and chemical processing plants clustered on Jurong Island and Pulau Bukom. Shanker Agencies exports refractory and insulation products to Singapore for ExxonMobil, Shell and other operators, offering CUMI-quality linings at competitive Indian-origin pricing with standard incoterms documentation.",
@@ -381,7 +381,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Formosa Ha Tinh Steel", "Hoa Phat Group", "Vicem Cement", "Ba Ria Vung Tau Steel"],
     description: "Refractory export to Vietnam's rapidly growing steel and cement industries.",
     metaTitle: 'Refractory Exporter to Vietnam | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Vietnam. Supplying Formosa Ha Tinh, Hoa Phat & Vietnam steel/cement industries with bricks, castables, insulation. Competitive pricing. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to Vietnam. Supplying Formosa Ha Tinh, Hoa Phat & Vietnam steel/cement industries with bricks, castables, insulation.",
     h1: "Refractory Supplier for Vietnam Steel & Cement Industries",
     content: {
       intro: "Vietnam is one of Southeast Asia's fastest-growing markets for refractory products, driven by rapid expansion in steel production and cement manufacturing. Shanker Agencies exports high-quality refractory materials to Ho Chi Minh City, Hanoi, and industrial zones across Vietnam, serving both major integrated steel plants and growing mid-size manufacturers.",
@@ -402,7 +402,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Krakatau Steel", "Indocement", "Semen Indonesia", "Pertamina Refinery", "Chandra Asri"],
     description: "Refractory export to Indonesia's large steel, cement, and petrochemical sectors.",
     metaTitle: "Refractory Supplier for Indonesia | Jakarta - SAPL India",
-    metaDescription: "Indian refractory exporter to Indonesia. Supplying Krakatau Steel, Indocement & Indonesian industries with bricks, castables, insulation. CUMI quality. Competitive CIF pricing. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to Indonesia. Supplying Krakatau Steel, Indocement & Indonesian industries with bricks, castables, insulation. CUMI quality.",
     h1: "Refractory Supplier for Indonesia Steel & Cement Industries",
     content: {
       intro: "Indonesia, the largest economy in Southeast Asia, has substantial refractory demand driven by its steel, cement, and petrochemical industries. Shanker Agencies exports cost-competitive refractory solutions to Jakarta, Cilegon, and industrial areas across Java, Sumatra, and Kalimantan, providing Indian-manufactured products that meet international quality standards.",
@@ -424,7 +424,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Dangote Cement", "BUA Cement", "Dangote Refinery", "Ajaokuta Steel", "Lafarge Africa"],
     description: "Refractory export to Nigeria's massive cement sector and emerging steel industry.",
     metaTitle: 'Refractory Exporter to Lagos Nigeria | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Lagos & Nigeria. Supplying Dangote Cement, BUA & Nigerian industries with bricks, castables, insulation. CUMI quality at competitive prices. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to Lagos & Nigeria. Supplying Dangote Cement, BUA & Nigerian industries with bricks, castables, insulation.",
     h1: "Refractory Supplier for Lagos & Nigeria Industrial Sector",
     content: {
       intro: "Nigeria, Africa's largest economy, has massive refractory demand driven by the continent's biggest cement industry and emerging steel and refinery sectors. Shanker Agencies exports quality refractory products to Lagos, supplying Dangote, BUA, Lafarge Africa, and other industrial groups with cost-effective Indian-origin refractories that meet international performance standards.",
@@ -445,7 +445,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Bamburi Cement", "East African Portland Cement", "Devki Steel Mills", "Mombasa Cement"],
     description: "Refractory export gateway to East Africa through Nairobi and Mombasa port.",
     metaTitle: 'Refractory Exporter to Nairobi Kenya | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Kenya & East Africa. Supplying Bamburi Cement, Devki Steel & East African industries with bricks, castables, insulation. Competitive pricing. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to Kenya & East Africa. Supplying Bamburi Cement, Devki Steel & East African industries with bricks, castables, insulation.",
     h1: "Refractory Supplier for Kenya & East Africa",
     content: {
       intro: "Kenya serves as the gateway to East Africa's industrial market, with Nairobi as the commercial hub and Mombasa as the port of entry. Shanker Agencies exports refractory products to Kenya, serving the cement, steel, and manufacturing sectors with quality Indian-origin materials that offer excellent performance at competitive pricing.",
@@ -466,7 +466,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["ArcelorMittal South Africa", "PPC Cement", "Sappi Mills", "Sasol", "South32 Hillside Aluminium"],
     description: "Refractory export to South Africa's diversified industrial base.",
     metaTitle: 'Refractory Exporter to South Africa | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Johannesburg & South Africa. Supplying ArcelorMittal SA, PPC Cement & industries with bricks, castables, insulation. CUMI quality. Contact SAPL for quotes.",
+    metaDescription: "Indian refractory exporter to Johannesburg & South Africa. Supplying ArcelorMittal SA, PPC Cement & industries with bricks, castables, insulation. CUMI quality.",
     h1: "Refractory Supplier for South Africa & Southern Africa",
     content: {
       intro: "South Africa has Africa's most diversified industrial economy, with major steel, cement, petrochemical, aluminum, and mining operations that require high-quality refractory products. Shanker Agencies exports to Johannesburg, Durban, and industrial centers across South Africa, providing CUMI-quality refractories at competitive Indian-origin pricing.",
@@ -488,7 +488,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Tata Steel UK (Port Talbot)", "Celsa Steel UK", "Hanson Cement", "Pilkington Glass"],
     description: "Refractory export to the UK market through London, serving British steel and manufacturing industries.",
     metaTitle: "Refractory Supplier for UK | London - SAPL India Export",
-    metaDescription: "Indian refractory exporter to UK & London. Supplying Tata Steel UK, Celsa & British industries with bricks, castables, insulation. CUMI quality. CE marked products. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to UK & London. Supplying Tata Steel UK, Celsa & British industries with bricks, castables, insulation. CUMI quality.",
     h1: "Refractory Supplier for the United Kingdom from India",
     content: {
       intro: "The United Kingdom's steel, cement, glass, and process industries require high-quality refractory materials. Shanker Agencies exports to the UK market, providing Indian-manufactured refractories that meet European quality standards at competitive pricing. Our products reach clients in England, Wales, Scotland, and Northern Ireland through established shipping routes to UK ports.",
@@ -509,7 +509,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["ThyssenKrupp Steel", "Salzgitter AG", "HeidelbergCement", "Schott Glass"],
     description: "Refractory export to Germany's advanced steel and manufacturing sector.",
     metaTitle: 'Refractory Exporter to Germany | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Germany. Supplying ThyssenKrupp, HeidelbergCement & German industries with bricks, castables, insulation. CUMI quality. EN certified. Contact SAPL.",
+    metaDescription: "Indian refractory exporter to Germany. Supplying ThyssenKrupp, HeidelbergCement & German industries with bricks, castables, insulation. CUMI quality.",
     h1: "Refractory Supplier for Germany & Central Europe from India",
     content: {
       intro: "Germany, Europe's largest industrial economy, presents opportunities for competitively priced Indian refractory products. Shanker Agencies exports to German industrial buyers, offering CUMI-manufactured refractories that meet DIN/EN standards at pricing significantly below European production costs. Our products serve steel, cement, glass, and chemical processing industries across Germany and Central Europe.",
@@ -531,7 +531,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["NHPC", "Escorts Group", "Larsen & Toubro Faridabad", "Bata Faridabad", "JCB India"],
     description: "Faridabad, a major NCR industrial hub with steel re-rolling mills, engineering units, and foundries requiring reliable refractory supply.",
     metaTitle: 'Refractory Supplier in Faridabad | Shanker Agencies',
-    metaDescription: "Leading refractory supplier in Faridabad, Haryana. High alumina bricks, fireclay bricks, castables, ramming mass & ceramic fiber from authorized CUMI, Crown Ceramics & Divine Cerawool dealer. Same-day dispatch from Delhi. Call SAPL.",
+    metaDescription: "Leading refractory supplier in Faridabad, Haryana. High alumina bricks, fireclay bricks, castables, ramming mass & ceramic fiber from authorized CUMI, Crown…",
     h1: "Refractory Supplier in Faridabad, Direct from Authorized Dealer",
     content: {
       intro: "Faridabad is one of the NCR's most active industrial centres, home to thousands of manufacturing units from steel re-rolling mills to precision engineering companies and foundries. Shanker Agencies, headquartered just 35 km away in Delhi, supplies Faridabad industries with the full range of refractory materials, with same-day or next-day delivery capability. Our proximity and authorized dealership of CUMI, Crown Ceramics, and Divine Cerawool make us Faridabad's most reliable refractory partner.",
@@ -552,7 +552,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Hindalco Modinagar", "Modi Rubber", "Bharat Electronics Ghaziabad", "Hapur Road Industrial Area"],
     description: "Ghaziabad, dense industrial belt in UP's NCR with steel, foundry, and engineering industries needing fast, reliable refractory supply.",
     metaTitle: 'Refractory Supplier in Ghaziabad | Shanker Agencies',
-    metaDescription: "Trusted refractory supplier in Ghaziabad & Loni, Uttar Pradesh. Firebricks, high alumina bricks, castables, ramming mass & insulation from authorized CUMI dealer. Fast delivery, technical support. Contact Shanker Agencies.",
+    metaDescription: "Trusted refractory supplier in Ghaziabad & Loni, Uttar Pradesh. Firebricks, high alumina bricks, castables, ramming mass & insulation from authorized CUMI…",
     h1: "Refractory Supplier in Ghaziabad & Loni, Fast NCR Delivery",
     content: {
       intro: "Ghaziabad and its industrial zones, including Loni, Sahibabad, Modinagar, and the Hapur Road corridor, form one of North India's most concentrated industrial clusters. Hundreds of foundries, steel re-rolling mills, heat treatment shops, and engineering units in this belt require a steady supply of refractory materials. Shanker Agencies, based in Shahdara, Delhi, delivers to Ghaziabad with the fastest turnaround in the NCR.",
@@ -573,7 +573,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["HCL Technologies Noida", "Samsung Electronics Noida", "LG Electronics Greater Noida", "Honda Cars India Greater Noida", "Yamaha Motor Surajpur", "JBM Auto", "Havells India Noida"],
     description: "Noida and Greater Noida form one of the NCR's fastest-growing industrial zones with auto ancillary foundries, electronics manufacturing heat-treatment lines, glass processing units and SME steel re-rolling mills that require reliable refractory supply from a Delhi-based dealer.",
     metaTitle: 'Refractory Supplier in Noida | Shanker Agencies',
-    metaDescription: "Refractory supplier in Noida, Greater Noida and Yamuna Expressway industrial sectors. Ramming mass, high alumina bricks, castables, ceramic fibre from an authorised CUMI, Crown Ceramics and Divine Cerawool dealer. Same-day dispatch from Delhi.",
+    metaDescription: "Refractory supplier in Noida, Greater Noida and Yamuna Expressway industrial sectors. Ramming mass, high alumina bricks, castables, ceramic fibre from an…",
     h1: "Refractory Supplier in Noida and Greater Noida",
     content: {
       intro: "Noida, Greater Noida and the Yamuna Expressway industrial belt host hundreds of manufacturing units, from auto component foundries in Sector 80 and 81 to electronics makers, glass processors and small steel melting shops. Shanker Agencies supplies these units from our Shahdara, Delhi warehouse, typically on same-day or next-day basis across Sectors 1 to 168, Greater Noida Phases 1 and 2, the Yamuna Expressway sector and the Sikandrabad industrial estate just across the border.",
@@ -594,7 +594,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Maruti Suzuki Manesar", "Honda Motorcycle & Scooter Manesar", "Hero MotoCorp Dharuhera", "Munjal Showa", "Denso India", "Rico Auto Gurgaon", "Sona Comstar"],
     description: "Gurgaon (Gurugram) and the Manesar–Dharuhera–Bawal auto cluster form one of India's densest auto-component belts. Foundries, die-casting shops, heat-treatment furnaces and captive power plants in this region depend on a fast, reliable refractory supply chain.",
     metaTitle: "Refractory Supplier in Gurgaon & Manesar | Shanker Agencies",
-    metaDescription: "Refractory supplier in Gurgaon, Manesar, Dharuhera and Bawal for auto foundries and die-casting shops. Non-wetting castables, ramming mass, ceramic fibre, high alumina bricks from an authorised CUMI, Crown Ceramics and Divine Cerawool dealer. Fast delivery from Delhi.",
+    metaDescription: "Refractory supplier in Gurgaon, Manesar, Dharuhera and Bawal for auto foundries and die-casting shops.",
     h1: "Refractory Supplier in Gurgaon and Manesar",
     content: {
       intro: "Gurgaon (Gurugram) is the hub of India's passenger vehicle and two-wheeler supply chain. The Manesar, Dharuhera, Bawal and IMT Sohna industrial estates are packed with grey iron foundries, aluminium die-casting shops, heat-treatment furnaces, forging units and captive power plants supplying Maruti Suzuki, Hero MotoCorp, Honda and their Tier 1 vendors. Shanker Agencies supplies this cluster from our Delhi warehouse, roughly 40 to 70 km away depending on the sector, with same-day or next-day delivery on stocked items.",
@@ -615,7 +615,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["SAIL Bhilai (nearby)", "Jindal Steel Raipur", "Chettinad Cement", "ACC Jamul", "NTPC Sipat"],
     description: "Raipur, the steel capital of Chhattisgarh, home to 400+ sponge iron plants, 100+ steel rolling mills, and major cement manufacturers.",
     metaTitle: 'Refractory Supplier in Raipur | Shanker Agencies',
-    metaDescription: "Refractory supplier in Raipur, Chhattisgarh for steel, sponge iron & cement plants. High alumina bricks, DRI kiln refractories, castables, MgO-C bricks. Fast delivery. Authorized CUMI dealer, Shanker Agencies.",
+    metaDescription: "Refractory supplier in Raipur, Chhattisgarh for steel, sponge iron & cement plants. High alumina bricks, DRI kiln refractories, castables, MgO-C bricks.",
     h1: "Refractory Supplier in Raipur for Steel, Sponge Iron & Cement Plants",
     content: {
       intro: "Raipur is the industrial heart of Chhattisgarh, the state with the highest concentration of sponge iron plants, steel rolling mills, and integrated steel units in India. With 400+ direct-reduced iron (DRI/sponge iron) kilns and over 100 steel rolling mills in the Raipur-Urla-Siltara industrial corridor, refractory demand here is immense. Shanker Agencies supplies engineered refractory solutions to this demanding market.",
@@ -636,7 +636,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Ballarpur Industries", "NTPC Koradi", "Moser Baer", "Vidarbha Iron & Steel"],
     description: "Nagpur, central India's industrial hub at the crossroads of major rail/road routes, serving Maharashtra's Vidarbha steel and power belt.",
     metaTitle: 'Refractory Supplier in Nagpur | Shanker Agencies',
-    metaDescription: "Refractory supplier in Nagpur, Maharashtra. High alumina bricks, castables, ceramic fiber & insulation for Vidarbha steel plants, NTPC & process industries. Authorized CUMI dealer. Contact Shanker Agencies.",
+    metaDescription: "Refractory supplier in Nagpur, Maharashtra. High alumina bricks, castables, ceramic fiber & insulation for Vidarbha steel plants, NTPC & process industries.",
     h1: "Refractory Supplier in Nagpur for Vidarbha's Industrial Sector",
     content: {
       intro: "Nagpur, at the geographic centre of India, is the logistics hub for central India's industrial belt. The Vidarbha region around Nagpur has significant steel, power, cement and textile industries. Shanker Agencies supplies refractory materials to this region using Nagpur's rail and road connectivity for efficient deliveries from our Delhi warehouse.",
@@ -657,7 +657,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Tata Motors Pune", "Bajaj Auto", "Bharat Forge", "Thermax", "Alfa Laval India"],
     description: "Pune, Maharashtra's engineering and auto manufacturing capital with major forging units, heat treatment facilities, and precision component manufacturers.",
     metaTitle: 'Refractory Supplier in Pune | Shanker Agencies',
-    metaDescription: "Refractory supplier in Pune, Maharashtra. Ceramic fiber blankets, castables, ramming mass & firebricks for forging, foundry & heat treatment plants. Bharat Forge, Tata Motors supply chain. Authorized CUMI dealer, SAPL.",
+    metaDescription: "Refractory supplier in Pune, Maharashtra. Ceramic fiber blankets, castables, ramming mass & firebricks for forging, foundry & heat treatment plants.",
     h1: "Refractory Supplier in Pune for Forging, Foundry & Engineering Industries",
     content: {
       intro: "Pune is a major engineering and automotive manufacturing hub, home to Bharat Forge, Tata Motors, Bajaj Auto and hundreds of precision component manufacturers. The city's forging units, foundries, heat-treatment facilities and industrial furnaces represent a significant refractory market. Shanker Agencies supplies engineered refractory solutions to Pune's manufacturing sector from our Delhi warehouse.",
@@ -678,7 +678,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Gujarat NRE Coke", "Essar Steel (nearby)", "Rajkot Engineering Cluster", "Atul Ltd"],
     description: "Rajkot, Gujarat's engineering capital with the country's largest concentration of iron casting units, forging, and precision engineering.",
     metaTitle: 'Refractory Supplier in Rajkot | Shanker Agencies',
-    metaDescription: "Refractory supplier in Rajkot, Gujarat. Ramming mass, firebricks, castables & ceramic fiber for iron foundries & induction furnaces. Gujarat's largest engineering cluster. Authorized CUMI dealer, SAPL.",
+    metaDescription: "Refractory supplier in Rajkot, Gujarat. Ramming mass, firebricks, castables & ceramic fiber for iron foundries & induction furnaces.",
     h1: "Refractory Supplier in Rajkot for Foundries & Engineering Industries",
     content: {
       intro: "Rajkot is the undisputed capital of India's engineering castings industry. The city and its surrounding district host thousands of iron foundries, precision casting units, forging shops, and engineering component manufacturers, one of the highest concentrations of induction furnace users in India. Shanker Agencies supplies Rajkot's foundry belt with the refractory materials that keep these furnaces running.",
@@ -699,7 +699,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["ONGC Hazira", "KRIBHCO", "NTPC Ukai", "Reliance Industries Hazira", "Shell India Hazira"],
     description: "Surat & Hazira, India's petrochemical corridor with major refineries, fertilizer plants, and process industries requiring acid-proof and high-temperature refractories.",
     metaTitle: 'Refractory Supplier in Surat & Hazira | Shanker Agencies',
-    metaDescription: "Refractory supplier in Surat, Hazira & South Gujarat. Acid proof bricks, castables, ceramic fiber & insulation for ONGC, Reliance, Shell & petrochemical plants. Authorized Crown Ceramics & CUMI dealer, SAPL.",
+    metaDescription: "Refractory supplier in Surat, Hazira & South Gujarat. Acid proof bricks, castables, ceramic fiber & insulation for ONGC, Reliance, Shell & petrochemical plants.",
     h1: "Refractory Supplier in Surat & Hazira for Petrochemical & Process Industries",
     content: {
       intro: "The Surat-Hazira corridor on the south Gujarat coast is one of India's most important petrochemical and process industry belts. Home to ONGC's Hazira LNG terminal, Reliance Industries, Shell India, KRIBHCO, and numerous chemical and fertilizer plants, this region demands specialized acid-proof and high-temperature refractory solutions. SAPL, as the authorized dealer of Crown Ceramics, India's leading acid-resistant ceramic manufacturer, is ideally positioned to serve this market.",
@@ -720,7 +720,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Malwa Ispat", "Shyam Steel Ludhiana", "Hero Cycles", "Apollo Cycles", "Punjab Anand Alloys"],
     description: "Ludhiana, Punjab's industrial capital, India's largest producer of bicycle and auto parts, with massive steel re-rolling and foundry sector.",
     metaTitle: 'Refractory Supplier in Ludhiana | Shanker Agencies',
-    metaDescription: "Refractory supplier in Ludhiana, Punjab. High alumina bricks, ramming mass, firebricks & castables for steel re-rolling mills & foundries. Punjab's industrial hub. Authorized CUMI dealer, Shanker Agencies.",
+    metaDescription: "Refractory supplier in Ludhiana, Punjab. High alumina bricks, ramming mass, firebricks & castables for steel re-rolling mills & foundries.",
     h1: "Refractory Supplier in Ludhiana for Punjab's Steel & Manufacturing Belt",
     content: {
       intro: "Ludhiana is Punjab's industrial powerhouse, producing 25% of India's cycle output, 70% of machine tools, and a significant share of auto components and woolen goods. Behind this manufacturing might are hundreds of induction furnaces, forging furnaces, heat treatment units, and steel re-rolling mills that require high-quality refractory materials. Shanker Agencies, with its strong presence across North India, is a reliable refractory partner for Ludhiana's industrial community.",
@@ -741,7 +741,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["SAIL Durgapur Steel Plant", "Durgapur Projects Limited", "Durgapur Cement Works", "Durgapur Chemicals"],
     description: "Durgapur, West Bengal's planned industrial city with SAIL's integrated steel plant, power stations, and major engineering industries.",
     metaTitle: 'Refractory Supplier in Durgapur | Shanker Agencies',
-    metaDescription: "Refractory supplier in Durgapur, West Bengal. High alumina bricks, MgO-C bricks, castables & flow control for SAIL Durgapur & steel plants. Authorized CUMI dealer. Contact Shanker Agencies.",
+    metaDescription: "Refractory supplier in Durgapur, West Bengal. High alumina bricks, MgO-C bricks, castables & flow control for SAIL Durgapur & steel plants.",
     h1: "Refractory Supplier in Durgapur for SAIL & West Bengal Steel Plants",
     content: {
       intro: "Durgapur, part of West Bengal's 'Ruhr Valley', is home to SAIL's Durgapur Steel Plant, one of India's oldest and most significant integrated steel facilities. The city also has Durgapur Projects Limited (a power utility), Durgapur Chemicals, and a cluster of engineering industries. Shanker Agencies supplies refractory materials to this important East India industrial hub.",
@@ -763,7 +763,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["ADNOC", "Emirates Steel", "EMAL (Emirates Aluminium)", "Abu Dhabi National Energy Company (TAQA)"],
     description: "Abu Dhabi, UAE capital and home to ADNOC, Emirates Steel, EMAL aluminium smelter, and a massive petrochemical complex.",
     metaTitle: 'Refractory Exporter to Abu Dhabi UAE | Shanker Agencies',
-    metaDescription: "Indian refractory supplier to Abu Dhabi, UAE. High alumina bricks, castables, ceramic fiber & acid proof materials for ADNOC, Emirates Steel & EMAL. Authorized CUMI dealer. CIF Jebel Ali pricing. Contact SAPL.",
+    metaDescription: "Indian refractory supplier to Abu Dhabi, UAE. High alumina bricks, castables, ceramic fiber & acid proof materials for ADNOC, Emirates Steel & EMAL.",
     h1: "Refractory Supplier in Abu Dhabi for UAE Petrochemical & Aluminium Industries",
     content: {
       intro: "Abu Dhabi, the capital of the UAE, hosts ADNOC (one of the largest oil and gas companies globally), Emirates Steel, EMAL (one of the largest aluminium smelters in the region) and a growing petrochemical complex. These industries need high-performance refractory materials for their furnaces, reactors and process vessels. Shanker Agencies exports refractories to Abu Dhabi with competitive CIF pricing and reliable delivery via Jebel Ali or Abu Dhabi ports.",
@@ -784,7 +784,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["SABIC Yanbu", "Saudi Aramco Yanbu", "Saudi Ceramic Company", "National Industrialization Company (TASNEE)"],
     description: "Jeddah & Yanbu industrial city, Saudi Arabia's petrochemical, cement, and industrial manufacturing hub on the Red Sea coast.",
     metaTitle: 'Refractory Exporter to Jeddah | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Jeddah & Yanbu, Saudi Arabia. Castables, ceramic fiber, acid proof bricks & insulation for SABIC, Saudi Aramco & Saudi industries. CIF Jeddah Islamic Port pricing. Authorized CUMI dealer, SAPL.",
+    metaDescription: "Indian refractory exporter to Jeddah & Yanbu, Saudi Arabia. Castables, ceramic fiber, acid proof bricks & insulation for SABIC, Saudi Aramco & Saudi industries.",
     h1: "Refractory Supplier in Jeddah & Yanbu for Saudi Arabia's Industrial Sector",
     content: {
       intro: "Jeddah and the nearby industrial city of Yanbu form Saudi Arabia's western industrial corridor. Yanbu Industrial City houses major SABIC petrochemical complexes and Saudi Aramco refining operations that require premium refractory linings for fired heaters, reformers, and process vessels. Shanker Agencies exports high-quality Indian refractories to this region via regular shipments through Jeddah Islamic Port.",
@@ -805,7 +805,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Kuwait Petroleum Corporation (KPC)", "Kuwait National Petroleum Company", "Gulf Steel", "Al-Zour Refinery"],
     description: "Kuwait, rapidly growing refining and petrochemical sector with Al-Zour refinery (one of the world's largest) and major power infrastructure.",
     metaTitle: 'Refractory Supplier in Kuwait | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Kuwait. Castables, ceramic fiber & high-temp insulation for Kuwait Petroleum, Al-Zour Refinery & Gulf Steel. CIF Shuwaikh Port. Authorized CUMI dealer, Shanker Agencies.",
+    metaDescription: "Indian refractory exporter to Kuwait. Castables, ceramic fiber & high-temp insulation for Kuwait Petroleum, Al-Zour Refinery & Gulf Steel. CIF Shuwaikh Port.",
     h1: "Refractory Supplier in Kuwait for Refinery & Petrochemical Industries",
     content: {
       intro: "Kuwait is investing billions in expanding its refining and petrochemical capacity, with the Al-Zour Refinery, one of the world's largest, now operational. This expansion has significantly increased demand for refractory materials in Kuwait. Shanker Agencies exports premium Indian refractories to Kuwait with competitive CIF Shuwaikh and Shuaiba port pricing.",
@@ -826,7 +826,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Megasteel (now MSC)", "Lion DRI", "Petronas Petrochemicals", "YTL Cement", "Lafarge Malaysia"],
     description: "Kuala Lumpur & Selangor, Malaysia's industrial heartland with steel, petrochemical, cement, and glass industries.",
     metaTitle: 'Refractory Exporter to Malaysia | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Malaysia. High alumina bricks, castables, ceramic fiber & insulation for Malaysian steel, petrochemical & cement plants. CIF Port Klang pricing. Authorized CUMI dealer, Shanker Agencies.",
+    metaDescription: "Indian refractory exporter to Malaysia. High alumina bricks, castables, ceramic fiber & insulation for Malaysian steel, petrochemical & cement plants.",
     h1: "Refractory Supplier in Malaysia, Kuala Lumpur, Selangor & Port Klang",
     content: {
       intro: "Malaysia's Klang Valley and surrounding states host a significant industrial base including steel mini-mills, petrochemical plants, cement manufacturers, and glass factories. As ASEAN's third-largest economy, Malaysia is an important market for quality Indian refractory exports. Shanker Agencies exports to Malaysia via regular container shipping to Port Klang, with competitive CIF pricing and 11 to 14 day transit times from Mundra port.",
@@ -847,7 +847,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Sahaviriya Steel Industries (SSI)", "G Steel", "SCG Chemicals", "TPI Polene", "Siam Cement Group (SCG)"],
     description: "Bangkok & Eastern Seaboard, Thailand's industrial heartland with major steel, cement, glass and petrochemical industries.",
     metaTitle: 'Refractory Exporter to Thailand | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Thailand. Castables, bricks, ceramic fiber & insulation for SCG, G Steel & Thai industries. CIF Laem Chabang pricing. Authorized CUMI dealer, Shanker Agencies.",
+    metaDescription: "Indian refractory exporter to Thailand. Castables, bricks, ceramic fiber & insulation for SCG, G Steel & Thai industries. CIF Laem Chabang pricing.",
     h1: "Refractory Supplier in Thailand, Bangkok, Rayong & Eastern Seaboard",
     content: {
       intro: "Thailand is Southeast Asia's second-largest economy with a mature industrial base spanning steel, cement (dominated by the Siam Cement Group), petrochemicals on the Eastern Seaboard, and a growing glass manufacturing sector. Shanker Agencies exports quality Indian refractories to Thailand via regular container shipments to Laem Chabang Port, the major industrial port on the Eastern Seaboard.",
@@ -868,7 +868,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Ezz Steel (Beshay Steel)", "Egyptian Iron & Steel (Hadisolb)", "Suez Cement", "Lafarge Egypt", "Egyptian Petrochemicals"],
     description: "Cairo & Alexandria, Egypt and North Africa's refractory hub, serving major steel, cement, and petrochemical industries.",
     metaTitle: 'Refractory Exporter to Egypt | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Egypt. High alumina bricks, castables, magnesia spinel bricks & ceramic fiber for Ezz Steel, Egyptian cement & petrochemical plants. CIF Alexandria pricing. Authorized CUMI dealer, SAPL.",
+    metaDescription: "Indian refractory exporter to Egypt. High alumina bricks, castables, magnesia spinel bricks & ceramic fiber for Ezz Steel, Egyptian cement & petrochemical…",
     h1: "Refractory Supplier in Egypt for Steel, Cement & Petrochemical Industries",
     content: {
       intro: "Egypt is Africa's largest steel producer and has one of the continent's most developed cement industries. With Ezz Steel as Africa's largest steel company and a dozen major cement manufacturers, Egypt's refractory market is substantial. Shanker Agencies exports premium Indian refractories to Egypt via Alexandria and Ain Sokhna ports, offering competitive CIF pricing with 10 to 14 day transit from Mundra port.",
@@ -889,7 +889,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Erdemir Group (ArcelorMittal Turkey)", "Kardemir Steel", "Cimentas", "Trakya Cam (Sisecam)", "TUPRAS Refinery"],
     description: "Istanbul & Izmir, Turkey's industrial heartland, home to one of the world's top 10 steel producers and a massive cement & glass sector.",
     metaTitle: 'Refractory Exporter to Turkey | Shanker Agencies',
-    metaDescription: "Indian refractory exporter to Turkey. High alumina bricks, MgO-C bricks, castables & ceramic fiber for Turkish steel, Sisecam glass, TUPRAS & cement plants. CIF Istanbul/Izmir pricing. Authorized CUMI dealer, SAPL.",
+    metaDescription: "Indian refractory exporter to Turkey. High alumina bricks, MgO-C bricks, castables & ceramic fiber for Turkish steel, Sisecam glass, TUPRAS & cement plants.",
     h1: "Refractory Supplier in Turkey for Steel, Glass & Cement Industries",
     content: {
       intro: "Turkey is one of the world's top 10 steel producers, a major cement exporter, and home to Sisecam, one of the world's largest glass manufacturers. This industrial strength creates significant refractory demand. While Turkey has domestic refractory production, the market remains open to competitive Indian-origin products. Shanker Agencies exports to Turkish buyers via regular container shipments to Istanbul and Izmir ports.",
@@ -912,7 +912,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["IOCL Vadodara Refinery", "GSFC Fertilizers", "Gujarat Narmada Valley Fertilizers", "Alembic Pharmaceuticals"],
     description: "Vadodara is Gujarat's petrochemical and fertilizer hub. With IOCL's major refinery, GSFC's ammonia-urea complex, and a dense concentration of chemical plants, demand for acid-proof linings, castable refractories, and insulation is substantial.",
     metaTitle: 'Refractory Supplier in Vadodara | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Vadodara. Acid proof bricks, LCC castables & insulation for petrochemical, fertilizer & glass plants. CUMI authorized dealer. Fast supply across Gujarat.",
+    metaDescription: "Refractory materials distributor in Vadodara. Acid proof bricks, LCC castables & insulation for petrochemical, fertilizer & glass plants.",
     h1: "Refractory Materials Supplier in Vadodara, Gujarat",
     content: {
       intro: "Vadodara (Baroda) is Gujarat's industrial powerhouse, home to IOCL's major refinery, a dense concentration of chemical and fertilizer plants, and significant glass manufacturing. Shanker Agencies supplies the full range of refractory and acid-proof materials to Vadodara's process industries from our Gujarat supply network, with documentation for all grades supplied.",
@@ -933,7 +933,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["HPCL Panipat Refinery", "IOC Panipat Refinery & Petrochemical Complex", "NTPC Panipat"],
     description: "Panipat hosts one of India's largest oil refineries (IOCL Panipat, 15 MMTPA) and a major petrochemical complex. The refinery and downstream units create a large continuous demand for heater refractories, insulation, and acid-resistant linings.",
     metaTitle: 'Refractory Supplier in Panipat | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Panipat, Haryana. Serving IOCL refinery, petrochemical complex & power plants. Ceramic fiber, castable refractories & insulation. Same-day dispatch from Delhi.",
+    metaDescription: "Refractory materials distributor in Panipat, Haryana. Serving IOCL refinery, petrochemical complex & power plants.",
     h1: "Refractory Materials Supplier in Panipat, Haryana",
     content: {
       intro: "Panipat is home to the IOCL Panipat Refinery, one of India's largest at 15 MMTPA, and the attached petrochemical complex producing PTA, polypropylene, and naphtha cracker products. The continuous operation of fired heaters, reactors, and process furnaces in this complex creates a steady demand for high-performance refractory materials. Shanker Agencies, headquartered in Delhi (~100 km from Panipat), provides same-day emergency dispatch for urgent refractory requirements.",
@@ -954,7 +954,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Lohia Machines", "JK Tyre & Industries", "Swadeshi Cotton Mills", "Kanpur Electric Supply Co."],
     description: "Kanpur is Uttar Pradesh's largest industrial city and a key secondary steel and foundry market. The city's tanneries and leather chemicals sector requires acid-proof linings, while its foundries and glass units need refractory bricks and castables.",
     metaTitle: 'Refractory Supplier in Kanpur | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Kanpur, UP. High alumina bricks, acid proof bricks & LCC castables for steel, foundry & leather chemical industries. Authorized CUMI & Crown Ceramics dealer.",
+    metaDescription: "Refractory materials distributor in Kanpur, UP. High alumina bricks, acid proof bricks & LCC castables for steel, foundry & leather chemical industries.",
     h1: "Refractory Materials Distributor in Kanpur, Uttar Pradesh",
     content: {
       intro: "Kanpur is one of Uttar Pradesh's most industrialized cities, its foundry and small steel sector, large leather and chemical industry, and glass manufacturing create significant refractory demand. Shanker Agencies serves Kanpur's industrial buyers from our Delhi base with reliable supply and technical support, making us the preferred refractory partner for Kanpur's diverse industrial sector.",
@@ -975,7 +975,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["LMW (Lakshmi Machine Works)", "Elgi Equipments", "Pricol", "numerous foundries and auto-component manufacturers"],
     description: "Coimbatore is Tamil Nadu's industrial capital and one of India's largest foundry hubs, with 3,000+ foundries producing grey iron, SG iron, and steel castings. Demand for induction furnace ramming mass, high alumina bricks, and castables is substantial and growing.",
     metaTitle: 'Refractory Supplier in Coimbatore | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Coimbatore. Silica & alumina ramming mass, high alumina bricks & castables for 3,000+ foundries. CUMI authorized dealer. Technical support for IF lining.",
+    metaDescription: "Refractory materials distributor in Coimbatore. Silica & alumina ramming mass, high alumina bricks & castables for 3,000+ foundries. CUMI authorized dealer.",
     h1: "Refractory Materials Distributor in Coimbatore, India's Foundry Capital",
     content: {
       intro: "Coimbatore is India's largest foundry cluster, with over 3,000 active foundries producing grey iron, SG iron, steel and non-ferrous castings for the auto, pump and engineering industries. That concentration creates one of India's highest per-capita demands for induction furnace refractories. Shanker Agencies serves Coimbatore's foundry sector with CUMI-grade silica and alumina ramming mass, high alumina bricks and complete lining solutions.",
@@ -996,7 +996,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Malwa Steel", "Pithampur AUDI, SEZ automotive zone", "Dewas industrial area", "Khandwa industrial belt"],
     description: "Indore is Madhya Pradesh's commercial capital and rapidly growing industrial hub. The Pithampur automotive and industrial zone, Dewas pharma and chemical belt, and expanding steel sector create growing refractory demand.",
     metaTitle: 'Refractory Supplier in Indore | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Indore, MP. High alumina bricks, castables & ceramic fiber for steel, pharma & glass industries. CUMI authorized dealer. Technical support & competitive pricing.",
+    metaDescription: "Refractory materials distributor in Indore, MP. High alumina bricks, castables & ceramic fiber for steel, pharma & glass industries. CUMI authorized dealer.",
     h1: "Refractory Materials Supplier in Indore, Madhya Pradesh",
     content: {
       intro: "Indore is Madhya Pradesh's industrial capital, anchored by the Pithampur Special Economic Zone (home to automotive manufacturers), the Dewas pharmaceutical and chemical cluster, and a growing secondary steel sector. Shanker Agencies serves Indore's industrial buyers from our central India supply network, providing competitive pricing and technical support for all refractory applications.",
@@ -1017,7 +1017,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["IOCL Haldia Refinery", "HPCL Haldia Petrochemicals", "Mitsubishi Chemical India", "CESC Budge Budge Power"],
     description: "Haldia is West Bengal's major port and industrial city, home to IOCL's Haldia refinery, Haldia Petrochemicals, and a large fertilizer complex. The continuous-process nature of these plants drives high demand for ceramic fiber, castable refractories, and insulation.",
     metaTitle: 'Refractory Supplier in Haldia | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Haldia, West Bengal. Ceramic fiber, LCC castables & insulation for IOCL refinery, petrochemical & fertilizer plants. Supply from Kolkata & Delhi warehouses.",
+    metaDescription: "Refractory materials distributor in Haldia, West Bengal. Ceramic fiber, LCC castables & insulation for IOCL refinery, petrochemical & fertilizer plants.",
     h1: "Refractory Materials Supplier in Haldia, West Bengal",
     content: {
       intro: "Haldia Petrochemical Complex and IOCL Haldia Refinery anchor West Bengal's industrial output. The refinery alone (7.5 MMTPA) has over 40 major fired heaters with continuous ceramic fiber and castable refractory maintenance requirements. Haldia Petrochemicals' crackers and Tata Chemicals' soda ash plant add further demand. Shanker Agencies serves Haldia from our Kolkata supply network with regular stock movements.",
@@ -1038,7 +1038,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Bosch India", "ABB Ltd.", "Mahindra & Mahindra", "Garware Wall Ropes", "Hindustan Aeronautics Limited (HAL)"],
     description: "Nashik is Maharashtra's second largest industrial hub after Pune, with major auto-component manufacturing, precision engineering, and HAL's aircraft manufacturing. It is also home to significant glass manufacturing and India's most important grape and wine industry requiring specialized stainless steel and food-grade acid-resistant linings.",
     metaTitle: 'Refractory Supplier in Nashik | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Nashik. High alumina bricks, ramming mass & ceramic fiber for auto, foundry, glass & engineering industries. Authorized CUMI dealer. Maharashtra supply.",
+    metaDescription: "Refractory materials distributor in Nashik. High alumina bricks, ramming mass & ceramic fiber for auto, foundry, glass & engineering industries.",
     h1: "Refractory Materials Distributor in Nashik, Maharashtra",
     content: {
       intro: "Nashik is a rapidly growing industrial city in Maharashtra with strong auto-component manufacturing, precision engineering (HAL's aircraft division), and glass production. The Ambad and Satpur industrial areas house hundreds of foundries and heat-treatment facilities creating consistent refractory demand. Shanker Agencies supplies Nashik from our western India supply network.",
@@ -1059,7 +1059,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["NALCO (Angul)", "HINDALCO Hirakud", "IMFA (Indian Metals & Ferro Alloys)", "MCL (Mahanadi Coalfields)"],
     description: "Odisha is India's largest steel and aluminium producing state. Bhubaneswar serves as the commercial hub connecting Rourkela Steel Plant, NALCO's aluminium complex in Angul, HINDALCO's Hirakud operations, and multiple ferro-alloy plants requiring specialized refractories.",
     metaTitle: 'Refractory Supplier in Bhubaneswar | Shanker Agencies',
-    metaDescription: "Refractory materials distributor in Bhubaneswar, Odisha. High alumina bricks, castables & silicon carbide bricks for steel, aluminium & ferro-alloy industries. Supply across Odisha.",
+    metaDescription: "Refractory materials distributor in Bhubaneswar, Odisha. High alumina bricks, castables & silicon carbide bricks for steel, aluminium & ferro-alloy industries.",
     h1: "Refractory Materials Supplier in Bhubaneswar, Serving Odisha's Steel & Aluminium Belt",
     content: {
       intro: "Odisha is home to some of India's largest steel and aluminium producers, NALCO, HINDALCO Hirakud, IMFA ferro-alloys, and the expanding steel corridor from Rourkela to Angul. Bhubaneswar serves as the commercial center for procurement across Odisha's industrial corridor. Shanker Agencies supplies the full range of refractories to Odisha's primary metals sector.",
@@ -1082,7 +1082,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["ALBA (Aluminium Bahrain)", "BAPCO (Bahrain Petroleum Company)", "Gulf Petrochemical Industries"],
     description: "Bahrain hosts ALBA, one of the world's largest aluminium smelters with a capacity of 1.5 million tonnes/year. This makes Bahrain one of the highest per-capita consumers of refractory materials in the GCC, with demand for silicon carbide, calcium silicate, and carbon cathode refractories.",
     metaTitle: 'Refractory Exporter to Bahrain | Shanker Agencies',
-    metaDescription: "Refractory materials exporter to Bahrain. Silicon carbide bricks, ceramic fiber & aluminium furnace refractories for ALBA smelter & BAPCO refinery. CIF Khalifa Bin Salman Port. Indian origin.",
+    metaDescription: "Refractory materials exporter to Bahrain. Silicon carbide bricks, ceramic fiber & aluminium furnace refractories for ALBA smelter & BAPCO refinery.",
     h1: "Refractory Materials Exporter to Bahrain, Serving ALBA & BAPCO",
     content: {
       intro: "Bahrain's ALBA is one of the world's largest single-site aluminium smelters (1.5 MMTPA), and represents one of the GCC's most significant refractory consumers. BAPCO's Sitra refinery (currently being expanded to 380,000 bpd under the Bapco Modernization Programme) and Gulf Petrochemical Industries add petrochemical refractory demand. Shanker Agencies exports to Bahrain via CIF Khalifa Bin Salman Port.",
@@ -1124,7 +1124,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["BSRM Steel", "AKS Steel", "PHP Glass", "PRAN Group industrial", "BGMEA textile mills"],
     description: "Bangladesh has one of South Asia's fastest growing steel sectors, with over 300 induction furnaces and electric arc furnaces supplying the construction boom. The glass, ceramics, and textile power sectors add to substantial refractory demand. India-Bangladesh proximity enables fast, cost-effective supply.",
     metaTitle: 'Refractory Exporter to Bangladesh | Shanker Agencies',
-    metaDescription: "Refractory materials exporter to Bangladesh. High alumina bricks, ramming mass & castables for steel, glass & ceramic industries. CIF Chittagong Port. Trusted Indian exporter since 1980.",
+    metaDescription: "Refractory materials exporter to Bangladesh. High alumina bricks, ramming mass & castables for steel, glass & ceramic industries. CIF Chittagong Port.",
     h1: "Refractory Materials Exporter to Bangladesh",
     content: {
       intro: "Bangladesh's rapid industrialization has created one of South Asia's fastest growing refractory markets. With 300+ induction furnaces in the steel re-rolling sector (BSRM, AKS, PHP Glassfibre, Abul Khair), substantial glass and ceramic manufacturing, and over 5,000 industrial boilers in the textile and food sectors, annual refractory consumption is growing at 12-15% annually. Shanker Agencies exports to Chittagong and Dhaka via land border (Petrapole-Benapole) and sea routes.",
@@ -1145,7 +1145,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["Pag-asa Steel Works", "Global Ferronickel Holdings", "Pilipinas Shell Refinery", "Republic Cement"],
     description: "The Philippines has a growing steel and cement sector, a significant nickel smelting industry (Global Ferronickel, Nickel Asia), and Pilipinas Shell's Tabangao refinery. Shanker Agencies exports to Manila Port serving these industries.",
     metaTitle: 'Refractory Exporter to Philippines | Shanker Agencies',
-    metaDescription: "Refractory materials exporter to Philippines. High alumina bricks, castables & specialty refractories for steel, nickel smelting & cement industries. CIF Manila Port. Indian quality.",
+    metaDescription: "Refractory materials exporter to Philippines. High alumina bricks, castables & specialty refractories for steel, nickel smelting & cement industries.",
     h1: "Refractory Materials Exporter to the Philippines",
     content: {
       intro: "The Philippines' industrial refractory demand is concentrated in the growing steel mini-mill sector (EAF and induction), the large nickel and ferro-nickel smelting industry (Global Ferronickel, Nickel Asia, Philippines is one of the world's top nickel producers), Pilipinas Shell's refinery operations, and a large cement industry. Shanker Agencies exports to Manila and Cebu ports.",
@@ -1166,7 +1166,7 @@ export const LOCATIONS_DATA = [
     majorPlants: ["VALCO (Volta Aluminium Company)", "AngloGold Ashanti", "Goldfields Ghana", "GHACEM Cement"],
     description: "Ghana is West Africa's most industrialized economy with VALCO's aluminium smelter (using abundant Volta River hydropower), a large gold mining industry with smelting operations, and one of the region's most active cement sectors. Shanker Agencies exports to Tema Port (Greater Accra).",
     metaTitle: 'Refractory Exporter to Ghana | Shanker Agencies',
-    metaDescription: "Refractory materials exporter to Ghana. Castables, high alumina bricks & insulation for VALCO aluminium, gold smelting & cement industries. CIF Tema Port. Indian quality.",
+    metaDescription: "Refractory materials exporter to Ghana. Castables, high alumina bricks & insulation for VALCO aluminium, gold smelting & cement industries. CIF Tema Port.",
     h1: "Refractory Materials Exporter to Ghana, West Africa",
     content: {
       intro: "Ghana's industrial refractory demand is anchored by VALCO's aluminium smelter (the only primary aluminium producer in West Africa), the large gold and gold processing sector (AngloGold Ashanti, Goldfields, Kinross) and GHACEM's large cement operations. Tema Port (near Accra) is a major West African deep-water port, making container imports from India efficient.",

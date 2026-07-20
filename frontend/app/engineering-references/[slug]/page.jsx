@@ -37,9 +37,17 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  // keyTakeaway/problem run 250-400+ chars, far past the 160-char meta
+  // description limit once a suffix is appended (audit flagged all 6 pages).
+  // Trim the lead sentence to a word boundary within budget instead.
+  const leadSentence = (cs.keyTakeaway || cs.problem).split('. ')[0];
+  const shortLead = leadSentence.length > 80
+    ? `${leadSentence.slice(0, 80).replace(/\s+\S*$/, '')}…`
+    : leadSentence;
+
   return {
     title: cs.title,
-    description: `${cs.keyTakeaway || cs.problem.slice(0, 150)}, ${cs.industry} application reference scenario from Shanker Agencies. Illustrative, not a record of a specific SAPL project.`,
+    description: `${shortLead}. ${cs.industry} refractory reference scenario, not a project record.`,
     alternates: { canonical: `/engineering-references/${slug}` },
     openGraph: {
       title: cs.title,
