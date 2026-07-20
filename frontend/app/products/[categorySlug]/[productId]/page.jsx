@@ -300,35 +300,6 @@ export default async function ProductDetailPage({ params }) {
               </div>
             )}
 
-            {datasheet.gradeTable && (
-              <div className="mb-8">
-                <h3 className="font-oswald text-lg font-bold text-[#1E3A5F] mb-3">{datasheet.gradeTable.title}</h3>
-                <div className="overflow-x-auto rounded-lg border border-gray-200">
-                  <table className="w-full text-sm">
-                    <thead>
-                      <tr className="bg-[#1E3A5F] text-white text-left">
-                        {datasheet.gradeTable.columns.map((c) => (
-                          <th key={c} className="px-4 py-2.5 font-semibold whitespace-nowrap">{c}</th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {datasheet.gradeTable.rows.map((row, i) => (
-                        <tr key={i} className={i % 2 ? 'bg-gray-50' : 'bg-white'}>
-                          {row.map((cell, j) => (
-                            <td key={j} className={`px-4 py-2.5 border-b border-gray-100 ${j === 0 ? 'font-semibold text-[#1E3A5F] whitespace-nowrap' : 'text-gray-700'}`}>{cell}</td>
-                          ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-                {datasheet.gradeTable.note && (
-                  <p className="text-xs text-gray-400 mt-2">{datasheet.gradeTable.note}</p>
-                )}
-              </div>
-            )}
-
             {datasheet.physicalProperties?.length > 0 && (
               <div className="mb-8">
                 <h3 className="font-oswald text-lg font-bold text-[#1E3A5F] mb-3">Typical Physical Properties</h3>
