@@ -23,6 +23,19 @@ import {
 
 const BASE = 'https://www.shankeragencies.com';
 
+// cs.title (the H1 headline) runs up to 129 chars, well past the meta title
+// limit once the brand suffix is appended (audit flagged all 6 pages). The
+// headline stays descriptive on-page; the <title> gets a short standalone
+// version instead of a truncated headline.
+const SHORT_TITLES = {
+  'steel-ladle-lcc-campaign-life-extension-eastern-india': 'Steel Ladle LCC-80 Campaign Life',
+  'boiler-refractory-castable-cfbc-power-plant-southern-india': 'CFBC Boiler Refractory Castable Guide',
+  'glass-tank-fused-cast-azs-life-extension-western-india': 'Glass Tank AZS-36 Life Extension',
+  'aluminium-holding-furnace-non-wetting-castable-gcc-export': 'Aluminium Holding Furnace Castable',
+  'induction-furnace-silica-ramming-mass-northern-india': 'Induction Furnace Sintering Guide',
+  'cement-kiln-burning-zone-magnesia-spinel-rotary-kiln': 'Cement Kiln Magnesia-Spinel Lining',
+};
+
 export async function generateStaticParams() {
   return CASE_STUDIES.map((cs) => ({ slug: cs.slug }));
 }
@@ -46,7 +59,7 @@ export async function generateMetadata({ params }) {
     : leadSentence;
 
   return {
-    title: cs.title,
+    title: SHORT_TITLES[slug] || cs.title,
     description: `${shortLead}. ${cs.industry} refractory reference scenario, not a project record.`,
     alternates: { canonical: `/engineering-references/${slug}` },
     openGraph: {

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const cat = AR_PRODUCTS.find((p) => p.slug === categorySlug);
   if (!cat) return { title: 'الصفحة غير موجودة' };
   return {
-    title: `${cat.name} | شانكر أجنسيز`,
+    title: { absolute: `${cat.name} | شانكر أجنسيز` },
     description: cat.desc.slice(0, 158),
     alternates: {
       canonical: `/ar/products/${categorySlug}`,

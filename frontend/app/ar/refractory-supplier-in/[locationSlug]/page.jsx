@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const loc = getArLocation(locationSlug);
   if (!loc) return { title: 'الصفحة غير موجودة' };
   return {
-    title: `${loc.title} | شانكر أجنسيز`,
+    title: { absolute: `${loc.title} | شانكر أجنسيز` },
     description: loc.intro.slice(0, 158),
     alternates: {
       canonical: `/ar/refractory-supplier-in/${locationSlug}`,

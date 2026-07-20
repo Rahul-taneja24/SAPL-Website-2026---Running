@@ -1,7 +1,7 @@
 import Brands from '@/sections/Brands';
 
 export const metadata = {
-  title: 'Refractory Brands We Supply | CUMI, Calderys, TRL Krosaki',
+  title: 'Refractory Brands We Supply',
   description: "Shanker Agencies is an authorized dealer and supply partner for 7 leading refractory manufacturers in India. Genuine products, technical support since 1980.",
   alternates: { canonical: '/brands' },
   openGraph: {

@@ -77,7 +77,7 @@ export async function generateMetadata({ params }) {
     };
   }
   const relationship = brand.partnerOnly ? 'a supply partner' : 'an authorised dealer and supply partner';
-  const title = `${brand.name} ${brand.partnerOnly ? 'Supplier' : 'Dealer'} in India | Shanker Agencies`;
+  const title = `${brand.shortName} ${brand.partnerOnly ? 'Supplier' : 'Dealer'} in India | Shanker Agencies`;
   const description = `Shanker Agencies is ${relationship} for ${brand.shortName} in India, genuine products, plant-side support, Pan-India delivery since 1980.`;
   return {
     title: { absolute: title },

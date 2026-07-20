@@ -3,7 +3,7 @@ import RfqForm from '@/sections/RfqForm';
 import { AR_COMMON } from '@/data/arData';
 
 export const metadata = {
-  title: 'اطلب عرض سعر للمواد الحرارية | شانكر أجنسيز',
+  title: { absolute: 'اطلب عرض سعر للمواد الحرارية | شانكر أجنسيز' },
   description:
     'أرسل طلب عرض سعر منظّم للمواد الحرارية: المنتج والدرجة والكمية وميناء الوصول وشروط الشحن. توريد بالجملة من الهند إلى دول الخليج مع شهادات اختبار المصنع.',
   alternates: {
