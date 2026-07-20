@@ -319,7 +319,7 @@ export const BLOG_POSTS_DATA = [
       "Refractory Castable Installation Guide: LCC vs ULCC vs Conventional",
     metaTitle:
       "Refractory Castable Installation: LCC, ULCC & Conventional",
-    metaDescription: "Step-by-step guide to installing refractory castables. Compare LCC, ULCC & conventional types.",
+    metaDescription: "Step-by-step guide to installing refractory castables. Compare LCC, ULCC and conventional types, with mixing, curing and heat-up schedules.",
     category: "How-To",
     tags: [
       "refractory castable",
@@ -1117,7 +1117,7 @@ export const BLOG_POSTS_DATA = [
     title: "Slide Gate Plate Selection Guide for Steel Ladles",
     metaTitle:
       "Slide Gate Plate Selection Guide for Steel Ladles | SAPL 2026",
-    metaDescription: "How to select slide gate plates for steel ladles. Compare alumina-carbon, MgO-C types.",
+    metaDescription: "How to select slide gate plates for steel ladles. Compare alumina-carbon, alumina-zirconia-carbon and MgO-C types by steel grade and slag chemistry.",
     category: "Buyer's Guide",
     tags: [
       "slide gate",
@@ -1243,7 +1243,7 @@ export const BLOG_POSTS_DATA = [
     title: "How to Reduce Refractory Consumption in Steel Plants",
     metaTitle:
       "Reduce Refractory Consumption in Steel Plants | TCO Guide | SAPL",
-    metaDescription: "Proven strategies to reduce refractory consumption and total cost in steel plants.",
+    metaDescription: "Proven strategies to reduce refractory consumption and total cost in steel plants: lining design, campaign life tracking, and material selection.",
     category: "Technical Guide",
     tags: [
       "refractory consumption",
@@ -2109,7 +2109,7 @@ export const BLOG_POSTS_DATA = [
     slug: "al70-vs-al80-high-alumina-bricks",
     title: "AL70 vs AL80 High Alumina Bricks: Which Grade for Your Steel Ladle?",
     metaTitle: "AL70 vs AL80 High Alumina Bricks for Steel Ladles | Comparison Guide",
-    metaDescription: "Compare AL70 (68–72% Al₂O₃) and AL80 (78–82% Al₂O₃) high alumina bricks for steel ladle linings.",
+    metaDescription: "Compare AL70 (68–72% Al₂O₃) and AL80 (78–82% Al₂O₃) high alumina bricks for steel ladle linings: bulk density, CCS and campaign life.",
     category: "Comparison Guide",
     tags: ["high alumina bricks", "AL70", "AL80", "steel ladle", "working lining", "alumina content"],
     readTime: "6 min",

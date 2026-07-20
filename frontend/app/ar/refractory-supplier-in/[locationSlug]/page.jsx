@@ -29,7 +29,9 @@ export async function generateMetadata({ params }) {
       title: `${loc.title} | شانكر أجنسيز`,
       description: loc.intro.slice(0, 158),
       url: `https://www.shankeragencies.com/ar/refractory-supplier-in/${locationSlug}`,
+      siteName: 'Shanker Agencies',
       locale: 'ar_AE',
+      type: 'website',
       images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: loc.title }],
     },
   };

@@ -8,6 +8,9 @@ export const metadata = {
     title: 'Technical Datasheets & Downloads | Shanker Agencies',
     description: 'Download technical datasheets, installation guides and heat-up schedules for high alumina bricks, LCC castables and ceramic fiber.',
     url: 'https://www.shankeragencies.com/downloads',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
     images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Technical Downloads' }],
   },
 };

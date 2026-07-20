@@ -62,7 +62,11 @@ export default async function NewsArticlePage({ params }) {
     description: article.metaDescription,
     datePublished: article.publishDate,
     dateModified: article.lastModified || article.publishDate,
-    ...(article.coverImage ? { image: article.coverImage } : {}),
+    // image is a required field for Google's Article/NewsArticle rich result;
+    // fall back to the site OG image when an article has no coverImage yet
+    // (all 3 seed articles currently don't), matching the pattern already
+    // used on /engineering-references.
+    image: article.coverImage || 'https://www.shankeragencies.com/opengraph-image.jpg',
     author: {
       '@type': 'Organization',
       name: 'Shanker Agencies Engineering Team',
@@ -76,8 +80,16 @@ export default async function NewsArticlePage({ params }) {
     mainEntityOfPage: { '@type': 'WebPage', '@id': `https://www.shankeragencies.com/news/${article.slug}` },
     articleSection: article.category,
     keywords: article.tags.join(', '),
+    // CreativeWork.publisher must be an Organization/Person object, not a
+    // plain string, same class of type-mismatch bug as Brand.parentOrganization
+    // found earlier — s.publisher is a bare string in the sources data.
     ...(article.sources?.length
-      ? { citation: article.sources.map((s) => ({ '@type': 'CreativeWork', name: s.title, url: s.url, ...(s.publisher ? { publisher: s.publisher } : {}) })) }
+      ? { citation: article.sources.map((s) => ({
+          '@type': 'CreativeWork',
+          name: s.title,
+          url: s.url,
+          ...(s.publisher ? { publisher: { '@type': 'Organization', name: s.publisher } } : {}),
+        })) }
       : {}),
     speakable: { '@type': 'SpeakableSpecification', cssSelector: 'article h2, article h3' },
     isAccessibleForFree: true,

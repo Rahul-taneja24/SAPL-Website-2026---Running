@@ -51,6 +51,9 @@ export async function generateMetadata({ params }) {
       title: `${title} | Refractory Products | Shanker Agencies`,
       description: `Explore our range of ${title.toLowerCase()} refractory products. Authorized distributor across India, GCC & ASEAN.`,
       url: `https://www.shankeragencies.com/products/${categorySlug}`,
+      siteName: 'Shanker Agencies',
+      locale: 'en_IN',
+      type: 'website',
       images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: `${title} – Shanker Agencies` }],
     },
   };

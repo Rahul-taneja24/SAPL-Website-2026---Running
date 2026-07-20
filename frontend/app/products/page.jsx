@@ -4,6 +4,15 @@ export const metadata = {
   title: 'Refractory Products & Materials',
   description: 'Browse our complete range of refractory products: high alumina bricks, low cement castables, mullite, mortars and monolithics from leading brands.',
   alternates: { canonical: '/products' },
+  openGraph: {
+    title: 'Refractory Products & Materials | Shanker Agencies',
+    description: 'Browse our complete range of refractory products: high alumina bricks, low cement castables, mullite, mortars and monolithics.',
+    url: 'https://www.shankeragencies.com/products',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Refractory Products' }],
+  },
 };
 
 const webPageSchema = {

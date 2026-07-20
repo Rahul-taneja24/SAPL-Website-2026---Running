@@ -292,7 +292,7 @@ export default function LocationsIndexPage() {
           <div className="flex flex-wrap justify-center gap-6 mt-8 text-white/60 text-sm">
             <Link href="/products" className="hover:text-white underline transition-colors">Browse Products</Link>
             <Link href="/brands" className="hover:text-white underline transition-colors">Our Brands</Link>
-            <Link href="/industries" className="hover:text-white underline transition-colors">Industries We Serve</Link>
+            <Link href="/solutions" className="hover:text-white underline transition-colors">Industries We Serve</Link>
             <Link href="/about" className="hover:text-white underline transition-colors">About SAPL</Link>
           </div>
         </div>

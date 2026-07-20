@@ -18,7 +18,9 @@ export const metadata = {
     title: 'اطلب عرض سعر للمواد الحرارية | شانكر أجنسيز',
     description: 'طلب عرض سعر للمواد الحرارية بالجملة من الهند إلى الخليج.',
     url: 'https://www.shankeragencies.com/ar/rfq',
+    siteName: 'Shanker Agencies',
     locale: 'ar_AE',
+    type: 'website',
     images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'شانكر أجنسيز' }],
   },
 };

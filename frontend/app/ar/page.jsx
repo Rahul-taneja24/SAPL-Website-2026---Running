@@ -17,7 +17,9 @@ export const metadata = {
     title: 'مورّد المواد الحرارية من الهند إلى الخليج | شانكر أجنسيز',
     description: 'توريد المواد الحرارية من الهند إلى دول مجلس التعاون الخليجي منذ 1980.',
     url: 'https://www.shankeragencies.com/ar',
+    siteName: 'Shanker Agencies',
     locale: 'ar_AE',
+    type: 'website',
     images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'شانكر أجنسيز' }],
   },
 };

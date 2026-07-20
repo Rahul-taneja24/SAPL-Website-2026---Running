@@ -4,6 +4,15 @@ export const metadata = {
   title: 'Contact Us | Get a Quote',
   description: 'Contact Shanker Agencies for refractory product enquiries, quotes and technical support. Call +91-9899957888 or email info@shankeragencies.com.',
   alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact Us | Get a Quote | Shanker Agencies',
+    description: 'Contact Shanker Agencies for refractory product enquiries, quotes and technical support.',
+    url: 'https://www.shankeragencies.com/contact',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Contact' }],
+  },
 };
 
 const webPageSchema = {

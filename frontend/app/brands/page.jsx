@@ -8,6 +8,9 @@ export const metadata = {
     title: 'Refractory Brands We Supply in India | Shanker Agencies',
     description: "Authorized dealer and supply partner for CUMI, Calderys, TRL Krosaki, Saint-Gobain, Crown Ceramics, Divine Cerawool and Mahakoshal. Genuine products and technical support since 1980.",
     url: 'https://www.shankeragencies.com/brands',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
     images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Refractory Brands' }],
   },
 };

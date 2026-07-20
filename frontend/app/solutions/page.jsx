@@ -4,6 +4,15 @@ export const metadata = {
   title: 'Engineering Solutions by Industry',
   description: 'Complete refractory engineering solutions including lining design, installation support, and technical consultation for industrial furnaces and kilns.',
   alternates: { canonical: '/solutions' },
+  openGraph: {
+    title: 'Engineering Solutions by Industry | Shanker Agencies',
+    description: 'Refractory engineering solutions: lining design, installation support and technical consultation for industrial furnaces and kilns.',
+    url: 'https://www.shankeragencies.com/solutions',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Engineering Solutions' }],
+  },
 };
 
 const webPageSchema = {

@@ -4,6 +4,15 @@ export const metadata = {
   title: 'About Us | 45 Years of Refractory Excellence',
   description: 'Learn about Shanker Agencies, founded in 1980, serving India, GCC & ASEAN markets with premium refractory materials and engineering solutions.',
   alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About Us | 45 Years of Refractory Excellence | Shanker Agencies',
+    description: 'Shanker Agencies, founded in 1980, serving India, GCC & ASEAN markets with premium refractory materials.',
+    url: 'https://www.shankeragencies.com/about',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies, 45 Years of Refractory Excellence' }],
+  },
 };
 
 const breadcrumbSchema = {

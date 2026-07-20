@@ -18,6 +18,9 @@ export const metadata = {
     description:
       'Structured RFQ for bulk refractory supply and export from India — product, grade, quantity, destination port and incoterm.',
     url: 'https://www.shankeragencies.com/rfq',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
     images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies RFQ' }],
   },
 };

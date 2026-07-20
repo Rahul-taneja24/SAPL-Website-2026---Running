@@ -27,7 +27,9 @@ export async function generateMetadata({ params }) {
       title: `${cat.name} | شانكر أجنسيز`,
       description: cat.desc.slice(0, 158),
       url: `https://www.shankeragencies.com/ar/products/${categorySlug}`,
+      siteName: 'Shanker Agencies',
       locale: 'ar_AE',
+      type: 'website',
       images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: cat.name }],
     },
   };

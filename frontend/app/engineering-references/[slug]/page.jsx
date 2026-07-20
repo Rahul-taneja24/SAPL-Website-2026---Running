@@ -142,7 +142,7 @@ export default async function EngineeringReferencePage({ params }) {
       '@type': 'SpeakableSpecification',
       cssSelector: '[data-speakable="true"], h1, h2',
     },
-    about: [{ '@type': 'Organization', '@id': `${BASE}/#organization` }],
+    about: [{ '@type': 'Organization', '@id': `${BASE}/#organization`, name: 'Shanker Agencies Pvt. Ltd.' }],
     // Explicit disclosure inside the schema itself, so AI engines reading the
     // structured data understand the framing.
     disambiguatingDescription:

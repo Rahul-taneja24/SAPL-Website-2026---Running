@@ -133,13 +133,19 @@ function buildBrandJsonLd(brand) {
         { '@type': 'Country', name: 'Saudi Arabia' },
         { '@type': 'Country', name: 'Singapore' },
       ],
+      // ListItem > Product instead of Offer > itemOffered > Product: this is a
+      // B2B catalog with no fixed online price, and wrapping items as `Offer`
+      // makes Google's Product/Offer rich-result validator require price,
+      // priceCurrency and availability (which we don't have), so it kept
+      // flagging every brand page. ListItem carries the same catalog listing
+      // without triggering Offer's pricing requirements.
       hasOfferCatalog: {
         '@type': 'OfferCatalog',
         name: `${brand.name} product range`,
         itemListElement: brand.products.map((p, i) => ({
-          '@type': 'Offer',
+          '@type': 'ListItem',
           position: i + 1,
-          itemOffered: { '@type': 'Product', name: `${brand.name} ${p}` },
+          item: { '@type': 'Product', name: `${brand.name} ${p}` },
         })),
       },
     },

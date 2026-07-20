@@ -5,7 +5,7 @@ import { NEWS_ARTICLES } from '@/data/newsData';
 export const metadata = {
   title: { absolute: 'Industry News & Analysis | Shanker Agencies' },
   description:
-    'Fresh, cited analysis of refractory, steel, cement and raw-material developments — and what they mean for industrial buyers, procurement and furnace linings.',
+    'Fresh, cited analysis of refractory, steel, cement and raw-material developments, and what they mean for industrial buyers, procurement and furnace linings.',
   alternates: { canonical: '/news' },
   openGraph: {
     title: 'Industry News & Analysis | Shanker Agencies',
@@ -15,6 +15,7 @@ export const metadata = {
     siteName: 'Shanker Agencies',
     locale: 'en_IN',
     type: 'website',
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Industry News' }],
   },
 };
 

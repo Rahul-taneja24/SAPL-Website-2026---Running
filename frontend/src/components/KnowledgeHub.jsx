@@ -212,6 +212,20 @@ export default function KnowledgeHub() {
                   <CategoryTile key={type} type={type} count={typeCounts[type]} onClick={() => setActiveType(type)} />
                 ))}
               </div>
+
+              {/* Real crawlable <a href> links to every item, visually hidden
+                  behind the picker tiles. The interactive filtered list below
+                  only mounts after a click, so without this, search engines
+                  see 4 category tiles and no real link to the other 73 pages
+                  on first load (the JSON-LD ItemList carries the URLs for
+                  schema purposes, but that's not a dofollow link a crawler's
+                  link graph counts). This block is identical content to what
+                  "View all" reveals, not a separate/cloaked page. */}
+              <nav aria-hidden="true" className="sr-only">
+                {allItems.map((item) => (
+                  <a key={`${item.type}-${item.slug}`} href={item.href}>{item.title}</a>
+                ))}
+              </nav>
             </>
           ) : (
             // Results state: one flat, clearly-labelled list. Always a way

@@ -5,6 +5,15 @@ export const metadata = {
   title: 'Knowledge Base | Refractory Engineering Resources',
   description: 'Technical guides, industry news, engineering references and datasheets for refractory professionals, searchable in one place.',
   alternates: { canonical: '/knowledge' },
+  openGraph: {
+    title: 'Knowledge Base | Refractory Engineering Resources | Shanker Agencies',
+    description: 'Technical guides, industry news, engineering references and datasheets for refractory professionals.',
+    url: 'https://www.shankeragencies.com/knowledge',
+    siteName: 'Shanker Agencies',
+    locale: 'en_IN',
+    type: 'website',
+    images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: 'Shanker Agencies Knowledge Base' }],
+  },
 };
 
 // E-E-A-T author entity, Rahul Taneja signs the Knowledge Base content.
