@@ -7,7 +7,7 @@ export const IMAGES = {
 
   // Hero Backgrounds
   heroes: {
-    home: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80&fm=webp", // Steel furnace / rolling mill
+    home: "/images/hero/home-desktop.webp", // Steel furnace / rolling mill, self-hosted (was Unsplash CDN, see App.css .hero-home-bg)
     about: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=1920&q=80&fm=webp", // Industrial warehouse
     products: "/images/products/refractory-brick-lining-installation.jpg", // Stacked Bricks
     contact: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&fm=webp", // Modern office

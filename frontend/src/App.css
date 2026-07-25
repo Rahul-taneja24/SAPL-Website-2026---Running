@@ -24,13 +24,17 @@
   color-scheme: dark;
 }
 /* Homepage hero background — responsive variants so phones don't pull the
-   1920px image (measured 6.6s LCP on mobile). URL mirrors IMAGES.heroes.home
-   in src/data/imagesData.js; keep in sync if that changes. */
+   1920px image (measured 6.6s LCP on mobile). Self-hosted (was Unsplash's
+   CDN — CrUX field data showed 3.0s p75 LCP site-wide, and a cross-origin
+   background-image with no preload hint on the highest-traffic page was the
+   main suspect: extra DNS/TLS to a third-party host, discovered late since
+   CSS background-images aren't found by the browser's preload scanner).
+   Matching <link rel="preload" imagesrcset> added in app/layout.jsx. */
 .hero-home-bg {
-  background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=828&q=75&fm=webp');
+  background-image: url('/images/hero/home-mobile.webp');
 }
 @media (min-width: 768px) {
   .hero-home-bg {
-    background-image: url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1920&q=80&fm=webp');
+    background-image: url('/images/hero/home-desktop.webp');
   }
 }

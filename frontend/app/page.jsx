@@ -90,6 +90,25 @@ const faqs = faqSchema.mainEntity;
 export default function HomePage() {
   return (
     <>
+      {/* Preload the hero background (the LCP element on this page only) with
+          matching responsive variants, fetchpriority high so the browser
+          requests it before parsing the rest of the document. Homepage-only
+          — not in the root layout, so other pages' own LCP images aren't
+          deprioritized by a preload they don't need. */}
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero/home-mobile.webp"
+        fetchPriority="high"
+        media="(max-width: 767px)"
+      />
+      <link
+        rel="preload"
+        as="image"
+        href="/images/hero/home-desktop.webp"
+        fetchPriority="high"
+        media="(min-width: 768px)"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
