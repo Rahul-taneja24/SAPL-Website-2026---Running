@@ -44,6 +44,18 @@ export function AppProvider({ children }) {
     } catch (e) {}
   };
 
+  // Auto-hide the region toast if the visitor doesn't respond. The region is
+  // already applied by this point, so the toast is only a courtesy notice, it
+  // shouldn't linger or re-appear on every subsequent page view.
+  useEffect(() => {
+    if (!geoBanner) return;
+    const timer = setTimeout(() => {
+      setGeoBanner(null);
+      try { localStorage.setItem('shanker_geo_banner_dismissed', '1'); } catch (e) {}
+    }, 30000);
+    return () => clearTimeout(timer);
+  }, [geoBanner]);
+
   const dismissGeoBanner = () => {
     setGeoBanner(null);
     try { localStorage.setItem('shanker_geo_banner_dismissed', '1'); } catch (e) {}
