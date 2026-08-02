@@ -38,9 +38,17 @@ export async function generateMetadata({ params }) {
 }
 
 function getRelatedPosts(post, limit = 3) {
-  return BLOG_POSTS_DATA.filter(
+  const pool = BLOG_POSTS_DATA.filter(
     (p) => p.slug !== post.slug && (p.category === post.category || p.tags.some((t) => post.tags.includes(t)))
-  ).slice(0, limit);
+  );
+  if (pool.length <= limit) return pool;
+  // Rotate the window by this post's own index rather than always taking the
+  // first `limit` matches. A plain slice(0, limit) returns the same earliest
+  // posts on every page (the pool is in id order, oldest first), so posts added
+  // later never surface in any sidebar and receive no internal links at all.
+  // Same failure mode that was fixed in getRelatedLocations().
+  const start = BLOG_POSTS_DATA.findIndex((p) => p.slug === post.slug) % pool.length;
+  return Array.from({ length: limit }, (_, i) => pool[(start + i) % pool.length]);
 }
 
 export default async function BlogArticlePage({ params }) {
