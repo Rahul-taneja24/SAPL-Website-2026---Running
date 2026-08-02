@@ -6,7 +6,10 @@ import {
   Search, X, BookOpen, Newspaper, FlaskConical, FileText,
   Clock, ArrowRight, ChevronRight, ChevronLeft, Phone, MessageCircle,
 } from 'lucide-react';
-import { getHubItems, HUB_TYPES } from '@/data/knowledgeHubIndex';
+// Import labels only, from the data-free module. Importing from
+// knowledgeHubIndex here would pull blogPostsData (~578 KB of article HTML)
+// into this client bundle. Items are computed on the server and passed in.
+import { HUB_TYPES } from '@/data/knowledgeHubTypes';
 
 const TYPE_META = {
   guide: {
@@ -100,8 +103,8 @@ function CategoryTile({ type, count, onClick }) {
   );
 }
 
-export default function KnowledgeHub() {
-  const allItems = useMemo(() => getHubItems(), []);
+export default function KnowledgeHub({ items = [] }) {
+  const allItems = items;
 
   const [query, setQuery] = useState('');
   const [activeType, setActiveType] = useState(null); // null = picker screen

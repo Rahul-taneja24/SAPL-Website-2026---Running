@@ -20,12 +20,11 @@ const PRODUCT_LABELS = Object.fromEntries(
   ])
 );
 
-export const HUB_TYPES = {
-  guide: { label: 'Technical Guide', plural: 'Technical Guides' },
-  news: { label: 'Industry News', plural: 'Industry News' },
-  reference: { label: 'Engineering Reference', plural: 'Engineering References' },
-  datasheet: { label: 'Technical Datasheet', plural: 'Technical Datasheets' },
-};
+// Canonical definition now lives in ./knowledgeHubTypes (no data imports), so
+// client components can pull the labels without this module's dependency graph.
+// Re-exported here so existing server-side importers keep working unchanged.
+export { HUB_TYPES } from './knowledgeHubTypes';
+import { HUB_TYPES } from './knowledgeHubTypes';
 
 function fromBlog() {
   return BLOG_POSTS_DATA.map((p) => ({
