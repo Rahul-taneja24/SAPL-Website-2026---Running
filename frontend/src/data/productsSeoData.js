@@ -113,8 +113,8 @@ export const PRODUCT_SEO = [
     categorySlug: "acid-proofing",
     productId: "acid-proof-bricks",
     name: "Acid Proof Bricks",
-    metaTitle: "Acid Proof Bricks for Chemical Plants | Shanker Agencies",
-    metaDescription: "Acid proof bricks (99%+ chemical resistance) for chemical plants, acid storage tanks & industrial flooring. Authorized Crown Ceramics dealer.",
+    metaTitle: "Acid Proof & Acid Resistant Bricks, IS 4860 | Shanker Agencies",
+    metaDescription: "Acid proof & acid resistant bricks to IS 4860: 2.3-2.5 g/cc density, 99%+ acid resistance, service to 1000°C. Crown Ceramics authorized dealer. Get a quote.",
   },
   {
     categorySlug: "acid-proofing",

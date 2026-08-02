@@ -862,8 +862,8 @@ export const BLOG_POSTS_DATA = [
     id: 7,
     slug: "acid-proof-brick-lining-chemical-plants-guide",
     title: "Acid Proof Brick Lining for Chemical Plants: Complete Guide",
-    metaTitle: "Acid Proof Brick Lining for Chemical Plants | Guide",
-    metaDescription: "How to specify and install acid proof brick lining for chemical plants. Brick grade selection, jointing materials, acid resistance testing, and common failure…",
+    metaTitle: "Acid Proof Brick Lining: Procedure, Mortars & Failures",
+    metaDescription: "Step-by-step acid proof brick lining for chemical plants: IS 4860 brick grades, silicate vs furan mortars, membrane build-up, and why linings fail early.",
     category: "Industry Guide",
     tags: [
       "acid proof bricks",
@@ -1955,8 +1955,8 @@ export const BLOG_POSTS_DATA = [
     title:
       "Refractory Anchors & Fastening Systems: Types, Selection & Installation",
     metaTitle:
-      "Refractory Anchors & Fastening Systems Guide | SAPL",
-    metaDescription: "Complete guide to refractory anchoring systems. V anchors, Y anchors, ceramic anchors, bullhorn tips.",
+      "Refractory Anchors: V, Y, Ceramic Types & Castable Anchoring",
+    metaDescription: "Refractory anchor types compared: V, Y, ceramic and bullhorn anchors for castable linings. Selection by temperature, spacing and welding practice.",
     category: "Technical Guide",
     tags: [
       "refractory anchors",
@@ -3726,8 +3726,8 @@ export const BLOG_POSTS_DATA = [
     coverImage: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1200&q=80",
     title: "Acid Proofing: Acid-Resistant Brick Lining Systems Explained",
     excerpt: "Acid proofing protects plant floors and tanks from corrosion. Learn the acid-resistant brick lining build-up, mortars, and how to select the right system.",
-    metaTitle: "Acid Proofing: Acid-Resistant Brick Lining Systems Explained",
-    metaDescription: "Acid proofing protects plant floors and tanks from corrosion. Learn the acid-resistant brick lining build-up, mortars, and how to select the right system.",
+    metaTitle: "Acid Proofing Systems: Bricks, Tiles, Membranes & Mortars",
+    metaDescription: "Acid proofing for plant floors, tanks and pickling lines: the full system, membrane, acid-resistant bricks and tiles, silicate and furan mortars, and selection.",
     category: "Refractory Engineering",
     tags: ["acid proofing", "acid resistant bricks", "chemical resistant lining", "corrosion protection", "refractory engineering"],
     publishDate: "2026-06-25",
@@ -4431,8 +4431,8 @@ export const BLOG_POSTS_DATA = [
     coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png",
     title: "Bottom Pouring Set: Refractory Components, Selection and Supply",
     excerpt: "A bottom pouring set is the refractory assembly used to teem steel ingots from below. Learn the components, grades and how to source from India.",
-    metaTitle: "Bottom Pouring Set: Refractory Components & Supply | Shanker Agencies",
-    metaDescription: "A bottom pouring set is the refractory assembly for teeming steel ingots from below: trumpet, runner, fountain and bricks. Components, grades and supply.",
+    metaTitle: "Bottom Pouring Set Manufacturer & Exporter, India | SAPL",
+    metaDescription: "Bottom pouring set (B.P. set) supply from India: trumpet, runner, fountain and centre bricks. Grades, assembly and export supply to steel plants worldwide.",
     category: "Refractory Engineering",
     tags: ["bottom pouring set", "ingot teeming", "steel ingot casting", "fountain brick", "runner brick"],
     publishDate: "2026-06-29",
