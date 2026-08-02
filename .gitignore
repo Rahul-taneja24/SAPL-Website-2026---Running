@@ -99,3 +99,6 @@ android-sdk/ -e
 *.env.*
 .env*.local
 _archive/
+
+# Claude Code worktrees (must never be committed as gitlinks)
+.claude/worktrees/
