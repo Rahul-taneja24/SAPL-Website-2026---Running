@@ -5645,6 +5645,68 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["high-alumina-bricks", "basic-bricks", "ceramic-fiber-products"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 53. Refractory Supplier for Indonesia (export intent, Bahasa terms for GEO)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 53,
+    slug: "refractory-supplier-indonesia-import-guide",
+    title: "Refractory Supplier for Indonesia: The Complete Import Guide from India",
+    metaTitle: "Refractory Supplier Indonesia | Bata Tahan Api Import from India",
+    metaDescription: "How Indonesian steel, cement and petrochemical plants import refractory (bata tahan api) from India: shipping routes, HS codes, SNI, and lead times.",
+    category: "Export Guide",
+    tags: ["refractory supplier Indonesia", "bata tahan api", "semen tahan api", "import refractories from India", "Jakarta refractory", "cement plant Indonesia", "Tanjung Priok", "refractory export ASEAN"],
+    readTime: "8 min",
+    publishDate: "2026-08-02",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
+    keyTakeaways: [
+      "Indonesia's steel, cement and petrochemical sectors (Krakatau Steel, Indocement, Semen Indonesia, Chandra Asri, Pertamina refineries) drive substantial refractory demand, and India competes directly with China as a supply source.",
+      "Sea transit from Indian west-coast ports to Tanjung Priok (Jakarta) or Tanjung Perak (Surabaya) typically runs 15-22 days depending on routing and transshipment.",
+      "Refractory bricks ship under HS 6902/6903, unshaped products (castables, mortars, ramming mass) under HS 3816, ceramic fibre under HS 6806.",
+      "SNI (Standar Nasional Indonesia) marking is mandatory for regulated construction and industrial materials entering Indonesia; confirm applicability for your specific product category with your import agent before shipping.",
+      "Local Indonesian buyers commonly search using Bahasa Indonesia terms, bata tahan api (fire brick) and semen tahan api (refractory cement), rather than English product names.",
+    ],
+    faqs: [
+      { question: "Does Shanker Agencies export refractory materials to Indonesia?", answer: "Yes. Shanker Agencies (SAPL) exports high alumina bricks, fireclay bricks, low cement castables, ceramic fibre products, insulating fire bricks, acid proof bricks, ramming mass and refractory mortar to Indonesia, supplying steel, cement and petrochemical plants across Java, Sumatra and Kalimantan." },
+      { question: "How long does refractory shipping from India to Indonesia take?", answer: "Sea freight from Indian west-coast ports (Nhava Sheva, Mundra) to Indonesian ports (Tanjung Priok/Jakarta, Tanjung Perak/Surabaya) typically takes 15-22 days depending on the carrier and routing. Add customs clearance and inland transport time; a realistic door-to-door planning figure is 5-7 weeks, so refractory orders should be placed well ahead of a planned kiln or furnace shutdown." },
+      { question: "What HS codes apply to refractory imports in Indonesia?", answer: "Refractory bricks and shapes fall under HS 6902 (refractory bricks, blocks, tiles) and HS 6903 (other refractory ceramic goods such as crucibles and nozzles). Unshaped refractories, castables, mortars, gunning mixes and ramming masses, are classified under HS 3816. Ceramic fibre products typically fall under HS 6806. Confirm the exact tariff line with your Indonesian clearing agent." },
+      { question: "Do refractory imports into Indonesia need SNI certification?", answer: "SNI (Standar Nasional Indonesia) marking is mandatory for regulated Indonesian construction and industrial materials, and applies to the product regardless of country of origin. Whether SNI applies to your specific refractory product category should be confirmed with your Indonesian import agent or the Ministry of Industry before shipping; an experienced exporter will flag this at the quotation stage rather than at the port." },
+      { question: "What is bata tahan api?", answer: "Bata tahan api is the Bahasa Indonesia term for refractory brick or fire brick, heat-resistant ceramic brick used to line furnaces, kilns and boilers. Semen tahan api (literally fire-resistant cement) refers to refractory castable or mortar. Indonesian buyers commonly search using these local terms rather than English product names." },
+    ],
+    excerpt: "Indonesia's steel, cement and petrochemical industries import most of their refractory materials, and India is a major supply source alongside China. This guide covers shipping routes and lead times, HS codes, SNI certification, and the Bahasa Indonesia terms local buyers actually search for.",
+    content: `<h2>Indonesia's Industrial Base Runs on Imported Refractories</h2>
+<p>Indonesia is Southeast Asia's largest economy, with a substantial industrial base: Krakatau Steel's integrated works at Cilegon, numerous mini steel mills across Java, major cement producers including Indocement and Semen Indonesia, Pertamina's refineries, and Chandra Asri's petrochemical complex. Every one of these plants runs refractory-lined equipment, rotary kilns, blast furnaces, EAFs, fired heaters, that needs periodic relining.</p>
+<p>Alongside China, India has become a significant refractory supply source for Indonesian buyers, competing on quality, documentation, and freight economics from India's west-coast ports.</p>
+
+<h2>Shipping Routes and Lead Times</h2>
+<p>Refractories for Indonesia typically ship from Nhava Sheva (JNPT) or Mundra to <strong>Tanjung Priok</strong> (Jakarta's main port) or <strong>Tanjung Perak</strong> (Surabaya). Sea transit runs approximately <strong>15-22 days</strong> depending on the carrier, routing, and whether the shipment transships. With customs clearance and inland transport to plants across Java, Sumatra or Kalimantan, a realistic door-to-door planning figure is <strong>5-7 weeks</strong>.</p>
+<p>As with any import-dependent refractory programme, the practical implication is the same: order against your next lining campaign, not against an already-scheduled shutdown.</p>
+
+<h2>HS Codes for Indonesian Customs</h2>
+<table>
+  <thead><tr><th>Product Group</th><th>HS Code</th><th>Examples</th></tr></thead>
+  <tbody>
+    <tr><td>Refractory bricks &amp; shapes</td><td>6902</td><td>High alumina, fireclay, magnesia bricks</td></tr>
+    <tr><td>Other refractory ceramic goods</td><td>6903</td><td>Crucibles, nozzles, sleeves, tubes</td></tr>
+    <tr><td>Unshaped refractories</td><td>3816</td><td>Castables, mortars, gunning mix, ramming mass</td></tr>
+    <tr><td>Ceramic fibre products</td><td>6806</td><td>Blankets, modules, boards</td></tr>
+  </tbody>
+</table>
+
+<h2>SNI Certification</h2>
+<p>SNI (Standar Nasional Indonesia) marking is mandatory for regulated construction and industrial materials sold into Indonesia, and it attaches to the product itself rather than the exporting country. Whether a specific refractory product category requires SNI marking depends on its classification, this is worth confirming with your Indonesian import agent or clearing broker early in the quotation process, not after the material has sailed. SAPL supplies test certificates referencing IS and ASTM methods that Indonesian buyers can present as supporting documentation during this process.</p>
+
+<h2>What Indonesian Buyers Search For</h2>
+<p>Product terminology in the Indonesian market is often in Bahasa Indonesia rather than English: <strong>bata tahan api</strong> (fire brick / refractory brick) and <strong>semen tahan api</strong> (refractory cement / castable) are the terms used in day-to-day sourcing, alongside English technical specifications in formal RFQs. Suppliers and buyers researching this market should expect both languages to appear across quotations, datasheets, and local B2B listings.</p>
+
+<h2>SAPL Supply for Indonesia</h2>
+<p>Shanker Agencies exports high alumina bricks, fireclay bricks, low cement castables, ceramic fibre blankets and modules, insulating fire bricks, acid proof bricks, ramming mass and refractory mortar to Indonesian steel, cement and petrochemical plants. See our <a href="/refractory-supplier-in/jakarta">Indonesia supply page</a> for market-specific detail, or contact us with your plant type, current lining materials, and next shutdown window to discuss a supply plan.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "lcc-castable", "ceramic-fiber-products"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
