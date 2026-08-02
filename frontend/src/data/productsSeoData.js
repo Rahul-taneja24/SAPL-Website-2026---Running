@@ -235,3 +235,44 @@ export function getProductSeo(categorySlug, productId) {
     (p) => p.categorySlug === categorySlug && p.productId === productId
   );
 }
+
+/**
+ * Category-level SEO.
+ *
+ * The category route previously derived its title from the slug
+ * ("acid-proofing" -> "Acid Proofing | Refractory Products | Shanker
+ * Agencies") with an identical boilerplate description on every category.
+ * These are commercial-intent landing pages, so each one now targets the
+ * product terms buyers actually search for that category.
+ */
+export const CATEGORY_SEO = {
+  'shaped-refractories': {
+    metaTitle: 'Shaped Refractories: High Alumina, Fireclay & MgO-C Bricks',
+    metaDescription:
+      'Refractory bricks from India: high alumina (AL45-AL90), fireclay, magnesia carbon (MgO-C), silicon carbide and insulating fire bricks. CUMI authorized dealer.',
+  },
+  'unshaped-refractories': {
+    metaTitle: 'Unshaped Refractories: Castables, Ramming Mass, Gunning Mix',
+    metaDescription:
+      'Monolithic refractories from India: LCC and ULCC castables, silica and basic ramming mass, gunning mixes, plastic refractories and refractory mortars.',
+  },
+  'flow-control': {
+    metaTitle: 'Flow Control Refractories: Slide Gates, Shrouds & Nozzles',
+    metaDescription:
+      'Steel flow control refractories: slide gate plates, ladle shrouds, sub-entry nozzles, monoblock stoppers, tundish nozzles and well blocks for continuous casting.',
+  },
+  insulation: {
+    metaTitle: 'Refractory Insulation: Ceramic Fibre, IFB & Calcium Silicate',
+    metaDescription:
+      'Furnace thermal insulation: ceramic fibre blankets, modules and boards, insulating fire bricks (IFB), calcium silicate and microporous insulation.',
+  },
+  'acid-proofing': {
+    metaTitle: 'Acid Proofing: Acid Resistant Bricks, Tiles & Cement',
+    metaDescription:
+      'Acid proofing systems for chemical plants: acid resistant bricks to IS 4860, acid proof tiles, carbon bricks and silicate/furan cements for tanks and flooring.',
+  },
+};
+
+export function getCategorySeo(categorySlug) {
+  return CATEGORY_SEO[categorySlug];
+}

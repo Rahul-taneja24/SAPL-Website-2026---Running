@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Products from '@/sections/Products';
 import SpecPropertyTable from '@/components/SpecPropertyTable';
 import { PRODUCTS_DATA } from '@/data/productsData';
-import { PRODUCT_SEO } from '@/data/productsSeoData';
+import { PRODUCT_SEO, getCategorySeo } from '@/data/productsSeoData';
 import { getSubFamilies } from '@/data/productFamiliesData';
 import {
   parseKeyRanges,
@@ -35,10 +35,17 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { categorySlug } = await params;
-  const title = categorySlug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const seo = getCategorySeo(categorySlug);
+  // Fall back to the slug-derived title for any category without curated SEO,
+  // so a new category never ships with an empty <title>.
+  const derived = categorySlug.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const title = seo?.metaTitle || `${derived} | Refractory Products | Shanker Agencies`;
+  const description =
+    seo?.metaDescription ||
+    `Explore our range of ${derived.toLowerCase()} refractory products. Authorized distributor across India, GCC & ASEAN.`;
   return {
-    title: { absolute: `${title} | Refractory Products | Shanker Agencies` },
-    description: `Explore our range of ${title.toLowerCase()} refractory products. Authorized distributor across India, GCC & ASEAN.`,
+    title: { absolute: title },
+    description,
     alternates: {
       canonical: `/products/${categorySlug}`,
       languages: {
@@ -48,13 +55,13 @@ export async function generateMetadata({ params }) {
       },
     },
     openGraph: {
-      title: `${title} | Refractory Products | Shanker Agencies`,
-      description: `Explore our range of ${title.toLowerCase()} refractory products. Authorized distributor across India, GCC & ASEAN.`,
+      title,
+      description,
       url: `https://www.shankeragencies.com/products/${categorySlug}`,
       siteName: 'Shanker Agencies',
       locale: 'en_IN',
       type: 'website',
-      images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: `${title} – Shanker Agencies` }],
+      images: [{ url: '/opengraph-image.jpg', width: 1200, height: 630, alt: `${derived} – Shanker Agencies` }],
     },
   };
 }
