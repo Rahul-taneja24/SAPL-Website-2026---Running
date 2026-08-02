@@ -113,6 +113,37 @@ const Navbar = () => {
   const [currentLang, setCurrentLang] = useState(() => (pathname.startsWith("/ar") ? "ar" : "en"));
   const [scrolled, setScrolled] = useState(false);
   const megaRef = useRef(null);
+
+  // Arabic visitors get the mirror-image of the region notice: a prompt to
+  // switch to English. Kept separate from the geo notice (own dismiss flag)
+  // and only one strip is ever shown at a time, see the render below.
+  const isArabic = pathname.startsWith('/ar');
+  const [langNotice, setLangNotice] = useState(false);
+
+  useEffect(() => {
+    if (!isArabic) {
+      setLangNotice(false);
+      return;
+    }
+    try {
+      if (localStorage.getItem('shanker_lang_notice_dismissed')) return;
+    } catch (e) {}
+    setLangNotice(true);
+  }, [isArabic]);
+
+  useEffect(() => {
+    if (!langNotice) return;
+    const timer = setTimeout(() => {
+      setLangNotice(false);
+      try { localStorage.setItem('shanker_lang_notice_dismissed', '1'); } catch (e) {}
+    }, 30000);
+    return () => clearTimeout(timer);
+  }, [langNotice]);
+
+  const dismissLangNotice = () => {
+    setLangNotice(false);
+    try { localStorage.setItem('shanker_lang_notice_dismissed', '1'); } catch (e) {}
+  };
   
 
   useEffect(() => {
@@ -247,43 +278,71 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* ── GEO-DETECTED REGION TOAST ──────────────────────
-          Fixed-position glassmorphism toast rather than an in-flow banner:
-          it never shifts layout (no CLS), never pushes the header down, and
-          auto-hides after 30s via AppContext. Anchored bottom-left to stay
-          clear of the WhatsApp button in the bottom-right corner. */}
-      {geoBanner && (
+      {/* ── REGION / LANGUAGE NOTICE STRIP ─────────────────
+          Full-width liquid-glass strip pinned to the bottom of the viewport.
+          Fixed-position, so it can never shift layout or push the header
+          down, and it auto-hides after 30s if ignored. Arabic pages show the
+          language prompt instead of the region one, never both at once. */}
+      {(langNotice || (geoBanner && !isArabic)) && (
         <div
           role="status"
           aria-live="polite"
-          className="geo-toast fixed bottom-5 left-5 z-[60] max-w-[min(19rem,calc(100vw-2.5rem))]"
+          className="geo-toast fixed inset-x-0 bottom-0 z-[60]"
         >
-          <div className="flex items-center gap-2.5 rounded-2xl border border-white/40 bg-white/70 px-3.5 py-2.5 shadow-lg shadow-black/10 backdrop-blur-xl">
-            <span className="text-base leading-none" aria-hidden="true">
-              {geoBanner === "india" ? "🇮🇳" : "🌍"}
-            </span>
-            <p className="text-xs leading-snug text-gray-600">
-              Viewing{" "}
-              <span className="font-semibold text-[#1E3A5F]">
-                {geoBanner === "india" ? "India" : "International"}
-              </span>
-              {" · "}
-              <button
-                onClick={() => handleRegionChange(geoBanner === "india" ? "international" : "india")}
-                className="font-semibold text-[#F97316] underline underline-offset-2 hover:text-[#ea580c]"
-              >
-                Switch to {geoBanner === "india" ? "International" : "India"}
-              </button>
-            </p>
-            <button
-              onClick={dismissGeoBanner}
-              aria-label="Dismiss region notice"
-              className="ml-0.5 shrink-0 rounded-full p-1 text-gray-400 transition-colors hover:bg-black/5 hover:text-gray-600"
-            >
-              <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
-              </svg>
-            </button>
+          <div className="border-t border-white/40 bg-gradient-to-b from-white/70 to-white/55 shadow-[0_-8px_32px_rgba(0,0,0,0.10)] backdrop-blur-2xl backdrop-saturate-150">
+            <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5 sm:px-6">
+              {langNotice ? (
+                <>
+                  <span className="text-base leading-none" aria-hidden="true">🌐</span>
+                  <p dir="rtl" lang="ar" className="min-w-0 flex-1 text-[13px] leading-snug text-gray-700">
+                    أنت تتصفح النسخة العربية من الموقع.{" "}
+                    <button
+                      onClick={() => router.push(toEnglishPath(pathname))}
+                      className="font-semibold text-[#F97316] underline underline-offset-2 transition-colors hover:text-[#ea580c]"
+                    >
+                      التبديل إلى الإنجليزية
+                    </button>
+                  </p>
+                  <button
+                    onClick={dismissLangNotice}
+                    aria-label="إغلاق"
+                    className="shrink-0 rounded-full p-1.5 text-gray-400 transition-colors hover:bg-black/5 hover:text-gray-600"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                    </svg>
+                  </button>
+                </>
+              ) : (
+                <>
+                  <span className="text-base leading-none" aria-hidden="true">
+                    {geoBanner === "india" ? "🇮🇳" : "🌍"}
+                  </span>
+                  <p className="min-w-0 flex-1 text-[13px] leading-snug text-gray-700">
+                    You&rsquo;re on our{" "}
+                    <span className="font-semibold text-[#1E3A5F]">
+                      {geoBanner === "india" ? "India" : "International"}
+                    </span>{" "}
+                    website.{" "}
+                    <button
+                      onClick={() => handleRegionChange(geoBanner === "india" ? "international" : "india")}
+                      className="font-semibold text-[#F97316] underline underline-offset-2 transition-colors hover:text-[#ea580c]"
+                    >
+                      Switch to {geoBanner === "india" ? "International" : "India"}
+                    </button>
+                  </p>
+                  <button
+                    onClick={dismissGeoBanner}
+                    aria-label="Dismiss region notice"
+                    className="shrink-0 rounded-full p-1.5 text-gray-400 transition-colors hover:bg-black/5 hover:text-gray-600"
+                  >
+                    <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                      <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+                    </svg>
+                  </button>
+                </>
+              )}
+            </div>
           </div>
         </div>
       )}
