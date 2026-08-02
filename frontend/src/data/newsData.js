@@ -351,4 +351,114 @@ export const NEWS_ARTICLES = [
 <p>Expect EPC and refractory-package tendering for the kiln, precalciner, cooler and WHR ducting to progress over the next 12–18 months ahead of the Q3 FY28 commissioning date. If Dalmia Bharat's southern-India push continues, building on other announced regional investment, refractory and insulation suppliers should track this as one signal among a growing pool of southern-India cement capacity additions, not an isolated event. Plants already running similar clinker lines in the region are a useful reference point for lining life and reline scheduling as this project moves from foundation stone to detailed engineering.</p>
 `,
   },
+  {
+    id: 4,
+    slug: "sail-krakatau-stainless-steel-plant-2026",
+    title: "SAIL–Krakatau Steel's $350M Stainless Slab Plant: The Refractory Read",
+    metaTitle: "SAIL-Krakatau $350M Stainless Plant: Refractory Impact",
+    metaDescription:
+      "SAIL and Indonesia's Krakatau Steel plan a $350M, 500,000-tonne stainless steel slab plant. What the AOD/EAF refractory package means for Indian buyers.",
+    category: "Steel",
+    tags: [
+      "stainless steel",
+      "SAIL",
+      "continuous casting",
+      "MgO-C bricks",
+      "India steel",
+      "Indonesia",
+    ],
+    readTime: "7 min",
+    publishDate: "2026-07-29",
+    lastModified: "2026-07-29",
+    featured: false,
+    coverImage: "",
+    imagePrompt:
+      "Realistic industrial photo: molten stainless steel being tapped from an AOD converter into a ladle at an integrated steel plant, refractory brick lining visible, no logos or text.",
+    sources: [
+      {
+        title: "SAIL, Krakatau Steel plan $350 million investment in stainless steel plant",
+        publisher: "Reuters",
+        url: "https://www.reuters.com/world/india/sail-krakatau-steel-plan-350-million-investment-stainless-steel-plant-2026-07-29/",
+        date: "2026-07-29",
+      },
+      {
+        title: "SAIL, Krakatau Steel plan $350 million investment in stainless steel plant",
+        publisher: "ET Manufacturing (Reuters)",
+        url: "https://manufacturing.economictimes.indiatimes.com/news/industry/sail-krakatau-steel-plan-350-million-investment-in-stainless-steel-plant/132706930",
+        date: "2026-07-29",
+      },
+    ],
+    keyTakeaways: [
+      "SAIL and Krakatau Steel plan up to $350M for a 500,000-tonne stainless slab plant in Indonesia, online in 3-4 years.",
+      "SAIL takes the entire output, shipping slabs to its Salem plant in Tamil Nadu for rolling and finishing.",
+      "A feasibility team visits Indonesia next month; JV equity structure and approvals follow.",
+      "Stainless (AOD/EAF) slag is more chromium-rich than carbon steel, driving different refractory specification from day one.",
+      "India's finished steel consumption grew 55% in five years, outpacing 42% production growth, per BigMint.",
+    ],
+    excerpt:
+      "SAIL and Indonesia's Krakatau Steel plan to invest up to $350 million in a 500,000-tonne-per-year stainless steel slab plant in Indonesia, Reuters reported on 29 July 2026. SAIL will take the entire output to its Salem works in Tamil Nadu for rolling and finishing, with the project targeted for commissioning in three to four years. For refractory buyers, a greenfield AOD/EAF melt shop and a finishing plant absorbing new slab volume are two separate specification conversations worth starting early.",
+    faqs: [
+      {
+        q: "What did SAIL and Krakatau Steel announce?",
+        a: "SAIL (Steel Authority of India) and Indonesia's Krakatau Steel plan to invest up to $350 million in a 500,000-tonne-per-year stainless steel slab plant in Indonesia, Reuters reported on 29 July 2026, with commissioning targeted in three to four years. A preliminary joint-venture agreement was signed earlier in July 2026 during Indian Prime Minister Narendra Modi's visit to Indonesia.",
+      },
+      {
+        q: "Why does a stainless steel plant need different refractories than a carbon steel plant?",
+        a: "AOD and EAF-AOD stainless steelmaking runs higher-basicity, more chromium-rich slag than carbon-steel practice, which is more aggressive on vessel and ladle linings. Stainless service typically calls for high-purity magnesia-chrome or fused-grain MgO-C refractories rather than standard carbon-steel grades, with correspondingly different, often shorter, campaign-life expectations.",
+      },
+      {
+        q: "Who is affected by this investment?",
+        a: "Directly, SAIL's Salem plant in Tamil Nadu, which will roll and finish the imported slab, and the EPC contractors and refractory suppliers who will eventually bid the Indonesian melt shop and caster package. Indirectly, India's broader stainless steel supply chain, since SAIL was India's third-largest steel producer with roughly 10% of the domestic market in the year to March 2025, per BigMint data cited by Reuters.",
+      },
+      {
+        q: "What should refractory buyers and suppliers do now?",
+        a: "Track the project rather than expect near-term orders: the feasibility report, JV equity structure and government approvals are all still pending. Suppliers should build technical credentials with SAIL's Salem engineering team early, since AOD/stainless refractory qualification cycles run long and incumbents with proven campaign data have a real advantage.",
+      },
+      {
+        q: "What alternatives or comparisons exist for this project?",
+        a: "SAIL's approach, securing stainless slab supply through an overseas joint venture rather than building a full stainless melt shop domestically, mirrors India's stated strategy of partnering across more than a dozen countries to boost steel exports and secure raw materials, rather than a one-off deal specific to Indonesia.",
+      },
+      {
+        q: "What could happen next?",
+        a: "SAIL's technical team visits Indonesia next month for the feasibility study, after which the joint venture's equity structure and approval timeline are finalised. Expect formal JV completion over the coming months, followed by detailed engineering and refractory/EPC tendering as the project advances toward its three-to-four-year commissioning target.",
+      },
+    ],
+    relatedProducts: [
+      { label: "MgO-C / Basic Bricks", href: "/products/shaped-refractories/magnesia-carbon-bricks" },
+      { label: "Slide Gate Plates", href: "/products/flow-control/slide-gate-plates" },
+      { label: "LCC / ULCC Castables", href: "/products/unshaped-refractories/low-cement-castables" },
+      { label: "Steel Plant Solutions", href: "/solutions/steel" },
+    ],
+    content: `
+<h2>What happened</h2>
+<p>India's Steel Authority of India (SAIL) and Indonesia's Krakatau Steel plan to invest up to <strong>$350 million</strong> in a stainless steel slab plant in Indonesia, two Indian sources told <a href="https://www.reuters.com/world/india/sail-krakatau-steel-plan-350-million-investment-stainless-steel-plant-2026-07-29/" target="_blank" rel="noopener noreferrer">Reuters</a> on 29 July 2026. The plant is designed for <strong>500,000 tonnes/year</strong> of stainless slab and is expected to start up within three to four years. SAIL and Krakatau Steel signed a preliminary joint-venture agreement earlier in July 2026, during Indian Prime Minister Narendra Modi's visit to Indonesia, and SAIL is sending a technical team to Jakarta next month to prepare a feasibility report before the equity structure and approval timeline are finalised.</p>
+
+<h2>Why it matters</h2>
+<p>SAIL will not sell this Indonesian slab on the open market, it plans to consume the entire output. The slabs are to be shipped to SAIL's Salem plant in Tamil Nadu for rolling and finishing, with output going mostly to Indian customers and a smaller share to the Middle East and Europe. That means two refractory-relevant projects open at once: a greenfield AOD/EAF melt shop and continuous caster to be built from scratch in Indonesia, and a finishing operation at Salem absorbing a new, larger slab feed. Both are refractory-specification decisions, not just capacity announcements, and both start now, well before the first heat is tapped.</p>
+
+<h2>Industry impact</h2>
+<p>Directly affected: SAIL's own furnace and lining planning at Salem, and the EPC contractors and refractory suppliers who will eventually bid the Indonesian melt shop package. Indirectly, India's stainless steel supply chain generally, since SAIL was India's third-largest steel producer with roughly 10% of the domestic market in the year to March 2025, per BigMint data cited by Reuters. The deal also sits inside a broader pivot: Indian steelmakers are leaning harder on the domestic market as European and British import restrictions and Chinese competition squeeze export margins, and India has been pursuing steel-sector partnerships across more than a dozen countries to boost exports and secure raw materials, of which this Indonesia JV is one.</p>
+
+<h2>How this affects refractory users</h2>
+<p>Stainless steelmaking is not carbon-steel practice with a different alloy at the end. AOD (Argon Oxygen Decarburization) and EAF-AOD routes run higher-basicity slags with meaningfully more chromium oxide than carbon-steel BOF or EAF slag, and that chemistry is harder on lining refractories. Vessels, ladles and taphole areas in stainless service typically call for high-purity magnesia-chrome or fused-grain MgO-C linings rather than the conventional MgO-C grades that suffice for carbon steel, and campaign lives in the AOD vessel itself tend to run shorter and more variable than in a comparable BOF, simply because of the slag attack. Continuous casting of stainless slab adds its own flow-control demands: higher liquidus and narrower casting-temperature windows make slide-gate plate and nozzle erosion resistance and anti-clogging design more critical than on a standard carbon-steel caster.</p>
+<p>None of that is decided by a press release, but the specification window opens early. Whoever writes the refractory package for the Indonesian melt shop, and whoever reviews Salem's furnace and ladle fleet against a larger, possibly different-mix slab input, is making choices now that lock in consumption patterns for years.</p>
+
+<h2>Procurement &amp; maintenance implications</h2>
+<p>For refractory suppliers and EPC bidders: this is a name to track, not a purchase order to expect. SAIL's feasibility study, equity structure and government approvals are all still pending, so the earliest firm packages are likely well ahead of the plant's three-to-four-year commissioning target but not immediate. The practical move now is to build the relationship and technical credentials with SAIL's Salem engineering team ahead of that window, since AOD/stainless refractory qualification cycles run long and incumbent suppliers with proven campaign data have a real head start. For SAIL's own maintenance planning, a larger and potentially different-chemistry slab feed at Salem is a reason to review the finishing-side reheating furnace and any existing melt-shop linings against the incoming volume, rather than assume current relining schedules hold unchanged.</p>
+
+<h2>SAPL perspective</h2>
+<p>Stainless and specialty-alloy melting is a smaller, more technical slice of India's refractory market than carbon steel, but it rewards suppliers who get the chemistry right rather than the ones who compete on price. SAPL's <a href="/products/shaped-refractories/magnesia-carbon-bricks">MgO-C and basic brick range</a> and <a href="/products/flow-control/slide-gate-plates">slide gate plates</a> are specified against the slag and flow-control duty of the vessel, not a generic carbon-steel catalogue entry, and our <a href="/products/unshaped-refractories/low-cement-castables">LCC/ULCC castables</a> cover the ladle and tundish linings that see the harshest chromium-bearing slag contact. Our <a href="/solutions/steel">steel plant solutions</a> team works this kind of grade-matching exercise routinely for plants adding or upgrading stainless capacity, and it is the same review SAIL's Salem operation may need to run as the Indonesian project firms up. This is engineering context on a reported deal, not a pitch tied to it.</p>
+
+<h2>Supporting statistics</h2>
+<ul>
+  <li>Planned investment: up to $350 million, jointly by SAIL and Krakatau Steel, <a href="https://www.reuters.com/world/india/sail-krakatau-steel-plan-350-million-investment-stainless-steel-plant-2026-07-29/" target="_blank" rel="noopener noreferrer">Reuters</a>.</li>
+  <li>Plant capacity: 500,000 tonnes/year of stainless steel slab, operational in three to four years, <a href="https://www.reuters.com/world/india/sail-krakatau-steel-plan-350-million-investment-stainless-steel-plant-2026-07-29/" target="_blank" rel="noopener noreferrer">Reuters</a>.</li>
+  <li>SAIL market position: India's third-largest steel producer, 10.1% of the domestic market in the year to March 2025, per BigMint data cited by Reuters.</li>
+  <li>India's finished steel consumption rose 55% over the past five years, against a 42% rise in production, BigMint data cited by Reuters.</li>
+</ul>
+
+<h2>What could happen next</h2>
+<p>The near-term milestones are concrete: SAIL's technical team visits Indonesia next month to prepare the feasibility report, after which the two companies finalise the joint-venture equity structure and the government-approval timeline. Watch for the JV to be formalised over the next several months, followed by an EPC and refractory-package tendering process as the project moves from feasibility to detailed engineering. If SAIL's broader strategy of using overseas partnerships to secure raw materials and lock in downstream capacity plays out as described, this Indonesia deal is likely a template, not a one-off, for how Indian steelmakers manage both import pressure and long-run capacity growth.</p>
+`,
+  },
 ];
