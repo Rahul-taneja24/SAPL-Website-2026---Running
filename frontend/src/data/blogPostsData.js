@@ -5861,6 +5861,97 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["high-alumina-bricks", "ramming-mass", "lcc-castable"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 57. Why UAE Buyers Choose India Over China: The CEPA Advantage (real FTA, verified)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 57,
+    slug: "india-uae-cepa-refractory-import-advantage",
+    title: "Why UAE Buyers Sourcing Refractories Choose India Over China: The CEPA Advantage",
+    metaTitle: "India-UAE CEPA Refractory Import Advantage vs China",
+    metaDescription: "The India-UAE CEPA, in force since 2022, gives Indian-origin goods duty treatment China doesn't have in the UAE. What it means for refractory buyers.",
+    category: "Export Guide",
+    tags: ["India UAE CEPA", "refractory supplier UAE", "import refractory India vs China", "UAE customs duty India", "Jebel Ali refractory import"],
+    readTime: "6 min",
+    publishDate: "2026-08-02",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
+    keyTakeaways: [
+      "The India-UAE Comprehensive Economic Partnership Agreement (CEPA) entered into force on 1 May 2022, with the UAE eliminating customs duties on 97% of tariff lines, 80% on Day 1 and the remainder phased over 5-10 years.",
+      "China has no comparable trade agreement with the UAE. The China-GCC FTA remains under negotiation, described by trade observers as stuck in a multi-decade impasse, so Chinese-origin goods do not get equivalent preferential access.",
+      "CEPA benefits apply to qualifying Indian-origin goods meeting the agreement's rules of origin, buyers should confirm the applicable duty rate for their specific HS code with their customs broker or the UAE Ministry of Economy.",
+      "India's west coast ports (Nhava Sheva, Mundra) sit directly on the Arabian Sea, a structurally shorter sailing route to the Gulf than China's east-coast ports.",
+    ],
+    faqs: [
+      { question: "What is the India-UAE CEPA and when did it start?", answer: "The Comprehensive Economic Partnership Agreement (CEPA) between India and the UAE entered into force on 1 May 2022. Under it, the UAE eliminated customs duties on 97% of its tariff lines, covering 99% of India's exports to the UAE by value, with 80% of tariff lines getting immediate duty elimination and the rest phased to zero over 5 to 10 years." },
+      { question: "Does China have a similar trade agreement with the UAE?", answer: "No. China does not currently have a comprehensive bilateral free trade agreement with the UAE. The broader China-GCC Free Trade Agreement has been under negotiation for an extended period without conclusion. This means Chinese-origin goods generally do not receive the preferential duty treatment that Indian-origin goods can access under CEPA." },
+      { question: "Does CEPA apply to refractory materials specifically?", answer: "CEPA covers the large majority of tariff lines across goods categories, but whether a specific refractory HS code (6902, 6903, 3816, 6806) qualifies for zero or reduced duty, and under what rules of origin, should be confirmed directly with a customs broker or the UAE Ministry of Economy before finalising a purchase decision. An experienced Indian exporter will already have this documentation process in place." },
+      { question: "How do I claim CEPA benefits when importing refractories from India to the UAE?", answer: "Importers typically need a Certificate of Origin issued under the CEPA framework, confirming the goods meet the agreement's rules of origin requirements, alongside standard commercial invoice and shipping documentation. Your Indian supplier should be able to provide this certificate as part of standard export documentation." },
+    ],
+    excerpt: "The India-UAE CEPA has been in force since 2022, giving Indian exporters duty treatment in the UAE that Chinese exporters currently don't have, since no comparable China-UAE trade agreement exists. For UAE buyers comparing India and China as refractory sourcing options, that's a real, current difference worth understanding.",
+    content: `<h2>A Real Trade Agreement, Not a Talking Point</h2>
+<p>The <strong>India-UAE Comprehensive Economic Partnership Agreement (CEPA)</strong> entered into force on <strong>1 May 2022</strong>. Under it, the UAE eliminated customs duties on <strong>97% of its tariff lines</strong>, covering 99% of India's exports to the UAE by value, with 80% of tariff lines receiving immediate duty elimination from Day 1 and the remainder phased to zero over five to ten years. This is a signed, ratified, operating agreement, not a proposal.</p>
+
+<h2>China Doesn't Have This</h2>
+<p>China has no comparable bilateral free trade agreement with the UAE. The broader China-GCC Free Trade Agreement has been under negotiation for an extended period without conclusion, one trade analysis describes it as stuck in a "two-decade impasse." In practice, this means Chinese-origin goods entering the UAE generally do not receive the kind of preferential duty treatment that Indian-origin goods can access under CEPA. For a UAE buyer comparing landed cost between an Indian and a Chinese refractory supplier, the applicable customs duty is a real, current variable, not a marginal one.</p>
+
+<h2>What This Means in Practice</h2>
+<p>Whether a specific refractory product qualifies for zero or reduced duty under CEPA, and what rules of origin apply, depends on the exact HS classification (6902/6903 for bricks and shapes, 3816 for unshaped refractories, 6806 for ceramic fibre). This is worth confirming directly with a customs broker or the UAE Ministry of Economy before finalising a sourcing decision, rather than assuming a blanket rate. An Indian exporter experienced in CEPA-qualifying trade should be able to issue the Certificate of Origin and supporting documentation as a standard part of the export process.</p>
+
+<h2>Geography Also Favours India</h2>
+<p>Beyond tariff treatment, India's west coast ports, Nhava Sheva (JNPT) and Mundra, sit directly on the Arabian Sea, giving a structurally shorter sailing distance to Gulf ports like Jebel Ali than China's east-coast ports. Combined with CEPA's duty treatment, this gives Indian suppliers a genuine two-part advantage on total landed cost and lead time that is worth factoring into any India-versus-China sourcing comparison for the UAE market.</p>
+
+<h2>SAPL Supply for the UAE</h2>
+<p>Shanker Agencies exports high alumina bricks, magnesia carbon bricks, low cement castables, ramming mass and ceramic fibre products to UAE steel, cement and aluminium plants, with export documentation prepared to support CEPA-qualifying shipments. See our <a href="/refractory-supplier-in/dubai">Dubai</a> and <a href="/refractory-supplier-in/abu-dhabi">Abu Dhabi</a> supply pages, or contact us to discuss your sourcing comparison.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "magnesia-carbon-bricks", "lcc-castable"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 58. Why Sri Lankan Buyers Choose India Over China: The ISFTA Advantage (real FTA, verified)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 58,
+    slug: "india-sri-lanka-isfta-refractory-import-advantage",
+    title: "Why Sri Lankan Buyers Sourcing Refractories Choose India Over China: The ISFTA Advantage",
+    metaTitle: "India-Sri Lanka ISFTA Refractory Import Advantage vs China",
+    metaDescription: "India's free trade agreement with Sri Lanka has run since 2000. China's attempt at one stalled in 2017. What it means for Colombo refractory buyers.",
+    category: "Export Guide",
+    tags: ["India Sri Lanka ISFTA", "refractory supplier Colombo", "import refractory India vs China Sri Lanka", "Sri Lanka customs duty India"],
+    readTime: "6 min",
+    publishDate: "2026-08-02",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
+    keyTakeaways: [
+      "The India-Sri Lanka Free Trade Agreement (ISFTA) entered into force on 1 March 2000 and is now fully implemented, with both countries having completed their tariff liberalisation commitments.",
+      "China's attempt at a Sri Lanka free trade agreement stalled after its fifth negotiating round in 2017 and has never been signed.",
+      "Over 70% of Sri Lanka's exports to India already move under ISFTA preferences, reflecting a mature, actively-used trade corridor rather than an underused agreement.",
+      "ISFTA benefits apply to qualifying Indian-origin goods meeting rules of origin requirements; buyers should confirm applicability for specific refractory HS codes with their customs agent.",
+    ],
+    faqs: [
+      { question: "What is the India-Sri Lanka Free Trade Agreement (ISFTA)?", answer: "The Indo-Sri Lanka Free Trade Agreement (ISFTA) entered into force on 1 March 2000, following signature in December 1998. It provides for the reduction and elimination of import tariffs between the two countries and is now fully implemented, with both sides having completed their Tariff Liberalisation Programme commitments." },
+      { question: "Does China have a similar trade agreement with Sri Lanka?", answer: "No. China and Sri Lanka held free trade agreement negotiations that reached a fifth round by 2017, following a joint feasibility study completed in 2014, but the talks stalled and no agreement was ever signed. Sri Lanka does not currently have a comparable operating free trade agreement with China." },
+      { question: "Does ISFTA apply to refractory materials specifically?", answer: "ISFTA covers a broad range of traded goods, but whether a specific refractory HS code (6902, 6903, 3816, 6806) qualifies for preferential duty treatment, and under what rules of origin, should be confirmed with a Sri Lankan customs agent or the Department of Commerce before finalising a purchase. ISFTA Certificates of Origin have been issued digitally since March 2023, simplifying this process." },
+      { question: "How established is India-Sri Lanka trade under ISFTA?", answer: "ISFTA is a mature, actively used agreement, over 70% of Sri Lanka's exports to India already move under its preferences. This reflects two decades of operating history and administrative familiarity on both sides, rather than a recently signed or lightly used agreement." },
+    ],
+    excerpt: "India's free trade agreement with Sri Lanka has been fully operational for over two decades. China's parallel attempt stalled in 2017 and was never signed. For Colombo-area buyers weighing Indian versus Chinese refractory suppliers, that's a genuine, long-standing difference in trade terms.",
+    content: `<h2>A Two-Decade Head Start</h2>
+<p>The <strong>India-Sri Lanka Free Trade Agreement (ISFTA)</strong> entered into force on <strong>1 March 2000</strong>, following its signature in December 1998. It is now fully implemented, with both India and Sri Lanka having completed their respective Tariff Liberalisation Programme commitments. This is not a recent or partial arrangement, ISFTA Certificates of Origin have been issued with digital signatures since March 2023, reflecting a mature, administratively established trade corridor. Over 70% of Sri Lanka's exports to India already move under ISFTA preferences.</p>
+
+<h2>China's Equivalent Never Happened</h2>
+<p>China pursued a parallel free trade agreement with Sri Lanka, backed by a joint feasibility study completed in 2014, but negotiations stalled after their fifth round in 2017 and no agreement was ever signed. For a Colombo-area buyer comparing an Indian and a Chinese refractory supplier, this is a real, structural difference: India has a functioning, two-decade-old trade agreement with Sri Lanka; China does not.</p>
+
+<h2>What This Means in Practice</h2>
+<p>Whether a specific refractory product qualifies for preferential duty treatment under ISFTA, and what rules of origin apply, depends on the exact HS classification and should be confirmed with a Sri Lankan customs agent or the Department of Commerce before finalising a sourcing decision. An Indian exporter familiar with ISFTA-qualifying trade should be able to provide the required Certificate of Origin as part of standard export documentation, a process made faster since digital-signature certificates were introduced in 2023.</p>
+
+<h2>SAPL Supply for Sri Lanka</h2>
+<p>Shanker Agencies exports high alumina bricks, low cement castables, ceramic fibre products, ramming mass and acid proof bricks to Sri Lankan industrial buyers, with export documentation prepared to support ISFTA-qualifying shipments. See our <a href="/refractory-supplier-in/colombo">Colombo supply page</a> for market detail, or contact us to discuss your sourcing comparison.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "lcc-castable", "ceramic-fiber-products"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
