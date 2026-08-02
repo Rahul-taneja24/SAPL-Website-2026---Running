@@ -5952,6 +5952,50 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["high-alumina-bricks", "lcc-castable", "ceramic-fiber-products"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 59. South Africa's small-foundry & casting equipment market (Backyard Foundry spotlight)
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 59,
+    slug: "south-africa-foundry-equipment-market-backyard-foundry",
+    title: "South Africa's Small Foundry & Casting Equipment Market: A Look at Cape Town's Backyard Foundry",
+    metaTitle: "South Africa Foundry Equipment Market | Backyard Foundry",
+    metaDescription: "South Africa's small-foundry and casting equipment market, spotlighting Cape Town's Backyard Foundry, and the refractory materials that make it work.",
+    category: "Industry Spotlight",
+    tags: ["Backyard Foundry", "refractory supplier South Africa", "foundry equipment South Africa", "Cape Town foundry", "refractory cement South Africa", "fire brick supplier South Africa", "small foundry casting"],
+    readTime: "6 min",
+    publishDate: "2026-08-02",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
+    keyTakeaways: [
+      "South Africa's foundry sector spans two distinct markets: large industrial plants (ArcelorMittal South Africa, PPC Cement, South32 Hillside Aluminium) and a smaller-scale casting and foundry-equipment market serving hobbyists, jewelers and small workshop operators.",
+      "Cape Town's Backyard Foundry is a real example of this second segment: a supplier of metal melting furnace kits (4kg-36kg), graphite crucibles, gas forges and foundry tools, based in Goodwood, Cape Town.",
+      "Backyard Foundry's product range already includes fire brick, refractory cement and ceramic fibre furnace lining, the same material categories SAPL supplies at industrial scale.",
+      "Refractory selection matters at small scale too: fire brick rated to roughly 1,400°C and refractory cement for furnace lining follow the same basic chemistry principles as industrial linings, just at a different volume and equipment size.",
+    ],
+    faqs: [
+      { question: "What does Backyard Foundry sell?", answer: "Backyard Foundry, based in Goodwood, Cape Town, supplies metal melting furnace kits (4kg to 36kg capacity, single and double burner models), graphite crucibles, gas forges for blacksmithing, foundry tools including tongs and ladles, and casting/molding supplies including fire brick, refractory cement and ingot moulds. Their customer base spans hobbyists, jewelers, and small workshop and foundry professionals." },
+      { question: "What refractory materials does small-scale casting equipment use?", answer: "Small-scale melting furnaces typically use fire brick (refractory ceramic rated to around 1,400°C) for the furnace structure, refractory cement to bond and seal the lining, graphite crucibles to hold the molten metal, and ceramic fibre insulation to reduce heat loss and fuel consumption. The underlying material chemistry is the same as industrial refractories, applied at a much smaller scale and lower unit volume." },
+      { question: "Does Shanker Agencies supply South Africa's foundry equipment market?", answer: "Shanker Agencies exports refractory materials, high alumina bricks, castables, ceramic fibre products and acid proof bricks, to South Africa's industrial sector, and the same core material categories (fire brick, refractory cement, ceramic fibre) apply directly to the smaller-scale foundry equipment and casting supply market. This is a growing area of interest as SAPL explores supply relationships across South Africa's foundry sector." },
+    ],
+    excerpt: "South Africa's refractory demand isn't only ArcelorMittal-scale steel plants. A smaller, active market of foundry-equipment suppliers serves hobbyists, jewelers and small workshops, and Cape Town's Backyard Foundry is a good example of how that market runs on the same core refractory materials as heavy industry, just at a different scale.",
+    content: `<h2>Two Very Different Refractory Markets in One Country</h2>
+<p>South Africa has Africa's most diversified industrial economy, with major steel (ArcelorMittal South Africa), cement (PPC), petrochemical (Sasol) and aluminium (South32 Hillside) operations consuming refractory materials at industrial volume. But alongside that heavy-industry demand runs a smaller, less-discussed market: equipment and materials for small-scale casting, serving hobbyists, jewelers, and small workshop operators building or maintaining their own melting furnaces.</p>
+
+<h2>A Real Example: Backyard Foundry, Cape Town</h2>
+<p><strong>Backyard Foundry</strong>, based in Goodwood, Cape Town, is a working example of this segment. They supply metal melting furnace kits ranging from 4kg to 36kg capacity in single and double burner configurations, graphite crucibles, gas forges for blacksmithing, and foundry tools including lifting and pouring tongs and ladles. Their furnace kits are built and shipped from Cape Town, with delivery across the region, and their customer base spans hobbyist metal casters, jewelers working with precious metals, and small professional workshops.</p>
+<p>What makes their catalogue relevant to a refractory supplier is what's already in it: <strong>fire brick, refractory cement, and ceramic fibre furnace lining</strong> sit alongside their furnace kits and crucibles, the same core material categories used in industrial refractory linings, just supplied at a scale and unit size suited to a single furnace rather than a steel plant.</p>
+
+<h2>The Same Chemistry, a Different Scale</h2>
+<p>A 9kg melting furnace and a blast furnace hearth run on the same underlying refractory principles. Fire brick used in small furnace construction is typically rated to around 1,400°C, built to retain shape and insulating value at sustained high temperature, the same core requirement as an industrial firebrick, just manufactured and sold in far smaller unit quantities. Refractory cement bonds and seals furnace joints, ceramic fibre reduces heat loss and improves fuel efficiency, and a well-chosen crucible material determines how many melt cycles the furnace survives before replacement. None of this is exotic material science, it is the same refractory fundamentals SAPL applies at steel-plant scale, matched to a much smaller build.</p>
+
+<h2>Where SAPL Fits</h2>
+<p>Shanker Agencies has exported refractory materials, high alumina bricks, castables, ceramic fibre products and acid proof bricks, to South Africa's industrial sector for years. The foundry equipment and small-casting supply segment that Backyard Foundry represents is a market we are actively exploring, since the underlying material categories, fire brick, refractory cement, ceramic fibre, are ones we already manufacture-source and export at scale. We're glad to be in conversation with businesses like Backyard Foundry as we look at how that fit works in practice.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "ceramic-fiber-products", "lcc-castable"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
