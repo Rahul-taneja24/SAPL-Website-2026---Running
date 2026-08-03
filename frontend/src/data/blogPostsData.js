@@ -6023,7 +6023,7 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
     keyTakeaways: [
-      "GCC buyers generally choose between three supplier models: regional stockist-installers (Sharjah-based Al Karawan, operating since 2000), local manufacturers (Dammam's Arabian Refractory Factory, supplying magnesia and alumina materials across the GCC since 1993), and Indian exporters shipping direct.",
+      "GCC buyers generally choose between three supplier models: regional stockist-installers based in the UAE, local Saudi manufacturers of magnesia and alumina materials, and Indian exporters shipping direct.",
       "MgO-C brick carbon content is matched to duty: 8-10% carbon for the metal line and general lining, 14-20% for the slag line, where erosion is most severe.",
       "Acid proof bricks for GCC chemical and petrochemical plants are commonly specified to IS 4860 or ASTM C279; confirm which standard your specification calls for before ordering.",
       "Total landed cost includes freight, GCC customs duty, and (for Saudi and UAE) certification, not just the ex-works product price, a lower unit price does not always mean a lower total cost.",
@@ -6037,7 +6037,7 @@ export const BLOG_POSTS_DATA = [
     ],
     excerpt: "GCC refractory buyers typically choose between regional stockist-installers, local Saudi manufacturers, and Indian exporters. Here are direct answers to the questions that actually decide that choice: carbon content for MgO-C, acid-proof standards, and what total landed cost really includes.",
     content: `<h2>Three Supplier Models in the GCC Market</h2>
-<p>GCC refractory buyers generally have three sourcing options, each with a different trade-off. <strong>Regional stockist-installers</strong>, companies like Sharjah's Al Karawan Group, operating in the region since 2000, stock a range of refractory and insulation products and provide gunning, casting and installation services on-site. <strong>Local manufacturers</strong> exist mainly in Saudi Arabia, where companies such as Dammam's Arabian Refractory Factory have produced magnesia and alumina-based refractory materials domestically since 1993 and supply across the wider GCC. <strong>Indian exporters</strong> ship direct from manufacturing partners in India, competing on total landed cost and product range rather than on-site installation presence.</p>
+<p>GCC refractory buyers generally have three sourcing options, each with a different trade-off. <strong>Regional stockist-installers</strong>, UAE-based companies operating in the region for two decades or more, stock a range of refractory and insulation products and provide gunning, casting and installation services on-site. <strong>Local manufacturers</strong> exist mainly in Saudi Arabia, where established producers have made magnesia and alumina-based refractory materials domestically for three decades and supply across the wider GCC. <strong>Indian exporters</strong> ship direct from manufacturing partners in India, competing on total landed cost and product range rather than on-site installation presence.</p>
 <p>None of these models is universally better, the right one depends on lead time, order volume, and whether you need installation labour or product supply alone.</p>
 
 <h2>MgO-C Carbon Content: Match It to Duty Position</h2>
