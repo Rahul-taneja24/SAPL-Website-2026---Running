@@ -761,7 +761,7 @@ export const BLOG_POSTS_DATA = [
       "A cement rotary kiln is divided into distinct refractory zones, each with unique thermal, chemical, and mechanical demands. This guide provides a zone-by-zone breakdown of material selection with specifications and optimization strategies.",
     content: `
 <h2>Why Cement Kiln Refractory Design Is Zone-Specific</h2>
-<p>A modern cement rotary kiln is a 50&ndash;100 meter long rotating cylinder operating at temperatures up to 1,450 degC in the burning zone, processing a highly reactive and chemically aggressive clinker. The thermal profile, chemical environment, and mechanical stresses vary dramatically from the inlet to the outlet. A single refractory type cannot handle all these conditions, which is why the kiln is divided into zones, each lined with the most suitable refractory material.</p>
+<p><strong>A cement rotary kiln needs a different refractory in nearly every zone because temperature, chemical attack and mechanical stress each vary sharply along its 50&ndash;100 metre length &mdash; burning-zone bricks facing 1,450&deg;C and aggressive clinker have almost nothing in common with preheater or cooler linings.</strong> A single refractory type cannot handle all these conditions, which is why the kiln is divided into zones, each lined with the most suitable material for the duty it actually sees.</p>
 <p>Refractory cost typically accounts for only 3&ndash;5% of cement production costs, but a premature failure can cause unplanned downtime costing lakhs per day. The investment in correct material selection pays for itself many times over.</p>
 
 <h2>Kiln Zone Overview</h2>
