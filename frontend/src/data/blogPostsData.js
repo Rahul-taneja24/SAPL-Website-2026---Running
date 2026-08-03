@@ -6008,63 +6008,64 @@ export const BLOG_POSTS_DATA = [
   },
 
   // ─────────────────────────────────────────────────────────────
-  // 60. GCC refractory supplier comparison (answer-first / AEO format, real competitor research)
+  // 61. Refractory for aluminium furnaces (SERP gap: furnace-type comparison, India-origin angle, real practitioner question answered)
   // ─────────────────────────────────────────────────────────────
   {
-    id: 60,
-    slug: "refractory-supplier-gcc-questions-answered",
-    title: "Refractory Supplier for the GCC: Common Buyer Questions Answered",
-    metaTitle: "Refractory Supplier GCC | Buyer FAQ: MgO-C, Acid Proof, Cost",
-    metaDescription: "Common questions GCC buyers ask before choosing a refractory supplier: local stockist vs Indian import, MgO-C grades, acid proof standards, and total cost.",
-    category: "Buyer's Guide",
-    tags: ["refractory supplier GCC", "MgO-C brick supplier UAE", "acid proof brick Saudi Arabia", "refractory cost comparison", "import refractory vs local stockist", "refractory supplier Sharjah Dammam"],
+    id: 61,
+    slug: "refractory-for-aluminium-furnace-guide",
+    title: "Refractory for Aluminium Furnace: Selection by Furnace Type",
+    metaTitle: "Refractory for Aluminium Furnace | Reverberatory, Rotary, Induction",
+    metaDescription: "Refractory selection for aluminium melting furnaces: why molten aluminium demands non-wetting linings, and grade choice by furnace type, from India.",
+    category: "Technical Guide",
+    tags: ["refractory for aluminium furnace", "aluminium melting furnace refractory", "non-wetting refractory aluminium", "induction furnace lining aluminium", "reverberatory furnace refractory", "aluminium furnace reline"],
     readTime: "8 min",
-    publishDate: "2026-08-03",
+    publishDate: "2026-08-04",
     featured: false,
-    coverImage: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
     keyTakeaways: [
-      "GCC buyers generally choose between three supplier models: regional stockist-installers based in the UAE, local Saudi manufacturers of magnesia and alumina materials, and Indian exporters shipping direct.",
-      "MgO-C brick carbon content is matched to duty: 8-10% carbon for the metal line and general lining, 14-20% for the slag line, where erosion is most severe.",
-      "Acid proof bricks for GCC chemical and petrochemical plants are commonly specified to IS 4860 or ASTM C279; confirm which standard your specification calls for before ordering.",
-      "Total landed cost includes freight, GCC customs duty, and (for Saudi and UAE) certification, not just the ex-works product price, a lower unit price does not always mean a lower total cost.",
+      "Molten aluminium is chemically unusual among common process metals: it wets and reacts with many refractory oxides rather than simply eroding them, so the primary selection criterion is non-wetting behaviour, not just temperature rating.",
+      "Alumina (Al2O3)-based refractories are the standard choice for direct aluminium contact, since alumina dissolves only slowly into flux melts compared to silica-rich alternatives.",
+      "Furnace type changes the duty: reverberatory and rotary furnaces see mechanical abuse from charging plus thermal cycling, while induction furnaces need refractories compatible with electromagnetic coupling, not just chemical resistance.",
+      "A documented monolithic lining composition for aluminium melting furnaces runs 40-100% Al2O3, 0-60% SiO2 and 0-3% CaO, illustrating how much the alumina content varies by specific duty rather than following one fixed recipe.",
     ],
     faqs: [
-      { question: "Should I buy refractory from a local GCC stockist or import from India?", answer: "It depends on lead time and volume. A local stockist-installer like a Sharjah-based supplier can respond faster for small, urgent orders since material is already in the region, but typically carries a narrower brand range and a stockist markup. Direct import from an Indian exporter suits planned shutdowns and larger volumes, where the 3-5 day sea transit from India's west coast to Jebel Ali is fast enough to plan around, and landed cost per tonne is usually lower at volume." },
-      { question: "What MgO-C carbon content should I specify for a steel ladle?", answer: "Match carbon content to duty position: 8-10% carbon for the metal line and general ladle lining, and 14-20% carbon for the slag line, where erosion is most severe. Higher carbon content improves thermal shock and slag resistance but increases oxidation loss, so the correct grade is duty-specific, not a single blanket specification for the whole vessel." },
-      { question: "What standard applies to acid proof bricks in GCC chemical plants?", answer: "Acid proof bricks are commonly specified to Indian Standard IS 4860 or ASTM C279, depending on which engineering standard your plant's specification references. Both require chemical resistance testing (typically over 96% acid resistance) and confirm compressive strength and water absorption limits. Confirm which standard your project specification calls for, since test certificates are issued against a specific standard, not interchangeably." },
-      { question: "Does a local GCC refractory company manufacture, or only stock and install?", answer: "Both models exist in the region. Some regional refractory companies primarily stock, distribute and install products sourced from elsewhere, functioning as applicators and contractors. Others, particularly in Saudi Arabia, operate their own manufacturing, producing magnesia and alumina-based refractory materials domestically and supplying across the wider GCC. Ask directly whether a quoted product is locally manufactured or re-sold, since that affects lead time, batch traceability and pricing." },
-      { question: "What does total landed cost include beyond the product price?", answer: "Total landed cost is the ex-works or FOB product price, plus sea freight, marine insurance, GCC customs duty, and any required product certification (SASO in Saudi Arabia, ECAS/EQM in the UAE). A lower quoted unit price from one supplier can still produce a higher total landed cost once these are added, always compare total delivered cost per tonne, not the headline product price." },
+      { question: "Why does molten aluminium need different refractory than molten steel?", answer: "Molten aluminium reacts chemically with many common refractory oxides and wets their surface, which drives penetration and failure, rather than the primarily mechanical and thermal erosion patterns seen with molten steel. This is why non-wetting behaviour toward aluminium and its fluxes, not just temperature rating, is the primary refractory selection criterion for aluminium furnaces." },
+      { question: "What refractory lining is used for aluminium melting furnaces?", answer: "Alumina (Al2O3)-based refractories, bricks, castables and monolithic linings, are the standard choice for surfaces in direct contact with molten aluminium, since alumina resists wetting and dissolves only slowly into flux melts compared to silica-rich alternatives. A documented monolithic lining composition for aluminium furnaces runs 40-100% Al2O3, 0-60% SiO2 and 0-3% CaO, with the exact ratio set by furnace type and duty." },
+      { question: "Does refractory choice differ between reverberatory, rotary and induction aluminium furnaces?", answer: "Yes. Reverberatory and rotary furnaces see repeated mechanical abuse from metal charging and thermal cycling from batch operation, favouring dense, non-wetting alumina brick or castable in the metal-contact zone. Induction furnaces additionally require refractory compatible with electromagnetic coupling around the coil, so lining selection there also has to account for the furnace's induction design, not chemical resistance alone." },
+      { question: "What should I check before relining an aluminium melting furnace?", answer: "Confirm the lining material will not be wetted by molten aluminium, has adequate mechanical stability for the charging and stirring the furnace sees, and will not react with the specific fluxes used in your melting practice. These three checks, non-wetting, mechanical stability, and flux compatibility, are the baseline before selecting a grade, and matter more for aluminium furnaces than for most other metal-melting applications." },
     ],
-    excerpt: "GCC refractory buyers typically choose between regional stockist-installers, local Saudi manufacturers, and Indian exporters. Here are direct answers to the questions that actually decide that choice: carbon content for MgO-C, acid-proof standards, and what total landed cost really includes.",
-    content: `<h2>Three Supplier Models in the GCC Market</h2>
-<p>GCC refractory buyers generally have three sourcing options, each with a different trade-off. <strong>Regional stockist-installers</strong>, UAE-based companies operating in the region for two decades or more, stock a range of refractory and insulation products and provide gunning, casting and installation services on-site. <strong>Local manufacturers</strong> exist mainly in Saudi Arabia, where established producers have made magnesia and alumina-based refractory materials domestically for three decades and supply across the wider GCC. <strong>Indian exporters</strong> ship direct from manufacturing partners in India, competing on total landed cost and product range rather than on-site installation presence.</p>
-<p>None of these models is universally better, the right one depends on lead time, order volume, and whether you need installation labour or product supply alone.</p>
+    excerpt: "Molten aluminium behaves differently from molten steel in contact with refractory: it wets and reacts with many oxides rather than simply eroding them. This guide covers why non-wetting alumina-based linings are the standard choice, and how selection changes across reverberatory, rotary and induction furnace types.",
+    content: `<h2>Molten Aluminium Is a Different Refractory Problem</h2>
+<p><strong>Aluminium furnace refractory selection is driven primarily by non-wetting behaviour toward molten aluminium and its fluxes, not by temperature rating alone.</strong> Aluminium melts at a relatively modest 660&deg;C, far below steelmaking temperatures, so heat resistance is rarely the limiting factor. What matters instead is chemistry: molten aluminium wets and reacts with many common refractory oxides, driving penetration into the lining and eventual failure, a different failure mode from the primarily mechanical and thermal erosion refractories see in steel or cement service.</p>
 
-<h2>MgO-C Carbon Content: Match It to Duty Position</h2>
-<p>Magnesia-carbon (MgO-C) brick selection is not one grade per vessel. <strong>8-10% carbon</strong> suits the metal line and general steel ladle lining. <strong>14-20% carbon</strong> is specified for the slag line, where erosion is most severe and higher carbon content improves thermal shock and slag resistance, at the cost of faster oxidation loss if over-specified where it isn't needed. A single blanket MgO-C grade across an entire vessel is a common, avoidable cost and performance mismatch.</p>
+<h2>Why Alumina-Based Refractories Are the Standard</h2>
+<p>Alumina (Al2O3)-based refractories are specified for surfaces in direct contact with molten aluminium because alumina resists wetting and dissolves only slowly into flux melts, compared to silica-rich alternatives that react more readily. A documented monolithic lining composition for aluminium melting furnaces runs <strong>40&ndash;100% Al2O3, 0&ndash;60% SiO2 and 0&ndash;3% CaO</strong>, a wide range that reflects how much the exact ratio is tuned to furnace type and specific duty rather than following one universal recipe. Higher-alumina, lower-silica formulations are generally specified for zones with the most direct and prolonged metal contact.</p>
 
-<h2>Acid Proof Brick: Confirm the Standard First</h2>
-<p>GCC chemical and petrochemical plants commonly reference either <strong>IS 4860</strong> (Indian Standard) or <strong>ASTM C279</strong> for acid proof bricks, and the two are not interchangeable on a test certificate. Both call for chemical resistance testing, typically over 96% acid resistance, alongside compressive strength and water absorption limits. Before ordering, confirm which standard your specific project specification calls for, this is a five-minute check that avoids a rejected consignment at the port.</p>
-
-<h2>What "Total Landed Cost" Actually Includes</h2>
+<h2>Selection Changes by Furnace Type</h2>
 <table>
-  <thead><tr><th>Cost component</th><th>Applies to</th></tr></thead>
+  <thead><tr><th>Furnace type</th><th>Primary refractory duty</th><th>Typical selection direction</th></tr></thead>
   <tbody>
-    <tr><td>Ex-works or FOB product price</td><td>All suppliers</td></tr>
-    <tr><td>Sea freight + marine insurance</td><td>Import only (not local stockists)</td></tr>
-    <tr><td>GCC customs duty</td><td>Import only</td></tr>
-    <tr><td>SASO certification (PCoC/SCoC via SABER)</td><td>Saudi Arabia</td></tr>
-    <tr><td>ECAS or EQM certification</td><td>UAE</td></tr>
-    <tr><td>Stockist/installer markup</td><td>Local stockist-installers</td></tr>
+    <tr><td>Reverberatory</td><td>Mechanical abuse from charging, thermal cycling</td><td>Dense, non-wetting alumina brick or castable in the metal-contact zone</td></tr>
+    <tr><td>Rotary</td><td>Continuous mechanical rotation stress plus metal/flux contact</td><td>Similar alumina-based direction, with abrasion resistance weighted higher</td></tr>
+    <tr><td>Induction (coreless)</td><td>Electromagnetic coupling compatibility around the coil, plus metal contact</td><td>Refractory selected jointly with the furnace's induction design, not on chemical resistance alone</td></tr>
   </tbody>
 </table>
-<p>A lower ex-works unit price from one supplier can still result in a higher delivered cost once freight, duty and certification are added. Comparing suppliers on total landed cost per tonne, not the headline product price, is the only comparison that reflects what actually lands on your plant floor.</p>
+<p>A refractory that performs well in a reverberatory furnace is not automatically the right choice for an induction furnace lining, since the induction furnace's coil geometry and electromagnetic requirements add a constraint that reverberatory and rotary furnaces do not have.</p>
 
-<h2>SAPL Supply for the GCC</h2>
-<p>Shanker Agencies exports high alumina bricks, magnesia carbon bricks matched to duty position, low cement castables, and acid proof bricks to specification (IS 4860 or ASTM C279 as required) across the UAE, Saudi Arabia, Bahrain, Kuwait, Oman and Qatar. See our <a href="/blog/refractory-supplier-gcc-import-guide">GCC import guide</a> for shipping and certification detail, or contact us with your specification and we'll quote total landed cost, not just ex-works price.</p>
+<h2>Before You Reline: Three Checks</h2>
+<p>A commonly asked practitioner question is what to verify before relining an aluminium melting furnace. Three checks matter more here than for most other metal-melting refractory decisions:</p>
+<ol>
+  <li><strong>Non-wetting behaviour</strong> toward molten aluminium specifically, not just general chemical resistance.</li>
+  <li><strong>Mechanical stability</strong> under the charging and stirring practice the furnace actually sees.</li>
+  <li><strong>Flux compatibility</strong> with the specific fluxes used in your melting operation, since flux chemistry varies by alloy and by plant practice.</li>
+</ol>
+<p>Skipping the flux-compatibility check in particular is a common cause of premature lining failure, a refractory that resists molten aluminium alone can still be attacked by the flux system used to work it.</p>
+
+<h2>SAPL Supply for Aluminium Furnace Linings</h2>
+<p>Shanker Agencies supplies high alumina bricks and silicon carbide bricks for aluminium furnace applications, sourced from authorised manufacturing partners with full test certificates, and exports to aluminium smelters and foundries across India and 50+ countries. See our <a href="/products/shaped-refractories/high-alumina-bricks">high alumina brick range</a>, or contact us with your furnace type and current lining material to discuss a supply plan.</p>
 `,
     author: { name: "Rahul Taneja" },
-    relatedProducts: ["magnesia-carbon-bricks", "acid-proof-bricks", "high-alumina-bricks"],
+    relatedProducts: ["high-alumina-bricks", "silicon-carbide-bricks", "lcc-castable"],
   },
 
 ];
