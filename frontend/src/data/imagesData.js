@@ -9,7 +9,7 @@ export const IMAGES = {
   heroes: {
     home: "/images/hero/home-desktop.webp", // Steel furnace / rolling mill, self-hosted (was Unsplash CDN, see App.css .hero-home-bg)
     about: "https://images.unsplash.com/photo-1768796373307-fc2f843660f8?w=1920&q=80&fm=webp", // Industrial warehouse
-    products: "/images/products/refractory-brick-lining-installation.jpg", // Stacked Bricks
+    products: "/images/products/refractory-brick-lining-installation.webp", // Stacked Bricks
     contact: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80&fm=webp", // Modern office
     blog: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80", // Factory
   },
@@ -26,7 +26,7 @@ export const IMAGES = {
 
   // Product Category Images
   categories: {
-    shaped: "/images/products/refractory-brick-lining-installation.jpg", // Industrial kiln / bricks
+    shaped: "/images/products/refractory-brick-lining-installation.webp", // Industrial kiln / bricks
     unshaped: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg", // Powder/castable
     flowControl: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=800&q=80&fm=webp", // Steel casting
     insulation: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=800&q=80&fm=webp", // Ceramic fiber
@@ -37,7 +37,7 @@ export const IMAGES = {
   // Product Images
   products: {
     fireclay: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=600&q=80",
-    highAlumina: "/images/products/refractory-brick-lining-installation.jpg",
+    highAlumina: "/images/products/refractory-brick-lining-installation.webp",
     ifb: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80&fm=webp",
     basicBricks: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=800&q=80",
     sicBricks: "https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=800&q=80",

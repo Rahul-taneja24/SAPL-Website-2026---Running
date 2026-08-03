@@ -26,22 +26,22 @@
  */
 export const IMG = {
   /* ── category heroes, sector-relevant industrial shots ── */
-  shapedHero: '/images/products/refractory-brick-lining-installation.jpg',
+  shapedHero: '/images/products/refractory-brick-lining-installation.webp',
   unshapedHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
   flowHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png',
-  insulHero: '/images/products/insulation-wool-rolls.jpg',
+  insulHero: '/images/products/insulation-wool-rolls.webp',
   acidHero: 'https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=800&q=80',
 
   /* ── shaped refractory product images ── */
-  highAlumina1: '/images/products/refractory-brick-lining-installation.jpg',
-  highAlumina2: '/images/products/torpedo-ladle-brick-lining.jpg',
+  highAlumina1: '/images/products/refractory-brick-lining-installation.webp',
+  highAlumina2: '/images/products/torpedo-ladle-brick-lining.webp',
   highAlumina3: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90',
   fireclay1: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=900&q=80',
-  fireclay2: '/images/products/refractory-brick-lining-installation.jpg',
-  ifb1: '/images/products/insulation-wool-rolls.jpg',
-  ifb2: '/images/products/insulation-wool-rolls.jpg',
+  fireclay2: '/images/products/refractory-brick-lining-installation.webp',
+  ifb1: '/images/products/insulation-wool-rolls.webp',
+  ifb2: '/images/products/insulation-wool-rolls.webp',
   basicBricks1: 'https://ifglgroup.com/wp-content/uploads/2025/08/magnesia-carbon-alumina-magnesia-carbon-refractory-bricks-1.webp',
-  basicBricks2: '/images/products/torpedo-ladle-brick-lining.jpg',
+  basicBricks2: '/images/products/torpedo-ladle-brick-lining.webp',
   sic1: 'https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=900&q=80',
 
   /* ── unshaped refractory product images ── */
@@ -53,7 +53,7 @@ export const IMG = {
   gunning1: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
   gunning2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
   // New products (Mahakoshal authorised dealer line)
-  mortars1: '/images/products/refractory-brick-lining-installation.jpg',
+  mortars1: '/images/products/refractory-brick-lining-installation.webp',
   mortars2: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
   conventional1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
   conventional2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
@@ -68,11 +68,11 @@ export const IMG = {
   /* ── insulation product images ── */
   ceramicFiber1: 'https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=900&q=90',
   ceramicFiber2: 'https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=900&q=90',
-  calciumSil1: '/images/products/insulation-wool-rolls.jpg',
+  calciumSil1: '/images/products/insulation-wool-rolls.webp',
 
   /* ── acid proofing product images ── */
   acidBrick1: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80',
-  acidBrick2: '/images/products/refractory-brick-lining-installation.jpg',
+  acidBrick2: '/images/products/refractory-brick-lining-installation.webp',
   acidTile1: 'https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=800&q=80',
   acidTile2: 'https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80',
 

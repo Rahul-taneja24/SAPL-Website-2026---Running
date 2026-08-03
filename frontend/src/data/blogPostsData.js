@@ -198,7 +198,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-10",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "/images/products/refractory-brick-lining-installation.jpg",
+    coverImage: "/images/products/refractory-brick-lining-installation.webp",
     excerpt:
       "High alumina bricks are the workhorses of the refractory world, used in everything from cement kilns to steel ladles. This guide breaks down every grade from AL45 to AL90 with specifications, properties, and application guidance so you can specify the right brick every time.",
     content: `
@@ -484,7 +484,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-05",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "/images/products/insulation-wool-rolls.jpg",
+    coverImage: "/images/products/insulation-wool-rolls.webp",
     excerpt:
       "Ceramic fiber blanket and insulating fire brick both serve as thermal insulation in high-temperature equipment, but they work differently and suit different applications. This comparison covers performance, cost, and a decision matrix to help you choose.",
     content: `
@@ -979,7 +979,7 @@ export const BLOG_POSTS_DATA = [
 </table>
 
 <h2>SAPL: Acid Proof Lining Solutions</h2>
-<p>Shanker Agencies supplies acid proof bricks, chemical-resistant jointing cements, membrane materials, and carbon bricks for chemical plant applications. We work with leading manufacturers to ensure you receive materials with verified acid resistance test certificates. Our engineering team can help you select the right combination of brick, cement, and membrane for your specific chemical exposure. Contact us for a consultation or to request material datasheets.</p>
+<p>Shanker Agencies supplies <a href="/products/acid-proofing/acid-proof-bricks">acid proof and acid resistant bricks</a>, <a href="/products/acid-proofing/acid-proof-cement">chemical-resistant jointing cements</a>, membrane materials, and <a href="/products/acid-proofing/carbon-bricks">carbon bricks</a> for chemical plant applications. We work with leading manufacturers to ensure you receive materials with verified acid resistance test certificates. Our engineering team can help you select the right combination of brick, cement, and membrane for your specific chemical exposure. Contact us for a consultation or to request material datasheets.</p>
 `,
     author: { name: "Anita Joshi" },
     relatedProducts: [
@@ -3735,7 +3735,7 @@ export const BLOG_POSTS_DATA = [
     image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&auto=format&fit=crop",
     content: `<p>In chemical plants, fertilizer units, steel pickling lines, and effluent treatment areas, ordinary concrete and brickwork fail fast. Spillage, fumes, and immersion from sulphuric, hydrochloric, nitric, and phosphoric acids eat through unprotected floors and structures within months. Acid proofing is the engineered defence: a lining system of acid-resistant bricks, tiles, membranes, and chemical-resistant mortars that protects substrates from corrosion for decades.</p>
 
-<p>Shanker Agencies engineers and supplies complete acid-proofing systems for industrial plants across India and export markets. This guide explains what acid proofing involves, the materials used, how the lining is built up, and how to choose the right system for your duty.</p>
+<p>Shanker Agencies engineers and supplies complete <a href="/products/acid-proofing">acid-proofing systems</a> for industrial plants across India and export markets, from <a href="/products/acid-proofing/acid-proof-bricks">acid resistant bricks</a> and <a href="/products/acid-proofing/acid-resistant-tiles">tiles</a> to <a href="/products/acid-proofing/acid-proof-cement">acid proof cement</a>. This guide explains what acid proofing involves, the materials used, how the lining is built up, and how to choose the right system for your duty.</p>
 
 <h2>What is acid proofing?</h2>
 <p>Acid proofing is the application of corrosion-resistant materials to floors, tanks, trenches, drains, pump bases, and structures that are exposed to acids, alkalis, and aggressive chemicals. A correctly designed system stops the chemical from ever reaching the concrete or steel substrate. It is used wherever acids are stored, handled, processed, or spilled, chemical and petrochemical plants, fertilizer units, pharmaceutical facilities, battery rooms, electroplating shops, and steel pickling lines.</p>
@@ -4343,7 +4343,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 36,
     slug: "alternatives-to-fire-bricks-castables-ceramic-fibre-guide",
-    coverImage: "/images/products/insulation-wool-rolls.jpg",
+    coverImage: "/images/products/insulation-wool-rolls.webp",
     title: "Alternatives to Fire Bricks: Castables, Ceramic Fibre and When to Switch",
     excerpt: "Castables, ceramic fibre and insulating bricks are the main alternatives to fire bricks. Compare cost, install speed and temperature, and when to switch.",
     metaTitle: "Alternatives to Fire Bricks: Castable & Fibre",
@@ -4845,7 +4845,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "10 min",
     publishDate: "2026-07-10",
     featured: true,
-    coverImage: "/images/products/refractory-brick-lining-installation.jpg",
+    coverImage: "/images/products/refractory-brick-lining-installation.webp",
     keyTakeaways: [
       "A refractory material is an inorganic, non-metallic material that retains its strength, shape and chemical stability at temperatures above 1,000°C.",
       "Refractories are classified into three chemical classes: acidic (silica-based), basic (magnesia-based) and neutral (alumina, chromite, carbon).",
@@ -4945,7 +4945,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "7 min",
     publishDate: "2026-07-10",
     featured: false,
-    coverImage: "/images/products/torpedo-ladle-brick-lining.jpg",
+    coverImage: "/images/products/torpedo-ladle-brick-lining.webp",
     keyTakeaways: [
       "Modern, well-run steel plants consume roughly 8–15 kg of refractories per tonne of crude steel; world-class integrated plants in Japan and Europe operate at the 8–10 kg/t end.",
       "Indian plants have cut specific consumption dramatically, from ~25–30 kg/t in the 1980s–90s to roughly 10–15 kg/t at efficient operations today.",
@@ -5082,7 +5082,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "6 min",
     publishDate: "2026-07-10",
     featured: false,
-    coverImage: "/images/products/torpedo-ladle-brick-lining.jpg",
+    coverImage: "/images/products/torpedo-ladle-brick-lining.webp",
     keyTakeaways: [
       "The Durgapur–Asansol belt is one of eastern India's densest steel clusters: integrated plants, alloy steel, sponge iron units, induction furnaces and casting foundries within a 60 km corridor.",
       "The cluster's refractory demand splits into two very different profiles: engineered packages for the large integrated plants, and fast-turnaround consumables (ramming mass, gunning mix, ladle refractories) for the induction furnace and foundry units.",

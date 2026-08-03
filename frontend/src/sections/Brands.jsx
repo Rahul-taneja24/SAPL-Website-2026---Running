@@ -240,7 +240,7 @@ function BrandDetail({ brand, onBack }) {
               {/* Logo */}
               <div className="w-24 h-24 rounded-2xl bg-gray-50 border border-gray-100 flex items-center justify-center mx-auto mb-4 overflow-hidden">
                 {brand.logo ? (
-                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain p-3" />
+                  <img src={brand.logo} alt={`${brand.name} logo`} className="w-full h-full object-contain p-3" loading="lazy" />
                 ) : (
                   <span className="font-oswald text-4xl font-bold" style={{ color: brand.color }}>{brand.name.charAt(0)}</span>
                 )}

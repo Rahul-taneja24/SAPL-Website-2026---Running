@@ -471,9 +471,9 @@ function CompanyProfile() {
           </div>
 
           <div className="grid grid-cols-3 gap-2 mt-5">
-            <img src={IMAGES.steel} alt="Steel" className="h-20 w-full object-cover rounded-xl" crossOrigin="anonymous" />
-            <img src={IMAGES.cement} alt="Cement" className="h-20 w-full object-cover rounded-xl" crossOrigin="anonymous" />
-            <img src={IMAGES.industrial} alt="Industrial" className="h-20 w-full object-cover rounded-xl" crossOrigin="anonymous" />
+            <img src={IMAGES.steel} alt="Steel" className="h-20 w-full object-cover rounded-xl" crossOrigin="anonymous" loading="lazy" />
+            <img src={IMAGES.cement} alt="Cement" className="h-20 w-full object-cover rounded-xl" crossOrigin="anonymous" loading="lazy" />
+            <img src={IMAGES.industrial} alt="Industrial" className="h-20 w-full object-cover rounded-xl" crossOrigin="anonymous" loading="lazy" />
           </div>
         </section>
 
