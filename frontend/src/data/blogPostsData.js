@@ -319,10 +319,12 @@ export const BLOG_POSTS_DATA = [
       "Refractory Castable Installation Guide: LCC vs ULCC vs Conventional",
     metaTitle:
       "Refractory Castable Installation: LCC, ULCC & Conventional",
-    metaDescription: "Step-by-step guide to installing refractory castables. Compare LCC, ULCC and conventional types, with mixing, curing and heat-up schedules.",
+    metaDescription: "Step-by-step guide to installing and curing refractory cement (castable): compare LCC, ULCC and conventional types, with mixing, curing and heat-up schedules.",
     category: "How-To",
     tags: [
       "refractory castable",
+      "refractory cement",
+      "how to cure refractory cement",
       "LCC",
       "ULCC",
       "castable installation",
@@ -331,9 +333,14 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "11 min",
     publishDate: "2026-03-08",
-    lastModified: "2026-04-20",
+    lastModified: "2026-08-04",
     featured: false,
     coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
+    faqs: [
+      { question: "How do you cure refractory cement?", answer: "Cure refractory cement (castable) by keeping the cast surface damp, not wet, for 24-48 hours: cover with damp hessian or plastic sheet and avoid drying out or direct sun/wind exposure. Conventional castable depends heavily on this moist-curing step; LCC and ULCC grades benefit from it but are less dependent on it. After curing, follow a controlled heat-up schedule, never fire straight from casting." },
+      { question: "How long does refractory cement need to cure before heat-up?", answer: "A minimum of 24 hours at ambient temperature before starting heat-up, with 48 hours preferred for thicker sections (over 150mm) or cold weather. Longer curing allows cement hydration to complete, building strength and reducing the risk of spalling during the first heat-up cycle." },
+      { question: "What happens if refractory cement isn't cured properly?", answer: "Undercured refractory cement is weaker and more prone to spalling and cracking during first heat-up, since incomplete cement hydration leaves the casting under-strength. Rushing the curing schedule can make even a premium ultra-low cement castable perform worse than a cheaper conventional castable that was cured correctly." },
+    ],
     excerpt:
       "Refractory castables offer design flexibility and monolithic construction, but their performance depends entirely on correct installation. This guide covers the differences between conventional, LCC, and ULCC castables and walks you through mixing, placing, curing, and heat-up best practices.",
     content: `

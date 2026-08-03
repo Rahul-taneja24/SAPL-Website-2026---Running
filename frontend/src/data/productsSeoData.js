@@ -43,8 +43,8 @@ export const PRODUCT_SEO = [
     categorySlug: "unshaped-refractories",
     productId: "low-cement-castables",
     name: "Low Cement Castable (LCC)",
-    metaTitle: "Low Cement Castable (LCC) | Shanker Agencies",
-    metaDescription: "Low cement castable (LCC) with 60–90% Al₂O₃ for steel ladles, tundish, torpedo cars & critical ladle linings. Authorized CUMI dealer.",
+    metaTitle: "Low Cement Castable (LCC): Alumina Refractory Castable",
+    metaDescription: "Low cement castable (LCC), a high-alumina refractory castable with 60–90% Al₂O₃, for steel ladles, tundish, torpedo cars & critical ladle linings. CUMI dealer.",
   },
   {
     categorySlug: "unshaped-refractories",
