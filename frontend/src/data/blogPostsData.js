@@ -6132,6 +6132,62 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["high-alumina-bricks", "silicon-carbide-bricks", "lcc-castable"],
   },
 
+  {
+    id: 63,
+    slug: "castable-vs-brick-aluminium-furnace-lining",
+    title: "Castable vs. Brick for Aluminium Furnace Linings: Which Should You Choose?",
+    metaTitle: "Castable vs Brick for Aluminium Furnace Linings | Selection Guide",
+    metaDescription: "Castable vs. brick for aluminium furnace linings: installation speed, non-wetting consistency, and reline economics compared, with selection by furnace type.",
+    category: "Technical Guide",
+    tags: ["castable vs brick refractory", "alumina castable", "aluminium furnace lining", "non-wetting refractory aluminium", "aluminium furnace reline"],
+    readTime: "8 min",
+    publishDate: "2026-08-04",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=1200&q=80",
+    keyTakeaways: [
+      "For aluminium furnaces, the castable-vs-brick decision is not primarily about temperature rating, both formats can be made non-wetting toward molten aluminium, it is about which installation method holds that non-wetting protection up under the furnace's actual geometry and duty.",
+      "Castable suits complex geometries (troughs, launders, induction coil zones) with jointless coverage, since joints are a common entry point for aluminium penetration; brick suits standardised, high-wear zones where repeatable, factory-controlled properties matter more than shape flexibility.",
+      "Brick linings are generally faster to assess and partially replace during a reline, since damaged sections can be identified and swapped without disturbing the rest of the lining; castable relines usually require a larger contiguous section to be redone.",
+      "Furnace type still narrows the choice further: reverberatory and rotary furnaces tolerate either format depending on zone, while induction furnaces add an electromagnetic-coupling constraint that most plants resolve with monolithic castable around the coil.",
+    ],
+    faqs: [
+      { question: "Is alumina castable better than alumina brick for aluminium furnaces?", answer: "Neither is universally better, the right choice depends on the zone. Alumina castable is usually preferred for complex shapes and induction coil areas because it is jointless and can be shaped to the furnace geometry; alumina brick is often preferred for standardised, high-wear zones like the metal-contact hot face on reverberatory and rotary furnaces, where repeatable factory-controlled properties matter more than shape flexibility." },
+      { question: "How often does an aluminium furnace castable lining need repair compared to brick?", answer: "This depends heavily on installation quality and zone rather than the material family alone. A well-installed, well-cured castable lining and a well-laid brick lining can have comparable campaign life; the more consistent difference is in repair method: brick allows targeted, section-by-section replacement, while castable often needs a larger contiguous area redone even for localised damage." },
+      { question: "Can you mix castable and brick in the same aluminium furnace?", answer: "Yes, and it is common practice. Many aluminium furnaces use brick in standardised, high-wear zones and castable in complex or hard-to-shape areas such as troughs, launders, or around induction coils, selecting the format zone by zone rather than committing the whole furnace to one material family." },
+    ],
+    excerpt: "Both castable and brick can be made non-wetting toward molten aluminium, so the real decision for aluminium furnace linings is which installation format holds up under your furnace's specific geometry and duty. This guide compares the two directly, with selection guidance by furnace type.",
+    content: `<h2>Why the Castable-vs-Brick Decision Is Different for Aluminium Furnaces</h2>
+<p><strong>For aluminium furnaces, the choice between castable and brick is not primarily about temperature rating, since both formats can be produced in non-wetting, alumina-based grades that resist molten aluminium equally well.</strong> The decision instead comes down to which installation method holds that non-wetting protection up under your furnace's actual geometry and duty cycle. A joint in a brick lining or an under-cured section in a castable lining is where aluminium penetration typically starts, so the practical question is which format minimises that risk for your specific furnace zones.</p>
+
+<h2>What Castable Offers for Aluminium Furnace Linings</h2>
+<p>Castable is a monolithic, cement-bonded material mixed with water and poured, pumped, or gunned into place, giving jointless coverage of complex geometries. This matters directly for aluminium furnaces: troughs, launders, and the areas immediately around an induction furnace's coil are difficult or impossible to line with standardised brick shapes, and every joint in those zones is a potential entry point for molten metal. A documented monolithic lining composition for aluminium melting furnaces runs 40&ndash;100% Al2O3, 0&ndash;60% SiO2 and 0&ndash;3% CaO, with the higher-alumina end of that range typically specified for the most direct and prolonged metal contact.</p>
+
+<h2>What Brick Offers for Aluminium Furnace Linings</h2>
+<p>Brick is a pre-shaped, factory-fired unit laid like masonry, which gives it repeatable, tightly controlled properties, density, porosity, and Al2O3 content are consistent unit to unit in a way that field-mixed castable cannot fully match. For standardised, high-wear zones, particularly the metal-contact hot face on reverberatory and rotary furnaces, that consistency reduces the risk of a weak spot from an inconsistent mix or an imperfect cure. Brick linings are also generally faster to assess and partially replace: damaged units can be identified and swapped without disturbing the surrounding lining, which shortens routine repair work compared to a full or partial castable relining.</p>
+
+<h2>Castable vs. Brick: Side-by-Side for Aluminium Service</h2>
+<table>
+  <thead><tr><th>Factor</th><th>Castable</th><th>Brick</th></tr></thead>
+  <tbody>
+    <tr><td>Joint risk</td><td>None (monolithic)</td><td>Joints present, mortar-dependent</td></tr>
+    <tr><td>Complex geometry (troughs, coil areas)</td><td>Strong fit</td><td>Poor fit, requires custom shapes</td></tr>
+    <tr><td>Property consistency</td><td>Depends on mix and cure quality</td><td>Factory-controlled, highly repeatable</td></tr>
+    <tr><td>Installation speed (new lining)</td><td>Fast for large sections</td><td>Slower, unit-by-unit laying</td></tr>
+    <tr><td>Targeted repair</td><td>Usually needs larger contiguous section redone</td><td>Section-by-section replacement possible</td></tr>
+    <tr><td>Curing/dry-out risk</td><td>Sensitive to water addition and cure schedule</td><td>Lower installation risk once mortar sets</td></tr>
+  </tbody>
+</table>
+
+<h2>Selection by Furnace Type: Reverberatory, Rotary, Induction</h2>
+<p>Furnace type narrows the choice further, in line with the mechanical and electromagnetic duty each design places on the lining. Reverberatory and rotary furnaces see mechanical abuse from charging and thermal cycling, and plants commonly use dense alumina brick on the metal-contact hot face with castable in transition zones and less standardised shapes. Induction furnaces add a constraint neither reverberatory nor rotary furnaces have: the lining must be compatible with electromagnetic coupling around the coil, which is why most induction furnace linings around the coil are monolithic castable or ramming mass rather than brick. See our <a href="/blog/refractory-for-aluminium-furnace-guide">full guide to refractory selection by aluminium furnace type</a> for the complete duty breakdown and the three checks to run before any reline.</p>
+
+<h2>Talk to SAPL About Your Aluminium Furnace Lining</h2>
+<p>Shanker Agencies supplies both high alumina brick and alumina-based castable for aluminium furnace linings, and can help select the right format zone by zone for your specific furnace. See our <a href="/products/shaped-refractories/high-alumina-bricks">high alumina brick range</a> and <a href="/products/unshaped-refractories/low-cement-castables">castable range</a>, or <a href="/contact">contact our engineering team</a> with your furnace type and current lining setup.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "silicon-carbide-bricks", "lcc-castable"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
