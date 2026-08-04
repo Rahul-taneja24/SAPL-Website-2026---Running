@@ -6081,6 +6081,57 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["high-alumina-bricks", "silicon-carbide-bricks", "lcc-castable"],
   },
 
+  {
+    id: 62,
+    slug: "aluminium-furnace-unplanned-shutdown-reline-assessment",
+    title: "Aluminium Furnace Downtime After Unplanned Shutdown: What Determines Reline Time",
+    metaTitle: "Aluminium Furnace Reline After Unplanned Shutdown | Assessment Guide",
+    metaDescription: "What determines how fast an aluminium furnace can restart after an unplanned shutdown: damage assessment, lining integrity checks, and emergency reline logistics.",
+    category: "Technical Guide",
+    tags: ["aluminium furnace shutdown", "emergency furnace reline", "furnace downtime assessment", "aluminium smelter reline", "furnace lining damage assessment", "unplanned furnace outage"],
+    readTime: "7 min",
+    publishDate: "2026-08-04",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&q=80",
+    keyTakeaways: [
+      "How fast an aluminium furnace restarts after an unplanned shutdown depends far more on lining condition assessment than on the cause of the shutdown itself, since a furnace cannot be safely reheated until the refractory integrity is confirmed.",
+      "Thermal shock from a rapid, uncontrolled temperature change (rather than a normal, controlled shutdown) is the main driver of hidden lining damage, cracking that is not visible from the working face but compromises structural integrity.",
+      "Assessment has to check three things in sequence: structural integrity (cracking, spalling), non-wetting behaviour toward molten aluminium, and anchor/anchoring system condition, before any restart timeline can be set.",
+      "Emergency reline logistics, material availability, installation crew mobilisation, and curing time, typically add more to the restart timeline than the physical relining work itself.",
+    ],
+    faqs: [
+      { question: "How long does it take to reline an aluminium furnace after an unplanned shutdown?", answer: "There is no fixed figure: it depends on the extent of lining damage, whether a full or partial reline is needed, and how quickly castable, brick, and installation crews can be mobilised. A partial hot-face patch can sometimes be done in days; a full structural reline with proper curing and heat-up typically takes one to several weeks." },
+      { question: "How do you assess furnace lining damage after an unplanned shutdown?", answer: "Assessment covers three areas in sequence: visual and thermal inspection for cracking or spalling, a check of non-wetting behaviour toward molten aluminium at the metal-contact face, and inspection of the anchoring system that holds monolithic linings in place. Skipping any one of these can mean a furnace is restarted on a lining that fails within the first few heats." },
+      { question: "Why does an uncontrolled shutdown damage refractory more than a planned one?", answer: "A planned shutdown follows a controlled cool-down schedule that lets the refractory contract gradually and avoids thermal shock. An uncontrolled or rapid shutdown can crack the lining internally, damage that isn't visible at the working face but compromises structural integrity and can cause sudden failure once the furnace is reheated." },
+      { question: "What causes the biggest delay in an emergency furnace reline?", answer: "Logistics, not installation work. Sourcing the correct grade of castable or brick on short notice, mobilising an experienced installation crew, and allowing adequate curing and controlled heat-up time typically add more to the timeline than the physical relining itself. Keeping patching materials and a supply relationship in place before an emergency cuts this delay significantly." },
+    ],
+    excerpt: "When an aluminium furnace goes down unexpectedly, restart time is set by lining condition, not by how quickly a crew can be mobilised. This guide covers how furnace refractory damage is assessed after an unplanned shutdown, and what actually determines how long a reline takes.",
+    content: `<h2>Lining Condition, Not the Shutdown Itself, Sets the Restart Timeline</h2>
+<p><strong>How fast an aluminium furnace can restart after an unplanned shutdown depends on the condition of its refractory lining, not on how the shutdown happened.</strong> A furnace cannot be safely reheated until lining integrity is confirmed, since firing a compromised lining risks sudden structural failure, molten metal breakout, and far longer downtime than a proper assessment would have cost. This is true whether the shutdown was caused by a power failure, a mechanical fault, or any other unplanned event: the refractory has to be checked before the furnace goes back into service.</p>
+
+<h2>Why Uncontrolled Shutdowns Are Harder on Linings Than Planned Ones</h2>
+<p>A planned shutdown follows a controlled cool-down schedule, giving the refractory time to contract gradually and avoiding thermal shock. An unplanned or rapid shutdown skips that schedule, and the resulting thermal shock can crack the lining internally in ways that are not visible from the working face. A furnace that looks intact on visual inspection can still have compromised structural integrity below the surface, which is why assessment after an unplanned event has to be more thorough than a routine post-campaign check.</p>
+
+<h2>Three-Step Damage Assessment</h2>
+<p>Before setting any restart timeline, assessment needs to work through three checks in sequence:</p>
+<ol>
+  <li><strong>Structural integrity:</strong> Visual and thermal inspection for cracking, spalling, and any zones where the lining has separated from the shell or anchoring system.</li>
+  <li><strong>Non-wetting behaviour:</strong> Confirming the metal-contact face still resists wetting by molten aluminium, since even minor surface damage can compromise this and lead to rapid penetration once the furnace is back in service.</li>
+  <li><strong>Anchor and anchoring system condition:</strong> Monolithic linings depend on their anchoring system to stay in place under thermal cycling; anchor damage that goes unchecked is a common cause of early failure after a reline.</li>
+</ol>
+<p>Skipping any one of these steps in the interest of a faster restart is a common cause of repeat failure within the first few heats after resuming operation.</p>
+
+<h2>What Actually Delays an Emergency Reline</h2>
+<p>The physical work of relining a furnace section is rarely the longest part of an emergency timeline. What adds the most time is logistics: sourcing the correct grade of castable or brick on short notice, mobilising an experienced installation crew, and allowing adequate curing and a controlled heat-up schedule before returning to full production. A rushed cure or a skipped heat-up step can undo the value of an otherwise correct reline, producing a lining that fails faster than the one it replaced.</p>
+<p>Plants that keep a standing supply relationship and stock of patching materials, rather than sourcing refractory only when an emergency happens, consistently cut this logistics delay. It's a preparedness question as much as a technical one.</p>
+
+<h2>SAPL Supply for Aluminium Furnace Relines</h2>
+<p>Shanker Agencies supplies high alumina bricks, silicon carbide bricks, and castables for aluminium furnace linings, with stock held for fast dispatch and engineering support for damage assessment and grade selection. See our <a href="/products/shaped-refractories/high-alumina-bricks">high alumina brick range</a>, or <a href="/contact">contact our engineering team</a> with your furnace type and current lining condition to discuss a supply plan.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["high-alumina-bricks", "silicon-carbide-bricks", "lcc-castable"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
