@@ -5,6 +5,7 @@ import {
   Phone, MessageCircle, BookOpen, ArrowLeft
 } from 'lucide-react';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { TEAM_DATA } from '@/data/teamData';
 
 // ─── Static params for SSG ────────────────────────────────────────────────────
 export async function generateStaticParams() {
@@ -52,6 +53,7 @@ export default async function BlogArticlePage({ params }) {
   const relatedPosts = getRelatedPosts(post);
   const fallbackPosts = BLOG_POSTS_DATA.filter((p) => p.slug !== post.slug).slice(0, 3);
   const sidebarPosts = relatedPosts.length > 0 ? relatedPosts : fallbackPosts;
+  const authorTeamMember = TEAM_DATA.find((m) => m.name === post.author?.name);
 
   const articleSchema = {
     '@context': 'https://schema.org',
@@ -63,6 +65,9 @@ export default async function BlogArticlePage({ params }) {
     image: post.coverImage || 'https://www.shankeragencies.com/opengraph-image',
     author: {
       '@type': 'Person',
+      '@id': authorTeamMember
+        ? `https://www.shankeragencies.com/about/team/${authorTeamMember.slug}#person`
+        : undefined,
       name: post.author?.name || 'Shanker Agencies Engineering Team',
       jobTitle: post.author?.role || 'Refractory Engineer',
       description: `${post.author?.role || 'Refractory engineer'} at Shanker Agencies Pvt. Ltd. — India's leading refractory engineering partner since 1980.`,
@@ -72,7 +77,10 @@ export default async function BlogArticlePage({ params }) {
         name: 'Shanker Agencies Pvt. Ltd.',
         url: 'https://www.shankeragencies.com',
       },
-      url: 'https://www.shankeragencies.com/about',
+      url: authorTeamMember
+        ? `https://www.shankeragencies.com/about/team/${authorTeamMember.slug}`
+        : 'https://www.shankeragencies.com/about',
+      ...(authorTeamMember?.linkedin ? { sameAs: [authorTeamMember.linkedin] } : {}),
     },
     publisher: {
       '@type': 'Organization',
@@ -199,8 +207,8 @@ export default async function BlogArticlePage({ params }) {
               .map((w) => w[0])
               .join('')
               .toUpperCase();
-            return (
-              <div className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-white/8 border border-white/15 w-fit">
+            const bylineInner = (
+              <>
                 <div className="w-9 h-9 rounded-full bg-[#F97316] flex items-center justify-center text-white font-bold text-sm flex-shrink-0">
                   {initials}
                 </div>
@@ -208,6 +216,18 @@ export default async function BlogArticlePage({ params }) {
                   <p className="text-white font-semibold text-sm leading-none">{authorName}</p>
                   <p className="text-white/55 text-xs mt-0.5">{authorRole}</p>
                 </div>
+              </>
+            );
+            return authorTeamMember ? (
+              <Link
+                href={`/about/team/${authorTeamMember.slug}`}
+                className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-white/8 hover:bg-white/12 border border-white/15 w-fit transition-colors"
+              >
+                {bylineInner}
+              </Link>
+            ) : (
+              <div className="flex items-center gap-3 mb-6 p-3 rounded-xl bg-white/8 border border-white/15 w-fit">
+                {bylineInner}
               </div>
             );
           })()}
