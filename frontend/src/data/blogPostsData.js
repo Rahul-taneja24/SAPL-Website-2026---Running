@@ -582,6 +582,24 @@ export const BLOG_POSTS_DATA = [
 <h2>Hybrid Solutions: The Best of Both Worlds</h2>
 <p>In many modern furnace designs, the optimal solution combines both materials. A common configuration is a dense working lining (brick or castable), backed by a layer of IFB, with a final layer of ceramic fiber blanket against the steel shell. This &ldquo;composite lining&rdquo; approach gives you the chemical resistance of bricks, the structural insulation of IFB, and the ultra-low conductivity of ceramic fiber for minimum shell temperature.</p>
 
+
+
+<h2>5-Year Total Cost of Ownership (TCO) Comparison</h2>
+<table>
+  <thead>
+    <tr><th>Cost Element</th><th>Ceramic Fiber Modules</th><th>IFB (K-26 Grade)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Material cost per m² (installed, 150 mm)</td><td>Rs 8,000&ndash;12,000</td><td>Rs 5,000&ndash;8,000</td></tr>
+    <tr><td>Installation labour</td><td>Low (modular anchoring)</td><td>High (skilled bricklaying)</td></tr>
+    <tr><td>Energy saving vs conventional castable</td><td>30&ndash;40%</td><td>15&ndash;25%</td></tr>
+    <tr><td>Expected service life (batch furnace)</td><td>5&ndash;8 years</td><td>8&ndash;15 years</td></tr>
+    <tr><td>Repair cost (partial)</td><td>Low (replace modules)</td><td>Moderate (rebrick sections)</td></tr>
+    <tr><td>5-year cumulative energy cost advantage</td><td>Higher savings</td><td>Lower savings</td></tr>
+  </tbody>
+</table>
+<p>For most batch furnaces, the 5-year energy savings from ceramic fiber outweigh its higher installed cost. For continuous furnaces, IFB often delivers better overall economics due to longer service life and lower initial cost.</p>
+
 <h2>Get Expert Insulation Advice from SAPL</h2>
 <p>Shanker Agencies is an authorized dealer of Divine Cerawool ceramic fiber products and supplies the full range of insulating fire bricks. Our engineers can perform a thermal analysis of your equipment and recommend the optimal insulation solution &mdash; whether that is ceramic fiber, IFB, or a hybrid design. We help you balance thermal performance, cost, and service life. Contact us to discuss your insulation requirements.</p>
 `,
@@ -731,6 +749,26 @@ export const BLOG_POSTS_DATA = [
   <li><strong>ASTM C401:</strong> Standard classification for alumina and alumina-silicate castable refractories, the reference GCC and Southeast Asian buyers most often ask SAPL to certify against.</li>
 </ul>
 <p>Shanker Agencies supplies test certificates referenced against these standards with every ladle refractory dispatch.</p>
+
+
+
+<h2>Safety Lining Design</h2>
+<p>The safety lining must have adequate thermal resistance to keep the shell below 300 degC (most ladle shells are designed for 280 degC max). Typical safety lining materials:</p>
+<ul>
+  <li>60% Al<sub>2</sub>O<sub>3</sub> dense castable, or</li>
+  <li>K-30 insulating firebrick (for thermal insulation focus) or</li>
+  <li>Combination of 40 mm microporous insulation board + 60 mm IFB (best thermal performance)</li>
+</ul>
+<p>Monitor safety lining erosion by measuring working lining wear and maintaining a minimum 80 mm residual safety lining thickness. If the working lining wears faster than expected, the safety lining may be reached early, this is a relining trigger condition regardless of planned campaign length.</p>
+
+<h2>Purging Plug Selection and Installation</h2>
+<p>The argon purging plug is the most heavily attacked area in a ladle lining due to constant argon flow, thermal cycling, and slag penetration. Best practices:</p>
+<ul>
+  <li><strong>Plug material:</strong> Al<sub>2</sub>O<sub>3</sub>-MgO spinel or MgO-C for aggressive slag conditions; high-alumina (70&ndash;80%) for moderate conditions</li>
+  <li><strong>Plug geometry:</strong> Slotted or porous diffuser types. Slotted plugs allow larger argon flow; porous plugs provide finer bubble distribution for better mixing</li>
+  <li><strong>Mortar joint around plug:</strong> Must be tightly filled. A gap between plug and surrounding castable leads to metal infiltration and plug sticking</li>
+  <li>Replace plugs every 40&ndash;60 heats, or when argon flow rate increases significantly at the same pressure (indicates erosion of the plug face)</li>
+</ul>
 
 <h2>SAPL: Your Steel Ladle Refractory Partner</h2>
 <p>Shanker Agencies supplies the complete range of ladle refractories: MgO-C bricks, high alumina bricks, AMC bricks, castables, gunning mixes, slide gate plates, and flow control components. With 45+ years of experience in the Indian steel industry, our team can assist with lining design, material selection, and campaign life optimization. Contact us for a lining audit or to discuss your ladle refractory needs.</p>
@@ -2352,215 +2390,10 @@ export const BLOG_POSTS_DATA = [
   // ─────────────────────────────────────────────────────────────
   // 18. Ceramic Fiber vs Insulating Firebrick
   // ─────────────────────────────────────────────────────────────
-  {
-    id: 18,
-    slug: "ceramic-fiber-vs-insulating-firebrick",
-    title: "Ceramic Fiber vs Insulating Firebrick: Making the Right Choice",
-    metaTitle: "Ceramic Fiber vs Insulating Firebrick (IFB): Complete Comparison 2026",
-    metaDescription: "Compare ceramic fiber and insulating firebricks for furnace linings. Thermal conductivity, maximum service temperature, installation cost, and 5-year TCO.",
-    category: "Comparison Guide",
-    tags: ["ceramic fiber", "insulating firebrick", "IFB", "furnace lining", "energy saving", "thermal insulation"],
-    readTime: "6 min",
-    publishDate: "2026-01-05",
-    lastModified: "2026-04-20",
-    featured: false,
-    coverImage: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1200&q=80",
-    excerpt: "Ceramic fiber offers 30–40% energy savings with lower thermal mass, ideal for cyclic operations. IFB provides better abrasion resistance for permanent hot-face linings. We compare thermal conductivity, maximum service temperatures, installation costs, and 5-year TCO.",
-    content: `
-<h2>The Insulation Dilemma: Two Different Engineering Philosophies</h2>
-<p>When engineers specify backup or hot-face insulation linings, the choice usually comes down to two technologies: <strong>ceramic fiber products</strong> (blankets, modules, boards) or <strong>insulating firebricks</strong> (IFB). Both provide thermal insulation. Both are used at high temperatures. But they serve different roles, perform differently over time, and have very different total cost profiles.</p>
-<p>Choosing the wrong one costs money in one of two ways: using ceramic fiber where abrasion will destroy it, or using IFB where ceramic fiber would have saved 35% on energy bills. This guide gives you the framework to choose correctly.</p>
-
-<h2>Technical Comparison: Key Properties</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Ceramic Fiber (1260 degC grade)</th>
-      <th>Insulating Firebrick (K-23 / 1260 degC)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>Max service temperature</td><td>1,260 degC (standard); up to 1,600 degC (special grades)</td><td>1,150&ndash;1,430 degC (by grade)</td></tr>
-    <tr><td>Thermal conductivity at 600 degC (W/mK)</td><td>0.14&ndash;0.20</td><td>0.25&ndash;0.35</td></tr>
-    <tr><td>Bulk density (kg/m³)</td><td>64&ndash;192 (blanket/module)</td><td>500&ndash;900</td></tr>
-    <tr><td>Heat storage capacity</td><td>Very low</td><td>Moderate</td></tr>
-    <tr><td>Thermal shock resistance</td><td>Excellent</td><td>Good&ndash;Very Good</td></tr>
-    <tr><td>Abrasion resistance</td><td>Poor</td><td>Good&ndash;Very Good</td></tr>
-    <tr><td>Resistance to gas velocity / erosion</td><td>Poor (fibres dislodge)</td><td>Good (solid structure)</td></tr>
-    <tr><td>Mechanical load-bearing</td><td>None (requires anchoring)</td><td>Good (can support weight)</td></tr>
-    <tr><td>Ease of installation</td><td>Very easy (blanket/module)</td><td>Requires skilled bricklaying</td></tr>
-    <tr><td>Repairability</td><td>Easy (add a new layer)</td><td>Requires demolition and rebrickling</td></tr>
-  </tbody>
-</table>
-
-<h2>Energy Savings: Where Ceramic Fiber Wins</h2>
-<p>The low thermal mass of ceramic fiber is its greatest advantage for cyclic operations. A furnace lining that heats and cools frequently must reheat its own mass every cycle. Reducing lining mass reduces this "thermal flywheel" effect and cuts energy consumption.</p>
-<p><strong>Example:</strong> A batch annealing furnace operating 3 cycles per day at 900 degC with a 150 mm IFB lining vs. 75 mm ceramic fiber module lining:</p>
-<ul>
-  <li>IFB lining heat storage per cycle: ~320 kWh/m² of lining area</li>
-  <li>Ceramic fiber lining heat storage per cycle: ~22 kWh/m² of lining area</li>
-  <li>Saving per m² per day (3 cycles): ~894 kWh, a <strong>93% reduction in heat storage losses</strong></li>
-</ul>
-<p>For continuous furnaces (no cooling between cycles), this advantage disappears. In a pusher kiln running 24/7, heat storage doesn't matter because the lining is always hot.</p>
-
-<h2>When to Use Ceramic Fiber</h2>
-<ul>
-  <li><strong>Batch furnaces</strong>, box furnaces, bell furnaces, car-bottom furnaces, batch annealing</li>
-  <li><strong>Furnace door linings</strong>, subjected to frequent opening/closing thermal shock</li>
-  <li><strong>Backup insulation layers</strong> behind a dense working lining (no direct exposure)</li>
-  <li><strong>Ladle preheaters</strong> and transfer car linings</li>
-  <li>Any application requiring rapid heat-up and the lining will not see abrasion, gas flow, or mechanical impact</li>
-</ul>
-<p><strong>Avoid ceramic fiber when:</strong> there is abrasive gas flow, dust-laden atmosphere, direct impact from materials, high gas velocity, or when the hot face is exposed to liquid metal/slag.</p>
-
-<h2>When to Use Insulating Firebrick (IFB)</h2>
-<ul>
-  <li><strong>Continuous furnaces</strong> running at constant temperature where thermal mass savings are minimal</li>
-  <li>Applications with moderate abrasion or gas flow exposure</li>
-  <li>Load-bearing walls or arch structures in industrial furnaces</li>
-  <li><strong>Hot-face insulating layers</strong> in kilns where a moderate amount of abrasion occurs (rotary kilns, walking beam furnaces)</li>
-  <li>Applications requiring precise dimensional stability over time</li>
-</ul>
-
-<h2>5-Year Total Cost of Ownership (TCO) Comparison</h2>
-<table>
-  <thead>
-    <tr><th>Cost Element</th><th>Ceramic Fiber Modules</th><th>IFB (K-26 Grade)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Material cost per m² (installed, 150 mm)</td><td>Rs 8,000&ndash;12,000</td><td>Rs 5,000&ndash;8,000</td></tr>
-    <tr><td>Installation labour</td><td>Low (modular anchoring)</td><td>High (skilled bricklaying)</td></tr>
-    <tr><td>Energy saving vs conventional castable</td><td>30&ndash;40%</td><td>15&ndash;25%</td></tr>
-    <tr><td>Expected service life (batch furnace)</td><td>5&ndash;8 years</td><td>8&ndash;15 years</td></tr>
-    <tr><td>Repair cost (partial)</td><td>Low (replace modules)</td><td>Moderate (rebrick sections)</td></tr>
-    <tr><td>5-year cumulative energy cost advantage</td><td>Higher savings</td><td>Lower savings</td></tr>
-  </tbody>
-</table>
-<p>For most batch furnaces, the 5-year energy savings from ceramic fiber outweigh its higher installed cost. For continuous furnaces, IFB often delivers better overall economics due to longer service life and lower initial cost.</p>
-
-<h2>Frequently Asked Questions</h2>
-<h3>Can I use ceramic fiber directly as a hot face in a steel heat treatment furnace?</h3>
-<p>Yes, if the furnace operates below 1,200 degC and there is no abrasion from parts touching the walls. For heat treatment furnaces with conveyor belts, walking beams, or parts that might contact the walls, use a dense refractory hot face and ceramic fiber as backup insulation.</p>
-<h3>What are ceramic fiber modules vs blankets?</h3>
-<p>Ceramic fiber blankets are flat rolls of spun fiber, typically 25 mm or 50 mm thick, used for layered backups. Modules are pre-formed folded blanket assemblies anchored directly to the shell, providing higher density and better hot-face performance. Modules are preferred for new construction; blankets are used for patching and low-temperature backups.</p>
-<h3>Do ceramic fibers pose health risks?</h3>
-<p>Ceramic fiber is classified as a possible carcinogen (IARC Group 2B) in the respirable form. Always wear a P2 or N95 respirator, gloves, and protective clothing when handling ceramic fiber. Wet the fiber during demolition to minimize dust. Most suppliers provide Safety Data Sheets (SDS) with handling guidelines.</p>
-`,
-    faqs: [
-      { q: "Can I use ceramic fiber directly as a hot face in a steel heat treatment furnace?", a: "Yes, if the furnace operates below 1,200 degC and there is no abrasion from parts touching the walls. For heat treatment furnaces with conveyor belts, walking beams, or parts that might contact the walls, use a dense refractory hot face and ceramic fiber as backup insulation." },
-      { q: "What are ceramic fiber modules vs blankets?", a: "Ceramic fiber blankets are flat rolls of spun fiber, typically 25 mm or 50 mm thick, used for layered backups. Modules are pre-formed folded blanket assemblies anchored directly to the shell, providing higher density and better hot-face performance. Modules are preferred for new construction; blankets are used for patching and low-temperature backups." },
-      { q: "Do ceramic fibers pose health risks?", a: "Ceramic fiber is classified as a possible carcinogen (IARC Group 2B) in the respirable form. Always wear a P2 or N95 respirator, gloves, and protective clothing when handling ceramic fiber. Wet the fiber during demolition to minimize dust. Most suppliers provide Safety Data Sheets (SDS) with handling guidelines." },
-    ],
-    author: { name: "Rekha Singh" },
-    relatedProducts: ["ceramic-fibre-blanket", "ceramic-fibre-module", "insulating-fire-bricks"],
-  },
 
   // ─────────────────────────────────────────────────────────────
   // 19. Steel Ladle Refractory Selection, Complete Guide
   // ─────────────────────────────────────────────────────────────
-  {
-    id: 19,
-    slug: "steel-ladle-refractory-selection-guide",
-    title: "Steel Ladle Refractory Selection: Complete Guide to Working Lining Best Practices",
-    metaTitle: "Steel Ladle Refractory Selection Guide | SAPL",
-    metaDescription: "Comprehensive guide to steel ladle refractory selection: working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specs, bottom design, purging.",
-    category: "Technical Guide",
-    tags: ["steel ladle lining", "working lining", "MgO-C bricks", "LCC castable", "purging plug", "campaign life", "ladle refractory"],
-    readTime: "8 min",
-    publishDate: "2025-12-28",
-    lastModified: "2026-04-20",
-    featured: false,
-    coverImage: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=1200&q=80",
-    excerpt: "Comprehensive guide covering working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specifications, bottom design considerations, purging plug selection, and achieving 100+ heat campaigns with zone-specific recommendations based on ladle capacity.",
-    content: `
-<h2>The Steel Ladle: A Refractory Engineering Challenge</h2>
-<p>The steel ladle is one of the most demanding refractory applications in the steelmaking process. A typical 100-tonne ladle holds liquid steel at 1,580&ndash;1,650 degC, undergoes secondary metallurgy treatments including argon purging, synthetic slag additions, and sometimes vacuum degassing. The refractory lining must withstand:</p>
-<ul>
-  <li>Extreme thermal cycling, from cold start to 1,640 degC and back, multiple times per day</li>
-  <li>Highly corrosive synthetic slag with high CaO, Al<sub>2</sub>O<sub>3</sub>, FeO, and MnO content</li>
-  <li>Mechanical stress from steel impact during tapping</li>
-  <li>Erosion from argon purging at the plug area</li>
-  <li>Hydrostatic pressure from the full metal head</li>
-</ul>
-<p>Achieving consistent 100+ heat campaigns requires the right material selection for each zone, combined with disciplined operational practices.</p>
-
-<h2>Anatomy of a Steel Ladle Lining</h2>
-<p>A typical steel ladle has a three-layer lining system:</p>
-<ol>
-  <li><strong>Permanent lining (shell protection):</strong> 40&ndash;65 mm of castable or insulating firebrick, installed on the steel shell. Replaced infrequently (every 5&ndash;10 years). Function: insulate the shell and provide a base.</li>
-  <li><strong>Safety lining (backup):</strong> 60&ndash;100 mm of dense castable or high-alumina bricks. Replaced 2&ndash;4 times per year. Function: safety barrier if the working lining fails through.</li>
-  <li><strong>Working lining:</strong> 120&ndash;200 mm depending on ladle size. This is the consumable layer in direct contact with liquid steel and slag. Replaced every 80&ndash;150 heats. Function: direct resistance to thermal, chemical, and mechanical attack.</li>
-</ol>
-
-<h2>Working Lining Options: Materials and Zones</h2>
-<h3>Zone 1: Slag Line</h3>
-<p>The slag line (typically the top 200&ndash;350 mm of the barrel) is the most aggressively attacked zone. Synthetic slag with high CaO/Al<sub>2</sub>O<sub>3</sub> basicity dissolves alumina-based refractories rapidly. Material options:</p>
-<ul>
-  <li><strong>MgO-C bricks (10&ndash;20% carbon):</strong> Industry standard for slag line in ladles handling 60&ndash;150 tonne heats. CaO-rich slag dissolves into MgO (forming a protective C<sub>2</sub>S/C<sub>3</sub>S layer) rather than dissolving it. Carbon provides thermal shock resistance. Campaign life: 100&ndash;180 heats in the slag line.</li>
-  <li><strong>AL80 or AL85 bricks:</strong> Acceptable for smaller ladles (&lt;50 tonne) or when FeO content in slag is low. Less expensive but shorter slag-line campaign life (60&ndash;100 heats).</li>
-  <li><strong>Spinel-rich LCC:</strong> Some plants use spinel-forming LCC in the slag line with good results in batch operations. Requires more careful heat-up but offers slag resistance comparable to AL80.</li>
-</ul>
-<h3>Zone 2: Upper and Lower Barrel</h3>
-<p>The barrel wall sees high thermal stress and moderate slag contact. Standard choices:</p>
-<ul>
-  <li><strong>LCC (Low Cement Castable):</strong> The dominant choice for barrel linings in modern ladles. Al<sub>2</sub>O<sub>3</sub> content 60&ndash;75%. Installed by vibration casting for a monolithic, jointless lining. Excellent erosion resistance. Campaign life: 80&ndash;120 heats.</li>
-  <li><strong>ULCC (Ultra-Low Cement):</strong> Used when higher service temperature or better slag resistance is needed. Al<sub>2</sub>O<sub>3</sub> content typically 70&ndash;80%. Premium grade.</li>
-  <li><strong>AL70 / AL80 bricks:</strong> Traditional choice before castables became widespread. Still used in ladles with irregular shapes or for barrel sections with complex geometry where forming is difficult.</li>
-</ul>
-<h3>Zone 3: Ladle Bottom</h3>
-<p>The bottom receives direct impact from the steel stream during tapping and sees the highest mechanical load. Key considerations:</p>
-<ul>
-  <li>Use high-density LCC (bulk density &gt; 3.0 g/cm³) or special impact-resistant castable</li>
-  <li>Standard bottom thickness: 250&ndash;350 mm for a 100-tonne ladle</li>
-  <li>A rammed bottom using dense ramming mix is sometimes preferred over cast LCC for better impact resistance</li>
-  <li>The well-block area (around the flow-control assembly) must use a compatible, tight-fitting refractory</li>
-</ul>
-
-<h2>Safety Lining Design</h2>
-<p>The safety lining must have adequate thermal resistance to keep the shell below 300 degC (most ladle shells are designed for 280 degC max). Typical safety lining materials:</p>
-<ul>
-  <li>60% Al<sub>2</sub>O<sub>3</sub> dense castable, or</li>
-  <li>K-30 insulating firebrick (for thermal insulation focus) or</li>
-  <li>Combination of 40 mm microporous insulation board + 60 mm IFB (best thermal performance)</li>
-</ul>
-<p>Monitor safety lining erosion by measuring working lining wear and maintaining a minimum 80 mm residual safety lining thickness. If the working lining wears faster than expected, the safety lining may be reached early, this is a relining trigger condition regardless of planned campaign length.</p>
-
-<h2>Purging Plug Selection and Installation</h2>
-<p>The argon purging plug is the most heavily attacked area in a ladle lining due to constant argon flow, thermal cycling, and slag penetration. Best practices:</p>
-<ul>
-  <li><strong>Plug material:</strong> Al<sub>2</sub>O<sub>3</sub>-MgO spinel or MgO-C for aggressive slag conditions; high-alumina (70&ndash;80%) for moderate conditions</li>
-  <li><strong>Plug geometry:</strong> Slotted or porous diffuser types. Slotted plugs allow larger argon flow; porous plugs provide finer bubble distribution for better mixing</li>
-  <li><strong>Mortar joint around plug:</strong> Must be tightly filled. A gap between plug and surrounding castable leads to metal infiltration and plug sticking</li>
-  <li>Replace plugs every 40&ndash;60 heats, or when argon flow rate increases significantly at the same pressure (indicates erosion of the plug face)</li>
-</ul>
-
-<h2>Achieving 100+ Heat Campaigns: Operational Factors</h2>
-<p>Material selection alone cannot guarantee 100+ heats. Operational practice is equally important:</p>
-<ol>
-  <li><strong>Preheat the ladle</strong> to 900&ndash;1,100 degC before first heat. Charging cold steel into a cold ladle causes thermal shock to the bottom lining.</li>
-  <li><strong>Control tapping temperature:</strong> Every 25 degC reduction in tapping temperature adds 8&ndash;12 heats to the lining campaign.</li>
-  <li><strong>Minimize ladle turnaround time:</strong> A ladle cooling below 600 degC between heats faces higher thermal shock on the next heat. Target turnaround time less than 90 minutes for 100+ tonne ladles.</li>
-  <li><strong>Slag carry-over control:</strong> Excessive slag carry-over from the converter accelerates working lining erosion. Target &lt;5 kg/tonne slag in the ladle.</li>
-  <li><strong>Immediate hot repairs:</strong> Identify and repair localized wear zones (particularly slag line) after every 20&ndash;30 heats using gunning or shotcrete repair mixes before they progress to safety lining contact.</li>
-</ol>
-
-<h2>Frequently Asked Questions</h2>
-<h3>What is the typical cost breakdown of a steel ladle relining?</h3>
-<p>For a 100-tonne ladle in India: working lining material cost Rs 8&ndash;15 lakh, labour Rs 2&ndash;4 lakh, total downtime cost (opportunity cost) Rs 5&ndash;15 lakh depending on production schedule. Every extra 10 heats per campaign saves approximately Rs 1&ndash;2 lakh in total cost.</p>
-<h3>MgO-C or LCC for the barrel: which is better?</h3>
-<p>LCC is more common for barrels because it creates a jointless monolithic lining with fewer penetration paths for liquid metal or slag. MgO-C bricks are superior in the slag line and for applications with very high basicity slag or vacuum degassing. Mixing both (MgO-C slag line, LCC barrel) is the standard approach in modern steel plants.</p>
-<h3>How often should I do a lining inspection?</h3>
-<p>Use laser profilometry or manual measurement every 20&ndash;25 heats to track wear rates by zone. Establish minimum thickness limits for each zone and trigger a relining decision based on data, not just heat count.</p>
-`,
-    faqs: [
-      { q: "What is the typical cost breakdown of a steel ladle relining?", a: "For a 100-tonne ladle in India: working lining material cost Rs 8&ndash;15 lakh, labour Rs 2&ndash;4 lakh, total downtime cost (opportunity cost) Rs 5&ndash;15 lakh depending on production schedule. Every extra 10 heats per campaign saves approximately Rs 1&ndash;2 lakh in total cost." },
-      { q: "MgO-C or LCC for the barrel: which is better?", a: "LCC is more common for barrels because it creates a jointless monolithic lining with fewer penetration paths for liquid metal or slag. MgO-C bricks are superior in the slag line and for applications with very high basicity slag or vacuum degassing. Mixing both (MgO-C slag line, LCC barrel) is the standard approach in modern steel plants." },
-      { q: "How often should I do a lining inspection?", a: "Use laser profilometry or manual measurement every 20&ndash;25 heats to track wear rates by zone. Establish minimum thickness limits for each zone and trigger a relining decision based on data, not just heat count." },
-    ],
-    author: { name: "Manoj Sharma" },
-    relatedProducts: ["magnesia-carbon-bricks", "low-cement-castable", "high-alumina-bricks", "slide-gate-plates"],
-  },
 
   // ─────────────────────────────────────────────────────────────
   // 20. Cement Kiln Refractory Zones, Zone-by-Zone Selection
@@ -2950,7 +2783,7 @@ export const BLOG_POSTS_DATA = [
     coverImage: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1200&q=80",
     excerpt: "Silica, alumina, and magnesia ramming masses each serve different metallurgical requirements. This guide covers material selection based on melt type (iron, steel, copper), lining life expectations, sintering schedules and temperatures, and troubleshooting the most common failure modes.",
     content: `
-<h2>The Ramming Mass Decision: Getting It Right From the Start</h2>
+<h2>The <a href="/blog/what-is-ramming-mass-types-uses-guide">Ramming Mass</a> Decision: Getting It Right From the Start</h2>
 <p>In a coreless induction furnace, the ramming mass lining is the only protection between 1,600+ degC liquid metal and the water-cooled copper induction coil. Unlike most industrial refractory linings, there is no backup lining, the ramming mass is it. A lining failure is not a maintenance event; it is an emergency that can result in coil destruction, metal breakout, and significant safety risk.</p>
 <p>The starting point for ramming mass selection is always the same question: <strong>What metal are you melting?</strong> The melt chemistry determines the slag chemistry, which determines whether you need an acidic, neutral, or basic ramming mass.</p>
 
@@ -3338,7 +3171,7 @@ export const BLOG_POSTS_DATA = [
 <p>Look at stud anchors, V-anchors, hex-mesh and ceramic tile tiebacks. Corroded or burned anchors are a leading cause of castable sagging and brick wall rotation. Replace failed anchors before re-firing, not after.</p>
 
 <h3>Step 10: Brick wall expansion joint check</h3>
-<p>Expansion joints filled with ceramic fibre rope should be compressible and clean. If rope is burned out or jammed with slag, bricks cannot expand correctly and spall. Replace expansion rope during planned shutdowns.</p>
+<p>Expansion joints filled with ceramic fibre rope should be compressible and clean. If rope is burned out or jammed with slag, bricks cannot expand correctly and spall. Replace expansion rope during <a href="/blog/refractory-lining-maintenance-scheduling-guide">planned shutdowns</a>.</p>
 
 <h3>Step 11: Post-mortem every failed lining</h3>
 <p>When a lining is stripped out, spend an hour on it. Photograph wear profile, cut a few samples, send them to a lab for chemical analysis. Every failed lining is a free diagnostic on your practice. The next lining is only as long-lived as the lessons you pulled from the last one.</p>
@@ -3405,7 +3238,7 @@ export const BLOG_POSTS_DATA = [
     content: `
 <h2>Why Scheduling Matters More Than the Material</h2>
 <p>When a refractory lining fails short of its designed campaign life, the first question is usually about the brand or grade. In our experience across 45+ years of plant visits, the answer is almost never the material. It is almost always one of three scheduling failures: inspection that happened too late, patching that was deferred until the window closed, or a shutdown that was planned around production targets instead of lining condition.</p>
-<p>Maintenance scheduling for refractory linings is not complicated, but it must be proactive. The lining does not file a service request. It degrades silently until a crack, spall or breakout makes the problem obvious, and by then, the cheapest intervention window has closed.</p>
+<p><a href="/blog/refractory-lining-maintenance-12-step-checklist">Maintenance</a> scheduling for refractory linings is not complicated, but it must be proactive. The lining does not file a service request. It degrades silently until a crack, spall or breakout makes the problem obvious, and by then, the cheapest intervention window has closed.</p>
 <p>This guide gives you the scheduling framework that works across the most common furnace types in Indian and GCC industry: steel ladles and EAF, induction furnaces, cement rotary kilns, industrial boilers, and aluminium melting furnaces.</p>
 
 <h2>The Four Pillars of a Refractory Maintenance Schedule</h2>
@@ -3931,7 +3764,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-06-28",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=900&q=80",
-    content: `<p><strong>Ramming mass is a dry, granular refractory material used to form the monolithic lining of induction furnaces, ladle bottoms and similar metal-melting vessels. It is rammed (compacted) in place around a former, then sintered by the heat of the first melt to form a dense, crack-resistant working lining.</strong> Unlike bricks, it has no joints, which is why it is preferred for the high thermal and mechanical stress of coreless induction furnaces.</p>
+    content: `<p><strong>Ramming mass is a dry, granular refractory material used to form the monolithic lining of <a href="/blog/induction-furnace-ramming-mass-selection">induction furnace</a>s, ladle bottoms and similar metal-melting vessels. It is rammed (compacted) in place around a former, then sintered by the heat of the first melt to form a dense, crack-resistant working lining.</strong> Unlike bricks, it has no joints, which is why it is preferred for the high thermal and mechanical stress of coreless induction furnaces.</p>
 
 <p>This guide explains the main types of ramming mass, where each is used, how it sinters, and how to select the correct grade for your furnace and metal.</p>
 

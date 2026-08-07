@@ -109,6 +109,20 @@ const nextConfig = {
         destination: '/products/flow-control',
         permanent: true,
       },
+      // Duplicate-content consolidation (Aug 2026 GSC cannibalisation audit).
+      // Each of these targeted the same query as its keeper with a near-identical
+      // metaTitle, splitting impressions and internal-link equity. Unique sections
+      // were merged into the keeper before removal, so no content was lost.
+      {
+        source: '/blog/ceramic-fiber-vs-insulating-firebrick',
+        destination: '/blog/ceramic-fiber-blanket-vs-insulating-fire-brick',
+        permanent: true,
+      },
+      {
+        source: '/blog/steel-ladle-refractory-selection-guide',
+        destination: '/blog/steel-ladle-refractory-lining-material-selection-campaign-life',
+        permanent: true,
+      },
       // /abouts (typo URL crawled by Google) → /about
       {
         source: '/abouts',

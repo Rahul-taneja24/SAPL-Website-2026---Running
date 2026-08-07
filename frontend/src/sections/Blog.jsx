@@ -32,8 +32,8 @@ const blogPosts = [
   },
   {
     id: 3,
-    slug: "ceramic-fiber-vs-insulating-firebrick",
-    title: "Ceramic Fiber vs Insulating Firebrick: Making the Right Choice",
+    slug: "ceramic-fiber-blanket-vs-insulating-fire-brick",
+    title: "Ceramic Fiber Blanket vs Insulating Fire Brick: Which to Choose?",
     excerpt: "Ceramic fiber offers 30–40% energy savings with lower thermal mass, ideal for cyclic operations. IFB provides better abrasion resistance for permanent hot-face linings. We compare thermal conductivity, maximum service temperatures, installation costs, and 5-year total cost of ownership.",
     category: "Comparison",
     date: "Jan 5, 2026",
@@ -43,8 +43,8 @@ const blogPosts = [
   },
   {
     id: 4,
-    slug: "steel-ladle-refractory-selection-guide",
-    title: "Steel Ladle Refractory Selection: Complete Guide to Working Lining Best Practices",
+    slug: "steel-ladle-refractory-lining-material-selection-campaign-life",
+    title: "Steel Ladle Refractory Lining: Material Selection & Campaign Life Optimization",
     excerpt: "Comprehensive guide covering working lining options (MgO-C, Al₂O₃-C, LCC/ULCC), safety lining specifications, bottom design considerations, purging plug selection, and achieving 100+ heat campaigns. Includes zone-specific recommendations based on ladle capacity.",
     category: "Technical",
     date: "Dec 28, 2025",
