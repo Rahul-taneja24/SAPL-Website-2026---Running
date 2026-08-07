@@ -345,7 +345,7 @@ export const BLOG_POSTS_DATA = [
     excerpt:
       "Refractory castables offer design flexibility and monolithic construction, but their performance depends entirely on correct installation. This guide covers the differences between conventional, LCC, and ULCC castables and walks you through mixing, placing, curing, and heat-up best practices.",
     content: `
-<h2>Why Installation Quality Determines Castable Performance</h2>
+<h2>Why Installation Quality Determines <a href="/blog/what-is-castable-refractory-complete-guide">Castable</a> Performance</h2>
 <p>A refractory castable is only as good as its installation. You can purchase the best ultra-low cement castable on the market, but if you add too much water, mix it in a dirty mixer, or rush the curing schedule, you will get performance worse than a cheap conventional castable installed correctly. This guide gives you the knowledge to get it right.</p>
 
 <h2>Castable vs. Brick vs. Mortar: What's the Difference?</h2>
@@ -409,7 +409,7 @@ export const BLOG_POSTS_DATA = [
   <li>Ensure the mixer is clean and free of any residue from previous batches. Contamination from cement or other materials can alter setting behavior.</li>
   <li>Pre-measure the water for each batch precisely. Use a calibrated container, not a hose with a guess. For LCC/ULCC, even 0.5% excess water can reduce density and strength significantly.</li>
   <li>Check the ambient temperature. Castable installation should be done between 10 degC and 35 degC. Below 10 degC, setting is too slow; above 35 degC, flash setting can occur. In hot climates, use chilled water and keep bags in shade.</li>
-  <li>Install anchors, forms, and vibration equipment before mixing begins. Once mixed, LCC/ULCC must be placed within 15&ndash;30 minutes.</li>
+  <li>Install <a href="/blog/refractory-anchors-fastening-systems-types-selection-installation">anchor</a>s, forms, and vibration equipment before mixing begins. Once mixed, LCC/ULCC must be placed within 15&ndash;30 minutes.</li>
 </ul>
 
 <h3>Step 2: Mixing</h3>
@@ -808,7 +808,7 @@ export const BLOG_POSTS_DATA = [
 <p>These zones experience the most severe thermal cycling because the protective clinker coating is unstable here &mdash; it forms, falls off, and reforms repeatedly. This places extreme thermal shock demands on the refractory.</p>
 <ul>
   <li><strong>Primary material:</strong> Magnesia-spinel bricks or magnesia-hercynite bricks (for improved thermal shock resistance)</li>
-  <li><strong>Alternative:</strong> High alumina bricks (AL60&ndash;AL70) with alumina-rich castable in some designs</li>
+  <li><strong>Alternative:</strong> High alumina bricks (AL60&ndash;AL70) with alumina-rich <a href="/blog/what-is-castable-refractory-complete-guide">castable</a> in some designs</li>
   <li><strong>Key properties:</strong> Excellent thermal shock resistance (the single most important factor), good abrasion resistance</li>
   <li><strong>Typical life:</strong> 6&ndash;12 months</li>
 </ul>
@@ -3314,7 +3314,7 @@ export const BLOG_POSTS_DATA = [
 <p>Before the first heat, record a lining thickness map of the critical zones. For a ladle, map slag line, metal line, bottom and pouring zone. For a boiler, map the hot face at coil bends and burner throats. This baseline is what you compare every inspection against. Without it, "wear" becomes a judgement call.</p>
 
 <h3>Step 2: Daily visual inspection of the visible hot face</h3>
-<p>Ten minutes per shift. Look for cracks, spalls, slag coating loss, deformed anchors and discolouration. Log anything unusual with a date and photo. Most furnace crew members know what normal looks like, but they often do not report early deviations because "it's always been like that."</p>
+<p>Ten minutes per shift. Look for cracks, spalls, slag coating loss, deformed <a href="/blog/refractory-anchors-fastening-systems-types-selection-installation">anchor</a>s and discolouration. Log anything unusual with a date and photo. Most furnace crew members know what normal looks like, but they often do not report early deviations because "it's always been like that."</p>
 
 <h3>Step 3: Weekly tap test on accessible zones</h3>
 <p>A simple brass or steel rod tapped against the lining sounds crisp on a sound lining and hollow on a de-bonded or cracked zone. Train one or two crew members to do the tap test weekly. It catches sub-surface delamination that visual inspection misses.</p>
@@ -3744,7 +3744,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-06-25",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=800&auto=format&fit=crop",
-    content: `<p>In chemical plants, fertilizer units, steel pickling lines, and effluent treatment areas, ordinary concrete and brickwork fail fast. Spillage, fumes, and immersion from sulphuric, hydrochloric, nitric, and phosphoric acids eat through unprotected floors and structures within months. Acid proofing is the engineered defence: a lining system of acid-resistant bricks, tiles, membranes, and chemical-resistant mortars that protects substrates from corrosion for decades.</p>
+    content: `<p>In chemical plants, fertilizer units, steel pickling lines, and effluent treatment areas, ordinary concrete and brickwork fail fast. Spillage, fumes, and immersion from sulphuric, hydrochloric, nitric, and phosphoric acids eat through unprotected floors and structures within months. Acid proofing is the engineered defence: a lining system of <a href="/blog/acid-proof-brick-lining-chemical-plants-guide">acid-resistant bricks, tiles, membranes</a>, and chemical-resistant mortars that protects substrates from corrosion for decades.</p>
 
 <p>Shanker Agencies engineers and supplies complete <a href="/products/acid-proofing">acid-proofing systems</a> for industrial plants across India and export markets, from <a href="/products/acid-proofing/acid-proof-bricks">acid resistant bricks</a> and <a href="/products/acid-proofing/acid-resistant-tiles">tiles</a> to <a href="/products/acid-proofing/acid-proof-cement">acid proof cement</a>. This guide explains what acid proofing involves, the materials used, how the lining is built up, and how to choose the right system for your duty.</p>
 
@@ -3888,7 +3888,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>Frequently asked questions</h2>
 <h3>What products should a full-range refractory supplier offer?</h3>
-<p>Shaped refractories (fire clay, high-alumina, insulating, and acid-resistant bricks), unshaped refractories (castables, guniting and ramming materials), ceramic fibre products, and flow-control items such as slide gates and porous plugs.</p>
+<p>Shaped refractories (fire clay, high-alumina, insulating, and <a href="/blog/acid-proof-brick-lining-chemical-plants-guide">acid-resistant bricks</a>), unshaped refractories (castables, guniting and ramming materials), ceramic fibre products, and flow-control items such as slide gates and porous plugs.</p>
 
 <h3>How important is engineering support versus price?</h3>
 <p>For critical furnace and kiln linings, engineering support usually outweighs unit price. A correctly specified lining that achieves full campaign life is far cheaper than a low-cost lining that fails early and forces an unplanned shutdown.</p>
@@ -4364,7 +4364,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-06-29",
     readTime: "7 min read",
     image: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=800&auto=format&fit=crop",
-    content: `<p><strong>The main alternatives to fire bricks are castable refractories (refractory concrete cast into shape), ceramic fibre (blanket, board and module insulation), insulating fire bricks and plastic/ramming refractories. The right alternative depends on operating temperature, how fast the lining must be installed, thermal mass, and whether the shape is complex.</strong> In many modern furnaces a monolithic castable or ceramic fibre lining outperforms traditional fired fire bricks on install speed and heat loss.</p>
+    content: `<p><strong>The main alternatives to fire bricks are castable refractories (refractory concrete cast into shape), <a href="/blog/ceramic-fiber-blanket-vs-insulating-fire-brick">ceramic fibre</a> (blanket, board and module insulation), insulating fire bricks and plastic/ramming refractories. The right alternative depends on operating temperature, how fast the lining must be installed, thermal mass, and whether the shape is complex.</strong> In many modern furnaces a monolithic castable or ceramic fibre lining outperforms traditional fired fire bricks on install speed and heat loss.</p>
 
 <p>This guide compares each alternative to fire bricks, explains where each wins, and helps you decide when to switch.</p>
 
@@ -4566,7 +4566,7 @@ export const BLOG_POSTS_DATA = [
 <p>Monolithic refractories, poured, gunned, or rammed rather than built as shaped bricks, play three critical roles in EAF operations:</p>
 <ol>
   <li><strong>Hearth lining:</strong> Magnesia ramming mass (MgO &gt;85%) forms the EAF bottom. It is rammed in layers and sintered during the first few heats to form a dense, erosion-resistant bottom lining that handles heel practice and oxygen lancing.</li>
-  <li><strong>Hot-spot maintenance (gunning):</strong> Basic gunning mass is the most important day-to-day EAF consumable after bricks. After each campaign or during short shutdowns, worn sidewall zones are gunned with semi-dry or wet-gun masses to rebuild thickness. In our supply experience with EAF operators across the Odisha-Jharkhand sponge iron corridor, plants running a structured 4-to-6-heat gunning cycle extend campaign life by 25–35% versus their pre-programme baseline, the primary way EAF operators defer full relining. The variation is driven mostly by application technique rather than material grade, a pattern we see consistently.</li>
+  <li><strong>Hot-spot maintenance (<a href="/blog/gunning-vs-casting-when-to-use">gunning</a>):</strong> Basic gunning mass is the most important day-to-day EAF consumable after bricks. After each campaign or during short shutdowns, worn sidewall zones are gunned with semi-dry or wet-gun masses to rebuild thickness. In our supply experience with EAF operators across the Odisha-Jharkhand sponge iron corridor, plants running a structured 4-to-6-heat gunning cycle extend campaign life by 25–35% versus their pre-programme baseline, the primary way EAF operators defer full relining. The variation is driven mostly by application technique rather than material grade, a pattern we see consistently.</li>
   <li><strong>Roof and delta:</strong> High-alumina or basic castables form the EAF roof delta sections. These are cast, cured, and dried in place, offering complex shape capability and faster installation than equivalent brick assemblies.</li>
 </ol>
 <p>SAPL supplies MgO-C bricks and basic gunning masses for EAF maintenance, both are stocked for same-week despatch from Delhi NCR to domestic steel plants and available CIF to export destinations in the GCC and ASEAN.</p>
@@ -4622,7 +4622,7 @@ export const BLOG_POSTS_DATA = [
     ],
     excerpt: "Monolithic castable linings are gaining ground over traditional brick construction in steel ladles, and the main reason is time. Faster installation, simpler repair, and consistent quality with less skilled labour are driving the shift. This guide compares the two approaches across the metrics that matter: installation speed, campaign life, relining cost, and the specific zones where each remains the better choice.",
     content: `<h2>The Shift Toward Monolithics in Steel Ladle Lining</h2>
-<p>Brick construction has been the default for steel ladle lining since the beginning of steelmaking. But over the past decade, monolithic refractories, castables, gunning masses, and ramming mixes installed as a single poured or gunned mass rather than individual shaped bricks, have taken a growing share of ladle working lining construction. In many modern steel plants, the monolithic working lining is now standard practice, with bricks retained only for the permanent and safety lining layers.</p>
+<p>Brick construction has been the default for steel ladle lining since the beginning of steelmaking. But over the past decade, monolithic refractories, <a href="/blog/what-is-castable-refractory-complete-guide">castable</a>s, <a href="/blog/gunning-vs-casting-when-to-use">gunning</a> masses, and ramming mixes installed as a single poured or gunned mass rather than individual shaped bricks, have taken a growing share of ladle working lining construction. In many modern steel plants, the monolithic working lining is now standard practice, with bricks retained only for the permanent and safety lining layers.</p>
 <p>The shift is driven by three practical factors: <strong>installation speed, labour skill requirements, and repairability</strong>. Understanding when each approach is the right choice requires looking at every zone of the ladle separately.</p>
 
 <h2>Steel Ladle Lining Zones: What Goes Where</h2>
@@ -4991,7 +4991,7 @@ export const BLOG_POSTS_DATA = [
   <thead><tr><th>Vessel / Area</th><th>Approx. Share of Plant Consumption</th><th>Dominant Materials</th></tr></thead>
   <tbody>
     <tr><td>Steel ladles</td><td>~30–40%</td><td>MgO-C slag line, alumina/AMC barrel, <a href="/products/unshaped-refractories/low-cement-castables">LCC castables</a></td></tr>
-    <tr><td>BOF / EAF vessel</td><td>~15–20%</td><td>MgO-C bricks, gunning mass, ramming mass</td></tr>
+    <tr><td>BOF / EAF vessel</td><td>~15–20%</td><td>MgO-C bricks, <a href="/blog/gunning-vs-casting-when-to-use">gunning</a> mass, ramming mass</td></tr>
     <tr><td>Blast furnace &amp; cast house</td><td>~10–15%</td><td>Carbon blocks, trough castables, taphole clay</td></tr>
     <tr><td>Tundish</td><td>~10%</td><td>Spray mass, boards, <a href="/products/flow-control/porous-plugs">flow control refractories</a></td></tr>
     <tr><td>Reheating furnaces &amp; others</td><td>~15–25%</td><td>High alumina bricks, insulating castables, ceramic fiber</td></tr>
@@ -5224,7 +5224,7 @@ export const BLOG_POSTS_DATA = [
   <tbody>
     <tr><td>Bed area / bed coils (CFBC-AFBC)</td><td>Severe abrasion</td><td>Dense abrasion-resistant castable, often SiC-containing</td></tr>
     <tr><td>Cyclone inlet &amp; target zone</td><td>Abrasion + erosion</td><td>AR castable / SiC tiles</td></tr>
-    <tr><td>Seal pot / loop seal / return leg</td><td>Abrasion + thermal cycling</td><td>AR castable with dense anchoring</td></tr>
+    <tr><td>Seal pot / loop seal / return leg</td><td>Abrasion + thermal cycling</td><td>AR castable with dense <a href="/blog/refractory-anchors-fastening-systems-types-selection-installation">anchor</a>ing</td></tr>
     <tr><td>Burner throats &amp; openings</td><td>Thermal cycling + flame impingement</td><td>Plastic refractory / precast shapes</td></tr>
     <tr><td>Furnace walls &amp; floor</td><td>Moderate, ash attack</td><td>Conventional / <a href="/products/unshaped-refractories/low-cement-castables">low cement castable</a></td></tr>
     <tr><td>Backup / shell side</td><td>Heat loss control</td><td>Insulating castable, ceramic fibre, calcium silicate</td></tr>
@@ -5550,7 +5550,7 @@ export const BLOG_POSTS_DATA = [
     excerpt: "Waste-to-energy incinerators put refractories through a chemical attack most conventional linings were never designed for, chlorine, sulfur and alkali species that destroy standard castables in months. This guide covers zone-wise material selection and why SiC-bearing castables are non-negotiable in the combustion zone.",
     content: `
 <h2>Waste-to-Energy Is a Harsher Refractory Environment Than Most Suppliers Realize</h2>
-<p><strong>Waste-to-energy (WtE) incinerators subject refractories to chemical attack that conventional high alumina castables were never engineered to survive, chlorine from PVC and food waste, sulfur, and alkali metals that flux and spall standard linings within months instead of years, which is why the grate and combustion zone specifically needs silicon carbide (SiC)-bearing castable, not a generic boiler-grade material.</strong> Most refractory suppliers still think in terms of steel, cement and glass, and quote WtE plants the same castable they'd sell a power boiler. That's the single most common cause of premature lining failure in this sector, and it's a demand pocket that's growing steadily as India commissions more municipal and hazardous waste incineration capacity under Swachh Bharat and state-level mandates.</p>
+<p><strong>Waste-to-energy (WtE) incinerators subject refractories to chemical attack that conventional high alumina <a href="/blog/what-is-castable-refractory-complete-guide">castable</a>s were never engineered to survive, chlorine from PVC and food waste, sulfur, and alkali metals that flux and spall standard linings within months instead of years, which is why the grate and combustion zone specifically needs silicon carbide (SiC)-bearing castable, not a generic boiler-grade material.</strong> Most refractory suppliers still think in terms of steel, cement and glass, and quote WtE plants the same castable they'd sell a power boiler. That's the single most common cause of premature lining failure in this sector, and it's a demand pocket that's growing steadily as India commissions more municipal and hazardous waste incineration capacity under Swachh Bharat and state-level mandates.</p>
 
 <h2>Why WtE Attacks Refractories Differently</h2>
 <table>
@@ -6115,7 +6115,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Three-Step Damage Assessment</h2>
 <p>Before setting any restart timeline, assessment needs to work through three checks in sequence:</p>
 <ol>
-  <li><strong>Structural integrity:</strong> Visual and thermal inspection for cracking, spalling, and any zones where the lining has separated from the shell or anchoring system.</li>
+  <li><strong>Structural integrity:</strong> Visual and thermal inspection for cracking, spalling, and any zones where the lining has separated from the shell or <a href="/blog/refractory-anchors-fastening-systems-types-selection-installation">anchoring system</a>.</li>
   <li><strong>Non-wetting behaviour:</strong> Confirming the metal-contact face still resists wetting by molten aluminium, since even minor surface damage can compromise this and lead to rapid penetration once the furnace is back in service.</li>
   <li><strong>Anchor and anchoring system condition:</strong> Monolithic linings depend on their anchoring system to stay in place under thermal cycling; anchor damage that goes unchecked is a common cause of early failure after a reline.</li>
 </ol>
