@@ -301,6 +301,8 @@ export default function RootLayout({ children }) {
                     'https://www.justdial.com/Delhi/Shanker-Agencies-Pvt-Ltd-Near-East-Delhi-Medical-Hospital-Shahdara/011PK010076_BZDET',
                     'https://www.globallinker.com/seller/shanker-agencies-private-limited',
                     'https://www.getlisteduae.com/listings/shanker-agencies-pvt-ltd-refractory-exporter-to-uae',
+                    'https://www.freelistingindia.in/listings/shanker-agencies-private-limited',
+                    'https://tuffclassified.com/high-alumina-refractory-castable-bricks-supplier-shanker-agencies-sapl_2912550',
                   ],
                 },
                 {
