@@ -300,6 +300,7 @@ export default function RootLayout({ children }) {
                     'https://www.exportersindia.com/shanker-agencies-private-limited/',
                     'https://www.justdial.com/Delhi/Shanker-Agencies-Pvt-Ltd-Near-East-Delhi-Medical-Hospital-Shahdara/011PK010076_BZDET',
                     'https://www.globallinker.com/seller/shanker-agencies-private-limited',
+                    'https://www.getlisteduae.com/listings/shanker-agencies-pvt-ltd-refractory-exporter-to-uae',
                   ],
                 },
                 {
