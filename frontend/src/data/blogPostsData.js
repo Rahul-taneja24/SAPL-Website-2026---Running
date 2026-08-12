@@ -2017,7 +2017,7 @@ export const BLOG_POSTS_DATA = [
     ],
     readTime: "9 min",
     publishDate: "2025-12-28",
-    lastModified: "2026-04-20",
+    lastModified: "2026-08-12",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80",
     excerpt:
@@ -2073,6 +2073,22 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Material:</strong> SS304, SS310, or Inconel strips</li>
   <li><strong>Best for:</strong> Extreme erosion conditions (FCCU cyclones in refineries, transfer lines), thin linings under high gas velocity</li>
 </ul>
+
+<h2>Which Anchor Type Should You Use? Quick Selection Guide</h2>
+<p>The five types above serve different jobs. This table summarises the selection logic from the sections above in one place, for a fast first-pass comparison before you get into material-temperature and spacing detail.</p>
+<table>
+  <thead>
+    <tr><th>Anchor Type</th><th>Material</th><th>Best Suited For</th><th>Key Advantage</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>V Anchor</td><td>SS304 / SS310 (carbon steel only below 400 degC)</td><td>Flat surfaces, gentle curves, vertical walls, roofs with moderate lining thickness (50&ndash;200 mm)</td><td>Most versatile, lowest cost, suits the majority of applications</td></tr>
+    <tr><td>Y Anchor</td><td>SS304 / SS310</td><td>Thick linings (&gt; 150 mm), roof applications, high-vibration areas</td><td>More holding power per anchor point; better resistance to peeling failure than V</td></tr>
+    <tr><td>Bullhorn Anchor</td><td>Cast SS310, Inconel 601, or heat-resistant alloy</td><td>Very thick linings (&gt; 250 mm), high-temperature service (&gt; 1,200 degC), cement kilns, incinerators</td><td>Wide paddle end gives the strongest hold for the heaviest, hottest linings</td></tr>
+    <tr><td>Ceramic Fiber (Cup) Anchor</td><td>SS304 / SS310 stud with metal cup</td><td>Ceramic fiber blanket and module installations on flat or gently curved surfaces</td><td>Purpose-built for fiber systems, not adaptable for castable/gunning use</td></tr>
+    <tr><td>Hex Metal (Tortoiseshell)</td><td>SS304, SS310, or Inconel strips</td><td>Extreme erosion conditions (FCCU cyclones, transfer lines), thin linings under high gas velocity</td><td>Continuous grid protects the whole surface, not just discrete points</td></tr>
+  </tbody>
+</table>
+<p>For most standard furnace, kiln, and vessel linings, V anchors are the default starting point; move to Y or bullhorn as lining thickness and temperature increase, and to hex metal only where erosion, not gravity or thermal cycling, is the dominant failure mode.</p>
 
 <h2>Material Selection Guide</h2>
 <table>
@@ -2138,7 +2154,7 @@ export const BLOG_POSTS_DATA = [
 <p>Fiber modules use a different anchoring philosophy: each module has its own internal stud or rod that mounts to the shell. The key is ensuring that the stud is properly attached and that adjacent modules are compressed tightly together to prevent gap shrinkage during operation.</p>
 
 <h2>SAPL: Complete Anchoring Solutions</h2>
-<p>Shanker Agencies supplies refractory anchors in all types and materials &mdash; V, Y, bullhorn, hex metal, and ceramic fiber anchoring systems. We provide anchors manufactured to your specification in SS304, SS310, Inconel, and other heat-resistant alloys. Our technical team can assist with anchor layout design, spacing calculations, and material selection based on your application temperature and conditions. Contact us for a quotation or to discuss your anchoring requirements for an upcoming project.</p>
+<p>Shanker Agencies supplies refractory anchors in all types and materials &mdash; V, Y, bullhorn, hex metal, and ceramic fiber anchoring systems. We provide anchors manufactured to your specification in SS304, SS310, Inconel, and other heat-resistant alloys. Our technical team can assist with anchor layout design, spacing calculations, and material selection based on your application temperature and conditions. Anchors are supplied to match the specific lining they hold: see our <a href="https://www.shankeragencies.com/products/unshaped-refractories/low-cement-castables">low cement castable</a>, <a href="https://www.shankeragencies.com/products/unshaped-refractories/ultra-low-cement-castables">ultra low cement castable</a>, <a href="https://www.shankeragencies.com/products/unshaped-refractories/conventional-castables">conventional castable</a>, <a href="https://www.shankeragencies.com/products/unshaped-refractories/plastic-refractories">plastic refractory</a>, and <a href="https://www.shankeragencies.com/products/insulation/ceramic-fiber-products">ceramic fiber</a> product ranges for the corresponding lining system. Contact us for a quotation or to discuss your anchoring requirements for an upcoming project.</p>
 `,
     author: { name: "Rohit Verma" },
     relatedProducts: [

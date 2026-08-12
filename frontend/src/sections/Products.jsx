@@ -653,11 +653,11 @@ function CategoryPage({ category, categorySlug }) {
 
 /* ─── OVERVIEW PAGE ───────────────────────────────────────────────────── */
 const CATS_OVERVIEW = [
-  { slug: "shaped-refractories", name: "Shaped Refractories", tagline: "Fired & bonded bricks for working linings", tempRange: "1200–1850°C", count: 5, image: IMG.shapedHero, accent: "#F97316", pill: "bg-orange-50 text-orange-700 border-orange-200", icon: Layers, keyProducts: ["High Alumina Bricks", "Fireclay Bricks", "IFB", "Basic Bricks", "SiC Bricks"], industries: ["Steel", "Cement", "Glass", "Power"] },
-  { slug: "unshaped-refractories", name: "Unshaped Refractories", tagline: "Monolithic castables, masses & gunning mixes", tempRange: "1200–1850°C", count: 4, image: IMG.unshapedHero, accent: "#3B82F6", pill: "bg-blue-50 text-blue-700 border-blue-200", icon: Package, keyProducts: ["LCC Castables", "ULCC Castables", "Ramming Mass", "Gunning Mix"], industries: ["Steel", "Aluminum", "Foundry"] },
-  { slug: "flow-control", name: "Flow Control", tagline: "Precision refractories for continuous casting", tempRange: "1500–1650°C", count: 4, image: IMG.flowHero, accent: "#DC2626", pill: "bg-red-50 text-red-700 border-red-200", icon: Zap, keyProducts: ["Slide Gate Plates", "Ladle Shrouds", "SEN Nozzles", "Porous Plugs"], industries: ["Steel"] },
-  { slug: "insulation", name: "Insulation", tagline: "Lightweight thermal barriers for energy savings", tempRange: "600–1600°C", count: 2, image: IMG.insulHero, accent: "#10B981", pill: "bg-emerald-50 text-emerald-700 border-emerald-200", icon: Shield, keyProducts: ["Ceramic Fiber Blanket", "Ceramic Fiber Module", "Calcium Silicate"], industries: ["All industries"] },
-  { slug: "acid-proofing", name: "Acid Proofing", tagline: "Vitrified ceramics for chemical environments", tempRange: "Ambient–900°C", count: 2, image: IMG.acidHero, accent: "#7C3AED", pill: "bg-violet-50 text-violet-700 border-violet-200", icon: Flame, keyProducts: ["Acid Proof Bricks", "Acid Resistant Tiles"], industries: ["Chemical", "Pharma"] },
+  { slug: "shaped-refractories", name: "Shaped Refractories", tagline: "Fired & bonded bricks for working linings", tempRange: "1200–1850°C", count: 11, image: IMG.shapedHero, accent: "#F97316", pill: "bg-orange-50 text-orange-700 border-orange-200", icon: Layers, keyProducts: ["High Alumina Bricks", "Fireclay Bricks", "IFB", "Basic Bricks", "SiC Bricks"], industries: ["Steel", "Cement", "Glass", "Power"] },
+  { slug: "unshaped-refractories", name: "Unshaped Refractories", tagline: "Monolithic castables, masses & gunning mixes", tempRange: "1200–1850°C", count: 7, image: IMG.unshapedHero, accent: "#3B82F6", pill: "bg-blue-50 text-blue-700 border-blue-200", icon: Package, keyProducts: ["LCC Castables", "ULCC Castables", "Ramming Mass", "Gunning Mix"], industries: ["Steel", "Aluminum", "Foundry"] },
+  { slug: "flow-control", name: "Flow Control", tagline: "Precision refractories for continuous casting", tempRange: "1500–1650°C", count: 7, image: IMG.flowHero, accent: "#DC2626", pill: "bg-red-50 text-red-700 border-red-200", icon: Zap, keyProducts: ["Slide Gate Plates", "Ladle Shrouds", "SEN Nozzles", "Porous Plugs"], industries: ["Steel"] },
+  { slug: "insulation", name: "Insulation", tagline: "Lightweight thermal barriers for energy savings", tempRange: "600–1600°C", count: 3, image: IMG.insulHero, accent: "#10B981", pill: "bg-emerald-50 text-emerald-700 border-emerald-200", icon: Shield, keyProducts: ["Ceramic Fiber Blanket", "Ceramic Fiber Module", "Calcium Silicate"], industries: ["All industries"] },
+  { slug: "acid-proofing", name: "Acid Proofing", tagline: "Vitrified ceramics for chemical environments", tempRange: "Ambient–900°C", count: 4, image: IMG.acidHero, accent: "#7C3AED", pill: "bg-violet-50 text-violet-700 border-violet-200", icon: Flame, keyProducts: ["Acid Proof Bricks", "Acid Resistant Tiles"], industries: ["Chemical", "Pharma"] },
 ];
 
 function OverviewPage() {
@@ -696,7 +696,7 @@ function OverviewPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 w-full flex flex-col justify-center" style={{ minHeight: "70vh" }}>
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 text-white/80 text-xs font-semibold mb-6 uppercase tracking-widest">
-              <Package size={11} /> 5 Categories · 17 Products · 80+ Grades
+              <Package size={11} /> 5 Categories · 32 Products · 100+ Grades
             </div>
             <h1 className="font-oswald text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-none mb-4">
               REFRACTORY<br /><span className="text-[#F97316]">PRODUCT RANGE</span>
@@ -713,7 +713,7 @@ function OverviewPage() {
             </div>
           </div>
           <div className="mt-10 flex flex-wrap gap-6 sm:gap-10">
-            {[{ v: "5", l: "Categories" }, { v: "17", l: "Product Types" }, { v: "80+", l: "Grades" }, { v: "1850°C", l: "Max Temp" }].map(({ v, l }) => (
+            {[{ v: "5", l: "Categories" }, { v: "32", l: "Product Types" }, { v: "100+", l: "Grades" }, { v: "1850°C", l: "Max Temp" }].map(({ v, l }) => (
               <div key={l} className="text-center">
                 <p className="font-oswald text-3xl sm:text-4xl font-bold text-[#F97316]">{v}</p>
                 <p className="text-white/50 text-xs mt-0.5 uppercase tracking-wider">{l}</p>
