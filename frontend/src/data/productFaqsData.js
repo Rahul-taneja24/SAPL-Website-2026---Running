@@ -257,6 +257,14 @@ export const PRODUCT_FAQS = {
       q: 'Do you supply gunning mass with on-site gunning service?',
       a: 'Yes. For large steel and cement plants we offer turnkey gunning campaigns, material supply, machine, trained crew, and refractory engineer supervision. For routine maintenance we supply Calderys and CUMI gunning masses for application by your in-house team. Both options come with technical guidance on best-practice gunning thickness and frequency.',
     },
+    {
+      q: 'What temperature can gunning castable withstand?',
+      a: 'Maximum service temperature is grade-dependent. Catalog-listed values: LC Gun Mix is rated up to 1700°C; HA Gun Mix and Mag Gun Mix are rated up to 1750°C. These are typical/catalog data, not independently certified figures, request a technical datasheet for values specific to your application.',
+    },
+    {
+      q: 'Which gunning grade should I choose?',
+      a: 'Grade selection should match your application chemistry and existing lining. Catalog-listed grades: LC Gun Mix (70-75% Al₂O₃, up to 1700°C); HA Gun Mix (80-85% Al₂O₃, up to 1750°C); Mag Gun Mix (80-85% MgO, up to 1750°C), magnesia-based and suited to basic-slag contact areas such as steel ladle slag bands per our chemistry-matching guidance above. Silica Gun Mix is also in our range, contact us for grade-specific technical data. Our engineers can help match a grade to your furnace type and repair zone.',
+    },
   ],
 
   'refractory-mortars': [

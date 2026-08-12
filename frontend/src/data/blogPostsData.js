@@ -2748,6 +2748,8 @@ export const BLOG_POSTS_DATA = [
   <li><strong>Post-repair heat-up:</strong> After a gunned repair on a hot vessel, allow gradual heat-up from ambient temperature to service temperature before returning to full production load.</li>
 </ol>
 
+<p>Shanker Agencies supplies <a href="/products/unshaped-refractories/gunning-materials">dense and insulating gunning grades</a> for hot repair applications, with technical guidance on grade selection for your specific furnace or vessel duty.</p>
+
 <h2>Frequently Asked Questions</h2>
 <h3>Can I cast on top of a gunned lining?</h3>
 <p>Yes, during a full reline. The existing gunned layer would be demolished, the surface prepared, and fresh casting done. You cannot cast directly over existing gunned material without demolition, as the bond between old and new is unreliable.</p>

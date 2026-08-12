@@ -10,6 +10,7 @@ import {
   ChevronDown, HelpCircle
 } from "lucide-react";
 import { getProductFaqs } from '@/data/productFaqsData';
+import { getProductDatasheet } from '@/data/productDatasheetData';
 // IMG + PRODUCT_CATALOG now live in productCatalogData.js so server route
 // handlers can import the catalog without crossing the 'use client'
 // boundary (Next.js 15 RSC rule). Re-exported here for backwards-compat
@@ -224,6 +225,10 @@ function ProductFAQ({ faqs, accent }) {
 function ProductDetailPage({ product, category, categorySlug }) {
   const meta = CAT_META[categorySlug] || CAT_META["shaped-refractories"];
   const faqs = getProductFaqs(product.id);
+  // Only products with a real PRODUCT_DATASHEETS entry have verified
+  // test-standard sourcing. Gates the "Test conditions: IS.../ASTM.../EN..."
+  // footnote below so it never appears next to unverified catalog specs.
+  const hasVerifiedStandards = Boolean(getProductDatasheet(product.id));
   return (
     <div className="bg-white">
       
@@ -332,7 +337,11 @@ function ProductDetailPage({ product, category, categorySlug }) {
                   <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F]">TECHNICAL SPECIFICATIONS</h2>
                 </div>
                 <SpecTable specs={product.specs} />
-                <p className="mt-3 text-xs text-gray-400 italic">* Test conditions: IS 1528 (India) / ASTM C-133 / EN 1402. Values are typical, exact data sheets available on request.</p>
+                {hasVerifiedStandards ? (
+                  <p className="mt-3 text-xs text-gray-400 italic">* Test conditions: IS 1528 (India) / ASTM C-133 / EN 1402. Values are typical, exact data sheets available on request.</p>
+                ) : (
+                  <p className="mt-3 text-xs text-gray-400 italic">* Typical catalog values. Not independently certified, request a technical datasheet to confirm figures for your application.</p>
+                )}
               </div>
             )}
 
