@@ -3,6 +3,7 @@ import { useApp } from '@/context/AppContext';
 import { useState } from "react";
 import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle, Globe, Award, Users, Loader2, ChevronDown, Zap, Shield } from "lucide-react";
 import { toast } from "sonner";
+import { trackEvent } from '@/lib/analytics';
 
 
 
@@ -143,6 +144,14 @@ const Contact = () => {
       if (result.success) {
         setSubmitted(true);
         toast.success("Inquiry sent successfully! We will contact you soon.");
+        trackEvent('rfq_submit', {
+          form_variant: formType === 'quote' ? 'contact_quote' : 'contact_general',
+          product_family: formType === 'quote' ? formData.products.join(', ') : undefined,
+          application: formType === 'quote' ? formData.application : undefined,
+          market: formType === 'quote' ? formData.delivery_location : undefined,
+          intent: formType === 'quote' ? 'quote' : formData.inquiry_type,
+          page_path: window.location.pathname,
+        });
       } else {
         throw new Error(result.message || "Failed to send message.");
       }

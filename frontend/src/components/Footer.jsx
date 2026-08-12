@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useApp } from '@/context/AppContext';
 
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook, Youtube, Globe, Download } from "lucide-react";
+import { trackEvent } from '@/lib/analytics';
 
 const LOGO_URL = "/images/sapl-logo.png";
 
@@ -161,15 +162,15 @@ const Footer = () => {
               <div className="flex items-start gap-3 text-gray-400 text-sm">
                 <Phone size={14} className="text-[#3B82F6] flex-shrink-0 mt-1" aria-hidden="true" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
-                  <a href="tel:+919899957888" className="hover:text-[#F97316] transition-colors block">+91 98999 57888</a>
-                  <a href="tel:+919810205154" className="hover:text-[#F97316] transition-colors block">+91 98102 05154</a>
-                  <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors block">+91 98119 09394</a>
-                  <a href="tel:+918800203083" className="hover:text-[#F97316] transition-colors block">+91 88002 03083</a>
+                  <a href="tel:+919899957888" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98999 57888</a>
+                  <a href="tel:+919810205154" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98102 05154</a>
+                  <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98119 09394</a>
+                  <a href="tel:+918800203083" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 88002 03083</a>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-gray-400 text-sm">
                 <Mail size={14} className="text-green-500 flex-shrink-0" aria-hidden="true" />
-                <a href="mailto:info@shankeragencies.com" className="hover:text-[#F97316] transition-colors">info@shankeragencies.com</a>
+                <a href="mailto:info@shankeragencies.com" className="hover:text-[#F97316] transition-colors" onClick={() => trackEvent('email_click', { cta_type: 'footer' })}>info@shankeragencies.com</a>
               </div>
             </address>
 

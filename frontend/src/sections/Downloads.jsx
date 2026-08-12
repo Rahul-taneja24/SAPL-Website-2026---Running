@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { FileText, Download, MessageCircle, ChevronRight, BookOpen, Package, Layers, Zap, Shield, FlaskConical, X } from 'lucide-react';
+import { trackEvent } from '@/lib/analytics';
 
 const DATASHEET_CATEGORIES = [
   {
@@ -123,6 +124,12 @@ function LeadModal({ item, onClose }) {
     setSubmitting(false);
     setDone(true);
 
+    trackEvent('datasheet_request', {
+      cta_type: 'downloads_page',
+      product_family: item.category,
+      product: item.name,
+    });
+
     // Open WhatsApp with name pre-filled in message
     const msg = `Hi, I'm ${form.name} from ${form.company}. ${item.waMsg.replace('Hi, ', '')}`;
     window.open(`${WA_BASE}${encodeURIComponent(msg)}`, '_blank', 'noreferrer');
@@ -237,7 +244,7 @@ export default function DownloadsPage() {
             for verified industrial buyers.
           </p>
           <button
-            onClick={() => setActiveItem({ name: 'SAPL Company Profile', desc: '12-page company profile covering history, product range, brands & export markets.', waMsg: 'I would like to receive the SAPL Company Profile PDF. Please share.' })}
+            onClick={() => setActiveItem({ name: 'SAPL Company Profile', desc: '12-page company profile covering history, product range, brands & export markets.', waMsg: 'I would like to receive the SAPL Company Profile PDF. Please share.', category: 'company-profile' })}
             className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA6C0A] text-white px-7 py-3.5 rounded-full font-bold transition-colors text-sm"
           >
             <Download size={16} />
@@ -292,7 +299,7 @@ export default function DownloadsPage() {
                         </div>
                       </div>
                       <button
-                        onClick={() => setActiveItem(item)}
+                        onClick={() => setActiveItem({ ...item, category: cat.id })}
                         className="flex-shrink-0 inline-flex items-center gap-1.5 text-xs font-bold px-4 py-2 rounded-full border transition-colors cursor-pointer"
                         style={{ color: cat.accent, borderColor: cat.accent + '40', background: cat.accent + '10' }}
                       >
@@ -354,7 +361,7 @@ export default function DownloadsPage() {
                   </div>
                 </div>
                 <button
-                  onClick={() => setActiveItem(res)}
+                  onClick={() => setActiveItem({ ...res, name: res.title, category: 'export-resources' })}
                   className="mt-auto inline-flex items-center gap-1.5 text-xs font-bold text-[#1E3A5F] hover:text-[#F97316] transition-colors cursor-pointer"
                 >
                   <MessageCircle size={12} />

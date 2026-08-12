@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
+import { trackEvent } from '@/lib/analytics';
 import { useApp } from '@/context/AppContext';
 import { Menu, X, ChevronDown, Globe, Phone, Mail, Zap, Languages, ArrowRight, Flame, Layers, Wrench, Package, FileText } from "lucide-react";
 
@@ -208,6 +209,7 @@ const Navbar = () => {
                 href="tel:+919899957888"
                 className="flex items-center gap-1.5 hover:text-blue-200 transition-colors"
                 aria-label="Call primary number"
+                onClick={() => trackEvent('phone_click', { cta_type: 'navbar_topbar' })}
               >
                 <Phone size={11} />
                 <span className="font-medium">+91 98999 57888</span>
@@ -217,6 +219,7 @@ const Navbar = () => {
               href="mailto:info@shankeragencies.com"
               className="hidden md:flex items-center gap-1.5 hover:text-blue-200 transition-colors"
               aria-label="Email us"
+              onClick={() => trackEvent('email_click', { cta_type: 'navbar_topbar' })}
             >
               <Mail size={12} />
               info@shankeragencies.com
@@ -500,10 +503,10 @@ const Navbar = () => {
             <div className="px-4 py-3 mb-2 bg-orange-50 rounded-xl space-y-2">
               <p className="text-[10px] font-bold text-[#F97316] uppercase tracking-wider">Director's Direct Lines</p>
               <div className="flex flex-col gap-2">
-                <a href="tel:+919899957888" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
+                <a href="tel:+919899957888" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm" onClick={() => trackEvent('phone_click', { cta_type: 'mobile_menu' })}>
                   <Phone size={16} /> +91 98999 57888
                 </a>
-                <a href="tel:+919810205154" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm">
+                <a href="tel:+919810205154" className="flex items-center gap-3 text-[#F97316] font-semibold text-sm" onClick={() => trackEvent('phone_click', { cta_type: 'mobile_menu' })}>
                   <Phone size={16} /> +91 98102 05154
                 </a>
               </div>

@@ -1489,7 +1489,7 @@ function OverviewPage() {
             <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
                 <div className="max-w-3xl mx-auto text-center">
                     <h2 className="font-oswald text-4xl font-bold text-[#1E3A5F] mb-4">CAN'T FIND WHAT YOU NEED?</h2>
-                    <p className="text-gray-600 mb-8">We carry 200+ grades not all listed here. Call us — our engineers will match the right refractory to your process in minutes.</p>
+                    <p className="text-gray-600 mb-8">We carry 100+ documented grades across 30+ refractory products, not all listed here. Call us — our engineers will match the right refractory to your process in minutes.</p>
                     <div className="flex flex-wrap justify-center gap-3">
                         <Link href="/contact" className="inline-flex items-center gap-2 bg-[#F97316] hover:bg-[#EA580C] text-white px-7 py-4 rounded-full font-bold transition-colors shadow-lg shadow-orange-200">
                             <MessageCircle size={17} /> Talk to an Engineer

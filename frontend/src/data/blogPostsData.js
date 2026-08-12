@@ -2903,7 +2903,7 @@ export const BLOG_POSTS_DATA = [
 <h2>How to Read This Guide</h2>
 <p>We grouped the Delhi NCR refractory dealer landscape into four types. Each type has a legitimate place in the market. The trick is matching the dealer type to your use case.</p>
 <ol>
-  <li><strong>Authorised dealers of Indian majors</strong> (CUMI, Crown Ceramics, Divine Cerawool). These carry factory-backed pricing and genuine products. Shanker Agencies (SAPL) sits in this category for CUMI, Crown Ceramics and Divine Cerawool.</li>
+  <li><strong>Authorised dealers of Indian majors</strong> (CUMI, Crown Ceramics, Divine Cerawool). These carry genuine products through direct manufacturer authorization. Shanker Agencies (SAPL) sits in this category for CUMI, Crown Ceramics and Divine Cerawool.</li>
   <li><strong>Strategic supply partners</strong> (Calderys, TRL Krosaki, Mahakoshal, Saint-Gobain, Dalmia-OCL, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
   <li><strong>Local stockists and traders</strong>. Smaller operators with mixed-brand stock. Good for small value top-ups, less reliable for critical shutdown orders.</li>
   <li><strong>Online marketplaces</strong> (IndiaMART, TradeIndia, Justdial listings). Useful to compare prices but you are one step removed from the factory.</li>
@@ -2911,7 +2911,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>What to Check Before Placing an Order</h2>
 <h3>1. Is the dealer authorised by the brand?</h3>
-<p>An authorised dealership means the dealer can pull product directly from the factory with factory pricing and lot traceability. Ask for the current dealership letter. Don't accept "we have worked with them for years", ask for the letter.</p>
+<p>An authorised dealership means the dealer can pull product directly from the factory with full lot traceability and a documented supply chain. Ask for the current dealership letter. Don't accept "we have worked with them for years", ask for the letter.</p>
 
 <h3>2. How deep is the local stock?</h3>
 <p>For a ramming mass breakdown or an emergency castable top-up at a Manesar foundry, you need stock that can move same-day from a Delhi NCR warehouse. Ask specifically: how many tonnes of your grade is physically in the warehouse today?</p>
@@ -2939,7 +2939,7 @@ export const BLOG_POSTS_DATA = [
     </tr>
   </thead>
   <tbody>
-    <tr><td>Factory-direct pricing</td><td>Yes</td><td>Yes (for indent orders)</td><td>Rarely</td><td>Opaque</td></tr>
+    <tr><td>Manufacturer-authorized sourcing</td><td>Yes</td><td>Yes (for indent orders)</td><td>Rarely</td><td>Opaque</td></tr>
     <tr><td>Same-day stock dispatch</td><td>Usually</td><td>No (2 to 6 weeks)</td><td>Sometimes</td><td>No</td></tr>
     <tr><td>Lot traceability / MTC</td><td>Yes</td><td>Yes</td><td>Partial</td><td>Rare</td></tr>
     <tr><td>Engineering support on site</td><td>Yes</td><td>Sometimes</td><td>No</td><td>No</td></tr>

@@ -1,5 +1,6 @@
 'use client';
 import { useState } from "react";
+import { trackEvent } from '@/lib/analytics';
 
 const PHONE = "919899957888";
 const DEFAULT_MESSAGE = "Hello, I'm interested in refractory products. Could you please help me?";
@@ -26,6 +27,7 @@ const WhatsAppButton = ({ productContext = null }) => {
       className="whatsapp-float group"
       data-testid="whatsapp-button"
       aria-label="Chat with us on WhatsApp"
+      onClick={() => trackEvent('whatsapp_click', { cta_type: 'floating_button', product_family: productContext || undefined })}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onFocus={() => setHovered(true)}

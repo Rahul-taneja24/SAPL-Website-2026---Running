@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import { Send, CheckCircle, Package, Globe, Ship, Building2 } from 'lucide-react';
+import { trackEvent } from '@/lib/analytics';
 
 // Structured B2B RFQ form. Submits through the same Web3Forms endpoint the
 // contact form uses. Deliberately contains NO response-time promises.
@@ -40,7 +41,19 @@ export default function RfqForm() {
       });
       const json = await res.json();
       setStatus(json.success ? 'sent' : 'error');
-      if (json.success) form.reset();
+      if (json.success) {
+        trackEvent('rfq_submit', {
+          form_variant: 'rfq_form',
+          product_family: data.product_category,
+          grade: data.grade_specification,
+          application: data.application,
+          destination_country: data.destination_country,
+          destination_port: data.destination_port,
+          intent: 'quote',
+          page_path: window.location.pathname,
+        });
+        form.reset();
+      }
     } catch {
       setStatus('error');
     }

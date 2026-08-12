@@ -137,7 +137,7 @@ function generateFAQs(location) {
     },
     {
       q: `Which industries in ${city} does SAPL serve with refractories?`,
-      a: `In ${loc}, SAPL serves ${industries.map(i => industryLabel === i ? `the ${i} industry` : i).join(', ')} sectors. Our major clients in the region include ${majorPlants.slice(0, 3).join(', ')} and other industrial plants requiring high-performance refractory linings and insulation.`,
+      a: `In ${loc}, SAPL serves ${industries.map(i => industryLabel === i ? `the ${i} industry` : i).join(', ')} sectors. Major industrial companies operating in this region include ${majorPlants.slice(0, 3).join(', ')} and other industrial plants requiring high-performance refractory linings and insulation.`,
     },
     {
       q: `How quickly can Shanker Agencies deliver refractory materials to ${city}?`,
@@ -151,7 +151,7 @@ function generateFAQs(location) {
     },
     {
       q: `Why choose Shanker Agencies over other refractory suppliers for ${city}?`,
-      a: `Shanker Agencies offers ${city} customers a unique combination of advantages: 45+ years of refractory expertise since 1980, authorized dealerships of CUMI, Crown Ceramics & Divine Cerawool ensuring genuine products at factory-direct pricing, a team of experienced refractory engineers for technical support, proven supply track record to ${isInternational ? '50+ countries' : 'major plants across India'}, and competitive pricing backed by manufacturer partnerships.`,
+      a: `Shanker Agencies offers ${city} customers a unique combination of advantages: 45+ years of refractory expertise since 1980, genuine products supplied through established manufacturer and authorized-dealer channels (CUMI, Crown Ceramics & Divine Cerawool), a team of experienced refractory engineers for technical support, proven supply track record to ${isInternational ? '50+ countries' : 'major plants across India'}, and export procurement assistance backed by manufacturer partnerships.`,
     },
   ];
 }
