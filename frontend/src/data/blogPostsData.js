@@ -3853,10 +3853,10 @@ export const BLOG_POSTS_DATA = [
 <p>Conventional castables use 15 to 25% calcium aluminate cement as the binder. They are economical and easy to install, suited to backup linings, boilers and general furnace work up to moderate temperatures.</p>
 
 <h3>Low cement castable (LCC)</h3>
-<p>Low cement castables reduce cement content to roughly 4 to 8%, which lowers porosity and raises strength and hot performance. They are used for steel ladles, tundish, and demanding wear zones.</p>
+<p><a href="https://www.shankeragencies.com/products/unshaped-refractories/low-cement-castables">Low cement castables</a> reduce cement content to roughly 4 to 8%, which lowers porosity and raises strength and hot performance. They are used for steel ladles, tundish, and demanding wear zones.</p>
 
 <h3>Ultra low cement castable (ULCC)</h3>
-<p>Ultra low cement castables contain under 4% cement, giving very high density and excellent resistance to slag and abrasion for the most critical high-temperature linings.</p>
+<p><a href="https://www.shankeragencies.com/products/unshaped-refractories/ultra-low-cement-castables">Ultra low cement castables</a> contain under 4% cement, giving very high density and excellent resistance to slag and abrasion for the most critical high-temperature linings.</p>
 
 <h3>Insulating castable</h3>
 <p>Insulating castables use lightweight aggregate to give low thermal conductivity. They are used as backup insulation behind a dense working lining to cut heat loss.</p>

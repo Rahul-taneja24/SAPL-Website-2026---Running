@@ -1,11 +1,11 @@
 import CompanyProfile from '@/sections/CompanyProfile';
 export const metadata = {
-  title: 'Company Profile | Shanker Agencies Pvt. Ltd.',
-  description: 'Complete company profile of Shanker Agencies Pvt. Ltd.: 45 years of refractory engineering, export markets, brands and certifications.',
+  title: 'Company Profile: 45+ Years, ISO Certified',
+  description: 'ISO 9001, 14001 & 45001 certified refractory engineering partner since 1980. Authorised dealer for 7 leading brands, exporting to 50+ countries.',
   alternates: { canonical: '/company-profile' },
   openGraph: {
-    title: 'Company Profile | Shanker Agencies Pvt. Ltd.',
-    description: 'Complete company profile of Shanker Agencies Pvt. Ltd.: 45 years of refractory engineering, export markets, brands and certifications.',
+    title: 'Company Profile: 45+ Years, ISO Certified | Shanker Agencies',
+    description: 'ISO 9001, 14001 & 45001 certified refractory engineering partner since 1980. Authorised dealer for 7 leading brands, exporting to 50+ countries.',
     url: 'https://www.shankeragencies.com/company-profile',
     siteName: 'Shanker Agencies',
     locale: 'en_IN',

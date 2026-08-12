@@ -486,7 +486,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
             MORE IN <span style={{ color: meta.accent }}>{category.name.toUpperCase()}</span>
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {category.products.filter(p => p.id !== product.id).slice(0, 4).map(rel => (
+            {category.products.filter(p => p.id !== product.id).slice(0, categorySlug === 'flow-control' ? 6 : 4).map(rel => (
               <Link key={rel.id} href={`/products/${categorySlug}/${rel.id}`}
                 className="group bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-md transition-all">
                 <div className="h-28 overflow-hidden bg-gray-100">
