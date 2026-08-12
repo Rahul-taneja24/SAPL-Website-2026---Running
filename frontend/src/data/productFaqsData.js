@@ -497,7 +497,7 @@ export const PRODUCT_FAQS = {
     },
     {
       q: 'What is the standard for acid-proof bricks in India?',
-      a: 'IS 4860 specifies acid-resistant bricks by acid solubility (max 2% loss in boiling sulphuric acid for Class 1 bricks), apparent porosity (max 6%), water absorption (max 2%), and compressive strength (min 70 MPa for Class 1). Shanker Agencies supplies fully IS 4860 Class 1 compliant bricks from Crown Ceramics, our authorised dealership.',
+      a: 'IS 4860 specifies acid-resistant bricks by acid solubility (max 2% loss in boiling sulphuric acid for Class 1 bricks), apparent porosity (max 6%), water absorption (max 2%), and compressive strength (min 70 MPa for Class 1). Shanker Agencies supplies Crown Ceramics acid proof bricks manufactured to the IS 4860 acid-resistant brick specification; confirm grade/class and current test values against the applicable manufacturer TDS.',
     },
     {
       q: 'What jointing material is used with acid-proof bricks?',

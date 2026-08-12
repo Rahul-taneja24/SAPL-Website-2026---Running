@@ -1372,7 +1372,7 @@ export const PRODUCT_CATALOG = {
           'Curing: furan resin mortars, 24 hrs at 25°C before any chemical exposure; heat curing improves performance',
           'Test before commissioning: hydraulic leak test or chemical spot test',
         ],
-        whyChoose: 'Shanker Agencies supplies Crown Ceramics acid proof bricks (IS 4860 compliant) along with the complete range of Chemset acid-resistant mortars and cements. We provide lining design support for new constructions and repair specification for existing linings.',
+        whyChoose: 'Shanker Agencies supplies Crown Ceramics acid proof bricks, manufactured to the IS 4860 acid-resistant brick specification; confirm grade/class and current test values against the applicable manufacturer TDS. We also supply the complete range of Chemset acid-resistant mortars and cements, and provide lining design support for new constructions and repair specification for existing linings.',
       },
       {
         id: 'acid-resistant-tiles',
