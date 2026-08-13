@@ -47,6 +47,10 @@ export default function RfqForm() {
           product_family: data.product_category,
           grade: data.grade_specification,
           application: data.application,
+          dimensions: data.dimensions,
+          operating_temperature: data.operating_temperature,
+          required_standard: data.required_standard,
+          has_drawing_reference: data.drawing_reference ? 'yes' : 'no',
           destination_country: data.destination_country,
           destination_port: data.destination_port,
           intent: 'quote',
@@ -102,6 +106,23 @@ export default function RfqForm() {
           <div>
             <label htmlFor="rfq-application" className={label}>Application / Equipment <span className="font-normal text-gray-400">(optional)</span></label>
             <input id="rfq-application" name="application" type="text" placeholder="e.g. steel ladle working lining, cement kiln burning zone" className={input} />
+          </div>
+          <div>
+            <label htmlFor="rfq-dimensions" className={label}>Dimensions / Shape <span className="font-normal text-gray-400">(optional)</span></label>
+            <input id="rfq-dimensions" name="dimensions" type="text" placeholder="e.g. 230x114x64mm, or a standard/special shape reference" className={input} />
+          </div>
+          <div>
+            <label htmlFor="rfq-temp" className={label}>Operating Temperature <span className="font-normal text-gray-400">(optional)</span></label>
+            <input id="rfq-temp" name="operating_temperature" type="text" placeholder="e.g. 1400°C hot face" className={input} />
+          </div>
+          <div>
+            <label htmlFor="rfq-standard" className={label}>Required Standard <span className="font-normal text-gray-400">(optional)</span></label>
+            <input id="rfq-standard" name="required_standard" type="text" placeholder="e.g. IS 4860, ASTM C279, EN, or not sure" className={input} />
+          </div>
+          <div>
+            <label htmlFor="rfq-drawing" className={label}>Drawing / Specification Reference <span className="font-normal text-gray-400">(optional)</span></label>
+            <input id="rfq-drawing" name="drawing_reference" type="text" placeholder="e.g. drawing no., spec sheet ref, or 'will email separately'" className={input} />
+            <p className="text-xs text-gray-400 mt-1">Have a drawing or specification file? Email it to <a href="mailto:info@shankeragencies.com" className="underline">info@shankeragencies.com</a> referencing your RFQ, or attach it when we follow up — this form doesn't accept file attachments yet.</p>
           </div>
         </div>
       </fieldset>

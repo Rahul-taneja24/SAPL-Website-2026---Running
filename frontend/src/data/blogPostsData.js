@@ -2005,7 +2005,7 @@ export const BLOG_POSTS_DATA = [
       "Refractory Anchors & Fastening Systems: Types, Selection & Installation",
     metaTitle:
       "Refractory Anchors: V, Y, Ceramic Types & Castable Anchoring",
-    metaDescription: "Refractory anchor types compared: V, Y, ceramic and bullhorn anchors for castable linings. Selection by temperature, spacing and welding practice.",
+    metaDescription: "Refractory anchor types compared: V, Y, ceramic, bullhorn anchors and anchor bricks, for castable and kiln-roof linings. Selection by material, spacing and application.",
     category: "Technical Guide",
     tags: [
       "refractory anchors",
@@ -2014,10 +2014,11 @@ export const BLOG_POSTS_DATA = [
       "ceramic anchors",
       "castable installation",
       "anchor spacing",
+      "refractory anchor bricks",
     ],
     readTime: "9 min",
     publishDate: "2025-12-28",
-    lastModified: "2026-08-12",
+    lastModified: "2026-08-13",
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80",
     excerpt:
@@ -2153,9 +2154,71 @@ export const BLOG_POSTS_DATA = [
 <h3>Ceramic Fiber Module Systems</h3>
 <p>Fiber modules use a different anchoring philosophy: each module has its own internal stud or rod that mounts to the shell. The key is ensuring that the stud is properly attached and that adjacent modules are compressed tightly together to prevent gap shrinkage during operation.</p>
 
+<h2>Refractory Anchors vs. Refractory Anchor Bricks</h2>
+<p><strong>Refractory anchors and refractory anchor bricks are related but different components, and the two terms should not be used interchangeably.</strong> Refractory anchors, covered throughout this guide, are metal anchoring components used to mechanically secure refractory linings, particularly monolithic/castable linings, and are welded directly to the equipment shell. Refractory anchor bricks are a separate product: fired refractory ceramic shapes designed for suspended or mechanically supported brick lining systems, particularly kiln roofs, arches and vaults, and are hung rather than welded. As a shaped, fired brick, an anchor brick belongs to the same general product family as SAPL's other <a href="https://www.shankeragencies.com/products/shaped-refractories">shaped refractory bricks</a>, rather than the metal-fastener family covered elsewhere in this guide. Neither their materials, their installation method, nor their typical applications are the same.</p>
+<table>
+  <thead>
+    <tr><th>Term</th><th>Material</th><th>Physical Form</th><th>Installation</th><th>Typical Application</th><th>Primary Function</th><th>Procurement Terminology</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Refractory Anchors</td><td>Metal &mdash; stainless steel (SS304, SS310) or heat-resistant alloy (e.g. Inconel)</td><td>Fabricated metal fastener (V, Y, bullhorn or grid shapes)</td><td>Welded directly to the steel shell, then embedded in poured or gunned castable</td><td>Walls, roofs and general surfaces of monolithic (castable / gunning / plastic) linings</td><td>Mechanically holds a monolithic lining against the shell</td><td>Specified by material grade, wire diameter and quantity</td></tr>
+    <tr><td>Refractory Anchor Bricks</td><td>Fired refractory ceramic (a shaped brick, not metal)</td><td>Shaped, fired refractory brick unit</td><td>Embedded in castable and mechanically hung, not welded to the shell</td><td>Suspended/overhead linings &mdash; kiln roofs, furnace vaults and arches</td><td>Provides a hung, brick-based structural support for overhead linings</td><td>Specified by application, required dimensions and quantity, like other shaped bricks</td></tr>
+  </tbody>
+</table>
+<p>Looking for refractory anchor bricks for a suspended kiln roof, arch or vault lining? These are a different product from the metal anchors described throughout this guide, shaped, fired refractory bricks rather than metal fasteners. Send us your drawing, dimensions, application and quantity. Our technical team will review the requirement and advise on the appropriate refractory shape and grade.</p>
+
+<h2>Custom & Application-Specific Refractory Shapes</h2>
+<p>Industrial refractory requirements are not always limited to standard catalogue shapes. If your project needs a refractory anchor brick, or another shaped refractory component that isn't a standard listed product, SAPL's technical team can review the application, dimensions, drawing and specification, and evaluate the appropriate refractory shape, grade and fulfilment route for the requirement. Have a shape that isn't in our standard catalogue? Send us the drawing, dimensions, application and quantity, and our technical team will advise on the appropriate refractory solution.</p>
+
 <h2>SAPL: Complete Anchoring Solutions</h2>
 <p>Shanker Agencies supplies refractory anchors in all types and materials &mdash; V, Y, bullhorn, hex metal, and ceramic fiber anchoring systems. We provide anchors manufactured to your specification in SS304, SS310, Inconel, and other heat-resistant alloys. Our technical team can assist with anchor layout design, spacing calculations, and material selection based on your application temperature and conditions. Anchors are supplied to match the specific lining they hold: see our <a href="https://www.shankeragencies.com/products/unshaped-refractories/low-cement-castables">low cement castable</a>, <a href="https://www.shankeragencies.com/products/unshaped-refractories/ultra-low-cement-castables">ultra low cement castable</a>, <a href="https://www.shankeragencies.com/products/unshaped-refractories/conventional-castables">conventional castable</a>, <a href="https://www.shankeragencies.com/products/unshaped-refractories/plastic-refractories">plastic refractory</a>, and <a href="https://www.shankeragencies.com/products/insulation/ceramic-fiber-products">ceramic fiber</a> product ranges for the corresponding lining system. Contact us for a quotation or to discuss your anchoring requirements for an upcoming project.</p>
 `,
+    faqs: [
+      {
+        q: "What are refractory anchors?",
+        a: "Refractory anchors are welded metal fixtures, most commonly V-shaped SS304 or SS310 stainless steel, embedded in a monolithic lining (castable, gunning mix, or plastic refractory) to hold it against the steel shell. Unlike brick, which is self-supporting through gravity and arch action, a monolithic lining relies entirely on anchors to resist gravity, thermal-cycling stress, vibration, and process forces. Correct anchor selection and installation is one of the highest-leverage, lowest-cost decisions in monolithic refractory design.",
+      },
+      {
+        q: "How do you select refractory anchors?",
+        a: "Selection starts with the anchor material, which must match the temperature the anchor tip actually sees, not the hot-face temperature: carbon steel below 400°C, SS304 up to 850°C, SS309 up to 1,000°C, SS310 up to 1,150°C, and Inconel 601 up to 1,250°C. Because the anchor tip sits inside the lining, it typically runs several hundred degrees cooler than the hot face, so this must be calculated before specifying, not assumed. From there, anchor type is chosen by lining thickness and duty: V anchors for moderate thickness (50–200 mm), Y anchors for thicker linings (over 150 mm), roofs, and high-vibration areas, and bullhorn anchors for very thick linings (over 250 mm) or very high temperature service (over 1,200°C). Spacing is then set from lining thickness, tightened by 20–30% on roofs and 50% at edges, openings, and penetrations.",
+      },
+      {
+        q: "What is the difference between V, Y, bullhorn, ceramic fiber and hex metal anchors?",
+        a: "V anchors are the most common and versatile type, lowest cost, and suit the majority of flat-surface and moderate-thickness applications. Y anchors add a third leg for more holding power and better resistance to peeling failure than V, used in thicker linings and higher-vibration areas. Bullhorn anchors are cast or fabricated with a wide paddle end, built for very thick linings and very high-temperature service such as cement kilns and incinerators. Ceramic fiber (cup) anchors are a different design entirely, a metal cup on a stud, purpose-built for ceramic fiber blanket and module systems rather than castable or gunning linings. Hex metal (tortoiseshell) is not an individual anchor at all but a continuous welded grid, used only where erosion, not gravity or thermal cycling, is the dominant failure mode.",
+      },
+      {
+        q: "Where are refractory anchors used?",
+        a: "Anywhere a monolithic lining, castable, gunning mix, or plastic refractory needs to be held against a steel shell: furnace and kiln walls, roofs, and vertical surfaces where the lining's own weight would otherwise cause it to fall. The article's special-consideration cases cover rotating kilns (cyclic loading favours Y or bullhorn anchors), high-velocity gas areas such as cyclone preheaters and transfer ducts (favours hex metal systems), and ceramic fiber blanket or module installations (favours cup anchors rather than V/Y/bullhorn types).",
+      },
+      {
+        q: "What information should be specified when purchasing refractory anchors?",
+        a: "To get the correct anchor recommendation, specify: the lining type and thickness (this sets the anchor type and wire diameter), the actual application temperature at the anchor's location within the lining (not the hot-face temperature), and the operating environment, whether the equipment is stationary or rotating, and whether it sees high-velocity gas or erosive conditions, since these change the recommended anchor type. Shanker Agencies supplies anchors manufactured to your specification in SS304, SS310, Inconel, and other heat-resistant alloys, and our technical team can assist with layout design, spacing calculations, and material selection once these details are provided.",
+      },
+      {
+        q: "What are refractory anchor bricks?",
+        a: "Refractory anchor bricks are fired refractory ceramic shapes, not metal, designed for suspended or mechanically supported brick lining systems such as kiln roofs, furnace vaults and arches. They are embedded in castable and hung using separate hanging hardware, rather than being welded to the shell the way metal refractory anchors are. Refractory anchor bricks are a different product from the metal anchors covered throughout this guide.",
+      },
+      {
+        q: "What is the difference between refractory anchors and refractory anchor bricks?",
+        a: "Refractory anchors are metal fasteners, welded to the equipment shell and buried in poured castable to hold a monolithic lining in place. Refractory anchor bricks are fired refractory ceramic bricks, embedded in castable and hung rather than welded, used mainly for suspended overhead linings like kiln roofs and vaults. The two differ in material, physical form, installation method, and typical application, they are related in function (both help support a refractory lining) but are not the same product and should not be treated as interchangeable terms.",
+      },
+      {
+        q: "Are refractory anchor bricks metal?",
+        a: "No. Refractory anchor bricks are fired refractory ceramic, typically a shaped, high-temperature-fired brick, not a metal component. This is the key distinction from refractory anchors, which are metal fasteners. The similar names, and the fact that both serve a support/anchoring function for a refractory lining, are why the two are sometimes confused, but the materials and manufacturing process are entirely different.",
+      },
+      {
+        q: "Where are refractory anchor bricks used?",
+        a: "Refractory anchor bricks are used mainly in suspended or hung lining systems where gravity makes a simple poured or laid lining unstable, most commonly kiln roofs, furnace vaults and arches, and similar overhead structures. This is a narrower application range than metal refractory anchors, which are used across walls, roofs and general surfaces of monolithic linings generally.",
+      },
+      {
+        q: "When should metal refractory anchors be used instead of anchor bricks?",
+        a: "Metal refractory anchors are the standard solution for monolithic (castable, gunning mix, or plastic refractory) linings generally, walls, roofs, and vertical surfaces, selected by material grade, type (V, Y, bullhorn, etc.) and spacing as covered earlier in this guide. Refractory anchor bricks are a more specific solution used where the lining itself is a suspended, hung brick system rather than a poured monolithic lining, most commonly kiln roofs and vaults. If your project uses a castable, gunning, or plastic refractory lining, metal anchors are almost certainly the relevant product; if it uses a suspended brick roof or vault system, anchor bricks may be the more relevant one to ask about.",
+      },
+      {
+        q: "Can SAPL supply refractory shapes to a drawing?",
+        a: "Yes, requirements can be reviewed against a drawing or specification rather than only a standard catalogue listing. To evaluate a shaped-refractory requirement, provide the drawing, dimensions, application, operating temperature, material or grade requirement, quantity, any applicable standard, and destination. Our technical team will review the requirement and advise on the appropriate refractory solution and fulfilment route. Not every requirement can be confirmed as feasible before this review, share the details above and we will assess it for your specific case.",
+      },
+    ],
     author: { name: "Rohit Verma" },
     relatedProducts: [
       "refractory-anchors",
