@@ -7,6 +7,8 @@ import { LOCATIONS_DATA } from '@/data/locationsData';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 import { NEWS_ARTICLES } from '@/data/newsData';
 import { PRODUCT_SEO } from '@/data/productsSeoData';
+import { PRODUCT_CATALOG } from '@/data/productCatalogData';
+import { slugifyGrade, getGradeLabel } from '@/data/gradeAliasData';
 import { CASE_STUDIES } from '@/data/caseStudiesData';
 
 const BASE = 'https://www.shankeragencies.com';
@@ -52,6 +54,24 @@ export default async function sitemap() {
     url: `${BASE}/products/${categorySlug}/${productId}`,
     lastModified: STRUCTURAL_LASTMOD,
   }));
+
+  // Per-grade product pages (HA-70, LCC-80, SK equivalents and so on).
+  // Canonical slugs only: alias slugs such as /sk-36 or /al70 308 to these,
+  // and redirect targets should never appear in a sitemap.
+  const gradeSeen = new Set();
+  const gradePages = [];
+  Object.entries(PRODUCT_CATALOG).forEach(([categorySlug, category]) => {
+    category.products?.forEach((product) => {
+      product.specs?.forEach((row) => {
+        const label = getGradeLabel(row);
+        if (!label) return;
+        const url = `${BASE}/products/${categorySlug}/${product.id}/${slugifyGrade(label)}`;
+        if (gradeSeen.has(url)) return;
+        gradeSeen.add(url);
+        gradePages.push({ url, lastModified: STRUCTURAL_LASTMOD });
+      });
+    });
+  });
 
   // /industries/* now 301s to /solutions/* (crawl-audit consolidation) — not in sitemap.
 
@@ -135,6 +155,7 @@ export default async function sitemap() {
     ...mainPages,
     ...categoryPages,
     ...productPages,
+    ...gradePages,
     ...solutionPages,
     ...brandPages,
     ...locationPages,

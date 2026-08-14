@@ -1,5 +1,12 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import Products from '@/sections/Products';
+import {
+  slugifyGrade,
+  getGradeLabel,
+  getDirectSk,
+  isSkEligible,
+} from '@/data/gradeAliasData';
 import { PRODUCT_CATALOG } from '@/data/productCatalogData';
 import { PRODUCT_SEO, getProductSeo } from '@/data/productsSeoData';
 import { PRODUCTS_DATA } from '@/data/productsData';
@@ -73,6 +80,38 @@ export default async function ProductDetailPage({ params }) {
 
   const faqs = getProductFaqs(productId);
   const datasheet = getProductDatasheet(productId);
+
+  // ─── Available grades ───────────────────────────────────────────────────
+  // Grade PAGES are generated from `specs`, while `grades` is a broader
+  // marketing list. The two diverge (73 entries catalog-wide appear in
+  // `grades` with no spec row), so linking from `grades` would produce hard
+  // 404s: the grade route sets `dynamicParams = false`. Links are therefore
+  // derived from `specs` using the same helpers the route itself uses, and
+  // any remaining `grades` entry is rendered as plain text, not a link.
+  const gradeLinks = (catalogEntry?.specs || [])
+    .map((row) => {
+      const gradeLabel = getGradeLabel(row);
+      if (!gradeLabel) return null;
+      const skOk = isSkEligible(productId);
+      const directSk = skOk ? getDirectSk(row) : null;
+      return {
+        label: gradeLabel,
+        href: `/products/${categorySlug}/${productId}/${slugifyGrade(gradeLabel)}`,
+        // Only surface facts the row actually carries. Al₂O₃ is shown only
+        // when reported, and an SK step is a refractoriness designation shown
+        // as its own field, never as an alumina figure.
+        al2o3: row.al2o3 || null,
+        temp: row.temp || row.maxTemp || row.tempC || null,
+        sk: directSk?.sk || null,
+      };
+    })
+    .filter(Boolean);
+
+  // Dedupe by canonical slug, then find catalog grades with no page of their own.
+  const linkedSlugs = new Set(gradeLinks.map((g) => slugifyGrade(g.label)));
+  const unlinkedGrades = (catalogEntry?.grades || []).filter(
+    (g) => !linkedSlugs.has(slugifyGrade(g))
+  );
   const productUrl = `https://www.shankeragencies.com/products/${categorySlug}/${productId}`;
   const productName = catalogEntry?.name || seo?.name || product?.name;
   // Always emit an image, falls back to OG image so Merchant listings never flag "Missing image"
@@ -261,6 +300,82 @@ export default async function ProductDetailPage({ params }) {
         />
       )}
       <Products />
+
+      {/* ─── Available grades ────────────────────────────────────────────
+          The specification step of the funnel: product → grade → RFQ.
+          Rendered server-side so the links are crawlable, and only for
+          products that actually have grade pages. */}
+      {gradeLinks.length > 0 && (
+        <section
+          className="bg-white py-12 px-4 border-t border-gray-200"
+          id="available-grades"
+          aria-labelledby="available-grades-heading"
+        >
+          <div className="max-w-4xl mx-auto">
+            <h2
+              id="available-grades-heading"
+              className="font-oswald text-2xl sm:text-3xl font-bold text-[#1E3A5F] mb-1"
+            >
+              Available Grades, {productName}
+            </h2>
+            <p className="text-sm text-gray-500 mb-7">
+              Select a grade to see its full specification, designations and equivalents.
+            </p>
+
+            <ul className="grid sm:grid-cols-2 gap-3 mb-8 list-none p-0">
+              {gradeLinks.map((g) => (
+                <li key={g.href}>
+                  <Link
+                    href={g.href}
+                    className="flex items-baseline justify-between gap-3 rounded-lg border border-gray-200 px-4 py-3 hover:border-[#1E3A5F] transition-colors group"
+                  >
+                    <span className="font-semibold text-[#1E3A5F] group-hover:text-[#F97316] transition-colors">
+                      {g.label}
+                    </span>
+                    <span className="text-[12px] text-gray-500 text-right shrink-0">
+                      {[
+                        g.al2o3 ? `${g.al2o3} Al₂O₃` : null,
+                        g.temp,
+                        g.sk,
+                      ]
+                        .filter(Boolean)
+                        .join(' · ')}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            {unlinkedGrades.length > 0 && (
+              <p className="text-[13px] text-gray-500 mb-8">
+                <span className="font-semibold text-gray-600">
+                  Also available in this range:{' '}
+                </span>
+                {unlinkedGrades.join(', ')}. Ask us for the specification on
+                any of these.
+              </p>
+            )}
+
+            <div className="rounded-lg bg-slate-50 border border-slate-200 px-5 py-5">
+              <p className="text-[14.5px] text-slate-700 leading-relaxed mb-4">
+                <span className="font-semibold text-[#1E3A5F]">
+                  Need help selecting a grade?
+                </span>{' '}
+                Send us your application, operating temperature, dimensions and
+                specification requirements, and our technical team will review the
+                requirement.
+              </p>
+              <Link
+                href="/rfq"
+                className="inline-block text-sm font-semibold px-6 py-3 rounded bg-[#F97316] text-white hover:bg-[#ea6a0f] transition-colors"
+              >
+                Send your requirement
+              </Link>
+            </div>
+          </div>
+        </section>
+      )}
+
       {datasheet && (
         <section className="bg-white py-12 px-4 border-t border-gray-200" id="technical-datasheet">
           <div className="max-w-4xl mx-auto">
