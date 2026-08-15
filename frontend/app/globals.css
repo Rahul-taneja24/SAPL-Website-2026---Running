@@ -398,6 +398,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+/* Article tables come from stored HTML content and have no wrapper element of
+   their own, so below the desktop breakpoint the table itself becomes the
+   scroll container. It keeps its own width and scrolls internally instead of
+   widening the article and forcing the whole page to scroll sideways.
+   Desktop is untouched: above 1023px the table renders exactly as before. */
+@media (max-width: 1023px) {
+  .prose table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 /* =============================================
    SHADCN LAYER
    ============================================= */

@@ -179,7 +179,9 @@ export default async function NewsArticlePage({ params }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
           <div className="grid lg:grid-cols-3 gap-10 lg:gap-14">
 
-            <article className="lg:col-span-2">
+            {/* min-w-0: see the blog article template — keeps wide content
+                (data tables) from widening this grid track on mobile. */}
+            <article className="lg:col-span-2 min-w-0">
               {article.keyTakeaways?.length > 0 && (
                 <div className="mb-10 rounded-2xl bg-[#EFF6FF] border border-[#3B82F6]/20 p-6">
                   <h2 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-4 mt-0">Key Takeaways</h2>

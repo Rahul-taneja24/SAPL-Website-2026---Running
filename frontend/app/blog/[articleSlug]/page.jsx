@@ -214,7 +214,10 @@ export default async function BlogArticlePage({ params }) {
           <div className="grid lg:grid-cols-3 gap-10 lg:gap-14">
 
             {/* ARTICLE */}
-            <article className="lg:col-span-2">
+            {/* min-w-0: grid items default to min-width:auto, which lets wide
+                article content (data tables) stretch this track past the
+                viewport and scroll the whole page sideways on mobile. */}
+            <article className="lg:col-span-2 min-w-0">
               {post.coverImage && (
                 <div className="rounded-2xl overflow-hidden mb-10 shadow-lg">
                   <img src={post.coverImage} alt={post.title} className="w-full h-64 md:h-80 object-cover" loading="eager" />
