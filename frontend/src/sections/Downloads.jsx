@@ -96,43 +96,60 @@ function LeadModal({ item, onClose }) {
   const [form, setForm] = useState({ name: '', phone: '', company: '' });
   const [submitting, setSubmitting] = useState(false);
   const [done, setDone] = useState(false);
+  const [failed, setFailed] = useState(false);
+
+  // item.name should always be set by the callers below, but this is the
+  // defensive fallback so the email subject can never read "undefined" —
+  // a real customer submission was previously logged with exactly that.
+  const itemLabel = item?.name || item?.title || 'Unspecified item';
+
+  const openWhatsApp = () => {
+    const msg = `Hi, I'm ${form.name} from ${form.company}. ${item.waMsg.replace('Hi, ', '')}`;
+    window.open(`${WA_BASE}${encodeURIComponent(msg)}`, '_blank', 'noreferrer');
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
+    setFailed(false);
 
-    // Submit lead to Web3Forms (same key as Contact page)
     try {
-      await fetch('https://api.web3forms.com/submit', {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: 'd0154692-c512-4e1b-9b4c-31f715ca3bfd',
-          subject: `Datasheet Request: ${item.name}`,
+          subject: `Datasheet Request: ${itemLabel}`,
           from_name: form.name,
           name: form.name,
           phone: form.phone,
           company: form.company,
-          datasheet_requested: item.name,
+          datasheet_requested: itemLabel,
           inquiry_type: 'Datasheet Download',
         }),
       });
+      const json = await res.json();
+
+      if (!json.success) {
+        setSubmitting(false);
+        setFailed(true);
+        return;
+      }
+
+      setSubmitting(false);
+      setDone(true);
+
+      trackEvent('datasheet_request', {
+        cta_type: 'downloads_page',
+        product_family: item.category,
+        product: itemLabel,
+      });
+
+      openWhatsApp();
     } catch (_) {
-      // silently continue even if submission fails
+      setSubmitting(false);
+      setFailed(true);
     }
-
-    setSubmitting(false);
-    setDone(true);
-
-    trackEvent('datasheet_request', {
-      cta_type: 'downloads_page',
-      product_family: item.category,
-      product: item.name,
-    });
-
-    // Open WhatsApp with name pre-filled in message
-    const msg = `Hi, I'm ${form.name} from ${form.company}. ${item.waMsg.replace('Hi, ', '')}`;
-    window.open(`${WA_BASE}${encodeURIComponent(msg)}`, '_blank', 'noreferrer');
   };
 
   return (
@@ -152,15 +169,40 @@ function LeadModal({ item, onClose }) {
             </div>
             <h3 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-2">WhatsApp Opening...</h3>
             <p className="text-gray-500 text-sm mb-4">
-              Complete the chat on WhatsApp and our team will send the PDF within 2 hours.
+              Complete the chat on WhatsApp and our team will send the PDF.
             </p>
             <button onClick={onClose} className="text-xs text-gray-400 hover:text-gray-600 underline">Close</button>
+          </div>
+        ) : failed ? (
+          <div className="text-center py-6">
+            <div className="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center mx-auto mb-4">
+              <X size={24} className="text-red-600" />
+            </div>
+            <h3 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-2">Something Went Wrong</h3>
+            <p className="text-gray-500 text-sm mb-4">
+              We couldn't log your request. Please try again, or continue straight to WhatsApp
+              and our team will still help.
+            </p>
+            <div className="flex gap-2">
+              <button
+                onClick={() => setFailed(false)}
+                className="flex-1 text-sm font-semibold px-4 py-2.5 rounded-xl border border-gray-200 text-gray-600 hover:bg-gray-50"
+              >
+                Try Again
+              </button>
+              <button
+                onClick={() => { openWhatsApp(); onClose(); }}
+                className="flex-1 flex items-center justify-center gap-1.5 bg-[#25D366] hover:bg-[#1ebe57] text-white font-bold py-2.5 rounded-xl text-sm"
+              >
+                <MessageCircle size={14} /> Continue on WhatsApp
+              </button>
+            </div>
           </div>
         ) : (
           <>
             <div className="mb-5">
               <p className="text-xs font-bold text-[#F97316] uppercase tracking-wide mb-1">Request Datasheet</p>
-              <h3 className="font-oswald text-lg font-bold text-[#1E3A5F] leading-tight">{item.name}</h3>
+              <h3 className="font-oswald text-lg font-bold text-[#1E3A5F] leading-tight">{itemLabel}</h3>
               <p className="text-xs text-gray-500 mt-1">{item.desc}</p>
             </div>
 

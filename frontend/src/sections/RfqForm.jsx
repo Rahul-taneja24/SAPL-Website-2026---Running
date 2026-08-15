@@ -1,5 +1,6 @@
 'use client';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { Send, CheckCircle, Package, Globe, Ship, Building2 } from 'lucide-react';
 import { trackEvent } from '@/lib/analytics';
 
@@ -18,9 +19,63 @@ const PRODUCT_CATEGORIES = [
   'Other / Not Sure — Need Guidance',
 ];
 
+// Maps a product-page/grade-page productId (?product=) to the matching
+// PRODUCT_CATEGORIES option, so a visitor arriving from a product or grade
+// page doesn't have to re-select it. Only includes productIds with a genuine,
+// unambiguous match — several shaped-refractory families (mullite, andalusite,
+// AZS, zircon, alumina-carbon, silicon carbide bricks) and a few unshaped ones
+// (plastic refractories, mortars) don't map cleanly onto any of the 9 fixed
+// options, so they're deliberately left out rather than guessed at.
+const PRODUCT_ID_TO_CATEGORY = {
+  'high-alumina-bricks': 'High Alumina / Fireclay Bricks',
+  'fireclay-bricks': 'High Alumina / Fireclay Bricks',
+  'insulating-fire-bricks': 'Ceramic Fiber / Insulation',
+  'magnesia-carbon-bricks': 'Magnesia / MgO-C Bricks',
+  'basic-bricks': 'Magnesia / MgO-C Bricks',
+  'low-cement-castables': 'Castables (LCC / ULCC / Conventional)',
+  'ultra-low-cement-castables': 'Castables (LCC / ULCC / Conventional)',
+  'conventional-castables': 'Castables (LCC / ULCC / Conventional)',
+  'ramming-masses': 'Ramming Mass / Gunning Mass',
+  'gunning-materials': 'Ramming Mass / Gunning Mass',
+  'monoblock-stoppers': 'Flow Control (Slide Gates, Nozzles, Shrouds, Porous Plugs)',
+  'tundish-nozzles': 'Flow Control (Slide Gates, Nozzles, Shrouds, Porous Plugs)',
+  'well-blocks': 'Flow Control (Slide Gates, Nozzles, Shrouds, Porous Plugs)',
+  'ladle-shrouds': 'Flow Control (Slide Gates, Nozzles, Shrouds, Porous Plugs)',
+  'subentry-nozzles': 'Flow Control (Slide Gates, Nozzles, Shrouds, Porous Plugs)',
+  'porous-plugs': 'Flow Control (Slide Gates, Nozzles, Shrouds, Porous Plugs)',
+  'slide-gate-plates': 'Flow Control (Slide Gates, Nozzles, Shrouds, Porous Plugs)',
+  'ceramic-fiber-products': 'Ceramic Fiber / Insulation',
+  'microporous-insulation': 'Ceramic Fiber / Insulation',
+  'calcium-silicate': 'Ceramic Fiber / Insulation',
+  'acid-proof-bricks': 'Acid Proof Bricks & Tiles',
+  'acid-proof-cement': 'Acid Proof Bricks & Tiles',
+  'acid-resistant-tiles': 'Acid Proof Bricks & Tiles',
+  'carbon-bricks': 'Acid Proof Bricks & Tiles',
+};
+
 const INCOTERMS = ['CIF', 'FOB', 'CFR', 'Ex-Works', 'Not sure — advise me'];
 
+// useSearchParams requires a Suspense boundary to avoid de-opting the whole
+// /rfq and /ar/rfq pages out of static rendering; RfqForm stays the stable
+// public export so neither page needs to change.
 export default function RfqForm() {
+  return (
+    <Suspense fallback={<RfqFormSkeleton />}>
+      <RfqFormFields />
+    </Suspense>
+  );
+}
+
+function RfqFormSkeleton() {
+  return <div className="h-96 rounded-2xl bg-gray-50 animate-pulse" aria-hidden="true" />;
+}
+
+function RfqFormFields() {
+  const searchParams = useSearchParams();
+  const productParam = searchParams.get('product') || undefined;
+  const gradeParam = searchParams.get('grade') || undefined;
+  const prefilledCategory = productParam ? PRODUCT_ID_TO_CATEGORY[productParam] : undefined;
+
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
 
   async function handleSubmit(e) {
@@ -45,6 +100,7 @@ export default function RfqForm() {
         trackEvent('rfq_submit', {
           form_variant: 'rfq_form',
           product_family: data.product_category,
+          product: productParam,
           grade: data.grade_specification,
           application: data.application,
           dimensions: data.dimensions,
@@ -90,14 +146,14 @@ export default function RfqForm() {
         <div className="grid md:grid-cols-2 gap-5">
           <div>
             <label htmlFor="rfq-category" className={label}>Product Category *</label>
-            <select id="rfq-category" name="product_category" required className={input} defaultValue="">
+            <select id="rfq-category" name="product_category" required className={input} defaultValue={prefilledCategory || ''}>
               <option value="" disabled>Select a category…</option>
               {PRODUCT_CATEGORIES.map((c) => <option key={c} value={c}>{c}</option>)}
             </select>
           </div>
           <div>
             <label htmlFor="rfq-grade" className={label}>Grade / Specification <span className="font-normal text-gray-400">(optional)</span></label>
-            <input id="rfq-grade" name="grade_specification" type="text" placeholder="e.g. HA-70, LCC-80, MgO-C 14%C, 1260°C blanket" className={input} />
+            <input id="rfq-grade" name="grade_specification" type="text" defaultValue={gradeParam || ''} placeholder="e.g. HA-70, LCC-80, MgO-C 14%C, 1260°C blanket" className={input} />
           </div>
           <div>
             <label htmlFor="rfq-qty" className={label}>Quantity *</label>

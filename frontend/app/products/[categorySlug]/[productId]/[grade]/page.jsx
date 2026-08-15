@@ -373,7 +373,7 @@ export default async function GradeDetailPage({ params }) {
 
             <div className="flex flex-wrap gap-3">
               <Link
-                href="/rfq"
+                href={`/rfq?product=${productId}&grade=${encodeURIComponent(label)}`}
                 className="text-sm font-semibold px-6 py-3 rounded bg-[#F97316] text-white hover:bg-[#ea6a0f] transition-colors"
               >
                 Request {label} Quote
@@ -723,7 +723,7 @@ export default async function GradeDetailPage({ params }) {
                   </div>
                 )}
                 <Link
-                  href="/rfq"
+                  href={`/rfq?product=${productId}&grade=${encodeURIComponent(label)}`}
                   className="block text-center text-sm font-semibold px-4 py-3 rounded bg-[#F97316] text-white hover:bg-[#ea6a0f] transition-colors mb-2.5"
                 >
                   Request a quotation

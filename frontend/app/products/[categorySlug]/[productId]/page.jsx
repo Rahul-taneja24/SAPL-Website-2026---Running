@@ -366,7 +366,7 @@ export default async function ProductDetailPage({ params }) {
                 requirement.
               </p>
               <Link
-                href="/rfq"
+                href={`/rfq?product=${productId}`}
                 className="inline-block text-sm font-semibold px-6 py-3 rounded bg-[#F97316] text-white hover:bg-[#ea6a0f] transition-colors"
               >
                 Send your requirement

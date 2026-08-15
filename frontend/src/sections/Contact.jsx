@@ -144,7 +144,11 @@ const Contact = () => {
       if (result.success) {
         setSubmitted(true);
         toast.success("Inquiry sent successfully! We will contact you soon.");
-        trackEvent('rfq_submit', {
+        // 'contact_quote' is a genuine quotation request (collects products,
+        // quantity, delivery location) and correctly uses rfq_submit. The
+        // general enquiry path is not a quote request — it previously fired
+        // rfq_submit too, which inflated RFQ counts with general questions.
+        trackEvent(formType === 'quote' ? 'rfq_submit' : 'contact_submit', {
           form_variant: formType === 'quote' ? 'contact_quote' : 'contact_general',
           product_family: formType === 'quote' ? formData.products.join(', ') : undefined,
           application: formType === 'quote' ? formData.application : undefined,

@@ -2,8 +2,12 @@
 import { useState } from "react";
 import { X, Send, CheckCircle, Loader2, ChevronRight, Clock, Shield, MessageCircle } from "lucide-react";
 import { toast } from "sonner";
+import { trackEvent } from "@/lib/analytics";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL;
+// Submits through the same Web3Forms endpoint the RFQ/Contact forms use.
+// Previously posted to a separate FastAPI backend (api.shankeragencies.com)
+// that was never successfully deployed — every real submission silently
+// failed. See the lead-capture audit for the live-tested evidence.
 
 const industries = ["Steel", "Cement", "Aluminum", "Petrochemical", "Glass", "Power", "Foundry", "Other"];
 const productCategories = [
@@ -40,34 +44,43 @@ const QuickQuoteModal = ({ onClose }) => {
     setLoading(true);
 
     try {
-      const response = await fetch(`${API_URL}/api/quote`, {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
+          access_key: "d0154692-c512-4e1b-9b4c-31f715ca3bfd",
+          subject: `Quick Quote: ${formData.productCategory || formData.industry} — ${formData.company || formData.name}`,
+          from_name: "SAPL Website Quick Quote",
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
-          company: formData.company,
+          company: formData.company || "Not provided",
           industry: formData.industry,
-          products: [formData.productCategory].filter(Boolean),
-          quantity: formData.quantity,
-          application: formData.specs,
-          notes: formData.message,
-          source: "quick-quote-modal",
+          product_category: formData.productCategory || "Not specified",
+          quantity: formData.quantity || "Not provided",
+          grade_specification: formData.specs || "Not provided",
+          message: formData.message || "Not provided",
+          inquiry_type: "Quick Quote",
         }),
       });
 
       const data = await response.json();
 
-      if (response.ok && data.success) {
+      if (data.success) {
         setSubmitted(true);
-        toast.success("Quote request submitted! We'll respond within 4 hours.");
+        trackEvent('quick_quote_submit', {
+          form_variant: 'quick_quote_modal',
+          product_family: formData.productCategory || undefined,
+          grade: formData.specs || undefined,
+          intent: 'quote',
+          page_path: window.location.pathname,
+        });
       } else {
-        throw new Error(data.detail || "Failed to submit");
+        throw new Error(data.message || "Failed to submit");
       }
     } catch (error) {
       console.error("Quote submission error:", error);
-      toast.error("Something went wrong. Please try again or call +91 98999 57888.");
+      toast.error("Something went wrong sending your request. Please try again, or call +91 98999 57888 / email info@shankeragencies.com directly.");
     } finally {
       setLoading(false);
     }
@@ -99,7 +112,7 @@ const QuickQuoteModal = ({ onClose }) => {
             <div className="flex items-center gap-3 mt-1.5">
               <span className="flex items-center gap-1.5 text-blue-200 text-xs font-medium">
                 <Clock size={11} aria-hidden="true" />
-                Response within 4 hours
+                Reviewed by our technical team
               </span>
               <span className="text-blue-300 text-xs">·</span>
               <span className="flex items-center gap-1.5 text-blue-200 text-xs font-medium">
@@ -126,10 +139,11 @@ const QuickQuoteModal = ({ onClose }) => {
             </div>
             <h3 className="font-oswald text-2xl font-bold mb-2 text-[#1E3A5F]">Quote Requested!</h3>
             <p className="text-gray-500 text-sm mb-1">
-              We'll send a detailed quote to <strong className="text-[#1E3A5F]">{formData.email}</strong>
+              Your requirement has been sent to our technical team, who will follow up at{" "}
+              <strong className="text-[#1E3A5F]">{formData.email}</strong>
             </p>
             <p className="text-gray-400 text-xs mb-6">
-              Typically within 4 hours — or call us now at{" "}
+              Prefer to talk now? Call{" "}
               <a href="tel:+919899957888" className="text-[#F97316] font-semibold hover:underline">+91 98999 57888</a>
             </p>
             <div className="flex gap-3">
