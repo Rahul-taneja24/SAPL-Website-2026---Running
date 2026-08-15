@@ -159,6 +159,20 @@ const Navbar = () => {
     setMobileMenuOpen(false);
   }, [pathname]);
 
+  // Lock background scroll and suppress the floating WhatsApp button while the
+  // mobile drawer is open — the drawer carries its own WhatsApp CTA.
+  useEffect(() => {
+    document.body.classList.toggle("nav-drawer-open", mobileMenuOpen);
+    return () => document.body.classList.remove("nav-drawer-open");
+  }, [mobileMenuOpen]);
+
+  // Let the floating WhatsApp button sit above the fixed bottom notice strip.
+  useEffect(() => {
+    const showing = langNotice || (geoBanner && !isArabic);
+    document.body.classList.toggle("has-bottom-toast", !!showing);
+    return () => document.body.classList.remove("has-bottom-toast");
+  }, [langNotice, geoBanner, isArabic]);
+
   // Close on outside click
   useEffect(() => {
     const handler = (e) => {
@@ -199,20 +213,29 @@ const Navbar = () => {
       {/* ── GOOGLE TRANSLATE (hidden) ── */}
       <div id="google_translate_element" className="hidden" />
 
-      {/* ── TOP BAR ─────────────────────────────────── */}
-      <div className="bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF] text-white py-2 px-4 text-xs">
-        <div className="max-w-7xl mx-auto flex justify-between items-center gap-4">
+      {/* ── TOP BAR ─────────────────────────────────────
+          Secondary utility strip. On mobile it collapses away once the user
+          starts scrolling so it stops permanently consuming viewport height;
+          scrolling back to the top restores it. Always visible on desktop. */}
+      <div
+        className={`bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF] text-white px-4 text-xs overflow-hidden transition-all duration-300 lg:max-h-none lg:py-2 lg:opacity-100 ${
+          scrolled ? "max-h-0 py-0 opacity-0" : "max-h-16 py-1 opacity-100"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto flex justify-between items-center gap-2 sm:gap-4">
           {/* Left — contact */}
-          <div className="flex items-center gap-5">
-            <div className="flex items-center gap-4">
+          <div className="flex items-center gap-5 min-w-0">
+            <div className="flex items-center gap-4 min-w-0">
               <a
                 href="tel:+919899957888"
-                className="flex items-center gap-1.5 hover:text-blue-200 transition-colors"
+                className="flex items-center gap-1.5 py-2 hover:text-blue-200 transition-colors"
                 aria-label="Call primary number"
                 onClick={() => trackEvent('phone_click', { cta_type: 'navbar_topbar' })}
               >
-                <Phone size={11} />
-                <span className="font-medium">+91 98999 57888</span>
+                <Phone size={11} className="flex-shrink-0" />
+                {/* nowrap keeps the number on one line at 320px, where it
+                    previously broke across two lines and grew the header. */}
+                <span className="font-medium whitespace-nowrap">+91 98999 57888</span>
               </a>
             </div>
             <a
@@ -227,12 +250,12 @@ const Navbar = () => {
           </div>
 
           {/* Right — lang + region */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
             {/* Language */}
             <div className="relative">
               <button
                 onClick={() => setShowLangMenu((p) => !p)}
-                className="flex items-center gap-1.5 hover:text-blue-200 transition-colors"
+                className="flex items-center gap-1.5 px-2 py-2.5 -mx-1 hover:text-blue-200 transition-colors"
                 aria-label="Select language"
                 data-testid="language-selector"
               >
@@ -264,12 +287,12 @@ const Navbar = () => {
             </div>
 
             {/* Region */}
-            <div className="flex items-center gap-1.5 border-l border-white/20 pl-4">
-              <Globe size={12} />
+            <div className="flex items-center gap-1.5 border-l border-white/20 pl-2 sm:pl-4">
+              <Globe size={12} className="flex-shrink-0" />
               <select
                 value={region}
                 onChange={(e) => onRegionChange(e.target.value)}
-                className="bg-transparent border-none text-xs cursor-pointer focus:outline-none"
+                className="bg-transparent border-none text-xs cursor-pointer focus:outline-none py-2.5"
                 aria-label="Select region"
                 data-testid="region-selector"
               >
@@ -361,7 +384,9 @@ const Navbar = () => {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-3 flex-shrink-0"
+              /* min-w-0 lets the wordmark shrink at 320px instead of pushing
+                 the Quick Quote button and hamburger past the viewport edge. */
+              className="flex items-center gap-3 min-w-0"
               data-testid="logo-link"
               aria-label="Shanker Agencies Home"
             >
@@ -473,7 +498,7 @@ const Navbar = () => {
             </div>
 
             {/* Right: CTA + mobile toggle */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 flex-shrink-0">
               <button
                 onClick={onQuoteClick}
                 className="gradient-orange text-white px-5 py-2.5 rounded-full text-sm font-bold hover-lift flex items-center gap-2 shadow-lg shadow-orange-500/25 focus:outline-none focus:ring-2 focus:ring-orange-400"

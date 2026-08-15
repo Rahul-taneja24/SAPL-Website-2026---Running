@@ -226,7 +226,7 @@ const Contact = () => {
 
       {/* ── HERO ─────────────────────────────────────────── */}
       <section
-        className="relative py-28 px-4 overflow-hidden"
+        className="relative py-10 sm:py-20 lg:py-28 px-4 overflow-hidden"
         style={{
           backgroundImage: `linear-gradient(135deg, rgba(15,30,70,0.96) 0%, rgba(30,58,138,0.90) 100%), url('https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1600&q=80')`,
           backgroundSize: "cover",
@@ -236,20 +236,20 @@ const Contact = () => {
         aria-labelledby="contact-heading"
       >
         <div className="max-w-7xl mx-auto relative z-10">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white text-xs sm:text-sm font-medium mb-3 sm:mb-6">
             <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" aria-hidden="true" />
             We respond within 4 hours
           </span>
-          <h1 id="contact-heading" className="font-oswald text-5xl md:text-6xl font-bold text-white leading-none mb-4">
+          <h1 id="contact-heading" className="font-oswald text-3xl sm:text-5xl md:text-6xl font-bold text-white leading-none mb-3 sm:mb-4">
             LET'S DISCUSS<br />
             <span className="text-shimmer">YOUR REQUIREMENTS</span>
           </h1>
-          <p className="text-gray-300 max-w-2xl text-lg leading-relaxed">
+          <p className="text-gray-300 max-w-2xl text-sm sm:text-lg leading-relaxed">
             Whether you need a quick price, technical guidance, or a full lining design, our team is ready. No obligation, no minimum order.
           </p>
 
           {/* Quick contact pills */}
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex flex-wrap gap-2 sm:gap-4 mt-5 sm:mt-8">
             <a
               href="tel:+919899957888"
               className="flex items-center gap-2 px-5 py-3 bg-white/10 border border-white/20 rounded-xl text-white hover:bg-white/20 transition-colors text-sm font-medium"
@@ -275,8 +275,8 @@ const Contact = () => {
       </section>
 
       {/* ── TRUST BADGES ─────────────────────────────────── */}
-      <section className="py-5 px-4 bg-gray-50 border-b border-gray-200" aria-label="Trust signals">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-6 md:gap-12">
+      <section className="py-3 sm:py-5 px-4 bg-gray-50 border-b border-gray-200" aria-label="Trust signals">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-x-4 gap-y-1.5 sm:gap-6 md:gap-12">
           {[
             { icon: Zap, label: "4-hour response time", color: "text-[#F97316]" },
             { icon: Globe, label: "Serving 50+ countries", color: "text-green-500" },
@@ -285,15 +285,15 @@ const Contact = () => {
             { icon: Shield, label: "No MOQ requirement", color: "text-[#1E3A5F]" },
           ].map(({ icon: Icon, label, color }) => (
             <div key={label} className="flex items-center gap-2 text-gray-600">
-              <Icon size={17} className={color} aria-hidden="true" />
-              <span className="text-sm font-medium">{label}</span>
+              <Icon size={15} className={`${color} flex-shrink-0`} aria-hidden="true" />
+              <span className="text-xs sm:text-sm font-medium">{label}</span>
             </div>
           ))}
         </div>
       </section>
 
       {/* ── MAIN SECTION ─────────────────────────────────── */}
-      <section className="py-16 px-4 bg-white" data-testid="contact-form-section">
+      <section className="py-8 sm:py-16 px-4 bg-white" data-testid="contact-form-section">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 gap-10">
 

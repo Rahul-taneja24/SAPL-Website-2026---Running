@@ -193,7 +193,7 @@ const Footer = () => {
 
       {/* ── BOTTOM BAR ──────────────────────────────── */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="footer-legal-bar max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-xs">
             © {currentYear} Shanker Agencies Pvt. Ltd. All rights reserved.
           </p>

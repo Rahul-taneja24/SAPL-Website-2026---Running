@@ -7,7 +7,7 @@ import {
   ChevronRight, Home, Search, ArrowRight, Thermometer, MessageCircle,
   Phone, Download, CheckCircle, X, Filter, Flame, Shield, Layers,
   Zap, Star, Package, Info, Award, Wrench, BookOpen, BarChart3,
-  ChevronDown, HelpCircle
+  ChevronDown, HelpCircle, MoveHorizontal
 } from "lucide-react";
 import { getProductFaqs } from '@/data/productFaqsData';
 import { getProductDatasheet } from '@/data/productDatasheetData';
@@ -46,29 +46,37 @@ function SpecTable({ specs }) {
   if (!specs?.length) return null;
   const keys = Object.keys(specs[0]).filter(k => k !== "grade");
   return (
-    <div className="overflow-x-auto rounded-xl border border-gray-200 shadow-sm">
-      <table className="w-full min-w-[520px] text-sm">
-        <thead>
-          <tr style={{ background: "linear-gradient(90deg,#1E3A5F,#3B82F6)" }} className="text-white">
-            <th className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wide whitespace-nowrap">Grade</th>
-            {keys.map(k => (
-              <th key={k} className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wide whitespace-nowrap">
-                {LABEL[k] || k}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {specs.map((row, i) => (
-            <tr key={i} className={`${i % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-blue-50 transition-colors`}>
-              <td className="px-4 py-3 font-bold text-[#F97316] font-mono text-[11px] whitespace-nowrap">{row.grade}</td>
+    <div>
+      {/* Mobile-only affordance: the table scrolls inside its own container,
+          which is not otherwise discoverable on touch devices. */}
+      <p className="lg:hidden flex items-center gap-1.5 mb-2 text-[11px] font-semibold uppercase tracking-wide text-gray-400">
+        <MoveHorizontal size={13} aria-hidden="true" />
+        Swipe table to see all columns
+      </p>
+      <div className="overflow-x-auto overscroll-x-contain rounded-xl border border-gray-200 shadow-sm">
+        <table className="w-full min-w-[520px] text-sm">
+          <thead>
+            <tr style={{ background: "linear-gradient(90deg,#1E3A5F,#3B82F6)" }} className="text-white">
+              <th className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wide whitespace-nowrap">Grade</th>
               {keys.map(k => (
-                <td key={k} className="px-4 py-3 text-gray-700 text-[12px]">{row[k] ?? "—"}</td>
+                <th key={k} className="px-4 py-3 text-left text-[11px] font-bold uppercase tracking-wide whitespace-nowrap">
+                  {LABEL[k] || k}
+                </th>
               ))}
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {specs.map((row, i) => (
+              <tr key={i} className={`${i % 2 === 0 ? "bg-white" : "bg-gray-50"} hover:bg-blue-50 transition-colors`}>
+                <td className="px-4 py-3 font-bold text-[#F97316] font-mono text-[11px] whitespace-nowrap">{row.grade}</td>
+                {keys.map(k => (
+                  <td key={k} className="px-4 py-3 text-gray-700 text-[12px]">{row[k] ?? "—"}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
@@ -276,7 +284,10 @@ function ProductDetailPage({ product, category, categorySlug }) {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-10">
 
           {/* ── LEFT: Main Content ── */}
-          <div className="lg:col-span-2 space-y-12">
+          {/* min-w-0 is required: grid items default to min-width:auto, which lets
+              wide content (the 7-column spec table) push this track past the
+              viewport and makes the table's own overflow-x-auto wrapper inert. */}
+          <div className="lg:col-span-2 min-w-0 space-y-12">
 
             {/* Overview */}
             <div>
