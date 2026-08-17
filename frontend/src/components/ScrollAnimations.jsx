@@ -10,6 +10,10 @@ export function ScrollRevealManager() {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
+                    // Drop reveal-armed as well as adding is-visible: armed
+                    // has higher CSS specificity, so leaving it on would
+                    // keep the element hidden even after is-visible lands.
+                    entry.target.classList.remove('reveal-armed');
                     entry.target.classList.add('is-visible');
                     observer.unobserve(entry.target);
                 }
@@ -18,6 +22,12 @@ export function ScrollRevealManager() {
 
         // Small delay ensures React has finished painting the DOM after route change
         const timer = setTimeout(() => {
+            // Arm .reveal elements only now that JS is confirmed running —
+            // this is what actually hides them pre-animation. Elements never
+            // reach this state at all if JS fails, so they stay visible.
+            const revealEls = document.querySelectorAll('.reveal');
+            revealEls.forEach((el) => el.classList.add('reveal-armed'));
+
             const els = document.querySelectorAll('.reveal, .hero-reveal, .heading-accent, .img-clip-reveal');
             els.forEach((el) => observer.observe(el));
         }, 120);

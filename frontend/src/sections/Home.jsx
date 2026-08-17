@@ -161,8 +161,14 @@ const Home = () => {
           Includes: Ken Burns bg, particles, grid pattern
       ══════════════════════════════════════════════ */}
       <section
-        className="relative overflow-hidden flex flex-col"
-        style={{ minHeight: "calc(100vh - 180px)" }}
+        /* Mobile gets a modest fixed floor instead of the 100vh-based one:
+           at common tall-phone heights (414-430px wide devices), the old
+           calc(100vh - 180px) floor exceeded actual content by up to
+           ~175-200px of dead centered whitespace, measured directly. Content
+           is already 500-750px on every real phone, so the floor here is a
+           safety net, not the actual driver of height. sm: (640px+, i.e.
+           tablet/desktop) keeps the exact original rule, unchanged. */
+        className="relative overflow-hidden flex flex-col min-h-[520px] sm:min-h-[calc(100vh-180px)]"
         data-testid="hero-section"
         aria-label="Hero"
       >
@@ -204,14 +210,14 @@ const Home = () => {
         <div className="relative z-10 flex flex-col flex-1 w-full">
 
           {/* ── Main content, grows to fill space ── */}
-          <div className="flex-1 flex items-center lg:items-center pb-6 pt-2 lg:py-6">
+          <div className="flex-1 flex items-center lg:items-center pb-4 pt-2 sm:pb-6 lg:py-6">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
 
                 {/* LEFT, text */}
                 <div>
                   {/* Trust badge */}
-                  <div className="hero-reveal hero-d0 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
+                  <div className="hero-reveal hero-d0 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 sm:mb-6">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" aria-hidden="true" />
                     <span className="text-white text-sm font-medium tracking-wide">
                       {region === "india"
@@ -222,21 +228,21 @@ const Home = () => {
 
                   {/* H1, Simplified for SEO */}
                   <h1
-                    className="hero-reveal hero-d1 font-oswald font-bold text-white leading-tight mb-4"
+                    className="hero-reveal hero-d1 font-oswald font-bold text-white leading-tight mb-3 sm:mb-4"
                     style={{ fontSize: "clamp(2.5rem, 5vw, 4.5rem)", letterSpacing: "0.02em" }}
                   >
                     YOUR <span className="text-shimmer">REFRACTORY</span> ENGINEERING PARTNER
                   </h1>
 
                   {/* Subheadline */}
-                  <p className="hero-reveal hero-d2 text-gray-200 text-lg mb-6 leading-relaxed max-w-lg">
+                  <p className="hero-reveal hero-d2 text-gray-200 text-base sm:text-lg mb-4 sm:mb-6 leading-normal sm:leading-relaxed max-w-lg">
                     {region === "india"
                       ? "India's premier refractory engineering partner since 1980. Authorized dealer of CUMI, Crown Ceramics & Divine Cerawool, supplying high alumina bricks, castables, ceramic fiber & flow control refractories to steel, cement, aluminium & petrochemical plants."
                       : "India's premier refractory engineering partner. We supply & engineer world-class refractories, delivering to GCC, ASEAN, Africa, UK & Europe with full technical documentation and installation guidance."}
                   </p>
 
                   {/* Trust pills, Sleek, horizontal, smaller font */}
-                  <div className="hero-reveal hero-d3 flex flex-wrap items-center gap-x-6 gap-y-2 mb-6">
+                  <div className="hero-reveal hero-d3 flex flex-wrap items-center gap-x-4 gap-y-1.5 mb-4 sm:gap-x-6 sm:gap-y-2 sm:mb-6">
                     {["Trusted Partner for Industrial Clients", "Dedicated Technical & Customer Support", "Tailored Refractory Solutions Across Sectors"].map((item) => (
                       <div key={item} className="flex items-center gap-2">
                         <CheckCircle size={10} className="text-[#F97316] opacity-80" aria-hidden="true" />

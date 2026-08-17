@@ -1,6 +1,6 @@
 'use client';
 import { useApp } from '@/context/AppContext';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import {
@@ -131,17 +131,19 @@ function ProductCard({ product, categorySlug }) {
           <Thermometer size={10} /> {product.tempMax || "—"}
         </span>
 
-        {/* Product name overlay at bottom */}
+        {/* Product name overlay at bottom — decorative caption over the image,
+            not a heading; the card body below carries the one real <h3>, so
+            a screen reader announcing this <Link> doesn't hear the name twice. */}
         <div className="absolute bottom-3 right-3 left-16">
-          <h3 className="font-oswald text-sm font-bold text-white leading-tight line-clamp-1 text-right drop-shadow-lg">
+          <p className="font-oswald text-sm font-bold text-white leading-tight line-clamp-1 text-right drop-shadow-lg" aria-hidden="true">
             {product.name}
-          </h3>
+          </p>
         </div>
       </div>
 
       {/* Card body */}
       <div className="p-5 flex-1 flex flex-col">
-        {/* Full name above fold */}
+        {/* Full name above fold — the one real heading for this card */}
         <h3 className="font-oswald text-[16px] font-bold text-[#1E3A5F] mb-1.5 group-hover:text-[#3B82F6] transition-colors leading-tight">
           {product.name}
         </h3>
@@ -674,6 +676,17 @@ const CATS_OVERVIEW = [
 function OverviewPage() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("all");
+
+  // At viewport heights ~780-850px, this page's sticky filter bar rests
+  // (pre-scroll) directly under the fixed WhatsApp button, measured to
+  // overlap by up to 42px. Same mechanism as the existing has-bottom-toast
+  // class below — lift the FAB clear of this page's own UI rather than
+  // touching its global position or hiding it.
+  useEffect(() => {
+    document.body.classList.add("products-hub-active");
+    return () => document.body.classList.remove("products-hub-active");
+  }, []);
+
   const industries = ["all", "Steel", "Cement", "Aluminum", "Chemical", "Power"];
   const filtered = CATS_OVERVIEW.filter(c => {
     if (filter !== "all" && !c.industries.includes(filter)) return false;

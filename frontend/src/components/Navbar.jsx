@@ -228,7 +228,7 @@ const Navbar = () => {
             <div className="flex items-center gap-4 min-w-0">
               <a
                 href="tel:+919899957888"
-                className="flex items-center gap-1.5 py-2 hover:text-blue-200 transition-colors"
+                className="flex items-center gap-1.5 py-3.5 hover:text-blue-200 transition-colors"
                 aria-label="Call primary number"
                 onClick={() => trackEvent('phone_click', { cta_type: 'navbar_topbar' })}
               >
@@ -255,7 +255,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setShowLangMenu((p) => !p)}
-                className="flex items-center gap-1.5 px-2 py-2.5 -mx-1 hover:text-blue-200 transition-colors"
+                className="flex items-center gap-1.5 px-2 py-4 -mx-1 hover:text-blue-200 transition-colors"
                 aria-label="Select language"
                 data-testid="language-selector"
               >
@@ -292,7 +292,7 @@ const Navbar = () => {
               <select
                 value={region}
                 onChange={(e) => onRegionChange(e.target.value)}
-                className="bg-transparent border-none text-xs cursor-pointer focus:outline-none py-2.5"
+                className="bg-transparent border-none text-xs cursor-pointer focus:outline-none py-3.5"
                 aria-label="Select region"
                 data-testid="region-selector"
               >
@@ -385,8 +385,13 @@ const Navbar = () => {
             <Link
               href="/"
               /* min-w-0 lets the wordmark shrink at 320px instead of pushing
-                 the Quick Quote button and hamburger past the viewport edge. */
-              className="flex items-center gap-3 min-w-0"
+                 the Quick Quote button and hamburger past the viewport edge.
+                 overflow-hidden is a defensive clip: the tagline is now
+                 allowed to wrap (below) rather than force a fixed width via
+                 nowrap, so this should never actually trigger, but it keeps
+                 any edge case (translated text, unusual font metrics) from
+                 visually spilling into the CTA instead of just wrapping. */
+              className="flex items-center gap-3 min-w-0 overflow-hidden"
               data-testid="logo-link"
               aria-label="Shanker Agencies Home"
             >
@@ -398,7 +403,7 @@ const Navbar = () => {
                 priority={true}
                 className="h-9 sm:h-10 w-auto flex-shrink-0"
               />
-              <div className="flex flex-col justify-center leading-none">
+              <div className="flex flex-col justify-center leading-none min-w-0">
                 {/* Desktop: single line */}
                 <span className="hidden sm:block font-oswald text-sm font-bold tracking-wide text-[#1E3A5F]">
                   SHANKER AGENCIES PRIVATE LIMITED
@@ -410,8 +415,11 @@ const Navbar = () => {
                 <span className="sm:hidden font-oswald text-[9px] font-bold text-[#1E3A5F] tracking-[0.28em] uppercase leading-tight">
                   PRIVATE LIMITED
                 </span>
-                {/* Mobile tagline: tighter tracking + smaller size so it fits the two-line logo block */}
-                <span className="sm:hidden text-[6.5px] text-[#F97316] font-semibold tracking-[0.09em] uppercase leading-tight mt-0.5 whitespace-nowrap">
+                {/* Mobile tagline: allowed to wrap to a second line instead of
+                    forcing one nowrap line wider than "SHANKER AGENCIES" —
+                    that nowrap width was the actual cause of the tagline
+                    rendering behind the Quick Quote button at 320-390px. */}
+                <span className="sm:hidden text-[6.5px] text-[#F97316] font-semibold tracking-[0.09em] uppercase leading-tight mt-0.5">
                   Refractory Engineering Solutions
                 </span>
                 <span className="hidden sm:block text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase mt-0.5">
@@ -501,7 +509,10 @@ const Navbar = () => {
             <div className="flex items-center gap-2 flex-shrink-0">
               <button
                 onClick={onQuoteClick}
-                className="gradient-orange text-white px-5 py-2.5 rounded-full text-sm font-bold hover-lift flex items-center gap-2 shadow-lg shadow-orange-500/25 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                /* px-4 on mobile (icon-only) instead of px-5: reclaims the
+                   width the enlarged hamburger below now needs, so the two
+                   controls together take the same footprint as before. */
+                className="gradient-orange text-white px-4 sm:px-5 py-2.5 rounded-full text-sm font-bold hover-lift flex items-center gap-2 shadow-lg shadow-orange-500/25 focus:outline-none focus:ring-2 focus:ring-orange-400"
                 data-testid="quick-quote-btn"
                 aria-label="Get a quick quote"
               >
@@ -511,7 +522,8 @@ const Navbar = () => {
 
               <button
                 onClick={() => setMobileMenuOpen((p) => !p)}
-                className="lg:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300"
+                /* p-3: brings the tappable area to ~44px+ (was p-2, ~38px) */
+                className="lg:hidden p-3 -m-1 rounded-lg hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-300"
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
                 data-testid="mobile-menu-toggle"
               >
