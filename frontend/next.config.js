@@ -22,11 +22,17 @@ const nextConfig = {
     // posture flagged in the GEO audit (M2).
     const cspValue = [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms",
+      // scripts.clarity.ms: the www.clarity.ms/tag loader pulls the actual
+      // Clarity runtime from this host, so without it Clarity never starts.
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://scripts.clarity.ms",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://images.unsplash.com https://www.shankeragencies.com https://shankeragencies.com https://www.cumi-murugappa.com https://mahakoshalrefractories.com https://ifglgroup.com https://maps.gstatic.com https://maps.googleapis.com https://*.clarity.ms https://www.google-analytics.com",
+      "img-src 'self' data: blob: https://images.unsplash.com https://www.shankeragencies.com https://shankeragencies.com https://www.cumi-murugappa.com https://mahakoshalrefractories.com https://ifglgroup.com https://maps.gstatic.com https://maps.googleapis.com https://*.clarity.ms https://*.google-analytics.com",
       "font-src 'self' data:",
-      "connect-src 'self' https://api.web3forms.com https://www.bing.com https://api.indexnow.org https://*.clarity.ms https://www.google-analytics.com",
+      // GA4 does not post only to www.google-analytics.com. It also uses
+      // analytics.google.com and regional hosts (region1/region4...), which were
+      // being refused — silently discarding most measurement, including the
+      // enquiry events. Scoped to the two GA domains, no advertising origins.
+      "connect-src 'self' https://api.web3forms.com https://www.bing.com https://api.indexnow.org https://*.clarity.ms https://*.google-analytics.com https://analytics.google.com",
       "frame-src 'self' https://www.google.com https://maps.google.com",
       "frame-ancestors 'none'",
       "form-action 'self' https://api.web3forms.com",
