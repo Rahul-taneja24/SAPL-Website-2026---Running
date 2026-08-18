@@ -384,14 +384,18 @@ const Navbar = () => {
             {/* Logo */}
             <Link
               href="/"
-              /* min-w-0 lets the wordmark shrink at 320px instead of pushing
-                 the Quick Quote button and hamburger past the viewport edge.
-                 overflow-hidden is a defensive clip: the tagline is now
-                 allowed to wrap (below) rather than force a fixed width via
-                 nowrap, so this should never actually trigger, but it keeps
-                 any edge case (translated text, unusual font metrics) from
-                 visually spilling into the CTA instead of just wrapping. */
-              className="flex items-center gap-3 min-w-0 overflow-hidden"
+              /* Three-zone header: this brand zone may shrink (min-w-0), the
+                 CTA and menu zone below never does. pr-2 reserves a real gap
+                 between the end of the brand lockup and the CTA — without it
+                 the text stack's box grows until it touches the button at
+                 320px (measured 0px), which is what made the tagline read as
+                 if it were running into the CTA. Desktop keeps its original
+                 content-width behaviour (lg:pr-0).
+                 overflow-hidden is a defensive clip: the tagline wraps rather
+                 than forcing a fixed nowrap width, so this should never
+                 actually trigger, but it keeps any edge case (translated
+                 text, unusual font metrics) from spilling into the CTA. */
+              className="flex items-center gap-3 min-w-0 overflow-hidden pr-2 lg:pr-0"
               data-testid="logo-link"
               aria-label="Shanker Agencies Home"
             >
@@ -415,11 +419,14 @@ const Navbar = () => {
                 <span className="sm:hidden font-oswald text-[9px] font-bold text-[#1E3A5F] tracking-[0.28em] uppercase leading-tight">
                   PRIVATE LIMITED
                 </span>
-                {/* Mobile tagline: allowed to wrap to a second line instead of
-                    forcing one nowrap line wider than "SHANKER AGENCIES" —
-                    that nowrap width was the actual cause of the tagline
-                    rendering behind the Quick Quote button at 320-390px. */}
-                <span className="sm:hidden text-[6.5px] text-[#F97316] font-semibold tracking-[0.09em] uppercase leading-tight mt-0.5">
+                {/* Mobile tagline: tracking tightened from 0.09em, which made
+                    the tagline render 147px wide against a 102px company name
+                    — the line that visually broke the lockup and the reason it
+                    reached the CTA. At 0.02em it sits within the name block's
+                    width like the brand artwork, and stays on one line from
+                    360px up. Font size is unchanged; wrapping (not clipping)
+                    remains the fallback at 320px. */}
+                <span className="sm:hidden text-[6.5px] text-[#F97316] font-semibold tracking-[0.02em] uppercase leading-tight mt-0.5">
                   Refractory Engineering Solutions
                 </span>
                 <span className="hidden sm:block text-[9px] text-[#F97316] font-semibold tracking-[0.2em] uppercase mt-0.5">
