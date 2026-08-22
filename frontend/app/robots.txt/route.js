@@ -48,15 +48,15 @@ const RULES = [
   { userAgent: 'FacebookBot', allow: '/' },
   { userAgent: 'Bytespider', allow: '/' },
 
-  // ── Ahrefs: allowed. This is our own Site Audit tool (app.ahrefs.com) —
-  // blocking AhrefsBot also blocks our own audit reports from seeing real
-  // data (e.g. it can't verify the IndexNow key file, so it falsely flags
-  // it as missing even though the file is live). ──
+  // ── Ahrefs + Semrush: allowed. Both are our own SEO reporting tools —
+  // blocking either one blocks our own audit reports from seeing real data
+  // (e.g. AhrefsBot couldn't verify the IndexNow key file, so it falsely
+  // flagged it as missing even though the file is live). ──
   { userAgent: 'AhrefsBot', allow: '/' },
+  { userAgent: 'SemrushBot', allow: '/' },
 
-  // ── Block remaining aggressive SEO/backlink scrapers ──
+  // ── Block remaining aggressive SEO/backlink scrapers we don't use ──
   // (high request volume, low value, often slow the site)
-  { userAgent: 'SemrushBot', disallow: '/' },
   { userAgent: 'MJ12bot', disallow: '/' },
   { userAgent: 'DotBot', disallow: '/' },
 ];
