@@ -221,8 +221,8 @@ const Home = () => {
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" aria-hidden="true" />
                     <span className="text-white text-sm font-medium tracking-wide">
                       {region === "india"
-                        ? "Trusted Since 1980 · ISO 9001 · Pan-India Delivery"
-                        : "Trusted Since 1980 · ISO 9001 · 50+ Countries"}
+                        ? "Trusted Since 1980 · Pan-India Delivery"
+                        : "Trusted Since 1980 · 50+ Countries"}
                     </span>
                   </div>
 
@@ -620,15 +620,6 @@ const Home = () => {
                 <h3 className="font-oswald text-lg font-bold text-white mb-3 leading-tight">{item.title}</h3>
                 <p className="text-white/60 text-sm leading-relaxed">{item.desc}</p>
               </article>
-            ))}
-          </div>
-          {/* ISO certifications, same style as About.jsx */}
-          <div className="flex flex-wrap justify-center gap-4 mt-12">
-            {["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018"].map((cert) => (
-              <div key={cert} className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 border border-white/15 text-white text-sm font-medium">
-                <CheckCircle size={15} className="text-green-400" aria-hidden="true" />
-                {cert}
-              </div>
             ))}
           </div>
         </div>

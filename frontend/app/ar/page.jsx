@@ -44,7 +44,7 @@ export default function ArabicHomePage() {
       <section className="bg-[#1E3A5F] py-16 md:py-24 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-xs font-semibold tracking-wide mb-5">
-            موثوقون منذ عام 1980 · ISO 9001
+            موثوقون منذ عام 1980
           </span>
           <h1 className="font-bold text-3xl md:text-5xl text-white leading-snug mb-5">
             مورّد المواد الحرارية من الهند

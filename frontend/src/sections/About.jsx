@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link";
-import { Award, Users, Target, Globe, CheckCircle, ArrowRight, Handshake, TrendingUp, MapPin, Phone, Mail, Building, Shield, Zap, Factory, Settings, Layers, Trophy, Globe2, Microscope, Rocket } from "lucide-react";
+import { Award, Users, Target, Globe, CheckCircle, ArrowRight, Handshake, TrendingUp, MapPin, Phone, Mail, Building, Shield, Zap, Factory, Settings, Layers, Globe2, Microscope, Rocket } from "lucide-react";
 import AnimatedCounter from "../components/AnimatedCounter";
 
 
@@ -11,7 +11,6 @@ const milestones = [
   { year: "1980", event: "Mohan Taneja starts Shanker Agencies in Shahdara, Delhi. Early work is local: supplying general refractories to copper smelters, glass units and small furnace operators in and around Delhi NCR.", icon: <Factory size={28} className="text-[#F97316]" /> },
   { year: "1990", event: "Focus shifts from copper and glass to India's steel re-rolling mills and forging units. First long-term national supply contracts are signed.", icon: <Settings size={28} className="text-blue-400" /> },
   { year: "2000", event: "Product range expands from general refractories to branded castables, mortars and insulating bricks. SAPL starts serving the cement and power plant segments.", icon: <Layers size={28} className="text-orange-400" /> },
-  { year: "2005", event: "ISO 9001 certification completed. The quality systems we had been running for years were finally put on paper.", icon: <Trophy size={28} className="text-yellow-400" /> },
   { year: "2010", event: "Appointed as supply partner for CUMI Super Refractories. This was a turning point: the business moved from trading general refractories to stocking and supporting branded, premium products.", icon: <Handshake size={28} className="text-green-400" /> },
   { year: "2015", event: "First exports to the GCC region. Calderys and TRL Krosaki added to the brand portfolio.", icon: <Globe2 size={28} className="text-blue-300" /> },
   { year: "2018", event: "Rahul Taneja (second generation) joined SAPL as Director, bringing sales engineering, digital systems and a sharper focus on steel, cement, aluminium and power plant customers.", icon: <Handshake size={28} className="text-[#F97316]" /> },
@@ -48,12 +47,6 @@ const values = [
     color: "text-purple-600",
     bg: "bg-purple-50",
   },
-];
-
-const certifications = [
-  { label: "ISO 9001:2015", desc: "Quality Management System", color: "border-blue-200 bg-blue-50 text-[#1E40AF]" },
-  { label: "ISO 14001:2015", desc: "Environmental Management", color: "border-green-200 bg-green-50 text-green-700" },
-  { label: "ISO 45001:2018", desc: "Occupational Health & Safety", color: "border-orange-200 bg-orange-50 text-[#F97316]" },
 ];
 
 const differentiators = [
@@ -277,18 +270,6 @@ const About = () => {
                 <p className="text-white/80 text-sm mt-1 font-medium">Year Founded · Delhi</p>
               </div>
 
-              {/* Floating ISO card */}
-              <div className="absolute -top-6 -right-6 bg-white border border-gray-100 p-5 rounded-2xl shadow-xl">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                    <CheckCircle size={20} className="text-green-600" aria-hidden="true" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-[#1E3A5F] text-sm">ISO Certified</p>
-                    <p className="text-gray-400 text-xs">9001 · 14001 · 45001</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -407,54 +388,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* ── CERTIFICATIONS ─────────────────────────────── */}
-      <section className="py-24 px-4 bg-white reveal reveal-up" data-testid="certifications" aria-labelledby="cert-heading">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <span className="inline-block px-4 py-1.5 rounded-full bg-green-50 text-green-700 text-xs font-semibold tracking-widest uppercase mb-4">
-                Quality Assurance
-              </span>
-              <h2 id="cert-heading" className="font-oswald text-3xl md:text-4xl font-bold mb-6 text-[#1E3A5F]">
-                CERTIFIED TO
-                <br />
-                INTERNATIONAL STANDARDS
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Our certifications are renewed annually through independent audit, they reflect the quality management systems, environmental practices, and safety standards that govern every aspect of our operations.
-              </p>
-              <div className="space-y-4">
-                {certifications.map((cert) => (
-                  <div
-                    key={cert.label}
-                    className={`flex items-center gap-4 p-5 rounded-xl border ${cert.color}`}
-                  >
-                    <CheckCircle size={22} className="flex-shrink-0" aria-hidden="true" />
-                    <div>
-                      <p className="font-bold text-sm">{cert.label}</p>
-                      <p className="text-xs opacity-75 mt-0.5">{cert.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div
-                className="w-80 h-80 rounded-full flex items-center justify-center text-center shadow-2xl"
-                style={{ background: "linear-gradient(135deg, #1E3A5F 0%, #3B82F6 100%)" }}
-              >
-                <div>
-                  <p className="font-oswald text-7xl font-bold text-white leading-none">ISO</p>
-                  <p className="text-white/80 text-lg font-medium mt-2">Certified</p>
-                  <p className="text-white/50 text-sm mt-1">9001 · 14001 · 45001</p>
-                  <p className="text-[#F97316] font-bold text-sm mt-4">Renewed Annually</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ── LEADERSHIP ─────────────────────────────────── */}
       <section className="py-24 px-4 bg-white reveal reveal-up" data-testid="leadership-team" aria-labelledby="team-heading">
         <div className="max-w-7xl mx-auto">
@@ -527,7 +460,7 @@ const About = () => {
                   Our team of certified refractory engineers handles lining design, material selection, installation supervision, and post-campaign analysis. Collectively, they bring 100+ years of combined field experience across India's steel, cement, and aluminium industries.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {['ISO 9001 Trained', 'On-Site Support', 'Pan-India Coverage'].map(s => (
+                  {['On-Site Support', 'Pan-India Coverage'].map(s => (
                     <span key={s} className="text-[10px] px-2.5 py-1 bg-orange-50 text-[#F97316] rounded-full font-semibold border border-orange-100">{s}</span>
                   ))}
                 </div>

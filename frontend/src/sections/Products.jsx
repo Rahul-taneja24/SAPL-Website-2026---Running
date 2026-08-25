@@ -232,6 +232,37 @@ function ProductFAQ({ faqs, accent }) {
 }
 
 /* ─── PRODUCT DETAIL PAGE ────────────────────────────────────────────── */
+
+// Reverse links to the refractory anchors guide from monolithic-lining
+// products that are actually anchor-dependent (per the guide's own content).
+// Anchor text is varied per product, not a repeated exact-match phrase.
+const ANCHOR_GUIDE_URL = "/blog/refractory-anchors-fastening-systems-types-selection-installation";
+const ANCHOR_CROSS_LINKS = {
+  "gunning-materials": {
+    text: "Gunned linings on vertical faces and roof sections are often reinforced with a welded anchor system for extra hold. See our ",
+    anchorText: "refractory anchor selection guide",
+  },
+  "low-cement-castables": {
+    text: "Like all monolithic linings, LCC castable has no self-supporting structure of its own and relies on correctly selected and spaced anchors to stay fixed to the shell. See our ",
+    anchorText: "anchor types and spacing guide",
+  },
+  "conventional-castables": {
+    text: "Conventional castable linings are anchor-dependent by design, unlike brickwork, which is self-supporting. Our ",
+    anchorText: "guide to anchor selection, materials and welding",
+    suffix: " covers V, Y, bullhorn and hex-metal systems.",
+  },
+  "ramming-masses": {
+    text: "Where a rammed lining meets a vertical wall or roof section, anchoring follows the same selection logic as castable linings. See our ",
+    anchorText: "refractory anchor fastening guide",
+  },
+};
+
+// Explicit allowlist for the "Complete Your Casting Line" cross-link block.
+// Deliberately NOT derived from category.products, so Ladle Shrouds and
+// Porous Plugs can never be pulled in even if the flow-control category
+// composition changes later.
+const CASTING_LINE_IDS = ["slide-gate-plates", "monoblock-stoppers", "subentry-nozzles", "well-blocks"];
+
 function ProductDetailPage({ product, category, categorySlug }) {
   const meta = CAT_META[categorySlug] || CAT_META["shaped-refractories"];
   const faqs = getProductFaqs(product.id);
@@ -392,6 +423,37 @@ function ProductDetailPage({ product, category, categorySlug }) {
                     </li>
                   ))}
                 </ol>
+              </div>
+            )}
+
+            {/* Anchor guide cross-link (reverse link, only for anchor-dependent monolithic products) */}
+            {ANCHOR_CROSS_LINKS[product.id] && (
+              <div className="bg-gray-50 border border-gray-200 rounded-xl p-4">
+                <p className="text-sm text-gray-700 leading-relaxed">
+                  {ANCHOR_CROSS_LINKS[product.id].text}
+                  <Link href={ANCHOR_GUIDE_URL} className="text-[#3B82F6] font-semibold hover:underline">
+                    {ANCHOR_CROSS_LINKS[product.id].anchorText}
+                  </Link>
+                  {ANCHOR_CROSS_LINKS[product.id].suffix || "."}
+                </p>
+              </div>
+            )}
+
+            {/* Complete Your Casting Line (flow-control cross-links, Ladle Shrouds and Porous Plugs excluded by design) */}
+            {CASTING_LINE_IDS.includes(product.id) && (
+              <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
+                <h2 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-2">COMPLETE YOUR CASTING LINE</h2>
+                <p className="text-sm text-gray-700 mb-4">These flow-control components are typically specified together for one continuous-casting sequence.</p>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {category.products
+                    .filter((p) => CASTING_LINE_IDS.includes(p.id) && p.id !== product.id)
+                    .map((rel) => (
+                      <Link key={rel.id} href={`/products/flow-control/${rel.id}`}
+                        className="px-4 py-3 bg-white rounded-xl border border-gray-200 text-sm font-semibold text-[#1E3A5F] text-center hover:border-[#DC2626] hover:shadow-sm transition-all">
+                        {rel.name}
+                      </Link>
+                    ))}
+                </div>
               </div>
             )}
 
@@ -894,7 +956,7 @@ function OverviewPage() {
       {/* Why SAPL */}
       <section className="py-12 px-4 bg-[#1E3A5F]">
         <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {[{ icon: CheckCircle, title: "ISO 9001:2015 Certified", sub: "Quality management across all products and processes" }, { icon: Shield, title: "No Minimum Order", sub: "Trial quantities or bulk, we supply both" }, { icon: Zap, title: "Same-Day Response", sub: "Technical quotes within 4 business hours" }, { icon: Package, title: "Pan-India Delivery", sub: "Delhi warehouse, nationwide in 2–5 days" }].map(({ icon: I, title, sub }) => (
+          {[{ icon: CheckCircle, title: "45+ Years in Refractories", sub: "Trusted since 1980, across three generations" }, { icon: Shield, title: "No Minimum Order", sub: "Trial quantities or bulk, we supply both" }, { icon: Zap, title: "Same-Day Response", sub: "Technical quotes within 4 business hours" }, { icon: Package, title: "Pan-India Delivery", sub: "Delhi warehouse, nationwide in 2–5 days" }].map(({ icon: I, title, sub }) => (
             <div key={title} className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
                 <I size={18} className="text-[#F97316]" />

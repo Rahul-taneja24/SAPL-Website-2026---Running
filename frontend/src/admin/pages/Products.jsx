@@ -1471,7 +1471,7 @@ function OverviewPage() {
             {/* Why SAPL */}
             <section className="py-12 px-4 bg-[#1E3A5F]">
                 <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {[{ icon: CheckCircle, title: "ISO 9001:2015 Certified", sub: "Quality management across all products and processes" }, { icon: Shield, title: "No Minimum Order", sub: "Trial quantities or bulk — we supply both" }, { icon: Zap, title: "Same-Day Response", sub: "Technical quotes within 4 business hours" }, { icon: Package, title: "Pan-India Delivery", sub: "Delhi warehouse — nationwide in 2–5 days" }].map(({ icon: I, title, sub }) => (
+                    {[{ icon: CheckCircle, title: "45+ Years in Refractories", sub: "Trusted since 1980, across three generations" }, { icon: Shield, title: "No Minimum Order", sub: "Trial quantities or bulk — we supply both" }, { icon: Zap, title: "Same-Day Response", sub: "Technical quotes within 4 business hours" }, { icon: Package, title: "Pan-India Delivery", sub: "Delhi warehouse — nationwide in 2–5 days" }].map(({ icon: I, title, sub }) => (
                         <div key={title} className="flex items-start gap-4">
                             <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
                                 <I size={18} className="text-[#F97316]" />

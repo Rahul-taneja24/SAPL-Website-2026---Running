@@ -2166,6 +2166,7 @@ export const BLOG_POSTS_DATA = [
   </tbody>
 </table>
 <p>Looking for refractory anchor bricks for a suspended kiln roof, arch or vault lining? These are a different product from the metal anchors described throughout this guide, shaped, fired refractory bricks rather than metal fasteners. Send us your drawing, dimensions, application and quantity. Our technical team will review the requirement and advise on the appropriate refractory shape and grade.</p>
+<p>Furnace and kiln roofs are also sometimes built with <strong>arch bricks</strong> (including end arch and side arch shapes) &mdash; a further, separate shaped-refractory category. Unlike an anchor brick, which is hung from the shell, an arch brick is self-supporting: it holds itself and adjacent bricks in place through arch action, wedge-shaped so the load locks the ring together rather than relying on a hanging point. Arch bricks are distinct from both refractory anchors and refractory anchor bricks and should not be confused with either. See our <a href="https://www.shankeragencies.com/products/shaped-refractories">shaped refractories range</a> for more on arch brick shapes and how to specify one for your project.</p>
 
 <h2>Custom & Application-Specific Refractory Shapes</h2>
 <p>Industrial refractory requirements are not always limited to standard catalogue shapes. If your project needs a refractory anchor brick, or another shaped refractory component that isn't a standard listed product, SAPL's technical team can review the application, dimensions, drawing and specification, and evaluate the appropriate refractory shape, grade and fulfilment route for the requirement. Have a shape that isn't in our standard catalogue? Send us the drawing, dimensions, application and quantity, and our technical team will advise on the appropriate refractory solution.</p>
@@ -2985,7 +2986,7 @@ export const BLOG_POSTS_DATA = [
 <p>We grouped the Delhi NCR refractory dealer landscape into four types. Each type has a legitimate place in the market. The trick is matching the dealer type to your use case.</p>
 <ol>
   <li><strong>Authorised dealers of Indian majors</strong> (CUMI, Crown Ceramics, Divine Cerawool). These carry genuine products through direct manufacturer authorization. Shanker Agencies (SAPL) sits in this category for CUMI, Crown Ceramics and Divine Cerawool.</li>
-  <li><strong>Strategic supply partners</strong> (Calderys, TRL Krosaki, Mahakoshal, Saint-Gobain, Dalmia-OCL, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
+  <li><strong>Strategic supply partners</strong> (Calderys, TRL Krosaki, Mahakoshal, Saint-Gobain, RHI Magnesita). Usually indent-based, not stock-based, with 2 to 6 week lead times.</li>
   <li><strong>Local stockists and traders</strong>. Smaller operators with mixed-brand stock. Good for small value top-ups, less reliable for critical shutdown orders.</li>
   <li><strong>Online marketplaces</strong> (IndiaMART, TradeIndia, Justdial listings). Useful to compare prices but you are one step removed from the factory.</li>
 </ol>
@@ -3931,7 +3932,7 @@ export const BLOG_POSTS_DATA = [
 
 <h2>Types of castable refractory</h2>
 <h3>Conventional castable</h3>
-<p>Conventional castables use 15 to 25% calcium aluminate cement as the binder. They are economical and easy to install, suited to backup linings, boilers and general furnace work up to moderate temperatures.</p>
+<p><a href="https://www.shankeragencies.com/products/unshaped-refractories/conventional-castables">Conventional castables</a> use 15 to 25% calcium aluminate cement as the binder. They are economical and easy to install, suited to backup linings, boilers and general furnace work up to moderate temperatures.</p>
 
 <h3>Low cement castable (LCC)</h3>
 <p><a href="https://www.shankeragencies.com/products/unshaped-refractories/low-cement-castables">Low cement castables</a> reduce cement content to roughly 4 to 8%, which lowers porosity and raises strength and hot performance. They are used for steel ladles, tundish, and demanding wear zones.</p>
@@ -6100,6 +6101,80 @@ export const BLOG_POSTS_DATA = [
 `,
     author: { name: "Rahul Taneja" },
     relatedProducts: ["high-alumina-bricks", "silicon-carbide-bricks", "lcc-castable"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 64. Predictive Refractory Wear Monitoring for Steel Mills
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 64,
+    slug: "predictive-refractory-wear-monitoring-steel-mills",
+    title: "Predictive Refractory Wear Monitoring: What Steel Mills Should Ask Suppliers For",
+    metaTitle: "Predictive Refractory Wear Monitoring for Steel Mills | SAPL Guide",
+    metaDescription: "How data-driven wear monitoring is changing refractory procurement for ladles, tundish and slide gate systems, and what to ask your supplier for.",
+    category: "Technical Guide",
+    tags: [
+      "predictive refractory maintenance",
+      "refractory wear monitoring",
+      "slide gate plate monitoring",
+      "ladle refractory data",
+      "steel mill refractory procurement",
+      "digital refractory monitoring",
+    ],
+    readTime: "8 min",
+    publishDate: "2026-08-23",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1200&q=80",
+    keyTakeaways: [
+      "Refractory wear monitoring is shifting from fixed-interval inspection to data-driven tracking, and major suppliers are now publishing on this shift as a 2026 trend, not a future concept.",
+      "Three monitoring approaches are commercially available today: embedded wear sensors in slide gate plates and ladle shells, thermal imaging of the vessel shell, and heat-count/chemistry-linked digital logging.",
+      "Slide gate systems and ladle hot zones are where predictive monitoring pays back fastest, since an unplanned flow-control failure stops casting immediately, not gradually.",
+      "The practical first step for most plants is procurement, not instrumentation: specify wear-indicator-compatible slide gate plates and ask your supplier to log heat-by-heat wear data against the grade supplied.",
+      "Predictive data does not replace physical inspection, it narrows down when a physical inspection is worth doing versus assumed on a fixed calendar.",
+    ],
+    faqs: [
+      { question: "What is predictive refractory wear monitoring?", answer: "Predictive refractory wear monitoring uses sensors, thermal imaging, or heat-count and chemistry data to estimate remaining lining or component life, instead of relying only on a fixed inspection or relining schedule. The goal is to flag a specific vessel or component approaching end-of-life before it fails, rather than inspecting everything on the same calendar regardless of actual wear." },
+      { question: "Which refractory components benefit most from wear monitoring?", answer: "Slide gate plates, ladle hot-face linings, and BOF/EAF hot spots benefit most, because failure in these areas stops production immediately rather than degrading gradually. A slide gate plate failure halts casting mid-heat; a ladle breakout is a safety event. Components with more gradual, forgiving wear patterns see less benefit from real-time monitoring and are usually still managed on inspection intervals." },
+      { question: "Do I need new equipment to start predictive monitoring?", answer: "Not necessarily. The lowest-cost starting point is procurement-level: specify wear-indicator-enabled slide gate plates where available, and ask your refractory supplier to track and share heat-by-heat wear data against the specific grade supplied to your vessel. Sensor-embedded components and thermal imaging systems are a further step up, but heat-count-linked data logging can start with what most plants already record." },
+      { question: "Does predictive monitoring replace physical refractory inspection?", answer: "No. Predictive data narrows down when a physical inspection is worth doing on a specific vessel, it does not replace the inspection itself. A wear-monitoring signal tells you which ladle or which slide gate plate is approaching end-of-life sooner than the fleet average, so inspection effort goes where it is actually needed instead of being spread evenly across every vessel on a fixed calendar." },
+      { question: "Is predictive refractory monitoring only for large steel plants?", answer: "It scales down further than most plants assume. Sensor-embedded and thermal-imaging systems suit larger, continuous-casting operations where the instrumentation cost is easily justified by uptime value. Heat-count and chemistry-linked data logging, the lowest-cost tier, is realistic for smaller induction and EAF shops too, since it uses records most plants already keep, just organised against wear outcomes instead of filed separately." },
+    ],
+    excerpt:
+      "Refractory suppliers are publicly framing 2026 around data and predictive performance, not just material chemistry. This guide explains what predictive wear monitoring actually looks like for slide gate systems and ladle linings, where it pays back fastest, and what to ask your supplier for before investing in new instrumentation.",
+    content: `<h2>Refractory Procurement Is Getting a Data Layer</h2>
+<p><strong>Predictive, data-driven wear monitoring is moving from concept to standard procurement conversation for steel mill refractories in 2026, particularly around flow control and ladle hot zones.</strong> Major refractory suppliers globally are now framing their product and service pitch around data and predictive performance alongside material chemistry, not instead of it. For a plant buyer, this changes a practical question: when you spec your next batch of slide gate plates or MgO-C bricks, is wear data part of what you are actually asking for?</p>
+<p>This is not a claim that every plant needs new sensors installed next quarter. It is a shift in what "good" procurement now includes, and a buyer who understands the three real approaches available today is better placed to ask for the right thing, whether that is full instrumentation or simply better use of data your plant already generates.</p>
+
+<h2>Three Approaches, in Order of What They Actually Cost You</h2>
+
+<h3>1. Heat-Count and Chemistry-Linked Data Logging</h3>
+<p>The lowest-cost tier, and the one every plant can realistically start with. Most plants already record heat count, steel grade, and slag chemistry per ladle or per campaign. Linking that existing data to which refractory grade was installed, and when each component was replaced, turns records you already keep into a wear-prediction dataset without buying anything new. The gap in most plants is not the data, it is that heat logs and refractory replacement logs are kept separately and never cross-referenced.</p>
+
+<h3>2. Thermal Imaging of the Vessel Shell</h3>
+<p>Shell-temperature scanning, handheld or fixed-point, flags hot spots that indicate localised lining thinning before a breakout risk develops. This is a mid-cost step up from data logging: it needs a thermal camera and a routine, but not embedded instrumentation in the refractory itself. It works well as a targeted check on vessels that heat-count data has already flagged as approaching expected end-of-life.</p>
+
+<h3>3. Embedded Wear Sensors</h3>
+<p>Sensors built into slide gate plates or ladle shells give the most direct read on remaining component life, and are the approach getting the most attention in current industry publishing. This is the highest-cost tier and the most justified on continuous-casting operations where an unplanned flow-control stoppage has the highest cost per incident. It is not yet the realistic starting point for most induction furnace or smaller EAF shops.</p>
+
+<h2>Why Slide Gate Systems and Ladle Hot Zones First</h2>
+<p>Not every refractory application benefits equally from predictive monitoring, and it is worth being direct about why flow control and ladle linings are where this pays back fastest. A gunning castable wearing gradually in a rotary kiln degrades predictably and gives visible warning well before failure. A <a href="/blog/slide-gate-flow-control-explained">slide gate plate</a> failing mid-heat does not degrade gradually in any usable sense from the operator's chair, it stops casting immediately, and a ladle breakout is a safety event, not a scheduling inconvenience. The components where failure is sudden rather than gradual are exactly the ones where knowing "how much life is actually left" earlier is worth paying for. This is also why the current wave of supplier attention is concentrated on <a href="/products/flow-control/slide-gate-plates">slide gate systems</a> and <a href="/products/shaped-refractories/magnesia-carbon-bricks">MgO-C ladle and BOF/EAF linings</a> specifically, rather than refractory categories broadly.</p>
+
+<h2>What to Ask Your Supplier For</h2>
+<table>
+  <thead><tr><th>Your current position</th><th>What to ask for next</th></tr></thead>
+  <tbody>
+    <tr><td>Heat logs and refractory replacement records kept separately</td><td>Ask your supplier to help structure heat-count-linked wear tracking against the specific grade supplied, at no new instrumentation cost</td></tr>
+    <tr><td>Fixed-interval ladle or slide gate inspection regardless of actual duty</td><td>Ask which of your vessels are running hotter duty (higher heat count, more aggressive slag chemistry) and whether inspection intervals should differ by vessel, not be uniform</td></tr>
+    <tr><td>Considering a first step into instrumentation</td><td>Ask for thermal imaging as a targeted check on the specific vessels your existing data already flags, rather than instrumenting the whole fleet at once</td></tr>
+  </tbody>
+</table>
+<p>The common thread: start with the data you already generate before buying new equipment. A supplier who can help you organise heat-log and replacement-record data against actual wear outcomes is offering more immediate value than one who leads only with sensor hardware.</p>
+
+<h2>SAPL and Data-Informed Refractory Supply</h2>
+<p>Shanker Agencies supplies <a href="/products/flow-control/slide-gate-plates">slide gate plates</a>, <a href="/products/shaped-refractories/magnesia-carbon-bricks">MgO-C bricks</a>, and the full ladle and BOF/EAF refractory range to steel mills across India and 50+ export markets. With 45+ years of plant-side experience, our team can help you structure heat-count-linked wear tracking against the specific grades we supply, and advise where a thermal-imaging check or a grade change is the more sensible next step for your actual duty. <a href="/contact">Contact our engineering team</a> with your current inspection practice and heat data to start the conversation.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["slide-gate-plates", "magnesia-carbon-bricks", "high-alumina-bricks"],
   },
 
 ];

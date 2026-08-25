@@ -1,7 +1,7 @@
 'use client';
 import { useApp } from '@/context/AppContext';
 import { useState } from "react";
-import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle, Globe, Award, Users, Loader2, ChevronDown, Zap, Shield } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, MessageCircle, CheckCircle, Globe, Users, Loader2, ChevronDown, Zap, Shield } from "lucide-react";
 import { toast } from "sonner";
 import { trackEvent } from '@/lib/analytics';
 
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "Can you provide material test certificates?",
-    a: "Yes. All products come with manufacturer test certificates (MTC). We can also arrange third-party testing from accredited labs on request. ISO 9001 documentation is maintained for all transactions.",
+    a: "Yes. All products come with manufacturer test certificates (MTC). We can also arrange third-party testing from accredited labs on request.",
   },
   {
     q: "Do you offer technical consultation before purchase?",
@@ -280,7 +280,6 @@ const Contact = () => {
           {[
             { icon: Zap, label: "4-hour response time", color: "text-[#F97316]" },
             { icon: Globe, label: "Serving 50+ countries", color: "text-green-500" },
-            { icon: Award, label: "ISO 9001 · 14001 · 45001", color: "text-[#3B82F6]" },
             { icon: Users, label: "500+ industrial clients", color: "text-purple-500" },
             { icon: Shield, label: "No MOQ requirement", color: "text-[#1E3A5F]" },
           ].map(({ icon: Icon, label, color }) => (

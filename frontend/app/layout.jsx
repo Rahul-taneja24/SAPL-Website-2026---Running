@@ -178,11 +178,6 @@ export default function RootLayout({ children }) {
                     { '@type': 'PropertyValue', name: 'CIN', value: 'U51909DL2012PTC232825' },
                     { '@type': 'PropertyValue', name: 'GST', value: '07AARCS1944B1ZC' },
                   ],
-                  hasCredential: {
-                    '@type': 'EducationalOccupationalCredential',
-                    credentialCategory: 'certification',
-                    name: 'ISO 9001 Quality Management System',
-                  },
                   description: "India's premier refractory engineering partner and exporter since 1980. Authorized dealer of CUMI Super Refractories, Crown Ceramics and Divine Cerawool. Supplier of high alumina bricks, LCC/ULCC castables, gunning materials, ceramic fiber insulation, porous plugs, slide gates and acid proof products to steel, cement, aluminum and petrochemical industries across GCC, ASEAN, Africa and Europe.",
                   slogan: "India's premier refractory engineering partner since 1980",
                   // NOTE: geo/hasMap/openingHoursSpecification/priceRange are
@@ -335,6 +330,18 @@ export default function RootLayout({ children }) {
                   priceRange: '$$',
                   description: 'Refractory exporter and engineering partner in Shahdara, Delhi NCR. Authorized dealer of CUMI, Crown Ceramics and Divine Cerawool. Exporting high performance refractories to GCC, ASEAN, Africa and Europe since 1980.',
                   parentOrganization: { '@id': 'https://www.shankeragencies.com/#organization' },
+                  // Sourced from the IndiaMART seller profile (independent
+                  // third-party reviews, not collected on this domain) —
+                  // https://www.indiamart.com/shankeragencies/profile.html.
+                  // Update ratingValue/reviewCount only when re-verified
+                  // against that live profile; do not increment on a guess.
+                  aggregateRating: {
+                    '@type': 'AggregateRating',
+                    ratingValue: '4.4',
+                    reviewCount: '20',
+                    bestRating: '5',
+                    worstRating: '1',
+                  },
                 },
                 {
                   '@type': 'WebSite',

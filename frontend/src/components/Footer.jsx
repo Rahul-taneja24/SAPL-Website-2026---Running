@@ -13,8 +13,6 @@ const internationalRegions = [
   "UK", "Germany", "France", "Singapore", "Malaysia", "Indonesia", "Vietnam", "Thailand",
 ];
 
-const certifications = ["ISO 9001:2015", "ISO 14001:2015", "ISO 45001:2018"];
-
 const Footer = () => {
   const { region } = useApp();
   const currentYear = new Date().getFullYear();
@@ -107,16 +105,6 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-
-            {/* Certifications */}
-            <h4 className="font-oswald text-sm font-bold uppercase tracking-widest text-white mb-3">Certifications</h4>
-            <div className="flex flex-wrap gap-2 mb-5">
-              {certifications.map((cert) => (
-                <span key={cert} className="px-3 py-1 bg-green-900/40 border border-green-700/50 rounded-lg text-xs text-green-400 font-medium">
-                  {cert}
-                </span>
-              ))}
-            </div>
 
             {/* Download Company Profile */}
             <Link

@@ -289,7 +289,7 @@ function CompanyProfile() {
               <div>
                 <p className="font-oswald text-xl sm:text-2xl font-bold text-[#1E3A5F] leading-tight">SHANKER AGENCIES PVT. LTD.</p>
                 <p className="text-[#F97316] text-sm font-semibold">Engineering Refractory Solutions</p>
-                <p className="text-gray-400 text-xs mt-0.5">ISO 9001 · ISO 14001 · ISO 45001 Certified</p>
+                <p className="text-gray-400 text-xs mt-0.5">Authorized Multi-Brand Refractory Dealer</p>
               </div>
             </div>
             <div className="text-right hidden sm:block">
@@ -356,26 +356,6 @@ function CompanyProfile() {
             </div>
           </div>
 
-          <div className="gradient-dark p-5 rounded-xl">
-            <h3 className="font-oswald text-base font-bold text-white mb-3 flex items-center gap-2">
-              <Shield size={16} className="text-[#F97316]" /> QUALITY CERTIFICATIONS
-            </h3>
-            <div className="flex flex-wrap gap-3">
-              {[
-                { cert: "ISO 9001:2015", label: "Quality Management", color: "text-green-400" },
-                { cert: "ISO 14001:2015", label: "Environmental Mgmt", color: "text-blue-400" },
-                { cert: "ISO 45001:2018", label: "Occupational Safety", color: "text-purple-400" },
-              ].map(({ cert, label, color }) => (
-                <div key={cert} className="glass-card flex items-center gap-2 px-4 py-2 rounded-lg">
-                  <Shield size={13} className={color} />
-                  <div>
-                    <p className="text-white text-xs font-bold">{cert}</p>
-                    <p className="text-gray-400 text-[10px]">{label}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
         </section>
 
         <div className="print:break-before-page border-t-4 border-dashed border-gray-200 print:border-0 mx-8" />
