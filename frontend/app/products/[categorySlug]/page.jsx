@@ -233,6 +233,20 @@ export default async function ProductCategoryPage({ params }) {
         a: 'Yes. We provide specialized thermal insulation solutions, including ceramic fiber modules, blankets and calcium silicate boards, engineered to minimize heat loss and maximize energy savings in high-temperature environments. Correct insulation selection directly reduces fuel consumption and shell temperatures.',
       },
     ],
+    'shaped-refractories': [
+      {
+        q: 'What is an arch brick (end arch brick / side arch brick)?',
+        a: 'An arch brick is a wedge-shaped, fired refractory brick used to build a self-supporting furnace or kiln roof, or a side-wall arch. Because each brick is tapered, the ring of bricks locks together under its own weight through arch action, rather than being hung from the shell. End arch bricks and side arch bricks are shaped variants used at the ends and sides of an arch to complete the ring geometry. Arch bricks are a distinct shaped-refractory category, not the same product as a refractory anchor brick (which is hung, not self-supporting) or a refractory anchor (a metal fastener) — see our refractory anchors guide for that comparison.',
+      },
+      {
+        q: 'Are arch bricks the same as refractory anchor bricks?',
+        a: 'No. Arch bricks and refractory anchor bricks are both shaped, fired refractory bricks, but they work differently: an arch brick is self-supporting, held in place by arch action between wedge-shaped bricks, while an anchor brick is mechanically hung from the shell. They are used in overlapping applications (furnace and kiln roofs) but are not interchangeable specifications. For a full comparison of anchor bricks against metal refractory anchors, see our detailed refractory anchors guide.',
+      },
+      {
+        q: 'Can SAPL supply arch bricks to a drawing or application specification?',
+        a: 'Requirements for arch bricks (including end arch and side arch shapes) can be reviewed against your application, dimensions, drawing or specification, operating temperature, required standard and quantity. Our technical team evaluates the requirement and advises on the appropriate refractory shape, grade and fulfilment route — send your requirement through our RFQ form or contact us directly.',
+      },
+    ],
   };
   const categoryFaqs = CATEGORY_FAQS[categorySlug] || [];
   const faqSchema = categoryFaqs.length

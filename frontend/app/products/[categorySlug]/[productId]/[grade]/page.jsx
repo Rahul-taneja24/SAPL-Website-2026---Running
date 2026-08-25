@@ -277,9 +277,6 @@ export default async function GradeDetailPage({ params }) {
   const skMap = skOk ? buildSkMap(specs) : new Map();
   const directSk = skOk ? getDirectSk(row) : null;
   const alsoMeets = skOk ? getAlsoMeetsSk(row) : [];
-  // Indian naming variant, only meaningful for the HA / AL alumina families.
-  const gradeNum = (label.match(/\d{2,3}/) || [])[0] || null;
-  const indianAlias = /^(HA|AL)[\s-]?\d/i.test(label) ? label.replace(/^HA/i, 'AL') : null;
   const image = catalogEntry.images?.[0];
   // Service ceiling for the "is this grade right for your application?"
   // section. These are the only three key names ever used for this value
@@ -402,25 +399,7 @@ export default async function GradeDetailPage({ params }) {
                   <strong className="text-slate-800">{row.temp}</strong>
                 </>
               ) : null}
-              .{' '}
-              {indianAlias && (
-                <>
-                  {' '}In India it is also written{' '}
-                  <strong className="text-slate-800">{indianAlias}</strong>
-                  {gradeNum ? (
-                    <>
-                      {' '}or <strong className="text-slate-800">{gradeNum}% alumina</strong>
-                    </>
-                  ) : null}
-                  .
-                </>
-              )}
-              {directSk && (
-                <>
-                  {' '}The nearest export designation is{' '}
-                  <strong className="text-slate-800">{directSk.sk}</strong>.
-                </>
-              )}
+              .
             </p>
 
             {aliases.length > 0 && (
@@ -595,10 +574,16 @@ export default async function GradeDetailPage({ params }) {
           7-column table to clear its scroll threshold at 1280px+ without
           shrinking padding or type. */}
       <div className="max-w-[1220px] mx-auto px-5">
-        <section className="mb-12">
-          <h2 className="font-oswald text-2xl font-bold text-[#1E3A5F] mb-1">
-            Full {productName.toLowerCase()} range
-          </h2>
+        <details className="group mb-12">
+          <summary className="cursor-pointer list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-3 py-3.5 px-5 border border-slate-200 rounded bg-slate-50 hover:bg-slate-100 transition-colors">
+            <span className="font-oswald text-base font-bold text-[#1E3A5F]">
+              Compare {label} with other grades
+            </span>
+            <span className="text-slate-400 text-sm shrink-0 transition-transform group-open:rotate-180">
+              &#9662;
+            </span>
+          </summary>
+          <div className="pt-5">
             <p className="text-sm text-slate-500 mb-5">
               Compare {label} against every grade SAPL stocks in this family.
             </p>
@@ -690,7 +675,8 @@ export default async function GradeDetailPage({ params }) {
                 )}
               </div>
             )}
-        </section>
+          </div>
+        </details>
       </div>
 
       <div className="max-w-6xl mx-auto px-5 pb-14 grid lg:grid-cols-[1fr_320px] gap-12">
@@ -725,41 +711,48 @@ export default async function GradeDetailPage({ params }) {
               decision-making sections above — smaller heading, same full
               content, nothing removed. */}
           {designations.length > 1 && (
-          <section className="mb-12">
-            <h2 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-1">
-              Grade designations and equivalents
-            </h2>
-            <p className="text-sm text-slate-500 mb-5">
-              How {label} is referenced across Indian and export naming conventions.
-            </p>
-            <div className="overflow-x-auto rounded-lg border border-slate-200 mb-5">
-              <table className="w-full text-sm">
-                <tbody>
-                  {designations.map((d, i) => (
-                    <tr key={d.system} className={i % 2 ? 'bg-slate-50/50' : 'bg-white'}>
-                      <td className="px-5 py-3 text-slate-600 border-t border-slate-100 w-[45%]">
-                        {d.system}
-                        {d.note && <span className="block text-[11px] text-slate-400">{d.note}</span>}
-                      </td>
-                      <td className="px-5 py-3 font-semibold text-[#1E3A5F] border-t border-slate-100">{d.value}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            {directSk && (
-            <div className="bg-amber-50 border-l-[3px] border-amber-400 rounded-r px-5 py-4">
-              <p className="text-[13.5px] text-slate-700 leading-relaxed">
-                <strong className="text-slate-900">Reading an SK code correctly.</strong> SK (Seger Kegel) is a
-                cone designation, and each step carries an accepted minimum Al₂O₃ content in trade practice.
-                The dependable way to match an SK enquiry to a grade is that minimum alumina figure, which is how
-                the equivalence above is derived. Note that a brick&rsquo;s measured PCE and its SK trade grade are
-                two different numbers and will not always agree. Suppliers also differ at the margins, most often
-                around SK 34. When comparing offers, check Al₂O₃ and PCE together rather than the SK code alone.
+          <details className="group mb-12">
+            <summary className="cursor-pointer list-none [&::-webkit-details-marker]:hidden flex items-center justify-between gap-3 py-3.5 px-5 border border-slate-200 rounded bg-slate-50 hover:bg-slate-100 transition-colors">
+              <span className="font-oswald text-base font-bold text-[#1E3A5F]">
+                Grade designations &amp; equivalents
+              </span>
+              <span className="text-slate-400 text-sm shrink-0 transition-transform group-open:rotate-180">
+                &#9662;
+              </span>
+            </summary>
+            <div className="pt-5">
+              <p className="text-sm text-slate-500 mb-5">
+                How {label} is referenced across Indian and export naming conventions.
               </p>
+              <div className="overflow-x-auto rounded-lg border border-slate-200 mb-5">
+                <table className="w-full text-sm">
+                  <tbody>
+                    {designations.map((d, i) => (
+                      <tr key={d.system} className={i % 2 ? 'bg-slate-50/50' : 'bg-white'}>
+                        <td className="px-5 py-3 text-slate-600 border-t border-slate-100 w-[45%]">
+                          {d.system}
+                          {d.note && <span className="block text-[11px] text-slate-400">{d.note}</span>}
+                        </td>
+                        <td className="px-5 py-3 font-semibold text-[#1E3A5F] border-t border-slate-100">{d.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {directSk && (
+              <div className="bg-amber-50 border-l-[3px] border-amber-400 rounded-r px-5 py-4">
+                <p className="text-[13.5px] text-slate-700 leading-relaxed">
+                  <strong className="text-slate-900">Reading an SK code correctly.</strong> SK (Seger Kegel) is a
+                  cone designation, and each step carries an accepted minimum Al₂O₃ content in trade practice.
+                  The dependable way to match an SK enquiry to a grade is that minimum alumina figure, which is how
+                  the equivalence above is derived. Note that a brick&rsquo;s measured PCE and its SK trade grade are
+                  two different numbers and will not always agree. Suppliers also differ at the margins, most often
+                  around SK 34. When comparing offers, check Al₂O₃ and PCE together rather than the SK code alone.
+                </p>
+              </div>
+              )}
             </div>
-            )}
-          </section>
+          </details>
           )}
 
           {/* SK series reference — pure cross-reference material, so this is

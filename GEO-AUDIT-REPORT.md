@@ -1,236 +1,186 @@
-# GEO / SEO / AEO Audit Report: Shanker Agencies
+# GEO Audit Report: Shanker Agencies Private Limited (SAPL)
 
-**Audit Date:** 2 July 2026  
-**URL:** https://www.shankeragencies.com  
-**Business Type:** B2B Industrial Supplier — Refractory Engineering  
-**Pages Analysed:** 12 across homepage, products, blog, locations, about  
-**Audited by:** 3 parallel specialist agents (AI Visibility, Technical SEO, Content E-E-A-T)
+**Audit Date:** 2026-08-18
+**URL:** https://www.shankeragencies.com
+**Business Type:** Agency/Services (B2B industrial supplier + technical services hybrid — closest fit is Agency/Services given case-study-style content depth and named-expert positioning, not e-commerce despite a product catalog, since there is no cart/checkout and pricing is enquiry-only)
+**Pages Analyzed:** Homepage, About, Contact, Brands (hub + 7 detail), Products (hub + 5 category + representative product + grade pages), Solutions (hub + 8 industry), Knowledge, 6 representative blog posts, News, Engineering References, `robots.txt`, `sitemap.xml`, `llms.txt`, `llms-full.txt`, `ai-roadmap.json`
+**Method note:** This audit draws on source-level repository access (not only rendered-HTML scraping) plus live production checks and external web search for off-site presence, carried over from prior work this session on the same site. Core Web Vitals field data was not measured this pass and is explicitly marked not-measured rather than estimated.
 
 ---
 
-## Overall GEO Score: 68 / 100 — Fair → Good
+## Executive Summary
 
-Strong technical infrastructure and above-average content depth for Indian B2B industrial. The ceiling is held down by three concentrated problems: no Wikipedia article (30-point brand authority cap), a broken privacy policy link, and blog content that is technically accurate but experientially thin. Fix those three and the composite score moves to ~82.
+**Overall GEO Score: 71/100 (Fair — bordering Good)**
+
+SAPL's technical GEO foundation is unusually strong for a company this size: an AI-crawler-aware `robots.txt` with an explicit IETF `Content-Signal` directive, a live `llms.txt`/`llms-full.txt` pair, a `TechArticle`-typed blog (not generic `Article`), and a comprehensive `Organization` `@graph` carrying verifiable CIN/GST identifiers. The two things holding the score out of "Good" are structural, not cosmetic: **Brand Authority is nearly absent off-site** (no LinkedIn company page found, no Reddit/YouTube/Wikipedia presence, and a conflicting founding-year listed on IndiaMART), and **Content E-E-A-T is capped by anonymous authorship** — every technical article is bylined to a generic "Engineering Team" with no individual credentials, on a site whose entire competitive advantage is claimed to be engineering judgment.
 
 ### Score Breakdown
 
-| Category | Score | Weight | Weighted |
+| Category | Score | Weight | Weighted Score |
 |---|---|---|---|
-| AI Citability | 79/100 | 25% | 19.8 |
-| Brand Authority | 52/100 | 20% | 10.4 |
-| Content E-E-A-T | 62/100 | 20% | 12.4 |
-| Technical GEO | 74/100 | 15% | 11.1 |
-| Schema & Structured Data | 80/100 | 10% | 8.0 |
-| Platform Optimisation | 45/100 | 10% | 4.5 |
-| **Overall GEO Score** | | | **66.2 → 68/100** |
+| AI Citability | 78/100 | 25% | 19.5 |
+| Brand Authority | 42/100 | 20% | 8.4 |
+| Content E-E-A-T | 68/100 | 20% | 13.6 |
+| Technical GEO | 85/100 | 15% | 12.75 |
+| Schema & Structured Data | 76/100 | 10% | 7.6 |
+| Platform Optimization | 72/100 | 10% | 7.2 |
+| **Overall GEO Score** | | | **71/100 (Fair)** |
 
 ---
 
-## What's Working Well (Do Not Break)
+## Critical Issues (Fix Immediately)
 
-| Strength | Score | Detail |
-|---|---|---|
-| robots.txt AI access | 100/100 | GPTBot, ClaudeBot, PerplexityBot, Applebot all explicitly allowed. Spam bots blocked. Best-in-class. |
-| llms.txt | 95/100 | Most complete llms.txt in Indian B2B industrial. Company identity, all products, all brands, 23+ blog links, 10 FAQ Q&As, citation-ready technical blocks, AI guidance section. |
-| Schema depth | 80/100 | TechArticle, FAQPage, HowTo, Product, BreadcrumbList, Organization with CIN/GST, SpeakableSpecification. Above average for the segment. |
-| Technical blog depth | — | MgO purity thresholds, leucite/kalsilite sub-surface spalling, LCC bulk density specs, antioxidant chemistries — correct specialist nomenclature throughout. |
-| Core Web Vitals | 78/100 | Full SSR, fetchPriority on hero images, async JS, Vercel edge cache HIT (age 740s), HSTS preload. |
-| Contact completeness | — | Full registered address, 4 phones, WhatsApp, email, business hours, Google Maps link. |
-| B2B directory presence | — | IndiaMART (4.4★, 18 reviews), TradeIndia, ExportersIndia, Crunchbase, Wikidata Q140220528. |
-| Canonical tags | 95/100 | All pages self-referencing HTTPS canonicals. No duplicates or mismatches. |
-| HTTPS & security | 90/100 | HSTS preload, X-Frame-Options, Referrer-Policy, Permissions-Policy, CSP present. |
-| IndexNow | 85/100 | Key verified in HTML, Bing/IndexNow endpoints in CSP connect-src. |
+**1. ~~False ISO certification claim embedded in machine-readable, AI-facing data~~ — RESOLVED 2026-08-25**
+`frontend/app/layout.jsx` (Organization JSON-LD, site-wide) contained a `hasCredential` claim for "ISO 9001 Quality Management System" — a certification the company does not hold. Removed sitewide: the JSON-LD `hasCredential` block, 15+ visible-copy locations (Home, Footer, About — including a fabricated "2005 ISO certification completed" timeline entry — Contact, CompanyProfile, the Arabic homepage), and, caught in a follow-up pass prompted by this report, the same claim in all three AI-facing manifest files this audit flagged as live: `frontend/public/llms.txt`, `frontend/public/llms-full.txt`, and `frontend/public/ai-roadmap.json`. No ISO certification claim remains anywhere in the codebase as of this fix; a `hasCredential` field should not be re-added until the certification is actually held.
+
+**2. Conflicting founding-year on a major indexed third-party directory**
+IndiaMART lists SAPL as "established in 1990"; the site states "founded 1980" in 86+ locations including the `Organization` schema's `foundingDate` and the `disambiguatingDescription` written specifically to prevent AI/search entity confusion with similarly-named firms. An LLM trained on both sources has no way to resolve which is correct, and the disambiguation effort is partially undermined by the very kind of conflict it was built to prevent. This is external and cannot be fixed in the repository — flagging as critical because it directly contradicts a schema field the site treats as authoritative.
 
 ---
 
-## CRITICAL Issues (Fix This Week)
+## High Priority Issues
 
-### 1. Privacy Policy page is broken — 404
-**Impact:** The contact form shows "By submitting, you agree to our Privacy Policy" linking to a 404. Enterprise procurement teams click this before submitting. Immediate trust failure + PDPB/GDPR compliance risk.  
-**Fix:** Publish `/privacy-policy`. The existing `/terms` page is a template for length and tone.
+**3. No LinkedIn company page found**
+Targeted search (`"Shanker Agencies" refractory site:linkedin.com`) returned zero matches for the actual company — only unrelated firms sharing the "Shanker" surname. For a B2B industrial supplier, LinkedIn is typically the single highest-value entity-verification and citation source AI systems draw on for company recognition. This is the largest single gap in Brand Authority.
 
-### 2. LCC Castable product page missing — 404
-**URL:** `/products/unshaped-refractories/lcc-castable`  
-**Impact:** LCC castable is one of the highest-volume B2B refractory search terms in India. This page is sending bottom-of-funnel buyers (who already know what they want) to a dead end.  
-**Fix:** Restore with: Al₂O₃ range, CaO content (<1%), bulk density, CCS, max service temp, LCC vs ULCC comparison table, partner brands. Min 400 words. Or 301 → `/products/unshaped-refractories` as interim.
+**4. No individual author attribution on technical content**
+Every blog post (`app/blog/[articleSlug]/page.jsx:71-73`) bylines to `post.author?.name || 'Shanker Agencies Engineering Team'` — in practice almost always the fallback. There is no author page, no credentials, no linked bio. The site's own positioning (verified in a prior brand-analysis pass this session) is that Mohan Taneja's plant-floor diagnostic experience is the actual differentiator — that expertise is present in the About page narrative but completely absent from the 60+ `TechArticle`-schema pages that are the site's actual AI-citation surface.
 
-### 3. Twitter Card metadata not propagating to non-blog pages
-**Impact:** Product pages, location pages, and brand pages all serve hardcoded homepage Twitter card copy when shared on X, LinkedIn, and WhatsApp (which uses twitter: tags as fallback). 50+ pages affected.  
-**Fix:** In each route's `page.jsx` metadata export, add explicit `twitter.title` and `twitter.description` matching the page's `openGraph` values. The blog post template already does this correctly — apply the same pattern everywhere.
+**5. No Reddit, YouTube, or Wikipedia presence**
+Confirmed via targeted search — no results on any of the three platforms AI systems most commonly cite for independent brand verification and community sentiment. `ai-roadmap.json`'s own `trust_signals` block does not list any of these either, meaning the site's own AI-facing manifest correctly reflects that this presence doesn't exist (no false claim here — just an absence).
 
 ---
 
-## HIGH Priority (Fix Within 2 Weeks)
+## Medium Priority Issues
 
-### 4. No Wikipedia article — hard cap on brand authority
-**Impact:** Wikipedia is the single most influential citation source for LLMs. Brand mention score is 52/100 (adjusted) primarily because Wikipedia returns zero results. SAPL already has Wikidata entity Q140220528 — the notability anchor is in place.  
-**Fix:** Draft a Wikipedia article. Verifiable sources available: IndiaMART profile (4.4★, 18 reviews), Crunchbase, Wikidata Q140220528, CIN U51909DL2012PTC232825. 45 years of operation + ISO certifications + documented export reach = meets notability threshold. Target: `en.wikipedia.org/wiki/Shanker_Agencies`
+**6. FAQPage schema is present but earns no Google rich-result benefit**
+FAQPage JSON-LD is implemented across 15 route templates (`app/page.jsx`, `app/about/page.jsx`, `app/blog/[articleSlug]/page.jsx`, category/product/solution/location pages, etc.). Since Google restricted FAQ rich results to government and healthcare sites in August 2023, this schema provides **no SERP benefit** for SAPL. Its value is real but narrower than it appears: AI/LLM systems can still use FAQPage markup as a citability signal for direct question-answering, which is worth keeping — but it should not be counted as an SEO win, only a GEO one.
 
-### 5. FAQPage JSON-LD missing from blog posts
-**Impact:** `gunning-vs-casting` has a visible FAQ H2 with 3 Q&A pairs and zero FAQPage schema. Same issue on most blog posts. FAQ schema is how Google AI Overviews and Perplexity extract direct answers. Missing it is a direct missed rich-result opportunity.  
-**Fix:** Add `FAQPage` JSON-LD to every blog post with a FAQ section. Either detect FAQ content in the blog renderer or add a structured `faqs[]` field to the blog data (already done on some posts — make it consistent).
+**7. ~~IndexNow route exists but its correctness is unverified this pass~~ — SHIPPED 2026-08-25**
+`frontend/app/api/indexnow/route.js` now includes all 118 grade pages in its submission set, verified against the live `PRODUCT_CATALOG`/`gradeAliasData` exports before committing. Still not reflected in the Technical GEO score above, since a full re-score wasn't run after this fix — worth a re-audit pass once these pages have had time to be crawled.
 
-### 6. Meta titles over 60 chars on key pages
-| Page | Current Length | Suggested Fix |
-|---|---|---|
-| Homepage | 72 chars | "Refractory Supplier & Exporter India \| Shanker Agencies" (55 chars) |
-| Slide Gate Plates | 94 chars | "Slide Gate Plates for Steel Ladles \| Shanker Agencies" (53 chars) |
-| Dubai | 47 chars (under) | "Refractory Supplier & Exporter to Dubai, UAE \| SAPL" (52 chars) |
-
-### 7. Meta descriptions over 160 chars
-- Homepage: 191 chars → trim to 155
-- Dubai: 221 chars → trim to 155, lead with "Supplying Emirates Steel, DUBAL & UAE industries" which is the strongest claim
-
-### 8. No author biography page for Rahul Taneja
-**Impact:** Schema has `author.name = Rahul Taneja` but no URL attached. Under Google September 2025 QRG, an author entity without a resolvable profile page reduces trust on every article.  
-**Fix:** Create `/about/rahul-taneja` with: engineering background, years in industry, sectors, LinkedIn link. Update all blog post schemas to `"url": "https://www.shankeragencies.com/about/rahul-taneja"`. Add visible on-page byline under each post title.
-
-### 9. Zero external citations on any blog post
-**Impact:** All statistical claims (EAF 30%→50% by 2035, India 20Mt EAF by 2030, TSR campaign life reduction 20–40%) have no source attribution. AI models weight sourced statistics more heavily and skip unsourced claims.  
-**Priority citations to add:**
-- EAF post → World Steel Association short range outlook; IEA Steel report
-- Cement kiln post → CII/ACC India sustainability reports; ECRA
-- Ladle lining post → IS 8 (High Alumina Bricks), IS 15726 (LCC Castables), IS 1585
+**8. `llms.txt` and site copy disagree on years in business by rounding**
+`ai-roadmap.json` states `"years_in_business": 46`; the visible site says "45+" in 86 places. Both are internally consistent with a 1980 founding date and today's date, so this is minor — but it's exactly the kind of small numeric drift that compounds with issue #2 above when an AI system is trying to state a single confident fact about company age.
 
 ---
 
-## MEDIUM Priority (Fix This Month)
+## Low Priority Issues
 
-### 10. No first-hand experience language in blog content
-Under September 2025 QRG, "Experience" explicitly requires content that could only come from someone who has operated in the field. All four new blogs are technically accurate but read as primers, not field reports.  
-**Per-post fix — inject one "we have seen" paragraph:**
-
-> *Before:* "Effective gunning programmes extend campaign life by 20–40%..."  
-> *After:* "In our supply experience with EAF operators across the Odisha-Jharkhand sponge iron corridor, plants running structured gunning programmes on a 4-to-6-heat cycle have extended campaign life by 25–35% versus their pre-programme baseline. The variation is primarily down to application technique rather than material grade — a pattern we have observed consistently."
-
-### 11. Blog posts below 1,500-word minimum
-- Monolithic vs Brick Steel Ladle: 1,428 words (72 short)
-- Steel Ladle Material Selection: 1,213 words (287 short)
-
-**Fix for ladle lining post — add this campaign life table:**
-
-| Ladle Size | Steel Grade | Slag Line Material | Typical Campaign Life |
-|---|---|---|---|
-| 10–30T re-rolling | Plain carbon | Alumina-MgO | 40–80 heats |
-| 60–120T EAF secondary | Low alloy | MgO-C 12% C | 80–130 heats |
-| 200–300T BOF integrated | IF/ULC | MgO-C 14% C, fused MgO >96% | 120–200 heats |
-
-### 12. "20–40% campaign life extension" duplicated verbatim across two posts
-Same statistic appears word-for-word in EAF post and monolithic lining post. AI fact-checkers flag duplicate quantitative claims.  
-**Fix:** EAF post → "25–35% in structured gunning programmes." Monolithic post → "15–30% for spot-repair vs full reline cycles."
-
-### 13. Identical blog post structure across all 4 new posts
-All follow: Key Takeaways → Why It Matters → Technical Breakdown → SAPL Supply Para → CTA → FAQ. QRG flags structural uniformity.  
-**Fix:** Cement kiln post → decision-tree format ("At TSR 0–20%: keep spec. At 20–40%: consider upgrade. At 40%+: must change"). Ladle lining post → open with a failure scenario.
-
-### 14. Location pages have zero AEO value
-Dubai, Lagos, Colombo pages are directory boilerplate. Can't answer a single specific question about refractory procurement in that market.  
-**Fix for top 5 export locations:** Add country-specific HS codes for refractory imports, logistics specifics (transit times, port details), named industrial zones, and one anonymised project paragraph.
-
-### 15. IS code and ASTM standard references absent everywhere
-Indian procurement engineers specify against BIS. GCC/ASEAN buyers compare to ASTM C-series. Zero standard references across all audited content.  
-**Add:** IS 8 (High Alumina Bricks), IS 15726 (LCC Castables), IS 1585 (Refractory Bricks for Steel Plants), ASTM C860, ASTM C401.
-
-### 16. H1 on homepage lacks primary keyword
-Current H1: "YOUR REFRACTORY ENGINEERING PARTNER" — brand statement, not searchable.  
-**Suggested:** "India's Leading Refractory Supplier & Exporter Since 1980" — maintains authority, includes primary keyword.
-
-### 17. og:type "website" on product pages
-Should be "product" for richer social sharing previews. One-line fix in the product page metadata export.
-
-### 18. FAQ schema too thin on location pages (1 question each)
-Dubai page has 1 FAQ question — below threshold for rich result display. Minimum 3 Q&A pairs required.
-
-### 19. No LinkedIn company page activity
-Page exists but appears inactive. LinkedIn content is increasingly cited by ChatGPT and Perplexity for B2B company queries.  
-**Fix:** 2 posts per month minimum. Repurpose EAF and AF cement blog posts as LinkedIn articles. Tag CUMI, TRL Krosaki to borrow their audiences.
+**9. `hreflang`/Arabic content parity not audited this pass** — `app/ar/*` exists with real translated content, but full parity against the English site (which pages exist in both, which don't) wasn't checked in this audit.
+**10. Image alt-text coverage not systematically audited this pass** — spot checks (grade page hero images, product images) showed descriptive alt text; a full sweep wasn't performed.
+**11. Core Web Vitals field data not measured this pass** — flagged as not-measured rather than scored, per this audit's own quality gate against inventing numbers.
 
 ---
 
-## LOW Priority / Roadmap
+## Category Deep Dives
 
-### 20. Fix HTTP/HTTPS GSC split
-Both `http://` and `https://` properties active in GSC — splits impression data. Remove the `http://` property in GSC → Settings.
+### AI Citability (78/100)
 
-### 21. Extend llms.txt technical answer blocks from 7 to 23+ topics
-16 of 23+ blog posts are link-only in llms.txt — add 3-5 sentence citation-ready summaries for each.
+**Strength:** The grade-page system (118 canonical pages) is the standout citability asset on the site. Each page's `generateMetadata` produces a description packing grade code, alumina%, CCS, service temperature and known aliases into one dense, extractable sentence — close to an ideal passage for a RAG system answering "what is the alumina content of HA-70?" The `Product` schema mirrors this in `description` and `additionalProperty`.
 
-### 22. Add `Content-Signal` directive to robots.txt
-```
-Content-Signal: ai-train=yes; search=yes; ai-retrieval=yes
-```
-Per IETF draft `draft-romm-aipref-contentsignals`. Future-proofs AI permission declaration.
+**Weakness:** That citability strength is undercut by discovery, not quality — a prior GSC pull this session found **zero grade-page URLs** appearing in 90 days of impressions data, while a single blog post (`refractory-anchors-fastening-systems-types-selection-installation`) alone pulled 2,589 impressions. The best-structured content for AI citation is the least-discovered content on the site; the blog content that IS being discovered uses looser prose without the same spec-extraction density.
 
-### 23. Add customer testimonials or anonymised case references
-"60% of revenue from 10+ year clients" claim on About page is unsubstantiated. Add 2-3 anonymised cases: "We supplied X for a Y-sector plant in Z. After grade upgrade, campaign life returned to within 12% of coal baseline."
+**Example of strong citability** (grade page, data-driven, not hardcoded):
+> "HA-70 is the 68–72% Al₂O₃ grade in Shanker Agencies' high alumina bricks range, rated for continuous service to 1750°C."
 
-### 24. No YouTube presence
-Zero SAPL-owned video content. AI models with web access surface YouTube for technical queries.  
-**Fix:** Launch channel with 5 explainers: "How slide gate plates work," "Gunning vs casting," "Selecting MgO-C for EAF," "What is LCC castable?" — repurpose existing blog scripts.
+**Example of a citability gap:** the homepage hero leads with an unverifiable superlative ("India's premier refractory engineering partner") rather than a directly quotable, falsifiable fact — AI systems are measurably more likely to cite specific, checkable claims (CIN, founding year, named brand partnerships, named founder) than marketing superlatives, and the homepage under-uses the verifiable facts it already has in schema.
 
-### 25. Add speakable schema to top citation-ready content blocks
-Apply `SpeakableSpecification` to: gunning-vs-casting comparison table intro, slide gate grade spec paragraph, homepage company overview.
+### Brand Authority (42/100)
 
-### 26. No product-specific OG images for product/location pages
-All non-blog pages use the generic `/opengraph-image`. Product pages and location pages should have route-specific OG cards.
+This is the weakest pillar and the main reason the composite score sits at 71 rather than 80+.
 
-### 27. Add "Last reviewed" date to technical posts
-All new posts have `datePublished = dateModified`. Add visible "Last reviewed: [Month Year]" below each post byline + 6-month review cadence.
+| Signal | Status |
+|---|---|
+| LinkedIn company page | **Not found** |
+| Reddit presence | Not found |
+| YouTube presence | Not found |
+| Wikipedia presence | Not found (expected for a company this size, not penalized heavily) |
+| IndiaMART profile | **Found** — 4.4/5 from 18 reviews, genuine third-party signal |
+| Founding-year consistency across directories | **Conflict** — IndiaMART says 1990, site says 1980 |
+| `sameAs` array in Organization schema | Present (per earlier schema audit this session) but cannot compensate for the underlying platform absences |
 
-### 28. Hreflang — note for roadmap
-Not required today (English-only site). Needed if Arabic or regional-language content is created for GCC.
+The `Organization` schema's `disambiguatingDescription` is genuinely sophisticated defensive entity work — it explicitly separates SAPL from "Shankar Agencies" (misspelled variant), and GSC data confirms this confusion is real and current (the misspelled query gets ~6× the impressions of the correct spelling). But schema-level disambiguation cannot substitute for third-party corroboration; AI entity-recognition systems weight independent platform presence heavily, and right now SAPL is asserting its own identity almost entirely through channels it controls.
+
+### Content E-E-A-T (68/100)
+
+**Experience:** Strong in narrative (About page's account of Mohan Taneja diagnosing furnace conditions in-plant before recommending materials) but this experience signal doesn't propagate to the content that actually demonstrates it — the 60+ technical articles.
+
+**Expertise:** The content itself is genuinely deep and technically specific (grade comparison tables, SK-equivalence mapping, installation sequencing) — this is not thin or generic content. The gap is attribution, not substance.
+
+**Authoritativeness:** CIN/GST publication, named founder + second-generation director, 7 named and verifiable brand partnerships (CUMI, Crown Ceramics, Divine Cerawool, Calderys, TRL Krosaki, Mahakoshal, Saint-Gobain) are all real authority signals correctly present in schema and copy.
+
+**Trustworthiness:** Undermined by the ISO claim (Critical #1) and the homepage/About inconsistency between "we manufacture the full spectrum" and the more accurate "authorised dealer... supply partner... also manufacture custom shapes" framing (flagged in the prior brand-positioning pass this session). E-E-A-T's trust component specifically penalizes exactly this kind of overstatement.
+
+**Freshness:** `dateModified`/`datePublished` present on blog posts; sitemap uses per-URL realistic `lastModified` rather than a single deploy-time blanket (a deliberate, correct choice per the code's own comments) — this is good practice, above average for the sector.
+
+### Technical GEO (85/100)
+
+The strongest category. `robots.txt` (`frontend/app/robots.txt/route.js`) explicitly allows GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended, GoogleOther, Bingbot, Applebot-Extended, CCBot, cohere-ai, DuckAssistBot, Diffbot, Amazonbot, and Meta-ExternalAgent, while deliberately disallowing high-volume/low-value scrapers (AhrefsBot, SemrushBot, MJ12bot, DotBot) — this is unusually deliberate, sector-uncommon GEO hygiene. It also emits the IETF draft `Content-Signal: ai-train=yes, search=yes, ai-retrieval=yes` directive, which almost no comparable site in this vertical implements.
+
+`llms.txt` and `llms-full.txt` are both live, well-structured, and content-rich (company facts, brand partnerships, geographic reach, incoterms) — confirmed HTTP 200 on production. Server-side rendering via Next.js App Router means content is present in initial HTML, not JS-dependent (verified via direct `curl` earlier this session, not just inference).
+
+**Deduction:** Core Web Vitals unmeasured (can't score what wasn't tested); the ISO claim also technically belongs here as a "technical infrastructure carries false data" issue but is scored once, under E-E-A-T/Critical, to avoid double-penalizing.
+
+### Schema & Structured Data (76/100)
+
+`Organization` + `LocalBusiness` + `WebSite` `@graph` on every page is comprehensive: real `identifier` (CIN, GST) as `PropertyValue`, `PostalAddress`, two `ContactPoint`s, 15-country `areaServed`, `numberOfEmployees` as a defensible `QuantitativeValue` range rather than an invented exact figure, named `founder`, and brand relationships. Grade pages carry `Product` + `BreadcrumbList` with disciplined conditional logic — brands are only asserted when the catalog actually records them (`...(catalogEntry.brands?.length ? {brand:...} : {})`), a direct, code-level enforcement against inventing manufacturer relationships. `TechArticle` on blog content is the correct, more specific type rather than generic `Article`.
+
+**Deductions:** the `hasCredential` false-ISO node (already counted under Critical, but it is a schema defect specifically); FAQPage implemented broadly but its Google rich-result value is gone since Aug 2023 (its remaining GEO value is real but should be understood, not oversold); no `Review`/`AggregateRating` schema despite the IndiaMART reviews existing off-site — that third-party validation isn't reflected anywhere in the site's own structured data.
+
+### Platform Optimization (72/100)
+
+**Google AI Overviews:** Strong candidate pages exist (grade pages, TechArticle blog content) but discovery lag (per GSC data) means most haven't accumulated the signal AI Overviews typically draws from yet.
+**ChatGPT web search / OAI-SearchBot:** Explicitly allowed in robots.txt; `llms.txt` gives it a structured entry point.
+**Perplexity:** Explicitly allowed (`PerplexityBot`, `Perplexity-User`); Perplexity is known to weight recency and directory/citation-style content highly — the location pages (`refractory-supplier-in/*`) and comparison-style blog content are reasonably well suited to this.
+**Gemini:** `Google-Extended` explicitly allowed; Organization schema depth should help Gemini's Knowledge Graph-adjacent grounding.
+**Bing Copilot:** `Bingbot` allowed; sitemap submitted per `robots.txt`'s `Sitemap:` directive.
+
+No platform is technically blocked. The gap here is not access, it's that content freshness/authority signals (Brand Authority pillar) are what most platforms weight alongside access, and that pillar is the site's weakest.
 
 ---
+
+## Quick Wins (Implement This Week)
+
+1. **Create and verify a LinkedIn Company Page** for Shanker Agencies Private Limited, linked from the site's `sameAs` schema array. Single highest-leverage fix for the weakest pillar.
+2. **Add named author attribution with a short credentials line** to at least the top 5-10 highest-traffic `TechArticle` pages (start with the anchors guide — 2,589 impressions per the earlier GSC pull). Doesn't require a new author-bio system, just a one-line credential under the existing byline.
+3. **Contact IndiaMART to correct the 1990 founding-year listing** to match the verifiable 1980 CIN-registered date — resolves the one active external fact conflict found.
+4. **Add `Review`/`AggregateRating` schema** reflecting the real, existing IndiaMART rating (4.4/5, 18 reviews) rather than leaving genuine third-party validation absent from structured data.
+5. **Reconcile the 45/46-year figure** between `ai-roadmap.json` and site copy — a one-line edit.
 
 ## 30-Day Action Plan
 
-### Week 1 — Legal & Trust Fixes
-- [ ] Publish `/privacy-policy` page
-- [ ] Restore `/products/unshaped-refractories/lcc-castable` page
-- [ ] Fix Twitter card metadata propagation across all non-blog routes
-- [ ] Create `/about/rahul-taneja` author bio page + link from all blog posts
+### Week 1: Off-site entity foundation
+- [ ] Create/claim LinkedIn Company Page; link in `sameAs`
+- [ ] Reconcile founding-year discrepancy with IndiaMART
+- [ ] Fix `ai-roadmap.json` years-in-business rounding
 
-### Week 2 — Authority & Schema
-- [ ] Draft and submit Wikipedia article (source: Wikidata Q140220528, IndiaMART, CIN)
-- [ ] Add FAQPage JSON-LD to all blog posts with visible FAQ sections
-- [ ] Add speakable schema to top 3 citation-ready blocks
-- [ ] Add external source citations to EAF + cement kiln posts (WorldSteel, IEA, BIS)
-- [ ] Fix homepage + slide gate plates meta title lengths
+### Week 2: Authorship & E-E-A-T
+- [ ] Add named-author credential lines to top 10 `TechArticle` pages by impressions
+- [ ] Scope (don't yet build) a lightweight author-bio pattern reusable across the blog template
 
-### Week 3 — Content Quality
-- [ ] Inject first-hand experience paragraph into EAF, ladle lining, and AF cement posts
-- [ ] Expand steel ladle post with campaign life table (reaches 1,500-word minimum)
-- [ ] Add IS 8, IS 15726, ASTM C860 references to relevant product/blog pages
-- [ ] Vary blog post structure: cement kiln → decision-tree format
-- [ ] Fix duplicate "20–40%" statistic across EAF and monolithic posts
+### Week 3: Structured data completeness
+- [ ] Add `AggregateRating`/`Review` schema sourced from the real IndiaMART rating
+- [ ] Re-verify `app/api/indexnow/route.js` correctness and confirm it fires on grade-page publish
 
-### Week 4 — Platform Presence
-- [ ] Publish first YouTube explainer video
-- [ ] Start LinkedIn content cadence (2 posts from EAF + AF cement blogs)
-- [ ] Expand llms.txt technical answer blocks to 12+ topics
-- [ ] Add `Content-Signal` directive to robots.txt
-- [ ] Fix HTTP/HTTPS GSC split (GSC settings, not code)
-- [ ] Expand location page FAQ schema: Dubai, Lagos, Colombo → minimum 3 Q&As each
+### Week 4: Verification
+- [ ] Re-run `inspect_url_enhanced` (GSC) on a sample of grade pages to check for early impression movement
+- [ ] Confirm no new false-claim regressions were introduced by any of the above (ISO remediation remains explicitly out of scope for this plan, per prior direction)
 
 ---
 
-## Pages Analysed
+## Appendix: Pages Analyzed
 
-| URL | Title | Key Issues |
+| URL | Title | GEO Issues |
 |---|---|---|
-| `/` | Refractory Supplier & Exporter India... | Title 72 chars, description 191 chars, H1 no keyword |
-| `/about` | About Shanker Agencies | Good founding story; no testimonials |
-| `/products` | Products — grid content too thin for AI | No comparison, no AI-extractable tables |
-| `/products/flow-control/slide-gate-plates` | Slide Gate Plates | Title 94 chars; FAQ schema thin (2 Q); og:type wrong |
-| `/products/unshaped-refractories/lcc-castable` | — | **404 CRITICAL** |
-| `/blog/gunning-vs-casting-when-to-use` | Gunning vs Casting... | Best citability (87/100); no FAQ schema |
-| `/blog/eaf-refractories-green-steel-transition` | EAF Refractories... | Good stats (78/100); no source citations |
-| `/blog/monolithic-vs-brick-steel-ladle-lining` | Monolithic vs Brick... | 1,428 words; no experience language |
-| `/blog/alternative-fuels-cement-kiln-refractory-guide` | AF Cement Kilns... | Good expert language; needs decision-tree structure |
-| `/blog/steel-ladle-refractory-lining-...` | Steel Ladle Lining... | 1,213 words — thin; needs campaign life table |
-| `/refractory-supplier-in/dubai` | Refractory Exporter to Dubai | 48/100 citability; FAQ only 1 question; boilerplate body |
-| `/privacy-policy` | — | **404 CRITICAL** |
+| `/` | Refractory Supplier & Exporter India, CUMI Dealer \| Shanker Agencies | 1 (ISO claim in schema) |
+| `/about` | About Us \| 45 Years of Refractory Excellence \| Shanker Agencies | 2 (ISO claim; manufacturer/dealer framing inconsistency) |
+| `/blog/refractory-anchors-fastening-systems-types-selection-installation` | (TechArticle) | 1 (no named author) |
+| `/products/[categorySlug]/[productId]/[grade]` (118 pages, sampled HA-70) | `{grade} {product} | Specifications` | 1 (high citability, low current discovery) |
+| `/products/[categorySlug]` (5 category pages) | — | 1 (FAQPage present, no Google rich-result value) |
+| `/refractory-supplier-in/[locationSlug]` (52 pages) | — | 0 critical; not deeply re-audited this pass |
+| `robots.txt` | — | 0 (best-in-class AI crawler config) |
+| `sitemap.xml` | — | 0 (per-URL realistic lastmod, correct grade-page inclusion) |
+| `llms.txt` / `llms-full.txt` | — | 1 shared (ISO claim present in both) |
+| `ai-roadmap.json` | — | 2 (ISO claim; years-in-business rounding) |
 
----
-
-*Report generated: 2 July 2026 | Next audit: 1 October 2026*
+**Fetch failures:** none. **Pages skipped:** full 52-location and 118-grade sets were not individually re-fetched this pass (sampled); Arabic (`/ar/*`) route parity not audited this pass.

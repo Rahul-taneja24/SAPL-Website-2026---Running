@@ -23,6 +23,8 @@
 import { LOCATIONS_DATA } from '@/data/locationsData';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
 import { PRODUCT_SEO } from '@/data/productsSeoData';
+import { PRODUCT_CATALOG } from '@/data/productCatalogData';
+import { slugifyGrade, getGradeLabel } from '@/data/gradeAliasData';
 import { CASE_STUDIES } from '@/data/caseStudiesData';
 
 const INDEX_NOW_KEY = '68c9e978104b40548276dada2151c101';
@@ -66,6 +68,17 @@ function buildAllUrls() {
   // Product detail pages
   PRODUCT_SEO.forEach(({ categorySlug, productId }) => {
     urls.add(`${BASE}/products/${categorySlug}/${productId}`);
+  });
+
+  // Per-grade pages, canonical slugs only (alias slugs redirect to these).
+  Object.entries(PRODUCT_CATALOG).forEach(([categorySlug, category]) => {
+    category.products?.forEach((product) => {
+      product.specs?.forEach((row) => {
+        const label = getGradeLabel(row);
+        if (!label) return;
+        urls.add(`${BASE}/products/${categorySlug}/${product.id}/${slugifyGrade(label)}`);
+      });
+    });
   });
 
   // Industries + Solutions
