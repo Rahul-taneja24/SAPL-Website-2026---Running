@@ -218,7 +218,7 @@ const Navbar = () => {
           starts scrolling so it stops permanently consuming viewport height;
           scrolling back to the top restores it. Always visible on desktop. */}
       <div
-        className={`bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF] text-white px-4 text-xs overflow-hidden transition-all duration-300 lg:max-h-none lg:py-2 lg:opacity-100 ${
+        className={`bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF] text-white px-4 text-xs overflow-hidden transition-all duration-300 lg:max-h-none lg:py-1 lg:opacity-100 ${
           scrolled ? "max-h-0 py-0 opacity-0" : "max-h-16 py-1 opacity-100"
         }`}
       >
@@ -228,7 +228,7 @@ const Navbar = () => {
             <div className="flex items-center gap-4 min-w-0">
               <a
                 href="tel:+919899957888"
-                className="flex items-center gap-1.5 py-3.5 hover:text-blue-200 transition-colors"
+                className="flex items-center gap-1.5 py-2 hover:text-blue-200 transition-colors"
                 aria-label="Call primary number"
                 onClick={() => trackEvent('phone_click', { cta_type: 'navbar_topbar' })}
               >
@@ -236,6 +236,17 @@ const Navbar = () => {
                 {/* nowrap keeps the number on one line at 320px, where it
                     previously broke across two lines and grew the header. */}
                 <span className="font-medium whitespace-nowrap">+91 98999 57888</span>
+              </a>
+              {/* Second mobile line — hidden below sm so the tight 320px
+                  topbar layout above is never put back at risk. */}
+              <a
+                href="tel:+919810205154"
+                className="hidden sm:flex items-center gap-1.5 py-2 hover:text-blue-200 transition-colors"
+                aria-label="Call second number"
+                onClick={() => trackEvent('phone_click', { cta_type: 'navbar_topbar_secondary' })}
+              >
+                <Phone size={11} className="flex-shrink-0" />
+                <span className="font-medium whitespace-nowrap">+91 98102 05154</span>
               </a>
             </div>
             <a
@@ -255,7 +266,7 @@ const Navbar = () => {
             <div className="relative">
               <button
                 onClick={() => setShowLangMenu((p) => !p)}
-                className="flex items-center gap-1.5 px-2 py-4 -mx-1 hover:text-blue-200 transition-colors"
+                className="flex items-center gap-1.5 px-2 py-2 -mx-1 hover:text-blue-200 transition-colors"
                 aria-label="Select language"
                 data-testid="language-selector"
               >
@@ -292,7 +303,7 @@ const Navbar = () => {
               <select
                 value={region}
                 onChange={(e) => onRegionChange(e.target.value)}
-                className="bg-transparent border-none text-xs cursor-pointer focus:outline-none py-3.5"
+                className="bg-transparent border-none text-xs cursor-pointer focus:outline-none py-2"
                 aria-label="Select region"
                 data-testid="region-selector"
               >
@@ -380,7 +391,7 @@ const Navbar = () => {
         aria-label="Main navigation"
       >
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-14">
             {/* Logo */}
             <Link
               href="/"
@@ -446,7 +457,7 @@ const Navbar = () => {
                 >
                   <Link
                     href={link.path}
-                    className={`flex items-center gap-1 px-3.5 py-5 text-[13px] font-semibold transition-colors whitespace-nowrap border-b-2 ${
+                    className={`flex items-center gap-1 px-3.5 py-4 text-[13px] font-semibold transition-colors whitespace-nowrap border-b-2 ${
                       isActive(link.path)
                         ? "text-[#1E40AF] border-[#F97316]"
                         : "text-gray-600 hover:text-[#1E3A5F] border-transparent hover:border-gray-200"
