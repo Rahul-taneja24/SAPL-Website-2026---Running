@@ -143,17 +143,25 @@ const Footer = () => {
               <div className="flex items-start gap-3 text-gray-400 text-sm">
                 <MapPin size={15} className="mt-0.5 flex-shrink-0 text-[#F97316]" aria-hidden="true" />
                 <div>
-                  <p>553, Main Grand Trunk Road, East Ram Nagar, Shahdara</p>
+                  {/* Explicit line breaks, not left to reflow — the column is
+                      narrower than the viewport-width breakpoints assume, and
+                      natural wrapping was splitting "Ram Nagar" across lines. */}
+                  <p>553, Main Grand Trunk Road,</p>
+                  <p>East Ram Nagar, Shahdara</p>
                   <p>Delhi 110032, India</p>
                 </div>
               </div>
               <div className="flex items-start gap-3 text-gray-400 text-sm">
                 <Phone size={14} className="text-[#3B82F6] flex-shrink-0 mt-1" aria-hidden="true" />
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-1">
-                  <a href="tel:+919899957888" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98999 57888</a>
-                  <a href="tel:+919810205154" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98102 05154</a>
-                  <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98119 09394</a>
-                  <a href="tel:+918800203083" className="hover:text-[#F97316] transition-colors block" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 88002 03083</a>
+                {/* Single column always — this card sits in a narrow footer
+                    column regardless of viewport width, so a viewport-based
+                    sm:grid-cols-2 was going two-wide with no room, wrapping
+                    each number mid-digit. whitespace-nowrap is the backstop. */}
+                <div className="flex flex-col gap-1.5">
+                  <a href="tel:+919899957888" className="hover:text-[#F97316] transition-colors whitespace-nowrap" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98999 57888</a>
+                  <a href="tel:+919810205154" className="hover:text-[#F97316] transition-colors whitespace-nowrap" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98102 05154</a>
+                  <a href="tel:+919811909394" className="hover:text-[#F97316] transition-colors whitespace-nowrap" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 98119 09394</a>
+                  <a href="tel:+918800203083" className="hover:text-[#F97316] transition-colors whitespace-nowrap" onClick={() => trackEvent('phone_click', { cta_type: 'footer' })}>+91 88002 03083</a>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-gray-400 text-sm">
