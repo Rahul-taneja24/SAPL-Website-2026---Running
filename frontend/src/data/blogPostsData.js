@@ -6177,6 +6177,84 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["slide-gate-plates", "magnesia-carbon-bricks", "high-alumina-bricks"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 65. Refractory Solutions for FCC Units and Hydrogen Reformers
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 65,
+    slug: "refractory-solutions-fcc-units-hydrogen-reformers",
+    title: "Refractory Solutions for FCC Units and Hydrogen Reformers: A Buyer's Guide",
+    metaTitle: "Refractory for FCC Units & Hydrogen Reformers | SAPL Guide",
+    metaDescription: "Refractory selection for FCC cyclones, risers and hydrogen reformer radiant walls: erosion resistance, silica migration risk, and what to specify.",
+    category: "Technical Guide",
+    tags: [
+      "FCC unit refractory",
+      "hydrogen reformer refractory",
+      "erosion resistant castable",
+      "hex mesh refractory lining",
+      "sulfur recovery unit refractory",
+      "petrochemical refractory",
+    ],
+    readTime: "9 min",
+    publishDate: "2026-09-02",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200&q=80",
+    keyTakeaways: [
+      "FCC units and hydrogen reformers are two of the most demanding refractory applications in a refinery, but for opposite reasons: FCC wears mechanically from catalyst erosion, reformers degrade chemically from hydrogen attack on silica.",
+      "In an FCC cyclone or riser, the refractory's abrasion resistance matters more than its temperature rating, since catalyst particle erosion, not heat, is usually what ends campaign life.",
+      "Hydrogen atmospheres in reformers react with silica in the lining at high temperature, breaking it down and contaminating downstream catalyst, which is why high-purity, low-silica alumina brick is specified for these zones, not general-purpose firebrick.",
+      "Hex mesh anchoring systems are standard for erosion-resistant castable in FCC cyclones, and installation quality there matters as much as the material grade itself.",
+      "This is a genuine gap in refractory-industry content today: none of the major refractory suppliers publish buyer-facing guidance specific to FCC or hydrogen reformer applications, despite both being common, recurring turnaround scope items.",
+    ],
+    faqs: [
+      { question: "What refractory is used in an FCC unit?", answer: "FCC units use erosion-resistant, high-strength castable refractory in the reactor, regenerator, cyclones and riser, typically silicon carbide-bearing or high-alumina low cement castable, installed over hex mesh or V-anchor systems to resist the constant catalyst particle erosion these zones see. Material selection is driven primarily by abrasion resistance, not temperature rating, since erosion, not heat, is usually what ends campaign life in an FCC unit." },
+      { question: "Why do hydrogen reformers need special refractory?", answer: "Hydrogen gas reacts with silica in refractory linings at high reformer operating temperatures, a process called silica migration, which degrades the lining over time and can contaminate the catalyst bed downstream. High-purity, low-silica alumina brick and castable are specified for hydrogen-contact zones specifically to minimise this reaction, rather than general-purpose firebrick, which typically carries higher silica content." },
+      { question: "What is hex mesh refractory lining and where is it used?", answer: "Hex mesh is a welded steel mesh anchoring system, hexagonal cells welded to the vessel shell, used to hold erosion-resistant castable refractory in place in high-wear zones such as FCC cyclones and risers. It gives the castable a mechanical key across the full surface rather than relying on widely spaced individual anchors, which matters in zones under constant particle erosion." },
+      { question: "How is FCC refractory different from typical furnace refractory?", answer: "Typical furnace refractory is selected mainly for temperature rating and thermal cycling resistance. FCC refractory is selected primarily for abrasion resistance against constant catalyst particle erosion, which is a mechanical wear problem more than a thermal one. A refractory grade that performs well in a standard furnace application will often wear out prematurely in an FCC cyclone or riser if abrasion resistance was not the primary selection criterion." },
+      { question: "Does Shanker Agencies supply refractory for refineries and petrochemical plants?", answer: "Shanker Agencies supplies erosion-resistant castables, high-purity alumina brick, ceramic fibre insulation and hex mesh anchoring systems suited to FCC units, hydrogen reformers, sulfur recovery units and other refinery/petrochemical applications, with export documentation and CIF delivery to GCC ports. Contact our engineering team with your vessel type and duty to discuss a supply plan." },
+    ],
+    excerpt:
+      "FCC units and hydrogen reformers fail for opposite reasons, mechanical erosion in one, chemical hydrogen attack in the other, yet almost no refractory supplier publishes buyer-facing guidance for either. This guide covers what actually drives material selection in both, and what to specify before your next turnaround.",
+    content: `<h2>Two Refinery Applications, Two Different Failure Mechanisms</h2>
+<p><strong>FCC units and hydrogen reformers are both demanding refractory applications, but the refractory in each fails for essentially opposite reasons.</strong> In a Fluid Catalytic Cracking (FCC) unit, catalyst particles moving at high velocity erode the lining mechanically, an abrasion problem more than a heat problem. In a hydrogen reformer, the hydrogen-rich atmosphere itself reacts chemically with the refractory's silica content over time, a slow chemical degradation problem that has nothing to do with mechanical wear. Specifying the same general-purpose refractory approach for both is a common mistake, because the property that actually matters is different in each case.</p>
+<p>This is also a genuine content gap: checking the major refractory suppliers publishing technical content today, none currently address FCC or hydrogen reformer applications specifically as buyer-facing guidance, despite both being recurring, well-understood turnaround scope items in any refinery.</p>
+
+<h2>FCC Units: Erosion Is the Real Design Constraint</h2>
+<p>In the reactor, regenerator, cyclones and riser of an FCC unit, catalyst particles are in constant, high-velocity motion against the refractory surface. Over a campaign, this erosion, not the operating temperature, is usually what determines when a reline is needed.</p>
+<ul>
+  <li><strong>Material:</strong> erosion-resistant, high-strength castable, commonly silicon carbide-bearing or low cement castable formulated specifically for abrasion resistance rather than general service</li>
+  <li><strong>Anchoring:</strong> <a href="/blog/refractory-anchors-fastening-systems-types-selection-installation">hex mesh</a> anchoring systems are standard in cyclones and risers, giving the castable a continuous mechanical key across the surface rather than relying on widely spaced individual anchors, which matters directly under constant particle erosion</li>
+  <li><strong>Selection priority:</strong> abrasion resistance first, temperature rating second, since most FCC zones operate within a range that ordinary high-alumina castable can handle thermally, the erosion resistance is what actually differentiates a grade that lasts a full campaign from one that doesn't</li>
+</ul>
+<p>Installation quality matters as much as the material grade here. A correctly specified erosion-resistant castable installed over an undersized or poorly welded hex mesh system will still fail early, since the anchoring system, not just the castable chemistry, is what keeps the lining in place under erosive flow.</p>
+
+<h2>Hydrogen Reformers: Silica Migration Is the Real Design Constraint</h2>
+<p>Hydrogen reformers run at high temperature in a hydrogen-rich atmosphere, and hydrogen gas reacts chemically with silica (SiO<sub>2</sub>) present in the refractory lining at these temperatures. This reaction, known as silica migration, breaks down the lining gradually and can carry silica downstream to contaminate the catalyst bed, a problem distinct from ordinary thermal wear.</p>
+<ul>
+  <li><strong>Material:</strong> high-purity, low-silica alumina brick and castable, specified for hydrogen-contact zones specifically to minimise the silica available to react, in contrast to general-purpose firebrick which typically carries meaningfully higher silica content</li>
+  <li><strong>Radiant wall insulation:</strong> secondary insulation (ceramic fibre or <a href="/products/shaped-refractories/insulating-fire-bricks">insulating fire brick</a>) behind the hot-face lining reduces shell temperature and fuel consumption, a genuine energy-efficiency lever in a continuously fired reformer</li>
+  <li><strong>Dry-out discipline:</strong> castable linings in reformers need a strict thermal ramp schedule before first firing; rushing dry-out is a common cause of explosive spalling that damages a lining before it has even entered service</li>
+</ul>
+
+<h2>What to Specify Before Your Next Turnaround</h2>
+<table>
+  <thead><tr><th>Zone</th><th>Primary failure mode</th><th>What to specify</th></tr></thead>
+  <tbody>
+    <tr><td>FCC cyclones &amp; riser</td><td>Catalyst particle erosion</td><td>SiC-bearing or LCC erosion-resistant castable over hex mesh anchoring</td></tr>
+    <tr><td>FCC regenerator</td><td>Erosion plus thermal cycling</td><td>High-strength castable rated for both abrasion and cyclic service</td></tr>
+    <tr><td>Reformer radiant wall (hot face)</td><td>Silica migration in hydrogen atmosphere</td><td>High-purity, low-silica alumina brick or castable</td></tr>
+    <tr><td>Reformer radiant wall (backup)</td><td>Heat loss / shell temperature</td><td>Ceramic fibre or insulating fire brick as secondary insulation</td></tr>
+  </tbody>
+</table>
+<p>The common thread across both applications: match the material to the actual failure mechanism the zone experiences, not to a generic temperature spec sheet. A refractory that comfortably handles the operating temperature of an FCC riser can still fail in months if it wasn't selected for erosion resistance, and a refractory with excellent general high-temperature performance can still degrade prematurely in a reformer if its silica content wasn't specifically controlled for the hydrogen atmosphere.</p>
+
+<h2>SAPL Supply for Refinery and Petrochemical Applications</h2>
+<p>Shanker Agencies supplies erosion-resistant castables, high-purity low-silica alumina brick, ceramic fibre insulation, and hex mesh anchoring systems for FCC units, hydrogen reformers, sulfur recovery units and related refinery/petrochemical applications, exported to GCC refineries and petrochemical plants with full documentation. See our <a href="/products/unshaped-refractories/low-cement-castables">castable range</a> and <a href="/products/shaped-refractories/high-alumina-bricks">high alumina brick range</a>, or <a href="/contact">contact our engineering team</a> with your vessel type and duty to discuss a supply plan.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["low-cement-castables", "high-alumina-bricks", "insulating-fire-bricks"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
