@@ -6376,7 +6376,7 @@ export const BLOG_POSTS_DATA = [
       "Mahakoshal castable equivalent",
       "refractory castable comparison",
     ],
-    readTime: "9 min",
+    readTime: "10 min",
     publishDate: "2026-09-03",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1581093458791-9d09ca7c8d5b?w=1200&q=80",
@@ -6401,7 +6401,11 @@ export const BLOG_POSTS_DATA = [
 <p><strong>A castable specification is really a statement about duty class and service temperature, and any manufacturer's grade that meets that duty class is a legitimate candidate, regardless of which brand name is written on the drawing.</strong> In practice, tenders and existing plant specifications are often written against one specific brand's grade code, sometimes because that's what was used last time, sometimes because that's the brand a consultant defaulted to. When that brand has a six-week lead time and the shutdown is in ten days, knowing the real equivalent in a brand that's actually in stock is what keeps the schedule.</p>
 <p>Shanker Agencies is positioned to answer this directly: authorized dealer for <strong>CUMI</strong>, and supply partner for <strong>Calderys</strong>, <strong>TRL Krosaki</strong> and <strong>Mahakoshal</strong>. This guide covers how castable grades match across these four brands, organised by duty class rather than by name, since duty class is what actually determines whether a substitution is technically sound.</p>
 
-<h2>The Four Duty Classes</h2>
+<blockquote><strong>Quick answer:</strong> Castable grades are matched by duty class and service temperature, not by brand name. The four duty classes are HPDC, MPDC, LCC and ULCC, each defined by CaO (cement) content. Match the duty class first, then confirm cold crushing strength, CaO% and service temperature before substituting one brand's grade for another's.</blockquote>
+
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=900&q=80" alt="Industrial furnace plant representative of high-temperature castable refractory applications" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Dense and low-cement castables line furnaces, kilns and ladles across steel, cement and petrochemical plants.</figcaption></figure>
+
+<h2>What Are the Four Castable Duty Classes?</h2>
 <table>
   <thead><tr><th>Class</th><th>CaO content</th><th>Strength development</th><th>Typical use</th></tr></thead>
   <tbody>
@@ -6411,6 +6415,8 @@ export const BLOG_POSTS_DATA = [
     <tr><td>ULCC (Ultra Low Cement Castable)</td><td>1-3%</td><td>Microsilica/deflocculant assisted</td><td>Critical ladle zones, blast furnace troughs, highest-performance zones</td></tr>
   </tbody>
 </table>
+
+<blockquote><strong>How to read the tables below:</strong> each row lists grades from CUMI, Calderys, TRL Krosaki and Mahakoshal positioned for the same duty class and application range. An em dash (&mdash;) means SAPL does not carry a direct equivalent from that brand in this grade band, not that no such product exists in the market anywhere. On a phone, swipe the table sideways to see all four brand columns.</blockquote>
 
 <h2>HPDC Grade Equivalents</h2>
 <table>
@@ -6443,6 +6449,8 @@ export const BLOG_POSTS_DATA = [
   </tbody>
 </table>
 
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=900&q=80" alt="Cement plant kiln and preheater silos, a typical low and ultra-low cement castable application" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Ultra low cement castables see their most demanding service in blast furnace troughs and critical ladle zones.</figcaption></figure>
+
 <h2>ULCC Grade Equivalents</h2>
 <table>
   <thead><tr><th>CUMI</th><th>Calderys</th><th>TRL Krosaki</th><th>Mahakoshal</th></tr></thead>
@@ -6454,7 +6462,7 @@ export const BLOG_POSTS_DATA = [
 </table>
 <p>These tables cover the more commonly specified grades in each class, not the complete range from every brand. If your specification names a grade not shown here, contact us directly, the same duty-class matching applies across the full range, this is simply a representative selection.</p>
 
-<h2>How to Use a Cross-Brand Equivalent Correctly</h2>
+<h2>How Do You Use a Cross-Brand Castable Equivalent Correctly?</h2>
 <ol>
   <li><strong>Match the duty class first.</strong> An HPDC-to-LCC substitution is not a like-for-like equivalent even if the temperature ratings overlap, the cement content and installation behaviour are fundamentally different.</li>
   <li><strong>Confirm cold crushing strength at your actual service temperature</strong>, not just at room temperature. CCS-at-temperature is what governs performance, and it doesn't always track linearly with the room-temperature figure.</li>
@@ -6463,6 +6471,7 @@ export const BLOG_POSTS_DATA = [
 </ol>
 
 <h2>SAPL Supply Across All Four Brands</h2>
+<blockquote><strong>Why this matters for your next shutdown:</strong> being authorized dealer for one brand and supply partner for three others means SAPL isn't limited to selling whichever grade we happen to stock. When a tender names a brand with a long lead time, we can offer the verified equivalent from a brand that's actually available, without you having to re-run the technical approval process from scratch.</blockquote>
 <p>Shanker Agencies supplies the full castable range, <a href="/products/unshaped-refractories/low-cement-castables">low cement castables</a>, <a href="/products/unshaped-refractories/ultra-low-cement-castables">ultra low cement castables</a> and <a href="/products/unshaped-refractories/conventional-castables">conventional castables</a>, across CUMI, Calderys, TRL Krosaki and Mahakoshal. Send us your existing specification or tender grade code and our engineering team will confirm the equivalent grade, or recommend the best fit if your application allows a technical alternative.</p>
 `,
     author: { name: "Rahul Taneja" },
