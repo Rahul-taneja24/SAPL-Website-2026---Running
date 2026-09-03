@@ -467,7 +467,7 @@ export const PRODUCT_CATALOG = {
           'Reheating and heat treatment furnace backup',
           'Ducting and flue insulation below 900°C',
         ],
-        brands: ['Mateshwari Refractories', 'Perfect Insulations'],
+        brands: ['Perfect Insulations'],
         keyProperties: [
           { label: 'Classification', value: 'Group 16 (850–900°C service)' },
           { label: 'Apparent Porosity', value: '65 – 67%' },
@@ -504,7 +504,7 @@ export const PRODUCT_CATALOG = {
           'Single-layer wall builds where a separate dense working lining is not justified',
           'Muffle and laboratory furnace linings',
         ],
-        brands: ['Mateshwari Refractories', 'Perfect Insulations'],
+        brands: ['Perfect Insulations'],
         keyProperties: [
           { label: 'Classification', value: 'Group 23 (1300°C service)' },
           { label: 'Base Material', value: 'Kyanite (converts to mullite on firing)' },

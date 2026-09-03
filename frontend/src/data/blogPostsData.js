@@ -6358,6 +6358,117 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["cold-face-insulation-bricks", "hot-face-kyanite-insulation-bricks", "insulating-fire-bricks"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 67. Castable Grade Equivalents Across CUMI, Calderys, TRL Krosaki, Mahakoshal
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 67,
+    slug: "castable-grade-equivalents-cumi-calderys-trl-krosaki-mahakoshal",
+    title: "Castable Grade Equivalents: CUMI, Calderys, TRL Krosaki and Mahakoshal Compared",
+    metaTitle: "Castable Grade Equivalents Across 4 Brands | SAPL Guide",
+    metaDescription: "Cross-brand castable equivalence by duty class: HPDC, MPDC, LCC and ULCC grades matched across CUMI, Calderys, TRL Krosaki and Mahakoshal.",
+    category: "Technical Guide",
+    tags: [
+      "castable grade equivalent",
+      "CUMI castable equivalent",
+      "Calderys castable equivalent",
+      "TRL Krosaki castable equivalent",
+      "Mahakoshal castable equivalent",
+      "refractory castable comparison",
+    ],
+    readTime: "9 min",
+    publishDate: "2026-09-03",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1581093458791-9d09ca7c8d5b?w=1200&q=80",
+    keyTakeaways: [
+      "Castable grades from different manufacturers are matched by duty class, not by name, so a grade equivalent is really a statement that two products serve the same application and temperature range, not that the chemistry is identical.",
+      "The four duty classes that matter for matching are HPDC (high purity dense castable), MPDC (medium purity dense castable), LCC (low cement castable) and ULCC (ultra low cement castable), each with a different CaO content, strength development and installation behaviour.",
+      "Because SAPL holds authorized dealer and supply partner status across CUMI, Calderys, TRL Krosaki and Mahakoshal, we can match a specification written against any one of these four brands to an equivalent grade in the others, which matters when a tender or existing spec names a brand that isn't readily available.",
+      "A grade equivalent is a starting point for technical confirmation, not a substitution to make without checking, always verify CaO%, cold crushing strength and service temperature against the actual application before switching brands mid-project.",
+      "This guide is deliberately restricted to the four brands SAPL actually supplies. If a tender specification names a brand outside this list, tell us and we will confirm the closest match from our range directly.",
+    ],
+    faqs: [
+      { question: "What does it mean when two castable grades are called equivalent?", answer: "It means the two products are formulated for the same duty class and service temperature range, for example both are low cement castables (LCC) rated around 1650°C, so one can generally be specified in place of the other for the same application. It does not mean identical chemistry, formulations differ between manufacturers even within the same duty class, so cold crushing strength, CaO content and installation behaviour should be checked before substituting." },
+      { question: "What is the difference between HPDC, MPDC, LCC and ULCC castable?", answer: "The difference is primarily cement (CaO) content, which drives strength development, installation water demand, and how the castable performs at high temperature. HPDC and MPDC are conventional dense castables with higher cement content, developing strength through hydraulic cement bonding. LCC (low cement castable) reduces CaO to roughly 4-8%, and ULCC (ultra low cement castable) reduces it further to 1-3%, both using microsilica and deflocculants to develop strength with less cement, which improves high-temperature performance and reduces the CaO available to react adversely with slag or alkalis." },
+      { question: "Which brands does Shanker Agencies supply castables from?", answer: "Shanker Agencies is an authorized dealer of CUMI and a supply partner for Calderys, TRL Krosaki and Mahakoshal, across the full castable range: HPDC, MPDC, LCC and ULCC. We can match a specification against any of these four brands to the equivalent grade in the others." },
+      { question: "Can I directly substitute one brand's castable for another's equivalent grade?", answer: "As a starting point for technical evaluation, yes, but confirm it before ordering. Check the CaO%, cold crushing strength at your service temperature, and installation water demand against your specific application, since formulations differ between manufacturers even within the same duty class. For tender-bound projects, also check whether the tender specification names a brand explicitly or allows technically equivalent alternatives." },
+      { question: "What is a low cement castable (LCC) equivalent for a CUMI HC 60 grade?", answer: "HC 60 is CUMI's LCC grade in the 60 MPa cold crushing strength class. Equivalent grades in the same duty class from SAPL's other supply partners include Calderys ACCMON 60 and TRL Krosaki Tata Cast LC 60. All three are low cement castables intended for the same general application range; confirm exact CCS, CaO% and service temperature against your specification before substituting." },
+      { question: "Why would a buyer need a cross-brand castable equivalent at all?", answer: "The most common reason is a tender or an existing plant specification that names one manufacturer's grade code, while that specific brand has a longer lead time, is temporarily unavailable, or the buyer already has an established supply relationship with a different manufacturer. A verified cross-brand equivalent lets the buyer meet the technical intent of the specification without being locked to a single brand's availability." },
+    ],
+    excerpt:
+      "A tender or an existing specification often names one manufacturer's castable grade code, and that brand isn't always the one that's readily available. This guide matches castable grades across CUMI, Calderys, TRL Krosaki and Mahakoshal by duty class, HPDC, MPDC, LCC and ULCC, so a specification can be met without being locked to one brand.",
+    content: `<h2>Why Grade Equivalence Matters More Than Brand Loyalty</h2>
+<p><strong>A castable specification is really a statement about duty class and service temperature, and any manufacturer's grade that meets that duty class is a legitimate candidate, regardless of which brand name is written on the drawing.</strong> In practice, tenders and existing plant specifications are often written against one specific brand's grade code, sometimes because that's what was used last time, sometimes because that's the brand a consultant defaulted to. When that brand has a six-week lead time and the shutdown is in ten days, knowing the real equivalent in a brand that's actually in stock is what keeps the schedule.</p>
+<p>Shanker Agencies is positioned to answer this directly: authorized dealer for <strong>CUMI</strong>, and supply partner for <strong>Calderys</strong>, <strong>TRL Krosaki</strong> and <strong>Mahakoshal</strong>. This guide covers how castable grades match across these four brands, organised by duty class rather than by name, since duty class is what actually determines whether a substitution is technically sound.</p>
+
+<h2>The Four Duty Classes</h2>
+<table>
+  <thead><tr><th>Class</th><th>CaO content</th><th>Strength development</th><th>Typical use</th></tr></thead>
+  <tbody>
+    <tr><td>HPDC (High Purity Dense Castable)</td><td>Conventional cement bond</td><td>Hydraulic, develops on cure</td><td>General high-temperature dense linings</td></tr>
+    <tr><td>MPDC (Medium Purity Dense Castable)</td><td>Conventional cement bond</td><td>Hydraulic, develops on cure</td><td>Mid-temperature general purpose linings</td></tr>
+    <tr><td>LCC (Low Cement Castable)</td><td>4-8%</td><td>Microsilica/deflocculant assisted</td><td>Ladles, tundish, reheating furnaces, torpedo cars</td></tr>
+    <tr><td>ULCC (Ultra Low Cement Castable)</td><td>1-3%</td><td>Microsilica/deflocculant assisted</td><td>Critical ladle zones, blast furnace troughs, highest-performance zones</td></tr>
+  </tbody>
+</table>
+
+<h2>HPDC Grade Equivalents</h2>
+<table>
+  <thead><tr><th>CUMI</th><th>Calderys</th><th>TRL Krosaki</th><th>Mahakoshal</th></tr></thead>
+  <tbody>
+    <tr><td>CA 60</td><td>WHYTHEAT K</td><td>Tatacast AH 60</td><td>MAXHEAT K</td></tr>
+    <tr><td>CK 14</td><td>WHYTHEAT C</td><td>Tatacast AH 50</td><td>MAXHEAT C</td></tr>
+    <tr><td>CA 80M</td><td>WHYTHEAT M</td><td>Tatacast AH 80</td><td>MAXHEAT M</td></tr>
+    <tr><td>CA 97</td><td>TAB CAST 97T</td><td>Tata Greencast 97</td><td>&mdash;</td></tr>
+  </tbody>
+</table>
+
+<h2>MPDC Grade Equivalents</h2>
+<table>
+  <thead><tr><th>CUMI</th><th>Calderys</th><th>TRL Krosaki</th><th>Mahakoshal</th></tr></thead>
+  <tbody>
+    <tr><td>CUMICRETE M 45</td><td>FIRECRETE (N)</td><td>Tatacast FH 45</td><td>MAXCRETE NORMAL</td></tr>
+    <tr><td>CUMICRETE M 70</td><td>FIRECRETE SUPER</td><td>Tatacast FH 70</td><td>MAXCRETE SUPER</td></tr>
+  </tbody>
+</table>
+
+<h2>LCC Grade Equivalents</h2>
+<table>
+  <thead><tr><th>CUMI</th><th>Calderys</th><th>TRL Krosaki</th><th>Mahakoshal</th></tr></thead>
+  <tbody>
+    <tr><td>HCS</td><td>ACCMON 45</td><td>Tata Cast LC 45</td><td>MAXMON 45</td></tr>
+    <tr><td>HC 60</td><td>ACCMON 60</td><td>Tata Cast LC 60</td><td>MAXMON 60</td></tr>
+    <tr><td>HC 80</td><td>ACCMON 80</td><td>Tata Cast LC 80</td><td>MAXMON 80</td></tr>
+    <tr><td>HC 90</td><td>ACCMON 90</td><td>Tata Cast LC 90</td><td>MAXMON 90</td></tr>
+  </tbody>
+</table>
+
+<h2>ULCC Grade Equivalents</h2>
+<table>
+  <thead><tr><th>CUMI</th><th>Calderys</th><th>TRL Krosaki</th><th>Mahakoshal</th></tr></thead>
+  <tbody>
+    <tr><td>ULC CAST 60</td><td>ULTRAMON 60</td><td>Tata Ultragreen 57 A</td><td>&mdash;</td></tr>
+    <tr><td>ULC CAST 80</td><td>ULTRAMON 80</td><td>Tata Ultragreen 80</td><td>&mdash;</td></tr>
+    <tr><td>ULC CAST 90</td><td>ULTRAMON 90</td><td>&mdash;</td><td>MAXMON ULCC 90</td></tr>
+  </tbody>
+</table>
+<p>These tables cover the more commonly specified grades in each class, not the complete range from every brand. If your specification names a grade not shown here, contact us directly, the same duty-class matching applies across the full range, this is simply a representative selection.</p>
+
+<h2>How to Use a Cross-Brand Equivalent Correctly</h2>
+<ol>
+  <li><strong>Match the duty class first.</strong> An HPDC-to-LCC substitution is not a like-for-like equivalent even if the temperature ratings overlap, the cement content and installation behaviour are fundamentally different.</li>
+  <li><strong>Confirm cold crushing strength at your actual service temperature</strong>, not just at room temperature. CCS-at-temperature is what governs performance, and it doesn't always track linearly with the room-temperature figure.</li>
+  <li><strong>Check CaO% if the application sees slag contact.</strong> Lower CaO generally means better slag resistance, so a substitution within the same duty class can still shift slag performance if the CaO% differs meaningfully between brands.</li>
+  <li><strong>Verify against tender language before substituting on a live project.</strong> Some tenders specify "or equivalent," others name a brand exclusively, confirm which applies before committing to a substitution.</li>
+</ol>
+
+<h2>SAPL Supply Across All Four Brands</h2>
+<p>Shanker Agencies supplies the full castable range, <a href="/products/unshaped-refractories/low-cement-castables">low cement castables</a>, <a href="/products/unshaped-refractories/ultra-low-cement-castables">ultra low cement castables</a> and <a href="/products/unshaped-refractories/conventional-castables">conventional castables</a>, across CUMI, Calderys, TRL Krosaki and Mahakoshal. Send us your existing specification or tender grade code and our engineering team will confirm the equivalent grade, or recommend the best fit if your application allows a technical alternative.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["low-cement-castables", "ultra-low-cement-castables", "conventional-castables"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
