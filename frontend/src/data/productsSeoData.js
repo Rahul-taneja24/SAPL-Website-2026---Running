@@ -22,8 +22,22 @@ export const PRODUCT_SEO = [
     categorySlug: "shaped-refractories",
     productId: "insulating-fire-bricks",
     name: "Insulating Fire Bricks (IFB)",
-    metaTitle: "IFB Insulating Fire Bricks K-23 to K-30 | Shanker Agencies",
-    metaDescription: "Lightweight insulating fire bricks (IFB) K-23 to K-30 for heat treatment furnaces, kiln linings & backup insulation. Authorized Divine Cerawool dealer.",
+    metaTitle: "Insulating Fire Bricks IFB-23 to IFB-B101 | Shanker Agencies",
+    metaDescription: "Insulating fire bricks from 1260°C to 1850°C, including bubble alumina grades, for kiln hot face, reformer backup and blast furnace stoves. CUMI CUMILAG supplied.",
+  },
+  {
+    categorySlug: "shaped-refractories",
+    productId: "cold-face-insulation-bricks",
+    name: "Cold Face Insulation Bricks (CFI)",
+    metaTitle: "Cold Face Insulation Bricks CFI Group 16 | Shanker Agencies",
+    metaDescription: "CFI Group 16 cold face insulation bricks to 900°C for backup lining behind the working face, boiler settings and furnace walls. Batch test certificates supplied.",
+  },
+  {
+    categorySlug: "shaped-refractories",
+    productId: "hot-face-kyanite-insulation-bricks",
+    name: "Hot Face Kyanite Insulation Bricks (HFK)",
+    metaTitle: "Hot Face Kyanite Insulation Bricks HFK Group 23 | Shanker Agencies",
+    metaDescription: "HFK Group 23 kyanite insulation bricks rated for direct hot face duty to 1300°C in heat treatment furnaces, kiln cars and batch furnaces. Test certificates supplied.",
   },
   {
     categorySlug: "shaped-refractories",
@@ -108,6 +122,13 @@ export const PRODUCT_SEO = [
     name: "Calcium Silicate Board",
     metaTitle: "Calcium Silicate Board Insulation | Shanker Agencies",
     metaDescription: "Calcium silicate thermal insulation boards for petrochemical, power plant & industrial pipe insulation.",
+  },
+  {
+    categorySlug: "insulation",
+    productId: "mica-insulation",
+    name: "Mica Insulation",
+    metaTitle: "Mica Insulation Sheets & Plates for Induction Coils | Shanker Agencies",
+    metaDescription: "Mica insulation for induction furnace coils, heating elements & electrical equipment. Muscovite & phlogopite grades in board, sheet and tape. Get a quote.",
   },
   {
     categorySlug: "acid-proofing",
