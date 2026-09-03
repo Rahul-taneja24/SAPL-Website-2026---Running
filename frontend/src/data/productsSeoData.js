@@ -124,13 +124,6 @@ export const PRODUCT_SEO = [
     metaDescription: "Calcium silicate thermal insulation boards for petrochemical, power plant & industrial pipe insulation.",
   },
   {
-    categorySlug: "insulation",
-    productId: "mica-insulation",
-    name: "Mica Insulation",
-    metaTitle: "Mica Insulation Sheets & Plates for Induction Coils | Shanker Agencies",
-    metaDescription: "Mica insulation for induction furnace coils, heating elements & electrical equipment. Muscovite & phlogopite grades in board, sheet and tape. Get a quote.",
-  },
-  {
     categorySlug: "acid-proofing",
     productId: "acid-proof-bricks",
     name: "Acid Proof Bricks",

@@ -6255,6 +6255,109 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["low-cement-castables", "high-alumina-bricks", "insulating-fire-bricks"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 66. CFI vs HFK vs Porosint: Choosing the Right Insulation Brick
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 66,
+    slug: "cfi-vs-hfk-vs-porosint-insulation-brick-comparison",
+    title: "CFI vs HFK vs Porosint: Choosing the Right Insulation Brick",
+    metaTitle: "CFI vs HFK vs Porosint Insulation Brick Comparison | SAPL",
+    metaDescription: "Cold Face (CFI), Hot Face Kyanite (HFK) and Porosint/IFB insulation bricks compared: base material, temperature rating, hot-face capability and where each is used.",
+    category: "Technical Guide",
+    tags: [
+      "CFI insulation brick",
+      "HFK kyanite insulation brick",
+      "porosint insulation brick",
+      "insulation brick comparison",
+      "cold face vs hot face insulation",
+      "IFB grade selection",
+    ],
+    readTime: "8 min",
+    publishDate: "2026-09-03",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200&q=80",
+    keyTakeaways: [
+      "The first question in insulation brick selection is not temperature, it's position: does the brick sit in the hot face, or purely as backup behind another lining? CFI is backup-only; HFK and Porosint can both carry a hot face.",
+      "CFI (Cold Face Insulation, Group 16) is rated to roughly 900°C and is not designed for direct flame contact, tested to 65–67% apparent porosity and 1.4–1.5 MPa cold crushing strength.",
+      "HFK (Hot Face Kyanite, Group 23) is kyanite-based, converts to mullite on firing, and is rated for direct hot-face duty to 1300°C, roughly double CFI's crushing strength at 3.1–3.7 MPa.",
+      "Porosint (branded CUMILAG by CUMI) is a 9-grade family spanning 1260°C to 1850°C, changing base material as the range goes up, calcined clay/alumina at the low end, fused mullite in the middle, bubble alumina for the two premium grades above 1750°C.",
+      "Above 1300°C, HFK is out of range and Porosint's mid-to-upper grades are the only option; below 900°C on a pure backup layer, CFI is normally the more economical choice.",
+    ],
+    faqs: [
+      { question: "What is the difference between CFI and HFK insulation bricks?", answer: "CFI (Cold Face Insulation, Group 16) is a backup-only insulating brick rated to roughly 900°C, not designed for direct flame or hot-gas contact. HFK (Hot Face Kyanite, Group 23) is a kyanite-based insulating brick rated for direct hot-face duty to 1300°C. The core difference is position, not just temperature: CFI sits behind a working lining, HFK can be the working lining itself in lower-temperature applications." },
+      { question: "Can Cold Face Insulation (CFI) bricks be used on the hot face?", answer: "No. CFI is manufactured and tested as a backup brick, sitting behind a dense working lining or a hot-face insulating brick like HFK. Using CFI directly in the flame path or hot gas stream is outside its design intent and its lower crushing strength (1.4–1.5 MPa versus HFK's 3.1–3.7 MPa) reflects that it was never engineered for that duty." },
+      { question: "What temperature is HFK insulation brick rated for?", answer: "HFK (Hot Face Kyanite, Group 23) is rated for direct hot-face service to 1300°C. It is tested with a permanent linear change under 1% after 24 hours at 1250°C, which is what confirms it holds dimensional stability at temperature rather than just surviving it once." },
+      { question: "What is Porosint and how is it different from CFI and HFK?", answer: "Porosint is CUMI's brand name for its CUMILAG range of insulating fire bricks, a nine-grade family spanning 1260°C to 1850°C. Unlike CFI and HFK, which are each a single classification at a fixed rating, Porosint changes base material as the range goes up, calcined clay and calcined alumina at the lower grades, fused mullite in the middle grades, and bubble alumina for the two premium grades above 1750°C. It is the range to specify when a single brick family needs to cover a wide temperature span." },
+      { question: "Do I need a separate working lining in front of HFK or Porosint?", answer: "Not necessarily. Both HFK and the calcined-clay/alumina and fused-mullite grades of Porosint are rated for direct hot-face exposure, so a single-layer wall build is possible within their temperature rating. Above the highest grade's rating, or in applications with mechanical wear or slag contact, a separate dense working lining is still required, insulating brick is not a substitute for a working lining under abrasive or corrosive service." },
+      { question: "What is HFK insulation brick made from?", answer: "HFK is kyanite-based. Kyanite (Al2SiO5) converts to mullite plus a siliceous phase when fired, which gives the brick better volume stability at temperature than an ordinary clay-based insulating brick, allowing it to hold a hot face at up to 1300°C while keeping bulk density low." },
+    ],
+    excerpt:
+      "CFI, HFK and Porosint all reduce heat loss, but they are not interchangeable. This guide compares base material, temperature rating, hot-face capability and cold crushing strength across all three, using real batch test data, so the right brick gets specified the first time.",
+    content: `<h2>Position First, Then Temperature</h2>
+<p><strong>The question that actually decides between CFI, HFK and Porosint insulation brick is not "what temperature," it's "where in the wall does this brick sit."</strong> CFI is built exclusively for backup duty behind another lining. HFK and Porosint's mid-to-upper grades are built to carry a hot face directly. Picking a backup-rated brick for hot-face duty, or over-specifying an expensive hot-face grade where a cheaper backup brick would do, are the two most common selection mistakes, and both are avoidable once the position question is answered first.</p>
+
+<h2>CFI &mdash; Cold Face Insulation (Group 16)</h2>
+<p><a href="/products/shaped-refractories/cold-face-insulation-bricks">CFI</a> is a highly porous, low-density backup brick rated to roughly 900&deg;C. It is never placed in the flame path, its job is purely thermal: cut heat loss through the shell and reduce the heat stored in the lining.</p>
+<ul>
+  <li><strong>Rated temperature:</strong> ~850&ndash;900&deg;C (Group 16 classification)</li>
+  <li><strong>Apparent porosity:</strong> 65&ndash;67%</li>
+  <li><strong>Bulk density:</strong> 0.85 g/cc</li>
+  <li><strong>Cold crushing strength:</strong> 1.4&ndash;1.5 MPa</li>
+  <li><strong>Hot face capable:</strong> No, backup/cold face only</li>
+</ul>
+
+<h2>HFK &mdash; Hot Face Kyanite (Group 23)</h2>
+<p><a href="/products/shaped-refractories/hot-face-kyanite-insulation-bricks">HFK</a> is a kyanite-based insulating brick, meaning it can sit in the hot face itself rather than behind another lining. Kyanite converts to mullite on firing, which gives it better dimensional stability at temperature than a plain clay-based insulating brick, the property that actually allows hot-face use.</p>
+<ul>
+  <li><strong>Rated temperature:</strong> up to 1300&deg;C (Group 23 classification)</li>
+  <li><strong>Apparent porosity:</strong> 60&ndash;62%</li>
+  <li><strong>Bulk density:</strong> 1.15&ndash;1.20 g/cc</li>
+  <li><strong>Cold crushing strength:</strong> 3.1&ndash;3.7 MPa, roughly double CFI's</li>
+  <li><strong>Hot face capable:</strong> Yes, direct hot-face duty to 1300&deg;C</li>
+</ul>
+
+<h2>Porosint (CUMILAG) &mdash; The Wide-Range Family</h2>
+<p><a href="/products/shaped-refractories/insulating-fire-bricks">Porosint</a>, CUMI's brand name for its CUMILAG range, is not a single classification but a nine-grade family running from 1260&deg;C to 1850&deg;C. The base material itself changes as the range goes up:</p>
+<ul>
+  <li><strong>1260&ndash;1550&deg;C grades:</strong> calcined clay and calcined alumina based</li>
+  <li><strong>1650&ndash;1750&deg;C grades:</strong> fused mullite based</li>
+  <li><strong>1800&ndash;1850&deg;C grades:</strong> bubble alumina, the two premium grades for the most demanding zones</li>
+</ul>
+<p>Because the range spans such a wide temperature window in one family, Porosint is often the practical choice where a single specification needs to cover multiple zones of the same furnace at different temperatures, rather than mixing separate brick families.</p>
+
+<h2>Side-by-Side Comparison</h2>
+<table>
+  <thead><tr><th>Property</th><th>CFI (Group 16)</th><th>HFK (Group 23)</th><th>Porosint / IFB</th></tr></thead>
+  <tbody>
+    <tr><td>Temperature range</td><td>~850&ndash;900&deg;C</td><td>Up to 1300&deg;C</td><td>1260&ndash;1850&deg;C (9 grades)</td></tr>
+    <tr><td>Base material</td><td>Not disclosed on batch certificate</td><td>Kyanite (converts to mullite)</td><td>Calcined clay/alumina &rarr; fused mullite &rarr; bubble alumina</td></tr>
+    <tr><td>Hot face capable</td><td>No</td><td>Yes</td><td>Yes (grade-dependent)</td></tr>
+    <tr><td>Apparent porosity</td><td>65&ndash;67%</td><td>60&ndash;62%</td><td>Grade-dependent</td></tr>
+    <tr><td>Cold crushing strength</td><td>1.4&ndash;1.5 MPa</td><td>3.1&ndash;3.7 MPa</td><td>1.2&ndash;12.7 MPa across the range</td></tr>
+    <tr><td>Typical role</td><td>Backup layer only</td><td>Single-layer hot face to 1300&deg;C</td><td>Hot face or backup, wide span</td></tr>
+  </tbody>
+</table>
+<p>One honest gap in this table: the CFI batch certificate we test against reports physical properties (crushing strength, density, porosity, thermal conductivity) but not raw material composition. If your specification requires a stated base material for CFI specifically, ask us for the manufacturer's material declaration alongside the test certificate rather than assuming a composition.</p>
+
+<h2>How to Choose</h2>
+<table>
+  <thead><tr><th>Situation</th><th>Specify</th></tr></thead>
+  <tbody>
+    <tr><td>Backup layer behind a dense working lining, under 900&deg;C</td><td>CFI</td></tr>
+    <tr><td>Single-layer hot face, up to 1300&deg;C, no separate working lining wanted</td><td>HFK</td></tr>
+    <tr><td>Hot face or backup above 1300&deg;C, up to 1850&deg;C</td><td>Porosint, grade selected by temperature</td></tr>
+    <tr><td>One furnace, multiple zones at different temperatures</td><td>Porosint across grades, or HFK plus CFI as a two-layer build below 1300&deg;C</td></tr>
+  </tbody>
+</table>
+
+<h2>SAPL Supply for Insulation Brick</h2>
+<p>Shanker Agencies supplies CFI, HFK and the full Porosint (CUMILAG) grade range with batch test certificates, and can specify a complete multi-layer wall build across all three where a furnace has more than one temperature zone. See our <a href="/products/shaped-refractories/cold-face-insulation-bricks">CFI</a>, <a href="/products/shaped-refractories/hot-face-kyanite-insulation-bricks">HFK</a> and <a href="/products/shaped-refractories/insulating-fire-bricks">Porosint/IFB</a> product pages, or <a href="/contact">contact our engineering team</a> with your furnace zones and operating temperatures for a grade recommendation.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["cold-face-insulation-bricks", "hot-face-kyanite-insulation-bricks", "insulating-fire-bricks"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
