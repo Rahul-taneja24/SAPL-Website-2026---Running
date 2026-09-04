@@ -78,8 +78,8 @@ export const PRODUCT_SEO = [
     categorySlug: "unshaped-refractories",
     productId: "coil-coat-patching-materials",
     name: "Induction Furnace Coil Coat & Patching Material",
-    metaTitle: "Induction Furnace Coil Coat & Patching: HeatKing CA 337, PA 748",
-    metaDescription: "Fused alumina coil grout and patching material for coreless induction furnaces: Saint-Gobain HeatKing CA 337 (91.4% Al₂O₃) and PA 748 (17 MPa CCS). India supply.",
+    metaTitle: "Induction Furnace Coil Coating Castable: SHIELD, CA 337",
+    metaDescription: "Coil coating castable and patching material to 1800°C: CUMI SUPER SHIELD (94% Al₂O₃), CUMI SHIELD, Saint-Gobain HeatKing CA 337 and PA 748. CUMI dealer, India.",
   },
   {
     categorySlug: "unshaped-refractories",
