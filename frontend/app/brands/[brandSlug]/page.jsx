@@ -57,7 +57,7 @@ const VALID_BRANDS = [
     name: 'Saint-Gobain Performance Ceramics & Refractories',
     shortName: 'Saint-Gobain',
     desc: 'HeatKing induction furnace linings, monolithic castables and high-performance ceramic refractory solutions for steel, foundry and high-temperature industries.',
-    products: ['HeatKing Induction Furnace Lining', 'HeatKing Monolithic Castables', 'High-Performance Ceramics', 'Refractory Solutions'],
+    products: ['HeatKing CA 337 Coil Coat', 'HeatKing PA 748 Patching Material', 'HeatKing Induction Furnace Lining', 'HeatKing Monolithic Castables', 'High-Performance Ceramics'],
     parent: 'Saint-Gobain Group',
     partnerOnly: true,
     metaTitle: 'Saint-Gobain Industrial Ceramics Supplier in India | HeatKing',

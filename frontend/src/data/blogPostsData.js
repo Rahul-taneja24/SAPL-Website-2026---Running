@@ -114,7 +114,7 @@ export const BLOG_POSTS_DATA = [
 <h2>Rammed Lining Installation: Step-by-Step</h2>
 <p>Selection only gets you half the campaign. How the lining is rammed decides whether the mass you chose can actually deliver its rated life.</p>
 <ol>
-  <li><strong>Coil preparation:</strong> Apply a thin coat (1&ndash;2 mm) of coil coat cement over the coil insulation to protect it. Allow to dry completely.</li>
+  <li><strong>Coil preparation:</strong> Apply a thin coat (1&ndash;2 mm) of <a href="/products/unshaped-refractories/coil-coat-patching-materials">coil coat cement</a> over the coil insulation to protect it. Allow to dry completely. A fused alumina grout such as Saint-Gobain HeatKing CA 337 (91.4% Al&#8322;O&#8323;) gives higher dielectric strength than a silicate-bonded grout.</li>
   <li><strong>Bottom ramming:</strong> Add the ramming mass in the bottom of the furnace in 50&ndash;75 mm layers. Ram each layer firmly with a pneumatic rammer until the surface becomes dense and non-yielding. Typical bottom thickness: 150&ndash;200 mm for the bottom knuckle area.</li>
   <li><strong>Former placement:</strong> Place the cylindrical former (steel shell or cardboard tube) concentrically in the furnace with the correct gap from the coil, specified by the furnace OEM, typically 15&ndash;25 mm minimum working lining thickness plus the sintered layer.</li>
   <li><strong>Wall ramming:</strong> Fill between the former and the coil in 75&ndash;100 mm lifts. Ram each lift uniformly around the circumference. Avoid ramming too hard in one spot, this causes density variations that lead to uneven sintering.</li>

@@ -76,6 +76,13 @@ export const PRODUCT_SEO = [
   },
   {
     categorySlug: "unshaped-refractories",
+    productId: "coil-coat-patching-materials",
+    name: "Induction Furnace Coil Coat & Patching Material",
+    metaTitle: "Induction Furnace Coil Coat & Patching: HeatKing CA 337, PA 748",
+    metaDescription: "Fused alumina coil grout and patching material for coreless induction furnaces: Saint-Gobain HeatKing CA 337 (91.4% Al₂O₃) and PA 748 (17 MPa CCS). India supply.",
+  },
+  {
+    categorySlug: "unshaped-refractories",
     productId: "gunning-materials",
     name: "Gunning Mass / Gunning Mix",
     metaTitle: "Gunning Castable & Gunning Mass Materials | SAPL",
