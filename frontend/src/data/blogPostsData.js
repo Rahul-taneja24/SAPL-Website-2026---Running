@@ -111,15 +111,34 @@ export const BLOG_POSTS_DATA = [
   </tbody>
 </table>
 
-<h2>Understanding the Sintering Profile</h2>
-<p>Sintering is the most critical phase of a new lining's life. An improperly sintered lining will fail prematurely regardless of how good the ramming mass is. The sintering schedule transforms loose rammed material into a dense, strong ceramic working face.</p>
-<p>A typical sintering schedule for silica ramming mass in a 1-tonne furnace looks like this:</p>
+<h2>Rammed Lining Installation: Step-by-Step</h2>
+<p>Selection only gets you half the campaign. How the lining is rammed decides whether the mass you chose can actually deliver its rated life.</p>
 <ol>
-  <li><strong>Stage 1 (Drying):</strong> Heat at 50&ndash;80 degC/hour up to 600 degC. Hold for 2&ndash;3 hours. This drives off moisture and begins boric acid decomposition.</li>
-  <li><strong>Stage 2 (Phase transformation):</strong> Heat at 80&ndash;100 degC/hour from 600 degC to 1,100 degC. The quartz transforms from alpha to beta phase at 573 degC with a volume change. Controlled heating prevents cracking.</li>
-  <li><strong>Stage 3 (Sintering):</strong> Heat at 100 degC/hour to 1,450&ndash;1,550 degC. Hold for 3&ndash;4 hours. The boric acid melts and creates a glass bond between silica grains, forming the sintered layer.</li>
-  <li><strong>Stage 4 (First melt):</strong> Charge the first heat. The metal contact face reaches operating temperature and forms the fully sintered cristobalite layer (8&ndash;15 mm thick).</li>
+  <li><strong>Coil preparation:</strong> Apply a thin coat (1&ndash;2 mm) of coil coat cement over the coil insulation to protect it. Allow to dry completely.</li>
+  <li><strong>Bottom ramming:</strong> Add the ramming mass in the bottom of the furnace in 50&ndash;75 mm layers. Ram each layer firmly with a pneumatic rammer until the surface becomes dense and non-yielding. Typical bottom thickness: 150&ndash;200 mm for the bottom knuckle area.</li>
+  <li><strong>Former placement:</strong> Place the cylindrical former (steel shell or cardboard tube) concentrically in the furnace with the correct gap from the coil, specified by the furnace OEM, typically 15&ndash;25 mm minimum working lining thickness plus the sintered layer.</li>
+  <li><strong>Wall ramming:</strong> Fill between the former and the coil in 75&ndash;100 mm lifts. Ram each lift uniformly around the circumference. Avoid ramming too hard in one spot, this causes density variations that lead to uneven sintering.</li>
+  <li><strong>Top collar:</strong> Ram the top section without the former to form the collar/lip that retains the charge. Use a drier, slightly richer boric acid mix for the top 100 mm, where greater stability is needed.</li>
 </ol>
+
+<h2>Understanding the Sintering Profile</h2>
+<p>Sintering is the most critical phase of a new lining's life. An improperly sintered lining will fail prematurely regardless of how good the ramming mass is. The sintering schedule transforms loose rammed material into a dense, strong ceramic working face. The former must stay in place throughout, do not pull it before the material has sintered.</p>
+<h3>Typical Sintering Schedule, 1-Tonne Silica Ramming Mass</h3>
+<table>
+  <thead>
+    <tr><th>Stage</th><th>Temp range</th><th>Heating rate</th><th>Hold</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Drying</td><td>Ambient &rarr; 400 degC</td><td>50 degC/hr</td><td>2 hrs at 400 degC</td></tr>
+    <tr><td>Quartz inversion (573 degC)</td><td>500 &rarr; 700 degC</td><td><strong>Slow: 40 degC/hr through 573 degC</strong></td><td>&mdash;</td></tr>
+    <tr><td>Boric acid decomposition</td><td>400 &rarr; 700 degC</td><td>60 degC/hr</td><td>1 hr at 700 degC</td></tr>
+    <tr><td>Pre-sintering</td><td>700 &rarr; 1,100 degC</td><td>80 degC/hr</td><td>1 hr at 1,100 degC</td></tr>
+    <tr><td>Sintering</td><td>1,100 &rarr; 1,450 degC</td><td>100 degC/hr</td><td>3 hrs at 1,450 degC</td></tr>
+    <tr><td>First charge</td><td>Maintain 1,450 degC</td><td>Charge a small first heat</td><td>Full sintering with metal contact</td></tr>
+  </tbody>
+</table>
+<p><em>Adjust for furnace capacity and wall thickness. Larger furnaces with thicker walls need slower heating rates. Always follow the manufacturer's recommended schedule.</em></p>
+<p>On that first heat the metal contact face reaches operating temperature and forms the fully sintered cristobalite layer, typically 8&ndash;15 mm thick. That layer, not the bulk of the lining, is what actually holds the metal back.</p>
 <p><strong>Common sintering mistakes:</strong> Heating too fast through the 573 degC quartz inversion point; insufficient hold time at sintering temperature; charging cold scrap in the first heat (thermal shock); starting with too little metal (the lining sees radiant heat without protective metal contact).</p>
 
 <h2>Grain Size Distribution: The Hidden Quality Factor</h2>
@@ -2894,109 +2913,6 @@ export const BLOG_POSTS_DATA = [
   // ─────────────────────────────────────────────────────────────
   // 23. Induction Furnace Ramming Mass, Selection & Installation
   // ─────────────────────────────────────────────────────────────
-  {
-    id: 23,
-    slug: "induction-furnace-ramming-mass-selection",
-    title: "Induction Furnace Lining: Ramming Mass Selection & Installation Guide",
-    metaTitle: "Induction Furnace Ramming Mass Selection Guide | SAPL",
-    metaDescription: "Complete guide to induction furnace lining with ramming mass. Compare silica, alumina, and magnesia types by melt chemistry.",
-    category: "Technical Guide",
-    tags: ["induction furnace lining", "ramming mass", "silica ramming mass", "sintering schedule", "foundry refractory", "lining failure"],
-    readTime: "7 min",
-    publishDate: "2025-12-05",
-    lastModified: "2026-04-20",
-    featured: false,
-    coverImage: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1200&q=80",
-    excerpt: "Silica, alumina, and magnesia ramming masses each serve different metallurgical requirements. This guide covers material selection based on melt type (iron, steel, copper), lining life expectations, sintering schedules and temperatures, and troubleshooting the most common failure modes.",
-    content: `
-<h2>The <a href="/blog/what-is-ramming-mass-types-uses-guide">Ramming Mass</a> Decision: Getting It Right From the Start</h2>
-<p>In a coreless induction furnace, the ramming mass lining is the only protection between 1,600+ degC liquid metal and the water-cooled copper induction coil. Unlike most industrial refractory linings, there is no backup lining, the ramming mass is it. A lining failure is not a maintenance event; it is an emergency that can result in coil destruction, metal breakout, and significant safety risk.</p>
-<p>The starting point for ramming mass selection is always the same question: <strong>What metal are you melting?</strong> The melt chemistry determines the slag chemistry, which determines whether you need an acidic, neutral, or basic ramming mass.</p>
-
-<h2>Melt Type vs. Ramming Mass Selection</h2>
-<table>
-  <thead>
-    <tr><th>Melt Type</th><th>Typical Slag Chemistry</th><th>Recommended Ramming Mass</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Grey iron, SG iron</td><td>Acidic (SiO<sub>2</sub>-rich)</td><td>Silica (acidic)</td></tr>
-    <tr><td>Mild steel, carbon steel</td><td>Mildly acidic to neutral</td><td>Silica or alumina</td></tr>
-    <tr><td>Stainless steel</td><td>Neutral to mildly basic</td><td>Alumina (neutral)</td></tr>
-    <tr><td>High-chrome, tool steel</td><td>Neutral</td><td>Alumina (neutral)</td></tr>
-    <tr><td>Manganese steel</td><td>Basic (MnO-rich)</td><td>Magnesia (basic)</td></tr>
-    <tr><td>Copper alloys</td><td>Variable</td><td>Alumina (typical) or silica</td></tr>
-    <tr><td>Aluminium (induction)</td><td>Alumina-rich</td><td>Alumina or castable lining</td></tr>
-  </tbody>
-</table>
-<p><strong>Key rule:</strong> Never use an acidic lining with a basic slag, or a basic lining with an acidic slag. The chemical incompatibility dramatically accelerates lining erosion, you may get only 20&ndash;30 heats instead of 200+ heats.</p>
-
-<h2>Silica Ramming Mass: The Grey Iron Foundry Standard</h2>
-<p>Silica ramming mass (SiO<sub>2</sub> &gt; 96%) with boric acid addition (1.0&ndash;1.8%) is the industry standard for grey iron and SG iron melting in induction furnaces across India and globally. Its advantages:</p>
-<ul>
-  <li>Excellent resistance to acidic slag (SiO<sub>2</sub>-rich)</li>
-  <li>Forms a strong sintered cristobalite working face (8&ndash;15 mm dense sintered layer)</li>
-  <li>Good thermal shock resistance</li>
-  <li>Most cost-effective option for iron foundries</li>
-  <li>Widely available; well-understood sintering profile</li>
-</ul>
-<p>Lining life expectation: <strong>150&ndash;350 heats</strong> for a properly sintered silica lining in a grey iron foundry. The variance is large because operational practice (slag management, temperature control, scrap quality) has an enormous effect.</p>
-
-<h2>Rammed Lining Installation: Step-by-Step</h2>
-<ol>
-  <li><strong>Coil preparation:</strong> Apply a thin coat (1&ndash;2 mm) of coil coat cement over the coil insulation to protect it. Allow to dry completely.</li>
-  <li><strong>Bottom ramming:</strong> Add the ramming mass in the bottom of the furnace in 50&ndash;75 mm layers. Ram each layer firmly with a pneumatic rammer until the surface becomes dense and non-yielding. Typical bottom thickness: 150&ndash;200 mm for the bottom knuckle area.</li>
-  <li><strong>Former placement:</strong> Place the cylindrical former (steel shell or cardboard tube) concentrically in the furnace with the correct gap from the coil (specified by the furnace OEM, typically 15&ndash;25 mm minimum working lining thickness plus the sintered layer).</li>
-  <li><strong>Wall ramming:</strong> Fill between the former and the coil in 75&ndash;100 mm lifts. Ram each lift uniformly around the circumference. Avoid ramming too hard in one spot, this causes density variations that lead to uneven sintering.</li>
-  <li><strong>Top collar:</strong> Ram the top section without the former to form the collar/lip that retains the charge. Use a drier, slightly richer boric acid mix for the top 100 mm (greater stability needed here).</li>
-</ol>
-
-<h2>Sintering Schedule: The Make-or-Break Step</h2>
-<p>Sintering transforms loose rammed material into a strong, dense working face. The former must remain in place during sintering, do not remove it before the material has sintered.</p>
-<h3>Typical Sintering Schedule for 1-Tonne Silica Ramming Mass</h3>
-<table>
-  <thead>
-    <tr><th>Stage</th><th>Temp Range</th><th>Heating Rate</th><th>Hold</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Drying</td><td>Ambient → 400 degC</td><td>50 degC/hr</td><td>2 hrs at 400 degC</td></tr>
-    <tr><td>Boric acid decomposition</td><td>400 → 700 degC</td><td>60 degC/hr</td><td>1 hr at 700 degC</td></tr>
-    <tr><td>Quartz inversion (573 degC)</td><td>500 → 700 degC</td><td>Slow! 40 degC/hr through 573 degC</td><td>—</td></tr>
-    <tr><td>Pre-sintering</td><td>700 → 1,100 degC</td><td>80 degC/hr</td><td>1 hr at 1,100 degC</td></tr>
-    <tr><td>Sintering</td><td>1,100 → 1,450 degC</td><td>100 degC/hr</td><td>3 hrs at 1,450 degC</td></tr>
-    <tr><td>First charge</td><td>Maintain 1,450 degC</td><td>Charge small first heat</td><td>Full sintering with metal contact</td></tr>
-  </tbody>
-</table>
-<p><em>Adjust for furnace capacity and wall thickness. Larger furnaces with thicker walls need slower heating rates. Always follow the manufacturer's recommended schedule.</em></p>
-
-<h2>Troubleshooting Common Lining Failure Modes</h2>
-<h3>Rapid Erosion in the First 20 Heats</h3>
-<p><strong>Cause:</strong> Under-sintering, the sintered layer has not fully developed. Possible reasons: heating too fast through sintering temperature; sintering hold time too short; boric acid content too low.<br>
-<strong>Fix:</strong> Lengthen the sinter hold at 1,450 degC by 1&ndash;2 hours for the next new lining. Have the ramming mass tested for boric acid content.</p>
-
-<h3>Cracking in the Top Third of the Lining</h3>
-<p><strong>Cause:</strong> Thermal cycling stress combined with uneven lining density at the top.<br>
-<strong>Fix:</strong> Improve top-collar ramming density. Apply patching compound to cracks promptly (do not wait until the next planned relining). Establish a 20-heat inspection protocol.</p>
-
-<h3>Premature Failure at 50&ndash;80 Heats Instead of 200+</h3>
-<p><strong>Cause:</strong> Usually one or more of: wrong ramming mass type vs. slag chemistry; excessive superheating; high FeO or MnO in slag (basic components attacking acidic lining); scrap contamination; inadequate slag removal.<br>
-<strong>Fix:</strong> Audit slag chemistry and melt practice. If melting stainless or high-alloy steel, switch to alumina ramming mass.</p>
-
-<h3>Bottom Freeze-Up (Metal Solidification in Bottom)</h3>
-<p><strong>Cause:</strong> Metal left in furnace during long shutdown; lining temperature drops below solidus; metal freezes and bonds to the lining.<br>
-<strong>Fix:</strong> Always maintain a small heel of molten metal in the furnace during planned shutdowns over 4 hours. For emergency freeze-up: heat slowly on low power to thaw without thermal shock; do not attempt to pry out frozen metal manually.</p>
-
-<h2>Lining Life Optimization Tips</h2>
-<ol>
-  <li><strong>Maintain a consistent melt practice:</strong> Variation in scrap type, temperature, and timing accelerates lining erosion. Standardize your melting procedure.</li>
-  <li><strong>Remove slag at regular intervals:</strong> Do not accumulate multiple heats of slag on the lining surface. Remove slag every 2&ndash;3 heats.</li>
-  <li><strong>Monitor lining thickness:</strong> Use a lining gauge or tapping rod measurement system. Establish a minimum safe thickness (typically 60&ndash;75 mm for working lining) and reline before reaching it.</li>
-  <li><strong>Patch early, reline late:</strong> Small lining repairs cost little and extend life significantly. A 20 kg patch applied at 80 heats can add 40 heats to the campaign.</li>
-  <li><strong>Source from a trusted supplier:</strong> Ramming mass quality (grain size distribution, boric acid content, SiO<sub>2</sub> purity) varies significantly between suppliers. A premium product from a quality-controlled source consistently outperforms the lowest-cost option.</li>
-</ol>
-`,
-    author: { name: "Sushma Iyer" },
-    relatedProducts: ["ramming-mass", "silica-ramming-mass", "alumina-ramming-mass"],
-  },
 
   // ─────────────────────────────────────────────────────────────
   // 24. Top 10 Refractory Dealers in Delhi NCR 2026 (Pillar / Listicle)
@@ -3893,7 +3809,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-06-28",
     readTime: "6 min read",
     image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=900&q=80",
-    content: `<p><strong>Ramming mass is a dry, granular refractory material used to form the monolithic lining of <a href="/blog/induction-furnace-ramming-mass-selection">induction furnace</a>s, ladle bottoms and similar metal-melting vessels. It is rammed (compacted) in place around a former, then sintered by the heat of the first melt to form a dense, crack-resistant working lining.</strong> Unlike bricks, it has no joints, which is why it is preferred for the high thermal and mechanical stress of coreless induction furnaces.</p>
+    content: `<p><strong>Ramming mass is a dry, granular refractory material used to form the monolithic lining of <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">induction furnace</a>s, ladle bottoms and similar metal-melting vessels. It is rammed (compacted) in place around a former, then sintered by the heat of the first melt to form a dense, crack-resistant working lining.</strong> Unlike bricks, it has no joints, which is why it is preferred for the high thermal and mechanical stress of coreless induction furnaces.</p>
 
 <p>This guide explains the main types of ramming mass, where each is used, how it sinters, and how to select the correct grade for your furnace and metal.</p>
 

@@ -129,6 +129,18 @@ const nextConfig = {
         destination: '/blog/steel-ladle-refractory-lining-material-selection-campaign-life',
         permanent: true,
       },
+      // Sep 2026: Bing query->page data showed this and the keeper both ranking
+      // for "ramming mass for induction furnace" (positions 1 and 2), splitting
+      // a cluster that only draws ~10 sessions/month across 7 URLs. The unique
+      // installation steps and the (more accurate) sintering schedule table were
+      // merged into the keeper first -- the removed post correctly placed the
+      // 573 degC quartz inversion below 600 degC, which the keeper's prose had
+      // wrong.
+      {
+        source: '/blog/induction-furnace-ramming-mass-selection',
+        destination: '/blog/how-to-select-ramming-mass-for-induction-furnace',
+        permanent: true,
+      },
       // /abouts (typo URL crawled by Google) → /about
       {
         source: '/abouts',
