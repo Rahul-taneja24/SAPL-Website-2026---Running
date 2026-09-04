@@ -60,6 +60,8 @@ const VALID_BRANDS = [
     products: ['HeatKing Induction Furnace Lining', 'HeatKing Monolithic Castables', 'High-Performance Ceramics', 'Refractory Solutions'],
     parent: 'Saint-Gobain Group',
     partnerOnly: true,
+    metaTitle: 'Saint-Gobain Industrial Ceramics Supplier in India | HeatKing',
+    metaDescription: 'Saint-Gobain Performance Ceramics in India: HeatKing induction furnace linings, monolithic castables and high-performance ceramics, supplied by SAPL since 1980.',
   },
 ];
 
@@ -77,8 +79,16 @@ export async function generateMetadata({ params }) {
     };
   }
   const relationship = brand.partnerOnly ? 'a supply partner' : 'an authorised dealer and supply partner';
-  const title = `${brand.shortName} ${brand.partnerOnly ? 'Supplier' : 'Dealer'} in India | Shanker Agencies`;
-  const description = `Shanker Agencies is ${relationship} for ${brand.shortName} in India, genuine products, plant-side support, Pan-India delivery since 1980.`;
+  // A brand may override the generic template with metaTitle/metaDescription
+  // when Search Console / Bing shows real queries the template doesn't match.
+  // Saint-Gobain is the first: it ranks #1 on Bing for "saint-gobain
+  // industrial ceramics suppliers in india" and #3 for "...distributor names"
+  // with zero clicks, because the generic "Saint-Gobain Supplier in India"
+  // title matches neither phrasing.
+  const title = brand.metaTitle
+    || `${brand.shortName} ${brand.partnerOnly ? 'Supplier' : 'Dealer'} in India | Shanker Agencies`;
+  const description = brand.metaDescription
+    || `Shanker Agencies is ${relationship} for ${brand.shortName} in India, genuine products, plant-side support, Pan-India delivery since 1980.`;
   return {
     title: { absolute: title },
     description,
