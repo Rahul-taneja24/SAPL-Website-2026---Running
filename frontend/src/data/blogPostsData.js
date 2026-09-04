@@ -805,7 +805,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-02-20",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://mahakoshalrefractories.com/wp-content/uploads/2025/11/01_0004_Layer-1-1-e1762597034449.jpg",
+    coverImage: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=1200&q=80",
     excerpt:
       "A cement rotary kiln is divided into distinct refractory zones, each with unique thermal, chemical, and mechanical demands. This guide provides a zone-by-zone breakdown of material selection with specifications and optimization strategies.",
     content: `
@@ -6198,7 +6198,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "9 min",
     publishDate: "2026-09-02",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?w=1200&q=80",
     keyTakeaways: [
       "FCC units and hydrogen reformers are two of the most demanding refractory applications in a refinery, but for opposite reasons: FCC wears mechanically from catalyst erosion, reformers degrade chemically from hydrogen attack on silica.",
       "In an FCC cyclone or riser, the refractory's abrasion resistance matters more than its temperature rating, since catalyst particle erosion, not heat, is usually what ends campaign life.",
@@ -6276,7 +6276,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "8 min",
     publishDate: "2026-09-03",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=1200&q=80",
     keyTakeaways: [
       "The first question in insulation brick selection is not temperature, it's position: does the brick sit in the hot face, or purely as backup behind another lining? CFI is backup-only; HFK and Porosint can both carry a hot face.",
       "CFI (Cold Face Insulation, Group 16) is rated to roughly 900°C and is not designed for direct flame contact, tested to 65–67% apparent porosity and 1.4–1.5 MPa cold crushing strength.",
@@ -6379,7 +6379,7 @@ export const BLOG_POSTS_DATA = [
     readTime: "10 min",
     publishDate: "2026-09-03",
     featured: true,
-    coverImage: "https://images.unsplash.com/photo-1581093458791-9d09ca7c8d5b?w=1200&q=80",
+    coverImage: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1200&q=80",
     keyTakeaways: [
       "Castable grades from different manufacturers are matched by duty class, not by name, so a grade equivalent is really a statement that two products serve the same application and temperature range, not that the chemistry is identical.",
       "The four duty classes that matter for matching are HPDC (high purity dense castable), MPDC (medium purity dense castable), LCC (low cement castable) and ULCC (ultra low cement castable), each with a different CaO content, strength development and installation behaviour.",
@@ -6416,7 +6416,7 @@ export const BLOG_POSTS_DATA = [
   </tbody>
 </table>
 
-<blockquote><strong>How to read the tables below:</strong> each row lists grades from CUMI, Calderys, TRL Krosaki and Mahakoshal positioned for the same duty class and application range. An em dash (&mdash;) means SAPL does not carry a direct equivalent from that brand in this grade band, not that no such product exists in the market anywhere. On a phone, swipe the table sideways to see all four brand columns.</blockquote>
+<blockquote><strong>How to read the tables below:</strong> each row lists grades from CUMI, Calderys, TRL Krosaki and Mahakoshal positioned for the same duty class and application range.</blockquote>
 
 <h2>HPDC Grade Equivalents</h2>
 <table>

@@ -124,10 +124,17 @@ export default async function NewsArticlePage({ params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
-      {/* HERO */}
+      {/* HERO -- same coverImage-as-background treatment as the blog article
+          template (app/blog/[articleSlug]/page.jsx), for consistency across
+          the two article-style templates. Falls back to the plain gradient
+          when an article has no coverImage yet. */}
       <section
-        className="relative py-16 md:py-24 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)' }}
+        className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center"
+        style={{
+          backgroundImage: article.coverImage
+            ? `linear-gradient(135deg, rgba(15,30,70,0.94) 0%, rgba(30,58,138,0.88) 100%), url('${article.coverImage}')`
+            : 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)',
+        }}
       >
         <div
           className="absolute inset-0 opacity-[0.04]"

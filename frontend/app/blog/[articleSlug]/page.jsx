@@ -149,10 +149,17 @@ export default async function BlogArticlePage({ params }) {
       {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
       {howToSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />}
 
-      {/* HERO */}
+      {/* HERO -- coverImage as a background photo behind the navy gradient,
+          matching the hero treatment on /blog, /knowledge and /solutions
+          (see src/sections/Blog.jsx, KnowledgeBase.jsx, IndustrySolutions.jsx).
+          Falls back to the plain gradient if a post has no coverImage. */}
       <section
-        className="relative py-16 md:py-24 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)' }}
+        className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center"
+        style={{
+          backgroundImage: post.coverImage
+            ? `linear-gradient(135deg, rgba(15,30,70,0.94) 0%, rgba(30,58,138,0.88) 100%), url('${post.coverImage}')`
+            : 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)',
+        }}
       >
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -218,12 +225,8 @@ export default async function BlogArticlePage({ params }) {
                 article content (data tables) stretch this track past the
                 viewport and scroll the whole page sideways on mobile. */}
             <article className="lg:col-span-2 min-w-0">
-              {post.coverImage && (
-                <div className="rounded-2xl overflow-hidden mb-10 shadow-lg">
-                  <img src={post.coverImage} alt={post.title} className="w-full h-64 md:h-80 object-cover" loading="eager" />
-                </div>
-              )}
-
+              {/* coverImage now renders as the hero background above, so it
+                  isn't repeated here as a second boxed copy. */}
               {post.keyTakeaways?.length > 0 && (
                 <div className="mb-10 rounded-2xl bg-[#EFF6FF] border border-[#3B82F6]/20 p-6">
                   <h2 className="font-oswald text-xl font-bold text-[#1E3A5F] mb-4 mt-0">Key Takeaways</h2>
