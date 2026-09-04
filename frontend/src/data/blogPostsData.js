@@ -6273,7 +6273,7 @@ export const BLOG_POSTS_DATA = [
       "cold face vs hot face insulation",
       "IFB grade selection",
     ],
-    readTime: "8 min",
+    readTime: "9 min",
     publishDate: "2026-09-03",
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=1200&q=80",
@@ -6296,6 +6296,10 @@ export const BLOG_POSTS_DATA = [
       "CFI, HFK and Porosint all reduce heat loss, but they are not interchangeable. This guide compares base material, temperature rating, hot-face capability and cold crushing strength across all three, using real batch test data, so the right brick gets specified the first time.",
     content: `<h2>Position First, Then Temperature</h2>
 <p><strong>The question that actually decides between CFI, HFK and Porosint insulation brick is not "what temperature," it's "where in the wall does this brick sit."</strong> CFI is built exclusively for backup duty behind another lining. HFK and Porosint's mid-to-upper grades are built to carry a hot face directly. Picking a backup-rated brick for hot-face duty, or over-specifying an expensive hot-face grade where a cheaper backup brick would do, are the two most common selection mistakes, and both are avoidable once the position question is answered first.</p>
+
+<blockquote><strong>Quick answer:</strong> CFI is backup-only, rated to ~900&deg;C, and never sits in the flame path. HFK is kyanite-based and rated for direct hot-face duty to 1300&deg;C. Porosint (CUMILAG) is a 9-grade family from 1260&deg;C to 1850&deg;C that can serve as hot face or backup depending on grade. Decide position first, then pick the brick whose temperature range covers your zone.</blockquote>
+
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=900&q=80" alt="Molten metal being poured from a furnace, showing the extreme heat insulation brick linings are built to contain" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Insulation brick cuts heat loss and protects the shell behind a furnace's working lining.</figcaption></figure>
 
 <h2>CFI &mdash; Cold Face Insulation (Group 16)</h2>
 <p><a href="/products/shaped-refractories/cold-face-insulation-bricks">CFI</a> is a highly porous, low-density backup brick rated to roughly 900&deg;C. It is never placed in the flame path, its job is purely thermal: cut heat loss through the shell and reduce the heat stored in the lining.</p>
@@ -6338,9 +6342,11 @@ export const BLOG_POSTS_DATA = [
     <tr><td>Typical role</td><td>Backup layer only</td><td>Single-layer hot face to 1300&deg;C</td><td>Hot face or backup, wide span</td></tr>
   </tbody>
 </table>
-<p>One honest gap in this table: the CFI batch certificate we test against reports physical properties (crushing strength, density, porosity, thermal conductivity) but not raw material composition. If your specification requires a stated base material for CFI specifically, ask us for the manufacturer's material declaration alongside the test certificate rather than assuming a composition.</p>
+<blockquote><strong>One honest gap in this table:</strong> the CFI batch certificate we test against reports physical properties (crushing strength, density, porosity, thermal conductivity) but not raw material composition. If your specification requires a stated base material for CFI specifically, ask us for the manufacturer's material declaration alongside the test certificate rather than assuming a composition.</blockquote>
 
-<h2>How to Choose</h2>
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=80" alt="Foundry interior with multiple furnaces, the kind of multi-zone plant where insulation brick selection differs by temperature" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">A single plant often runs several zones at different temperatures, which is why the three brick families rarely compete head-to-head.</figcaption></figure>
+
+<h2>How Do You Choose Between CFI, HFK and Porosint?</h2>
 <table>
   <thead><tr><th>Situation</th><th>Specify</th></tr></thead>
   <tbody>
@@ -6352,6 +6358,7 @@ export const BLOG_POSTS_DATA = [
 </table>
 
 <h2>SAPL Supply for Insulation Brick</h2>
+<blockquote><strong>Why this matters:</strong> most furnaces don't run a single temperature end to end, they have zones. Carrying CFI, HFK and the full Porosint range under one roof means SAPL can spec a complete multi-layer wall build across all three brick families for one furnace, instead of you sourcing each zone's brick from a different supplier.</blockquote>
 <p>Shanker Agencies supplies CFI, HFK and the full Porosint (CUMILAG) grade range with batch test certificates, and can specify a complete multi-layer wall build across all three where a furnace has more than one temperature zone. See our <a href="/products/shaped-refractories/cold-face-insulation-bricks">CFI</a>, <a href="/products/shaped-refractories/hot-face-kyanite-insulation-bricks">HFK</a> and <a href="/products/shaped-refractories/insulating-fire-bricks">Porosint/IFB</a> product pages, or <a href="/contact">contact our engineering team</a> with your furnace zones and operating temperatures for a grade recommendation.</p>
 `,
     author: { name: "Rahul Taneja" },
