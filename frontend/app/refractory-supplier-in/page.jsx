@@ -80,7 +80,7 @@ export default function LocationsIndexPage() {
       {/* ------------------------------------------------------------------ */}
       <section
         className="relative py-20 md:py-28 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.94) 0%, rgba(30,58,138,0.88) 100%)' }}
+        style={{ background: 'linear-gradient(135deg, rgba(30,58,95,0.94) 0%, rgba(30,64,175,0.88) 100%)' }}
       >
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 25% 50%, rgba(249,115,22,0.15) 0%, transparent 50%), radial-gradient(circle at 75% 50%, rgba(59,130,246,0.1) 0%, transparent 50%)' }} />
@@ -263,7 +263,7 @@ export default function LocationsIndexPage() {
       {/* ------------------------------------------------------------------ */}
       <section
         className="py-16 md:py-20"
-        style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.96) 0%, rgba(30,58,138,0.92) 100%)' }}
+        style={{ background: 'linear-gradient(135deg, rgba(30,58,95,0.96) 0%, rgba(30,64,175,0.92) 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-oswald text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">

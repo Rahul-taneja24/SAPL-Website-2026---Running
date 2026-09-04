@@ -148,7 +148,7 @@ function IndustrySolutions() {
         <section
           className="relative py-28 px-4 overflow-hidden"
           style={{
-            backgroundImage: `linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.88) 100%), url('https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=1920&q=80')`,
+            backgroundImage: `linear-gradient(135deg, rgba(30,58,95,0.97) 0%, rgba(30,64,175,0.88) 100%), url('https://images.unsplash.com/photo-1769491188458-2728c8d44628?w=1920&q=80')`,
             backgroundSize: "cover", backgroundPosition: "center",
           }}
           aria-labelledby="solutions-heading"

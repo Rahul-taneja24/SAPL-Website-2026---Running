@@ -153,7 +153,7 @@ export default function BlogPage() {
       {/* HERO */}
       <section
         className="relative py-16 md:py-24 overflow-hidden"
-        style={{ background: 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)' }}
+        style={{ background: 'linear-gradient(135deg, rgba(30,58,95,0.97) 0%, rgba(30,64,175,0.92) 100%)' }}
       >
         <div
           className="absolute inset-0 opacity-[0.04]"

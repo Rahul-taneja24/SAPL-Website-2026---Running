@@ -335,7 +335,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-03-08",
     lastModified: "2026-08-03",
     featured: false,
-    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
+    coverImage: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1200&q=80",
     faqs: [
       { question: "What is the difference between castable and mortar?", answer: "Castable is a structural, load-bearing lining material used in thicknesses from tens to hundreds of millimetres and installed by mixing, pouring, and vibrating; mortar is a thin jointing material, typically a few millimetres, used to bond refractory bricks together and is not designed to carry structural load on its own." },
       { question: "How do you cure refractory cement?", answer: "Cure refractory cement (castable) by keeping the cast surface damp, not wet, for 24-48 hours: cover with damp hessian or plastic sheet and avoid drying out or direct sun/wind exposure. Conventional castable depends heavily on this moist-curing step; LCC and ULCC grades benefit from it but are less dependent on it. After curing, follow a controlled heat-up schedule, never fire straight from casting." },
@@ -2361,7 +2361,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-01-10",
     lastModified: "2026-04-20",
     featured: false,
-    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
+    coverImage: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1200&q=80",
     keyTakeaways: [
       "Water addition for LCC must be 4–6% by weight, even 1% extra drastically reduces strength and increases spalling risk.",
       "Mix LCC for a minimum of 3–5 minutes in a forced-action mixer after all water is added.",
@@ -3098,7 +3098,7 @@ export const BLOG_POSTS_DATA = [
     publishDate: "2026-04-18",
     lastModified: "2026-04-20",
     featured: true,
-    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
+    coverImage: "https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=1200&q=80",
     excerpt: "Castable refractory cement is the workhorse lining for boilers, reheating furnaces, kiln hoods, transfer chutes and shaped anchors across Delhi NCR plants. This buyer's guide explains the differences between conventional, low cement and ultra low cement castables, how to pick the right alumina content, what curing and dry-out look like in practice, and how castable pricing works in 2026.",
     content: `
 <h2>What Is a Castable Refractory Cement?</h2>
@@ -3510,7 +3510,7 @@ export const BLOG_POSTS_DATA = [
     lastModified: "2026-06-20",
     category: "Refractory Products",
     tags: ["gunning castable", "gunite refractory", "guniting", "dense gunning", "insulating gunning", "refractory repair", "gunning materials"],
-    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
+    coverImage: "https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=1200&q=80",
     content: `
 <p>Gunning castable, also called gunite, guniting material, or gunning mix, is a monolithic refractory applied pneumatically through a hose and nozzle, without formwork, making it the preferred method for hot repairs and difficult-access applications. Dense gunning mixes contain 40 to 70% Al<sub>2</sub>O<sub>3</sub> and achieve service temperatures up to 1700&deg;C; they are specified for hot repair of BOF vessels, EAF patches, blast furnace taphole areas, rotary kiln shell repairs, and steel ladle sidewall rebuilds. Insulating gunning mixes use lightweight aggregates such as perlite or vermiculite and achieve bulk densities of 0.8 to 1.4 g/cm3; they are used for boiler insulation linings and heat-conservation layers. Key selection parameters are operating temperature, chemical attack type (acid slag, basic slag, or cement clinker alkali), lining thickness, and whether the repair is hot-face or cold-face. Rebound loss in dry-process gunning is 15 to 25%; wet-process reduces this to 5 to 10% and improves bond strength. Shanker Agencies supplies Calderys and Mahakoshal gunning grades from Delhi NCR with same-week dispatch and CIF export to GCC and ASEAN.</p>
 
@@ -3914,7 +3914,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 31,
     slug: "what-is-castable-refractory-complete-guide",
-    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/neutral-ramming-mass-1.png",
+    coverImage: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=1200&q=80",
     title: "What is Castable Refractory? A Complete Guide",
     excerpt: "Castable refractory is a refractory concrete mixed with water and cast into shape. Learn the types, uses and how to choose the right grade.",
     metaTitle: "What is Castable Refractory? Types & Uses | Shanker Agencies",
@@ -3945,6 +3945,17 @@ export const BLOG_POSTS_DATA = [
 
 <h3>Insulating castable</h3>
 <p>Insulating castables use lightweight aggregate to give low thermal conductivity. They are used as backup insulation behind a dense working lining to cut heat loss.</p>
+
+<h2>Castable Types Compared</h2>
+<table>
+  <thead><tr><th>Type</th><th>Cement content</th><th>Service temperature</th><th>Best for</th></tr></thead>
+  <tbody>
+    <tr><td>Conventional castable</td><td>15&ndash;25%</td><td>Up to ~1,400&ndash;1,500&deg;C</td><td>Backup linings, boilers, general moderate-temperature work</td></tr>
+    <tr><td>Low cement castable (LCC)</td><td>4&ndash;8%</td><td>Up to ~1,600&ndash;1,800&deg;C</td><td>Steel ladles, tundish, demanding wear zones</td></tr>
+    <tr><td>Ultra low cement castable (ULCC)</td><td>&lt;4%</td><td>Up to ~1,600&ndash;1,800&deg;C</td><td>Most critical high-temperature linings, slag and abrasion resistance</td></tr>
+    <tr><td>Insulating castable</td><td>Varies (lightweight aggregate)</td><td>Backup zone, behind the working lining</td><td>Cutting heat loss through the shell</td></tr>
+  </tbody>
+</table>
 
 <h2>How to select the right castable</h2>
 <ul>
@@ -4357,7 +4368,7 @@ export const BLOG_POSTS_DATA = [
   {
     id: 37,
     slug: "bottom-pouring-set-refractory-components-guide",
-    coverImage: "https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png",
+    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
     title: "Bottom Pouring Set: Refractory Components, Selection and Supply",
     excerpt: "A bottom pouring set is the refractory assembly used to teem steel ingots from below. Learn the components, grades and how to source from India.",
     metaTitle: "Bottom Pouring Set Manufacturer & Exporter, India | SAPL",

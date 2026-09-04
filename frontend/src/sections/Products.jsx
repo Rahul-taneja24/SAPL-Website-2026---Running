@@ -274,10 +274,13 @@ function ProductDetailPage({ product, category, categorySlug }) {
     <div className="bg-white">
       
 
-      {/* Hero */}
+      {/* Hero -- #1E3A5F -> #1E40AF matches the site's actual header (top
+          contact bar, Navbar.jsx) and every other navy surface (headings,
+          table headers, buttons). This used to be a bespoke rgba(10,20,60)
+          -> rgba(30,58,138) pair, a close but non-identical navy. */}
       <section className="relative py-16 px-4"
         style={{
-          backgroundImage: `linear-gradient(135deg,rgba(10,20,60,0.97)0%,rgba(30,58,138,0.92)100%),url('${product.images?.[0]}')`,
+          backgroundImage: `linear-gradient(135deg, rgba(30,58,95,0.97) 0%, rgba(30,64,175,0.92) 100%), url('${product.images?.[0]}')`,
           backgroundSize: "cover", backgroundPosition: "center",
         }}>
         <div className="max-w-7xl mx-auto">
@@ -627,7 +630,7 @@ function CategoryPage({ category, categorySlug }) {
         </div>
         {/* Gradient overlay */}
         <div className="absolute inset-0"
-          style={{ background: `linear-gradient(135deg, rgba(10,20,60,0.92) 0%, ${meta.accent}22 100%)` }} />
+          style={{ background: `linear-gradient(135deg, rgba(30,58,95,0.92) 0%, ${meta.accent}22 100%)` }} />
         {/* Bottom fade */}
         <div className="absolute bottom-0 left-0 right-0 h-32"
           style={{ background: "linear-gradient(to bottom, transparent, rgba(255,255,255,1))" }} />
@@ -775,7 +778,7 @@ function OverviewPage() {
         </div>
         {/* Gradient overlay */}
         <div className="absolute inset-0"
-          style={{ background: "linear-gradient(135deg, rgba(10,20,60,0.97) 0%, rgba(30,58,138,0.75) 55%, rgba(220,38,38,0.08) 100%)" }} />
+          style={{ background: "linear-gradient(135deg, rgba(30,58,95,0.97) 0%, rgba(30,64,175,0.75) 55%, rgba(220,38,38,0.08) 100%)" }} />
         {/* Subtle grid */}
         <div className="absolute inset-0 opacity-[0.03]"
           style={{ backgroundImage: "linear-gradient(rgba(255,255,255,1)1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,1)1px,transparent 1px)", backgroundSize: "48px 48px" }} />
@@ -850,7 +853,7 @@ function OverviewPage() {
                         loading={idx < 2 ? "eager" : "lazy"} />
                       {/* Gradient: dark on left for text legibility */}
                       <div className="absolute inset-0"
-                        style={{ background: "linear-gradient(135deg, rgba(10,20,60,0.88) 0%, rgba(10,20,60,0.4) 60%, transparent 100%)" }} />
+                        style={{ background: "linear-gradient(135deg, rgba(30,58,95,0.88) 0%, rgba(30,58,95,0.4) 60%, transparent 100%)" }} />
 
                       {/* Category icon + name overlaid on image */}
                       <div className="absolute top-4 left-4 flex items-center gap-2.5">

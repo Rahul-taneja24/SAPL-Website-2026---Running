@@ -158,7 +158,7 @@ function Blog() {
       <section
         className="relative py-28 px-4 overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(15,30,70,0.94) 0%, rgba(30,58,138,0.88) 100%), url('https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1920&q=80')`,
+          backgroundImage: `linear-gradient(135deg, rgba(30,58,95,0.94) 0%, rgba(30,64,175,0.88) 100%), url('https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1920&q=80')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

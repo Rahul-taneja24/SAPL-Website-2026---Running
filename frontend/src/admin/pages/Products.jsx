@@ -925,7 +925,7 @@ function ProductDetailPage({ product, category, categorySlug }) {
             {/* Hero */}
             <section className="relative py-16 px-4"
                 style={{
-                    backgroundImage: `linear-gradient(135deg,rgba(10,20,60,0.97)0%,rgba(30,58,138,0.92)100%),url('${product.images?.[0]}')`,
+                    backgroundImage: `linear-gradient(135deg,rgba(30,58,95,0.97)0%,rgba(30,64,175,0.92)100%),url('${product.images?.[0]}')`,
                     backgroundSize: "cover", backgroundPosition: "center",
                 }}>
                 <div className="max-w-7xl mx-auto">
@@ -1221,7 +1221,7 @@ function CategoryPage({ category, categorySlug }) {
         <div className="bg-white">
             <section className="relative py-20 px-4"
                 style={{
-                    backgroundImage: `linear-gradient(135deg,rgba(10,20,60,0.95)0%,rgba(30,58,138,0.88)100%),url('${category.image}')`,
+                    backgroundImage: `linear-gradient(135deg,rgba(30,58,95,0.95)0%,rgba(30,64,175,0.88)100%),url('${category.image}')`,
                     backgroundSize: "cover", backgroundPosition: "center"
                 }}>
                 <div className="max-w-7xl mx-auto">
@@ -1319,7 +1319,7 @@ function OverviewPage() {
             {/* Hero */}
             <section className="relative min-h-[58vh] flex items-center px-4 py-20"
                 style={{
-                    backgroundImage: `linear-gradient(135deg,rgba(10,20,60,0.97)0%,rgba(30,58,138,0.92)55%,rgba(220,38,38,0.12)100%),url('${IMG.shapedHero}')`,
+                    backgroundImage: `linear-gradient(135deg,rgba(30,58,95,0.97)0%,rgba(30,64,175,0.92)55%,rgba(220,38,38,0.12)100%),url('${IMG.shapedHero}')`,
                     backgroundSize: "cover", backgroundPosition: "center"
                 }}>
                 <div className="absolute inset-0 opacity-[0.035]"
