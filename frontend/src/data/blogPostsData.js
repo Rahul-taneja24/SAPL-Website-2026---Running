@@ -480,8 +480,8 @@ export const BLOG_POSTS_DATA = [
     id: 4,
     slug: "ceramic-fiber-blanket-vs-insulating-fire-brick",
     title: "Ceramic Fiber Blanket vs Insulating Fire Brick: Which to Choose?",
-    metaTitle: "Ceramic Fiber vs Insulating Fire Brick: Which Saves More Fuel?",
-    metaDescription: "Ceramic fiber stores 90% less heat than IFB, but IFB survives abrasion fiber can't. Side-by-side comparison: temperature limits, fuel savings, cost, and…",
+    metaTitle: "Ceramic Fiber vs Insulating Fire Brick: 1,260°C vs 1,800°C",
+    metaDescription: "Ceramic fiber blanket vs IFB: 1,260°C continuous vs IFB to 1,800°C, 64-128 vs 400-1,100 kg/m³ density, plus heat storage, fuel savings and abrasion.",
     category: "Comparison",
     tags: [
       "ceramic fiber blanket",
@@ -790,8 +790,8 @@ export const BLOG_POSTS_DATA = [
     slug: "cement-kiln-refractory-zones-material-selection-guide",
     title: "Cement Kiln Refractory Zones: Complete Material Selection Guide",
     metaTitle:
-      "Cement Kiln Refractory Zones Material Selection Guide | SAPL 2026",
-    metaDescription: "Zone-by-zone guide to cement rotary kiln refractory selection. Burning zone, transition zone, safety zone, and preheater.",
+      "Cement Kiln Refractory Zones: Burning, Transition, Preheater",
+    metaDescription: "Cement rotary kiln refractory by zone: magnesia-spinel burning zone, high alumina transition, alkali-resistant preheater, and realistic campaign life targets.",
     category: "Industry Guide",
     tags: [
       "cement kiln",
@@ -911,8 +911,8 @@ export const BLOG_POSTS_DATA = [
     id: 7,
     slug: "acid-proof-brick-lining-chemical-plants-guide",
     title: "Acid Proof Brick Lining for Chemical Plants: Complete Guide",
-    metaTitle: "Acid Proof Brick Lining: Procedure, Mortars & Failures",
-    metaDescription: "Step-by-step acid proof brick lining for chemical plants: IS 4860 brick grades, silicate vs furan mortars, membrane build-up, and why linings fail early.",
+    metaTitle: "Acid Proof Brick Lining: IS 4860 & ASTM C279 Procedure",
+    metaDescription: "Acid proof brick lining step by step: IS 4860 and ASTM C279 grades, silicate vs furan vs epoxy mortars, membrane build-up, and the curing errors that fail it.",
     category: "Industry Guide",
     tags: [
       "acid proof bricks",
@@ -2004,8 +2004,8 @@ export const BLOG_POSTS_DATA = [
     title:
       "Refractory Anchors & Fastening Systems: Types, Selection & Installation",
     metaTitle:
-      "Refractory Anchors: V, Y, Ceramic Types & Castable Anchoring",
-    metaDescription: "Refractory anchor types compared: V, Y, ceramic, bullhorn anchors and anchor bricks, for castable and kiln-roof linings. Selection by material, spacing and application.",
+      "Refractory Anchors: Y, V & Ceramic Types, 304/310 SS Grades",
+    metaDescription: "Y, V, bullhorn and ceramic refractory anchors compared: AISI 304, 310 and 253MA grades, spacing and service temperature by furnace zone. Indian supplier.",
     category: "Technical Guide",
     tags: [
       "refractory anchors",
@@ -2744,8 +2744,8 @@ export const BLOG_POSTS_DATA = [
     id: 22,
     slug: "gunning-vs-casting-when-to-use",
     title: "Gunning vs Casting Refractories: When to Use Which Method",
-    metaTitle: "Gunning vs Casting Refractory: Which Method Saves More Downtime?",
-    metaDescription: "Gunning vs casting refractories: when to use each, rebound loss, material compatibility, and cost per tonne of steel. Decision matrix for maintenance engineers.",
+    metaTitle: "Gunning vs Casting Refractory: Rebound Loss, Cost & Downtime",
+    metaDescription: "Gunning vs cast refractory compared on rebound loss, cost per tonne, downtime and repair life, with a decision matrix by furnace zone and shutdown window.",
     category: "How-To Guide",
     tags: ["gunning refractory", "casting refractory", "hot repair", "refractory installation", "gunning mix", "refractory maintenance"],
     readTime: "5 min",

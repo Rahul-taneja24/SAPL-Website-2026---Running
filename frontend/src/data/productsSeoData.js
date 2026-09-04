@@ -71,8 +71,8 @@ export const PRODUCT_SEO = [
     categorySlug: "unshaped-refractories",
     productId: "ramming-masses",
     name: "Ramming Mass (Silica, Alumina, Magnesia)",
-    metaTitle: "Ramming Mass for Induction Furnace | Shanker Agencies",
-    metaDescription: "Silica, neutral & basic ramming mass for induction furnace linings. Grades, properties and uses explained. Authorized CUMI dealer, price on enquiry.",
+    metaTitle: "Induction Furnace Ramming Mass: Silica, Alumina & Basic",
+    metaDescription: "Silica, alumina and magnesia ramming mass for induction furnace linings: grade selection by metal chemistry, sintering and lining life. CUMI dealer, India.",
   },
   {
     categorySlug: "unshaped-refractories",
