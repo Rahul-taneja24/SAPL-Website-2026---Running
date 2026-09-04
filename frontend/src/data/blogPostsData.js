@@ -3680,12 +3680,15 @@ export const BLOG_POSTS_DATA = [
 <p>Fired from selected clays to a dense, low-porosity body, acid-resistant bricks resist all acids except hydrofluoric, plus alkalis and solvents. They are specified to IS 4860 in India, with controlled water absorption and high crushing strength. They are the standard wearing surface for acid floors, trenches, and tank linings.</p>
 
 <h3>Chemical-resistant mortars</h3>
-<ul>
-<li><strong>Silicate mortars:</strong> Excellent resistance to most acids and high temperature; not suited to alkalis or hydrofluoric acid.</li>
-<li><strong>Furane and phenolic mortars:</strong> Resist acids, alkalis, and solvents, the best all-round choice for mixed chemical exposure.</li>
-<li><strong>Sulphur mortars:</strong> Fast setting and impervious, good for non-oxidising acids.</li>
-<li><strong>Epoxy mortars:</strong> Strong bond and resistance to dilute acids and alkalis where temperatures are moderate.</li>
-</ul>
+<table>
+  <thead><tr><th>Mortar type</th><th>Resistance</th><th>Best for</th><th>Limitations</th></tr></thead>
+  <tbody>
+    <tr><td>Silicate mortars</td><td>Most acids, high temperature</td><td>Hot acid duty, thermal cycling</td><td>Not suited to alkalis or hydrofluoric acid</td></tr>
+    <tr><td>Furane and phenolic mortars</td><td>Acids, alkalis, and solvents</td><td>Mixed chemical exposure, the best all-round choice</td><td>Higher cost than silicate or sulphur</td></tr>
+    <tr><td>Sulphur mortars</td><td>Non-oxidising acids</td><td>Fast-turnaround jobs needing impervious, quick-setting joints</td><td>Not for oxidising acids or high temperature</td></tr>
+    <tr><td>Epoxy mortars</td><td>Dilute acids and alkalis</td><td>Moderate-temperature duty needing strong bond strength</td><td>Loses resistance at higher temperatures</td></tr>
+  </tbody>
+</table>
 
 <h3>Membranes</h3>
 <p>Bitumen and polymer membranes sit beneath the brickwork as the impervious barrier. For severe immersion duty, FRP or rubber-lining systems are used in place of, or alongside, brick linings.</p>
@@ -4468,14 +4471,16 @@ export const BLOG_POSTS_DATA = [
 
 <h2>MgO-C Bricks: Still the EAF Workhorse</h2>
 <p>Magnesia-carbon (MgO-C) bricks remain the dominant lining material for EAF sidewalls, slag lines, tap holes, and door surrounds. The combination of high-purity magnesia (MgO &gt;85%) and graphite (C 10–20%) gives them the thermal conductivity to survive arc zone temperatures, the chemical resistance to basic slag attack, and the mechanical strength to withstand charging impacts.</p>
-<p>For DRI-ready EAF operations, where slag chemistry is more acidic and temperatures are higher, the specification shifts:</p>
-<ul>
-  <li>MgO purity 90–95% (versus 85–88% for standard scrap-based EAF)</li>
-  <li>Carbon content 12–16% with metallic antioxidants (Al, Si, MgAl) to suppress oxidation</li>
-  <li>Finer graphite flake size for better distribution and erosion resistance</li>
-  <li>High-pressure pressing to maximise bulk density and minimise open porosity</li>
-</ul>
-<p>For steelmakers with decarbonisation targets, <strong>low-carbon MgO-C grades</strong> (4–8% C) are gaining traction. These reduce CO₂ process emissions from the lining material itself. Advanced antioxidant systems compensate for the lower graphite content on thermal conductivity and erosion performance.</p>
+<p>For DRI-ready EAF operations, where slag chemistry is more acidic and temperatures are higher, the specification shifts. For steelmakers with decarbonisation targets, <strong>low-carbon MgO-C grades</strong> are also gaining traction, reducing CO₂ process emissions from the lining material itself, with advanced antioxidant systems compensating for the lower graphite content on thermal conductivity and erosion performance:</p>
+<table>
+  <thead><tr><th>Parameter</th><th>Standard scrap-based EAF</th><th>DRI-ready EAF</th><th>Low-carbon grade</th></tr></thead>
+  <tbody>
+    <tr><td>MgO purity</td><td>85–88%</td><td>90–95%</td><td>Grade-dependent</td></tr>
+    <tr><td>Carbon content</td><td>10–20%</td><td>12–16% with metallic antioxidants (Al, Si, MgAl)</td><td>4–8%</td></tr>
+    <tr><td>Graphite flake</td><td>Standard</td><td>Finer, for better distribution and erosion resistance</td><td>Fine, antioxidant-compensated</td></tr>
+    <tr><td>Pressing</td><td>Standard</td><td>High-pressure, to maximise bulk density and minimise open porosity</td><td>High-pressure</td></tr>
+  </tbody>
+</table>
 
 <h2>Monolithic Refractories in the EAF: Hearth, Repair, and Beyond</h2>
 <p>Monolithic refractories, poured, gunned, or rammed rather than built as shaped bricks, play three critical roles in EAF operations:</p>
@@ -4580,6 +4585,20 @@ export const BLOG_POSTS_DATA = [
 <h3>Repairability by Gunning</h3>
 <p>One of the most significant operational advantages of a monolithic working lining is that worn zones can be repaired by <strong>gunning</strong> without a full reline shutdown. After inspection, worn areas are built back up with gunning mass applied semi-dry or wet. Effective gunning programmes routinely extend working lining campaigns by 15–30%, compounding the relining frequency savings.</p>
 <p>In our experience supplying LCC packages to Delhi NCR and eastern India re-rolling mills, the plants that see the strongest results from spot-repair gunning are the ones that inspect and repair on a fixed cycle rather than reactively, after visible thinning shows up in production. Reactive gunning still helps, but the 15–30% figure holds mainly for plants running a scheduled inspection-and-repair rhythm rather than waiting for a problem heat.</p>
+
+<h2>Brick vs Monolithic: Side-by-Side</h2>
+<table>
+  <thead><tr><th>Factor</th><th>Brick Lining</th><th>Monolithic (Castable) Lining</th></tr></thead>
+  <tbody>
+    <tr><td>Installation time (working lining)</td><td>16&ndash;24 hours</td><td>4&ndash;8 hours (30&ndash;50% faster)</td></tr>
+    <tr><td>Labour requirement</td><td>Skilled masons, staggered joints</td><td>Fewer specialised skills once mixed and poured</td></tr>
+    <tr><td>Erosion resistance at 1,600&ndash;1,700&deg;C</td><td>Best, especially at the slag line</td><td>LCC/ULCC now comparable to high-alumina brick</td></tr>
+    <tr><td>Bulk density (fired)</td><td>Reference standard</td><td>3.0&ndash;3.15 g/cm&sup3; (approaching brick)</td></tr>
+    <tr><td>Cold crushing strength</td><td>High (brick-grade)</td><td>&gt;80 MPa (LCC/ULCC)</td></tr>
+    <tr><td>In-campaign repair</td><td>Full re-brick of the affected zone</td><td>Gunning repair, extends campaign 15&ndash;30%</td></tr>
+    <tr><td>Best-suited zones</td><td>Permanent/safety lining, slag line, dimensionally precise fit-up</td><td>Working lining body, bottom, spot repairs</td></tr>
+  </tbody>
+</table>
 
 <h2>Hybrid Construction: The Practical Standard</h2>
 <p>The most common approach in modern steel plants is hybrid construction: <strong>brick permanent lining + castable working lining</strong>. This gives you the long-life safety provided by well-bonded permanent bricks alongside the speed and repairability of a monolithic working lining. The slag line is typically still built with MgO-C bricks, integrated into the monolithic working lining body.</p>

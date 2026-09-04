@@ -132,8 +132,8 @@ export default async function NewsArticlePage({ params }) {
         className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage: article.coverImage
-            ? `linear-gradient(135deg, rgba(15,30,70,0.94) 0%, rgba(30,58,138,0.88) 100%), url('${article.coverImage}')`
-            : 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)',
+            ? `linear-gradient(135deg, rgba(30,58,95,0.94) 0%, rgba(30,64,175,0.88) 100%), url('${article.coverImage}')`
+            : 'linear-gradient(135deg, #1E3A5F 0%, #1E40AF 100%)',
         }}
       >
         <div
@@ -169,14 +169,19 @@ export default async function NewsArticlePage({ params }) {
             {article.title}
           </h1>
           <p className="text-sm text-white/60 mb-6">By the Shanker Agencies Engineering Team</p>
-          <p className="text-lg text-white/75 leading-relaxed mb-8 max-w-3xl">{article.excerpt}</p>
+          <p className="text-lg text-white/75 leading-relaxed mb-8 max-w-3xl line-clamp-2">{article.excerpt}</p>
 
           <div className="flex flex-wrap gap-2">
-            {article.tags.map((tag) => (
+            {article.tags.slice(0, 4).map((tag) => (
               <span key={tag} className="inline-flex items-center gap-1 bg-white/10 text-white/70 text-xs px-3 py-1 rounded-full border border-white/15">
                 <Tag className="w-3 h-3" />{tag}
               </span>
             ))}
+            {article.tags.length > 4 && (
+              <span className="inline-flex items-center bg-white/5 text-white/50 text-xs px-3 py-1 rounded-full border border-white/10">
+                +{article.tags.length - 4} more
+              </span>
+            )}
           </div>
         </div>
       </section>

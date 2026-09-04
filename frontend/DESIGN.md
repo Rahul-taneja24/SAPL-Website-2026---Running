@@ -10,8 +10,7 @@ images) so they aren't reintroduced.
 
 | Role | Value | Usage |
 |---|---|---|
-| Navy (primary dark) | `#1E3A5F` | Headings, hero gradients, dark cards, table headers |
-| Navy (deep, hero base) | `rgba(15,30,70,...)` → `rgba(30,58,138,...)` | Hero section gradient (see §3) |
+| Navy (primary dark) | `#1E3A5F` → `#1E40AF` | Headings, table headers, buttons, and the header/hero gradient — see §1a |
 | Orange (accent/CTA) | `#F97316` | Buttons, links-on-dark, left-border accents, category pills |
 | Orange (hover) | `#EA580C` | Button hover state |
 | Blue (secondary accent) | `#3B82F6` | Links, icon accents, secondary buttons |
@@ -22,6 +21,34 @@ images) so they aren't reintroduced.
 Fonts: **Oswald** for all headings (`font-oswald`), **Inter** for body text
 (`font-inter`, and the Tailwind default). Both loaded via `next/font/google`
 in `app/layout.jsx`.
+
+### 1a. `#1E3A5F` → `#1E40AF` is the one navy pair to use
+
+The site's real, persistent header — the top contact-bar strip visible on
+every page (`src/components/Navbar.jsx`,
+`bg-gradient-to-r from-[#1E3A5F] to-[#1E40AF]`) — is built from exactly these
+two hex values, and they're also what headings, nav text, and buttons use
+throughout the site (`#1E3A5F` alone, ~390 occurrences). **Use this pair for
+any navy gradient or navy fill.**
+
+Two other navies exist on the site and are reserved, narrower-scope
+exceptions, not general-purpose alternatives:
+- `#0B1628` — a darker navy used only for the footer, OpenGraph share-card
+  backgrounds, and a couple of dark info cards (`About.jsx`,
+  `CompanyProfile.jsx`). Don't reach for it outside those contexts.
+- `#1B1464` — the actual dominant ink color sampled directly from
+  `public/images/sapl-logo.png` (verified by pixel-counting the PNG, not
+  guessed). This is arguably the "truest" brand navy since it comes from the
+  logo file itself, but it isn't used anywhere in the site's CSS today. If
+  the brand navy is ever formally rebased on this value, it's a deliberate,
+  site-wide decision (390+ occurrences to update) — don't introduce it
+  piecemeal in just one component.
+
+The blog and news article hero gradient used to carry its own bespoke navy
+(`rgba(15,30,70,...)` → `rgba(30,58,138,...)`, i.e. `#0F1E46` →
+`#1E3A8A`) — close to `#1E3A5F`/`#1E40AF` but not identical, which made the
+hero read as a visibly different navy from the table headers and headings
+right below it on the same page. Fixed 2026-09-04 to use the real pair.
 
 ## 2. ⚠️ `@tailwindcss/typography` is NOT installed
 
@@ -85,6 +112,20 @@ layer, not a leftover.
 
 If a post/article has no `coverImage`, the hero falls back to the flat
 gradient (no broken image, no missing background).
+
+**Hero height stays roughly consistent across posts** because two variable-
+length fields are bounded, not because the hero has a fixed height:
+- the excerpt paragraph carries `line-clamp-2` (posts range from one short
+  sentence to two long ones — unclamped, some heroes were visibly taller
+  than others)
+- the tag-pill row shows only the first 4 tags (`post.tags.slice(0, 4)`)
+  plus a `+N more` pill if there are more — posts carry 4 to 8 tags, and an
+  unclamped row could wrap to two or three lines on tag-heavy posts
+
+Title length is the one remaining source of height variance (1–3 lines) —
+that's left alone since clamping an `<h1>` or truncating SEO titles isn't
+worth the tradeoff. Keep both bounds when touching this section; removing
+either reintroduces the inconsistency.
 
 ## 4. Blog/news post content HTML conventions
 
