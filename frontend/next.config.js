@@ -26,7 +26,12 @@ const nextConfig = {
       // Clarity runtime from this host, so without it Clarity never starts.
       "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.clarity.ms https://c.clarity.ms https://scripts.clarity.ms",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob: https://images.unsplash.com https://www.shankeragencies.com https://shankeragencies.com https://www.cumi-murugappa.com https://mahakoshalrefractories.com https://ifglgroup.com https://maps.gstatic.com https://maps.googleapis.com https://*.clarity.ms https://*.google-analytics.com",
+      // ifglgroup.com removed 2026-09-05: IFGL is a competitor, not a
+      // partner (/brands/ifgl was deleted and 301'd to /products/flow-control
+      // for exactly that reason) -- every hotlink to their CDN was cleared
+      // from the data files, and this allowance is dropped too so nothing can
+      // silently reintroduce one.
+      "img-src 'self' data: blob: https://images.unsplash.com https://www.shankeragencies.com https://shankeragencies.com https://www.cumi-murugappa.com https://mahakoshalrefractories.com https://maps.gstatic.com https://maps.googleapis.com https://*.clarity.ms https://*.google-analytics.com",
       "font-src 'self' data:",
       // GA4 does not post only to www.google-analytics.com. It also uses
       // analytics.google.com and regional hosts (region1/region4...), which were

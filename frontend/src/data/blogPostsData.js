@@ -6475,6 +6475,179 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["low-cement-castables", "ultra-low-cement-castables", "conventional-castables"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 68. Aluminium Cast House Refractories
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 68,
+    slug: "aluminium-cast-house-refractories-melting-holding-launders",
+    title: "Aluminium Cast House Refractories: Melting Furnace, Holding Furnace and Launders",
+    metaTitle: "Aluminium Cast House Refractories: Corundum Growth Explained",
+    metaDescription: "Aluminium cast house refractories by zone: melting and holding furnace, launders, filter boxes. Why corundum growth fails linings and how non-wetting castables stop it.",
+    category: "Technical Guide",
+    tags: [
+      "aluminium cast house",
+      "non-wetting castable",
+      "corundum growth",
+      "aluminium holding furnace",
+      "launder refractory",
+      "aluminium melting furnace lining",
+    ],
+    readTime: "9 min",
+    publishDate: "2026-09-06",
+    featured: true,
+    coverImage: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=1200&q=80",
+    keyTakeaways: [
+      "Molten aluminium fails refractory by a different mechanism than iron or steel: it wets and penetrates the pore structure, then oxidises inside it and grows corundum (Al₂O₃), which expands and spalls the hot face away from the inside out.",
+      "Aluminium also chemically reduces silica on contact (4Al + 3SiO₂ → 2Al₂O₃ + 3Si), stripping silicon into the melt and destroying any silica-bearing lining, so ordinary castables and mortars cannot be used in contact zones.",
+      "The fix is non-wetting castables, a high-alumina, low-silica matrix with additives that stop the melt entering the pore network in the first place, rather than trying to out-refractoriness the attack.",
+      "Cast house zones fail differently: the furnace hearth and walls see steady penetration and thermal cycling, while launders and filter boxes see the same chemical attack plus constant metal flow and mechanical wear at a joint- and corner-heavy geometry.",
+      "Alloy chemistry changes the lining choice as much as temperature does. Al-Mg alloys are measurably more aggressive than commercial-purity aluminium and need a higher cold crushing strength, higher-alumina grade, not just a hotter one.",
+    ],
+    faqs: [
+      { question: "Why does molten aluminium destroy refractory that survives molten steel fine?", answer: "Because the failure mechanism is chemical, not thermal. Aluminium furnaces run at 700-1300°C, well below steel-melting temperatures, so raw heat isn't the problem. The problem is that molten aluminium wets ordinary refractory and penetrates its pore structure, then oxidises inside those pores and grows corundum (Al₂O₃). Corundum takes up more volume than the metal that formed it, so the growth expands inside the lining and spalls the hot face away from the inside out, a mechanism that has nothing to do with peak temperature and everything to do with pore structure and chemistry." },
+      { question: "Why can't silica-bearing castable or mortar be used in an aluminium furnace?", answer: "Molten aluminium chemically reduces silica on direct contact: 4Al + 3SiO₂ → 2Al₂O₃ + 3Si. The reaction strips silicon out of the refractory and into the melt, contaminating alloy chemistry, while destroying the lining's bond structure from within. This is why aluminium contact refractories are specified by low silica content (our own grades run 11.5-12% SiO₂) rather than by temperature rating alone, and why a patch made with the wrong material, even a small one, can fail within a single campaign." },
+      { question: "What is a non-wetting castable and how does it stop corundum growth?", answer: "A non-wetting castable is a high-alumina, low-silica castable formulated with additives, commonly proprietary wetting-angle modifiers, that increase the contact angle between the melt and the refractory surface, so the metal beads rather than soaking in. Because the melt cannot enter the pore network in the first place, it cannot oxidise and grow corundum inside the lining. The castable's job is prevention, not resistance, once penetration has already happened, no amount of refractoriness stops the expansion that follows." },
+      { question: "Do launders need a different refractory than the melting furnace?", answer: "Launders and filter boxes see the same chemical attack as the furnace hearth, but on top of it they see constant metal flow, more corners and joints, and more mechanical wear from skimming and cleaning. A furnace hearth can tolerate a slower-flowing, larger-mass lining; a launder needs a castable that installs cleanly into a narrow, geometrically complex shape and holds up under continuous flow abrasion, not just static contact. Self-flow non-wetting grades are generally the practical choice here because they install into that geometry without heavy vibration equipment." },
+      { question: "Does the aluminium alloy change which refractory grade I need?", answer: "Yes, materially. Al-Mg alloys are more chemically aggressive toward refractory than commercial-purity aluminium, so a furnace running Al-Mg needs a higher cold crushing strength, higher-alumina grade even at the same 1300°C service temperature. Specifying by temperature alone and ignoring alloy chemistry is a common cause of linings that fail well before their expected campaign life, particularly in remelt and secondary aluminium operations where alloy chemistry varies batch to batch." },
+      { question: "Can a worn aluminium furnace lining be patched, or does it need a full reline?", answer: "Localised wear, a worn ramp, a spot of erosion at the metal line, can often be patched with the same non-wetting castable family used for the original lining, provided the surrounding lining is still structurally sound. Never patch with a generic or silica-bearing material even for a small repair, it will be reduced by the melt and fail faster than the surrounding lining, undermining the patch. Corundum growth that has already penetrated deep into the lining, visible as a hard, expanded, cracked hot face rather than surface wear, is a reline indicator rather than a patching job." },
+    ],
+    excerpt:
+      "Molten aluminium fails refractory by penetration and corundum growth, not by raw temperature, so it needs a fundamentally different lining approach than steel or iron. This guide covers why aluminium contact refractories exist, how melting furnace, holding furnace and launder zones fail differently, and how alloy chemistry changes the grade you need.",
+    content: `<h2>Why Does Molten Aluminium Need Different Refractories?</h2>
+<p><strong>Molten aluminium doesn't fail refractory by heat, it fails it by chemistry: the melt wets and penetrates the pore structure, oxidises inside it, and grows corundum (Al₂O₃) that expands and spalls the hot face apart from the inside out.</strong> This is a completely different failure mode from the abrasion and slag attack that governs steel and iron linings, and it's why an aluminium furnace running at a modest 700-1300°C can destroy a lining that would comfortably survive far higher temperatures in a different service.</p>
+<p>Aluminium also directly attacks any silica in the refractory: 4Al + 3SiO₂ &rarr; 2Al₂O₃ + 3Si. The reaction strips silicon out of the lining and into the melt, contaminating alloy chemistry while destroying the refractory's bond structure. Between penetration-driven corundum growth and direct silica reduction, an aluminium contact lining has to be engineered specifically against these two mechanisms, not simply rated to a high enough temperature.</p>
+
+<blockquote><strong>Quick answer:</strong> Aluminium contact refractories are high-alumina, low-silica non-wetting castables. Non-wetting additives stop the melt entering the pore network, which is what prevents corundum growth before it starts. Silica content is kept low, our own grades run 11.5-12%, because aluminium reduces silica on contact. Service temperature is a secondary spec; penetration resistance and alloy compatibility are what actually determine lining life.</blockquote>
+
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1625765362026-654dd71d07c5?w=900&q=80" alt="Glowing furnace interior representative of the high-temperature metal-contact zones in an aluminium cast house" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">Cast house refractories are engineered against chemical penetration, not just peak temperature.</figcaption></figure>
+
+<h2>What Refractories Line an Aluminium Melting and Holding Furnace?</h2>
+<p>The melting furnace and holding furnace share the same core requirement, a non-wetting lining across every metal-contact surface, but see somewhat different duty. The melting furnace sees higher thermal cycling as cold charge is added; the holding furnace sees longer, steadier metal contact with less cycling but more time for slow penetration to develop.</p>
+<table>
+  <thead><tr><th>Zone</th><th>Primary stress</th><th>Refractory type</th></tr></thead>
+  <tbody>
+    <tr><td>Hearth and walls (melting furnace)</td><td>Penetration + thermal cycling from charging</td><td>Non-wetting low cement castable</td></tr>
+    <tr><td>Hearth and walls (holding furnace)</td><td>Sustained penetration, less cycling</td><td>Non-wetting low cement castable</td></tr>
+    <tr><td>Belly band / metal line</td><td>Oxidation and flux attack at the air-metal interface</td><td>Higher-alumina non-wetting grade</td></tr>
+    <tr><td>Roof and burner zone</td><td>High temperature, combustion atmosphere, not metal contact</td><td>Conventional high alumina castable or brick</td></tr>
+    <tr><td>Launders and troughs</td><td>Penetration + continuous flow abrasion</td><td>Self-flow non-wetting castable</td></tr>
+    <tr><td>Filter and degassing boxes</td><td>Penetration + complex, joint-heavy geometry</td><td>Self-flow non-wetting castable</td></tr>
+  </tbody>
+</table>
+<p>Note that the roof and burner zone is the one part of the system that isn't in metal contact, and it can generally use conventional high alumina refractory rather than the non-wetting grade, since it never sees the penetration mechanism the rest of the furnace is built to resist.</p>
+
+<h2>Why Do Launders and Filter Boxes Fail Differently From the Furnace Itself?</h2>
+<p>A furnace hearth is a large, relatively simple shape holding a static or slow-moving metal pool. A launder or filter box is the opposite: a narrow, corner-heavy geometry with metal constantly flowing through it, being skimmed, and being mechanically disturbed during cleaning. Both see the same underlying chemical attack, but the launder adds continuous flow abrasion and far more joints and corners where a poorly-installed lining can start to fail first.</p>
+<p>This is why launders and filter boxes are usually specified in a self-flow or mild-vibration castable rather than a heavier vibro-cast grade, the installation method has to suit the shape, not just the chemistry. A non-wetting castable that is correct for the furnace hearth but installs poorly into a launder's geometry will still fail early, from installation defects rather than from the material being wrong.</p>
+
+<h2>How Does Alloy Chemistry Change the Lining Choice?</h2>
+<p>Temperature alone does not distinguish between the two non-wetting grades commonly specified in a cast house, both are typically rated to the same service temperature. What changes is alloy chemistry. Al-Mg alloys are measurably more aggressive toward refractory than commercial-purity aluminium, and a furnace running Al-Mg needs a higher cold crushing strength, higher-alumina grade to hold the same campaign life a lower-grade castable would achieve on commercial-purity metal.</p>
+<table>
+  <thead><tr><th>Factor</th><th>Self-flow non-wetting grade</th><th>High-strength Al-Mg resistant grade</th></tr></thead>
+  <tbody>
+    <tr><td>Al₂O₃</td><td>77.2%</td><td>79.5%</td></tr>
+    <tr><td>SiO₂</td><td>11.5%</td><td>12%</td></tr>
+    <tr><td>Service temperature</td><td>1300&deg;C</td><td>1300&deg;C</td></tr>
+    <tr><td>Cold crushing strength (110/816/1200&deg;C)</td><td>55 / 65 / 80 N/mm&sup2;</td><td>80 / 110 / 120 N/mm&sup2;</td></tr>
+    <tr><td>Installation</td><td>Self-flow / mild vibration</td><td>Vibro cast, traditional or pump cast</td></tr>
+    <tr><td>Best fit</td><td>Launders, holding furnace, general contact</td><td>Melting furnace, Al-Mg alloys, high-impact zones</td></tr>
+  </tbody>
+</table>
+<p>Specifying by temperature alone and ignoring alloy chemistry is one of the most common reasons a cast house lining fails well short of its expected campaign, particularly in remelt and secondary aluminium operations where scrap-derived alloy chemistry varies from batch to batch.</p>
+
+<h2>SAPL Supply for Aluminium Cast House Refractories</h2>
+<blockquote><strong>Why this matters:</strong> a lining specified against peak temperature alone, with alloy chemistry treated as an afterthought, is the single most common reason an aluminium cast house reline comes early. Tell us your alloy (commercial-purity or Al-Mg) and the zone you're lining, and we'll match the grade rather than defaulting to whichever castable happens to be in stock.</blockquote>
+<p>Shanker Agencies supplies <a href="/products/unshaped-refractories/aluminium-contact-castables">non-wetting aluminium contact castables</a> for melting and holding furnace hearths, belly bands, launders, filter and degassing boxes, transfer ladles and cast house floors, in both self-flow and high-strength Al-Mg resistant grades. Send us your furnace capacity, alloy chemistry and the zone you're lining and our engineering team will confirm grade and quantity from your drawings.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["aluminium-contact-castables"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 69. Induction Furnace Melting Shop: The Complete Refractory Package
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 69,
+    slug: "induction-furnace-melting-shop-complete-refractory-package",
+    title: "Induction Furnace Melting Shop: The Complete Refractory Package",
+    metaTitle: "Induction Furnace Refractory Package: Ramming Mass to Coil Coat",
+    metaDescription: "Complete induction furnace refractory package: ramming mass by melt chemistry, coil coat protection, patching for campaign extension. What a melting shop actually needs.",
+    category: "Technical Guide",
+    tags: [
+      "induction furnace refractory package",
+      "coil coat",
+      "ramming mass",
+      "induction furnace patching",
+      "melting shop refractory",
+      "coreless induction furnace lining",
+    ],
+    readTime: "8 min",
+    publishDate: "2026-09-06",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1200&q=80",
+    keyTakeaways: [
+      "A coreless induction furnace lining is not one product, it's a package: ramming mass for the working lining, coil coat to protect the coil underneath it, and patching material to extend the campaign once the lining is in service.",
+      "Ramming mass grade is selected by melt chemistry (silica for iron and mild steel, alumina for stainless, magnesia for manganese steel), not by furnace size or price per kilogram.",
+      "Coil coat sits between the coil insulation and the rammed lining, and its main job is dielectric protection: if metal ever penetrates the working lining, a low-dielectric-strength coil coat is what stands between that penetration and a coil failure.",
+      "Patching material extends a campaign between full relines by rebuilding worn areas, but it only works on a lining that's still structurally sound; it isn't a substitute for a reline once wear reaches the coil-side insulation.",
+      "Treating these three materials as separate, unrelated purchases rather than one coordinated package is a common reason melting shops see inconsistent lining life between furnaces running the same charge.",
+    ],
+    faqs: [
+      { question: "What refractory materials does a coreless induction furnace actually need?", answer: "Three, not one: ramming mass for the rammed working lining that contacts the metal, coil coat applied over the coil insulation before that lining is rammed, and patching material to repair worn areas and extend the campaign once the furnace is in service. Buying only the ramming mass and treating coil coat and patching as optional extras is the most common gap in a melting shop's refractory purchasing, and it shows up as coil damage or shorter, less consistent campaign life." },
+      { question: "Why do I need coil coat if I'm already ramming a full working lining?", answer: "Coil coat isn't there to replace the working lining, it's the layer between the coil insulation and that lining, and it exists for the failure case: if the working lining is ever penetrated by metal, whether from a crack, a thin spot, or reaching end of campaign, the coil coat is what stands between that penetration and direct coil contact. A fused alumina coil coat gives materially higher dielectric strength than a silicate-bonded grout, which is the property that actually matters here, not compressive strength or refractoriness." },
+      { question: "How is ramming mass grade actually selected?", answer: "By melt chemistry, not by furnace size or price per kilogram: silica-based mass for grey iron and mild steel (up to roughly 1700&deg;C), alumina-based for stainless and tool steel (up to roughly 1700-1750&deg;C, grade dependent), and magnesia-based for manganese and basic-slag alloy steels (up to roughly 1750&deg;C). Using a silica lining on a basic-slag alloy, or an alumina lining where a cheaper silica grade would do, are the two most common selection mistakes, and both come from selecting on furnace size rather than the metal actually being melted." },
+      { question: "What is the actual role of patching material in an induction furnace?", answer: "Patching rebuilds worn, localised areas of an otherwise sound lining, a thin spot, an eroded zone from charge impact, so the furnace can complete more heats before a full reline is needed. It only works on a lining that is still structurally sound. Patching does not rescue a lining that has worn through toward the coil-side insulation, and repeatedly patching a badly worn lining, rather than relining, is a common precursor to a metal breakout." },
+      { question: "Can I mix ramming mass and coil coat from different sources?", answer: "There's no chemical requirement that they come from the same manufacturer, ramming mass and coil coat perform independent jobs and don't need to be chemically matched to each other. What matters is that each is correctly matched to its own job: ramming mass to your melt chemistry, coil coat to the dielectric protection your coil needs. Sourcing both from one supplier is mainly a logistics and accountability convenience, not a technical requirement." },
+      { question: "How often should an induction furnace melting shop expect to patch versus reline?", answer: "This varies by furnace size, melt chemistry and operating discipline rather than following a fixed interval, but the general pattern is: patching happens between scheduled inspections to rebuild specific worn zones, while a full reline happens when wear is general across the lining rather than localised, or when the lining has reached the sintering vendor's expected heat count for that grade. A shop that inspects on a fixed schedule and patches proactively typically gets meaningfully more heats per campaign than one that reacts only after a problem heat." },
+    ],
+    excerpt:
+      "A coreless induction furnace lining isn't one product, it's a package: ramming mass, coil coat and patching material each doing a different job. This guide explains how ramming mass grade is actually selected, why coil coat matters even with a full working lining, and how patching extends a campaign without replacing a reline.",
+    content: `<h2>What Does a Complete Induction Furnace Refractory Package Include?</h2>
+<p><strong>A coreless induction furnace lining is a package of three materials doing three different jobs, ramming mass for the working lining, coil coat to protect the coil underneath it, and patching material to extend the campaign once the furnace is running, not a single product you buy once per reline.</strong> Melting shops that treat these as one purchase, rather than three coordinated ones, tend to see inconsistent lining life between furnaces running the identical charge, because whichever material got the least attention is usually the one causing the variation.</p>
+
+<blockquote><strong>Quick answer:</strong> Ramming mass forms the working lining and is selected by melt chemistry, not furnace size. Coil coat goes on before ramming and protects the coil with dielectric strength, mattering most if the working lining is ever penetrated. Patching material rebuilds worn zones between relines. All three need to be right; getting one wrong undermines the other two.</blockquote>
+
+<h2>How Is the Working Lining Selected and Installed?</h2>
+<p>Ramming mass is classified by chemical base into three families, and the right one is determined by the metal you're melting, not by furnace capacity or cost per kilogram.</p>
+<table>
+  <thead><tr><th>Family</th><th>Base</th><th>Best suited for</th><th>Typical max temperature</th></tr></thead>
+  <tbody>
+    <tr><td>Silica</td><td>SiO&#8322; 95-98%</td><td>Grey iron, mild steel</td><td>1650&ndash;1700&deg;C</td></tr>
+    <tr><td>Alumina</td><td>Al&#8322;O&#8323; 85-92%</td><td>Stainless steel, tool steel</td><td>1700&deg;C</td></tr>
+    <tr><td>Magnesia</td><td>MgO 85-95%</td><td>Manganese steel, basic-slag alloys</td><td>1750&deg;C</td></tr>
+  </tbody>
+</table>
+<p>Installation matters as much as grade selection. The mass is rammed in layers against a former, coil-side first with a protective coat already in place, and the lining is sintered on the first heat using a controlled temperature schedule, rushing the sinter is one of the most common causes of early lining failure. For the full step-by-step, sintering schedule and grade selection detail, see our <a href="/blog/how-to-select-ramming-mass-for-induction-furnace">complete ramming mass selection guide</a>.</p>
+
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=80" alt="Foundry interior with multiple induction furnaces, representative of a melting shop running a coordinated refractory package" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">A melting shop's furnaces share the same three-material refractory package, ramming mass, coil coat and patching.</figcaption></figure>
+
+<h2>What Protects the Coil During Ramming and Service?</h2>
+<p>Coil coat, also called coil grout, is applied over the coil insulation before the working lining is rammed. Its job is protective, not structural: it conducts heat away from the coil during service and, critically, provides the dielectric barrier that matters if the working lining is ever penetrated. A fused alumina coil coat gives materially higher dielectric strength than an older silicate-bonded grout, which is the property that actually determines what happens if metal ever reaches that layer.</p>
+<table>
+  <thead><tr><th>Property</th><th>Fused alumina coil coat</th><th>Fused alumina patching material</th></tr></thead>
+  <tbody>
+    <tr><td>Role</td><td>Coil grout, applied before ramming</td><td>Primer / undercoat / patch repair</td></tr>
+    <tr><td>Al&#8322;O&#8323;</td><td>~91%</td><td>~83%</td></tr>
+    <tr><td>Max use temperature</td><td>~1750&deg;C</td><td>~1760&deg;C</td></tr>
+    <tr><td>Water demand</td><td>~10-12% for casting</td><td>~30-40% of dry weight</td></tr>
+    <tr><td>Shelf life</td><td>9 months</td><td>1 year</td></tr>
+  </tbody>
+</table>
+<p>See full specifications on our <a href="/products/unshaped-refractories/coil-coat-patching-materials">coil coat and patching material page</a>. Note that these two products serve different stages of the same furnace's life, coil coat goes in once before the lining is rammed, patching material is used repeatedly across the campaign as needed.</p>
+
+<h2>How Do You Extend a Lining Campaign With Patching?</h2>
+<p>Patching material rebuilds localised worn areas, a thin spot from charge impact, erosion near the metal line, so the furnace completes more heats before a full reline. It is applied as a primer or undercoat over the cleaned, sound area and built up from there. The critical qualifier is that the surrounding lining has to still be structurally sound: patching a lining that has worn generally thin toward the coil-side insulation doesn't rescue it, and repeated patching of a badly worn lining is a common precursor to a metal breakout rather than a genuine life-extension strategy.</p>
+<p>A shop that inspects on a fixed schedule and patches proactively, rather than reactively after a problem heat, typically sees meaningfully more heats per campaign for the same ramming mass grade. The material choice matters less here than the discipline of when it's used.</p>
+
+<h2>SAPL Supply for Induction Furnace Melting Shops</h2>
+<blockquote><strong>Why this matters:</strong> most melting shops buy ramming mass on a schedule and treat coil coat and patching as afterthoughts, ordered only when something has already gone wrong. Specifying all three together, matched to your melt chemistry and coil dimensions, is what actually produces consistent campaign life across a shop's furnace fleet, not just on the newest furnace.</blockquote>
+<p>Shanker Agencies supplies <a href="/products/unshaped-refractories/ramming-masses">silica, alumina and magnesia ramming mass</a> and <a href="/products/unshaped-refractories/coil-coat-patching-materials">coil coat and patching material</a> as a coordinated package for induction furnace melting shops. Tell us your furnace capacity, coil dimensions and the metal you're melting, and our engineering team will confirm grade and quantity for all three materials together.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["ramming-masses", "coil-coat-patching-materials"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────

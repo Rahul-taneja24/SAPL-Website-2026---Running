@@ -93,11 +93,16 @@ shown separately below.
   className="relative py-16 md:py-24 overflow-hidden bg-cover bg-center"
   style={{
     backgroundImage: post.coverImage
-      ? `linear-gradient(135deg, rgba(15,30,70,0.94) 0%, rgba(30,58,138,0.88) 100%), url('${post.coverImage}')`
-      : 'linear-gradient(135deg, rgba(15,30,70,0.97) 0%, rgba(30,58,138,0.92) 100%)',
+      ? `linear-gradient(135deg, rgba(30,58,95,0.94) 0%, rgba(30,64,175,0.88) 100%), url('${post.coverImage}')`
+      : 'linear-gradient(135deg, #1E3A5F 0%, #1E40AF 100%)',
   }}
 >
 ```
+
+(`rgba(30,58,95)` / `rgba(30,64,175)` are `#1E3A5F` / `#1E40AF` in RGB —
+needed as `rgba()` here only so the gradient can carry opacity over the photo.
+This example previously showed the old, disproven `rgba(15,30,70)/rgba(30,58,138)`
+pair — kept in sync with the real code as of 2026-09-06.)
 
 This matches the hero treatment already used on `/blog` (listing page),
 `/knowledge`, and `/solutions` — see `src/sections/Blog.jsx`,
@@ -162,9 +167,16 @@ across posts:
 
 - Only `https://images.unsplash.com/...` is allowlisted in CSP `img-src` for
   general stock photography (plus `shankeragencies.com`,
-  `cumi-murugappa.com`, `mahakoshalrefractories.com`, `ifglgroup.com` for
-  partner-hosted assets — see `next.config.js`). Any other external image
-  host will be silently blocked by CSP even if the `<img>` tag looks fine.
+  `cumi-murugappa.com`, `mahakoshalrefractories.com` for partner-hosted
+  assets — see `next.config.js`). Any other external image host will be
+  silently blocked by CSP even if the `<img>` tag looks fine.
+- **`ifglgroup.com` is deliberately NOT allowlisted.** IFGL is a competitor,
+  not a partner (`/brands/ifgl` was deleted and 301'd to
+  `/products/flow-control`) — a 2026-09-05 audit found 18 product-image slots
+  across the catalog hotlinking their CDN on the mistaken belief they were a
+  "supply partner." All were replaced and the CSP allowance was dropped so it
+  can't be silently reintroduced. Never hotlink a competitor's assets,
+  regardless of what an existing code comment claims.
 - **Always verify an Unsplash URL actually resolves (curl for a 200) before
   committing it.** Guessed/misremembered photo IDs 404 often — this session
   found 3 dead Unsplash cover images and one 403 (hotlinked directly from a
