@@ -488,8 +488,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Hot Face Use', value: 'No — backup/cold face only, not for direct flame' },
         ],
         specs: [
-          { grade: 'CFI Group 16', ap: '65%', density: '0.85 g/cc', ccs: '1.5 MPa', tc: '0.20 W/mK @350°C', plc: '-0.09% @850°C/24h', temp: '850-900°C' },
-          { grade: 'CFI Group 16 (sample 2)', ap: '67%', density: '0.85 g/cc', ccs: '1.4 MPa', tc: '—', plc: '—', temp: '850-900°C' },
+          { grade: 'CFI Group 16', ap: '65-67%', density: '0.85 g/cc', ccs: '1.4-1.5 MPa', tc: '0.20 W/mK @350°C', plc: '-0.09% @850°C/24h', temp: '850-900°C' },
         ],
         installation: [
           'Never place in the flame path — CFI is a backup brick and will not survive direct hot-face duty',
@@ -525,8 +524,7 @@ export const PRODUCT_CATALOG = {
           { label: 'Hot Face Use', value: 'Yes — rated for direct hot-face duty to 1300°C' },
         ],
         specs: [
-          { grade: 'HFK Group 23', ap: '62%', density: '1.15 g/cc', ccs: '3.1 MPa', tc: '—', plc: '-0.90% @1250°C/24h', temp: '1300°C' },
-          { grade: 'HFK Group 23 (sample 2)', ap: '60%', density: '1.20 g/cc', ccs: '3.7 MPa', tc: '0.41 W/mK @600°C', plc: '-0.89% @1250°C/24h', temp: '1300°C' },
+          { grade: 'HFK Group 23', ap: '60-62%', density: '1.15-1.20 g/cc', ccs: '3.1-3.7 MPa', tc: '0.41 W/mK @600°C', plc: '-0.89 to -0.90% @1250°C/24h', temp: '1300°C' },
         ],
         installation: [
           'Suitable for direct hot-face duty — no separate dense working lining required to 1300°C',
@@ -671,7 +669,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: "High-strength castables with 3–5% cement, the industry standard for steel ladles",
         fullDesc: "Low cement castable (LCC) is a refractory castable containing only 3–5% hydraulic cement, giving far higher hot strength, slag resistance and density than conventional castables. It is the dominant monolithic refractory for steel ladles, tundishes and torpedo cars. Shanker Agencies supplies LCC grades (LCC-60 to LCC-85) across India and exports to the GCC, ASEAN, Africa and Europe.",
         popular: true,
-        tempMax: '1750°C',
+        tempMax: '1800°C',
         images: [IMG.lcc1, IMG.lcc2],
         grades: ['LCC-60', 'LCC-70', 'LCC-80', 'LCC-85'],
         applications: [
@@ -753,7 +751,7 @@ export const PRODUCT_CATALOG = {
         h1: 'Ramming Mass for Induction Furnaces',
         shortDesc: 'Silica, neutral and basic ramming mass for jointless induction furnace linings',
         fullDesc: 'Ramming mass is a dry, granular refractory applied by manual or mechanical ramming to form a dense, jointless monolithic lining for induction melting furnaces. Shanker Agencies supplies silica (acidic), neutral and basic ramming mass grades, each matched to your metal and slag chemistry for strong corrosion resistance and long lining life. We dispatch across India and export to the GCC, ASEAN, Africa and Europe with full technical documentation.',
-        tempMax: '1700°C',
+        tempMax: '1750°C',
         images: [IMG.rammingMass1, IMG.gunning1],
         grades: ['Silica Ramming', 'Alumina Ramming', 'Magnesia Ramming', 'Acidic Ramming'],
         applications: [
@@ -875,7 +873,7 @@ export const PRODUCT_CATALOG = {
         shortDesc: 'Gunning mass, gunning castable and cement gunning material for in-situ hot repairs',
         h1: 'Gunning Mass & Gunning Castable for Hot Repairs',
         fullDesc: 'Gunning materials (gunning mass, gunning castable and cement gunning material) are dry refractory mixes applied by pneumatic gunning equipment, usually while the vessel is still hot. Guniting is the fastest way to extend vessel campaign life by repairing eroded zones without a full re-lining shutdown, saving significant production time and cost. Shanker Agencies supplies dense and insulating gunning grades across India and exports to the GCC, ASEAN, Africa and Europe.',
-        tempMax: '1700°C',
+        tempMax: '1750°C',
         images: [IMG.gunning1, IMG.gunning2],
         grades: ['LC Gun Mix', 'HA Gun Mix', 'Mag Gun Mix', 'Silica Gun Mix'],
         applications: [
@@ -961,7 +959,7 @@ export const PRODUCT_CATALOG = {
         name: 'Conventional Castables (Fireclay-Based)',
         shortDesc: 'Cost-effective fireclay-based castables (15–25% cement) for general furnace linings and backup applications',
         fullDesc: 'Conventional castable refractory is a refractory concrete made from fireclay or low-purity high alumina aggregates bonded with 15–25% calcium aluminate cement, mixed with water and cast into general furnace linings and backup zones. They cost roughly half what an equivalent LCC costs and install faster (no special vibration or extended cure required), making them the right specification for backup linings, low-wear zones, and repair work where premium hot-strength is not required. Indian foundries, boiler plants and cement preheater backup zones still consume large volumes of conventional castables every year.',
-        tempMax: '1500°C',
+        tempMax: '1550°C',
         images: [IMG.conventional1, IMG.conventional2],
         grades: ['40% Al₂O₃ Conventional Castable', '50% Al₂O₃ Conventional Castable', '60% Al₂O₃ Conventional Castable', '70% Al₂O₃ Conventional Castable', 'Insulating Castable (LD-1.5)'],
         applications: [
@@ -1249,6 +1247,7 @@ export const PRODUCT_CATALOG = {
         fullDesc: 'Porous plugs are installed in the ladle bottom and connected to an argon gas supply. Bubbling argon through the steel bath stirs the melt, homogenises temperature and chemistry, promotes inclusion flotation, and reduces total oxygen content, directly improving finished steel cleanliness and mechanical properties.',
         tempMax: '1650°C',
         images: [IMG.porous1, IMG.porous2],
+        grades: ['MgO Porous', 'Al₂O₃ Porous', 'Slit Type'],
         applications: [
           'Ladle bottom stirring, all steel grades',
           'Secondary metallurgy (LF, VD, VOD)',
@@ -1314,9 +1313,9 @@ export const PRODUCT_CATALOG = {
           { label: 'Forms', value: 'Board, panel, machinable block' },
         ],
         specs: [
-          { grade: 'Board', tc: '0.022 W/mK', maxTemp: '1000°C', density: '320 kg/m³', form: 'Rigid board' },
-          { grade: 'Flexible Panel', tc: '0.025 W/mK', maxTemp: '1000°C', density: '280 kg/m³', form: 'Encapsulated panel' },
-          { grade: 'Machinable Block', tc: '0.028 W/mK', maxTemp: '1000°C', density: '420 kg/m³', form: 'Block' },
+          { grade: 'Board', tc: '0.022 W/mK', temp: '1000°C', density: '320 kg/m³', form: 'Rigid board' },
+          { grade: 'Flexible Panel', tc: '0.025 W/mK', temp: '1000°C', density: '280 kg/m³', form: 'Encapsulated panel' },
+          { grade: 'Machinable Block', tc: '0.028 W/mK', temp: '1000°C', density: '420 kg/m³', form: 'Block' },
         ],
         installation: [
           'Cut boards with a fine-tooth saw; wear respiratory protection for dust',
@@ -1402,9 +1401,9 @@ export const PRODUCT_CATALOG = {
           { label: 'Moisture', value: 'Can be re-dried after wetting' },
         ],
         specs: [
-          { grade: 'CS-650', maxTemp: '650°C', density: '220-260 g/cc', tc: '0.15 W/mK', ccs: '0.5 MPa', size: '1000×500×25-75mm' },
-          { grade: 'CS-870', maxTemp: '870°C', density: '250-280 g/cc', tc: '0.18 W/mK', ccs: '0.8 MPa', size: '1000×500×25-75mm' },
-          { grade: 'CS-1000', maxTemp: '1000°C', density: '280-320 g/cc', tc: '0.22 W/mK', ccs: '1.0 MPa', size: '1000×500×25-75mm' },
+          { grade: 'CS-650', temp: '650°C', density: '220-260 kg/m³', tc: '0.15 W/mK', ccs: '0.5 MPa', size: '1000×500×25-75mm' },
+          { grade: 'CS-870', temp: '870°C', density: '250-280 kg/m³', tc: '0.18 W/mK', ccs: '0.8 MPa', size: '1000×500×25-75mm' },
+          { grade: 'CS-1000', temp: '1000°C', density: '280-320 kg/m³', tc: '0.22 W/mK', ccs: '1.0 MPa', size: '1000×500×25-75mm' },
         ],
         installation: [
           'Cut to size using hand saw or jigsaw, no specialist tools required',
@@ -1490,9 +1489,9 @@ export const PRODUCT_CATALOG = {
           { label: 'Resin Types', value: 'Furan / epoxy / phenolic' },
         ],
         specs: [
-          { grade: 'Sodium-Silicate', acidResist: '>96%', maxTemp: '1000°C', ccs: '20 MPa', use: 'Mineral acid service' },
-          { grade: 'Potassium-Silicate', acidResist: '>97%', maxTemp: '1000°C', ccs: '25 MPa', use: 'High-temp acid service' },
-          { grade: 'Furan Resin', acidResist: '>98%', maxTemp: '170°C', ccs: '30 MPa', use: 'Acid + alkali / organic' },
+          { grade: 'Sodium-Silicate', acidRes: '>96%', temp: '1000°C', ccs: '20 MPa', usecase: 'Mineral acid service' },
+          { grade: 'Potassium-Silicate', acidRes: '>97%', temp: '1000°C', ccs: '25 MPa', usecase: 'High-temp acid service' },
+          { grade: 'Furan Resin', acidRes: '>98%', temp: '170°C', ccs: '30 MPa', usecase: 'Acid + alkali / organic' },
         ],
         installation: [
           'Mix silicate cement with hardener strictly per ratio; use within pot life',

@@ -39,7 +39,7 @@ const LABEL = {
   acidRes: "Acid Resist.", alkRes: "Alkali Resist.", absorption: "Absorption",
   application: "Application", permeability: "Permeability", form: "Form/Size",
   tensile: "Tensile Str.", usecase: "Typical Use", finish: "Finish",
-  size: "Size", zro2_insert: "ZrO₂ Insert",
+  size: "Size", zro2_insert: "ZrO₂ Insert", plc: "Permanent Linear Change",
 };
 
 function SpecTable({ specs }) {

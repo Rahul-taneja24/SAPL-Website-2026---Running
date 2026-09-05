@@ -82,7 +82,7 @@ export const BLOG_POSTS_DATA = [
 <h3>3. Magnesia (Basic) Ramming Mass</h3>
 <p>Magnesia-based ramming mass uses dead-burnt magnesia (MgO &gt; 85%) and is necessary for melting metals that generate highly basic slags, such as manganese steel and certain high-alloy grades.</p>
 <ul>
-  <li><strong>Operating temperature:</strong> Up to 1,800 degC</li>
+  <li><strong>Operating temperature:</strong> Up to 1,750 degC</li>
   <li><strong>Best suited for:</strong> Manganese steel, high-manganese alloys, some special alloys</li>
   <li><strong>Typical lining life:</strong> 40&ndash;100 heats</li>
   <li><strong>Key advantage:</strong> Excellent resistance to basic slag attack</li>
