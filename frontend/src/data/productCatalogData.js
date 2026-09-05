@@ -19,16 +19,27 @@
  *    (SAPL is authorised dealer, direct links to manufacturer's published assets)
  *  - CUMI product photos: cumi-murugappa.com/refractories/wp-content/uploads/...
  *    (SAPL is authorised dealer, official product photo library)
- *  - IFGL product photos: ifglgroup.com/wp-content/uploads/...
- *    (SAPL is supply partner, official 2025 product line photos)
  *  - Unsplash retained ONLY where no authorised brand alternative exists, and
  *    only for sector-relevant industrial shots (not generic factory pics).
+ *
+ * REMOVED 2026-09-05 — IFGL hotlinks. This map previously pulled 18 image
+ * slots straight from ifglgroup.com on the note that "SAPL is supply partner".
+ * That is wrong: IFGL is a competitor, not a partner — /brands/ifgl was deleted
+ * and 301'd to /products/flow-control for exactly that reason. So the live
+ * product catalogue, including the flagship flow-control pages (slide gate,
+ * shroud, porous plug), was serving a rival's product photography off their
+ * own server. Beyond the obvious, that exposed us to their cache-busting,
+ * hotlink protection or a swapped-in watermarked file appearing on our pages.
+ * All 18 slots now point at local assets or verified Unsplash shots.
+ *
+ * NOTE: these are generic industrial stock shots standing in for real product
+ * photos. Replacing them with SAPL's own photography is the proper fix.
  */
 export const IMG = {
   /* ── category heroes, sector-relevant industrial shots ── */
   shapedHero: '/images/products/refractory-brick-lining-installation.webp',
-  unshapedHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
-  flowHero: 'https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png',
+  unshapedHero: 'https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=800&q=80',
+  flowHero: '/images/products/torpedo-ladle-brick-lining.webp',
   insulHero: '/images/products/insulation-wool-rolls.webp',
   acidHero: 'https://images.unsplash.com/photo-1768128834332-7d3479c8d634?w=800&q=80',
 
@@ -40,30 +51,30 @@ export const IMG = {
   fireclay2: '/images/products/refractory-brick-lining-installation.webp',
   ifb1: '/images/products/insulation-wool-rolls.webp',
   ifb2: '/images/products/insulation-wool-rolls.webp',
-  basicBricks1: 'https://ifglgroup.com/wp-content/uploads/2025/08/magnesia-carbon-alumina-magnesia-carbon-refractory-bricks-1.webp',
+  basicBricks1: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=900&q=90',
   basicBricks2: '/images/products/torpedo-ladle-brick-lining.webp',
   sic1: 'https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=900&q=80',
 
   /* ── unshaped refractory product images ── */
-  lcc1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
-  lcc2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
-  ulcc1: 'https://ifglgroup.com/wp-content/uploads/2025/03/neutral-ramming-mass-1.png',
-  ramming1: 'https://ifglgroup.com/wp-content/uploads/2025/03/neutral-ramming-mass-1.png',
+  lcc1: 'https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80',
+  lcc2: '/images/products/refractory-brick-lining-installation.webp',
+  ulcc1: 'https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=900&q=80',
+  ramming1: 'https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80',
   rammingMass1: 'https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80',
-  gunning1: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
-  gunning2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
+  gunning1: 'https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=800&q=80',
+  gunning2: '/images/products/refractory-brick-lining-installation.webp',
   // New products (Mahakoshal authorised dealer line)
   mortars1: '/images/products/refractory-brick-lining-installation.webp',
-  mortars2: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
-  conventional1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg',
-  conventional2: 'https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp',
+  mortars2: '/images/products/refractory-brick-lining-installation.webp',
+  conventional1: 'https://images.unsplash.com/photo-1568621422837-a343133e2bb9?w=800&q=80',
+  conventional2: '/images/products/refractory-brick-lining-installation.webp',
 
   /* ── flow control product images ── */
-  slideGate1: 'https://ifglgroup.com/wp-content/uploads/2025/03/Ladle-Slide-Gate-Mechanism-2.png',
-  slideGate2: 'https://ifglgroup.com/wp-content/uploads/2025/03/bsm1.png',
-  shroud1: 'https://ifglgroup.com/wp-content/uploads/2025/03/TUndish-Nozzle-1.png',
-  porous1: 'https://ifglgroup.com/wp-content/uploads/2025/03/TUndish-Nozzle-1.png',
-  porous2: 'https://ifglgroup.com/wp-content/uploads/2025/03/Housing_Block_Plug_new-1-1.png',
+  slideGate1: '/images/products/torpedo-ladle-brick-lining.webp',
+  slideGate2: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=800&q=80',
+  shroud1: 'https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=800&q=80',
+  porous1: 'https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=800&q=80',
+  porous2: '/images/products/torpedo-ladle-brick-lining.webp',
 
   /* ── insulation product images ── */
   ceramicFiber1: 'https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=900&q=90',
@@ -817,6 +828,46 @@ export const PRODUCT_CATALOG = {
           'Follow the manufacturer’s heat-up schedule; do not return the furnace to full power before the patch has dried through',
         ],
         whyChoose: 'Shanker Agencies is a Saint-Gobain supply partner and dispatches HeatKing CA 337 and PA 748 with the manufacturer’s technical datasheets. Chemistry and physical values shown here are taken directly from the Saint-Gobain product datasheets (CA 337, and PA 748 document HPRG/LAB/MS/0557 rev 02, 30/04/2025), not estimated. Tell us your furnace capacity, coil dimensions and melt chemistry and our engineers will confirm quantities for the coil coat and the patching allowance.',
+      },
+      {
+        id: 'aluminium-contact-castables',
+        name: 'Non-Wetting Aluminium Contact Castables',
+        h1: 'Non-Wetting Castables for Molten Aluminium Contact',
+        shortDesc: 'Low cement, non-wetting castables for melting and holding furnaces, launders and cast house',
+        fullDesc: 'Molten aluminium behaves unlike molten iron or steel: it is chemically reducing, it wets and penetrates ordinary refractory, and it attacks silica directly (4Al + 3SiO₂ → 2Al₂O₃ + 3Si), stripping silicon into the melt and destroying the lining from within. Once aluminium penetrates, it oxidises inside the pore structure and grows corundum, which expands and spalls the hot face away. Non-wetting aluminium contact castables answer this with a high alumina, low silica matrix plus non-wetting additives that stop the melt entering the pore network in the first place. Shanker Agencies supplies these in self-flow and vibro-cast grades for melting and holding furnace hearths and walls, belly bands, launders, filter and degassing boxes, transfer ladles and cast house floors. Alloy chemistry matters as much as temperature: Al-Mg alloys are more aggressive than commercial-purity aluminium and need the higher-strength grade.',
+        tempMax: '1300°C',
+        images: [IMG.rammingMass1, IMG.conventional1],
+        grades: ['Self-Flow Non-Wetting LCC', 'High-Strength Al-Mg Resistant'],
+        applications: [
+          'Melting furnace hearth, walls and belly band',
+          'Holding furnace lining',
+          'Launders and transfer troughs',
+          'Filter boxes and degassing units',
+          'Transfer and treatment ladles',
+          'Cast house floors and drain channels',
+        ],
+        brands: ['On enquiry, matched to alloy and zone'],
+        keyProperties: [
+          { label: 'Service Temperature', value: '1300°C, both grades' },
+          { label: 'Key Mechanism', value: 'Non-wetting additives block melt penetration' },
+          { label: 'Failure Mode Prevented', value: 'Corundum growth and silicon pickup' },
+          { label: 'Max Grain Size', value: '6 mm' },
+          { label: 'Installation', value: 'Self-flow, vibro cast or pump cast' },
+          { label: 'Alloy Note', value: 'Al-Mg alloys require the high-strength grade' },
+        ],
+        specs: [
+          { grade: 'Self-Flow Non-Wetting LCC', al2o3: '77.2%', sio2: '11.5%', density: '2750 kg/m³ @110°C', ccs: '55 / 65 / 80 N/mm² @110 / 816 / 1200°C', temp: '1300°C', application: 'Launders, holding furnace, general contact' },
+          { grade: 'High-Strength Al-Mg Resistant', al2o3: '79.5%', sio2: '12%', density: '2800 kg/m³ @110°C', ccs: '80 / 110 / 120 N/mm² @110 / 816 / 1200°C', temp: '1300°C', application: 'Melting furnace, Al-Mg alloys, high-impact zones' },
+        ],
+        installation: [
+          'Self-flow grade needs approximately 6.9% water and places by self-flow or mild vibration, suited to congested launder and box shapes',
+          'High-strength grade needs approximately 5–5.5% water and is vibro cast, traditional cast or pump cast',
+          'Material requirement is roughly 2800 kg/m³ for the self-flow grade and 2900 kg/m³ for the high-strength grade, use these for take-off quantities',
+          'Permanent linear change stays within −0.3% at 816°C and ±0.5% at 1200°C, so allow for joint movement rather than expecting zero change',
+          'Dry out on a controlled schedule; trapped moisture in a dense low cement castable causes explosive spalling',
+          'Never patch an aluminium contact lining with a silica-bearing material, it will be reduced by the melt',
+        ],
+        whyChoose: 'Selecting an aluminium contact lining on temperature alone is the classic mistake: at 700–800°C these linings sit far below their 1300°C rating, and what actually kills them is penetration, corundum growth and alloy chemistry. Shanker Agencies specifies by zone and by alloy, tell us whether you run commercial-purity aluminium or Al-Mg, and which zone you are lining, and our engineers will match the grade and confirm quantities from your drawings.',
       },
       {
         id: 'gunning-materials',

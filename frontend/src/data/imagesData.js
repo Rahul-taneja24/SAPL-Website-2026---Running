@@ -27,7 +27,7 @@ export const IMAGES = {
   // Product Category Images
   categories: {
     shaped: "/images/products/refractory-brick-lining-installation.webp", // Industrial kiln / bricks
-    unshaped: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg", // Powder/castable
+    unshaped: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80", // Powder/castable
     flowControl: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=800&q=80&fm=webp", // Steel casting
     insulation: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=800&q=80&fm=webp", // Ceramic fiber
     acidProofing: "https://images.unsplash.com/photo-1682891328125-c527a70dc69a?w=800&q=80", // Chemical resistant
@@ -41,10 +41,10 @@ export const IMAGES = {
     ifb: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80&fm=webp",
     basicBricks: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=800&q=80",
     sicBricks: "https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=800&q=80",
-    lcc: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
-    ulcc: "https://ifglgroup.com/wp-content/uploads/2025/03/Neutral-Ramming-Mass-1.jpg",
+    lcc: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80",
+    ulcc: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80",
     ramming: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=800&q=80",
-    gunning: "https://ifglgroup.com/wp-content/uploads/2025/08/basic-gunning-mass-1.webp",
+    gunning: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=800&q=80",
     slideGate: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80&fm=webp",
     shrouds: "https://images.unsplash.com/photo-1697281679290-ad7be1b10682?w=600&q=80&fm=webp",
     ceramicFiber: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80&fm=webp",

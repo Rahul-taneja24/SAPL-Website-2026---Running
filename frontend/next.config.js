@@ -157,14 +157,20 @@ const nextConfig = {
       // (rebrand from project-record framing to illustrative-reference framing).
       // Permanent redirect preserves any link equity + ensures AI crawlers
       // update their entity graph cleanly.
-      {
-        source: '/case-studies/:slug*',
-        destination: '/engineering-references/:slug*',
-        permanent: true,
-      },
+      // ORDER MATTERS: the bare /case-studies rule must come first. The
+      // wildcard below uses :slug* (zero or more segments), so it also matches
+      // the bare path and rewrites it to '/engineering-references/' WITH a
+      // trailing slash -- which then takes a second 308 to strip the slash.
+      // That produced a live two-hop redirect chain (verified on production
+      // 2026-09-05). Exact match first means /case-studies resolves in one hop.
       {
         source: '/case-studies',
         destination: '/engineering-references',
+        permanent: true,
+      },
+      {
+        source: '/case-studies/:slug*',
+        destination: '/engineering-references/:slug*',
         permanent: true,
       },
       // Legacy product slugs → current pages. These old URLs were indexed by

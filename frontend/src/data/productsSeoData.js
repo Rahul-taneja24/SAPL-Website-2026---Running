@@ -83,6 +83,13 @@ export const PRODUCT_SEO = [
   },
   {
     categorySlug: "unshaped-refractories",
+    productId: "aluminium-contact-castables",
+    name: "Non-Wetting Aluminium Contact Castables",
+    metaTitle: "Non-Wetting Castables for Molten Aluminium Contact",
+    metaDescription: "Low cement non-wetting castables for aluminium melting and holding furnaces, launders and cast house. 77-80% Al₂O₃, 1300°C, resists corundum growth.",
+  },
+  {
+    categorySlug: "unshaped-refractories",
     productId: "gunning-materials",
     name: "Gunning Mass / Gunning Mix",
     metaTitle: "Gunning Castable & Gunning Mass Materials | SAPL",
