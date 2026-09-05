@@ -6498,11 +6498,11 @@ export const BLOG_POSTS_DATA = [
     featured: true,
     coverImage: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=1200&q=80",
     keyTakeaways: [
-      "Molten aluminium fails refractory by a different mechanism than iron or steel: it wets and penetrates the pore structure, then oxidises inside it and grows corundum (Al₂O₃), which expands and spalls the hot face away from the inside out.",
-      "Aluminium also chemically reduces silica on contact (4Al + 3SiO₂ → 2Al₂O₃ + 3Si), stripping silicon into the melt and destroying any silica-bearing lining, so ordinary castables and mortars cannot be used in contact zones.",
-      "The fix is non-wetting castables, a high-alumina, low-silica matrix with additives that stop the melt entering the pore network in the first place, rather than trying to out-refractoriness the attack.",
-      "Cast house zones fail differently: the furnace hearth and walls see steady penetration and thermal cycling, while launders and filter boxes see the same chemical attack plus constant metal flow and mechanical wear at a joint- and corner-heavy geometry.",
-      "Alloy chemistry changes the lining choice as much as temperature does. Al-Mg alloys are measurably more aggressive than commercial-purity aluminium and need a higher cold crushing strength, higher-alumina grade, not just a hotter one.",
+      "Molten aluminium damages furnace linings differently than molten iron or steel does. It soaks into tiny pores in the lining, then reacts inside them and forms a hard mineral that expands and cracks the lining apart from the inside.",
+      "Aluminium also reacts with ordinary refractory on contact, pulling silicon out of it and into the metal. That means the standard linings used for steel or iron furnaces simply can't be used anywhere aluminium touches.",
+      "The fix is a special \"non-wetting\" lining material, designed so molten aluminium beads up and rolls off the surface instead of soaking in, stopping the damage before it starts.",
+      "Different parts of an aluminium plant wear out differently. The furnace itself faces steady chemical attack and constant heating and cooling, while the channels that carry molten metal and the filter boxes face that same attack plus constant flow and wear at every corner and joint.",
+      "Which aluminium alloy you're melting matters as much as how hot the furnace runs. Alloys containing magnesium are noticeably tougher on the lining than plain aluminium and need a stronger grade of lining, not just one rated for higher heat.",
     ],
     faqs: [
       { question: "Why does molten aluminium destroy refractory that survives molten steel fine?", answer: "Because the failure mechanism is chemical, not thermal. Aluminium furnaces run at 700-1300°C, well below steel-melting temperatures, so raw heat isn't the problem. The problem is that molten aluminium wets ordinary refractory and penetrates its pore structure, then oxidises inside those pores and grows corundum (Al₂O₃). Corundum takes up more volume than the metal that formed it, so the growth expands inside the lining and spalls the hot face away from the inside out, a mechanism that has nothing to do with peak temperature and everything to do with pore structure and chemistry." },
@@ -6587,11 +6587,11 @@ export const BLOG_POSTS_DATA = [
     featured: false,
     coverImage: "https://images.unsplash.com/photo-1600683550547-2c38a96fb400?w=1200&q=80",
     keyTakeaways: [
-      "A coreless induction furnace lining is not one product, it's a package: ramming mass for the working lining, coil coat to protect the coil underneath it, and patching material to extend the campaign once the lining is in service.",
-      "Ramming mass grade is selected by melt chemistry (silica for iron and mild steel, alumina for stainless, magnesia for manganese steel), not by furnace size or price per kilogram.",
-      "Coil coat sits between the coil insulation and the rammed lining, and its main job is dielectric protection: if metal ever penetrates the working lining, a low-dielectric-strength coil coat is what stands between that penetration and a coil failure.",
-      "Patching material extends a campaign between full relines by rebuilding worn areas, but it only works on a lining that's still structurally sound; it isn't a substitute for a reline once wear reaches the coil-side insulation.",
-      "Treating these three materials as separate, unrelated purchases rather than one coordinated package is a common reason melting shops see inconsistent lining life between furnaces running the same charge.",
+      "An induction furnace lining isn't just one product, it's really three working together: the main lining material, a protective coating for the electrical coil underneath it, and a repair material used to patch worn spots and keep the furnace running longer.",
+      "The right lining material depends on what metal you're melting, not on how big your furnace is or which option costs less. Iron and mild steel need one type, stainless steel needs another, and manganese steel needs a third.",
+      "The coil coat's real job is safety: it's a protective layer between the main lining and the electrical coil that powers the furnace, so if molten metal ever breaks through the lining, it doesn't reach and damage the coil.",
+      "Patching lets you repair worn spots so the furnace can keep running longer between full relines. But it only works if the rest of the lining is still in good shape, once wear gets too close to the coil, a full reline is needed instead.",
+      "Many melting shops buy these three materials separately without thinking of them as a matched set. That's a common reason two furnaces melting the exact same metal can end up with very different lining life.",
     ],
     faqs: [
       { question: "What refractory materials does a coreless induction furnace actually need?", answer: "Three, not one: ramming mass for the rammed working lining that contacts the metal, coil coat applied over the coil insulation before that lining is rammed, and patching material to repair worn areas and extend the campaign once the furnace is in service. Buying only the ramming mass and treating coil coat and patching as optional extras is the most common gap in a melting shop's refractory purchasing, and it shows up as coil damage or shorter, less consistent campaign life." },

@@ -162,6 +162,19 @@ across posts:
 - **FAQs:** use the post's `faqs: [{question, answer}]` array, not inline
   HTML — the template renders these as an accordion and feeds FAQPage
   schema automatically.
+- **`keyTakeaways` must read in plain language, not engineer-to-engineer.**
+  This array renders as the blue summary box right under the hero — the
+  first thing any reader sees, including a buyer, a procurement person, or
+  someone who followed a link with no refractory background. The post
+  `content` body and the `faqs` can stay as technical as the topic needs;
+  `keyTakeaways` is the one place on the page that has to work for a
+  non-specialist. Concretely: no chemical equations, no unexplained jargon
+  (say "a hard mineral that expands and cracks the lining" rather than
+  "corundum growth spalls the hot face"), and no fragment-heavy shorthand.
+  Write it the way you'd explain the point out loud to someone who doesn't
+  do this for a living. (Corrected on posts 68/69 on 2026-09-06 after
+  shipping overly technical versions — check any older post's
+  `keyTakeaways` against this bar too when you're next in it.)
 
 ## 5. Sourcing images
 
