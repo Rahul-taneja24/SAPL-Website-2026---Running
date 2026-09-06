@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import { Clock, ArrowRight, ChevronRight, Newspaper, TrendingUp } from 'lucide-react';
 import { NEWS_ARTICLES } from '@/data/newsData';
+import { publishedOnly, REVALIDATE_SECONDS } from '@/lib/scheduling';
+
+// Re-check hourly so a scheduled article appears on its own once its
+// publishDate arrives, without needing a fresh deploy.
+export const revalidate = REVALIDATE_SECONDS;
 
 export const metadata = {
   title: { absolute: 'Industry News & Analysis | Shanker Agencies' },
@@ -34,7 +39,7 @@ function formatDate(d) {
 }
 
 export default function NewsIndexPage() {
-  const articles = [...NEWS_ARTICLES].sort(
+  const articles = publishedOnly(NEWS_ARTICLES).sort(
     (a, b) => new Date(b.publishDate) - new Date(a.publishDate)
   );
   const [lead, ...rest] = articles;

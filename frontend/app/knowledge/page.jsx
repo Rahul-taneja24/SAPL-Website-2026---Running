@@ -1,5 +1,9 @@
 import KnowledgeHub from '@/components/KnowledgeHub';
 import { getHubItems } from '@/data/knowledgeHubIndex';
+import { REVALIDATE_SECONDS } from '@/lib/scheduling';
+
+// Re-check hourly so scheduled blog/news items appear here on their own once due.
+export const revalidate = REVALIDATE_SECONDS;
 
 export const metadata = {
   title: 'Knowledge Base | Refractory Engineering Resources',

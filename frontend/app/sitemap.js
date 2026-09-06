@@ -10,6 +10,13 @@ import { PRODUCT_SEO } from '@/data/productsSeoData';
 import { PRODUCT_CATALOG } from '@/data/productCatalogData';
 import { slugifyGrade, getGradeLabel } from '@/data/gradeAliasData';
 import { CASE_STUDIES } from '@/data/caseStudiesData';
+import { publishedOnly, REVALIDATE_SECONDS } from '@/lib/scheduling';
+
+// Re-check hourly, a scheduled blog post/news article must disappear from the
+// sitemap until its publishDate arrives (submitting an unpublished URL to
+// Google/Bing before it's live just earns a 404 in Search Console), and it
+// must appear on its own once due, without waiting on a fresh deploy.
+export const revalidate = REVALIDATE_SECONDS;
 
 const BASE = 'https://www.shankeragencies.com';
 // Stable per-deploy timestamp for structural pages (refreshes on every build).
@@ -99,8 +106,9 @@ export default async function sitemap() {
       : STRUCTURAL_LASTMOD,
   }));
 
-  // Blog pages, use each post's own publishDate so lastmod is unique per URL
-  const staticBlogPages = BLOG_POSTS_DATA.map((post) => ({
+  // Blog pages, use each post's own publishDate so lastmod is unique per URL.
+  // Scheduled (future-dated) posts are excluded until they're actually live.
+  const staticBlogPages = publishedOnly(BLOG_POSTS_DATA).map((post) => ({
     url: `${BASE}/blog/${post.slug}`,
     lastModified: post.publishDate
       ? new Date(post.publishDate).toISOString()
@@ -144,7 +152,8 @@ export default async function sitemap() {
       .map((slug) => ({ url: `${BASE}/ar/products/${slug}`, lastModified: STRUCTURAL_LASTMOD })),
   ];
 
-  const newsPages = NEWS_ARTICLES.map((a) => ({
+  // Scheduled (future-dated) news articles are excluded until they're actually live.
+  const newsPages = publishedOnly(NEWS_ARTICLES).map((a) => ({
     url: `${BASE}/news/${a.slug}`,
     lastModified: a.lastModified || a.publishDate
       ? new Date(a.lastModified || a.publishDate).toISOString()

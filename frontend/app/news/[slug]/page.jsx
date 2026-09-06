@@ -5,15 +5,20 @@ import {
   Phone, MessageCircle, Newspaper, ArrowLeft, ExternalLink,
 } from 'lucide-react';
 import { NEWS_ARTICLES } from '@/data/newsData';
+import { isPublished, publishedOnly, REVALIDATE_SECONDS } from '@/lib/scheduling';
+
+// Re-check hourly so a scheduled article flips from hidden to live on its own
+// once its publishDate arrives, without needing a fresh deploy.
+export const revalidate = REVALIDATE_SECONDS;
 
 export async function generateStaticParams() {
-  return NEWS_ARTICLES.map((a) => ({ slug: a.slug }));
+  return publishedOnly(NEWS_ARTICLES).map((a) => ({ slug: a.slug }));
 }
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const article = NEWS_ARTICLES.find((a) => a.slug === slug);
-  if (!article) return { title: 'Article Not Found' };
+  if (!article || !isPublished(article.publishDate)) return { title: 'Article Not Found' };
   return {
     title: { absolute: article.metaTitle },
     description: article.metaDescription,
@@ -39,8 +44,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-function getRelatedNews(article, limit = 3) {
-  return NEWS_ARTICLES.filter(
+function getRelatedNews(article, limit = 3, sourceArticles = NEWS_ARTICLES) {
+  return sourceArticles.filter(
     (a) => a.slug !== article.slug &&
       (a.category === article.category || a.tags.some((t) => article.tags.includes(t)))
   ).slice(0, limit);
@@ -49,10 +54,11 @@ function getRelatedNews(article, limit = 3) {
 export default async function NewsArticlePage({ params }) {
   const { slug } = await params;
   const article = NEWS_ARTICLES.find((a) => a.slug === slug);
-  if (!article) notFound();
+  if (!article || !isPublished(article.publishDate)) notFound();
 
-  const related = getRelatedNews(article);
-  const fallback = NEWS_ARTICLES.filter((a) => a.slug !== article.slug).slice(0, 3);
+  const liveArticles = publishedOnly(NEWS_ARTICLES);
+  const related = getRelatedNews(article, 3, liveArticles);
+  const fallback = liveArticles.filter((a) => a.slug !== article.slug).slice(0, 3);
   const sidebarNews = related.length > 0 ? related : fallback;
 
   const newsSchema = {

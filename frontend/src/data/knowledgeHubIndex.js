@@ -9,6 +9,7 @@ import { NEWS_ARTICLES } from './newsData';
 import { CASE_STUDIES } from './caseStudiesData';
 import { PRODUCT_DATASHEETS } from './productDatasheetData';
 import { PRODUCT_SEO } from './productsSeoData';
+import { publishedOnly } from '../lib/scheduling';
 
 // Derive datasheet labels/paths from the real product-route source of truth
 // (productsSeoData.js) instead of a hand-maintained map, so links can't drift
@@ -27,7 +28,7 @@ export { HUB_TYPES } from './knowledgeHubTypes';
 import { HUB_TYPES } from './knowledgeHubTypes';
 
 function fromBlog() {
-  return BLOG_POSTS_DATA.map((p) => ({
+  return publishedOnly(BLOG_POSTS_DATA).map((p) => ({
     type: 'guide',
     slug: p.slug,
     href: `/blog/${p.slug}`,
@@ -42,7 +43,7 @@ function fromBlog() {
 }
 
 function fromNews() {
-  return NEWS_ARTICLES.map((a) => ({
+  return publishedOnly(NEWS_ARTICLES).map((a) => ({
     type: 'news',
     slug: a.slug,
     href: `/news/${a.slug}`,

@@ -5,17 +5,22 @@ import {
   Phone, MessageCircle, BookOpen, ArrowLeft
 } from 'lucide-react';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { isPublished, publishedOnly, REVALIDATE_SECONDS } from '@/lib/scheduling';
+
+// Re-check scheduled posts hourly so one flips from hidden to live on its own
+// once its publishDate arrives, without needing a fresh deploy.
+export const revalidate = REVALIDATE_SECONDS;
 
 // ─── Static params for SSG ────────────────────────────────────────────────────
 export async function generateStaticParams() {
-  return BLOG_POSTS_DATA.map((post) => ({ articleSlug: post.slug }));
+  return publishedOnly(BLOG_POSTS_DATA).map((post) => ({ articleSlug: post.slug }));
 }
 
 // ─── Per-page metadata ────────────────────────────────────────────────────────
 export async function generateMetadata({ params }) {
   const { articleSlug } = await params;
   const post = BLOG_POSTS_DATA.find((p) => p.slug === articleSlug);
-  if (!post) return { title: 'Article Not Found' };
+  if (!post || !isPublished(post.publishDate)) return { title: 'Article Not Found' };
   return {
     title: { absolute: post.metaTitle },
     description: post.metaDescription,
@@ -37,8 +42,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-function getRelatedPosts(post, limit = 3) {
-  const pool = BLOG_POSTS_DATA.filter(
+function getRelatedPosts(post, limit = 3, sourcePosts = BLOG_POSTS_DATA) {
+  const pool = sourcePosts.filter(
     (p) => p.slug !== post.slug && (p.category === post.category || p.tags.some((t) => post.tags.includes(t)))
   );
   if (pool.length <= limit) return pool;
@@ -54,10 +59,11 @@ function getRelatedPosts(post, limit = 3) {
 export default async function BlogArticlePage({ params }) {
   const { articleSlug } = await params;
   const post = BLOG_POSTS_DATA.find((p) => p.slug === articleSlug);
-  if (!post) notFound();
+  if (!post || !isPublished(post.publishDate)) notFound();
 
-  const relatedPosts = getRelatedPosts(post);
-  const fallbackPosts = BLOG_POSTS_DATA.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const livePosts = publishedOnly(BLOG_POSTS_DATA);
+  const relatedPosts = getRelatedPosts(post, 3, livePosts);
+  const fallbackPosts = livePosts.filter((p) => p.slug !== post.slug).slice(0, 3);
   const sidebarPosts = relatedPosts.length > 0 ? relatedPosts : fallbackPosts;
 
   const articleSchema = {

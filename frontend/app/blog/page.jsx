@@ -1,6 +1,11 @@
 import Link from 'next/link';
 import { Calendar, Clock, ArrowRight, BookOpen, Tag, ChevronRight } from 'lucide-react';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { publishedOnly, REVALIDATE_SECONDS } from '@/lib/scheduling';
+
+// Re-check hourly so a scheduled post appears in the listing on its own once
+// its publishDate arrives, without needing a fresh deploy.
+export const revalidate = REVALIDATE_SECONDS;
 
 export const metadata = {
   title: { absolute: 'Refractory Engineering Blog | Shanker Agencies' },
@@ -104,8 +109,9 @@ export default function BlogPage() {
   // Only ONE post gets the featured hero slot; every other post (including
   // additional featured:true posts — there are several) must still render in
   // the grid, or they become orphan pages with zero internal links.
-  const featuredPost = BLOG_POSTS_DATA.find((p) => p.featured);
-  const otherPosts = BLOG_POSTS_DATA.filter((p) => p.slug !== featuredPost?.slug);
+  const livePosts = publishedOnly(BLOG_POSTS_DATA);
+  const featuredPost = livePosts.find((p) => p.featured);
+  const otherPosts = livePosts.filter((p) => p.slug !== featuredPost?.slug);
 
   const webPageSchema = {
     '@context': 'https://schema.org',
@@ -134,7 +140,7 @@ export default function BlogPage() {
     name: 'Shanker Agencies Refractory Engineering Blog',
     url: 'https://www.shankeragencies.com/blog',
     description: 'Technical guides and industry insights on refractory engineering from Shanker Agencies.',
-    blogPost: BLOG_POSTS_DATA.slice(0, 10).map((post) => ({
+    blogPost: livePosts.slice(0, 10).map((post) => ({
       '@type': 'BlogPosting',
       headline: post.title,
       url: `https://www.shankeragencies.com/blog/${post.slug}`,
@@ -184,7 +190,7 @@ export default function BlogPage() {
           {/* Stats */}
           <div className="flex flex-wrap gap-6">
             {[
-              { value: `${BLOG_POSTS_DATA.length}+`, label: 'Technical Articles' },
+              { value: `${livePosts.length}+`, label: 'Technical Articles' },
               { value: '45+', label: 'Years of Expertise' },
               { value: '6+', label: 'Industries Covered' },
             ].map(({ value, label }) => (

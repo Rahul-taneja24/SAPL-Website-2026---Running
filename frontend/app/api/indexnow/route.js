@@ -26,6 +26,7 @@ import { PRODUCT_SEO } from '@/data/productsSeoData';
 import { PRODUCT_CATALOG } from '@/data/productCatalogData';
 import { slugifyGrade, getGradeLabel } from '@/data/gradeAliasData';
 import { CASE_STUDIES } from '@/data/caseStudiesData';
+import { publishedOnly } from '@/lib/scheduling';
 
 const INDEX_NOW_KEY = '68c9e978104b40548276dada2151c101';
 const HOST = 'www.shankeragencies.com';
@@ -103,8 +104,9 @@ function buildAllUrls() {
   ['shaped-refractories', 'unshaped-refractories', 'flow-control', 'insulation', 'acid-proofing']
     .forEach((slug) => urls.add(`${BASE}/ar/products/${slug}`));
 
-  // Blog posts
-  BLOG_POSTS_DATA.forEach((post) => {
+  // Blog posts, scheduled (future-dated) posts are excluded, submitting a
+  // URL before it's actually live just earns a manual 404 in Search Console.
+  publishedOnly(BLOG_POSTS_DATA).forEach((post) => {
     urls.add(`${BASE}/blog/${post.slug}`);
   });
 

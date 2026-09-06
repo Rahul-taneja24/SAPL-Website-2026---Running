@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { Award, Factory, Globe2, Handshake, Mail, Phone } from 'lucide-react';
 import { BLOG_POSTS_DATA } from '@/data/blogPostsData';
+import { publishedOnly, REVALIDATE_SECONDS } from '@/lib/scheduling';
+
+// Re-check hourly so a scheduled post appears in the author's list on its own.
+export const revalidate = REVALIDATE_SECONDS;
 
 export const metadata = {
   title: 'Rahul Taneja | Director, Shanker Agencies Pvt. Ltd.',
@@ -50,7 +54,7 @@ const breadcrumbSchema = {
 };
 
 export default function RahulTanejaBioPage() {
-  const authoredPosts = BLOG_POSTS_DATA.filter((p) => p.author?.name === 'Rahul Taneja');
+  const authoredPosts = publishedOnly(BLOG_POSTS_DATA).filter((p) => p.author?.name === 'Rahul Taneja');
 
   return (
     <>
