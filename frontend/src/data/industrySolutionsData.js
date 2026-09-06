@@ -294,6 +294,106 @@ export const industrySolutions = [
       { name: "High Alumina Bricks", spec: "HA-60, CCS: 50-60 MPa" },
       { name: "Plastic Refractories", spec: "Al₂O₃: 60%, Ready-to-use" }
     ]
+  },
+  // Added Sept 2026 -- /solutions/foundry and /solutions/ceramic were already
+  // valid, indexed, statically-generated routes (see SOLUTION_DATA in
+  // app/solutions/[industrySlug]/page.jsx, which sets their <title> and meta
+  // description) but this file, which the actual page body renders from, had
+  // no matching entry for either. getIndustrySolution() returned undefined,
+  // so IndustrySolutions.jsx fell back to the generic all-industries overview
+  // instead of showing foundry/ceramic-specific content -- two real,
+  // search-indexable pages showing thin, mismatched content.
+  {
+    id: "foundry",
+    name: "Foundry Industry Solutions",
+    slug: "foundry",
+    tagline: "Ramming Mass and Coil Coat Solutions for Induction Furnace Melting Shops",
+    heroImage: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1200&q=80",
+    description: "A coreless induction furnace lining is a package, not a single product: ramming mass for the working lining selected by melt chemistry, coil coat protecting the coil beneath it, and patching material to extend the campaign between relines. We supply all three as a coordinated package for foundries and induction melting shops.",
+    stats: [
+      { value: "80+", label: "Foundries Served" },
+      { value: "1750°C", label: "Max Temperature" },
+      { value: "3-in-1", label: "Ramming, Coil Coat & Patching" },
+      { value: "24/7", label: "Support" }
+    ],
+    applications: [
+      {
+        name: "Coreless Induction Furnace",
+        description: "Working lining selected by melt chemistry, not furnace size",
+        products: ["Silica Ramming Mass", "Alumina Ramming Mass", "Magnesia Ramming Mass"],
+        image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=600&q=80"
+      },
+      {
+        name: "Coil Protection",
+        description: "Dielectric barrier between the working lining and the coil, applied before ramming",
+        products: ["Fused Alumina Coil Coat"],
+        image: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=600&q=80"
+      },
+      {
+        name: "Campaign Extension",
+        description: "Patch worn, localised areas of a sound lining to extend heats before a full reline",
+        products: ["Fused Alumina Patching Material"],
+        image: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=600&q=80"
+      }
+    ],
+    keyBenefits: [
+      "Ramming mass grade matched to melt chemistry (silica, alumina or magnesia), not furnace capacity or price",
+      "Coil coat gives dielectric protection if the working lining is ever penetrated, not just thermal insulation",
+      "Patching material extends a sound lining's campaign; it does not rescue a lining already worn toward the coil",
+      "Sintering programme and installation guidance matched to your furnace capacity and charge material",
+      "One coordinated package (ramming mass, coil coat, patching) instead of three uncoordinated purchases"
+    ],
+    featuredProducts: [
+      { name: "Magnesia Ramming Mass", spec: "MgO: 85-95%, Max Temp: 1750°C" },
+      { name: "Fused Alumina Coil Coat", spec: "Al₂O₃: ~91%, Max Temp: ~1750°C" },
+      { name: "Fused Alumina Patching Material", spec: "Al₂O₃: ~83%, Max Temp: ~1760°C" }
+    ]
+  },
+  {
+    id: "ceramic",
+    name: "Ceramic Industry Solutions",
+    slug: "ceramic",
+    tagline: "Kiln Furniture and Insulation for Tunnel Kilns, Shuttle Kilns and Driers",
+    heroImage: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1200&q=80",
+    description: "Ceramic manufacturing kilns need low-thermal-mass insulation for fast, energy-efficient firing cycles, and abrasion-resistant kiln furniture that survives repeated loading and thermal cycling. We supply insulating fire bricks, ceramic fiber and SiC kiln furniture matched to your firing schedule and product load.",
+    stats: [
+      { value: "25+", label: "Ceramic Plants" },
+      { value: "1425°C", label: "Max Temperature" },
+      { value: "Low Mass", label: "Fast-Cycle Insulation" },
+      { value: "24/7", label: "Support" }
+    ],
+    applications: [
+      {
+        name: "Tunnel Kiln",
+        description: "Kiln car deck and sidewall linings, kiln furniture (setters, bat plates, props)",
+        products: ["Hot Face Kyanite Insulation Bricks (HFK)", "Silicon Carbide Kiln Furniture", "Calcium Silicate Boards"],
+        image: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80"
+      },
+      {
+        name: "Shuttle Kiln",
+        description: "Fast-cycling insulation for intermittent firing schedules",
+        products: ["Ceramic Fiber Blanket", "Cold Face Insulation Bricks (CFI)"],
+        image: "https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=600&q=80"
+      },
+      {
+        name: "Drier",
+        description: "Low-temperature backup insulation for driers and kiln car decks",
+        products: ["Ceramic Fiber Board", "Calcium Silicate Boards"],
+        image: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80"
+      }
+    ],
+    keyBenefits: [
+      "Low thermal mass insulation cuts heat-up and cool-down time on fast-cycling shuttle kilns",
+      "Hot face kyanite brick (HFK) rated to 1300°C where an insulating brick needs to carry the hot face directly",
+      "SiC kiln furniture holds up under repeated loading and thermal cycling better than oxide-bonded alternatives",
+      "Rigid calcium silicate backup insulation where the layer needs to bear mechanical load, not just insulate",
+      "Complete insulation system design, heat-loss calculation and anchoring included, not just material supply"
+    ],
+    featuredProducts: [
+      { name: "Hot Face Kyanite Insulation Brick", spec: "Apparent Porosity: 60-62%, Max Temp: 1300°C" },
+      { name: "Ceramic Fiber Blanket HT-1425", spec: "Al₂O₃/SiO₂/ZrO₂ blend, Max Temp: 1425°C class" },
+      { name: "Silicon Carbide Kiln Furniture", spec: "SiC-70 to SiC-90, Max Temp: 1650°C" }
+    ]
   }
 ];
 

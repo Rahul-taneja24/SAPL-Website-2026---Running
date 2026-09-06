@@ -5,7 +5,13 @@ export const INDUSTRIES_LIST = [
   { id: "aluminum", name: "Aluminum", image: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1200&q=80", clients: "50+", temp: "1200°C" },
   { id: "petrochemical", name: "Petrochemical", image: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1200&q=80", clients: "45+", temp: "1100°C" },
   { id: "glass", name: "Glass", image: "https://images.unsplash.com/photo-1767725185080-5e8bffbfaee9?w=1200&q=80", clients: "30+", temp: "1600°C" },
-  { id: "power", name: "Power Generation", image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80", clients: "60+", temp: "1400°C" }
+  { id: "power", name: "Power Generation", image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80", clients: "60+", temp: "1400°C" },
+  // Foundry and Ceramic are valid, live /industries/[slug] routes (see
+  // app/industries/[industrySlug]/page.jsx's INDUSTRY_DATA) but were missing
+  // from this list, so the interactive equipment/products section on those
+  // two pages silently fell back to nothing instead of showing real content.
+  { id: "foundry", name: "Foundry", image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1200&q=80", clients: "80+", temp: "1750°C" },
+  { id: "ceramic", name: "Ceramic", image: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1200&q=80", clients: "25+", temp: "1400°C" }
 ];
 
 // Taglines and descriptions
@@ -15,7 +21,9 @@ const taglines = {
   aluminum: "Non-Wetting Solutions for Aluminum Industry",
   petrochemical: "Heat-Resistant Linings for Process Industries",
   glass: "Premium Refractories for Glass Melting",
-  power: "Durable Solutions for Power Plants"
+  power: "Durable Solutions for Power Plants",
+  foundry: "Ramming Mass and Lining Solutions for Induction and Cupola Furnaces",
+  ceramic: "Kiln Furniture and Insulation for Tunnel and Shuttle Kilns"
 };
 
 const descriptions = {
@@ -24,7 +32,9 @@ const descriptions = {
   aluminum: "Specialized refractories with excellent non-wetting properties.",
   petrochemical: "Engineered refractory and insulation solutions for refineries.",
   glass: "AZS and fused cast refractories for glass melting tanks.",
-  power: "Refractories and insulation for boilers and incinerators."
+  power: "Refractories and insulation for boilers and incinerators.",
+  foundry: "Silica, alumina and magnesia ramming mass matched to melt chemistry, plus coil coat and patching material for induction furnaces.",
+  ceramic: "Kiln furniture, insulating fire bricks and ceramic fiber for tunnel kilns, shuttle kilns and driers."
 };
 
 const heroImages = {
@@ -33,7 +43,9 @@ const heroImages = {
   aluminum: "https://images.unsplash.com/photo-1684259499227-e9844ab79747?w=1920&q=80",
   petrochemical: "https://images.unsplash.com/photo-1768564206500-5cddb1fea679?w=1920&q=80",
   glass: "https://images.unsplash.com/photo-1767725185080-5e8bffbfaee9?w=1920&q=80",
-  power: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80"
+  power: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80",
+  foundry: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1920&q=80",
+  ceramic: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=1920&q=80"
 };
 
 export function getIndustryData(id) {
@@ -46,7 +58,7 @@ export function getIndustryData(id) {
 
 // Equipment areas - separate arrays to avoid deep nesting
 const steelEquipment = [
-  { name: "Blast Furnace", image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=600&q=80", desc: "Hearth, bosh, belly, and stack linings.", conditions: "Up to 1600°C", products: "Carbon Blocks, SiC Bricks, High Alumina" },
+  { name: "Blast Furnace", image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=600&q=80", desc: "Hearth, bosh, belly, and stack linings, plus taphole filling mass for tap-to-tap cycling.", conditions: "Up to 1600°C", products: "Carbon Blocks, SiC Bricks, High Alumina, Taphole Filling Mass" },
   { name: "Steel Ladle", image: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=600&q=80", desc: "Working and permanent lining solutions.", conditions: "Up to 1750°C", products: "MgO-C Bricks, AL70/AL80, LC Castables" },
   { name: "BOF/EAF", image: "https://images.unsplash.com/photo-1615219023549-5c9abdb7df9a?w=600&q=80", desc: "Magnesia carbon solutions for converters.", conditions: "Up to 1800°C", products: "MgO-C Bricks, Dolomite, Gunning Mass" },
   { name: "Tundish", image: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=600&q=80", desc: "Spray masses and permanent linings.", conditions: "Up to 1650°C", products: "Tundish Boards, Spray Mass, Dry Vib" },
@@ -84,8 +96,20 @@ const powerEquipment = [
   { name: "Incinerators", image: "https://images.unsplash.com/photo-1682587627351-b40273a5d11b?w=600&q=80", desc: "Acid-resistant linings.", conditions: "Acid gases", products: "Acid Resistant, Castables" }
 ];
 
+const foundryEquipment = [
+  { name: "Coreless Induction Furnace", image: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=600&q=80", desc: "Ramming mass matched to melt chemistry, plus coil coat and patching.", conditions: "Up to 1750°C", products: "Silica/Alumina/Magnesia Ramming Mass, Coil Coat, Patching Material" },
+  { name: "Cupola Furnace", image: "https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=600&q=80", desc: "Working lining and tuyere zone refractories.", conditions: "Up to 1600°C", products: "Fire Bricks, Ramming Mass" },
+  { name: "Ladles", image: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=600&q=80", desc: "Transfer and holding ladle linings.", conditions: "Up to 1650°C", products: "Fire Bricks, Castables" }
+];
+
+const ceramicEquipment = [
+  { name: "Tunnel Kiln", image: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80", desc: "Kiln car and side wall linings, kiln furniture.", conditions: "Up to 1400°C", products: "Kiln Furniture, Insulating Fire Bricks" },
+  { name: "Shuttle Kiln", image: "https://images.unsplash.com/photo-1609089792573-2ec8b9e263ec?w=600&q=80", desc: "Fast-cycling insulation for intermittent firing.", conditions: "Up to 1400°C", products: "Ceramic Fiber, Insulating Fire Bricks" },
+  { name: "Drier", image: "https://images.unsplash.com/photo-1601241773118-9e67091e199e?w=600&q=80", desc: "Low-temperature insulation for driers and kiln cars.", conditions: "Up to 600°C", products: "Ceramic Fiber, Calcium Silicate" }
+];
+
 export function getEquipmentAreas(id) {
-  const areas = { steel: steelEquipment, cement: cementEquipment, aluminum: aluminumEquipment, petrochemical: petrochemEquipment, glass: glassEquipment, power: powerEquipment };
+  const areas = { steel: steelEquipment, cement: cementEquipment, aluminum: aluminumEquipment, petrochemical: petrochemEquipment, glass: glassEquipment, power: powerEquipment, foundry: foundryEquipment, ceramic: ceramicEquipment };
   return areas[id] || [];
 }
 
@@ -93,9 +117,13 @@ export function getEquipmentAreas(id) {
 const steelProducts = [
   { name: "Hicast 70 LC", brand: "CUMI", use: "Steel ladles", temp: "1600°C" },
   { name: "AL80 Brick", brand: "CUMI", use: "Severe duty", temp: "1750°C" },
-  { name: "MgO-C Brick", brand: "Tata", use: "BOF/EAF", temp: "1800°C" },
-  { name: "Slide Gate", brand: "Tata", use: "Flow control", temp: "1650°C" },
-  { name: "SEN", brand: "Flow Control", use: "Casting", temp: "1650°C" }
+  // Corrected from "Tata" -- Tata Refractories was rebranded TRL Krosaki
+  // Refractories after the Krosaki Harima partnership; "Tata" is not the
+  // current commercial brand and isn't one of SAPL's confirmed partners.
+  { name: "MgO-C Brick", brand: "TRL Krosaki", use: "BOF/EAF", temp: "1800°C" },
+  { name: "Slide Gate", brand: "TRL Krosaki", use: "Flow control", temp: "1650°C" },
+  { name: "SEN", brand: "Flow Control", use: "Casting", temp: "1650°C" },
+  { name: "Taphole Filling Mass", brand: "TRL Krosaki", use: "Blast furnace / torpedo ladle", temp: "1750°C" }
 ];
 
 const cementProducts = [
@@ -106,7 +134,11 @@ const cementProducts = [
 ];
 
 const aluminumProducts = [
-  { name: "Non-Wetting Castable", brand: "CUMI", use: "Melting", temp: "1200°C" },
+  // Not attributed to a single brand -- our real non-wetting aluminium
+  // contact castable data (self-flow / high-strength Al-Mg resistant grades)
+  // is sourced case by case, matched to alloy chemistry and furnace zone,
+  // not a stocked CUMI line.
+  { name: "Non-Wetting Castable", brand: "Matched to alloy", use: "Melting", temp: "1300°C" },
   { name: "CF Module", brand: "Divine", use: "Backup", temp: "1260°C" }
 ];
 
@@ -116,7 +148,9 @@ const petrochemProducts = [
 ];
 
 const glassProducts = [
-  { name: "AZS Fused Cast", brand: "Specialized", use: "Tank walls", temp: "1600°C" },
+  // "Specialized" was a placeholder, not a real brand name; fused cast AZS
+  // is sourced from dedicated melt-cast producers, not a stocked CUMI line.
+  { name: "AZS Fused Cast", brand: "Matched to furnace design", use: "Tank walls", temp: "1700°C" },
   { name: "High Zirconia", brand: "CUMI", use: "Glass contact", temp: "1650°C" }
 ];
 
@@ -125,8 +159,21 @@ const powerProducts = [
   { name: "AR Castable", brand: "Calderys", use: "Boiler", temp: "1400°C" }
 ];
 
+const foundryProducts = [
+  { name: "Silica Ramming Mass", brand: "CUMI", use: "Grey iron, mild steel", temp: "1700°C" },
+  { name: "Alumina Ramming Mass", brand: "CUMI", use: "Stainless, tool steel", temp: "1750°C" },
+  { name: "Magnesia Ramming Mass", brand: "TRL Krosaki", use: "Manganese, basic-slag alloys", temp: "1750°C" },
+  { name: "Coil Coat & Patching Material", brand: "Saint-Gobain HeatKing", use: "Coil protection, campaign extension", temp: "1800°C" }
+];
+
+const ceramicProducts = [
+  { name: "Insulating Fire Bricks", brand: "Divine Cerawool", use: "Kiln backup insulation", temp: "1400°C" },
+  { name: "Ceramic Fiber Blanket", brand: "Divine Cerawool", use: "Kiln car seals, hot face", temp: "1260°C" },
+  { name: "Kiln Furniture", brand: "CUMI", use: "Setters, saggers", temp: "1400°C" }
+];
+
 export function getRecommendedProducts(id) {
-  const products = { steel: steelProducts, cement: cementProducts, aluminum: aluminumProducts, petrochemical: petrochemProducts, glass: glassProducts, power: powerProducts };
+  const products = { steel: steelProducts, cement: cementProducts, aluminum: aluminumProducts, petrochemical: petrochemProducts, glass: glassProducts, power: powerProducts, foundry: foundryProducts, ceramic: ceramicProducts };
   return products[id] || [];
 }
 
@@ -137,7 +184,9 @@ const serviceData = {
   aluminum: ["Furnace Design", "Energy Audits", "Installation"],
   petrochemical: ["Energy Audit", "Insulation Engineering", "Turnaround Support"],
   glass: ["Tank Design", "Cold Repair", "Hot Repair"],
-  power: ["Boiler Inspection", "Outage Planning", "Hot Repairs"]
+  power: ["Boiler Inspection", "Outage Planning", "Hot Repairs"],
+  foundry: ["Ramming Mass Selection", "Sintering Schedule Guidance", "Coil Coat Application Support"],
+  ceramic: ["Kiln Audit", "Insulation Design", "Installation"]
 };
 
 export function getServices(id) {
