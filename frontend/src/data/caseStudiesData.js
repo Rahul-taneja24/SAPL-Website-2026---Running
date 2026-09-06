@@ -304,8 +304,8 @@ export const CASE_STUDIES = [
     readingTime: 5,
     products: [
       {
-        name: 'Low Cement Castables (Non-Wetting)',
-        productPath: '/products/unshaped-refractories/low-cement-castables',
+        name: 'Non-Wetting Aluminium Contact Castables',
+        productPath: '/products/unshaped-refractories/aluminium-contact-castables',
       },
       {
         name: 'High Alumina Bricks (HA-70)',
@@ -365,7 +365,7 @@ export const CASE_STUDIES = [
     products: [
       {
         name: 'Fused Cast AZS Blocks',
-        productPath: '/products/shaped-refractories/silicon-carbide-bricks',
+        productPath: '/products/shaped-refractories/fused-cast-azs-blocks',
       },
       {
         name: 'High Alumina Bricks',
