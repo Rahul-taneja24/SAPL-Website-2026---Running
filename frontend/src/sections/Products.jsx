@@ -44,7 +44,23 @@ const LABEL = {
 
 function SpecTable({ specs }) {
   if (!specs?.length) return null;
-  const keys = Object.keys(specs[0]).filter(k => k !== "grade");
+  // Union of keys across EVERY row, not just the first. A later row with
+  // extra/different chemistry columns (e.g. a Dolomite grade's MgO/CaO mixed
+  // into an otherwise Al2O3/SiO2-keyed table, as in basic-bricks and
+  // ramming-masses) used to have those values silently dropped -- the table
+  // only ever rendered columns present on specs[0]. First-seen order keeps
+  // column layout stable; for any table where every row already shares the
+  // same keys (the common case) this produces identical output to before.
+  const keys = [];
+  const seen = new Set();
+  for (const row of specs) {
+    for (const k of Object.keys(row)) {
+      if (k !== "grade" && !seen.has(k)) {
+        seen.add(k);
+        keys.push(k);
+      }
+    }
+  }
   return (
     <div>
       {/* Mobile-only affordance: the table scrolls inside its own container,

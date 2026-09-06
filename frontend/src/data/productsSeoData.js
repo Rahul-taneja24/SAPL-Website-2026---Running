@@ -76,6 +76,13 @@ export const PRODUCT_SEO = [
   },
   {
     categorySlug: "unshaped-refractories",
+    productId: "taphole-filling-mass",
+    name: "Taphole & Filling Mass",
+    metaTitle: "Taphole Filling Mass: ZrO₂-Cr₂O₃ Based, 1750°C",
+    metaDescription: "ZrO₂-Cr₂O₃ filling mass for blast furnace taphole and torpedo ladle free-flow areas, 1750°C max service. TRL Krosaki grade, India supply.",
+  },
+  {
+    categorySlug: "unshaped-refractories",
     productId: "coil-coat-patching-materials",
     name: "Induction Furnace Coil Coat & Patching Material",
     metaTitle: "Induction Furnace Coil Coating Castable: SHIELD, CA 337",
