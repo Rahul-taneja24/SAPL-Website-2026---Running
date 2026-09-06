@@ -6648,6 +6648,228 @@ export const BLOG_POSTS_DATA = [
     relatedProducts: ["ramming-masses", "coil-coat-patching-materials"],
   },
 
+  // ─────────────────────────────────────────────────────────────
+  // 70. Taphole Filling Mass for Blast Furnace and Torpedo Ladle
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 70,
+    slug: "taphole-filling-mass-blast-furnace-torpedo-ladle-guide",
+    title: "Taphole Filling Mass for Blast Furnace and Torpedo Ladle: Selection Guide",
+    metaTitle: "Taphole Filling Mass: Blast Furnace & Torpedo Ladle Guide",
+    metaDescription: "Taphole filling mass for blast furnace and torpedo ladle free-flow areas: ZrO2-Cr2O3 chemistry, how it differs from taphole clay, and when it's needed.",
+    category: "Technical Guide",
+    tags: [
+      "taphole filling mass",
+      "blast furnace taphole",
+      "torpedo ladle",
+      "ZrO2-Cr2O3 filling mass",
+      "taphole maintenance",
+      "free-flow area repair",
+    ],
+    readTime: "7 min",
+    publishDate: "2026-09-10",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1682317292230-c264e89e843f?w=1200&q=80",
+    keyTakeaways: [
+      "A blast furnace taphole is the opening where molten iron is drained out, and the area around it wears away over time, needing repair so the furnace keeps tapping safely and on schedule.",
+      "Taphole filling mass isn't the same as the taphole clay used to plug the hole itself. Filling mass repairs the surrounding free-flow area, a different job that needs a different material.",
+      "This material has to survive fast-flowing molten iron and hot slag at very high temperature, so it's built from a chemistry designed for that exact combination, not just for heat resistance alone.",
+      "Torpedo ladles, the rail cars that carry molten iron from the blast furnace to the steel plant, wear out in the same free-flow area for the same reason, so the same material serves both.",
+      "Getting this right is a safety matter as much as a cost one. A free-flow area that wears through unevenly is a real safety risk during tapping, not just routine maintenance wear and tear.",
+    ],
+    faqs: [
+      { question: "What is taphole filling mass and when is it used?", answer: "Blast furnace tapholes drain molten iron heat after heat, and the free-flow area around the taphole, not the taphole clay plug itself, wears away from erosion and thermal cycling. Taphole filling mass repairs and maintains that free-flow area, restoring a stable profile so the furnace keeps tapping safely and on schedule. It's a maintenance material used between taphole clay changes, not the plug itself." },
+      { question: "How is taphole filling mass different from taphole clay?", answer: "Taphole clay is rammed into the taphole to plug it between taps and is drilled out for every cast, it's designed to be pierced and reset on a tapping cycle. Filling mass instead repairs the surrounding free-flow area, the zone that sees direct, fast-flowing molten iron and hot slag contact but isn't drilled, so it needs different erosion and corrosion resistance, not drillability." },
+      { question: "Why ZrO2-Cr2O3 chemistry specifically?", answer: "Zirconia (ZrO₂) gives strong resistance to molten iron and slag corrosion at sustained high temperature, while chromia (Cr₂O₃) adds further slag and erosion resistance in the same zone. Our Freetap-100NF1(ZCr) grade combines both, ZrO₂ around 27.8%, Cr₂O₃ around 20.6%, specifically for the free-flow area's combination of chemical attack and physical erosion, rated to 1750°C." },
+      { question: "Does the same material work for torpedo ladles?", answer: "Yes. Torpedo ladle free-flow areas see the same molten iron contact and erosion mechanism as the blast furnace taphole zone, so the same ZrO₂-Cr₂O₃ filling mass chemistry applies to both, the duty is essentially identical even though the vessel is different." },
+      { question: "How often does the free-flow area need repair?", answer: "This varies by furnace campaign, iron chemistry and tapping frequency rather than a fixed interval. Plants generally schedule filling mass application based on observed wear during routine taphole inspections rather than a calendar interval, and a sudden change in tap stream behaviour is usually the trigger for an out-of-cycle repair." },
+      { question: "Can filling mass be applied while the furnace is in service?", answer: "Filling mass is applied during scheduled maintenance windows around the taphole area. Exact timing and application method depend on furnace design and site practice, and should follow the furnace operator's own procedure, this guide covers material selection, not a substitute for the plant's own maintenance procedure." },
+    ],
+    excerpt:
+      "Blast furnace tapholes and torpedo ladle free-flow areas wear differently from the taphole itself, and need a different repair material. This guide explains what taphole filling mass actually does, how ZrO₂-Cr₂O₃ chemistry resists molten iron and slag attack, and why the same material serves both applications.",
+    content: `<h2>What Is Taphole Filling Mass and Why Is It Different From Taphole Clay?</h2>
+<p><strong>Taphole filling mass repairs and maintains the free-flow area around a blast furnace taphole or torpedo ladle discharge point, the zone that sees direct molten iron and slag erosion but isn't the taphole plug itself.</strong> Taphole clay is rammed into the taphole and drilled out on every tap; filling mass instead rebuilds the surrounding profile so tapping stays safe and on schedule between clay changes. Confusing the two, or skipping filling mass maintenance because "the taphole clay is fine," is a common cause of uneven wear that eventually becomes a safety issue rather than a routine repair.</p>
+
+<blockquote><strong>Quick answer:</strong> Taphole filling mass is a ZrO₂-Cr₂O₃ based material (our Freetap-100NF1(ZCr) grade runs ZrO₂ ~27.8%, Cr₂O₃ ~20.6%, rated to 1750°C) used to repair the free-flow area around a blast furnace taphole or torpedo ladle discharge point. It is not the taphole clay plug, it's a separate maintenance material for a separate wear zone, and the same chemistry serves both the blast furnace and torpedo ladle since the wear mechanism, fast-flowing molten iron plus hot slag, is identical in both.</blockquote>
+
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1712931235644-b2126e4c90ff?w=900&q=80" alt="Molten metal tapping stream representative of the erosion a blast furnace taphole free-flow area sees" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">The free-flow area around a taphole sees direct molten iron and slag contact on every tap, a different duty from the taphole plug itself.</figcaption></figure>
+
+<h2>What Chemistry Does Taphole Filling Mass Need, and Why?</h2>
+<table>
+  <thead><tr><th>Property</th><th>Freetap-100NF1(ZCr)</th></tr></thead>
+  <tbody>
+    <tr><td>ZrO₂</td><td>27.8%</td></tr>
+    <tr><td>Cr₂O₃</td><td>20.6%</td></tr>
+    <tr><td>Al₂O₃</td><td>2.26%</td></tr>
+    <tr><td>SiO₂</td><td>43.1%</td></tr>
+    <tr><td>Max service temperature</td><td>1750°C</td></tr>
+    <tr><td>Max grain size</td><td>≤2mm</td></tr>
+  </tbody>
+</table>
+<p>Zirconia gives the material strong resistance to molten iron and slag corrosion at sustained high temperature. Chromia adds further slag and erosion resistance in the same zone. Together, this chemistry is built for the free-flow area's specific combination of chemical attack (from both metal and slag) and physical erosion (from the tap stream itself), rather than for peak temperature resistance alone, a taphole area rarely fails from raw heat, it fails from the combined chemical and mechanical wear of repeated tapping.</p>
+
+<h2>Blast Furnace Taphole vs Torpedo Ladle: Same Material, Same Wear Mechanism</h2>
+<p>It's easy to assume a blast furnace and a torpedo ladle need different materials since they're different vessels serving different roles in the process. In the specific zone this material addresses, they don't. Both the blast furnace taphole free-flow area and the torpedo ladle discharge point see the same underlying mechanism: fast-flowing molten iron combined with hot slag contact, wearing the surrounding refractory unevenly over repeated cycles. Because the wear mechanism is the same, the same ZrO₂-Cr₂O₃ filling mass chemistry applies to both applications without needing a separate formulation for each vessel type.</p>
+
+<h2>SAPL Supply for Taphole Filling Mass</h2>
+<blockquote><strong>Why this matters:</strong> a free-flow area that's left to wear unevenly, because the taphole clay itself still looks fine, doesn't fail gradually. It tends to fail as a sudden, uncontrolled stream direction during a tap, which is a safety event, not just a maintenance one. Scheduling filling mass maintenance on observed wear, not just taphole clay condition, is what actually prevents that.</blockquote>
+<p>Shanker Agencies supplies <a href="/products/unshaped-refractories/taphole-filling-mass">ZrO₂-Cr₂O₃ taphole filling mass</a> for blast furnace taphole and torpedo ladle free-flow area maintenance. Tell us your furnace or ladle capacity and tapping frequency, and our engineering team will confirm grade and quantity from your maintenance schedule.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["taphole-filling-mass"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 71. Dolomite Ramming Mass and Dolomite Bricks
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 71,
+    slug: "dolomite-ramming-mass-and-dolomite-bricks-guide",
+    title: "Dolomite Ramming Mass and Dolomite Bricks: When Basic Refractories Make Sense",
+    metaTitle: "Dolomite Ramming Mass & Bricks: When to Use Basic Refractory",
+    metaDescription: "Dolomite ramming mass for AOD/ladle knuckle joints and dolomite bricks for basic steelmaking: MgO-CaO chemistry, real specs, and when they're the right call.",
+    category: "Buyer Guide",
+    tags: [
+      "dolomite ramming mass",
+      "dolomite bricks",
+      "basic refractories",
+      "AOD ladle knuckle joint",
+      "MgO-CaO refractory",
+      "ladle back-filling",
+    ],
+    readTime: "7 min",
+    publishDate: "2026-09-14",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1615219023549-5c9abdb7df9a?w=1200&q=80",
+    keyTakeaways: [
+      "Dolomite is a basic refractory made mostly of magnesia and lime, chosen for specific spots in steelmaking where its chemistry resists the particular slag those spots see, not because it's cheaper or more common than other options.",
+      "Dolomite ramming mass is used to fill and seal specific joints and gaps, like where a ladle's bottom meets its walls, rather than lining an entire vessel.",
+      "Dolomite bricks are a separate product used to line whole sections of certain furnaces and vessels, and shouldn't be confused with the ramming mass just because they share the same base chemistry.",
+      "Dolomite refractories aren't something every plant needs on a regular basis, which is exactly why we don't keep them as everyday stock. We can still arrange them for you when your process calls for them, sourced against your specific requirement.",
+      "If your slag chemistry and vessel design call for a basic refractory, dolomite is worth asking about, even if you've never ordered it from us before.",
+    ],
+    faqs: [
+      { question: "What is dolomite refractory and why is it used in steelmaking?", answer: "Dolomite refractory is based on a blend of magnesia (MgO) and lime (CaO), typically CaO 38-59% and MgO 35-58% depending on grade. It's a \"basic\" refractory, meaning its chemistry is alkaline rather than acidic or neutral, which gives it strong resistance to basic slags (lime-rich, alkaline slags) common in steelmaking. It's specified where the slag chemistry at a particular spot calls for a basic refractory specifically, not as a general-purpose or lower-cost substitute for other refractories." },
+      { question: "What's the difference between dolomite ramming mass and dolomite bricks?", answer: "Ramming mass is a loose, granular material rammed into place by hand or machine to fill and seal specific joints and gaps, our dolomite ramming mass grades are used for AOD and ladle back-filling, and for knuckle joints (where a ladle's bottom meets its walls) and around well blocks and seating blocks. Dolomite bricks are shaped, fired refractory bricks used to line entire sections of a vessel or furnace. They share the same base chemistry family but serve entirely different jobs and aren't interchangeable." },
+      { question: "What are the two dolomite ramming mass grades and how do they differ?", answer: "Our range spans two real TRL Krosaki grades. Doloram-1 (CaO-rich, roughly CaO 57% / MgO 41%) is specified for AOD and ladle back-filling. Dolomix KJ (MgO-rich, roughly MgO 57% / CaO 38%) is specified for knuckle joints of AOD and ladle bottoms, and the surround of well blocks and seating blocks. The two applications need a different CaO:MgO balance, which is why they're separate products rather than one generic \"dolomite ramming mass.\"" },
+      { question: "Does Shanker Agencies stock dolomite bricks and ramming mass?", answer: "We don't hold dolomite refractories as standing stock, because most of our regular customers' linings are specified in other basic brick families for their particular vessel and slag chemistry. That said, we can supply and arrange dolomite bricks and ramming mass if your process calls for them, sourced against your specific tonnage and delivery timeline rather than kept on the shelf. If dolomite is the right call for your slag chemistry, ask us for a quote rather than assuming we don't carry it." },
+      { question: "How do I know if I actually need dolomite refractory rather than another basic brick?", answer: "This comes down to your specific slag chemistry and vessel design, not a general preference. Dolomite refractory gets chosen because, in that specific application, its CaO-rich chemistry offers better slag resistance than a magnesia-carbon or magnesia-spinel brick would in the same spot. If you're unsure, send us your slag analysis and vessel details and our engineers will confirm whether dolomite is the right specification, or whether a brick we hold as standard stock will do the job." },
+      { question: "Is dolomite refractory harder to handle or store than other basic bricks?", answer: "Dolomite refractories are more sensitive to moisture than many other basic bricks, lime in particular can hydrate on prolonged exposure to moisture, so dry, sheltered storage matters more here than for some other grades. Our dolomite ramming mass grades carry defined shelf lives (around 6 months for Doloram-1) specifically because of this sensitivity, and we account for that in how we schedule delivery against your installation date rather than holding it in inventory indefinitely." },
+    ],
+    excerpt:
+      "Dolomite ramming mass and dolomite bricks are basic refractories chosen for specific slag chemistry, not general-purpose alternatives. This guide explains the real difference between the ramming mass grades (AOD/ladle back-filling vs knuckle joints) and dolomite bricks, and when the chemistry actually calls for dolomite over another basic brick.",
+    content: `<h2>What Is Dolomite Refractory and When Does It Actually Get Specified?</h2>
+<p><strong>Dolomite refractory is a basic (magnesia-lime) material chosen for specific slag chemistry, not as a general-purpose or lower-cost substitute for other basic bricks.</strong> It gets specified when the slag at a particular point in the process, a ladle knuckle joint, a back-filled void, a lined vessel section, is basic (lime-rich, alkaline) enough that dolomite's own alkaline chemistry resists it better than a magnesia-carbon or magnesia-spinel alternative would in the same spot. Ordering dolomite because it "should" be cheaper, without checking whether the slag chemistry actually calls for it, is not how it should be specified.</p>
+
+<blockquote><strong>Quick answer:</strong> Dolomite refractory is an MgO-CaO basic material available from Shanker Agencies as ramming mass (for AOD/ladle back-filling and knuckle joints, CaO 38-59% / MgO 35-58% depending on grade) and as bricks (for lining vessel sections). Neither is held as standing stock, both are sourced against your specific requirement when your slag chemistry calls for basic refractory specifically. The two ramming mass grades, Doloram-1 and Dolomix KJ, serve different joints within the same vessel and aren't interchangeable with each other, let alone with the bricks.</blockquote>
+
+<h2>Dolomite Ramming Mass: Two Grades, Two Different Jobs</h2>
+<table>
+  <thead><tr><th>Property</th><th>Doloram-1</th><th>Dolomix KJ</th></tr></thead>
+  <tbody>
+    <tr><td>Application</td><td>AOD &amp; ladle back-filling</td><td>Knuckle joint of AOD, ladle bottom, well/seating block surround</td></tr>
+    <tr><td>MgO</td><td>40.9% typical (≥36.0% limit)</td><td>57.4% typical (≥53.0% limit)</td></tr>
+    <tr><td>CaO</td><td>56.8% typical (≤59.0% limit)</td><td>37.5% typical (≤41.0% limit)</td></tr>
+    <tr><td>SiO₂</td><td>0.9% typical (≤1.5% limit)</td><td>1.7% typical (≤2.5% limit)</td></tr>
+    <tr><td>Fe₂O₃</td><td>0.7% typical (≤1.0% limit)</td><td>2.4% typical (≤3.5% limit)</td></tr>
+    <tr><td>Shelf life</td><td>6 months, stored under shed</td><td>Store dry, protect from moisture</td></tr>
+  </tbody>
+</table>
+<p>Notice the CaO:MgO balance inverts between the two grades. Doloram-1 is CaO-rich, matched to the general back-filling duty in AOD vessels and ladles. Dolomix KJ is MgO-rich, matched specifically to knuckle joints and well/seating block surrounds, a tighter, more mechanically stressed zone than a general back-fill area. Using the wrong grade in the wrong zone doesn't just underperform, since the two are chemically tuned for different jobs within the same vessel.</p>
+
+<h2>Dolomite Bricks vs Dolomite Ramming Mass</h2>
+<p>Dolomite bricks are a separate product from either ramming mass grade: shaped, fired refractory brick used to line entire sections of certain furnaces and vessels, rather than filling a specific joint or gap. Both dolomite bricks and dolomite ramming mass share the same underlying MgO-CaO chemistry family, which is why they're easy to lump together as "dolomite refractory," but they're specified, installed and priced completely differently. A plant that needs dolomite ramming mass for a ladle knuckle joint does not necessarily need dolomite brick anywhere else in the same vessel, and vice versa.</p>
+
+<h2>Why Doesn't SAPL Stock Dolomite as Standard, and How Do We Supply It?</h2>
+<p>Most of our regular customers' linings are specified in other basic brick and ramming mass families for their particular vessel design and slag chemistry, which is why dolomite isn't part of our everyday standing stock. That doesn't mean we can't supply it. When your slag chemistry and vessel design specifically call for dolomite, we arrange it against your tonnage and delivery timeline rather than holding it on the shelf year-round for a use case that's genuinely occasional for most plants. If dolomite is the right specification for your application, ask us for a quote rather than assuming it's outside what we supply.</p>
+
+<h2>SAPL Supply for Dolomite Refractories</h2>
+<blockquote><strong>Why this matters:</strong> specifying a basic refractory by habit or availability, rather than by checking whether your actual slag chemistry calls for dolomite specifically, either wastes money on a chemistry you didn't need or leaves you under-protected where you did. Send us your slag analysis and we'll tell you honestly whether dolomite is the right call, or whether a brick we already stock will do the job.</blockquote>
+<p>Shanker Agencies can supply and arrange <a href="/products/unshaped-refractories/ramming-masses">dolomite ramming mass</a> (Doloram-1 and Dolomix KJ grades) and <a href="/products/shaped-refractories/basic-bricks">dolomite bricks</a> against your specific requirement. Tell us your vessel, the joint or zone you're lining, and your slag chemistry, and our engineering team will confirm whether dolomite is the right specification and arrange quantity and delivery timeline accordingly.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["ramming-masses", "basic-bricks"],
+  },
+
+  // ─────────────────────────────────────────────────────────────
+  // 72. Tundish Refractory Zones: Working Lining and Spray Mass
+  // ─────────────────────────────────────────────────────────────
+  {
+    id: 72,
+    slug: "tundish-refractory-zones-working-lining-spray-mass-guide",
+    title: "Tundish Refractory Zones: Working Lining, Spray Mass and Permanent Lining Explained",
+    metaTitle: "Tundish Refractory Zones: Spray Mass & Working Lining Guide",
+    metaDescription: "Tundish refractory zones explained: permanent lining vs working lining, when tundish spraying mass is used, and real MgO-based spray mass specs.",
+    category: "Technical Guide",
+    tags: [
+      "tundish refractory",
+      "tundish spraying mass",
+      "tundish working lining",
+      "continuous casting refractory",
+      "MgO spray mass",
+      "tundish permanent lining",
+    ],
+    readTime: "8 min",
+    publishDate: "2026-09-18",
+    featured: false,
+    coverImage: "https://images.unsplash.com/photo-1697281679213-fcab27e10ad4?w=1200&q=80",
+    keyTakeaways: [
+      "A tundish is the vessel between the ladle and the mould in continuous casting, and it isn't lined with just one material, it has multiple distinct layers, each doing a different job.",
+      "The permanent lining protects the steel shell of the tundish and stays in place across many casting sequences, while the working lining is the layer that actually touches the molten steel and gets renewed far more often.",
+      "Tundish spraying mass is a fast, sprayed-on way to apply or refresh the working lining, chosen when speed of application and even coverage matter as much as final lining performance.",
+      "Getting the working lining wrong, or skipping proper maintenance of it, shows up directly in steel cleanliness, since it's the one layer in constant contact with the metal throughout the sequence.",
+      "Because the working lining is consumed and replaced on a cycle tied to casting sequences, choosing a spray mass actually rated for that duty, not just \"high temperature\" generically, is what determines how many sequences you get before problems start.",
+    ],
+    faqs: [
+      { question: "What are the different refractory zones in a tundish?", answer: "A tundish has at least two distinct refractory zones doing different jobs. The permanent lining sits against the steel shell and protects it across many casting campaigns, changed infrequently. The working lining is the layer in direct contact with molten steel, renewed on a cycle tied to casting sequences since it's the layer actually consumed by metal contact and erosion. Confusing the specification of one for the other is a common cause of unexpected tundish lining failure." },
+      { question: "What is tundish spraying mass and when is it used instead of other working lining methods?", answer: "Tundish spraying mass is a working lining material applied by spraying rather than by board, dry-vibe, or trowel application. It's chosen when speed of application and even coverage across an irregular tundish shape matter, spraying can cover a tundish faster than boards or trowel application, which matters directly for turnaround time between casting sequences." },
+      { question: "What is a typical spray mass chemistry and service temperature?", answer: "Our TRLlite-87/75 grade is MgO-based (MgO 70-75%, Fe₂O₃ 4-7%, SiO₂ 14-18%), sinters at 750°C and is rated to a maximum service temperature of 1650°C. The sintering temperature matters separately from the max service temperature, it's the temperature at which the sprayed layer bonds into a coherent working lining before it sees molten steel." },
+      { question: "Does the working lining need replacing after every casting sequence?", answer: "This depends on sequence length, steel grade and tundish design rather than a fixed rule, some working linings are refreshed between every sequence, others hold up for multiple sequences before a full respray or reline is needed. What's consistent is that the working lining is the layer expected to wear on a defined cycle, unlike the permanent lining behind it, which is not expected to need attention on anything like the same schedule." },
+      { question: "Can the wrong spray mass chemistry affect steel cleanliness?", answer: "Yes, directly. The working lining is the one refractory surface in constant contact with the molten steel throughout the sequence, so its erosion resistance and inertness toward the specific steel grade being cast has a direct bearing on inclusion pickup and steel cleanliness. Specifying by \"high temperature rating\" alone, without matching chemistry to the steel grade, is a common gap." },
+      { question: "How is tundish spraying mass different from a tundish board?", answer: "Both can serve the working lining role, but installation method and turnaround differ. Board is a preformed, rigid lining component installed by placement, while spray mass is applied wet or semi-wet by spraying equipment. The choice between them typically comes down to tundish geometry, turnaround time available, and site equipment, rather than one being universally better than the other." },
+    ],
+    excerpt:
+      "A tundish isn't lined with one material, it has distinct permanent and working lining zones doing different jobs. This guide explains the difference, when tundish spraying mass is used for the working lining, and what a real MgO-based spray mass specification looks like.",
+    content: `<h2>What Are the Different Refractory Zones in a Tundish?</h2>
+<p><strong>A tundish, the vessel that sits between the ladle and the mould in continuous casting, has at least two distinct refractory zones doing entirely different jobs: a permanent lining that protects the steel shell across many campaigns, and a working lining that's in direct contact with molten steel and renewed on a cycle tied to casting sequences.</strong> Treating "tundish refractory" as one product, rather than two zones with different duty cycles, is a common source of confusion when specifying materials or planning turnaround time between sequences.</p>
+
+<blockquote><strong>Quick answer:</strong> The permanent lining sits against the tundish's steel shell and is changed infrequently. The working lining is the layer actually touching molten steel, renewed far more often, and can be applied by board, dry-vibe, trowel or spraying. Tundish spraying mass (our TRLlite-87/75 grade: MgO 70-75%, sinters at 750°C, max service 1650°C) is one working-lining application method, chosen specifically when speed and even coverage across an irregular tundish shape matter.</blockquote>
+
+<h2>Permanent Lining vs Working Lining: Different Jobs, Different Materials</h2>
+<table>
+  <thead><tr><th>Zone</th><th>Job</th><th>Change frequency</th></tr></thead>
+  <tbody>
+    <tr><td>Permanent lining</td><td>Protects the steel shell from the working lining's own installation and service heat</td><td>Many casting campaigns</td></tr>
+    <tr><td>Working lining</td><td>Direct molten steel contact, governs steel cleanliness</td><td>Tied to casting sequence, renewed far more often</td></tr>
+  </tbody>
+</table>
+<p>The permanent lining isn't in metal contact under normal operation, its job is thermal and mechanical protection of the shell itself. The working lining is what actually determines steel cleanliness, since it's the one surface in constant contact with the metal for the full duration of every sequence. Specifying the permanent lining to a high standard while treating the working lining as an afterthought, or the reverse, misses that these two zones are solving different problems.</p>
+
+<figure style="margin:1.5rem 0"><img src="https://images.unsplash.com/photo-1575305842946-0e807ce6f3fc?w=900&q=80" alt="Continuous casting operation representative of the tundish stage between ladle and mould" style="width:100%;border-radius:12px" loading="lazy" /><figcaption style="font-size:0.85rem;color:#6b7280;margin-top:0.5rem;text-align:center">The tundish's working lining is the one refractory surface in constant contact with molten steel through the full casting sequence.</figcaption></figure>
+
+<h2>What Is Tundish Spraying Mass and When Is It the Right Application Method?</h2>
+<table>
+  <thead><tr><th>Property</th><th>TRLlite-87/75</th></tr></thead>
+  <tbody>
+    <tr><td>MgO</td><td>70-75%</td></tr>
+    <tr><td>Fe₂O₃</td><td>4-7%</td></tr>
+    <tr><td>SiO₂</td><td>14-18%</td></tr>
+    <tr><td>Bulk density, dried 110°C</td><td>≤1850 kg/m³</td></tr>
+    <tr><td>Bulk density, fired 1525°C/3h</td><td>≤1900 kg/m³</td></tr>
+    <tr><td>Sintering temperature</td><td>750°C</td></tr>
+    <tr><td>Max service temperature</td><td>1650°C</td></tr>
+  </tbody>
+</table>
+<p>Spraying mass is chosen as a working-lining application method when speed of application and even coverage across an irregular tundish shape matter as much as the lining's final performance. Spraying can cover a tundish's working-lining area faster than board installation or trowel application, which translates directly into shorter turnaround time between casting sequences. The chemistry itself, an MgO-based, iron-oxide and silica-bearing mix, is formulated to sinter at a workable 750°C so the sprayed layer bonds into a coherent lining before it sees molten steel, while still holding up to a 1650°C max service temperature during casting.</p>
+
+<h2>SAPL Supply for Tundish Refractories</h2>
+<blockquote><strong>Why this matters:</strong> a tundish working lining specified by "high temperature rating" alone, without matching chemistry and application method to your steel grade and turnaround schedule, is a common reason for inconsistent steel cleanliness between sequences on the same caster.</blockquote>
+<p>Shanker Agencies supplies <a href="/products/unshaped-refractories/gunning-materials">tundish spraying mass</a> for continuous casting working linings. Tell us your tundish capacity, steel grade and turnaround time between sequences, and our engineering team will confirm the right working-lining application method and grade.</p>
+`,
+    author: { name: "Rahul Taneja" },
+    relatedProducts: ["gunning-materials"],
+  },
+
 ];
 
 // ─────────────────────────────────────────────────────────────
