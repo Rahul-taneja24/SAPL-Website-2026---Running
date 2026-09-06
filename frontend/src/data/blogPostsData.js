@@ -3460,7 +3460,7 @@ export const BLOG_POSTS_DATA = [
     ],
   },
   {
-    id: 26,
+    id: 73,
     slug: "gunning-castable-complete-guide",
     title: "Gunning Castable: Complete Guide to Grades, Applications and Selection",
     metaTitle: "Gunning Castable Guide: Grades, Applications & Selection | SAPL",
@@ -3535,7 +3535,7 @@ export const BLOG_POSTS_DATA = [
     ],
   },
   {
-    id: 27,
+    id: 74,
     slug: "porous-plug-refractory-selection-guide",
     title: "Porous Plug Refractory: How It Works, Types and Selection Guide",
     metaTitle: "Porous Plug Refractory: How It Works & Selection Guide | SAPL",
