@@ -461,4 +461,119 @@ export const NEWS_ARTICLES = [
 <p>The near-term milestones are concrete: SAIL's technical team visits Indonesia next month to prepare the feasibility report, after which the two companies finalise the joint-venture equity structure and the government-approval timeline. Watch for the JV to be formalised over the next several months, followed by an EPC and refractory-package tendering process as the project moves from feasibility to detailed engineering. If SAIL's broader strategy of using overseas partnerships to secure raw materials and lock in downstream capacity plays out as described, this Indonesia deal is likely a template, not a one-off, for how Indian steelmakers manage both import pressure and long-run capacity growth.</p>
 `,
   },
+  {
+    id: 5,
+    slug: "odisha-alumina-aluminium-buildout-2026-refractory-demand",
+    title: "Odisha's Alumina-to-Aluminium Buildout: Refining Triples, Smelting Doubles",
+    metaTitle: "Odisha Alumina & Aluminium Expansion: Refractory Impact",
+    metaDescription:
+      "Hindalco's Rs 21,000-crore smelter expansion and Aditya Birla's alumina refinery tripling in Odisha, what the buildout means for cast house refractories.",
+    category: "Raw Materials",
+    tags: [
+      "aluminium smelter expansion",
+      "alumina refinery",
+      "Hindalco",
+      "Odisha aluminium",
+      "non-wetting castable",
+      "aluminium cast house",
+    ],
+    readTime: "7 min",
+    publishDate: "2026-09-09",
+    lastModified: "2026-09-09",
+    featured: false,
+    coverImage: "",
+    imagePrompt:
+      "Realistic industrial photo: aluminium smelter pot line and alumina refinery silos in the background, Odisha industrial landscape, no logos or text.",
+    sources: [
+      {
+        title: "Hindalco Plans Expansion of Its Aditya Aluminium Complex",
+        publisher: "Light Metal Age Magazine",
+        url: "https://www.lightmetalage.com/news/industry-news/smelting/hindalco-plans-expansion-of-its-aditya-aluminium-complex/",
+        date: "2026-02-19",
+      },
+      {
+        title: "Hindalco Unveils US$ 2.3 Billion Aluminium Smelter Expansion Plan",
+        publisher: "IBEF",
+        url: "https://www.ibef.org/news/hindalco-unveils-us-2-3-billion-aluminium-smelter-expansion-plan",
+        date: "2026-01-28",
+      },
+      {
+        title: "Hindalco Announces Plans for Aluminium Smelter Expansion and Downstream Push",
+        publisher: "AlCircle",
+        url: "https://www.alcircle.com/news/hindalco-announces-plans-for-aluminium-smelter-expansion-and-downstream-push-117075",
+        date: "2026-01-28",
+      },
+      {
+        title: "Aditya Birla Group Proposes Additional Rs 12,000 Crore Investment in Odisha Alumina Refinery",
+        publisher: "Swarajya",
+        url: "https://swarajyamag.com/infrastructure/aditya-birla-group-proposes-additional-rs-12000-crore-investment-in-odisha-alumina-refinery",
+        date: "2026-07-12",
+      },
+    ],
+    keyTakeaways: [
+      "Hindalco's Aditya Aluminium smelter at Sambalpur, Odisha is adding 360,000 tonnes/year of capacity for Rs 21,000 crore, doubling smelting capacity to 720,000 tonnes/year.",
+      "The Aditya Birla Group is separately investing Rs 12,000 crore more (Rs 20,000 crore total) to triple alumina refining capacity at its Kansariguda refinery, from 1 to 3 MTPA.",
+      "A newly commissioned Rs 4,500-crore flat-rolled and battery-foil facility is meant to cut India's flat-rolled aluminium import dependence by close to 40%.",
+      "Smelter and refinery expansions on this scale mean new cast house capacity coming online well before the headline commissioning dates, the window to specify linings is now, not later.",
+    ],
+    excerpt:
+      "Two real, separately announced Odisha investments, a doubling of aluminium smelting capacity and a tripling of alumina refining capacity, point the same direction: significant new aluminium metal moving through Indian cast houses over the next few years. For refractory buyers already running or building aluminium melting and holding furnaces, that's a demand signal worth tracking now.",
+    faqs: [
+      {
+        q: "What exactly is Hindalco expanding, and by how much?",
+        a: "Hindalco is investing Rs 21,000 crore (about $2.3 billion) to add 360,000 tonnes/year of primary aluminium smelting capacity at its Aditya Aluminium complex in Sambalpur, Odisha, taking the plant from 360,000 to 720,000 tonnes/year, a doubling. Separately, the company has commissioned a Rs 4,500-crore flat-rolled products and battery-grade aluminium foil facility adding 170,000 tonnes/year, per Light Metal Age and IBEF.",
+      },
+      {
+        q: "Is the alumina refinery expansion connected to the smelter expansion?",
+        a: "They're reported as separate investment decisions, at separate Aditya Birla Group facilities, but they sit on the same value chain: alumina is the feedstock smelters reduce into aluminium metal. The Kansariguda alumina refinery expansion (Rs 12,000 crore additional, Rs 20,000 crore total project cost) triples that refinery's capacity from 1 to 3 MTPA, per Swarajya's July 2026 report, well beyond what the Sambalpur smelter alone would need, indicating group-wide capacity building rather than a single matched pair of projects.",
+      },
+      {
+        q: "Why does a smelter expansion matter for refractory buyers specifically?",
+        a: "A primary aluminium smelter's electrolytic reduction cells (pot lining) are a specialised refractory category outside SAPL's scope, but every smelter of this scale also runs a cast house downstream of the pots, melting and holding furnaces, launders and transfer systems, where molten metal from the pots is alloyed and cast. That cast house refractory package, non-wetting castables specifically, is a real, immediate demand driver as new pot capacity comes online.",
+      },
+      {
+        q: "What should a plant running an aluminium cast house do with this information now?",
+        a: "Capacity of this scale doesn't appear overnight, cast house refractory specification and procurement typically happens well ahead of the commissioning dates that make headlines. Plants adding their own melting or holding furnace capacity in the same period should treat this as confirmation that alloy chemistry and non-wetting lining requirements are worth reviewing now, not once new capacity is already running short on qualified suppliers.",
+      },
+      {
+        q: "How reliable are these investment figures?",
+        a: "The Rs 21,000-crore smelter figure and 360,000-tonne capacity number are consistent across Light Metal Age, IBEF and AlCircle, all reporting on Hindalco's own announcement in January-February 2026. The Kansariguda alumina refinery figures come from Swarajya's July 2026 report, which includes a direct quote from Odisha's Chief Minister. As with any announced, pre-commissioning capex, actual completion timelines can shift, none of the sources cited here specify a firm commissioning date.",
+      },
+    ],
+    relatedProducts: [
+      { label: "Non-Wetting Aluminium Contact Castables", href: "/products/unshaped-refractories/aluminium-contact-castables" },
+      { label: "Ceramic Fiber Products", href: "/products/insulation/ceramic-fiber-products" },
+    ],
+    content: `
+<h2>What happened</h2>
+<p>Hindalco Industries is investing <strong>Rs 21,000 crore (about $2.3 billion)</strong> to add <strong>360,000 tonnes/year</strong> of primary aluminium smelting capacity at its Aditya Aluminium complex in Sambalpur, Odisha, taking the plant from 360,000 to <strong>720,000 tonnes/year</strong>, a straight doubling (<a href="https://www.lightmetalage.com/news/industry-news/smelting/hindalco-plans-expansion-of-its-aditya-aluminium-complex/" target="_blank" rel="noopener noreferrer">Light Metal Age</a>, <a href="https://www.ibef.org/news/hindalco-unveils-us-2-3-billion-aluminium-smelter-expansion-plan" target="_blank" rel="noopener noreferrer">IBEF</a>). Alongside it, Hindalco has already commissioned a <strong>Rs 4,500-crore</strong> flat-rolled products and battery-grade aluminium foil facility adding <strong>170,000 tonnes/year</strong>, aimed at cutting India's flat-rolled aluminium import dependence by close to 40% (<a href="https://www.alcircle.com/news/hindalco-announces-plans-for-aluminium-smelter-expansion-and-downstream-push-117075" target="_blank" rel="noopener noreferrer">AlCircle</a>).</p>
+<p>Separately, group company Aditya Birla is investing a further <strong>Rs 12,000 crore</strong> (Rs 20,000 crore total project cost) to triple alumina refining capacity at its Kansariguda refinery in Odisha, from <strong>1 to 3 MTPA</strong> (<a href="https://swarajyamag.com/infrastructure/aditya-birla-group-proposes-additional-rs-12000-crore-investment-in-odisha-alumina-refinery" target="_blank" rel="noopener noreferrer">Swarajya</a>). Odisha's Chief Minister Mohan Charan Majhi framed it directly: <em>"Odisha's mineral resources must translate into greater value addition and quality employment within the state."</em></p>
+
+<h2>Why it matters</h2>
+<p>These are two separately announced investment decisions, not one coordinated project, but they sit on the same value chain: alumina is the feedstock aluminium smelters reduce into metal. Seeing both a refining-capacity triple and a smelting-capacity double announced within the same state, in the same year, is a clearer demand signal for the whole downstream chain, including cast house refractories, than either announcement read in isolation. It also connects to the alumina cost trend we covered separately, <a href="/news/bauxite-eases-china-magnesia-grip-2026">bauxite prices softened through mid-2026</a>, which is genuine input relief for exactly the alumina refining capacity Aditya Birla is now tripling.</p>
+
+<h2>Industry impact</h2>
+<p>Primary aluminium producers, downstream rolling and foil operations, and the refractory and engineering firms that serve them all see a multi-year buildout ahead in Odisha specifically. For refractory suppliers, that means real pot-line-adjacent cast house capacity coming online in a concentrated geography, alongside the alumina calcination and material-handling infrastructure the refinery expansion also requires.</p>
+
+<h2>How this affects refractory users</h2>
+<p>A primary aluminium smelter's electrolytic reduction cells, the pot line itself, use a specialised refractory and carbon-cathode system that's a distinct category from general industrial refractories. What every smelter of this scale also runs is a cast house downstream of the pots: melting and holding furnaces, launders and transfer systems where molten metal tapped from the pots is alloyed and cast into ingot or billet. That cast house is where non-wetting, low-silica castables matter, molten aluminium attacks ordinary refractory chemically, not just thermally, and the wrong lining choice there fails fast regardless of how well the pot line itself performs.</p>
+
+<h2>Procurement &amp; maintenance implications</h2>
+<p>Cast house refractory specification typically happens well ahead of the commissioning dates that make headlines, lining design, alloy-chemistry review and supplier qualification are engineering-lead-time items, not last-minute purchases. Plants in the same period adding or refurbishing their own aluminium melting or holding furnace capacity, whether connected to this specific buildout or not, should treat this as a prompt to review alloy chemistry (commercial-purity versus Al-Mg) against current lining specification now, rather than assume existing supplier relationships scale automatically with new capacity.</p>
+
+<h2>SAPL perspective</h2>
+<p>Primary reduction cell (pot) lining is outside our scope, that's a specialised category served by dedicated pot-lining suppliers. Where our expertise applies is the cast house downstream of the pots: melting and holding furnace hearths and walls, belly bands, launders, filter and degassing boxes and transfer ladles, using <a href="/products/unshaped-refractories/aluminium-contact-castables">non-wetting aluminium contact castables</a> in self-flow and high-strength Al-Mg resistant grades, matched to alloy chemistry rather than sold as one generic product. We've written in more technical detail on why molten aluminium needs this different lining approach in our <a href="/blog/aluminium-cast-house-refractories-melting-holding-launders">aluminium cast house refractories guide</a>. This is engineering context on a public, multi-source-reported capex buildout, not a pitch tied to either specific Hindalco or Aditya Birla project.</p>
+
+<h2>Supporting statistics</h2>
+<ul>
+  <li>Aditya Aluminium smelter, Sambalpur: Rs 21,000 crore (~$2.3B), +360,000 t/y, 360,000 → 720,000 t/y, <a href="https://www.lightmetalage.com/news/industry-news/smelting/hindalco-plans-expansion-of-its-aditya-aluminium-complex/" target="_blank" rel="noopener noreferrer">Light Metal Age</a>.</li>
+  <li>Flat-rolled products &amp; battery-foil facility: Rs 4,500 crore, +170,000 t/y, already commissioned, ~40% cut in flat-rolled import dependence, <a href="https://www.alcircle.com/news/hindalco-announces-plans-for-aluminium-smelter-expansion-and-downstream-push-117075" target="_blank" rel="noopener noreferrer">AlCircle</a>.</li>
+  <li>New jobs: 15,000+, against a current Hindalco workforce of ~23,000, <a href="https://www.ibef.org/news/hindalco-unveils-us-2-3-billion-aluminium-smelter-expansion-plan" target="_blank" rel="noopener noreferrer">IBEF</a>.</li>
+  <li>Kansariguda alumina refinery: Rs 12,000 crore additional (Rs 20,000 crore total), 1 → 3 MTPA, <a href="https://swarajyamag.com/infrastructure/aditya-birla-group-proposes-additional-rs-12000-crore-investment-in-odisha-alumina-refinery" target="_blank" rel="noopener noreferrer">Swarajya</a>.</li>
+</ul>
+
+<h2>What could happen next</h2>
+<p>None of the sources cited here give a firm commissioning date for either the smelter or the refinery expansion, both remain announced, pre-completion capex as of the most recent reporting. Watch for EPC and equipment tendering to progress over the next several quarters, and for other Odisha-based aluminium and alumina players to announce comparable expansions, this state has become a clear focal point for India's aluminium value chain buildout, and refractory demand tends to follow that concentration of capacity rather than stay evenly spread nationally.</p>
+`,
+  },
 ];
